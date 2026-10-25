@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:03.134
+In this lesson you'll build three shape charts a
+
+00:00:03.147 --> 00:00:06.897
+treemap and a sunburst showing which categories drive sales
+
+00:00:07.027 --> 00:00:10.478
+and a funnel showing how forty-eight thousand website visits
+
+00:00:10.491 --> 00:00:12.821
+shrink to two hundred forty-five deals
+
+00:00:14.528 --> 00:00:18.447
+You'll lay out hierarchy data correctly insert all three
+
+00:00:18.460 --> 00:00:23.918
+charts and add conversion percentages beside the funnel Recorded
+
+00:00:23.931 --> 00:00:27.108
+in Excel desktop Mac menus at the end
+
+00:00:28.836 --> 00:00:32.534
+Treemaps size rectangles by value and group them by
+
+00:00:32.547 --> 00:00:38.278
+category Sunbursts show the same as rings Funnels show
+
+00:00:38.291 --> 00:00:43.135
+stages that shrink For hierarchy charts the parent column
+
+00:00:43.148 --> 00:00:46.755
+comes first the child next the value last
+
+00:00:48.472 --> 00:00:52.914
+Look at A1 to C12 Category in column A
+
+00:00:53.044 --> 00:00:56.651
+sub-category in B sales in C and all rows
+
+00:00:56.664 --> 00:01:01.378
+for one category sit together Select A1 to C12
+
+00:01:03.092 --> 00:01:10.060
+Insert Recommended Charts All Charts Treemap OK Electronics takes
+
+00:01:10.073 --> 00:01:13.133
+the biggest block nearly half of all sales
+
+00:01:14.832 --> 00:01:18.478
+Click Chart Title and type Sales by category FY
+
+00:01:18.491 --> 00:01:21.108
+2025-26
+
+00:01:22.828 --> 00:01:26.643
+Select A1 to C12 again and insert a Sunburst
+
+00:01:26.656 --> 00:01:30.695
+from All Charts Categories form the inner ring and
+
+00:01:30.708 --> 00:01:34.627
+sub-categories the outer ring It's handy when you have
+
+00:01:34.640 --> 00:01:35.538
+three levels
+
+00:01:37.256 --> 00:01:42.766
+Now the funnel First the conversion rates In G3,
+
+00:01:42.779 --> 00:01:46.724
+type equals F3 divided by F2 and press Return
+
+00:01:47.623 --> 00:01:50.136
+Twenty percent of visits became leads
+
+00:01:51.852 --> 00:01:55.446
+Select G3 to G6 and press Command D Each
+
+00:01:55.459 --> 00:01:58.271
+cell divides a stage by the stage before it
+
+00:01:59.992 --> 00:02:04.721
+Here's the common mistake Select E1 to G6, including
+
+00:02:04.734 --> 00:02:09.317
+the percentage column and insert a Funnel Excel adds
+
+00:02:09.330 --> 00:02:12.768
+the percentages as a second series of tiny bars
+
+00:02:12.781 --> 00:02:14.135
+that make no sense
+
+00:02:15.860 --> 00:02:19.363
+Press Command Z Select just E1 to F6, stage
+
+00:02:19.376 --> 00:02:23.714
+and count and insert the Funnel again Clean bars
+
+00:02:23.844 --> 00:02:26.604
+largest at the top with data labels
+
+00:02:28.320 --> 00:02:31.862
+Click Chart Title and type Sales funnel Q2 FY
+
+00:02:31.875 --> 00:02:35.690
+2025-26 and press Return
+
+00:02:37.420 --> 00:02:41.341
+Change Deals won in F6 to three hundred The
+
+00:02:41.354 --> 00:02:44.453
+last bar grows and G6 shows the proposal win
+
+00:02:44.466 --> 00:02:47.357
+rate rising to almost thirty-five percent
+
+00:02:49.064 --> 00:02:52.658
+On Excel for Mac treemap and sunburst sit under
+
+00:02:52.671 --> 00:02:56.369
+the Insert tab's hierarchy chart button and funnel under
+
+00:02:56.382 --> 00:03:01.605
+the waterfall button Recommended Charts All Charts works too
+
+00:03:03.324 --> 00:03:08.806
+To recap hierarchy data goes parent child value treemaps
+
+00:03:08.819 --> 00:03:12.712
+and sunbursts show share funnels show drop-off stage by
+
+00:03:12.725 --> 00:03:13.259
+stage
+
+00:03:14.968 --> 00:03:18.783
+Your challenge in H2, work out the overall conversion
+
+00:03:18.796 --> 00:03:22.429
+from website visits to deals won as a percentage
+
+00:03:22.442 --> 00:03:27.952
+with two decimals The answer is on S11-07 Done

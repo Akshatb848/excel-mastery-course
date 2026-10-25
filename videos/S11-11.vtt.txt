@@ -1,0 +1,265 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.315
+This is the project a ten-task ERP rollout plan
+
+00:00:04.328 --> 00:00:08.250
+for a Pune plant shown two ways A Gantt
+
+00:00:08.263 --> 00:00:11.895
+bar chart for presentations and a week-by-week grid that
+
+00:00:11.908 --> 00:00:14.851
+colours itself from the dates which is easier to
+
+00:00:14.864 --> 00:00:15.945
+keep up to date
+
+00:00:17.422 --> 00:00:20.755
+You'll calculate durations build a Gantt chart with the
+
+00:00:20.768 --> 00:00:23.737
+stacked bar method and then a Gantt grid with
+
+00:00:23.750 --> 00:00:30.823
+conditional formatting Practice sheet S11-11 recorded in Excel desktop
+
+00:00:32.281 --> 00:00:36.163
+Here's the trick A stacked bar has two parts
+
+00:00:36.372 --> 00:00:39.419
+the start date which we make invisible and the
+
+00:00:39.432 --> 00:00:43.728
+number of days which we show Dates are numbers
+
+00:00:43.859 --> 00:00:46.788
+so the invisible part pushes each bar to its
+
+00:00:46.801 --> 00:00:47.296
+start
+
+00:00:48.766 --> 00:00:52.138
+Our plan has ten tasks with owner start and
+
+00:00:52.151 --> 00:00:56.346
+end dates B2 finds the project start with MIN
+
+00:00:57.813 --> 00:01:01.876
+In E5, type equals D5 minus C5 plus 1
+
+00:01:01.889 --> 00:01:05.706
+and press Return We add one because a task
+
+00:01:05.719 --> 00:01:08.245
+that starts and ends on the same day still
+
+00:01:08.258 --> 00:01:08.987
+takes a day
+
+00:01:10.469 --> 00:01:13.607
+Select E5 to E14 and press Command D
+
+00:01:15.094 --> 00:01:18.076
+B3 shows the start date as a plain number
+
+00:01:18.232 --> 00:01:23.351
+forty-six thousand one hundred eighteen Excel stores every date
+
+00:01:23.364 --> 00:01:25.487
+as a count of days which is why a
+
+00:01:25.500 --> 00:01:27.362
+date can be the length of a bar
+
+00:01:28.828 --> 00:01:32.995
+Select three ranges at once task names start dates
+
+00:01:33.008 --> 00:01:36.512
+and days In the Name Box I type them
+
+00:01:36.525 --> 00:01:41.122
+separated by commas With a mouse hold Command while
+
+00:01:41.135 --> 00:01:42.541
+dragging each range
+
+00:01:43.969 --> 00:01:49.099
+Insert Recommended Charts All Charts Bar then choose Stacked
+
+00:01:49.112 --> 00:01:50.518
+Bar and click OK
+
+00:01:51.984 --> 00:01:54.783
+Excel draws a long Start bar and a short
+
+00:01:54.797 --> 00:01:58.627
+Days bar for each task The Start part is
+
+00:01:58.640 --> 00:02:01.543
+just the gap before a task begins so we'll
+
+00:02:01.556 --> 00:02:02.234
+hide it
+
+00:02:03.703 --> 00:02:06.450
+On the Format tab pick Series Start and click
+
+00:02:06.463 --> 00:02:12.247
+Format Selection Under Fill choose No fill The tasks
+
+00:02:12.260 --> 00:02:14.213
+now float in the right places
+
+00:02:17.109 --> 00:02:20.939
+The first task is at the bottom Pick Vertical
+
+00:02:20.952 --> 00:02:25.314
+Category Axis click Format Selection and tick Categories in
+
+00:02:25.327 --> 00:02:29.286
+reverse order Now the plan reads from top to
+
+00:02:29.299 --> 00:02:29.806
+bottom
+
+00:02:31.266 --> 00:02:34.808
+Now the mistake everyone hits the bars are squashed
+
+00:02:34.821 --> 00:02:38.221
+into a thin strip on the right The date
+
+00:02:38.234 --> 00:02:41.203
+axis starts at zero which is the year nineteen
+
+00:02:41.216 --> 00:02:41.750
+hundred
+
+00:02:43.219 --> 00:02:47.386
+Pick Horizontal Value Axis click Format Selection and in
+
+00:02:47.399 --> 00:02:51.266
+Minimum type forty-six thousand one hundred eighteen the number
+
+00:02:51.279 --> 00:02:55.226
+from B3 The chart now starts on the first
+
+00:02:55.239 --> 00:02:56.359
+day of the project
+
+00:02:57.859 --> 00:03:02.260
+Click Chart Title type ERP rollout Gantt chart and
+
+00:03:02.273 --> 00:03:07.002
+press Return Then Add Chart Element Legend None
+
+00:03:11.094 --> 00:03:15.627
+Now method two the grid In H4, type equals
+
+00:03:15.640 --> 00:03:20.002
+dollar B dollar 2  and press Return The first column
+
+00:03:20.015 --> 00:03:21.890
+is the week the project starts
+
+00:03:23.359 --> 00:03:26.692
+In I4, type equals H4 plus 7 and press
+
+00:03:26.705 --> 00:03:30.822
+Return Each column is one week after the last
+
+00:03:32.281 --> 00:03:35.497
+Select I4 to S4 and press Command R to
+
+00:03:35.510 --> 00:03:39.692
+fill right Twelve weeks enough for the whole plan
+
+00:03:41.172 --> 00:03:45.744
+Select the grid H5 to S14 On the Home
+
+00:03:45.757 --> 00:03:49.638
+tab click Conditional Formatting New Rule and choose Use
+
+00:03:49.651 --> 00:03:52.463
+a formula to determine which cells to format
+
+00:03:53.922 --> 00:03:58.557
+Type this rule equals AND open bracket H dollar 4 
+
+00:03:58.570 --> 00:04:01.708
+is less than or equal to dollar D5, comma
+
+00:04:01.969 --> 00:04:05.419
+H dollar 4  plus 6 is greater than or equal
+
+00:04:05.432 --> 00:04:09.809
+to dollar C5, close bracket A week is coloured
+
+00:04:09.823 --> 00:04:11.567
+if it overlaps the task
+
+00:04:13.031 --> 00:04:15.870
+Click Format go to the Fill tab choose a
+
+00:04:15.883 --> 00:04:19.960
+blue and click OK twice The grid fills in
+
+00:04:19.973 --> 00:04:21.210
+like a Gantt chart
+
+00:04:28.141 --> 00:04:32.622
+Notice where the dollars sit H dollar 4  locks the
+
+00:04:32.635 --> 00:04:36.971
+row so each column reads its own week Dollar
+
+00:04:36.984 --> 00:04:40.604
+C5 and dollar D5 lock the columns so each
+
+00:04:40.617 --> 00:04:42.388
+row reads its own task
+
+00:04:43.859 --> 00:04:49.278
+Plans slip In D8, type equals C8 plus 34
+
+00:04:49.473 --> 00:04:54.121
+so system configuration runs ten days longer The bar
+
+00:04:54.135 --> 00:04:57.780
+stretches the grid colours an extra week and E8
+
+00:04:57.793 --> 00:04:59.421
+shows thirty-five days
+
+00:05:00.859 --> 00:05:04.284
+On Excel for Mac hold Command to select separate
+
+00:05:04.297 --> 00:05:07.903
+ranges Command R fills right Command 1 opens the
+
+00:05:07.916 --> 00:05:11.406
+Format pane and conditional formatting is on the Home
+
+00:05:11.419 --> 00:05:12.851
+tab under New Rule
+
+00:05:14.328 --> 00:05:17.310
+To recap a Gantt chart is a stacked bar
+
+00:05:17.323 --> 00:05:20.904
+with an invisible start reversed tasks and an axis
+
+00:05:20.917 --> 00:05:24.812
+that starts on day one The grid version needs
+
+00:05:24.825 --> 00:05:27.442
+one formula rule with mixed references
+
+00:05:28.922 --> 00:05:32.138
+Your challenge add a rule that colours this week's
+
+00:05:32.151 --> 00:05:36.711
+column orange in row 4 using TODAY The answer
+
+00:05:36.724 --> 00:05:39.158
+is on S11-11 Done

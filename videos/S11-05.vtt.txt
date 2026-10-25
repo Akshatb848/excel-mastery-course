@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:02.622
+By the end of this lesson you'll have a
+
+00:00:02.635 --> 00:00:06.958
+profit bridge revenue of four hundred eighty-five lakh rupees
+
+00:00:06.971 --> 00:00:09.888
+stepping down through every cost to a net profit
+
+00:00:09.901 --> 00:00:14.252
+of sixty-four lakh Finance heads use this chart to
+
+00:00:14.265 --> 00:00:16.088
+explain where the money went
+
+00:00:17.562 --> 00:00:21.703
+You'll write the subtotal formulas insert a waterfall and
+
+00:00:21.716 --> 00:00:28.202
+set the totals Practice sheet S11-05 recorded in Excel
+
+00:00:28.215 --> 00:00:31.379
+desktop I'll show the Mac menu at the end
+
+00:00:32.828 --> 00:00:36.435
+In a waterfall positive numbers step up and negative
+
+00:00:36.448 --> 00:00:40.877
+numbers step down Subtotals must be marked Set as
+
+00:00:40.890 --> 00:00:44.536
+total or Excel treats them as one more increase
+
+00:00:45.460 --> 00:00:48.078
+So costs go in as negative numbers
+
+00:00:49.547 --> 00:00:54.276
+The yellow cells need formulas In B4, type equals
+
+00:00:54.289 --> 00:00:58.729
+SUM open bracket B2 colon B3, close bracket and
+
+00:00:58.742 --> 00:01:03.351
+press Return Revenue plus a negative cost gives gross
+
+00:01:03.364 --> 00:01:05.669
+profit of two hundred twenty-four lakh
+
+00:01:07.156 --> 00:01:10.802
+In B9, EBITDA is gross profit less the operating
+
+00:01:10.815 --> 00:01:15.413
+costs equals SUM of B4 to B8 That's one
+
+00:01:15.426 --> 00:01:17.288
+hundred eight point five lakh
+
+00:01:18.765 --> 00:01:22.150
+In B13, net profit equals SUM of B9 to
+
+00:01:22.163 --> 00:01:25.121
+B12 Sixty-four lakh
+
+00:01:26.578 --> 00:01:30.929
+Select A1 to B13 On the Insert tab click
+
+00:01:30.942 --> 00:01:35.278
+Recommended Charts then All Charts Waterfall and OK
+
+00:01:36.765 --> 00:01:40.673
+Look at Gross profit It floats in mid-air as
+
+00:01:40.686 --> 00:01:43.785
+if it were another increase and so do EBITDA
+
+00:01:43.798 --> 00:01:47.978
+and Net profit Excel can't tell a subtotal from
+
+00:01:47.991 --> 00:01:50.400
+an ordinary number so we tell it
+
+00:01:51.875 --> 00:01:55.757
+Select just the Gross profit bar With a mouse
+
+00:01:55.770 --> 00:01:58.609
+you click the bar pause and click it again
+
+00:01:59.520 --> 00:02:02.059
+Here I pick it from the selection box on
+
+00:02:02.072 --> 00:02:05.705
+the Format tab click Format Selection and tick Set
+
+00:02:05.718 --> 00:02:08.960
+as total It drops to the axis
+
+00:02:10.422 --> 00:02:12.115
+Do the same for EBITDA
+
+00:02:19.687 --> 00:02:23.647
+And for Net profit Now the three totals stand
+
+00:02:23.660 --> 00:02:27.033
+on the axis and every cost hangs between them
+
+00:02:29.500 --> 00:02:35.555
+Click Chart Title type Profit bridge FY 2025-26 rupees
+
+00:02:35.568 --> 00:02:37.430
+in lakh and press Return
+
+00:02:38.922 --> 00:02:42.008
+Another classic mistake is typing a cost as a
+
+00:02:42.021 --> 00:02:47.609
+positive number Change B3 to two hundred sixty-one The
+
+00:02:47.622 --> 00:02:50.825
+cost bar now goes up and every total below
+
+00:02:50.838 --> 00:02:51.593
+it is wrong
+
+00:02:53.062 --> 00:02:57.283
+Press Command Z to undo Costs always go in
+
+00:02:57.296 --> 00:02:58.416
+with a minus sign
+
+00:02:59.890 --> 00:03:03.889
+Now prove it's live Change revenue in B2 to
+
+00:03:03.903 --> 00:03:08.616
+five hundred ten Every subtotal recalculates and the bridge
+
+00:03:08.629 --> 00:03:12.626
+redraws Net profit is now eighty-nine lakh
+
+00:03:14.078 --> 00:03:17.867
+On a Mac use Insert then the waterfall chart
+
+00:03:17.880 --> 00:03:22.088
+button or Recommended Charts Click a bar twice to
+
+00:03:22.101 --> 00:03:25.057
+select it and press Command 1 for the Format
+
+00:03:25.070 --> 00:03:26.658
+pane with Set as total
+
+00:03:28.125 --> 00:03:32.656
+To recap costs are negative subtotals are formulas and
+
+00:03:32.669 --> 00:03:35.456
+each subtotal bar must be set as a total
+
+00:03:36.937 --> 00:03:41.299
+Your challenge make tax a formula twenty-five point one
+
+00:03:41.312 --> 00:03:44.841
+seven percent of profit before tax rounded to two
+
+00:03:44.854 --> 00:03:50.168
+decimals The answer is on S11-05 Done

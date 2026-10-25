@@ -1,0 +1,475 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.720
+Welcome to today's explainer.
+
+00:00:01.720 --> 00:00:05.040
+If you have ever stared at a spreadsheet filled with raw numbers,
+
+00:00:05.040 --> 00:00:07.520
+you know it can feel completely overwhelming.
+
+00:00:07.520 --> 00:00:10.840
+Today, we are going to learn how to choose the right chart for your data
+
+00:00:10.840 --> 00:00:13.760
+and build it from start to finish using Microsoft Excel.
+
+00:00:13.760 --> 00:00:16.560
+Think of this process like building a house from the ground up.
+
+00:00:16.560 --> 00:00:18.720
+We are starting with raw materials,
+
+00:00:18.720 --> 00:00:20.160
+and by the end of this explainer,
+
+00:00:20.160 --> 00:00:22.800
+you will know exactly how to transform your office data
+
+00:00:22.800 --> 00:00:25.280
+into a clear and structured visual story.
+
+00:00:25.280 --> 00:00:27.280
+Okay, let's dive into this.
+
+00:00:27.280 --> 00:00:29.560
+Here is the clear four-part roadmap
+
+00:00:29.560 --> 00:00:30.800
+we will follow today.
+
+00:00:30.800 --> 00:00:33.040
+First, we will create your Excel chart.
+
+00:00:33.040 --> 00:00:35.720
+Second, we will fine-tune the chart elements.
+
+00:00:35.720 --> 00:00:37.840
+Third, we will update your chart data.
+
+00:00:37.840 --> 00:00:41.160
+And finally, we will export and analyze that data.
+
+00:00:41.160 --> 00:00:43.880
+Section one, create your Excel chart.
+
+00:00:43.880 --> 00:00:46.720
+This is the foundational phase of building our chart house,
+
+00:00:46.720 --> 00:00:50.000
+and I promise you getting started is surprisingly easy.
+
+00:00:50.000 --> 00:00:52.560
+Let's walk through the three steps to creating a chart.
+
+00:00:52.560 --> 00:00:54.560
+Step one is selecting your data.
+
+00:00:54.560 --> 00:00:56.920
+Step two is choosing a recommended chart.
+
+00:00:56.920 --> 00:00:59.000
+Excel has a great recommended charts feature
+
+00:00:59.000 --> 00:01:01.840
+that analyzes your data and removes a lot of the guesswork.
+
+00:01:01.840 --> 00:01:03.720
+But ultimately, you must choose the chart
+
+00:01:03.720 --> 00:01:06.200
+based on the specific question you want to answer.
+
+00:01:06.200 --> 00:01:07.560
+If you want to compare categories
+
+00:01:07.560 --> 00:01:09.840
+like branch sales across different cities,
+
+00:01:09.840 --> 00:01:12.520
+you should absolutely use a column or bar chart.
+
+00:01:12.520 --> 00:01:14.760
+On the other hand, if you want to show a trend over time
+
+00:01:14.760 --> 00:01:16.120
+like your monthly revenue,
+
+00:01:16.120 --> 00:01:18.040
+a line chart is the correct choice.
+
+00:01:18.040 --> 00:01:21.000
+Step three is simply clicking to create the chart.
+
+00:01:21.000 --> 00:01:23.760
+Now, you might be wondering about pivot charts.
+
+00:01:23.760 --> 00:01:26.280
+A pivot chart is a standalone interactive chart
+
+00:01:26.280 --> 00:01:28.160
+with built-in filtering controls.
+
+00:01:28.200 --> 00:01:30.000
+It lets you analyze a subset of your data
+
+00:01:30.000 --> 00:01:33.040
+without needing to create a pivot table first.
+
+00:01:33.040 --> 00:01:35.040
+This is the perfect tool for interacting
+
+00:01:35.040 --> 00:01:37.440
+with large amounts of data right from the start.
+
+00:01:37.440 --> 00:01:39.320
+For example, if you need to understand
+
+00:01:39.320 --> 00:01:40.560
+the share of a whole,
+
+00:01:40.560 --> 00:01:43.040
+like looking at your office expense share,
+
+00:01:43.040 --> 00:01:45.400
+you can use a pivot chart as a pie chart.
+
+00:01:45.400 --> 00:01:47.440
+But remember, you should only use a pie chart
+
+00:01:47.440 --> 00:01:49.360
+if you have two to five slices.
+
+00:01:49.360 --> 00:01:50.920
+If you have more categories than that,
+
+00:01:50.920 --> 00:01:53.440
+you really should use a bar chart or a tree map.
+
+00:01:53.440 --> 00:01:56.640
+You can also use pivot charts to understand distribution.
+
+00:01:56.640 --> 00:01:59.000
+You could use a histogram or a box and whisker plot
+
+00:01:59.000 --> 00:02:02.080
+to analyze things like employee salary bands.
+
+00:02:02.080 --> 00:02:04.920
+Section two, fine-tune chart elements.
+
+00:02:04.920 --> 00:02:08.200
+Now we move smoothly into the interior decorating phase
+
+00:02:08.200 --> 00:02:09.720
+where we customize our raw chart
+
+00:02:09.720 --> 00:02:12.880
+for absolute clarity and professional aesthetics.
+
+00:02:12.880 --> 00:02:15.040
+Now, what is really interesting about this slide
+
+00:02:15.040 --> 00:02:17.160
+is how customizing your chart elements
+
+00:02:17.160 --> 00:02:19.360
+instantly brings clarity to your data.
+
+00:02:19.360 --> 00:02:21.800
+You can easily add or remove chart titles
+
+00:02:21.800 --> 00:02:24.240
+to provide immediate context for the viewer.
+
+00:02:24.240 --> 00:02:25.480
+You can add data labels
+
+00:02:25.480 --> 00:02:28.120
+to show specific details right on the chart.
+
+00:02:28.120 --> 00:02:29.640
+You can also include error bars,
+
+00:02:29.640 --> 00:02:32.400
+which is a fantastic way to show standard deviations
+
+00:02:32.400 --> 00:02:34.800
+or percentages at a single glance.
+
+00:02:34.800 --> 00:02:36.400
+You can change colors and styles
+
+00:02:36.400 --> 00:02:37.680
+to match your company branding
+
+00:02:37.680 --> 00:02:41.200
+and even save your custom chart as a reusable template.
+
+00:02:41.200 --> 00:02:42.920
+However, there are specific formats
+
+00:02:42.920 --> 00:02:45.480
+you must avoid to keep things professional.
+
+00:02:45.480 --> 00:02:47.960
+You should steer clear of three-dimensional charts,
+
+00:02:47.960 --> 00:02:51.000
+pie charts with too many slices, and dual axes,
+
+00:02:51.040 --> 00:02:54.240
+unless you manage those dual axes with extreme care.
+
+00:02:54.240 --> 00:02:56.680
+Keep your designs clean and functional.
+
+00:02:56.680 --> 00:02:59.480
+Section three, update your chart data.
+
+00:02:59.480 --> 00:03:01.200
+The reality of any workplace
+
+00:03:01.200 --> 00:03:03.440
+is that data is constantly changing,
+
+00:03:03.440 --> 00:03:05.280
+so we need to know how easily our charts
+
+00:03:05.280 --> 00:03:07.600
+can adapt to new information.
+
+00:03:07.600 --> 00:03:09.800
+So what happens when your data changes?
+
+00:03:09.800 --> 00:03:12.120
+Do you have to delete your beautifully formatted chart
+
+00:03:12.120 --> 00:03:13.800
+and go all the way back to step one?
+
+00:03:13.800 --> 00:03:15.960
+Thankfully, the answer is no.
+
+00:03:15.960 --> 00:03:16.920
+If you look at the slide,
+
+00:03:16.920 --> 00:03:19.080
+you will see that you actually have powerful tools
+
+00:03:19.080 --> 00:03:21.480
+to manage new data without starting over.
+
+00:03:21.480 --> 00:03:24.600
+You can use chart filters or the select data source box
+
+00:03:24.600 --> 00:03:28.280
+to edit, rearrange, or add new data series effortlessly.
+
+00:03:28.280 --> 00:03:31.160
+You can show, hide, or integrate more worksheet data
+
+00:03:31.160 --> 00:03:32.600
+in a matter of seconds.
+
+00:03:32.600 --> 00:03:33.880
+This is particularly helpful
+
+00:03:33.880 --> 00:03:36.360
+when your data structure grows more complex.
+
+00:03:36.360 --> 00:03:38.120
+For example, if you add new variables
+
+00:03:38.120 --> 00:03:40.040
+to find a relationship between data points,
+
+00:03:40.040 --> 00:03:42.280
+you would update your data into a scatter chart.
+
+00:03:42.280 --> 00:03:44.080
+If you are tracking financial changes,
+
+00:03:44.080 --> 00:03:46.360
+you might feed new data into a waterfall chart
+
+00:03:46.360 --> 00:03:47.880
+to build a profit bridge.
+
+00:03:47.880 --> 00:03:49.320
+Or you could use a funnel chart
+
+00:03:49.320 --> 00:03:51.760
+to track stages in a sales pipeline.
+
+00:03:51.760 --> 00:03:54.800
+Section four, export and analyze data.
+
+00:03:54.800 --> 00:03:56.400
+This is the final phase.
+
+00:03:56.400 --> 00:03:57.760
+It's just like inviting guests over
+
+00:03:57.760 --> 00:03:58.880
+to see your finished house
+
+00:03:58.880 --> 00:04:02.240
+as we share our insights across different office programs.
+
+00:04:02.240 --> 00:04:03.920
+And this brilliantly illustrates
+
+00:04:03.920 --> 00:04:05.840
+exactly when you should build your chart directly
+
+00:04:05.840 --> 00:04:08.920
+in your document versus keeping it linked to Excel.
+
+00:04:08.920 --> 00:04:12.200
+When sharing your data, the scale dictates your workflow.
+
+00:04:12.200 --> 00:04:14.320
+If you only have a small amount of data to plot,
+
+00:04:14.320 --> 00:04:15.540
+you can create your chart directly
+
+00:04:15.540 --> 00:04:17.320
+within a Microsoft Word document.
+
+00:04:17.320 --> 00:04:19.280
+But if you have a large amount of data,
+
+00:04:19.280 --> 00:04:21.200
+or if that data changes regularly,
+
+00:04:21.200 --> 00:04:23.480
+you should definitely build it in Excel.
+
+00:04:23.480 --> 00:04:26.120
+You can then copy and paste it into Word or PowerPoint
+
+00:04:26.120 --> 00:04:27.160
+using the paste options
+
+00:04:27.160 --> 00:04:29.480
+that link back to the original Excel data.
+
+00:04:29.480 --> 00:04:30.640
+This ensures your presentation
+
+00:04:30.640 --> 00:04:32.920
+always shows the freshest numbers.
+
+00:04:32.920 --> 00:04:35.140
+You also have some incredible analysis tools
+
+00:04:35.140 --> 00:04:36.700
+available right in Excel.
+
+00:04:36.700 --> 00:04:39.120
+You can use slicers to quickly filter the data
+
+00:04:39.120 --> 00:04:40.840
+displayed in your pivot charts.
+
+00:04:40.840 --> 00:04:42.100
+Slicers are amazing
+
+00:04:42.100 --> 00:04:44.960
+because they help you explore data visually.
+
+00:04:44.960 --> 00:04:46.200
+You can combine these tools
+
+00:04:46.200 --> 00:04:49.000
+to build interactive dashboard-style reports.
+
+00:04:49.000 --> 00:04:50.300
+These dashboards are perfect
+
+00:04:50.300 --> 00:04:52.300
+for monitoring high-level office metrics,
+
+00:04:52.300 --> 00:04:54.240
+like comparing monthly revenue trends
+
+00:04:54.240 --> 00:04:56.880
+alongside regional branch sales in real time,
+
+00:04:56.880 --> 00:04:59.600
+often combining pivot tables with conditional formatting.
+
+00:04:59.600 --> 00:05:03.480
+Finally, you can use Copilot in Excel for AI assistance.
+
+00:05:03.480 --> 00:05:04.920
+As the quote on screen says,
+
+00:05:04.920 --> 00:05:07.840
+use Copilot in Excel to identify trends,
+
+00:05:07.840 --> 00:05:10.720
+summarize insights, and help create data visualizations
+
+00:05:10.720 --> 00:05:12.460
+from your workbook data.
+
+00:05:12.460 --> 00:05:13.760
+This means you don't have to do
+
+00:05:13.760 --> 00:05:15.360
+all the heavy lifting alone.
+
+00:05:15.360 --> 00:05:17.000
+Artificial intelligence can step in
+
+00:05:17.000 --> 00:05:18.680
+to elevate your analysis.
+
+00:05:18.680 --> 00:05:20.160
+It can summarize insights
+
+00:05:20.160 --> 00:05:22.560
+and build the correct visualizations for you
+
+00:05:22.560 --> 00:05:24.780
+based on the questions you need to answer,
+
+00:05:24.780 --> 00:05:27.880
+all without you needing to dig through menus.
+
+00:05:27.880 --> 00:05:29.860
+We've covered how to choose the correct chart
+
+00:05:29.860 --> 00:05:31.540
+based on the questions you are asking,
+
+00:05:31.540 --> 00:05:33.400
+how to customize the elements clearly,
+
+00:05:33.400 --> 00:05:35.180
+and how to analyze the results.
+
+00:05:35.180 --> 00:05:37.640
+You now know that creating a professional visualization
+
+00:05:37.640 --> 00:05:39.600
+is a very manageable process.
+
+00:05:39.600 --> 00:05:42.360
+So how will you visualize your next big project?
+
+00:05:42.360 --> 00:05:44.800
+I highly encourage you to open your spreadsheet today,
+
+00:05:44.840 --> 00:05:46.400
+match your data to the right chart type,
+
+00:05:46.400 --> 00:05:49.160
+and put this start to finish workflow into practice.
+
+00:05:49.160 --> 00:05:51.200
+Thank you for joining me for this explainer.

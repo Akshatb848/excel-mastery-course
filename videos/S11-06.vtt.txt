@@ -1,0 +1,193 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.755
+Three charts about how numbers are spread out a
+
+00:00:03.768 --> 00:00:07.779
+histogram of sixty order values a Pareto chart that
+
+00:00:07.792 --> 00:00:11.073
+shows which complaints cause most of the pain and
+
+00:00:11.086 --> 00:00:16.075
+a box plot comparing regions They answer questions averages
+
+00:00:16.088 --> 00:00:16.518
+hide
+
+00:00:17.953 --> 00:00:21.625
+You'll check the median and quartiles with formulas then
+
+00:00:21.638 --> 00:00:25.520
+build each chart and read it We're in Excel
+
+00:00:25.533 --> 00:00:28.372
+desktop the Mac menus are at the end
+
+00:00:29.860 --> 00:00:33.154
+A histogram counts how many values fall in each
+
+00:00:33.167 --> 00:00:37.844
+range called a bin A Pareto sorts categories largest
+
+00:00:37.857 --> 00:00:42.427
+first and adds a cumulative percentage line A box
+
+00:00:42.440 --> 00:00:46.086
+plot shows the median the middle half and unusual
+
+00:00:46.099 --> 00:00:46.763
+values
+
+00:00:48.219 --> 00:00:52.817
+First numbers to check the charts against In I3,
+
+00:00:52.830 --> 00:00:56.580
+type equals MEDIAN of C2 to C61 and press
+
+00:00:56.594 --> 00:01:00.682
+Return Half the orders are below about ten thousand
+
+00:01:00.695 --> 00:01:01.242
+rupees
+
+00:01:02.735 --> 00:01:07.045
+In I4, type equals QUARTILE dot INC open bracket
+
+00:01:07.188 --> 00:01:12.646
+C2 colon C61, comma 1 close bracket A quarter
+
+00:01:12.659 --> 00:01:14.651
+of orders are below this value
+
+00:01:16.141 --> 00:01:19.058
+In I5, the same formula with 3 gives the
+
+00:01:19.071 --> 00:01:23.200
+third quartile The middle half of all orders sits
+
+00:01:23.213 --> 00:01:25.114
+between I4 and I5
+
+00:01:26.547 --> 00:01:30.115
+Select C1 to C61, the order values with the
+
+00:01:30.128 --> 00:01:36.328
+header Insert Recommended Charts All Charts Histogram OK
+
+00:01:37.781 --> 00:01:42.523
+Excel's automatic bins have awkward edges On the Format
+
+00:01:42.536 --> 00:01:47.210
+tab pick Horizontal Category Axis and click Format Selection
+
+00:01:48.122 --> 00:01:51.494
+Set Bin width to five thousand then tick Overflow
+
+00:01:51.507 --> 00:01:52.939
+bin at thirty thousand
+
+00:01:54.406 --> 00:02:00.370
+Click Chart Title and type Order values FY 2025-26
+
+00:02:01.270 --> 00:02:04.213
+Most orders fall in the first few bins with
+
+00:02:04.226 --> 00:02:06.205
+a thin tail of large orders
+
+00:02:07.672 --> 00:02:14.171
+Now the complaints Select E1 to F9 Insert Recommended
+
+00:02:14.184 --> 00:02:18.690
+Charts All Charts Histogram then choose the Pareto option
+
+00:02:18.703 --> 00:02:22.700
+and click OK Excel sorts the bars for you
+
+00:02:22.713 --> 00:02:24.692
+and adds the cumulative line
+
+00:02:26.188 --> 00:02:30.253
+Read the line on the right axis Late delivery
+
+00:02:30.383 --> 00:02:33.781
+refund delay and wrong item together make up about
+
+00:02:33.794 --> 00:02:38.599
+three quarters of all complaints Fix those three first
+
+00:02:40.063 --> 00:02:43.527
+For the box plot a common mistake is selecting
+
+00:02:43.540 --> 00:02:48.841
+only the values Select C1 to C61 and insert
+
+00:02:48.854 --> 00:02:52.734
+a Box and Whisker chart You get one box
+
+00:02:52.747 --> 00:02:55.951
+for the whole company which hides the regional story
+
+00:02:57.438 --> 00:03:01.383
+Press Command Z Select B1 to C61 this time
+
+00:03:01.605 --> 00:03:05.224
+region and value together and insert the Box and
+
+00:03:05.237 --> 00:03:09.263
+Whisker again Now there's one box per region
+
+00:03:10.735 --> 00:03:13.639
+In each box the line is the median the
+
+00:03:13.652 --> 00:03:16.503
+box holds the middle half of orders and the
+
+00:03:16.516 --> 00:03:20.149
+dots are unusually large orders worth a closer look
+
+00:03:21.050 --> 00:03:24.721
+Compare the overall median in I3 with each region's
+
+00:03:24.735 --> 00:03:25.138
+line
+
+00:03:26.594 --> 00:03:29.719
+One big order shows why the median is useful
+
+00:03:30.620 --> 00:03:36.023
+In C2, type ninety-five thousand The histogram's overflow bar
+
+00:03:36.036 --> 00:03:38.640
+and a new dot appear while the median in
+
+00:03:38.653 --> 00:03:42.794
+I3 barely moves Press Command Z to undo
+
+00:03:44.266 --> 00:03:47.196
+On Excel for Mac these three live under the
+
+00:03:47.209 --> 00:03:51.753
+Insert tab's statistic chart button or Recommended Charts All
+
+00:03:51.766 --> 00:03:56.234
+Charts Command 1 opens the Format pane for bins
+
+00:03:57.703 --> 00:04:02.091
+To recap histograms show spread Pareto finds the vital
+
+00:04:02.104 --> 00:04:04.930
+few and box plots compare groups
+
+00:04:06.422 --> 00:04:10.003
+Your challenge in I7, count the orders above twenty
+
+00:04:10.016 --> 00:04:14.302
+thousand rupees with COUNTIF Check that the number matches
+
+00:04:14.315 --> 00:04:18.117
+the tall end of your histogram The answer is
+
+00:04:18.130 --> 00:04:20.760
+on S11-06 Done

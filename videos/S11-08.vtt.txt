@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.286
+We'll build a filled map of India with each
+
+00:00:03.300 --> 00:00:07.937
+state shaded by sales darker for higher sales It's
+
+00:00:07.950 --> 00:00:10.749
+the fastest way to show a national sales head
+
+00:00:10.763 --> 00:00:13.614
+where the business is strong and where it's thin
+
+00:00:15.078 --> 00:00:18.151
+You'll set up the data so Excel finds every
+
+00:00:18.164 --> 00:00:21.588
+state insert the map fix the names it can't
+
+00:00:21.601 --> 00:00:26.005
+place and zoom it to India Recorded in Excel
+
+00:00:26.018 --> 00:00:28.778
+desktop it needs an internet connection
+
+00:00:30.250 --> 00:00:33.154
+A map chart needs one column of places and
+
+00:00:33.167 --> 00:00:37.062
+one of values Add a Country column with India
+
+00:00:37.348 --> 00:00:41.437
+so Excel doesn't confuse Punjab or Hyderabad with places
+
+00:00:41.450 --> 00:00:45.369
+in other countries Use official state names
+
+00:00:46.860 --> 00:00:49.894
+Our sheet has Country in column A State in
+
+00:00:49.907 --> 00:00:54.128
+B and Sales in C for twenty states Select
+
+00:00:54.141 --> 00:00:55.729
+A1 to C21
+
+00:00:57.203 --> 00:01:03.299
+Insert Recommended Charts All Charts Map and OK Excel
+
+00:01:03.312 --> 00:01:06.072
+sends the place names to Bing and shades each
+
+00:01:06.085 --> 00:01:06.580
+state
+
+00:01:08.063 --> 00:01:11.620
+Look at the east and the far north Odisha
+
+00:01:11.633 --> 00:01:15.383
+and Jammu and Kashmir aren't shaded properly because our
+
+00:01:15.396 --> 00:01:18.859
+data says Orissa and J and K an old
+
+00:01:18.872 --> 00:01:22.297
+name and a short form This is the most
+
+00:01:22.310 --> 00:01:23.937
+common map chart problem
+
+00:01:25.422 --> 00:01:29.942
+Fix the source data In B15, type Odisha and
+
+00:01:29.955 --> 00:01:30.828
+press Return
+
+00:01:32.297 --> 00:01:35.995
+In B19, type Jammu and Kashmir and press Return
+
+00:01:36.908 --> 00:01:39.864
+The map refreshes and both regions are shaded
+
+00:01:41.344 --> 00:01:44.875
+Now zoom to India On the Format tab pick
+
+00:01:44.888 --> 00:01:49.705
+Series Sales and click Format Selection Set Map area
+
+00:01:49.719 --> 00:01:53.065
+to Only regions with data and Map labels to
+
+00:01:53.078 --> 00:01:53.820
+Show all
+
+00:01:55.297 --> 00:01:58.839
+Click Chart Title and type Sales by state FY
+
+00:01:58.852 --> 00:02:01.508
+2025-26
+
+00:02:02.985 --> 00:02:07.453
+The map is live Change Kerala's sales in C11
+
+00:02:07.466 --> 00:02:11.529
+to two crore ten lakh Kerala turns darker straight
+
+00:02:11.542 --> 00:02:11.958
+away
+
+00:02:13.453 --> 00:02:17.216
+On Excel for Mac go to Insert Maps Filled
+
+00:02:17.229 --> 00:02:22.947
+Map It needs Microsoft 365 and an internet connection and
+
+00:02:22.960 --> 00:02:25.981
+Command 1 opens the same series options
+
+00:02:27.453 --> 00:02:31.411
+To recap add a Country column use official names
+
+00:02:31.542 --> 00:02:33.950
+and zoom the map to regions with data
+
+00:02:35.422 --> 00:02:39.498
+Your challenge add Chhattisgarh with sales of thirty-four lakh
+
+00:02:39.511 --> 00:02:43.143
+in row 22 then extend the chart's data range
+
+00:02:43.156 --> 00:02:48.679
+with Select Data The answer is on S11-08 Done

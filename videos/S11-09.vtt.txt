@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.391
+We'll put a tiny trend line inside a cell
+
+00:00:03.404 --> 00:00:06.281
+for each of eight branches mark the best and
+
+00:00:06.294 --> 00:00:09.445
+worst months and add win-loss bars that show which
+
+00:00:09.458 --> 00:00:13.223
+months beat target A whole year per branch in
+
+00:00:13.236 --> 00:00:14.122
+one glance
+
+00:00:15.594 --> 00:00:19.604
+You'll insert line and win-loss sparklines mark points put
+
+00:00:19.617 --> 00:00:22.756
+them on a common scale and find each branch's
+
+00:00:22.769 --> 00:00:27.719
+best month Recorded in Excel desktop the Mac menus
+
+00:00:27.732 --> 00:00:28.474
+are the same
+
+00:00:29.969 --> 00:00:34.919
+Sparklines are tiny charts inside a single cell Line
+
+00:00:34.932 --> 00:00:38.552
+shows a trend Column shows each month's size and
+
+00:00:38.565 --> 00:00:41.742
+Win Loss shows only whether a value is above
+
+00:00:41.755 --> 00:00:45.310
+or below zero You pick a data range and
+
+00:00:45.323 --> 00:00:46.508
+a location range
+
+00:00:47.984 --> 00:00:50.992
+Rows 2 to 9 hold monthly sales in lakh
+
+00:00:51.005 --> 00:00:55.369
+for each branch April to March Select N2 to
+
+00:00:55.382 --> 00:00:57.530
+N9, where the sparklines will go
+
+00:00:59.015 --> 00:01:02.492
+On the Insert tab in the Sparklines group click
+
+00:01:02.505 --> 00:01:06.804
+Line For Data Range type B2 colon M9, then
+
+00:01:06.817 --> 00:01:07.650
+click OK
+
+00:01:09.140 --> 00:01:12.356
+On the Sparkline tab tick High Point and Low
+
+00:01:12.369 --> 00:01:16.317
+Point Each line now marks its best and worst
+
+00:01:16.330 --> 00:01:16.733
+month
+
+00:01:18.219 --> 00:01:22.570
+Here's the common mistake Each sparkline has its own
+
+00:01:22.583 --> 00:01:25.916
+scale so a small branch looks as dramatic as
+
+00:01:25.929 --> 00:01:29.992
+a big one Kolkata's line swings as much as
+
+00:01:30.005 --> 00:01:33.039
+Mumbai's even though the numbers are very different
+
+00:01:34.515 --> 00:01:38.710
+Fix it under Axis on the Sparkline tab Choose
+
+00:01:38.723 --> 00:01:42.173
+Same for All Sparklines for the vertical axis minimum
+
+00:01:42.330 --> 00:01:45.064
+then open Axis again and choose it for the
+
+00:01:45.077 --> 00:01:49.139
+maximum Now every line shares one scale
+
+00:01:50.594 --> 00:01:55.297
+Rows 12 to 19 show sales minus target Select
+
+00:01:55.310 --> 00:01:58.500
+N12 to N19, click Win Loss on the Insert
+
+00:01:58.513 --> 00:02:02.523
+tab type B12 colon M19 as the Data Range
+
+00:02:02.640 --> 00:02:03.721
+and click OK
+
+00:02:05.219 --> 00:02:09.752
+Tick Negative Points on the Sparkline tab Missed months
+
+00:02:09.765 --> 00:02:13.060
+turn red and patterns jump out like a branch
+
+00:02:13.073 --> 00:02:15.026
+that misses three months running
+
+00:02:16.500 --> 00:02:20.604
+Now name the best month In O2, type equals
+
+00:02:20.617 --> 00:02:24.953
+INDEX open bracket dollar B dollar 1  colon dollar M
+
+00:02:24.966 --> 00:02:29.809
+dollar 1 comma That's the row of month names locked
+
+00:02:31.281 --> 00:02:34.914
+Then MATCH open bracket MAX of B2 to M2,
+
+00:02:34.927 --> 00:02:39.015
+comma B2 to M2, comma zero and close both
+
+00:02:39.028 --> 00:02:44.486
+brackets MATCH finds where the highest sale sits Press
+
+00:02:44.499 --> 00:02:45.072
+Return
+
+00:02:46.547 --> 00:02:49.945
+Select O2 to O9 and press Command D Each
+
+00:02:49.958 --> 00:02:52.758
+branch shows the month of its peak matching the
+
+00:02:52.771 --> 00:02:54.060
+high point marker
+
+00:02:55.547 --> 00:02:59.154
+Change Pune's April sales in B3 to sixty lakh
+
+00:03:00.054 --> 00:03:03.283
+The sparkline spikes at the start the high point
+
+00:03:03.296 --> 00:03:05.888
+moves and O3 now says April
+
+00:03:07.359 --> 00:03:11.773
+On Excel for Mac it's Insert Sparklines then Line
+
+00:03:11.890 --> 00:03:16.306
+Column or Win Loss The Sparkline tab appears when
+
+00:03:16.319 --> 00:03:18.155
+you select a sparkline cell
+
+00:03:19.625 --> 00:03:23.922
+To recap sparklines live inside cells mark high and
+
+00:03:23.935 --> 00:03:27.320
+low points and use the same axis when comparing
+
+00:03:27.333 --> 00:03:27.815
+rows
+
+00:03:29.281 --> 00:03:32.745
+Your challenge change the line sparklines in N2 to
+
+00:03:32.758 --> 00:03:36.416
+N9 into column sparklines and mark the last point
+
+00:03:37.330 --> 00:03:40.754
+The answer is on S11-09 Done

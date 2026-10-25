@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.304
+Two charts that keep themselves up to date The
+
+00:00:04.317 --> 00:00:07.052
+line chart grows when you add a month and
+
+00:00:07.065 --> 00:00:09.760
+the column chart switches region when you pick from
+
+00:00:09.773 --> 00:00:12.820
+a dropdown with a title that changes too
+
+00:00:14.265 --> 00:00:17.117
+You'll build a chart on a Table a dropdown
+
+00:00:17.130 --> 00:00:20.346
+with INDEX and MATCH helper cells and a chart
+
+00:00:20.359 --> 00:00:26.025
+title linked to a cell Practice sheet S11-10 recorded
+
+00:00:26.038 --> 00:00:27.327
+in Excel desktop
+
+00:00:28.796 --> 00:00:31.504
+There are two ways to make a chart dynamic
+
+00:00:32.405 --> 00:00:35.035
+Build it on a Table so new rows join
+
+00:00:35.048 --> 00:00:38.590
+the chart Or build it on helper cells that
+
+00:00:38.603 --> 00:00:40.061
+a dropdown controls
+
+00:00:41.531 --> 00:00:44.409
+Click A1 and press Command T Check that My
+
+00:00:44.422 --> 00:00:48.473
+table has headers is ticked and click OK Our
+
+00:00:48.486 --> 00:00:51.169
+April to February sales are now a Table
+
+00:00:52.640 --> 00:00:56.130
+Select A1 to B12 and insert a line chart
+
+00:00:56.364 --> 00:00:59.775
+Recommended Charts All Charts Line OK
+
+00:01:01.234 --> 00:01:06.119
+Now March arrives In A13 type Mar press Tab
+
+00:01:06.327 --> 00:01:10.898
+type twenty-four lakh fifty-seven thousand and press Return The
+
+00:01:10.911 --> 00:01:13.502
+Table grows by a row and the chart picks
+
+00:01:13.515 --> 00:01:15.025
+up March by itself
+
+00:01:16.515 --> 00:01:20.239
+This is the mistake most monthly reports make charting
+
+00:01:20.252 --> 00:01:24.043
+a plain range Then March gets left out and
+
+00:01:24.056 --> 00:01:28.132
+someone stretches the range by hand every month A
+
+00:01:28.145 --> 00:01:29.759
+Table removes that chore
+
+00:01:31.234 --> 00:01:35.559
+Now the dropdown Select K1, then on the Data
+
+00:01:35.572 --> 00:01:40.403
+tab click Data Validation Set Allow to List Source
+
+00:01:40.416 --> 00:01:43.918
+to the region headers dollar E dollar 1  to dollar
+
+00:01:43.931 --> 00:01:46.236
+H dollar 1 and click OK
+
+00:01:47.703 --> 00:01:52.052
+In K5, type equals INDEX open bracket dollar E
+
+00:01:52.065 --> 00:01:56.676
+2 colon dollar H 2 comma That's April's four
+
+00:01:56.689 --> 00:02:00.700
+regional figures The columns are locked the row is
+
+00:02:00.713 --> 00:02:02.015
+free to move down
+
+00:02:03.468 --> 00:02:08.455
+Then MATCH open bracket dollar K dollar 1 comma dollar
+
+00:02:08.468 --> 00:02:13.090
+E dollar 1  colon dollar H dollar 1 comma zero and
+
+00:02:13.103 --> 00:02:17.611
+close both brackets MATCH finds which column the chosen
+
+00:02:17.624 --> 00:02:20.410
+region is in Press Return
+
+00:02:21.859 --> 00:02:25.791
+Select K5 to K16 and press Command D Column
+
+00:02:25.804 --> 00:02:28.708
+K now shows North's sales for every month
+
+00:02:30.187 --> 00:02:34.523
+In K2, build the title text equals quote FY
+
+00:02:34.536 --> 00:02:41.893
+2025-26 sales colon space quote ampersand K1 ampersand quote
+
+00:02:42.101 --> 00:02:45.671
+space region quote Press Return
+
+00:02:47.140 --> 00:02:51.177
+Select J4 to K16 and insert a clustered column
+
+00:02:51.190 --> 00:02:55.369
+chart Recommended Charts All Charts Column OK
+
+00:02:56.859 --> 00:03:01.405
+Link the title Select the chart title here I
+
+00:03:01.418 --> 00:03:05.533
+pick it from the Format tab's selection box Type
+
+00:03:05.546 --> 00:03:08.684
+an equals sign then the cell K2 on this
+
+00:03:08.697 --> 00:03:10.494
+sheet and press Return
+
+00:03:11.984 --> 00:03:16.049
+Now pick South from the dropdown in K1 The
+
+00:03:16.062 --> 00:03:19.642
+columns the numbers in K5 to K16 and the
+
+00:03:19.655 --> 00:03:21.426
+title all switch to South
+
+00:03:22.906 --> 00:03:25.992
+Everything here works the same in Excel for Mac
+
+00:03:26.200 --> 00:03:29.273
+Command T for a Table Data Validation on the
+
+00:03:29.286 --> 00:03:32.307
+Data tab and an equals sign in the formula
+
+00:03:32.320 --> 00:03:34.351
+bar to link a selected title
+
+00:03:35.828 --> 00:03:38.992
+To recap build charts on Tables so they grow
+
+00:03:39.174 --> 00:03:42.651
+drive charts from helper cells with INDEX and MATCH
+
+00:03:42.924 --> 00:03:44.825
+and link titles to cells
+
+00:03:46.265 --> 00:03:49.273
+Your challenge add an All India option to the
+
+00:03:49.286 --> 00:03:52.671
+dropdown that shows the total of all four regions
+
+00:03:53.572 --> 00:03:56.619
+The answer is on S11-10 Done

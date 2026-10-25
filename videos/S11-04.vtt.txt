@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.224
+Here's a chart finance teams love monthly sales as
+
+00:00:04.237 --> 00:00:07.596
+columns with gross margin percent as a line on
+
+00:00:07.609 --> 00:00:11.596
+its own scale on the right Below it sales
+
+00:00:11.609 --> 00:00:16.153
+against a flat target line Two very different numbers
+
+00:00:16.296 --> 00:00:17.533
+one clear picture
+
+00:00:19.000 --> 00:00:22.307
+You'll calculate margin build a combo chart with a
+
+00:00:22.320 --> 00:00:27.140
+secondary axis and add a target line Practice sheet
+
+00:00:27.153 --> 00:00:32.492
+S11-04 recorded in Excel desktop with the same menus
+
+00:00:32.505 --> 00:00:33.872
+as Excel for Mac
+
+00:00:35.344 --> 00:00:39.708
+A combo chart mixes two chart types Columns show
+
+00:00:39.721 --> 00:00:43.745
+rupee amounts on the left axis A line shows
+
+00:00:43.758 --> 00:00:48.041
+a percentage or a target Use a secondary axis
+
+00:00:48.054 --> 00:00:50.997
+only when the line's numbers are on a completely
+
+00:00:51.010 --> 00:00:52.013
+different scale
+
+00:00:53.500 --> 00:00:57.486
+First we need the margin In D2, type equals
+
+00:00:57.500 --> 00:01:02.109
+C2 divided by B2 and press Return Gross profit
+
+00:01:02.122 --> 00:01:05.833
+divided by sales the column is already formatted as
+
+00:01:05.846 --> 00:01:06.744
+a percentage
+
+00:01:08.188 --> 00:01:11.352
+Select D2 to D13 and press Command D to
+
+00:01:11.365 --> 00:01:15.885
+fill down April's margin is about 23 percent
+
+00:01:17.344 --> 00:01:20.938
+We want months sales and margin but not gross
+
+00:01:20.951 --> 00:01:24.625
+profit In the Name Box I type A1 to
+
+00:01:24.638 --> 00:01:28.948
+B13, a comma then D1 to D13 With a
+
+00:01:28.961 --> 00:01:32.385
+mouse hold Command while you drag the second range
+
+00:01:33.860 --> 00:01:38.471
+Now the common mistake Insert a plain clustered column
+
+00:01:38.485 --> 00:01:42.651
+chart Recommended Charts All Charts Column OK
+
+00:01:44.110 --> 00:01:48.448
+The margin bars are invisible Margins are less than
+
+00:01:48.461 --> 00:01:51.573
+one and the axis runs to lakhs of rupees
+
+00:01:51.716 --> 00:01:55.323
+so they sit flat on the floor One axis
+
+00:01:55.336 --> 00:01:56.547
+can't serve both
+
+00:01:58.016 --> 00:02:00.685
+Fix it with Change Chart Type on the Chart
+
+00:02:00.698 --> 00:02:05.505
+Design tab Choose Combo set Margin percent to Line
+
+00:02:05.518 --> 00:02:09.138
+with Markers tick its Secondary Axis box and click
+
+00:02:09.151 --> 00:02:12.575
+OK The line now has its own scale on
+
+00:02:12.588 --> 00:02:13.200
+the right
+
+00:02:14.672 --> 00:02:19.934
+Label the new axis Add Chart Element Axis Titles
+
+00:02:20.065 --> 00:02:24.987
+Secondary Vertical Click the new Axis Title type Margin
+
+00:02:25.000 --> 00:02:26.679
+percent and press Return
+
+00:02:28.172 --> 00:02:32.117
+Click Chart Title type Sales and margin percent FY
+
+00:02:32.130 --> 00:02:36.011
+2025-26 and press Return
+
+00:02:37.485 --> 00:02:41.992
+Now a target line Select A1 to B13 and
+
+00:02:42.005 --> 00:02:46.432
+E1 to E13, then Insert Recommended Charts All Charts
+
+00:02:46.563 --> 00:02:47.070
+Combo
+
+00:02:48.547 --> 00:02:52.167
+Set Target to Line and leave Secondary Axis unticked
+
+00:02:53.080 --> 00:02:56.114
+Target and sales are both rupees so they share
+
+00:02:56.127 --> 00:03:00.151
+one axis Put a target on a secondary axis
+
+00:03:00.164 --> 00:03:03.927
+and it floats at the wrong height Click OK
+
+00:03:05.391 --> 00:03:10.393
+Targets change mid-year Select E2 to E13, type twenty-eight
+
+00:03:10.406 --> 00:03:13.974
+lakh and press Control Return to fill every selected
+
+00:03:13.987 --> 00:03:17.385
+cell at once The line jumps up and you
+
+00:03:17.398 --> 00:03:20.028
+see straight away which months fall short
+
+00:03:21.531 --> 00:03:24.864
+On Excel for Mac hold Command to select separate
+
+00:03:24.877 --> 00:03:28.484
+ranges and Control Return fills a selection with one
+
+00:03:28.497 --> 00:03:32.666
+entry Change Chart Type sits on the Chart Design
+
+00:03:32.679 --> 00:03:34.723
+tab exactly as here
+
+00:03:36.188 --> 00:03:39.821
+To recap combo charts mix columns and lines a
+
+00:03:39.834 --> 00:03:43.258
+secondary axis is only for different units and a
+
+00:03:43.271 --> 00:03:45.993
+target in rupees shares the main axis
+
+00:03:47.469 --> 00:03:50.893
+Your challenge in G1, count how many months are
+
+00:03:50.907 --> 00:03:55.284
+below the target in E2, using COUNTIF The answer
+
+00:03:55.297 --> 00:03:58.070
+is on S11-04 Done

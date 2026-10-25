@@ -1,0 +1,229 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.417
+This is plain sales data turned into a chart
+
+00:00:03.430 --> 00:00:07.169
+your manager reads in two seconds The bars are
+
+00:00:07.182 --> 00:00:10.789
+sorted the clutter is gone and one product stands
+
+00:00:10.802 --> 00:00:14.669
+out in orange Change one cell and the highlight
+
+00:00:14.682 --> 00:00:15.164
+moves
+
+00:00:16.640 --> 00:00:19.544
+You'll sort the data highlight one bar with a
+
+00:00:19.557 --> 00:00:22.916
+helper column strip the clutter and save the look
+
+00:00:22.929 --> 00:00:27.371
+as a template We're recording in Excel desktop the
+
+00:00:27.384 --> 00:00:33.244
+menus match Excel for Mac Practice sheet S11-03
+
+00:00:34.734 --> 00:00:39.085
+Here's the idea A helper column repeats the sales
+
+00:00:39.098 --> 00:00:42.158
+only for the product named in F1 and returns
+
+00:00:42.171 --> 00:00:45.752
+hash N A for the rest Charts don't draw
+
+00:00:45.765 --> 00:00:48.668
+hash N A so the helper draws just one
+
+00:00:48.681 --> 00:00:51.637
+bar which we lay on top of the original
+
+00:00:53.109 --> 00:00:57.629
+First sort Select A1 to B9, then on the
+
+00:00:57.642 --> 00:01:02.382
+Data tab click Sort Sort by Sales order Largest
+
+00:01:02.395 --> 00:01:07.030
+to Smallest and click OK A sorted chart reads
+
+00:01:07.043 --> 00:01:08.072
+like a ranking
+
+00:01:09.547 --> 00:01:13.037
+In C2, type equals IF open bracket then the
+
+00:01:13.050 --> 00:01:18.885
+test A2 equals dollar F dollar 1 comma F1 holds
+
+00:01:18.898 --> 00:01:21.776
+the product to highlight and the dollars lock it
+
+00:01:21.789 --> 00:01:22.817
+for every row
+
+00:01:24.297 --> 00:01:27.526
+If it matches return B2, the sales then a
+
+00:01:27.539 --> 00:01:28.047
+comma
+
+00:01:29.531 --> 00:01:34.364
+Otherwise return NA open and close bracket Close the
+
+00:01:34.377 --> 00:01:36.135
+IF bracket and press Return
+
+00:01:37.593 --> 00:01:40.640
+Select C2 to C9 and press Command D to
+
+00:01:40.653 --> 00:01:46.228
+fill down Only Sunflower Oil shows a number Every
+
+00:01:46.241 --> 00:01:49.418
+other row shows hash N A which is exactly
+
+00:01:49.431 --> 00:01:50.434
+what we want
+
+00:01:51.890 --> 00:01:56.059
+Select A1 to C9 On the Insert tab click
+
+00:01:56.072 --> 00:01:59.809
+Recommended Charts go to All Charts choose Bar and
+
+00:01:59.822 --> 00:02:00.603
+click OK
+
+00:02:09.765 --> 00:02:13.699
+Look at the chart The orange bar sits beside
+
+00:02:13.712 --> 00:02:15.900
+a blue one instead of on top of it
+
+00:02:16.069 --> 00:02:19.728
+and the biggest product is at the bottom Both
+
+00:02:19.741 --> 00:02:22.697
+are default settings and both are quick to fix
+
+00:02:24.156 --> 00:02:27.294
+On the Format tab open the selection box on
+
+00:02:27.307 --> 00:02:30.575
+the left and pick Series Highlight then click Format
+
+00:02:30.588 --> 00:02:34.848
+Selection On a Mac Command 1 opens the same
+
+00:02:34.861 --> 00:02:39.392
+pane Set Series Overlap to one hundred percent and
+
+00:02:39.406 --> 00:02:40.760
+Gap Width to sixty
+
+00:02:42.203 --> 00:02:46.474
+Open the same selection box pick Vertical Category Axis
+
+00:02:46.487 --> 00:02:51.333
+and click Format Selection Tick Categories in reverse order
+
+00:02:52.257 --> 00:02:55.356
+The biggest product moves to the top just like
+
+00:02:55.369 --> 00:02:56.398
+the sorted table
+
+00:02:57.875 --> 00:03:02.552
+Now remove clutter On Chart Design click Add Chart
+
+00:03:02.565 --> 00:03:08.112
+Element Gridlines and switch off Primary Major Vertical Then
+
+00:03:08.125 --> 00:03:10.651
+Add Chart Element Legend None
+
+00:03:25.750 --> 00:03:29.109
+Add data labels at Outside End so nobody needs
+
+00:03:29.122 --> 00:03:34.203
+the value axis Then Add Chart Element Axes and
+
+00:03:34.216 --> 00:03:38.109
+switch off Primary Horizontal because the labels do its
+
+00:03:38.122 --> 00:03:38.838
+job now
+
+00:03:51.203 --> 00:03:54.237
+Click Chart Title and type a title that states
+
+00:03:54.250 --> 00:03:58.000
+the message Sunflower Oil 1L, our number 2 product
+
+00:03:58.208 --> 00:04:03.223
+FY 2025-26 Press Return
+
+00:04:04.687 --> 00:04:08.999
+Here's the payoff In F1, type Ghee 1L and
+
+00:04:09.012 --> 00:04:13.296
+press Return The orange highlight jumps to Ghee so
+
+00:04:13.309 --> 00:04:16.082
+in a review you can spotlight any product in
+
+00:04:16.095 --> 00:04:16.733
+seconds
+
+00:04:18.203 --> 00:04:21.732
+To reuse this design right-click the chart and choose
+
+00:04:21.745 --> 00:04:25.757
+Save as Template Next time pick it from All
+
+00:04:25.770 --> 00:04:30.653
+Charts Templates On a Mac Control-click the chart for
+
+00:04:30.666 --> 00:04:31.617
+the same menu
+
+00:04:33.078 --> 00:04:36.476
+On Excel for Mac Command 1 opens the Format
+
+00:04:36.489 --> 00:04:39.810
+pane for whatever is selected and the Format tab
+
+00:04:39.823 --> 00:04:43.926
+has the same Chart Elements box Excel for the
+
+00:04:43.939 --> 00:04:47.195
+web can't save chart templates so do that step
+
+00:04:47.208 --> 00:04:47.950
+on your Mac
+
+00:04:49.406 --> 00:04:52.883
+To recap sort before you chart use a helper
+
+00:04:52.896 --> 00:04:56.216
+column with NA to highlight one bar and remove
+
+00:04:56.229 --> 00:04:58.521
+anything that doesn't help the message
+
+00:04:59.968 --> 00:05:03.523
+Your challenge replace the typed name in F1 with
+
+00:05:03.536 --> 00:05:06.648
+a formula that always picks the top seller so
+
+00:05:06.661 --> 00:05:12.587
+the highlight updates itself The answer is on S11-03
+
+00:05:12.600 --> 00:05:13.043
+Done
