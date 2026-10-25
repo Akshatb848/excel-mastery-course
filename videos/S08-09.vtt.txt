@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:05.037
+This receivables list colours whole rows Paid invoices go
+
+00:00:05.050 --> 00:00:08.579
+green unpaid ones past their due date go red
+
+00:00:08.748 --> 00:00:11.639
+and unpaid ones due in the next seven days
+
+00:00:11.652 --> 00:00:16.092
+go yellow Your collections team sees the priorities at
+
+00:00:16.105 --> 00:00:16.808
+a glance
+
+00:00:18.512 --> 00:00:19.580
+Here's the plan
+
+00:00:21.300 --> 00:00:24.204
+A formula rule colours a cell when its formula
+
+00:00:24.217 --> 00:00:28.294
+returns TRUE Write the formula for the first row
+
+00:00:28.307 --> 00:00:31.901
+of your selection Put a dollar sign before the
+
+00:00:31.914 --> 00:00:34.844
+column letter so every cell in the row looks
+
+00:00:34.857 --> 00:00:35.977
+at the same column
+
+00:00:37.696 --> 00:00:42.490
+Here's the practice sheet Fifteen invoices and the report
+
+00:00:42.503 --> 00:00:46.149
+date is in J1 We keep it fixed here
+
+00:00:46.162 --> 00:00:50.003
+so your screen matches mine At work you'd use
+
+00:00:50.016 --> 00:00:51.097
+the TODAY function
+
+00:00:52.820 --> 00:00:57.080
+Select A2 to F16 On the Home tab choose
+
+00:00:57.093 --> 00:01:00.895
+Conditional Formatting New Rule and pick Use a formula
+
+00:01:00.908 --> 00:01:03.096
+to determine which cells to format
+
+00:01:04.800 --> 00:01:09.724
+Here's the common mistake first Type equals F2 equals
+
+00:01:09.737 --> 00:01:13.695
+Paid in quotes with no dollar sign Choose a
+
+00:01:13.708 --> 00:01:15.336
+green fill and click OK
+
+00:01:17.068 --> 00:01:21.067
+The colours land in odd places Without the dollar
+
+00:01:21.081 --> 00:01:25.065
+sign cell B2 checks G2, cell C2 checks H2,
+
+00:01:25.078 --> 00:01:28.880
+and so on Press Command Z to undo it
+
+00:01:30.584 --> 00:01:34.113
+Open New Rule again choose the formula type and
+
+00:01:34.126 --> 00:01:38.958
+this time type equals dollar F2 equals Paid Green
+
+00:01:38.972 --> 00:01:43.255
+fill OK Paid rows turn green from end to
+
+00:01:43.268 --> 00:01:43.646
+end
+
+00:01:45.372 --> 00:01:50.973
+Next overdue New Rule formula type and enter equals
+
+00:01:50.986 --> 00:01:56.051
+AND open bracket dollar F2 equals Unpaid comma dollar
+
+00:01:56.064 --> 00:02:00.595
+D2 less than dollar J dollar 1 Close the bracket
+
+00:02:01.481 --> 00:02:03.916
+Choose the light red fill and click OK
+
+00:02:05.656 --> 00:02:10.515
+Last due this week The formula is AND dollar
+
+00:02:10.528 --> 00:02:14.499
+F2 equals Unpaid dollar D2 greater than or equal
+
+00:02:14.512 --> 00:02:17.663
+to J1, and dollar D2 less than or equal
+
+00:02:17.676 --> 00:02:21.817
+to J1 plus 7 Yellow fill OK
+
+00:02:23.516 --> 00:02:27.463
+Now move the report date forward a week In
+
+00:02:27.476 --> 00:02:33.531
+J1, type equals DATE open bracket 2026 comma 10
+
+00:02:33.661 --> 00:02:38.349
+comma 30 close and press Return More rows turn
+
+00:02:38.362 --> 00:02:40.471
+red and new ones turn yellow
+
+00:02:42.192 --> 00:02:45.200
+If two rules ever fight over a cell open
+
+00:02:45.213 --> 00:02:48.247
+Manage Rules and move the more important rule up
+
+00:02:49.147 --> 00:02:50.788
+The rule at the top wins
+
+00:02:52.492 --> 00:02:53.560
+A Mac note
+
+00:02:55.280 --> 00:02:56.491
+Here's the recap
+
+00:02:58.212 --> 00:03:02.420
+Your turn In column G show the days overdue
+
+00:03:02.433 --> 00:03:06.040
+for unpaid invoices past the report date and leave
+
+00:03:06.053 --> 00:03:11.704
+it blank otherwise The answer is on the S08-09
+
+00:03:11.717 --> 00:03:12.498
+Done sheet

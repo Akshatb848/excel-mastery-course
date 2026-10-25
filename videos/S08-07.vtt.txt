@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.391
+Pick a state in B1, and the City dropdown
+
+00:00:03.404 --> 00:00:06.464
+in B2 offers only the cities of that state
+
+00:00:07.377 --> 00:00:09.981
+The lists come from a Table so when you
+
+00:00:09.994 --> 00:00:12.325
+add a new state or city to the Table
+
+00:00:12.455 --> 00:00:14.916
+both dropdowns grow by themselves
+
+00:00:16.391 --> 00:00:17.459
+Here's the plan
+
+00:00:18.938 --> 00:00:21.724
+The trick is to let formulas build the lists
+
+00:00:21.868 --> 00:00:24.889
+then point each dropdown at a spill range with
+
+00:00:24.902 --> 00:00:28.797
+a hash sign G2 hash means the whole result
+
+00:00:28.810 --> 00:00:31.766
+of the formula in G2, however long it is
+
+00:00:33.219 --> 00:00:37.388
+Here's the practice sheet The state and city pairs
+
+00:00:37.401 --> 00:00:41.789
+are in a Table called tblCities The dropdowns go
+
+00:00:41.802 --> 00:00:43.273
+in B1 and B2
+
+00:00:44.735 --> 00:00:49.292
+In G2, type equals SORT open bracket UNIQUE open
+
+00:00:49.305 --> 00:00:55.089
+bracket tblCities square bracket State Close everything and press
+
+00:00:55.102 --> 00:00:59.698
+Return Four states sorted and listed once each
+
+00:01:01.188 --> 00:01:05.956
+Now the state dropdown Click B1, then Data Data
+
+00:01:05.969 --> 00:01:10.982
+Validation Allow List and for Source type equals dollar
+
+00:01:10.995 --> 00:01:14.172
+G dollar 2  hash Click OK
+
+00:01:15.625 --> 00:01:18.568
+Open the dropdown with Option and the down arrow
+
+00:01:18.698 --> 00:01:19.883
+and pick Karnataka
+
+00:01:21.375 --> 00:01:25.856
+Now the city list In H2, type equals SORT
+
+00:01:26.039 --> 00:01:32.328
+open bracket FILTER open bracket tblCities City comma tblCities
+
+00:01:32.341 --> 00:01:37.223
+State equals B1 Close both brackets and press Return
+
+00:01:38.719 --> 00:01:42.849
+Only the four Karnataka cities Click B2 and add
+
+00:01:42.862 --> 00:01:46.612
+a List validation with Source equals dollar H dollar 2 
+
+00:01:46.625 --> 00:01:48.916
+hash Click OK
+
+00:01:50.391 --> 00:01:52.409
+Open B2 and pick Mysuru
+
+00:01:53.891 --> 00:01:58.112
+Here's the common mistake Change the state in B1
+
+00:01:58.125 --> 00:02:01.536
+to Tamil Nadu The city list on the right
+
+00:02:01.549 --> 00:02:05.364
+changes but B2 still says Mysuru which isn't in
+
+00:02:05.377 --> 00:02:09.896
+Tamil Nadu A dropdown doesn't clear an old answer
+
+00:02:11.360 --> 00:02:15.685
+Add a check In B3, type equals IF open
+
+00:02:15.698 --> 00:02:19.891
+bracket COUNTIF of H2 hash comma B2, comma OK
+
+00:02:19.904 --> 00:02:23.393
+in quotes comma Pick the city again in quotes
+
+00:02:24.292 --> 00:02:25.841
+Close and press Return
+
+00:02:27.313 --> 00:02:31.456
+It warns us Pick Chennai in B2, and B3
+
+00:02:31.469 --> 00:02:32.719
+changes to OK
+
+00:02:34.204 --> 00:02:38.568
+Now prove the lists grow Click D18, just below
+
+00:02:38.581 --> 00:02:43.256
+the Table Type Kerala press Tab type Kochi and
+
+00:02:43.269 --> 00:02:46.967
+press Return The Table takes in the new row
+
+00:02:48.438 --> 00:02:51.602
+The state list in G now includes Kerala and
+
+00:02:51.615 --> 00:02:55.953
+so does the B1 dropdown No ranges to edit
+
+00:02:57.422 --> 00:02:58.490
+A Mac note
+
+00:02:59.969 --> 00:03:01.180
+Here's the recap
+
+00:03:02.672 --> 00:03:06.398
+Your turn Make the city list show the words
+
+00:03:06.411 --> 00:03:10.369
+Pick a state first when B1 is empty Use
+
+00:03:10.382 --> 00:03:14.171
+the third argument of FILTER The answer is on
+
+00:03:14.185 --> 00:03:17.283
+the S08-07 Done sheet

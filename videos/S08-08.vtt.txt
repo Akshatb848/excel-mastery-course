@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:05.050
+This branch report reads itself Green for branches above
+
+00:00:05.063 --> 00:00:08.579
+target arrows for the trend data bars for size
+
+00:00:08.709 --> 00:00:11.730
+the top three highlighted and a colour scale on
+
+00:00:11.743 --> 00:00:12.993
+customer ratings
+
+00:00:14.696 --> 00:00:15.764
+Here's the plan
+
+00:00:17.484 --> 00:00:21.065
+Conditional formatting changes a cell's look based on its
+
+00:00:21.078 --> 00:00:25.051
+value Select the cells first then pick a rule
+
+00:00:25.064 --> 00:00:30.767
+from Home Conditional Formatting Rules recalculate whenever the numbers
+
+00:00:30.780 --> 00:00:31.314
+change
+
+00:00:33.040 --> 00:00:36.673
+Here's the practice sheet twelve branches and a total
+
+00:00:36.686 --> 00:00:41.987
+row Select E2 to E13, the achievement percentages without
+
+00:00:42.000 --> 00:00:42.638
+the total
+
+00:00:44.348 --> 00:00:48.437
+On the Home tab choose Conditional Formatting Highlight Cells
+
+00:00:48.450 --> 00:00:49.947
+Rules Greater Than
+
+00:00:51.648 --> 00:00:55.398
+Type 100 percent choose Green Fill with Dark Green
+
+00:00:55.411 --> 00:01:00.582
+Text and click OK Branches above target turn green
+
+00:01:02.284 --> 00:01:06.765
+Now data bars on Achieved Here's the common mistake
+
+00:01:07.664 --> 00:01:11.713
+Select D2 to D14, including the total then Conditional
+
+00:01:11.726 --> 00:01:14.708
+Formatting Data Bars Blue Data Bar
+
+00:01:16.400 --> 00:01:19.121
+The total row gets the longest bar by far
+
+00:01:19.265 --> 00:01:23.277
+and every branch bar shrinks to a sliver Press
+
+00:01:23.290 --> 00:01:27.795
+Command Z Then select D2 to D13 only and
+
+00:01:27.808 --> 00:01:29.814
+apply the blue data bars again
+
+00:01:31.524 --> 00:01:35.300
+With D2 to D13 still selected choose Top Bottom
+
+00:01:35.313 --> 00:01:39.912
+Rules Top 10 Items Change ten to 3 pick
+
+00:01:39.925 --> 00:01:43.180
+Yellow Fill with Dark Yellow Text and click OK
+
+00:01:44.896 --> 00:01:49.013
+Now a colour scale on ratings Select F2 to
+
+00:01:49.026 --> 00:01:54.052
+F13, then Color Scales Green Yellow Red High ratings
+
+00:01:54.065 --> 00:01:56.018
+go green low ones red
+
+00:01:57.716 --> 00:02:02.236
+And icon sets Select E2 to E13, then Icon
+
+00:02:02.249 --> 00:02:06.768
+Sets 3 Arrows Colored Green up arrows mark the
+
+00:02:06.781 --> 00:02:07.510
+top third
+
+00:02:09.264 --> 00:02:13.808
+To see every rule choose Conditional Formatting Manage Rules
+
+00:02:14.696 --> 00:02:17.313
+Each rule shows its format and the range it
+
+00:02:17.326 --> 00:02:21.089
+applies to Rules higher in the list win when
+
+00:02:21.102 --> 00:02:22.248
+two of them clash
+
+00:02:23.956 --> 00:02:28.528
+Close the rules pane Now change Vashi's achieved figure
+
+00:02:28.541 --> 00:02:31.445
+in D9 to 90 lakh and watch the bar
+
+00:02:31.627 --> 00:02:34.062
+the highlight and the arrow update together
+
+00:02:35.792 --> 00:02:36.860
+A Mac note
+
+00:02:38.580 --> 00:02:39.791
+Here's the recap
+
+00:02:41.512 --> 00:02:46.410
+Your turn Highlight the bottom three achievement percentages in
+
+00:02:46.423 --> 00:02:50.733
+light red using Top Bottom Rules Bottom 10 Items
+
+00:02:51.631 --> 00:02:54.027
+The Done sheet shows the finished report

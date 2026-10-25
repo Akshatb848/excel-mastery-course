@@ -1,0 +1,121 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.654
+This month-end checklist has real checkboxes inside the cells
+
+00:00:05.541 --> 00:00:08.210
+Tick a task and its row turns green and
+
+00:00:08.223 --> 00:00:11.453
+the counts on the right update done pending and
+
+00:00:11.466 --> 00:00:12.585
+percent complete
+
+00:00:14.063 --> 00:00:15.131
+Here's the plan
+
+00:00:16.610 --> 00:00:19.774
+A cell checkbox is just a cell holding TRUE
+
+00:00:19.787 --> 00:00:24.177
+or FALSE drawn as a box Ticked means TRUE
+
+00:00:25.076 --> 00:00:28.279
+So any formula that works with TRUE and FALSE
+
+00:00:28.292 --> 00:00:29.854
+works with checkboxes
+
+00:00:31.328 --> 00:00:36.330
+Here's the practice sheet ten month-end tasks Select D2
+
+00:00:36.343 --> 00:00:37.294
+to D11
+
+00:00:38.782 --> 00:00:43.263
+On the Insert tab click Checkbox Each cell now
+
+00:00:43.276 --> 00:00:44.800
+shows an empty box
+
+00:00:46.266 --> 00:00:50.161
+Tick a few Select D2 and press the Space
+
+00:00:50.174 --> 00:00:54.393
+bar Do the same for D3, D5 and D8
+
+00:00:55.875 --> 00:01:01.294
+Now count In G1, type equals COUNTIF open bracket
+
+00:01:01.424 --> 00:01:06.307
+D2 to D11, comma TRUE Close and press Return
+
+00:01:07.205 --> 00:01:08.651
+Four tasks are done
+
+00:01:10.094 --> 00:01:13.167
+In G2, the same with FALSE for pending tasks
+
+00:01:14.054 --> 00:01:17.791
+In G3, type equals G1 divided by COUNTA of
+
+00:01:17.804 --> 00:01:20.461
+A2 to A11 for percent complete
+
+00:01:21.953 --> 00:01:26.630
+Now colour finished rows Select A2 to D11, then
+
+00:01:26.643 --> 00:01:32.476
+Home Conditional Formatting New Rule using a formula Type
+
+00:01:32.489 --> 00:01:36.057
+equals dollar D2 equals TRUE choose a green fill
+
+00:01:36.070 --> 00:01:37.085
+and click OK
+
+00:01:38.563 --> 00:01:42.341
+Tick D9 with the Space bar The row turns
+
+00:01:42.354 --> 00:01:44.047
+green and the counts move
+
+00:01:45.532 --> 00:01:50.534
+Here's the common mistake Select D11, an unticked box
+
+00:01:50.664 --> 00:01:54.818
+and press Delete to clear it The checkbox itself
+
+00:01:54.831 --> 00:01:58.294
+disappears and pending drops to four because the cell
+
+00:01:58.308 --> 00:01:59.466
+is now empty
+
+00:02:00.953 --> 00:02:04.588
+Press Command Z to bring it back To untick
+
+00:02:04.601 --> 00:02:07.166
+a box press Space not Delete
+
+00:02:08.657 --> 00:02:11.313
+The same idea makes an attendance sheet
+
+00:02:12.782 --> 00:02:13.850
+A Mac note
+
+00:02:15.328 --> 00:02:16.539
+Here's the recap
+
+00:02:18.016 --> 00:02:21.989
+Your turn In G5, count the tasks that are
+
+00:02:22.002 --> 00:02:26.182
+still pending for Rahul You need two conditions so
+
+00:02:26.195 --> 00:02:31.625
+use COUNTIFS The answer is on the S08-11 Done
+
+00:02:31.638 --> 00:02:32.120
+sheet

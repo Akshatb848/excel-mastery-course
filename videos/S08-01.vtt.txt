@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.343
+This sales list is now an Excel Table It
+
+00:00:04.356 --> 00:00:07.898
+has banded rows a filter on every heading an
+
+00:00:07.911 --> 00:00:11.283
+Amount column that fills itself and a total row
+
+00:00:12.169 --> 00:00:15.059
+Add an invoice at the bottom and every formula
+
+00:00:15.072 --> 00:00:17.286
+that points at the table picks it up
+
+00:00:18.782 --> 00:00:19.850
+Here's the plan
+
+00:00:21.329 --> 00:00:24.142
+A Table is a range that Excel manages for
+
+00:00:24.155 --> 00:00:28.427
+you Formulas refer to columns by name instead of
+
+00:00:28.440 --> 00:00:31.409
+cell addresses and the Table grows when you add
+
+00:00:31.422 --> 00:00:31.930
+rows
+
+00:00:33.407 --> 00:00:37.339
+Here's the practice sheet twenty invoices with no blank
+
+00:00:37.352 --> 00:00:41.716
+rows or columns Click any cell inside the data
+
+00:00:41.925 --> 00:00:42.966
+A1 is fine
+
+00:00:44.422 --> 00:00:47.925
+Press Command T Excel guesses the range A1 to
+
+00:00:47.938 --> 00:00:52.510
+F21 Make sure My table has headers is ticked
+
+00:00:52.770 --> 00:00:53.903
+and click OK
+
+00:00:55.391 --> 00:00:58.909
+Give the Table a proper name On the Table
+
+00:00:58.922 --> 00:01:03.036
+Design tab click the Table Name box type tblSales
+
+00:01:03.049 --> 00:01:07.021
+and press Return A short name with no spaces
+
+00:01:07.034 --> 00:01:09.156
+makes formulas easier to read
+
+00:01:10.641 --> 00:01:14.693
+Now a new column In G1, type Amount and
+
+00:01:14.706 --> 00:01:18.729
+press Return The Table stretches to include it
+
+00:01:20.235 --> 00:01:24.337
+In G2, type equals open square bracket at sign
+
+00:01:24.467 --> 00:01:30.276
+Qty close bracket That's Qty in this row Then
+
+00:01:30.289 --> 00:01:31.813
+a star for multiply
+
+00:01:33.297 --> 00:01:37.086
+Now open square bracket at sign and Unit Price
+
+00:01:37.099 --> 00:01:40.185
+inside its own brackets because the name has a
+
+00:01:40.198 --> 00:01:42.596
+space Press Return
+
+00:01:44.079 --> 00:01:48.469
+The formula filled all twenty rows by itself That's
+
+00:01:48.482 --> 00:01:52.883
+a calculated column No dragging and no Command D
+
+00:01:54.375 --> 00:01:59.377
+Two totals for comparison In J1, type equals SUM
+
+00:01:59.494 --> 00:02:04.768
+open bracket tblSales open square bracket Amount close both
+
+00:02:04.781 --> 00:02:05.862
+and press Return
+
+00:02:07.344 --> 00:02:10.313
+In J2, type the old way equals SUM of
+
+00:02:10.326 --> 00:02:14.638
+G2 to G21, and press Return Both show the
+
+00:02:14.651 --> 00:02:15.953
+same number for now
+
+00:02:17.422 --> 00:02:21.109
+Turn on the total row On the Table Design
+
+00:02:21.122 --> 00:02:25.263
+tab tick Total Row Excel adds a sum under
+
+00:02:25.276 --> 00:02:25.849
+Amount
+
+00:02:27.344 --> 00:02:31.122
+Now add a new invoice Click the last cell
+
+00:02:31.135 --> 00:02:35.549
+of the data G21, and press Tab A new
+
+00:02:35.562 --> 00:02:38.922
+row opens inside the Table above the total row
+
+00:02:40.375 --> 00:02:45.167
+Type INV-2621 press Tab twice to skip the date
+
+00:02:45.349 --> 00:02:51.182
+then Pune Tab Sneha Patil Tab 5 Tab 2350
+
+00:02:51.326 --> 00:02:55.026
+and Return Amount fills in by itself
+
+00:02:56.500 --> 00:03:00.994
+Now the common mistake Look at J1 and J2
+
+00:03:01.893 --> 00:03:06.216
+The Table total includes the new invoice The fixed
+
+00:03:06.229 --> 00:03:09.731
+range G2 to G21 missed it and nobody gets
+
+00:03:09.744 --> 00:03:14.497
+a warning Point formulas at Table columns not cell
+
+00:03:14.510 --> 00:03:15.213
+addresses
+
+00:03:16.688 --> 00:03:17.756
+A Mac note
+
+00:03:19.235 --> 00:03:20.446
+Here's the recap
+
+00:03:21.922 --> 00:03:25.843
+Your turn In J3, total the Amount for the
+
+00:03:25.856 --> 00:03:30.778
+Pune branch only using SUMIFS with Table columns The
+
+00:03:30.791 --> 00:03:34.711
+answer is on the S08-01 Done sheet

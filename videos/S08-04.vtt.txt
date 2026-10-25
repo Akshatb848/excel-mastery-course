@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.302
+Advanced Filter copied out every North order above fifty
+
+00:00:04.315 --> 00:00:08.234
+thousand rupees plus every South order into a separate
+
+00:00:08.247 --> 00:00:11.622
+block on the right The conditions sit in a
+
+00:00:11.635 --> 00:00:14.565
+small criteria range you can read and change
+
+00:00:16.031 --> 00:00:17.099
+Here's the plan
+
+00:00:18.578 --> 00:00:21.807
+The criteria range uses the same headings as your
+
+00:00:21.820 --> 00:00:25.572
+data Conditions on the same row must all be
+
+00:00:25.585 --> 00:00:29.687
+true Conditions on different rows are alternatives
+
+00:00:31.156 --> 00:00:35.103
+Here's the practice sheet The data is in A1
+
+00:00:35.116 --> 00:00:38.958
+to F21, and the criteria headings Region and Amount
+
+00:00:38.971 --> 00:00:41.314
+are ready in H1 and I1
+
+00:00:42.797 --> 00:00:46.744
+In H2, type North In I2, type greater than
+
+00:00:46.757 --> 00:00:50.846
+50000 These two on one row mean North and
+
+00:00:50.859 --> 00:00:52.239
+above fifty thousand
+
+00:00:53.766 --> 00:00:58.312
+In H3, type South and leave I3 empty A
+
+00:00:58.325 --> 00:01:03.534
+second row means or Any South order qualifies whatever
+
+00:01:03.547 --> 00:01:04.289
+the amount
+
+00:01:05.781 --> 00:01:09.833
+Click A1 inside the data On the Data tab
+
+00:01:09.976 --> 00:01:12.840
+in the Sort and Filter group click Advanced
+
+00:01:14.297 --> 00:01:18.635
+Choose Copy to another location Check that List range
+
+00:01:18.648 --> 00:01:24.091
+is A1 to F21 For Criteria range enter H1
+
+00:01:24.104 --> 00:01:24.937
+to I3
+
+00:01:26.422 --> 00:01:30.721
+For Copy to enter H6 Click OK
+
+00:01:32.203 --> 00:01:35.380
+Excel copied the headings and the 5 matching rows
+
+00:01:35.393 --> 00:01:40.512
+to H6 This copy is static If the data
+
+00:01:40.525 --> 00:01:44.601
+changes run Advanced Filter again or use the FILTER
+
+00:01:44.614 --> 00:01:47.101
+function from section S09
+
+00:01:48.578 --> 00:01:52.903
+Here's the most common mistake If the criteria range
+
+00:01:52.916 --> 00:01:56.354
+includes an empty row say H1 to I4, that
+
+00:01:56.367 --> 00:01:59.908
+blank row means no condition so every row matches
+
+00:01:59.921 --> 00:02:03.359
+and you get the full list back Select only
+
+00:02:03.372 --> 00:02:05.234
+the rows that hold conditions
+
+00:02:06.688 --> 00:02:11.755
+Advanced Filter can also list unique values Select A1
+
+00:02:11.768 --> 00:02:15.740
+to A21, the Region column and open Data Advanced
+
+00:02:15.753 --> 00:02:16.221
+again
+
+00:02:17.672 --> 00:02:21.552
+Choose Copy to another location clear the Criteria range
+
+00:02:21.695 --> 00:02:24.977
+set Copy to as O1, and tick Unique records
+
+00:02:24.990 --> 00:02:27.401
+only Click OK
+
+00:02:28.860 --> 00:02:31.451
+Four regions each listed once
+
+00:02:32.922 --> 00:02:33.990
+A Mac note
+
+00:02:35.469 --> 00:02:36.680
+Here's the recap
+
+00:02:38.156 --> 00:02:42.155
+Your turn Build a new criteria range for West
+
+00:02:42.168 --> 00:02:45.788
+orders above thirty thousand rupees or any order with
+
+00:02:45.801 --> 00:02:48.861
+more than thirty units and copy the results to
+
+00:02:48.874 --> 00:02:54.773
+O14 The answer is on the S08-04 Done sheet

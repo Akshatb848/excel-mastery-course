@@ -1,0 +1,130 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.781
+This expense claim sheet can't be filled in wrongly
+
+00:00:04.708 --> 00:00:08.419
+Category is a dropdown amounts above fifty thousand are
+
+00:00:08.432 --> 00:00:11.531
+blocked with a clear message and dates must fall
+
+00:00:11.544 --> 00:00:12.937
+in this financial year
+
+00:00:14.422 --> 00:00:15.490
+Here's the plan
+
+00:00:16.968 --> 00:00:21.150
+Data validation sits on the Data tab You choose
+
+00:00:21.163 --> 00:00:24.587
+what to allow set the limits and optionally add
+
+00:00:24.600 --> 00:00:27.751
+a message that appears when someone selects the cell
+
+00:00:27.947 --> 00:00:30.408
+and an alert when they type something wrong
+
+00:00:31.859 --> 00:00:36.171
+Here's the practice sheet Employees are listed and the
+
+00:00:36.184 --> 00:00:40.780
+category names are in H2 to H7 Select C2
+
+00:00:40.793 --> 00:00:41.809
+to C11
+
+00:00:43.297 --> 00:00:47.765
+On the Data tab click Data Validation Set Allow
+
+00:00:47.778 --> 00:00:52.791
+to List In Source type equals H2 colon H7
+
+00:00:52.804 --> 00:00:55.799
+with dollar signs Click OK
+
+00:00:57.265 --> 00:01:00.065
+Click C2 and press Option and the down arrow
+
+00:01:00.078 --> 00:01:03.035
+to open the list Choose Food
+
+00:01:04.531 --> 00:01:08.999
+Now limit the amounts Select D2 to D11 and
+
+00:01:09.012 --> 00:01:13.960
+open Data Validation again Allow Whole number between 1
+
+00:01:13.973 --> 00:01:15.197
+and 50000
+
+00:01:16.750 --> 00:01:23.080
+Click the Input Message tab Title Amount Message Whole
+
+00:01:23.093 --> 00:01:25.359
+rupees up to 50,000
+
+00:01:26.843 --> 00:01:31.051
+Click the Error Alert tab Keep Style on Stop
+
+00:01:31.949 --> 00:01:37.249
+Title Too high Message Claims above fifty thousand rupees
+
+00:01:37.262 --> 00:01:40.595
+need CFO approval Click OK
+
+00:01:42.062 --> 00:01:48.444
+Test it Click D2 The yellow tip appears Type
+
+00:01:48.457 --> 00:01:53.549
+75000 and press Return Excel blocks it and shows
+
+00:01:53.562 --> 00:01:56.114
+our message Click Cancel
+
+00:01:57.593 --> 00:02:02.569
+Type 4500 instead and press Return That's accepted
+
+00:02:04.015 --> 00:02:09.121
+Dates next Select A2 to A11, open Data Validation
+
+00:02:09.317 --> 00:02:15.267
+Allow Date between Start date equals DATE of 2026
+
+00:02:15.423 --> 00:02:21.179
+4 1 End date equals DATE of 2027 3
+
+00:02:21.309 --> 00:02:23.939
+31 Click OK
+
+00:02:25.406 --> 00:02:30.955
+Here's the common mistake Validation checks typing not pasting
+
+00:02:31.853 --> 00:02:34.861
+If someone copies a cell from another sheet and
+
+00:02:34.874 --> 00:02:37.960
+pastes it into C3, the rule is replaced and
+
+00:02:37.973 --> 00:02:42.726
+anything goes Ask people to paste values only with
+
+00:02:42.739 --> 00:02:45.629
+Control Command V or protect the sheet
+
+00:02:47.093 --> 00:02:48.161
+A Mac note
+
+00:02:49.656 --> 00:02:50.867
+Here's the recap
+
+00:02:52.343 --> 00:02:56.160
+Your turn Make every Bill No in F2 to
+
+00:02:56.173 --> 00:03:01.811
+F11 exactly ten characters long using Text length The
+
+00:03:01.824 --> 00:03:05.848
+answer is on the S08-06 Done sheet

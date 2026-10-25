@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:05.411
+Challenge time This is a raw order list You'll
+
+00:00:05.424 --> 00:00:08.067
+turn it into a tracker that the dispatch team
+
+00:00:08.080 --> 00:00:11.856
+can trust a Table a status dropdown a rule
+
+00:00:11.869 --> 00:00:14.617
+on amounts red rows for late orders and a
+
+00:00:14.630 --> 00:00:15.658
+pending count
+
+00:00:17.140 --> 00:00:20.944
+Here are your tasks They're also written on the
+
+00:00:20.957 --> 00:00:22.390
+sheet from column J
+
+00:00:23.859 --> 00:00:27.364
+Pause the video now and build it Play it
+
+00:00:27.377 --> 00:00:29.525
+again when you're ready for the solution
+
+00:00:31.015 --> 00:00:35.444
+Here's the solution Click A1 and press Command T
+
+00:00:35.483 --> 00:00:38.530
+Keep My table has headers ticked and click OK
+
+00:00:40.015 --> 00:00:43.791
+On Table Design set the Table Name to tblTracker
+
+00:00:43.804 --> 00:00:44.924
+and press Return
+
+00:00:46.390 --> 00:00:52.160
+Select E2 to E16 Data Data Validation Allow List
+
+00:00:52.447 --> 00:00:57.304
+Source equals dollar J dollar 14  to dollar J dollar 17
+
+00:00:58.215 --> 00:00:59.140
+Click OK
+
+00:01:00.593 --> 00:01:06.259
+Select F2 to F16 Data Validation Allow Whole number
+
+00:01:06.389 --> 00:01:10.738
+Data greater than Minimum zero Click OK
+
+00:01:12.218 --> 00:01:16.895
+Now the late-order alert Select A2 to G16, then
+
+00:01:16.908 --> 00:01:20.736
+Conditional Formatting New Rule using a formula
+
+00:01:22.234 --> 00:01:26.414
+Type equals AND open bracket dollar E2 not equal
+
+00:01:26.427 --> 00:01:30.437
+to Delivered comma dollar E2 not equal to Cancelled
+
+00:01:30.567 --> 00:01:35.752
+comma dollar G2 less than dollar J dollar 20 Close
+
+00:01:35.765 --> 00:01:38.069
+it choose light red and click OK
+
+00:01:39.531 --> 00:01:43.596
+5 orders turn red They're past their due date
+
+00:01:43.609 --> 00:01:44.976
+and still not delivered
+
+00:01:46.484 --> 00:01:50.742
+Select F2 to F16 and add Conditional Formatting Data
+
+00:01:50.755 --> 00:01:52.474
+Bars Blue Data Bar
+
+00:01:53.937 --> 00:01:59.914
+Last in J23, type equals COUNTIF open bracket tblTracker
+
+00:02:00.070 --> 00:02:05.059
+square bracket Status comma Pending in quotes Close and
+
+00:02:05.072 --> 00:02:05.983
+press Return
+
+00:02:07.453 --> 00:02:11.947
+Test it Set E3 to Delivered from its dropdown
+
+00:02:12.846 --> 00:02:15.528
+The red row clears and the pending count drops
+
+00:02:15.541 --> 00:02:20.840
+by one Compare your sheet with S08-12 Answers
+
+00:02:22.312 --> 00:02:23.992
+Here's the section recap

@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.365
+Here the order list is filtered with a slicer
+
+00:00:03.586 --> 00:00:05.943
+a panel of buttons you click to show one
+
+00:00:05.956 --> 00:00:10.020
+category The total at the top counts only the
+
+00:00:10.033 --> 00:00:11.140
+rows you can see
+
+00:00:12.625 --> 00:00:13.693
+Here's the plan
+
+00:00:15.172 --> 00:00:18.714
+Filters hide rows that don't match they never delete
+
+00:00:18.727 --> 00:00:23.989
+anything SUBTOTAL with 109 adds up only the visible
+
+00:00:24.002 --> 00:00:26.802
+rows while SUM always adds everything
+
+00:00:28.281 --> 00:00:32.411
+Here's the practice sheet The orders are already a
+
+00:00:32.424 --> 00:00:36.460
+Table called tblOrders so every heading has a filter
+
+00:00:36.473 --> 00:00:36.864
+arrow
+
+00:00:38.328 --> 00:00:43.799
+First two totals In H2, type equals SUBTOTAL open
+
+00:00:43.812 --> 00:00:51.143
+bracket 109 comma tblOrders square bracket Amount Close and
+
+00:00:51.156 --> 00:00:52.067
+press Return
+
+00:00:53.547 --> 00:00:58.508
+In H4, type equals SUM open bracket tblOrders square
+
+00:00:58.521 --> 00:01:03.406
+bracket Amount close it and press Return Both match
+
+00:01:03.419 --> 00:01:04.838
+while nothing is filtered
+
+00:01:06.312 --> 00:01:09.986
+Now a text filter Click the City heading in
+
+00:01:09.999 --> 00:01:13.059
+C1 and press Option and the down arrow to
+
+00:01:13.072 --> 00:01:17.538
+open its list Untick Select All tick Pune and
+
+00:01:17.551 --> 00:01:18.358
+click OK
+
+00:01:19.828 --> 00:01:24.075
+Only Pune orders are showing The row numbers turn
+
+00:01:24.088 --> 00:01:27.005
+blue and skip which tells you rows are hidden
+
+00:01:28.500 --> 00:01:33.059
+Here's the common mistake Look at H2 and H4
+
+00:01:33.971 --> 00:01:38.645
+SUBTOTAL shows the Pune total SUM still shows every
+
+00:01:38.658 --> 00:01:42.708
+order hidden or not If you report a filtered
+
+00:01:42.721 --> 00:01:44.505
+total use SUBTOTAL
+
+00:01:45.984 --> 00:01:49.775
+Add a number filter on top Open the Amount
+
+00:01:49.788 --> 00:01:52.757
+list with Option and the down arrow choose Number
+
+00:01:52.770 --> 00:01:54.658
+Filters then Greater Than
+
+00:01:56.125 --> 00:02:00.593
+Type 25000 and click OK Now we see Pune
+
+00:02:00.606 --> 00:02:05.945
+orders above twenty-five thousand rupees Filters on different columns
+
+00:02:05.958 --> 00:02:07.143
+combine with AND
+
+00:02:08.625 --> 00:02:12.859
+Clear every filter at once On the Data tab
+
+00:02:13.002 --> 00:02:13.731
+click Clear
+
+00:02:15.266 --> 00:02:19.200
+Now a date filter Open the Order Date list
+
+00:02:19.331 --> 00:02:25.789
+choose Date Filters then After Type 30-06-2026 and click
+
+00:02:25.802 --> 00:02:29.995
+OK Only orders from July onwards remain
+
+00:02:31.469 --> 00:02:35.807
+Clear it again from the Data tab Now slicers
+
+00:02:36.705 --> 00:02:39.856
+Click inside the Table then on the Insert tab
+
+00:02:39.870 --> 00:02:43.932
+choose Slicer Tick Category and click OK
+
+00:02:45.391 --> 00:02:49.820
+A slicer appears with one button per category Click
+
+00:02:49.833 --> 00:02:55.159
+Furniture The Table shows only furniture orders and H2
+
+00:02:55.172 --> 00:02:55.875
+follows
+
+00:02:57.344 --> 00:02:58.412
+A Mac note
+
+00:02:59.891 --> 00:03:01.102
+Here's the recap
+
+00:03:02.594 --> 00:03:06.711
+Your turn In H6, count how many orders are
+
+00:03:06.724 --> 00:03:11.177
+visible using SUBTOTAL with 103 on the Customer column
+
+00:03:12.088 --> 00:03:16.320
+Try it with different slicer buttons The answer is
+
+00:03:16.333 --> 00:03:19.562
+on the S08-03 Done sheet

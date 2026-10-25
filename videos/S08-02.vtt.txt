@@ -1,0 +1,139 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.562
+This sales list is sorted in financial-year order April
+
+00:00:04.576 --> 00:00:08.885
+first then May and so on instead of alphabetical
+
+00:00:08.898 --> 00:00:13.002
+order Within each month the regions stay grouped with
+
+00:00:13.015 --> 00:00:14.721
+the biggest sales at the top
+
+00:00:16.203 --> 00:00:17.271
+Here's the plan
+
+00:00:18.750 --> 00:00:22.930
+Sorting reorders whole rows so every column moves together
+
+00:00:23.843 --> 00:00:25.953
+Click one cell in the column you want to
+
+00:00:25.966 --> 00:00:30.041
+sort by and let Excel find the rest Don't
+
+00:00:30.054 --> 00:00:32.294
+select a single column on its own
+
+00:00:33.750 --> 00:00:38.348
+Here's the practice sheet Twenty rows of regional sales
+
+00:00:39.247 --> 00:00:41.838
+Click E2, any cell in the Sales column
+
+00:00:43.297 --> 00:00:47.544
+On the Data tab click Sort Descending The biggest
+
+00:00:47.557 --> 00:00:50.135
+sale is now at the top and each row
+
+00:00:50.148 --> 00:00:51.164
+stayed together
+
+00:00:52.641 --> 00:00:56.601
+Now two levels Click A1, then on the Data
+
+00:00:56.614 --> 00:00:58.268
+tab choose Custom Sort
+
+00:00:59.750 --> 00:01:03.802
+Sort by Region A to Z Then click Add
+
+00:01:03.815 --> 00:01:07.200
+Level and set Then by to Sales Largest to
+
+00:01:07.213 --> 00:01:09.817
+Smallest Click OK
+
+00:01:11.281 --> 00:01:15.226
+Regions are grouped in alphabetical order and inside each
+
+00:01:15.239 --> 00:01:17.479
+region the biggest sale comes first
+
+00:01:18.938 --> 00:01:22.703
+Now the common mistake Click C2 in the Month
+
+00:01:22.716 --> 00:01:25.841
+column and choose Sort Ascending on the Data tab
+
+00:01:27.328 --> 00:01:32.460
+April then August then July Excel sorted the month
+
+00:01:32.473 --> 00:01:37.604
+names as plain text alphabetically For a financial year
+
+00:01:37.617 --> 00:01:39.257
+we need April to March
+
+00:01:40.750 --> 00:01:43.094
+The fix is a helper column with the month
+
+00:01:43.107 --> 00:01:48.395
+number In F2, type equals MATCH open bracket C2,
+
+00:01:48.408 --> 00:01:51.768
+comma then a list in curly brackets the twelve
+
+00:01:51.781 --> 00:01:54.776
+months from Apr to Mar each in quotes
+
+00:01:56.266 --> 00:02:00.198
+Comma zero for exact match close the bracket and
+
+00:02:00.211 --> 00:02:04.237
+press Return April is month one of the financial
+
+00:02:04.250 --> 00:02:05.682
+year and so on
+
+00:02:07.141 --> 00:02:09.967
+Fill it down to F21 with Command D
+
+00:02:11.453 --> 00:02:15.648
+Click F2 and choose Sort Ascending Now the list
+
+00:02:15.661 --> 00:02:22.015
+runs April May June July in financial-year order Excel's
+
+00:02:22.028 --> 00:02:25.426
+sort keeps the earlier order within each month so
+
+00:02:25.439 --> 00:02:26.689
+regions stay grouped
+
+00:02:28.172 --> 00:02:30.164
+Two more sorts are worth knowing
+
+00:02:31.656 --> 00:02:32.724
+A Mac note
+
+00:02:34.203 --> 00:02:35.414
+Here's the recap
+
+00:02:36.906 --> 00:02:41.192
+Your turn Sort the list by Salesperson A to
+
+00:02:41.205 --> 00:02:44.903
+Z then by FY Month No smallest to largest
+
+00:02:45.788 --> 00:02:48.197
+Then sort it back the way the Done sheet
+
+00:02:48.210 --> 00:02:53.379
+shows it The answer is on the S08-02 Done
+
+00:02:53.392 --> 00:02:53.887
+sheet
