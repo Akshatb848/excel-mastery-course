@@ -1,0 +1,115 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.239
+From twenty sales rows three formulas build a sorted
+
+00:00:04.252 --> 00:00:08.119
+customer list a total for each salesperson and a
+
+00:00:08.132 --> 00:00:12.171
+leaderboard with the top seller first Add a sale
+
+00:00:12.184 --> 00:00:13.616
+and all of it updates
+
+00:00:15.075 --> 00:00:16.143
+Here's the plan
+
+00:00:17.622 --> 00:00:21.999
+UNIQUE removes repeats SORT sorts by one of its
+
+00:00:22.012 --> 00:00:26.817
+own columns SORTBY sorts by a different list such
+
+00:00:26.830 --> 00:00:29.030
+as names sorted by their totals
+
+00:00:30.512 --> 00:00:35.631
+Here's the practice sheet Customers repeat because most bought
+
+00:00:35.644 --> 00:00:36.751
+more than once
+
+00:00:38.872 --> 00:00:43.314
+Here's the common mistake first In F2, type equals
+
+00:00:43.327 --> 00:00:47.494
+UNIQUE open bracket A1 to A21, and press Return
+
+00:00:48.950 --> 00:00:52.309
+The heading Customer has crept into the list because
+
+00:00:52.322 --> 00:00:56.335
+we included row one Retype it in F2 as
+
+00:00:56.348 --> 00:01:00.502
+equals SORT open bracket UNIQUE of A2 to A21,
+
+00:01:00.515 --> 00:01:02.416
+close both and press Return
+
+00:01:03.887 --> 00:01:09.944
+Each customer once in alphabetical order Now salesperson totals
+
+00:01:10.842 --> 00:01:14.449
+In H2, type equals UNIQUE of C2 to C21
+
+00:01:14.462 --> 00:01:15.543
+and press Return
+
+00:01:17.012 --> 00:01:20.736
+In I2, type equals SUMIFS open bracket D2 to
+
+00:01:20.749 --> 00:01:25.905
+D21, comma C2 to C21, comma then H2 hash
+
+00:01:26.806 --> 00:01:29.735
+One SUMIFS spills a total for every name
+
+00:01:31.231 --> 00:01:36.194
+Now the leaderboard In K2, type equals SORTBY open
+
+00:01:36.207 --> 00:01:41.376
+bracket H2 hash comma I2 hash comma minus 1
+
+00:01:42.275 --> 00:01:46.676
+Close and press Return Names sorted by their totals
+
+00:01:46.819 --> 00:01:47.822
+highest first
+
+00:01:49.278 --> 00:01:51.947
+In L2, show the totals in the same order
+
+00:01:52.848 --> 00:01:57.705
+Type equals SORT open bracket I2 hash comma comma
+
+00:01:57.874 --> 00:02:01.285
+minus 1 Close and press Return
+
+00:02:02.762 --> 00:02:07.256
+Rahul Wankhede leads Now change the first sale in
+
+00:02:07.269 --> 00:02:11.670
+D2 to 9,99,000 rupees and watch the totals and
+
+00:02:11.683 --> 00:02:13.038
+the leaderboard reorder
+
+00:02:14.528 --> 00:02:15.622
+One more trick
+
+00:02:17.106 --> 00:02:18.174
+A Mac note
+
+00:02:19.653 --> 00:02:20.864
+Here's the recap
+
+00:02:22.356 --> 00:02:26.212
+Your turn In N2, list the customers who bought
+
+00:02:26.225 --> 00:02:30.952
+exactly once using the third argument of UNIQUE The
+
+00:02:30.965 --> 00:02:34.780
+answer is on the S09-02 Done sheet

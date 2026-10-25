@@ -1,0 +1,121 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:02.924
+Type a region and a minimum amount in the
+
+00:00:02.937 --> 00:00:06.674
+yellow cells and this report lists every matching order
+
+00:00:06.687 --> 00:00:11.468
+with one formula No filter buttons no copying and
+
+00:00:11.481 --> 00:00:13.877
+it updates the moment the data changes
+
+00:00:15.372 --> 00:00:16.440
+Here's the plan
+
+00:00:17.919 --> 00:00:20.367
+FILTER returns the rows of a range where a
+
+00:00:20.380 --> 00:00:25.721
+test is TRUE Multiply tests for AND Add them
+
+00:00:25.734 --> 00:00:29.640
+for OR Always put the tests in brackets
+
+00:00:31.090 --> 00:00:35.597
+Here's the practice sheet Twenty orders and the inputs
+
+00:00:35.610 --> 00:00:40.428
+are in I1 and I2 First the headings In
+
+00:00:40.441 --> 00:00:44.256
+H4, type equals A1 colon F1 and press Return
+
+00:00:45.762 --> 00:00:49.877
+In H5, type equals FILTER open bracket A2 to
+
+00:00:49.890 --> 00:00:54.397
+F21, comma That's the data without headings
+
+00:00:55.872 --> 00:00:59.830
+The include test is C2 to C21 equals I1,
+
+00:00:59.843 --> 00:01:03.999
+the chosen region Close the bracket and press Return
+
+00:01:04.911 --> 00:01:06.864
+Every West order appears
+
+00:01:08.356 --> 00:01:13.775
+Here's the common mistake Type Central in I1 There
+
+00:01:13.788 --> 00:01:17.342
+are no Central orders so FILTER returns hash CALC
+
+00:01:17.616 --> 00:01:19.569
+which means an empty result
+
+00:01:21.028 --> 00:01:25.679
+Fix it with the third argument Retype H5 as
+
+00:01:25.692 --> 00:01:30.731
+equals FILTER A2 to F21, comma C2 to C21
+
+00:01:30.744 --> 00:01:35.652
+equals I1, comma No orders in quotes Press Return
+
+00:01:37.137 --> 00:01:41.332
+Now a friendly message instead of an error Type
+
+00:01:41.345 --> 00:01:42.738
+West back in I1
+
+00:01:44.200 --> 00:01:48.655
+Now AND Retype H5 with the include test in
+
+00:01:48.668 --> 00:01:52.718
+two brackets C2 to C21 equals I1, then a
+
+00:01:52.731 --> 00:01:56.611
+star then F2 to F21 greater than or equal
+
+00:01:56.624 --> 00:01:57.353
+to I2
+
+00:01:58.825 --> 00:02:03.358
+Press Return Only West orders of fifty thousand rupees
+
+00:02:03.371 --> 00:02:07.551
+or more remain The star works because TRUE times
+
+00:02:07.564 --> 00:02:10.923
+TRUE is one and anything times FALSE is zero
+
+00:02:12.419 --> 00:02:17.447
+Now the live report Change I1 to South The
+
+00:02:17.460 --> 00:02:19.023
+list rebuilds itself
+
+00:02:20.512 --> 00:02:24.080
+For OR add the tests instead of multiplying them
+
+00:02:25.006 --> 00:02:27.467
+A row is kept if either test is true
+
+00:02:28.934 --> 00:02:30.002
+A Mac note
+
+00:02:31.481 --> 00:02:32.692
+Here's the recap
+
+00:02:34.169 --> 00:02:39.484
+Your turn In H18, list every Electronics or Furniture
+
+00:02:39.497 --> 00:02:43.129
+order with one FILTER The answer is on the
+
+00:02:43.142 --> 00:02:46.033
+S09-03 Done sheet

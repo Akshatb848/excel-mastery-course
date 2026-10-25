@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.692
+One formula in E2 works out the revenue for
+
+00:00:03.705 --> 00:00:08.265
+all ten products The results spill down by themselves
+
+00:00:08.395 --> 00:00:10.895
+and the total in G2 refers to the whole
+
+00:00:10.908 --> 00:00:13.551
+spill with a hash sign so it stays right
+
+00:00:13.564 --> 00:00:14.697
+if the list grows
+
+00:00:16.184 --> 00:00:17.252
+Here's the plan
+
+00:00:18.731 --> 00:00:24.200
+In Microsoft 365 a formula that returns several values spills
+
+00:00:24.213 --> 00:00:26.934
+them into the cells below or to the right
+
+00:00:27.835 --> 00:00:31.845
+Only the first cell holds the formula The rest
+
+00:00:31.858 --> 00:00:34.306
+are shown in grey in the formula bar and
+
+00:00:34.319 --> 00:00:35.361
+can't be edited
+
+00:00:36.841 --> 00:00:40.840
+Here's the practice sheet Units in column B and
+
+00:00:40.853 --> 00:00:42.169
+price in column C
+
+00:00:45.294 --> 00:00:48.836
+In E2, type equals then select B2 to B11
+
+00:00:48.849 --> 00:00:52.508
+by typing it a star and C2 to C11
+
+00:00:53.408 --> 00:00:54.346
+Press Return
+
+00:00:55.809 --> 00:01:01.488
+Ten answers from one formula Click E5 The formula
+
+00:01:01.501 --> 00:01:04.249
+bar shows it in grey because it lives in
+
+00:01:04.262 --> 00:01:08.181
+E2 The blue border marks the spill range
+
+00:01:09.653 --> 00:01:14.330
+Now total it In G2, type equals SUM open
+
+00:01:14.343 --> 00:01:18.431
+bracket E2, then a hash sign Close and press
+
+00:01:18.444 --> 00:01:23.171
+Return E2 hash means the entire spill however many
+
+00:01:23.184 --> 00:01:24.134
+rows it has
+
+00:01:25.606 --> 00:01:29.710
+Here's the common mistake Someone types a note in
+
+00:01:29.723 --> 00:01:33.642
+E6 Type the word check there and press Return
+
+00:01:35.138 --> 00:01:38.432
+E2 shows hash SPILL and the total breaks too
+
+00:01:39.333 --> 00:01:42.927
+The formula needs E2 to E11 empty and E6
+
+00:01:42.940 --> 00:01:45.804
+is in the way Click E2 to see the
+
+00:01:45.817 --> 00:01:48.421
+dashed border showing where it wants to go
+
+00:01:49.903 --> 00:01:54.332
+Select E6 and press Delete The results flow straight
+
+00:01:54.345 --> 00:01:54.827
+back
+
+00:01:56.294 --> 00:02:00.398
+Now the at sign In I2, type equals at
+
+00:02:00.411 --> 00:02:04.890
+sign B2 to B11, and press Return The at
+
+00:02:04.903 --> 00:02:08.028
+sign means give me just one value the one
+
+00:02:08.041 --> 00:02:11.491
+in my own row I2 is in row two
+
+00:02:11.635 --> 00:02:13.171
+so it returns B2
+
+00:02:14.638 --> 00:02:17.711
+Fill it down to I11 with Command D Each
+
+00:02:17.724 --> 00:02:20.693
+cell returns the unit figure from its own row
+
+00:02:21.606 --> 00:02:24.354
+You'll mostly see the at sign when you open
+
+00:02:24.367 --> 00:02:27.283
+old files where Excel adds it to keep old
+
+00:02:27.296 --> 00:02:29.380
+formulas working the same way
+
+00:02:30.856 --> 00:02:34.803
+Prove it's live Change the units for Ceiling Fan
+
+00:02:34.816 --> 00:02:38.736
+in B10 to 8 The revenue and total update
+
+00:02:38.749 --> 00:02:39.530
+instantly
+
+00:02:40.981 --> 00:02:42.049
+A Mac note
+
+00:02:43.544 --> 00:02:44.755
+Here's the recap
+
+00:02:46.231 --> 00:02:50.530
+Your turn In K2, write one formula that shows
+
+00:02:50.543 --> 00:02:54.501
+the price including eighteen percent GST for every product
+
+00:02:54.762 --> 00:02:57.444
+then total it in L2 with a hash reference

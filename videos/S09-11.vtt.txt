@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.887
+This product list shows a photo inside each cell
+
+00:00:04.018 --> 00:00:06.674
+pulled from a web link with the IMAGE function
+
+00:00:07.587 --> 00:00:10.101
+On the right pick a product and its price
+
+00:00:10.114 --> 00:00:13.291
+and photo appear like a small catalogue card
+
+00:00:14.794 --> 00:00:15.862
+Here's the plan
+
+00:00:17.341 --> 00:00:20.245
+IMAGE needs a direct link to a picture file
+
+00:00:20.258 --> 00:00:24.544
+that starts with https The picture lives in the
+
+00:00:24.557 --> 00:00:27.669
+cell so it moves sorts and filters with your
+
+00:00:27.682 --> 00:00:28.150
+data
+
+00:00:29.653 --> 00:00:33.613
+Here's the practice sheet Each product has a link
+
+00:00:33.626 --> 00:00:35.410
+to its photo in column C
+
+00:00:37.934 --> 00:00:41.931
+In D2, type equals IMAGE open bracket C2 for
+
+00:00:41.944 --> 00:00:46.335
+the link comma A2 as the alt text Close
+
+00:00:46.348 --> 00:00:47.428
+and press Return
+
+00:00:48.903 --> 00:00:53.554
+The masala chai photo appears inside the cell Fill
+
+00:00:53.567 --> 00:00:55.767
+it down to D6 with Command D
+
+00:00:57.231 --> 00:01:00.616
+If Excel shows a yellow bar about linked images
+
+00:01:00.747 --> 00:01:05.410
+click to enable them Excel only downloads pictures you
+
+00:01:05.423 --> 00:01:05.892
+allow
+
+00:01:07.372 --> 00:01:12.244
+Here's the common mistake In D7, type equals IMAGE
+
+00:01:12.504 --> 00:01:14.457
+with a link to the web page about the
+
+00:01:14.470 --> 00:01:19.119
+mango not the picture file itself Press Return
+
+00:01:22.513 --> 00:01:26.721
+An error That link opens a web page not
+
+00:01:26.734 --> 00:01:30.783
+an image file Right-click the picture on the page
+
+00:01:30.796 --> 00:01:34.924
+and copy the image address instead Press Delete to
+
+00:01:34.937 --> 00:01:36.031
+clear D7
+
+00:01:37.513 --> 00:01:42.138
+Now the catalogue card In H2, type equals XLOOKUP
+
+00:01:42.294 --> 00:01:46.773
+open bracket H1, comma A2 to A6, comma B2
+
+00:01:46.786 --> 00:01:51.864
+to B6 Close and press Return Nine hundred and
+
+00:01:51.877 --> 00:01:52.893
+fifty rupees
+
+00:01:54.388 --> 00:01:57.318
+In H3, the same lookup but return D2 to
+
+00:01:57.331 --> 00:02:03.101
+D6, the photos Press Return XLOOKUP returns the picture
+
+00:02:03.114 --> 00:02:03.778
+itself
+
+00:02:05.263 --> 00:02:10.341
+Type Coorg Coffee Beans open bracket 1 kg close bracket
+
+00:02:10.497 --> 00:02:14.197
+in H1 The price and photo switch
+
+00:02:15.684 --> 00:02:20.152
+For your own pictures there's no link Use Place in
+
+00:02:20.165 --> 00:02:20.608
+Cell
+
+00:02:22.075 --> 00:02:23.143
+A Mac note
+
+00:02:24.622 --> 00:02:25.833
+Here's the recap
+
+00:02:27.325 --> 00:02:31.806
+Your turn In E2 to E6, show small thumbnails
+
+00:02:31.936 --> 00:02:36.819
+forty by forty pixels using sizing option 3 The
+
+00:02:36.832 --> 00:02:40.504
+answer is on the S09-11 Done sheet

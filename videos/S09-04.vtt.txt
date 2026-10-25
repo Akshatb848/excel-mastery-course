@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.734
+Everything in yellow here comes from SEQUENCE serial numbers
+
+00:00:04.903 --> 00:00:09.161
+invoice numbers a November calendar and a twelve-month EMI
+
+00:00:09.174 --> 00:00:13.942
+schedule The random sales column comes from RANDARRAY handy
+
+00:00:13.955 --> 00:00:15.140
+for practice data
+
+00:00:16.606 --> 00:00:17.674
+Here's the plan
+
+00:00:19.153 --> 00:00:23.035
+SEQUENCE makes a grid of numbers You give it
+
+00:00:23.048 --> 00:00:27.475
+rows columns a start and a step RANDARRAY makes
+
+00:00:27.488 --> 00:00:30.587
+random numbers between a minimum and a maximum
+
+00:00:32.090 --> 00:00:36.832
+Here's the practice sheet In A2, type equals SEQUENCE
+
+00:00:36.988 --> 00:00:42.353
+open bracket 10 Close and press Return One to
+
+00:00:42.366 --> 00:00:42.808
+ten
+
+00:00:44.293 --> 00:00:49.738
+Invoice numbers next In B2, type equals INV dash
+
+00:00:49.751 --> 00:00:54.269
+in quotes ampersand TEXT open bracket SEQUENCE of 10
+
+00:00:54.282 --> 00:00:59.373
+comma 1 comma 101 Then comma four zeros in
+
+00:00:59.386 --> 00:01:01.509
+quotes close and press Return
+
+00:01:02.981 --> 00:01:06.497
+INV dash zero one zero one to zero one
+
+00:01:06.510 --> 00:01:11.798
+one zero Now a calendar In D2, type equals
+
+00:01:11.811 --> 00:01:17.072
+SEQUENCE open bracket 5 rows comma 7 columns comma
+
+00:01:17.215 --> 00:01:22.150
+then DATE of 2026 10 26 the Monday before
+
+00:01:22.163 --> 00:01:23.243
+November starts
+
+00:01:24.715 --> 00:01:28.727
+Press Return The cells are formatted to show just
+
+00:01:28.741 --> 00:01:31.644
+the day so you get a five-week calendar grid
+
+00:01:33.090 --> 00:01:37.220
+Now the EMI schedule The loan is five lakh
+
+00:01:37.233 --> 00:01:41.829
+at nine percent for twelve months In B17, type
+
+00:01:41.842 --> 00:01:46.868
+equals PMT open bracket B15 divided by 12 comma
+
+00:01:47.063 --> 00:01:52.337
+B16, comma minus B14 Close and press Return
+
+00:01:53.793 --> 00:01:57.465
+In A20, type equals SEQUENCE of B16 and press
+
+00:01:57.478 --> 00:02:00.462
+Return Twelve month numbers
+
+00:02:01.934 --> 00:02:05.853
+In B20, the due dates equals EDATE open bracket
+
+00:02:06.023 --> 00:02:11.713
+DATE of 2026 5 5 comma A20 hash minus
+
+00:02:11.726 --> 00:02:14.579
+1 Close and press Return
+
+00:02:16.043 --> 00:02:21.004
+In C20, interest each month equals IPMT open bracket
+
+00:02:21.147 --> 00:02:26.733
+B15 divided by 12 comma A20 hash comma B16,
+
+00:02:26.746 --> 00:02:31.240
+comma minus B14 Close and press Return
+
+00:02:32.700 --> 00:02:35.916
+In D20, the same arguments with PPMT for the
+
+00:02:35.929 --> 00:02:40.944
+principal part Interest falls and principal rises every month
+
+00:02:42.434 --> 00:02:46.850
+Change the months in B16 to 24 The schedule
+
+00:02:46.863 --> 00:02:50.900
+grows to twenty-four rows by itself Then put it
+
+00:02:50.913 --> 00:02:51.902
+back to 12
+
+00:02:53.387 --> 00:02:58.584
+Now RANDARRAY In L2, type equals RANDARRAY open bracket
+
+00:02:58.702 --> 00:03:05.850
+10 comma 1 comma 10000 comma 99999 comma TRUE
+
+00:03:06.735 --> 00:03:08.285
+Close and press Return
+
+00:03:09.762 --> 00:03:14.829
+Here's the common mistake Random numbers change every time
+
+00:03:14.842 --> 00:03:19.699
+anything recalculates Type anything in a cell say 1
+
+00:03:19.712 --> 00:03:24.178
+in P1 and the sales figures all change Sample
+
+00:03:24.191 --> 00:03:26.535
+data that keeps moving is no use
+
+00:03:27.997 --> 00:03:31.721
+To freeze them select L2 to L11, copy with
+
+00:03:31.734 --> 00:03:35.289
+Command C and paste values with Command Shift V
+
+00:03:35.315 --> 00:03:36.903
+Now they're plain numbers
+
+00:03:38.356 --> 00:03:39.424
+A Mac note
+
+00:03:40.887 --> 00:03:42.098
+Here's the recap
+
+00:03:43.590 --> 00:03:47.147
+Your turn In N2, list the first day of
+
+00:03:47.160 --> 00:03:53.931
+each month of the financial year April 2026 to March 2027 with one
+
+00:03:53.944 --> 00:03:59.621
+formula The answer is on the S09-04 Done sheet

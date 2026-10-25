@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.187
+These summaries look like PivotTables but each one is
+
+00:00:04.200 --> 00:00:08.291
+a single formula Sales by region with a total
+
+00:00:08.577 --> 00:00:11.468
+each region's share of the total and a region
+
+00:00:11.481 --> 00:00:15.387
+by category grid They update the moment the data
+
+00:00:15.400 --> 00:00:17.666
+changes with no Refresh button
+
+00:00:19.122 --> 00:00:20.190
+Here's the plan
+
+00:00:21.669 --> 00:00:25.458
+GROUPBY needs three things what to group by what
+
+00:00:25.471 --> 00:00:29.549
+to add up and how PIVOTBY adds a second
+
+00:00:29.562 --> 00:00:33.481
+field across the top The function argument is a
+
+00:00:33.494 --> 00:00:37.049
+name like SUM or AVERAGE written without quotes or
+
+00:00:37.062 --> 00:00:37.752
+brackets
+
+00:00:39.216 --> 00:00:44.049
+Here's the practice sheet Thirty sales with date region
+
+00:00:44.244 --> 00:00:46.770
+category salesperson and amount
+
+00:00:48.247 --> 00:00:52.858
+Here's the common mistake first In G2, type equals
+
+00:00:52.871 --> 00:00:57.416
+GROUPBY open bracket B2 to B31, comma E2 to
+
+00:00:57.429 --> 00:01:02.416
+E31, comma SUM in quotes Close and press Return
+
+00:01:03.872 --> 00:01:09.733
+Hash VALUE The function argument isn't text Retype it
+
+00:01:09.746 --> 00:01:11.231
+with SUM and no quotes
+
+00:01:12.716 --> 00:01:16.505
+Four regions in alphabetical order each with its total
+
+00:01:16.687 --> 00:01:20.296
+and a grand total at the bottom Now sort
+
+00:01:20.309 --> 00:01:22.340
+it by sales biggest first
+
+00:01:23.809 --> 00:01:27.090
+Retype G2, adding three commas and minus 2 at
+
+00:01:27.103 --> 00:01:31.116
+the end The sort order argument means sort by
+
+00:01:31.129 --> 00:01:35.868
+the second column descending The three commas skip headers
+
+00:01:35.881 --> 00:01:38.264
+and totals which keep their defaults
+
+00:01:39.731 --> 00:01:43.678
+North is now at the top Next the share
+
+00:01:43.691 --> 00:01:48.431
+of each region In J2, type equals GROUPBY open
+
+00:01:48.444 --> 00:01:53.171
+bracket B2 to B31, comma E2 to E31, comma
+
+00:01:53.366 --> 00:01:56.647
+PERCENTOF Close and press Return
+
+00:01:58.122 --> 00:02:01.299
+Each region's percentage of the total adding up to
+
+00:02:01.312 --> 00:02:02.601
+one hundred percent
+
+00:02:04.075 --> 00:02:09.780
+Now PIVOTBY In G10, type equals PIVOTBY open bracket
+
+00:02:09.962 --> 00:02:13.465
+B2 to B31 for the rows comma C2 to
+
+00:02:13.478 --> 00:02:18.009
+C31 for the columns comma E2 to E31, comma
+
+00:02:18.153 --> 00:02:21.095
+SUM Close and press Return
+
+00:02:22.544 --> 00:02:26.698
+Regions down the side categories across the top totals
+
+00:02:26.711 --> 00:02:30.736
+on both edges Now change the first sale in
+
+00:02:30.749 --> 00:02:35.958
+E2 to 5,00,000 rupees Every summary updates instantly
+
+00:02:37.450 --> 00:02:39.794
+So when should you use these instead of a
+
+00:02:39.807 --> 00:02:40.536
+PivotTable
+
+00:02:41.997 --> 00:02:43.065
+A Mac note
+
+00:02:44.544 --> 00:02:45.755
+Here's the recap
+
+00:02:47.247 --> 00:02:51.546
+Your turn In G18, show the average sale for
+
+00:02:51.559 --> 00:02:56.181
+each salesperson with GROUPBY and AVERAGE The answer is
+
+00:02:56.194 --> 00:02:59.476
+on the S09-07 Done sheet

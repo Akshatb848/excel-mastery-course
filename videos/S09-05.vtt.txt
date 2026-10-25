@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.497
+These small reports are cut from bigger lists by
+
+00:00:03.510 --> 00:00:07.729
+formula the top five salespeople the last three months
+
+00:00:07.859 --> 00:00:10.502
+the second quarter and a block padded to a
+
+00:00:10.515 --> 00:00:11.453
+fixed size
+
+00:00:12.919 --> 00:00:13.987
+Here's the plan
+
+00:00:15.466 --> 00:00:18.682
+TAKE keeps a number of rows DROP removes them
+
+00:00:19.596 --> 00:00:22.786
+A positive number works from the top a negative
+
+00:00:22.799 --> 00:00:26.913
+number from the bottom EXPAND adds rows or columns
+
+00:00:26.926 --> 00:00:29.244
+and fills them with whatever you choose
+
+00:00:30.716 --> 00:00:35.223
+Here's the practice sheet Twenty salespeople on the left
+
+00:00:35.445 --> 00:00:39.507
+twelve months on the right Here's the common mistake
+
+00:00:39.520 --> 00:00:44.364
+first In E2, type equals TAKE open bracket A2
+
+00:00:44.377 --> 00:00:48.531
+to C21, comma 5 Press Return
+
+00:00:49.997 --> 00:00:52.836
+That's just the first five rows of the list
+
+00:00:52.966 --> 00:00:58.384
+not the top five TAKE doesn't sort Retype E2
+
+00:00:58.398 --> 00:01:01.848
+as equals TAKE open bracket SORT of A2 to
+
+00:01:01.861 --> 00:01:07.408
+C21, comma 3 comma minus 1 then comma 5
+
+00:01:08.872 --> 00:01:13.184
+Press Return Now it's the real top five led
+
+00:01:13.197 --> 00:01:17.168
+by Meera Joshi Sort first then take
+
+00:01:18.653 --> 00:01:23.486
+Last three months In E10, type equals TAKE open
+
+00:01:23.499 --> 00:01:28.720
+bracket I2 to J13, comma minus 3 Close and
+
+00:01:28.733 --> 00:01:32.926
+press Return January February and March
+
+00:01:34.419 --> 00:01:38.861
+Now the second quarter July to September Take the
+
+00:01:38.874 --> 00:01:43.184
+first six months then drop the first three In
+
+00:01:43.197 --> 00:01:47.208
+E15, type equals DROP open bracket TAKE of I2
+
+00:01:47.221 --> 00:01:51.882
+to J13 comma 6 then comma 3 Close and
+
+00:01:51.895 --> 00:01:52.807
+press Return
+
+00:01:54.263 --> 00:02:00.059
+Finally EXPAND In E20, type equals EXPAND open bracket
+
+00:02:00.255 --> 00:02:05.020
+E10 hash comma 4 rows comma 2 columns comma
+
+00:02:05.229 --> 00:02:08.979
+a dash in quotes Close and press Return
+
+00:02:10.450 --> 00:02:13.419
+The three months plus a fourth row of dashes
+
+00:02:14.306 --> 00:02:17.548
+EXPAND is useful when you stack blocks that must
+
+00:02:17.561 --> 00:02:20.608
+line up or want a fixed-size area on a
+
+00:02:20.621 --> 00:02:21.233
+report
+
+00:02:22.700 --> 00:02:26.333
+Make Divya Menon the top seller in C11, type
+
+00:02:26.346 --> 00:02:31.608
+9,90,000 and press Return The top five reorders
+
+00:02:33.060 --> 00:02:34.128
+A Mac note
+
+00:02:35.591 --> 00:02:36.802
+Here's the recap
+
+00:02:38.294 --> 00:02:42.567
+Your turn In L2, show the bottom three salespeople
+
+00:02:42.580 --> 00:02:46.395
+by sales with one formula The answer is on
+
+00:02:46.408 --> 00:02:49.598
+the S09-05 Done sheet

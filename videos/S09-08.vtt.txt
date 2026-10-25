@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.619
+This collections log gets new rows every day The
+
+00:00:04.632 --> 00:00:07.705
+formulas on the right point at a thousand rows
+
+00:00:07.952 --> 00:00:10.634
+yet they return only the rows that have data
+
+00:00:10.804 --> 00:00:14.397
+with no trailing zeros Add a row and they
+
+00:00:14.410 --> 00:00:15.127
+pick it up
+
+00:00:16.606 --> 00:00:17.674
+Here's the plan
+
+00:00:19.153 --> 00:00:21.913
+A dot next to the colon trims empty rows
+
+00:00:21.926 --> 00:00:25.600
+from that end of the range B2 colon dot
+
+00:00:25.613 --> 00:00:30.353
+B1000 trims the empty rows at the bottom TRIMRANGE
+
+00:00:30.366 --> 00:00:32.527
+does the same as a function
+
+00:00:34.012 --> 00:00:39.105
+Here's the practice sheet fourteen collection entries Here's the
+
+00:00:39.118 --> 00:00:44.053
+common mistake In E2, type equals B2 colon B1000
+
+00:00:44.066 --> 00:00:45.134
+and press Return
+
+00:00:46.621 --> 00:00:50.085
+It spills nine hundred and ninety-nine rows and every
+
+00:00:50.098 --> 00:00:54.240
+empty row becomes a zero Press Command Down Arrow
+
+00:00:54.253 --> 00:00:55.959
+to see how far it goes
+
+00:00:57.434 --> 00:01:01.212
+Go back to E2 Retype it with a dot
+
+00:01:01.225 --> 00:01:06.355
+after the colon equals B2 colon dot B1000 Press
+
+00:01:06.368 --> 00:01:06.941
+Return
+
+00:01:08.387 --> 00:01:13.519
+Just the fourteen branches no zeros Now a summary
+
+00:01:14.444 --> 00:01:18.597
+In G2, type equals UNIQUE open bracket B2 colon
+
+00:01:18.610 --> 00:01:22.504
+dot B1000 Close and press Return
+
+00:01:23.981 --> 00:01:27.197
+Without the dot UNIQUE would add a zero for
+
+00:01:27.210 --> 00:01:31.835
+all the blanks In H2, type equals SUMIFS open
+
+00:01:31.848 --> 00:01:36.027
+bracket C colon C comma B colon B comma
+
+00:01:36.210 --> 00:01:39.673
+G2 hash Close and press Return
+
+00:01:41.137 --> 00:01:44.692
+SUMIFS on whole columns is fine because it ignores
+
+00:01:44.705 --> 00:01:51.022
+blanks Now TRIMRANGE In J2, type equals ROWS open
+
+00:01:51.035 --> 00:01:55.957
+bracket TRIMRANGE of B2 to B1000 Close and press
+
+00:01:55.970 --> 00:01:59.030
+Return Fourteen rows of data
+
+00:02:00.512 --> 00:02:05.071
+Now add a new entry In B16, type Kolhapur
+
+00:02:05.280 --> 00:02:09.668
+press Tab type 38500 and press Return
+
+00:02:11.153 --> 00:02:14.174
+The branch list the summary and the row count
+
+00:02:14.187 --> 00:02:18.707
+all grow Kolhapur appears with its total and nothing
+
+00:02:18.720 --> 00:02:20.035
+had to be re-pointed
+
+00:02:21.528 --> 00:02:23.025
+When should you use which
+
+00:02:24.481 --> 00:02:25.549
+A Mac note
+
+00:02:27.028 --> 00:02:28.239
+Here's the recap
+
+00:02:29.715 --> 00:02:33.728
+Your turn In L2, show the last three entries
+
+00:02:33.741 --> 00:02:37.100
+of the whole log all three columns using TAKE
+
+00:02:37.113 --> 00:02:40.446
+with a trimmed range The answer is on the
+
+00:02:40.459 --> 00:02:43.285
+S09-08 Done sheet

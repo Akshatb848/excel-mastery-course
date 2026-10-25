@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.380
+Column F and column G give the same totals
+
+00:00:04.280 --> 00:00:07.496
+F repeats the same calculation four times and is
+
+00:00:07.509 --> 00:00:11.220
+hard to check G uses LET to name each
+
+00:00:11.233 --> 00:00:15.140
+step gross net and GST so anyone can read
+
+00:00:15.153 --> 00:00:15.452
+it
+
+00:00:16.903 --> 00:00:17.971
+Here's the plan
+
+00:00:19.450 --> 00:00:23.788
+LET works in pairs A name then its value
+
+00:00:23.931 --> 00:00:26.822
+as many pairs as you like and finally the
+
+00:00:26.835 --> 00:00:31.496
+calculation that uses those names Each part is worked
+
+00:00:31.509 --> 00:00:34.856
+out once which also makes the formula faster
+
+00:00:36.340 --> 00:00:40.274
+Here's the practice sheet Click F2 and look at
+
+00:00:40.287 --> 00:00:44.988
+the formula bar B2 times C2 appears four times
+
+00:00:45.912 --> 00:00:48.191
+One typo and the total is wrong
+
+00:00:49.684 --> 00:00:54.738
+In G2, type equals LET open bracket First pair
+
+00:00:54.868 --> 00:00:58.071
+gross comma B2 times C2, comma
+
+00:00:59.543 --> 00:01:04.439
+Second pair net comma gross times open bracket 1
+
+00:01:04.452 --> 00:01:09.063
+minus D2, close bracket comma Net uses the name
+
+00:01:09.076 --> 00:01:10.365
+gross we just made
+
+00:01:11.856 --> 00:01:16.192
+Third pair gst comma net times E2, comma
+
+00:01:17.684 --> 00:01:22.790
+Last comes the calculation net plus gst Close the
+
+00:01:22.803 --> 00:01:27.335
+bracket and press Return Same total as column F
+
+00:01:28.793 --> 00:01:31.540
+Fill it down to G11 with Command D
+
+00:01:33.434 --> 00:01:38.176
+Here's the common mistake In G3, type equals LET
+
+00:01:38.358 --> 00:01:44.673
+open bracket gst1 comma B3 times C3, comma gst1
+
+00:01:45.571 --> 00:01:47.121
+Close and press Return
+
+00:01:48.590 --> 00:01:53.238
+Excel refuses because GST1 is a real cell address
+
+00:01:53.356 --> 00:01:58.084
+column GST row one Click OK and press Escape
+
+00:01:58.996 --> 00:02:01.964
+Use names that can't be mistaken for cells
+
+00:02:03.434 --> 00:02:06.676
+Fill G2 down again with Command D so every
+
+00:02:06.689 --> 00:02:08.369
+row uses the good formula
+
+00:02:09.840 --> 00:02:13.683
+Here's how to debug a LET formula Swap the
+
+00:02:13.696 --> 00:02:17.082
+final calculation for any name and the cell shows
+
+00:02:17.095 --> 00:02:17.811
+that step
+
+00:02:19.278 --> 00:02:23.603
+Prove it's live Change the laptop discount in D3
+
+00:02:23.616 --> 00:02:27.145
+to 10 percent The LET total updates
+
+00:02:28.590 --> 00:02:29.658
+A Mac note
+
+00:02:31.121 --> 00:02:32.332
+Here's the recap
+
+00:02:33.809 --> 00:02:37.822
+Your turn In H2, use LET to return just
+
+00:02:37.835 --> 00:02:41.532
+the GST amount rounded to two decimals then fill
+
+00:02:41.545 --> 00:02:46.728
+it down The answer is on the S09-09 Done
+
+00:02:46.741 --> 00:02:47.236
+sheet

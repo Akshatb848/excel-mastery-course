@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.508
+Column F uses a function that doesn't come with
+
+00:00:03.521 --> 00:00:08.119
+Excel GSTINCL is our own made with LAMBDA and
+
+00:00:08.132 --> 00:00:11.934
+saved as a name The other columns use LAMBDA
+
+00:00:11.947 --> 00:00:17.234
+helpers MAP SCAN REDUCE BYROW BYCOL and MAKEARRAY
+
+00:00:18.750 --> 00:00:19.818
+Here's the plan
+
+00:00:21.297 --> 00:00:24.956
+LAMBDA lists the inputs first and the calculation last
+
+00:00:25.869 --> 00:00:29.112
+On its own it does nothing You give it
+
+00:00:29.125 --> 00:00:32.263
+values in a second pair of brackets or save
+
+00:00:32.276 --> 00:00:34.489
+it in the Name Manager and call it by
+
+00:00:34.502 --> 00:00:34.932
+name
+
+00:00:36.406 --> 00:00:40.484
+Here's the practice sheet Amounts in column B and
+
+00:00:40.497 --> 00:00:44.741
+GST rates in column C Here's the common mistake
+
+00:00:44.754 --> 00:00:49.989
+first In E2, type equals LAMBDA open bracket amt
+
+00:00:50.158 --> 00:00:55.145
+comma rate comma amt times open bracket 1 plus
+
+00:00:55.158 --> 00:00:58.322
+rate Close both and press Return
+
+00:00:59.828 --> 00:01:03.906
+Hash CALC We wrote a function but never gave
+
+00:01:03.919 --> 00:01:07.890
+it any values Retype it and add B2 comma
+
+00:01:07.903 --> 00:01:10.416
+C2 in a second pair of brackets at the
+
+00:01:10.429 --> 00:01:10.820
+end
+
+00:01:12.312 --> 00:01:15.919
+Sixty-nine thousand five hundred and two rupees the laptop
+
+00:01:15.932 --> 00:01:20.348
+with GST The LAMBDA works so let's save it
+
+00:01:21.246 --> 00:01:24.059
+On the Formulas tab click Define Name
+
+00:01:25.547 --> 00:01:31.591
+Name GSTINCL In Refers to type equals LAMBDA amt
+
+00:01:31.812 --> 00:01:35.588
+rate amt times 1 plus rate without the test
+
+00:01:35.601 --> 00:01:38.062
+values Click OK
+
+00:01:39.547 --> 00:01:43.909
+In F2, type equals GSTINCL open bracket B2 to
+
+00:01:43.922 --> 00:01:49.276
+B11, comma C2 to C11 Close and press Return
+
+00:01:50.174 --> 00:01:53.130
+Our own function spilling ten answers
+
+00:01:54.593 --> 00:01:58.044
+Now MAP which runs a LAMBDA on each item
+
+00:01:58.944 --> 00:02:02.746
+In G2, type equals MAP open bracket B2 to
+
+00:02:02.759 --> 00:02:07.421
+B11, comma C2 to C11, comma LAMBDA of amt
+
+00:02:07.655 --> 00:02:12.199
+rate then IF rate equals zero Exempt otherwise amt
+
+00:02:12.212 --> 00:02:13.059
+times rate
+
+00:02:14.515 --> 00:02:19.465
+Press Return GST amounts with Exempt for the zero-rated
+
+00:02:19.478 --> 00:02:22.082
+items such as vegetables and books
+
+00:02:23.547 --> 00:02:27.911
+SCAN keeps a running result In H2, type equals
+
+00:02:27.924 --> 00:02:32.742
+SCAN open bracket zero comma B2 to B11, comma
+
+00:02:32.911 --> 00:02:36.869
+LAMBDA of acc v acc plus v Close and
+
+00:02:36.882 --> 00:02:39.760
+press Return A running total
+
+00:02:41.234 --> 00:02:44.437
+REDUCE does the same but returns only the final
+
+00:02:44.450 --> 00:02:48.554
+answer In I2, type the same formula with REDUCE
+
+00:02:48.567 --> 00:02:51.067
+instead of SCAN and press Return
+
+00:02:52.547 --> 00:02:56.664
+Now BYROW The branch table below is in lakh
+
+00:02:57.562 --> 00:03:02.184
+In F15, type equals BYROW open bracket B15 to
+
+00:03:02.198 --> 00:03:07.263
+E19, comma LAMBDA of br SUM of br Close
+
+00:03:07.276 --> 00:03:10.922
+and press Return One total per branch
+
+00:03:12.406 --> 00:03:17.538
+BYCOL works down each column In B20, type equals
+
+00:03:17.551 --> 00:03:22.525
+BYCOL open bracket B15 to E19, comma LAMBDA of
+
+00:03:22.538 --> 00:03:28.385
+qtr MAX of qtr Close and press Return The
+
+00:03:28.398 --> 00:03:30.780
+best branch figure in each quarter
+
+00:03:32.250 --> 00:03:35.570
+Last MAKEARRAY builds a grid from row and column
+
+00:03:35.583 --> 00:03:41.458
+numbers In H15, type equals MAKEARRAY open bracket 3
+
+00:03:41.562 --> 00:03:46.158
+comma 4 comma LAMBDA of i j i times
+
+00:03:46.171 --> 00:03:47.994
+j Close and press Return
+
+00:03:49.453 --> 00:03:54.937
+Change the laptop amount in B2 to 62,000 GSTINCL
+
+00:03:55.106 --> 00:03:57.658
+MAP SCAN and REDUCE all update
+
+00:03:59.125 --> 00:04:00.193
+A Mac note
+
+00:04:01.672 --> 00:04:02.883
+Here's the recap
+
+00:04:04.359 --> 00:04:08.997
+Your turn In H21, use MAP to round every
+
+00:04:09.010 --> 00:04:12.213
+GSTINCL result in F2 hash to the nearest ten
+
+00:04:12.226 --> 00:04:17.421
+rupees The answer is on the S09-10 Done sheet
