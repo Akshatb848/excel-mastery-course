@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A 180-lesson Excel course for Mac users in India, from first cell to Copilot and Claude.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230e7a4a%27/%3E%3Ctext x=%2716%27 y=%2721%27 font-family=%27monospace%27 font-size=%2713%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27white%27%3Efx%3C/text%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Excel Mastery for Mac</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout concept: the app is a live workbook. A formula bar on top (it doubles as search),
+   sheet tabs for navigation (bottom bar on phones), cell references as the wayfinding system,
+   and a working spreadsheet as the hero. Marigold is the "selected cell"; green is Excel. */
+:root{
+  --paper:#f3f5f0; --sheet:#ffffff; --sunken:#e9eee7; --grid:#d9e1d8; --grid-strong:#c3cfc4;
+  --ink:#13201a; --muted:#5a6b61; --faint:#8a998f;
+  --accent:#0e7a4a; --accent-strong:#095c37; --accent-ink:#ffffff; --accent-soft:#dcefe3;
+  --sel:#c9820f; --sel-soft:#fbecd0; --sel-ink:#5a3a04;
+  --blue:#2c5ea8; --blue-soft:#e1eaf7; --red:#b4372f; --red-soft:#f8e0dd; --violet:#6b4fb3; --violet-soft:#ece6f8;
+  --shadow:0 1px 2px rgba(19,32,26,.06),0 8px 24px -12px rgba(19,32,26,.18);
+  --shadow-lg:0 24px 60px -20px rgba(19,32,26,.35);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",sans-serif;
+  --body:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --r:12px; --r-sm:8px; --bar:56px; --tabbar:64px;
+  --ease:cubic-bezier(.2,.8,.2,1); --spring:cubic-bezier(.34,1.56,.64,1);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0c1310; --sheet:#121b17; --sunken:#17231d; --grid:#22312a; --grid-strong:#2f4238;
+  --ink:#e3ebe6; --muted:#98a99f; --faint:#6c7d73;
+  --accent:#4cc28a; --accent-strong:#79d6a8; --accent-ink:#06130c; --accent-soft:#163526;
+  --sel:#eab04a; --sel-soft:#3a2c12; --sel-ink:#ffe1a8;
+  --blue:#8ab4f0; --blue-soft:#18263b; --red:#ef8076; --red-soft:#3a1d1a; --violet:#b9a3f0; --violet-soft:#251d3b;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6); --shadow-lg:0 24px 60px -20px rgba(0,0,0,.75);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0c1310; --sheet:#121b17; --sunken:#17231d; --grid:#22312a; --grid-strong:#2f4238;
+  --ink:#e3ebe6; --muted:#98a99f; --faint:#6c7d73;
+  --accent:#4cc28a; --accent-strong:#79d6a8; --accent-ink:#06130c; --accent-soft:#163526;
+  --sel:#eab04a; --sel-soft:#3a2c12; --sel-ink:#ffe1a8;
+  --blue:#8ab4f0; --blue-soft:#18263b; --red:#ef8076; --red-soft:#3a1d1a; --violet:#b9a3f0; --violet-soft:#251d3b;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6); --shadow-lg:0 24px 60px -20px rgba(0,0,0,.75);
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:96px 28px;background-attachment:fixed;background-position:-1px -1px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--sheet)}
+a{color:var(--accent)} a:hover{color:var(--accent-strong)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--sel);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0} ul,ol{margin:0}
+.wrap{max-width:1180px;margin:0 auto}
+.mono,.code,.kbd{font-family:var(--mono)}
+.code{font-size:.86em;background:var(--sunken);border:1px solid var(--grid);border-radius:5px;padding:1px 6px;white-space:nowrap}
+.muted{color:var(--muted)} .small{font-size:.875rem}
+.eyebrow{font:600 .75rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- formula bar (app bar) ---------- */
+.appbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px))) 0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  background:color-mix(in srgb,var(--sheet) 88%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);
+  border-bottom:1px solid var(--grid)}
+.appbar .wrap{display:flex;align-items:center;gap:10px;height:var(--bar)}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font:800 1.05rem/1 var(--display);white-space:nowrap}
+.brand .logo{width:30px;height:30px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:var(--accent-ink);font:700 .8rem/1 var(--mono);box-shadow:inset 0 -3px 0 rgba(0,0,0,.18)}
+.namebox{font:600 .8rem/1 var(--mono);border:1px solid var(--grid-strong);border-radius:6px;padding:7px 9px;min-width:74px;text-align:center;background:var(--sheet);color:var(--ink)}
+.fxbtn{flex:1;min-width:0;display:flex;align-items:center;gap:10px;border:1px solid var(--grid-strong);background:var(--sheet);border-radius:8px;height:38px;padding:0 10px;cursor:text;text-align:left;transition:border-color .2s,box-shadow .2s}
+.fxbtn:hover{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.fxbtn i{font:italic 600 .9rem/1 var(--mono);color:var(--muted);font-style:italic;border-right:1px solid var(--grid);padding-right:10px}
+.fxbtn span.f{font:.84rem/1 var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);flex:1;min-width:0}
+.fxbtn span.f b{color:var(--accent);font-weight:500}
+.fxbtn kbd{font:600 .7rem/1 var(--mono);color:var(--muted);border:1px solid var(--grid-strong);border-radius:5px;padding:4px 6px;background:var(--sunken)}
+.ring{--p:0;width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--grid) 0);transition:--p .6s}
+.ring span{width:30px;height:30px;border-radius:50%;background:var(--sheet);display:grid;place-items:center;font:600 .62rem/1 var(--mono)}
+.progpill{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.progpill small{font:500 .75rem/1.2 var(--mono);color:var(--muted)}
+
+/* ---------- sheet tabs ---------- */
+.tabs{display:flex;gap:2px;margin-top:18px;border-bottom:1px solid var(--grid-strong);position:relative}
+.tab{display:flex;align-items:center;gap:8px;padding:10px 16px 11px;text-decoration:none;color:var(--muted);font-weight:500;border:1px solid transparent;border-bottom:0;border-radius:10px 10px 0 0;position:relative;top:1px;transition:color .2s,background .2s}
+.tab svg{width:18px;height:18px;flex:none}
+.tab:hover{color:var(--ink);background:var(--sunken)}
+.tab[aria-current="page"]{color:var(--ink);background:var(--sheet);border-color:var(--grid-strong)}
+.tab[aria-current="page"]::after{content:"";position:absolute;left:12px;right:12px;top:-1px;height:3px;border-radius:0 0 3px 3px;background:var(--accent)}
+
+main{background:var(--sheet);border:1px solid var(--grid-strong);border-top:0;border-radius:0 0 var(--r) var(--r);padding:clamp(18px,3vw,36px);min-height:60vh;box-shadow:var(--shadow)}
+footer.foot{color:var(--muted);font-size:.85rem;padding:22px 2px 40px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+
+/* ---------- buttons, chips ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);
+  border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;cursor:pointer;transition:transform .15s var(--ease),background .2s,box-shadow .2s;min-height:42px}
+.btn:hover{background:var(--accent-strong);border-color:var(--accent-strong);color:var(--accent-ink);box-shadow:0 6px 18px -8px var(--accent)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--grid-strong)}
+.btn.ghost:hover{background:var(--sunken);color:var(--ink);box-shadow:none}
+.btn.sm{padding:6px 11px;min-height:34px;font-size:.875rem;border-radius:8px}
+.btn[disabled]{opacity:.55;cursor:default}
+.btn svg{width:18px;height:18px;flex:none}
+.iconbtn{width:42px;height:42px;border-radius:50%;border:1px solid var(--grid-strong);background:var(--sheet);display:grid;place-items:center;cursor:pointer;transition:background .2s,transform .15s}
+.iconbtn:hover{background:var(--sunken)} .iconbtn:active{transform:scale(.94)} .iconbtn[disabled]{opacity:.35;cursor:default}
+.iconbtn svg{width:18px;height:18px}
+.chip{display:inline-flex;align-items:center;gap:5px;font:600 .72rem/1 var(--mono);letter-spacing:.02em;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent-strong);white-space:nowrap}
+.chip.blue{background:var(--blue-soft);color:var(--blue)} .chip.sel{background:var(--sel-soft);color:var(--sel-ink)}
+.chip.grey{background:var(--sunken);color:var(--muted)} .chip.violet{background:var(--violet-soft);color:var(--violet)}
+.kbd{display:inline-flex;align-items:center;justify-content:center;min-width:1.9em;height:1.9em;padding:0 .45em;font-size:.8rem;font-weight:600;
+  background:var(--sheet);border:1px solid var(--grid-strong);border-bottom-width:3px;border-radius:6px;color:var(--ink);white-space:nowrap}
+.keys{display:inline-flex;gap:5px;flex-wrap:wrap;align-items:center}
+.keys .plus{color:var(--faint);font:600 .75rem var(--mono)}
+.keys.press .kbd{animation:press .9s var(--ease) both}
+.keys.press .kbd:nth-child(3){animation-delay:.12s}.keys.press .kbd:nth-child(5){animation-delay:.24s}.keys.press .kbd:nth-child(7){animation-delay:.36s}
+@keyframes press{0%{transform:translateY(0)}30%{transform:translateY(2px);border-bottom-width:1px;background:var(--sel-soft);border-color:var(--sel)}70%{transform:translateY(2px);border-bottom-width:1px;background:var(--sel-soft);border-color:var(--sel)}100%{transform:translateY(0)}}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:center;padding:clamp(20px,4vw,44px) 0 8px}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4.1rem);font-weight:800;letter-spacing:-.03em;line-height:1.02}
+.hero h1 .hl{white-space:nowrap;color:var(--accent);background:linear-gradient(var(--sel-soft),var(--sel-soft)) no-repeat 0 88%/100% .34em;animation:sweep 1s .3s var(--ease) both;padding:0 .05em}
+@keyframes sweep{from{background-size:0 .34em}to{background-size:100% .34em}}
+.hero .lede{margin-top:16px;font-size:1.08rem;color:var(--muted);max-width:56ch}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.stats{display:grid;grid-template-columns:repeat(4,max-content);gap:12px 28px;margin-top:26px}
+@media (max-width:420px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stats div{display:flex;flex-direction:column}
+.stats b{font:700 1.7rem/1 var(--display);font-variant-numeric:tabular-nums}
+.stats small{font:500 .72rem/1.4 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+
+/* live workbook simulation */
+.sim{background:var(--sheet);border:1px solid var(--grid-strong);border-radius:14px;box-shadow:var(--shadow-lg);overflow:hidden;min-width:0;position:relative}
+.sim .chrome{display:flex;align-items:center;gap:6px;padding:9px 12px;border-bottom:1px solid var(--grid);background:var(--sunken)}
+.sim .chrome i{width:11px;height:11px;border-radius:50%;background:var(--grid-strong)}
+.sim .chrome i:nth-child(1){background:#ec6a5e}.sim .chrome i:nth-child(2){background:#f4bf4f}.sim .chrome i:nth-child(3){background:#61c554}
+.sim .chrome span{margin-left:8px;font:500 .74rem var(--mono);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sim .fbar{display:flex;align-items:center;gap:8px;padding:7px 10px;border-bottom:1px solid var(--grid);font:.8rem/1.3 var(--mono)}
+.sim .fbar .nb{border:1px solid var(--grid-strong);border-radius:4px;padding:3px 6px;min-width:42px;text-align:center;font-weight:600}
+.sim .fbar .fx{color:var(--muted);font-style:italic}
+.sim .fbar .ftext{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:1.3em}
+.sim .fbar .caret{display:inline-block;width:1px;height:1.05em;background:var(--ink);vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.ref1{color:#2c6fd6}.ref2{color:#c2410c}.ref3{color:#7c3aed}
+:root[data-theme="dark"] .ref1{color:#7fb0ff} :root[data-theme="dark"] .ref2{color:#ff9a62} :root[data-theme="dark"] .ref3{color:#b799ff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ref1{color:#7fb0ff}:root:not([data-theme="light"]) .ref2{color:#ff9a62}:root:not([data-theme="light"]) .ref3{color:#b799ff}}
+.gridwrap{position:relative;overflow-x:auto}
+table.cells{border-collapse:collapse;width:100%;font:.8rem/1 var(--mono);table-layout:fixed;min-width:330px}
+table.cells th{background:var(--sunken);color:var(--muted);font-weight:500;height:24px;border:1px solid var(--grid);font-size:.7rem}
+table.cells th:first-child{width:34px}
+table.cells td{border:1px solid var(--grid);height:30px;padding:0 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:background .35s}
+table.cells td.n{text-align:right;font-variant-numeric:tabular-nums}
+table.cells tr.h td{font-weight:600;background:color-mix(in srgb,var(--accent-soft) 60%,var(--sheet))}
+table.cells td.pop{animation:pop .5s var(--spring)}
+table.cells td.res{background:var(--accent-soft);color:var(--accent-strong);font-weight:600}
+table.cells td.lab{color:var(--muted)}
+@keyframes pop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
+.hlbox{position:absolute;pointer-events:none;border:2px solid;border-radius:2px;transition:all .35s var(--ease);opacity:0}
+.hlbox.on{opacity:1}
+.hlbox.r1{border-color:#2c6fd6;background:rgba(44,111,214,.08)} .hlbox.r2{border-color:#c2410c;background:rgba(194,65,12,.08)} .hlbox.r3{border-color:#7c3aed;background:rgba(124,58,237,.08)}
+.hlbox.cur{border-color:var(--accent);border-width:2px;background:transparent;box-shadow:0 0 0 1px var(--sheet) inset}
+.hlbox.cur::after{content:"";position:absolute;right:-4px;bottom:-4px;width:6px;height:6px;background:var(--accent);border:1px solid var(--sheet)}
+.hlbox.spill{border:1.5px dashed var(--accent);background:transparent}
+.copilot{position:absolute;right:10px;bottom:10px;left:auto;max-width:min(78%,300px);background:var(--sheet);border:1px solid var(--grid-strong);border-radius:12px;box-shadow:var(--shadow-lg);padding:10px 12px;font-size:.8rem;line-height:1.45;opacity:0;transform:translateY(8px) scale(.98);transition:all .35s var(--ease);pointer-events:none}
+.copilot.on{opacity:1;transform:none}
+.copilot .who{display:flex;align-items:center;gap:6px;font:600 .72rem var(--mono);color:var(--violet);margin-bottom:4px}
+.copilot .who::before{content:"";width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,var(--violet),var(--blue))}
+.copilot .me{background:var(--sunken);border-radius:8px;padding:6px 8px;margin-bottom:6px}
+.scenes{display:flex;gap:6px;padding:9px 10px;border-top:1px solid var(--grid);overflow-x:auto;scrollbar-width:none}
+.scenes::-webkit-scrollbar{display:none}
+.scene{flex:none;border:1px solid var(--grid-strong);background:var(--sheet);border-radius:999px;padding:5px 10px;font:600 .72rem var(--mono);cursor:pointer;color:var(--muted);position:relative;overflow:hidden}
+.scene[aria-pressed="true"]{color:var(--accent-strong);border-color:var(--accent)}
+.scene[aria-pressed="true"]::after{content:"";position:absolute;left:0;bottom:0;height:2px;background:var(--accent);width:var(--prog,0%)}
+
+/* ---------- section headers, rails (carousels) ---------- */
+.block{margin-top:clamp(28px,4vw,44px)}
+.bhead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.bhead h2{font-size:clamp(1.35rem,2.6vw,1.8rem);font-weight:700}
+.bhead p{color:var(--muted);margin-top:4px;max-width:62ch}
+.railnav{display:flex;gap:8px}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:2px;padding:4px 2px 14px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.rail>*{scroll-snap-align:start}
+.rail.w4{grid-auto-columns:calc((100% - 3*14px)/4)} .rail.w3{grid-auto-columns:calc((100% - 2*14px)/3)}
+@media (max-width:980px){.rail.w4{grid-auto-columns:calc((100% - 2*14px)/3)}}
+@media (max-width:760px){.rail.w4,.rail.w3{grid-auto-columns:78%}}
+
+/* level switcher */
+.seg{display:inline-flex;background:var(--sunken);border:1px solid var(--grid);border-radius:12px;padding:4px;gap:2px;position:relative;max-width:100%;overflow-x:auto;scrollbar-width:none}
+.seg::-webkit-scrollbar{display:none}
+.seg button{position:relative;z-index:1;border:0;background:transparent;padding:8px 14px;border-radius:9px;font-weight:600;font-size:.9rem;color:var(--muted);cursor:pointer;white-space:nowrap;transition:color .25s}
+.seg button[aria-selected="true"]{color:var(--ink)}
+.seg .ind{position:absolute;z-index:0;top:4px;bottom:4px;border-radius:9px;background:var(--sheet);box-shadow:var(--shadow);transition:left .35s var(--ease),width .35s var(--ease)}
+
+/* section card */
+.scard{position:relative;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);background:var(--sheet);border:1px solid var(--grid-strong);border-radius:var(--r);padding:16px;min-height:188px;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s;overflow:hidden}
+.scard:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--accent);color:var(--ink)}
+.scard .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.scard .sid{font:600 .78rem var(--mono);color:var(--muted);background:var(--sunken);border:1px solid var(--grid);padding:3px 7px;border-radius:5px}
+.scard h3{font-size:1.15rem;font-weight:700}
+.scard .spark{display:flex;align-items:flex-end;gap:3px;height:34px;margin-top:auto}
+.scard .spark i{flex:1;background:var(--accent-soft);border-radius:2px 2px 0 0;transition:background .3s,height .5s var(--ease)}
+.scard .spark i.d{background:var(--accent)}
+.scard .meta{display:flex;justify-content:space-between;font:500 .75rem var(--mono);color:var(--muted)}
+.scard.done{border-color:var(--accent)}
+.scard .mini{--p:0;width:30px;height:30px;border-radius:50%;background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--grid) 0);display:grid;place-items:center}
+.scard .mini::after{content:"";width:22px;height:22px;border-radius:50%;background:var(--sheet)}
+
+/* lesson card (carousels) */
+.lcard{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);border:1px solid var(--grid-strong);border-radius:var(--r);background:var(--sheet);overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.lcard:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--accent);color:var(--ink)}
+.lcard .cover{aspect-ratio:16/8;max-width:100%;position:relative;display:grid;place-items:center;overflow:hidden;
+  background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/34px 17px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/34px 17px,var(--sunken)}
+.lcard .cover b{font:800 2.2rem/1 var(--display);letter-spacing:-.02em;color:var(--ink);opacity:.9}
+.lcard .cover .play{position:absolute;right:10px;bottom:10px;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;transform:scale(.9);transition:transform .25s var(--spring)}
+.lcard:hover .cover .play{transform:scale(1.08)}
+.lcard .cover .tag{position:absolute;left:10px;top:10px}
+.lcard .cover .selcell{position:absolute;width:68px;height:17px;border:2px solid var(--accent);left:34px;top:17px;transition:all .5s var(--ease)}
+.lcard:hover .cover .selcell{left:102px;top:51px}
+.lcard .body{padding:0 14px 14px;display:flex;flex-direction:column;gap:4px}
+.lcard .body h3{font-size:1rem;font-weight:700}
+.lcard .body span{font:500 .75rem var(--mono);color:var(--muted)}
+.lcard.isdone .cover::after{content:"✓ Done";position:absolute;left:10px;bottom:10px;font:600 .72rem var(--mono);background:var(--accent);color:var(--accent-ink);padding:4px 8px;border-radius:999px}
+
+/* continue banner */
+.cont{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;border:1px solid var(--accent);background:linear-gradient(110deg,var(--accent-soft),var(--sheet) 70%);border-radius:var(--r);padding:16px 18px;text-decoration:none;color:var(--ink)}
+.cont:hover{color:var(--ink);box-shadow:var(--shadow-lg)}
+.cont .ring{width:52px;height:52px}.cont .ring span{width:42px;height:42px;font-size:.72rem}
+.cont h3{font-size:1.1rem}
+@media (max-width:560px){.cont{grid-template-columns:auto minmax(0,1fr)}.cont .btn{grid-column:1/-1}}
+
+/* how it works */
+.how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.how>div{border:1px solid var(--grid);border-radius:var(--r);padding:16px;background:var(--paper)}
+.how b{display:block;font:700 1.05rem var(--display);margin:8px 0 4px}
+.how p{color:var(--muted);font-size:.93rem}
+.how .cell{font:600 .75rem var(--mono);color:var(--sel-ink);background:var(--sel-soft);padding:3px 7px;border-radius:5px}
+@media (max-width:760px){.how{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- crumbs, page head ---------- */
+.crumbs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:500 .8rem var(--mono);color:var(--muted);margin-bottom:12px}
+.crumbs a{color:var(--muted);text-decoration:none} .crumbs a:hover{color:var(--accent)}
+.phead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.phead h1{font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:800;letter-spacing:-.02em}
+.phead p{color:var(--muted);margin-top:6px}
+.phead .acts{display:flex;flex-wrap:wrap;gap:8px}
+
+/* section page */
+.shero{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center}
+.bigring{--p:0;width:96px;height:96px;border-radius:50%;background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--grid) 0);display:grid;place-items:center;transition:--p 1s var(--ease)}
+.bigring span{width:80px;height:80px;border-radius:50%;background:var(--sheet);display:grid;place-items:center;text-align:center;font:700 1.2rem/1 var(--display)}
+.bigring small{display:block;font:500 .65rem var(--mono);color:var(--muted);margin-top:3px}
+.timeline{list-style:none;padding:0;margin-top:22px;display:grid;gap:8px;counter-reset:x}
+.trow{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--grid);border-radius:10px;text-decoration:none;color:var(--ink);background:var(--sheet);transition:border-color .2s,transform .2s var(--ease),background .2s}
+.trow:hover{border-color:var(--accent);transform:translateX(3px);color:var(--ink);background:color-mix(in srgb,var(--accent-soft) 35%,var(--sheet))}
+.trow .tick{width:32px;height:32px;border-radius:8px;border:1.5px solid var(--grid-strong);display:grid;place-items:center;font:600 .72rem var(--mono);color:var(--muted)}
+.trow.done .tick{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.trow .t{font-weight:600;min-width:0}
+.trow .t small{display:block;font:500 .74rem var(--mono);color:var(--muted);margin-top:2px}
+.trow .b{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:560px){.trow{grid-template-columns:36px minmax(0,1fr)}.trow .b{grid-column:2;justify-content:flex-start}}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px;margin-top:22px}
+.tool{border:1px solid var(--grid-strong);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;background:var(--paper)}
+.tool b{font:700 1rem var(--display)}
+.tool .note{color:var(--muted);font-size:.88rem}
+
+/* ---------- lesson ---------- */
+.lgrid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:22px;margin-top:18px;align-items:start}
+@media (max-width:900px){.lgrid{grid-template-columns:minmax(0,1fr)}}
+.player{background:#0b0f0d;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg);position:relative}
+.player video{display:block;width:100%;aspect-ratio:16/9;max-width:100%;background:#0b0f0d}
+.pctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--sunken);border:1px solid var(--grid);border-top:0;border-radius:0 0 var(--r) var(--r);margin-top:-6px;padding-top:14px}
+.pctl .g{display:flex;gap:4px;flex-wrap:wrap}
+.pctl button{border:1px solid var(--grid-strong);background:var(--sheet);border-radius:7px;padding:5px 9px;font:600 .74rem var(--mono);cursor:pointer;color:var(--muted)}
+.pctl button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent-strong);background:var(--accent-soft)}
+.endcard{position:absolute;inset:0;background:rgba(8,14,11,.86);color:#e9f2ec;display:grid;place-items:center;text-align:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .4s}
+.endcard.on{opacity:1;pointer-events:auto}
+.endcard h3{font-size:1.3rem;margin:6px 0 14px;color:#fff}
+.endcard .eyebrow{color:#9fc7b0}
+.side{display:flex;flex-direction:column;gap:12px}
+.box{border:1px solid var(--grid-strong);border-radius:var(--r);padding:16px;background:var(--sheet)}
+.box h3{font-size:1rem;font-weight:700;margin-bottom:8px}
+.box ul{padding-left:18px;display:grid;gap:4px}
+.mac{border-left:3px solid var(--sel);background:var(--sel-soft);color:var(--ink);border-radius:0 10px 10px 0;padding:12px 14px;font-size:.93rem}
+.donebtn{display:flex;align-items:center;gap:10px;border:1.5px solid var(--grid-strong);background:var(--sheet);border-radius:12px;padding:9px 14px 9px 10px;cursor:pointer;font-weight:600;position:relative;overflow:hidden;transition:border-color .2s}
+.donebtn .tk{width:24px;height:24px;border-radius:7px;border:1.5px solid var(--grid-strong);display:grid;place-items:center;transition:all .3s var(--spring);color:var(--accent-ink);font-size:.85rem}
+.donebtn[aria-pressed="true"]{border-color:var(--accent)}
+.donebtn[aria-pressed="true"] .tk{background:var(--accent);border-color:var(--accent);transform:rotate(-8deg) scale(1.08)}
+.donebtn .burst{position:absolute;inset:0;pointer-events:none}
+.donebtn .burst i{position:absolute;left:22px;top:50%;width:6px;height:6px;border-radius:1px;background:var(--accent);animation:burst .7s var(--ease) forwards}
+@keyframes burst{to{transform:translate(var(--x),var(--y)) rotate(160deg);opacity:0}}
+
+/* walkthrough stepper */
+.ptabs{display:flex;gap:4px;border-bottom:1px solid var(--grid-strong);margin-top:28px;overflow-x:auto;scrollbar-width:none}
+.ptabs::-webkit-scrollbar{display:none}
+.ptabs button{border:0;background:transparent;padding:10px 14px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.ptabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.ppanel{padding-top:18px}
+.stepper{display:grid;gap:14px}
+.stepbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between}
+.dots{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
+.dots button{width:22px;height:8px;border-radius:4px;border:0;background:var(--grid-strong);cursor:pointer;padding:0;transition:background .25s,width .3s var(--ease)}
+.dots button.seen{background:var(--accent-soft)} .dots button[aria-current="step"]{background:var(--accent);width:36px}
+.stage{position:relative;overflow:hidden;border:1px solid var(--grid-strong);border-radius:var(--r);background:var(--sheet);min-height:220px}
+.scardx{padding:clamp(16px,3vw,26px);display:grid;gap:12px;animation:slidein .45s var(--ease)}
+.scardx.back{animation-name:slideback}
+@keyframes slidein{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+@keyframes slideback{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
+.scardx .num{font:600 .78rem var(--mono);color:var(--accent-strong)}
+.scardx .cap{font:700 1.2rem/1.25 var(--display)}
+.scardx .say{font-size:1.02rem;max-width:68ch}
+.acts{list-style:none;padding:0;display:grid;gap:6px}
+.acts li{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--grid);border-radius:8px;background:var(--paper);font-size:.95rem}
+.acts li::before{content:"";flex:none;width:8px;height:8px;margin-top:8px;border-radius:2px;background:var(--accent)}
+.card{border-radius:10px;padding:10px 12px;font-size:.93rem;background:var(--blue-soft);white-space:pre-line}
+.card.ask{background:var(--violet-soft);border:1px solid color-mix(in srgb,var(--violet) 30%,transparent)}
+.card.warn{background:var(--sel-soft)} .card.tip{background:var(--accent-soft)}
+.allsteps{list-style:none;padding:0;display:grid;gap:12px;counter-reset:s}
+.allsteps>li{counter-increment:s;border:1px solid var(--grid);border-radius:var(--r);padding:14px 16px 14px 54px;position:relative;display:grid;gap:8px}
+.allsteps>li::before{content:counter(s);position:absolute;left:14px;top:14px;width:28px;height:28px;border-radius:7px;background:var(--accent-soft);color:var(--accent-strong);display:grid;place-items:center;font:600 .8rem var(--mono)}
+.checks li{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.lnav{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:28px}
+.lnav a{display:flex;flex-direction:column;gap:2px;border:1px solid var(--grid-strong);border-radius:var(--r);padding:12px 16px;text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s var(--ease);min-width:0}
+.lnav a:hover{border-color:var(--accent);color:var(--ink)}
+.lnav a.next{text-align:right}
+.lnav a span{font:500 .75rem var(--mono);color:var(--muted)} .lnav a b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.placeholder{aspect-ratio:16/9;max-width:100%;display:grid;place-items:center;text-align:center;padding:20px;color:#cfe0d6}
+
+/* quiz */
+.quiz{border:1px solid var(--grid-strong);border-radius:var(--r);padding:clamp(16px,3vw,24px);background:var(--sheet);display:grid;gap:14px}
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:10px;font:600 .78rem var(--mono);color:var(--muted)}
+.qbar{height:6px;border-radius:3px;background:var(--grid);overflow:hidden}
+.qbar i{display:block;height:100%;background:var(--accent);transition:width .5s var(--ease)}
+.quiz .q{font:700 1.12rem/1.35 var(--display)}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;border:1.5px solid var(--grid-strong);background:var(--sheet);border-radius:10px;padding:12px 14px;cursor:pointer;transition:border-color .2s,background .2s,transform .15s;display:flex;gap:10px;align-items:flex-start}
+.opt:hover:not([disabled]){border-color:var(--accent);transform:translateX(2px)}
+.opt .k{font:600 .75rem var(--mono);border:1px solid var(--grid-strong);border-radius:5px;padding:2px 6px;flex:none;margin-top:2px}
+.opt.right{border-color:var(--accent);background:var(--accent-soft)} .opt.wrong{border-color:var(--red);background:var(--red-soft);animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.why{font-size:.94rem;color:var(--ink);background:var(--paper);border-radius:10px;padding:10px 12px}
+.score{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+
+/* ---------- library / tips / shortcuts ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 8px}
+.find{flex:1 1 260px;min-width:0;height:44px;border:1px solid var(--grid-strong);border-radius:10px;padding:0 14px 0 40px;font:inherit;background:var(--sheet) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%238a998f' stroke-width='2'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='m13 13 4 4'/%3E%3C/svg%3E") no-repeat 13px 50%;color:var(--ink)}
+.find:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+select{height:44px;border:1px solid var(--grid-strong);border-radius:10px;padding:0 10px;font:inherit;background:var(--sheet);color:var(--ink);max-width:100%}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:4px 0 10px;scrollbar-width:thin}
+.chips button{flex:none;border:1px solid var(--grid-strong);background:var(--sheet);border-radius:999px;padding:7px 12px;font-size:.84rem;font-weight:500;cursor:pointer;color:var(--muted);transition:all .2s}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.count{font:500 .8rem var(--mono);color:var(--muted);margin:4px 0 12px}
+.fns{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:14px}
+.fn{border:1px solid var(--grid-strong);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0;background:var(--sheet);animation:fadeup .4s var(--ease) both}
+@keyframes fadeup{from{opacity:.001;transform:translateY(8px)}to{opacity:1;transform:none}}
+.fn .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap}
+.fn h3{font:600 1.1rem var(--mono);letter-spacing:0}
+.fn .syn{font:.85rem/1.5 var(--mono);background:var(--sunken);border-radius:8px;padding:8px 10px;overflow-x:auto;white-space:nowrap}
+.fn .args{padding-left:18px;font-size:.9rem;display:grid;gap:2px}
+.fn .args code{font-family:var(--mono);font-size:.85em;color:var(--accent-strong)}
+.tblwrap{overflow-x:auto;max-width:100%}
+table.grid{border-collapse:collapse;font:.82rem var(--mono)}
+table.grid th{background:var(--sunken);color:var(--muted);font-weight:500;border:1px solid var(--grid);padding:3px 8px;min-width:28px}
+table.grid td{border:1px solid var(--grid);padding:0;min-width:70px}
+table.grid td span{display:block;padding:5px 8px;white-space:nowrap}
+table.grid input{width:100%;min-width:70px;border:0;background:transparent;padding:5px 8px;font:inherit;color:var(--ink)}
+table.grid input:focus{outline:2px solid var(--accent);outline-offset:-2px;background:var(--accent-soft)}
+.fbar2{display:flex;align-items:center;gap:8px;border:1px solid var(--grid-strong);border-radius:8px;padding:4px 4px 4px 10px}
+.fbar2 .fx{font:italic 600 .85rem var(--mono);color:var(--muted)}
+.fbar2 input{flex:1;min-width:0;border:0;background:transparent;font:.85rem var(--mono);color:var(--ink);padding:6px 0}
+.fbar2 input:focus{outline:none}
+.fbar2 .code{border:0;background:transparent;white-space:normal}
+.out{font-size:.9rem;min-height:1.4em}
+.out .val{font:600 .9rem var(--mono);color:var(--accent-strong);background:var(--accent-soft);padding:2px 8px;border-radius:5px}
+.out .err{color:var(--red);font-family:var(--mono)}
+.out.flash{animation:flash .6s}
+@keyframes flash{from{background:var(--sel-soft)}to{background:transparent}}
+.tips{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+.tip{border:1px solid var(--grid-strong);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;background:var(--sheet);animation:fadeup .4s var(--ease) both}
+.tip b{font:700 1.02rem/1.3 var(--display)}
+.tip p{color:var(--muted);font-size:.93rem}
+.tip .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:auto;font-size:.85rem}
+.totd{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;background:var(--ink);color:var(--sheet);border-radius:var(--r);padding:20px 22px}
+.totd .eyebrow{color:color-mix(in srgb,var(--sheet) 65%,transparent)}
+.totd b{font:700 1.3rem/1.25 var(--display);display:block;margin:6px 0}
+.totd p{color:color-mix(in srgb,var(--sheet) 80%,transparent);font-size:.95rem}
+.totd .kbd{background:transparent;color:var(--sheet);border-color:color-mix(in srgb,var(--sheet) 45%,transparent)}
+.totd .btn.ghost{color:var(--sheet);border-color:color-mix(in srgb,var(--sheet) 40%,transparent)}
+.totd .btn.ghost:hover{background:color-mix(in srgb,var(--sheet) 12%,transparent);color:var(--sheet)}
+@media (max-width:560px){.totd{grid-template-columns:minmax(0,1fr)}}
+table.sc{width:100%;border-collapse:collapse;font-size:.92rem;margin-bottom:22px}
+table.sc caption{text-align:left;font:700 1.05rem var(--display);padding:0 0 8px}
+table.sc th{text-align:left;font:600 .72rem var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--grid-strong);padding:8px}
+table.sc td{border-bottom:1px solid var(--grid);padding:10px 8px;vertical-align:middle}
+table.sc tr{transition:background .2s} table.sc tbody tr:hover{background:var(--paper)}
+
+/* shortcut trainer */
+.trainer{border:1px solid var(--grid-strong);border-radius:var(--r);overflow:hidden;background:var(--sheet);margin:14px 0 26px}
+.trainer .tt{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 16px;border-bottom:1px solid var(--grid);background:var(--paper)}
+.trainer .arena{padding:clamp(18px,4vw,34px);display:grid;gap:14px;justify-items:center;text-align:center}
+.trainer .what{font:700 clamp(1.2rem,3vw,1.6rem)/1.25 var(--display)}
+.trainer .answer{min-height:2.6em;display:flex;align-items:center;justify-content:center}
+.trainer .answer .kbd{font-size:1rem;min-width:2.4em;height:2.4em}
+.trainer .fb{font:600 .85rem var(--mono);min-height:1.3em}
+.trainer .fb.ok{color:var(--accent-strong)} .trainer .fb.no{color:var(--red)}
+.trainer .ctl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.streak{font:600 .8rem var(--mono);color:var(--muted)}
+
+/* help */
+.about{max-width:74ch;display:grid;gap:14px}
+.about h2{font-size:1.8rem} .about h3{font-size:1.2rem;margin-top:10px}
+.about ul{padding-left:20px;display:grid;gap:8px}
+
+/* ---------- command palette ---------- */
+@media (hover:none){.kbtip{display:none}}
+.stage{touch-action:pan-y}
+.pal{position:fixed;inset:0;z-index:100;display:grid;place-items:start center;padding:max(10vh,calc(env(safe-area-inset-top,0px) + 16px)) max(16px,env(safe-area-inset-right,0px)) 16px max(16px,env(safe-area-inset-left,0px));background:rgba(8,14,11,.45);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);animation:fade .2s}
+@keyframes fade{from{opacity:0}}
+.pal .box{width:min(640px,100%);padding:0;overflow:hidden;box-shadow:var(--shadow-lg);animation:rise .25s var(--ease)}
+@keyframes rise{from{opacity:0;transform:translateY(-10px) scale(.98)}}
+.pal .in{display:flex;align-items:center;gap:10px;padding:0 14px;border-bottom:1px solid var(--grid)}
+.pal .in i{font:italic 600 .95rem var(--mono);color:var(--muted)}
+.pal input{flex:1;min-width:0;border:0;background:transparent;height:56px;font:1rem var(--body);color:var(--ink)}
+.pal input:focus{outline:none}
+.pal ul{list-style:none;padding:6px;margin:0;max-height:min(56vh,460px);overflow-y:auto}
+.pal li a{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px;border-radius:8px;text-decoration:none;color:var(--ink)}
+.pal li a .r{font:600 .74rem var(--mono);color:var(--muted)}
+.pal li a .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pal li a[aria-selected="true"]{background:var(--accent-soft)}
+.pal .hint{display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;padding:8px 14px;border-top:1px solid var(--grid);font:500 .72rem var(--mono);color:var(--muted)}
+.pal .empty{padding:24px;text-align:center;color:var(--muted)}
+
+/* toast */
+.toasts{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:120;display:grid;gap:8px;width:min(420px,calc(100% - 32px))}
+.toast{background:var(--ink);color:var(--sheet);border-radius:12px;padding:12px 16px;font-size:.92rem;box-shadow:var(--shadow-lg);animation:rise .3s var(--ease);display:flex;gap:10px;align-items:center}
+.toast.out{animation:fadeout .3s forwards} @keyframes fadeout{to{opacity:0;transform:translateY(8px)}}
+
+/* skeleton loading */
+.sk{background:linear-gradient(90deg,var(--sunken) 30%,var(--grid) 50%,var(--sunken) 70%) 0 0/300% 100%;animation:shim 1.2s infinite linear;border-radius:8px;height:14px}
+@keyframes shim{to{background-position:-100% 0}}
+.errbox{border:1px solid var(--red);background:var(--red-soft);border-radius:var(--r);padding:16px;display:grid;gap:10px;justify-items:start}
+
+/* page transitions */
+#view{transition:opacity .2s}
+#view.leaving{opacity:.25}
+::view-transition-old(root){animation:.18s ease both vtout}
+::view-transition-new(root){animation:.32s var(--ease) both vtin}
+@keyframes vtout{to{opacity:0}} @keyframes vtin{from{opacity:0;transform:translateY(6px)}}
+
+/* ---------- phone ---------- */
+.mobnav{display:none}
+@media (max-width:760px){
+  body{padding-bottom:calc(var(--tabbar) + env(safe-area-inset-bottom,0px))}
+  .appbar .wrap{gap:8px}
+  .brand .word,.namebox,.fxbtn kbd,.progpill small{display:none}
+  .fxbtn span.f{font-size:.8rem}
+  .tabs{display:none}
+  main{border-top:1px solid var(--grid-strong);border-radius:var(--r);margin-top:14px;padding:18px 16px}
+  .hero{grid-template-columns:minmax(0,1fr);padding-top:16px}
+  .mobnav{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:55;
+    padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px));
+    background:color-mix(in srgb,var(--sheet) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--grid-strong)}
+  .mobnav a{display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none;color:var(--muted);font:600 .66rem/1 var(--body);padding:6px 0;border-radius:10px;position:relative}
+  .mobnav a svg{width:22px;height:22px}
+  .mobnav a[aria-current="page"]{color:var(--accent-strong)}
+  .mobnav a[aria-current="page"]::before{content:"";position:absolute;top:-7px;width:28px;height:3px;border-radius:0 0 3px 3px;background:var(--accent)}
+  .toasts{bottom:calc(var(--tabbar) + 14px + env(safe-area-inset-bottom,0px))}
+  .shero{grid-template-columns:minmax(0,1fr)}
+  .bigring{width:80px;height:80px}.bigring span{width:66px;height:66px;font-size:1rem}
+  .lnav{grid-template-columns:minmax(0,1fr)} .lnav a.next{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important;scroll-behavior:auto!important}
+}
+</style>
+
+<header class="appbar">
+  <div class="wrap">
+    <a class="brand" href="#course" aria-label="Excel Mastery for Mac, home"><span class="logo">fx</span><span class="word">Excel Mastery</span></a>
+    <span class="namebox" id="namebox" aria-label="Current cell">A1</span>
+    <button class="fxbtn" id="fxbtn" type="button" aria-label="Search lessons, functions and tips"><i>fx</i><span class="f" id="formula">=COURSE("Excel for Mac", <b>"Beginner to AI"</b>)</span><kbd>⌘K</kbd></button>
+    <a class="progpill" href="#help" id="progpill" aria-label="Your progress"><span class="ring" id="ring"><span id="ringtxt">0%</span></span><small id="progtxt">0 / 180</small></a>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="tabs" aria-label="Main">
+    <a class="tab" href="#course" data-tab="course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>Course</a>
+    <a class="tab" href="#functions" data-tab="functions"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h-2a3 3 0 0 0-3 3v13M6 11h7M15 13l5 6M20 13l-5 6"/></svg>Functions</a>
+    <a class="tab" href="#tips" data-tab="tips"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3Z"/></svg>Tips</a>
+    <a class="tab" href="#shortcuts" data-tab="shortcuts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg>Mac shortcuts</a>
+    <a class="tab" href="#help" data-tab="help"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg>How to use</a>
+  </nav>
+  <main id="view" aria-live="polite"></main>
+  <footer class="foot"><span>Excel Mastery for Mac · 180 lessons for working professionals in India</span><span>Progress is saved in this browser only.</span></footer>
+</div>
+
+<nav class="mobnav" aria-label="Main">
+  <a href="#course" data-tab="course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>Course</a>
+  <a href="#functions" data-tab="functions"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h-2a3 3 0 0 0-3 3v13M6 11h7M15 13l5 6M20 13l-5 6"/></svg>Functions</a>
+  <a href="#tips" data-tab="tips"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3Z"/></svg>Tips</a>
+  <a href="#shortcuts" data-tab="shortcuts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10"/></svg>Shortcuts</a>
+  <a href="#help" data-tab="help"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg>Help</a>
+</nav>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script>
+"use strict";
+const COURSE = {"sections":[{"id":"S00","title":"Start here","level":"Beginner","wb":null,"extras":[],"lessons":[{"id":"S00-01","type":"concept","title":"How this course works","ai":false,"win":false,"video":true},{"id":"S00-02","type":"concept","title":"Which Excel do you have on your Mac?","ai":false,"win":false,"video":true},{"id":"S00-03","type":"concept","title":"Coming from Windows: what changes on a Mac","ai":false,"win":false,"video":true},{"id":"S00-04","type":"concept","title":"Set up Excel on your Mac for India","ai":false,"win":false,"video":true}]},{"id":"S01","title":"Excel basics","level":"Beginner","wb":{"name":"S01_Excel_Basics.xlsx","path":"workbooks/S01_Excel_Basics.b64.txt"},"extras":[],"lessons":[{"id":"S01-01","type":"demo","title":"Workbooks, sheets and the grid","ai":false,"win":false,"video":false},{"id":"S01-02","type":"demo","title":"Moving around big sheets fast","ai":false,"win":false,"video":false},{"id":"S01-03","type":"demo","title":"Entering and editing data","ai":false,"win":false,"video":false},{"id":"S01-04","type":"demo","title":"AutoFill, series and custom lists","ai":false,"win":true,"video":false},{"id":"S01-05","type":"demo","title":"Flash Fill","ai":false,"win":false,"video":false},{"id":"S01-06","type":"demo","title":"Copy, paste and Paste Special","ai":false,"win":false,"video":false},{"id":"S01-07","type":"demo","title":"Rows, columns and sheets","ai":false,"win":true,"video":false},{"id":"S01-08","type":"demo","title":"Find and Replace","ai":false,"win":false,"video":false},{"id":"S01-09","type":"challenge","title":"Challenge 1: build a staff contact list","ai":false,"win":false,"video":false}]},{"id":"S02","title":"Formatting that looks professional","level":"Beginner","wb":{"name":"S02_Formatting.xlsx","path":"workbooks/S02_Formatting.b64.txt"},"extras":[],"lessons":[{"id":"S02-01","type":"demo","title":"Fonts, alignment, borders and fills","ai":false,"win":false,"video":false},{"id":"S02-02","type":"demo","title":"Number formats for rupees, percentages and dates","ai":false,"win":false,"video":false},{"id":"S02-03","type":"demo","title":"Custom number formats, including lakh and crore","ai":false,"win":false,"video":false},{"id":"S02-04","type":"demo","title":"Cell styles, themes and table styles","ai":false,"win":true,"video":false},{"id":"S02-05","type":"demo","title":"Freeze panes, split and views","ai":false,"win":true,"video":false},{"id":"S02-06","type":"demo","title":"Pictures, icons and shapes","ai":false,"win":false,"video":false},{"id":"S02-07","type":"challenge","title":"Challenge 2: format a monthly expense report","ai":false,"win":false,"video":false}]},{"id":"S03","title":"Formula foundations","level":"Beginner","wb":{"name":"S03_Formula_Foundations.xlsx","path":"workbooks/S03_Formula_Foundations.b64.txt"},"extras":[],"lessons":[{"id":"S03-01","type":"demo","title":"Your first formula: operators and order","ai":false,"win":false,"video":false},{"id":"S03-02","type":"demo","title":"Relative, absolute and mixed references","ai":false,"win":false,"video":false},{"id":"S03-03","type":"demo","title":"SUM, AVERAGE, MIN, MAX and the COUNT family","ai":false,"win":false,"video":false},{"id":"S03-04","type":"demo","title":"Rounding the right way","ai":false,"win":false,"video":false},{"id":"S03-05","type":"demo","title":"Formulas across sheets and files","ai":false,"win":false,"video":false},{"id":"S03-06","type":"demo","title":"Named ranges and the Name Manager","ai":false,"win":true,"video":false},{"id":"S03-07","type":"demo","title":"Every error value and how to fix it","ai":false,"win":false,"video":false},{"id":"S03-08","type":"demo","title":"Auditing formulas","ai":false,"win":true,"video":false},{"id":"S03-09","type":"demo","title":"Calculation settings and circular references","ai":false,"win":true,"video":false},{"id":"S03-10","type":"challenge","title":"Challenge 3: a sales commission sheet","ai":false,"win":false,"video":false}]},{"id":"S04","title":"Logic and conditional maths","level":"Intermediate","wb":{"name":"S04_Logic.xlsx","path":"workbooks/S04_Logic.b64.txt"},"extras":[],"lessons":[{"id":"S04-01","type":"demo","title":"IF: making decisions","ai":false,"win":false,"video":false},{"id":"S04-02","type":"demo","title":"AND, OR and NOT","ai":false,"win":false,"video":false},{"id":"S04-03","type":"demo","title":"Nested IF, IFS and SWITCH","ai":false,"win":false,"video":false},{"id":"S04-04","type":"demo","title":"IFERROR, IFNA and the IS functions","ai":false,"win":false,"video":false},{"id":"S04-05","type":"demo","title":"COUNTIF and COUNTIFS","ai":false,"win":false,"video":false},{"id":"S04-06","type":"demo","title":"SUMIF, SUMIFS, AVERAGEIFS, MAXIFS, MINIFS","ai":false,"win":false,"video":false},{"id":"S04-07","type":"demo","title":"SUMPRODUCT and true/false maths","ai":false,"win":false,"video":false},{"id":"S04-08","type":"project","title":"Project: income tax calculator (new regime)","ai":false,"win":false,"video":false}]},{"id":"S05","title":"Text functions and cleaning","level":"Intermediate","wb":{"name":"S05_Text.xlsx","path":"workbooks/S05_Text.b64.txt"},"extras":[],"lessons":[{"id":"S05-01","type":"demo","title":"LEFT, RIGHT, MID and LEN","ai":false,"win":false,"video":false},{"id":"S05-02","type":"demo","title":"FIND, SEARCH, SUBSTITUTE and REPLACE","ai":false,"win":false,"video":false},{"id":"S05-03","type":"demo","title":"UPPER, LOWER, PROPER, TRIM and CLEAN","ai":false,"win":false,"video":false},{"id":"S05-04","type":"demo","title":"Joining text: &, CONCAT and TEXTJOIN","ai":false,"win":false,"video":false},{"id":"S05-05","type":"demo","title":"TEXT and VALUE","ai":false,"win":false,"video":false},{"id":"S05-06","type":"demo","title":"TEXTBEFORE, TEXTAFTER and TEXTSPLIT","ai":false,"win":false,"video":false},{"id":"S05-07","type":"demo","title":"REGEX functions: validate PAN, GSTIN and phone numbers","ai":false,"win":false,"video":false},{"id":"S05-08","type":"demo","title":"Text to Columns and Remove Duplicates","ai":false,"win":true,"video":false},{"id":"S05-09","type":"challenge","title":"Challenge 4: clean a messy customer export","ai":false,"win":false,"video":false}]},{"id":"S06","title":"Dates and times","level":"Intermediate","wb":{"name":"S06_Dates.xlsx","path":"workbooks/S06_Dates.b64.txt"},"extras":[],"lessons":[{"id":"S06-01","type":"demo","title":"How Excel stores dates and times","ai":false,"win":false,"video":false},{"id":"S06-02","type":"demo","title":"TODAY, NOW, DATE and the date parts","ai":false,"win":false,"video":false},{"id":"S06-03","type":"demo","title":"EDATE and EOMONTH","ai":false,"win":false,"video":false},{"id":"S06-04","type":"demo","title":"WEEKDAY, WEEKNUM and day names","ai":false,"win":false,"video":false},{"id":"S06-05","type":"demo","title":"WORKDAY and NETWORKDAYS with Indian holidays","ai":false,"win":false,"video":false},{"id":"S06-06","type":"demo","title":"DATEDIF and YEARFRAC: age and tenure","ai":false,"win":false,"video":false},{"id":"S06-07","type":"demo","title":"Financial year and quarter formulas (April to March)","ai":false,"win":false,"video":false},{"id":"S06-08","type":"demo","title":"Working with time: shifts and overtime","ai":false,"win":false,"video":false}]},{"id":"S07","title":"Lookups","level":"Intermediate","wb":{"name":"S07_Lookups.xlsx","path":"workbooks/S07_Lookups.b64.txt"},"extras":[],"lessons":[{"id":"S07-01","type":"demo","title":"VLOOKUP, exact match","ai":false,"win":false,"video":false},{"id":"S07-02","type":"demo","title":"Approximate match: commission and discount slabs","ai":false,"win":false,"video":false},{"id":"S07-03","type":"demo","title":"HLOOKUP, INDEX and MATCH","ai":false,"win":false,"video":false},{"id":"S07-04","type":"demo","title":"XLOOKUP: the modern lookup","ai":false,"win":false,"video":false},{"id":"S07-05","type":"demo","title":"XLOOKUP advanced","ai":false,"win":false,"video":false},{"id":"S07-06","type":"demo","title":"CHOOSE, CHOOSECOLS and CHOOSEROWS","ai":false,"win":false,"video":false},{"id":"S07-07","type":"demo","title":"INDIRECT, OFFSET, ADDRESS, ROW and COLUMN","ai":false,"win":false,"video":false},{"id":"S07-08","type":"demo","title":"HYPERLINK and a contents sheet","ai":false,"win":false,"video":false},{"id":"S07-09","type":"challenge","title":"Challenge 5: build an invoice lookup","ai":false,"win":false,"video":false}]},{"id":"S08","title":"Data tools: tables, sorting, validation, conditional formatting","level":"Intermediate","wb":{"name":"S08_DataTools.xlsx","path":"workbooks/S08_DataTools.b64.txt"},"extras":[],"lessons":[{"id":"S08-01","type":"demo","title":"Excel Tables and structured references","ai":false,"win":false,"video":false},{"id":"S08-02","type":"demo","title":"Sorting: multi-level, custom lists and colours","ai":false,"win":false,"video":false},{"id":"S08-03","type":"demo","title":"Filtering and slicers on tables","ai":false,"win":false,"video":false},{"id":"S08-04","type":"demo","title":"Advanced Filter","ai":false,"win":true,"video":false},{"id":"S08-05","type":"demo","title":"Duplicates: find, highlight and remove","ai":false,"win":false,"video":false},{"id":"S08-06","type":"demo","title":"Data validation and dropdown lists","ai":false,"win":false,"video":false},{"id":"S08-07","type":"demo","title":"Dependent dropdowns","ai":false,"win":false,"video":false},{"id":"S08-08","type":"demo","title":"Conditional formatting rules","ai":false,"win":false,"video":false},{"id":"S08-09","type":"demo","title":"Formula-based conditional formatting","ai":false,"win":false,"video":false},{"id":"S08-10","type":"demo","title":"Go To Special and fill-down tricks","ai":false,"win":true,"video":false},{"id":"S08-11","type":"demo","title":"Checkboxes in cells: to-do and attendance lists","ai":false,"win":false,"video":false},{"id":"S08-12","type":"challenge","title":"Challenge 6: an order tracker with dropdowns and alerts","ai":false,"win":false,"video":false}]},{"id":"S09","title":"Dynamic arrays and modern formulas","level":"Advanced","wb":{"name":"S09_DynamicArrays.xlsx","path":"workbooks/S09_DynamicArrays.b64.txt"},"extras":[],"lessons":[{"id":"S09-01","type":"demo","title":"Spill ranges, # and @","ai":false,"win":false,"video":false},{"id":"S09-02","type":"demo","title":"UNIQUE, SORT and SORTBY","ai":false,"win":false,"video":false},{"id":"S09-03","type":"demo","title":"FILTER with one or many conditions","ai":false,"win":false,"video":false},{"id":"S09-04","type":"demo","title":"SEQUENCE and RANDARRAY","ai":false,"win":false,"video":false},{"id":"S09-05","type":"demo","title":"TAKE, DROP and EXPAND","ai":false,"win":false,"video":false},{"id":"S09-06","type":"demo","title":"VSTACK, HSTACK, TOCOL, TOROW, WRAPROWS, WRAPCOLS","ai":false,"win":false,"video":false},{"id":"S09-07","type":"demo","title":"GROUPBY, PIVOTBY and PERCENTOF","ai":false,"win":false,"video":false},{"id":"S09-08","type":"demo","title":"TRIMRANGE and dot references","ai":false,"win":false,"video":false},{"id":"S09-09","type":"demo","title":"LET: readable formulas","ai":false,"win":false,"video":false},{"id":"S09-10","type":"demo","title":"LAMBDA and its helpers","ai":false,"win":false,"video":false},{"id":"S09-11","type":"demo","title":"IMAGE and pictures in cells","ai":false,"win":false,"video":false}]},{"id":"S10","title":"Maths, statistics and finance","level":"Advanced","wb":{"name":"S10_Maths_Finance.xlsx","path":"workbooks/S10_Maths_Finance.b64.txt"},"extras":[],"lessons":[{"id":"S10-01","type":"demo","title":"Everyday maths functions","ai":false,"win":false,"video":false},{"id":"S10-02","type":"demo","title":"Ranking and percentiles","ai":false,"win":false,"video":false},{"id":"S10-03","type":"demo","title":"Averages and spread","ai":false,"win":false,"video":false},{"id":"S10-04","type":"demo","title":"SUBTOTAL and AGGREGATE","ai":false,"win":false,"video":false},{"id":"S10-05","type":"demo","title":"FREQUENCY and grouping numbers into bands","ai":false,"win":false,"video":false},{"id":"S10-06","type":"demo","title":"EMI and loan schedules: PMT, IPMT, PPMT","ai":false,"win":false,"video":false},{"id":"S10-07","type":"demo","title":"FV, PV, RATE and NPER: SIP, FD and goals","ai":false,"win":false,"video":false},{"id":"S10-08","type":"demo","title":"NPV, IRR, XNPV and XIRR","ai":false,"win":false,"video":false},{"id":"S10-09","type":"demo","title":"Depreciation: SLN, DB and DDB","ai":false,"win":false,"video":false},{"id":"S10-10","type":"project","title":"Project: GST invoice and sales register","ai":false,"win":false,"video":false}]},{"id":"S11","title":"Charts and visuals","level":"Intermediate","wb":{"name":"S11_Charts.xlsx","path":"workbooks/S11_Charts.b64.txt"},"extras":[],"lessons":[{"id":"S11-01","type":"concept","title":"Choosing the right chart","ai":false,"win":false,"video":true},{"id":"S11-02","type":"demo","title":"Column, bar, line and pie charts","ai":false,"win":false,"video":false},{"id":"S11-03","type":"demo","title":"Formatting charts that read clearly","ai":false,"win":true,"video":false},{"id":"S11-04","type":"demo","title":"Combo charts and a secondary axis","ai":false,"win":true,"video":false},{"id":"S11-05","type":"demo","title":"Waterfall chart for a profit bridge","ai":false,"win":true,"video":false},{"id":"S11-06","type":"demo","title":"Histogram, Pareto and box-and-whisker","ai":false,"win":true,"video":false},{"id":"S11-07","type":"demo","title":"Treemap, sunburst and funnel","ai":false,"win":true,"video":false},{"id":"S11-08","type":"demo","title":"Map chart of Indian states","ai":false,"win":true,"video":false},{"id":"S11-09","type":"demo","title":"Sparklines","ai":false,"win":true,"video":false},{"id":"S11-10","type":"demo","title":"Dynamic charts","ai":false,"win":true,"video":false},{"id":"S11-11","type":"project","title":"Project: a Gantt chart for a project plan","ai":false,"win":true,"video":false}]},{"id":"S12","title":"PivotTables","level":"Intermediate","wb":{"name":"S12_PivotTables.xlsx","path":"workbooks/S12_PivotTables.b64.txt"},"extras":[],"lessons":[{"id":"S12-01","type":"demo","title":"Your first PivotTable","ai":false,"win":false,"video":false},{"id":"S12-02","type":"demo","title":"Layout and design","ai":false,"win":true,"video":false},{"id":"S12-03","type":"demo","title":"Summarise and Show Values As","ai":false,"win":false,"video":false},{"id":"S12-04","type":"demo","title":"Grouping dates, numbers and items","ai":false,"win":true,"video":false},{"id":"S12-05","type":"demo","title":"Calculated fields and items","ai":false,"win":true,"video":false},{"id":"S12-06","type":"demo","title":"Slicers, timelines and report connections","ai":false,"win":true,"video":false},{"id":"S12-07","type":"demo","title":"PivotCharts","ai":false,"win":true,"video":false},{"id":"S12-08","type":"demo","title":"Refresh, change source, drill down and GETPIVOTDATA","ai":false,"win":true,"video":false},{"id":"S12-09","type":"project","title":"Project: monthly MIS report","ai":false,"win":false,"video":false}]},{"id":"S13","title":"Power Query on Mac","level":"Advanced","wb":{"name":"S13_PowerQuery.xlsx","path":"workbooks/S13_PowerQuery.b64.txt"},"extras":[{"name":"Ledger_Apr-2026.csv","path":"workbooks/S13/Monthly_Ledger/Ledger_Apr-2026.csv","why":"Save it into a folder named Monthly_Ledger for the folder import lesson."},{"name":"Ledger_Jun-2026.csv","path":"workbooks/S13/Monthly_Ledger/Ledger_Jun-2026.csv","why":"Save it into a folder named Monthly_Ledger for the folder import lesson."},{"name":"Ledger_May-2026.csv","path":"workbooks/S13/Monthly_Ledger/Ledger_May-2026.csv","why":"Save it into a folder named Monthly_Ledger for the folder import lesson."},{"name":"Ledger_Jul-2026.csv","path":"workbooks/S13/Next_Month/Ledger_Jul-2026.csv","why":"Save it into a folder named Next_Month for the folder import lesson."},{"name":"Pune_Sales_Apr-2026.csv","path":"workbooks/S13/Pune_Sales_Apr-2026.csv","why":"Source file for the Power Query lessons."}],"lessons":[{"id":"S13-01","type":"concept","title":"What Power Query is and what works on Mac","ai":false,"win":false,"video":true},{"id":"S13-02","type":"demo","title":"Import a CSV and clean it","ai":false,"win":true,"video":false},{"id":"S13-03","type":"demo","title":"Split, replace, fill down and add columns","ai":false,"win":true,"video":false},{"id":"S13-04","type":"demo","title":"Unpivot and pivot","ai":false,"win":true,"video":false},{"id":"S13-05","type":"demo","title":"Append and merge queries","ai":false,"win":true,"video":false},{"id":"S13-06","type":"demo","title":"Combine a folder of monthly files","ai":false,"win":true,"video":false},{"id":"S13-07","type":"concept","title":"Power Pivot and DAX: what Mac users should know","ai":false,"win":false,"video":true}]},{"id":"S14","title":"What-if analysis and statistics tools","level":"Advanced","wb":{"name":"S14_WhatIf.xlsx","path":"workbooks/S14_WhatIf.b64.txt"},"extras":[],"lessons":[{"id":"S14-01","type":"demo","title":"Goal Seek","ai":false,"win":true,"video":false},{"id":"S14-02","type":"demo","title":"Scenario Manager","ai":false,"win":true,"video":false},{"id":"S14-03","type":"demo","title":"Data Tables","ai":false,"win":true,"video":false},{"id":"S14-04","type":"demo","title":"Solver","ai":false,"win":true,"video":false},{"id":"S14-05","type":"demo","title":"Forecast Sheet and trendlines","ai":false,"win":true,"video":false},{"id":"S14-06","type":"demo","title":"Analysis ToolPak","ai":false,"win":true,"video":false}]},{"id":"S15","title":"Sharing, protection and printing","level":"Intermediate","wb":{"name":"S15_Sharing.xlsx","path":"workbooks/S15_Sharing.b64.txt"},"extras":[],"lessons":[{"id":"S15-01","type":"demo","title":"Share, co-author, comments and notes","ai":false,"win":false,"video":false},{"id":"S15-02","type":"demo","title":"Version history and Sheet View","ai":false,"win":false,"video":false},{"id":"S15-03","type":"demo","title":"Protect cells, sheets and workbooks","ai":false,"win":true,"video":false},{"id":"S15-04","type":"demo","title":"Printing and PDF","ai":false,"win":true,"video":false},{"id":"S15-05","type":"demo","title":"Linked data types: stocks and geography","ai":false,"win":false,"video":false},{"id":"S15-06","type":"demo","title":"Templates and accessibility","ai":false,"win":true,"video":false}]},{"id":"S16","title":"Automation: macros, Office Scripts and Python","level":"Advanced","wb":{"name":"S16_Automation.xlsx","path":"workbooks/S16_Automation.b64.txt"},"extras":[],"lessons":[{"id":"S16-01","type":"demo","title":"Record and run a macro on Mac","ai":false,"win":true,"video":false},{"id":"S16-02","type":"demo","title":"Reading and editing VBA","ai":false,"win":true,"video":false},{"id":"S16-03","type":"demo","title":"VBA essentials","ai":false,"win":true,"video":false},{"id":"S16-04","type":"concept","title":"What works and breaks in VBA on a Mac","ai":false,"win":false,"video":true},{"id":"S16-05","type":"demo","title":"Office Scripts","ai":false,"win":false,"video":false},{"id":"S16-06","type":"demo","title":"Python in Excel: first steps","ai":false,"win":false,"video":false},{"id":"S16-07","type":"demo","title":"Python in Excel: analysis and charts","ai":false,"win":false,"video":false}]},{"id":"S17","title":"Dashboards","level":"Advanced","wb":{"name":"S17_Dashboards.xlsx","path":"workbooks/S17_Dashboards.b64.txt"},"extras":[],"lessons":[{"id":"S17-01","type":"concept","title":"Planning a dashboard people will use","ai":false,"win":false,"video":true},{"id":"S17-02","type":"demo","title":"KPI cards with formulas","ai":false,"win":false,"video":false},{"id":"S17-03","type":"demo","title":"Pivot and slicer dashboard","ai":false,"win":false,"video":false},{"id":"S17-04","type":"demo","title":"Dynamic-array dashboard","ai":false,"win":false,"video":false},{"id":"S17-05","type":"demo","title":"Polishing: linked pictures, alignment and layout","ai":false,"win":true,"video":false},{"id":"S17-06","type":"project","title":"Project: sales performance dashboard","ai":false,"win":false,"video":false}]},{"id":"S18","title":"AI in Excel 1: built-in AI and Copilot","level":"AI","wb":{"name":"S18_Copilot.xlsx","path":"workbooks/S18_Copilot.b64.txt"},"extras":[],"lessons":[{"id":"S18-01","type":"concept","title":"The AI tools in Excel and when to use each","ai":false,"win":false,"video":true},{"id":"S18-02","type":"demo","title":"Analyze Data","ai":false,"win":false,"video":false},{"id":"S18-03","type":"demo","title":"Copilot setup on Mac","ai":true,"win":false,"video":false},{"id":"S18-04","type":"demo","title":"Copilot chat: questions and insights","ai":true,"win":false,"video":false},{"id":"S18-05","type":"demo","title":"Copilot for formulas","ai":true,"win":false,"video":false},{"id":"S18-06","type":"demo","title":"Copilot to highlight, sort and filter","ai":true,"win":false,"video":false},{"id":"S18-07","type":"demo","title":"Copilot for charts and PivotTables","ai":true,"win":false,"video":false},{"id":"S18-08","type":"demo","title":"Copilot for cleaning and text","ai":true,"win":false,"video":false},{"id":"S18-09","type":"demo","title":"Copilot with Python: advanced analysis","ai":true,"win":false,"video":false},{"id":"S18-10","type":"concept","title":"Writing good prompts for spreadsheets","ai":false,"win":false,"video":true}]},{"id":"S19","title":"AI in Excel 2: Agent Mode, Plan and verification","level":"AI","wb":{"name":"S19_AgentMode.xlsx","path":"workbooks/S19_AgentMode.b64.txt"},"extras":[],"lessons":[{"id":"S19-01","type":"demo","title":"Chat, Plan and Edit modes, and choosing a model","ai":true,"win":false,"video":false},{"id":"S19-02","type":"demo","title":"Agent Mode: build a dashboard from one prompt","ai":true,"win":false,"video":false},{"id":"S19-03","type":"demo","title":"Plan mode: review before Copilot edits","ai":true,"win":false,"video":false},{"id":"S19-04","type":"concept","title":"The COPILOT function: what happened","ai":false,"win":false,"video":true},{"id":"S19-05","type":"demo","title":"Checking AI work","ai":true,"win":false,"video":false}]},{"id":"S20","title":"AI in Excel 3: Claude in Excel","level":"AI","wb":{"name":"S20_Claude.xlsx","path":"workbooks/S20_Claude.b64.txt"},"extras":[{"name":"Sahyadri_Bank_Statement_Sep2026.pdf","path":"workbooks/S20/Sahyadri_Bank_Statement_Sep2026.pdf","why":"Source file used in this section."}],"lessons":[{"id":"S20-01","type":"concept","title":"Claude in Excel vs Copilot","ai":false,"win":false,"video":true},{"id":"S20-02","type":"demo","title":"Install and sign in on Mac","ai":true,"win":false,"video":false},{"id":"S20-03","type":"demo","title":"Understand a workbook you inherited","ai":true,"win":false,"video":false},{"id":"S20-04","type":"demo","title":"Find and fix broken formulas","ai":true,"win":false,"video":false},{"id":"S20-05","type":"demo","title":"Clean messy data with Claude","ai":true,"win":false,"video":false},{"id":"S20-06","type":"demo","title":"Build a model from a description","ai":true,"win":false,"video":false},{"id":"S20-07","type":"demo","title":"Scenarios and sensitivity with Claude","ai":true,"win":false,"video":false},{"id":"S20-08","type":"demo","title":"From PDF to Excel, and Excel to PowerPoint","ai":true,"win":false,"video":false},{"id":"S20-09","type":"concept","title":"Using Claude safely at work","ai":false,"win":false,"video":true},{"id":"S20-10","type":"demo","title":"Same task, Copilot vs Claude","ai":true,"win":false,"video":false}]},{"id":"S21","title":"Projects and career","level":"Projects","wb":{"name":"S21_Projects.xlsx","path":"workbooks/S21_Projects.b64.txt"},"extras":[],"lessons":[{"id":"S21-01","type":"project","title":"Attendance and leave tracker","ai":false,"win":false,"video":false},{"id":"S21-02","type":"project","title":"Payroll with PF, ESI and TDS","ai":false,"win":false,"video":false},{"id":"S21-03","type":"project","title":"Budget vs actual for the financial year","ai":false,"win":false,"video":false},{"id":"S21-04","type":"project","title":"Sales MIS report with AI summary","ai":true,"win":false,"video":false},{"id":"S21-05","type":"project","title":"A simple three-statement financial model","ai":true,"win":false,"video":false},{"id":"S21-06","type":"concept","title":"Excel interview questions and answers","ai":false,"win":false,"video":true}]}]};
+let FILES = [".nojekyll", "404.html", "data/captions.json", "data/functions.json", "data/quizzes/S00.json", "data/quizzes/S01.json", "data/quizzes/S02.json", "data/quizzes/S03.json", "data/quizzes/S04.json", "data/quizzes/S05.json", "data/quizzes/S06.json", "data/quizzes/S07.json", "data/quizzes/S08.json", "data/quizzes/S09.json", "data/quizzes/S10.json", "data/quizzes/S11.json", "data/quizzes/S12.json", "data/quizzes/S13.json", "data/quizzes/S14.json", "data/quizzes/S15.json", "data/quizzes/S16.json", "data/quizzes/S17.json", "data/quizzes/S18.json", "data/quizzes/S19.json", "data/quizzes/S20.json", "data/quizzes/S21.json", "data/sections/S00.json", "data/sections/S01.json", "data/sections/S02.json", "data/sections/S03.json", "data/sections/S04.json", "data/sections/S05.json", "data/sections/S06.json", "data/sections/S07.json", "data/sections/S08.json", "data/sections/S09.json", "data/sections/S10.json", "data/sections/S11.json", "data/sections/S12.json", "data/sections/S13.json", "data/sections/S14.json", "data/sections/S15.json", "data/sections/S16.json", "data/sections/S17.json", "data/sections/S18.json", "data/sections/S19.json", "data/sections/S20.json", "data/sections/S21.json", "data/shortcuts.json", "data/tips.json", "data/video_assets.json", "index.html", "videos/S00-01.mp4", "videos/S00-01.vtt.txt", "videos/S00-02.mp4", "videos/S00-02.vtt.txt", "videos/S00-03.mp4", "videos/S00-03.vtt.txt", "videos/S00-04.mp4", "videos/S00-04.vtt.txt", "videos/S01-01.mp4", "videos/S01-01.vtt.txt", "videos/S01-02.mp4", "videos/S01-02.vtt.txt", "videos/S01-03.mp4", "videos/S01-03.vtt.txt", "videos/S01-04.mp4", "videos/S01-04.vtt.txt", "videos/S01-05.mp4", "videos/S01-05.vtt.txt", "videos/S01-06.mp4", "videos/S01-06.vtt.txt", "videos/S01-07.mp4", "videos/S01-07.vtt.txt", "videos/S01-08.mp4", "videos/S01-08.vtt.txt", "videos/S01-09.mp4", "videos/S01-09.vtt.txt", "videos/S02-01.mp4", "videos/S02-01.vtt.txt", "videos/S02-02.mp4", "videos/S02-02.vtt.txt", "videos/S02-03.mp4", "videos/S02-03.vtt.txt", "videos/S02-04.mp4", "videos/S02-04.vtt.txt", "videos/S02-05.mp4", "videos/S02-05.vtt.txt", "videos/S02-06.mp4", "videos/S02-06.vtt.txt", "videos/S02-07.mp4", "videos/S02-07.vtt.txt", "videos/S03-01.mp4", "videos/S03-01.vtt.txt", "videos/S03-02.mp4", "videos/S03-02.vtt.txt", "videos/S03-03.mp4", "videos/S03-03.vtt.txt", "videos/S03-04.mp4", "videos/S03-04.vtt.txt", "videos/S03-05.mp4", "videos/S03-05.vtt.txt", "videos/S03-06.mp4", "videos/S03-06.vtt.txt", "videos/S03-07.mp4", "videos/S03-07.vtt.txt", "videos/S03-08.mp4", "videos/S03-08.vtt.txt", "videos/S03-09.mp4", "videos/S03-09.vtt.txt", "videos/S03-10.mp4", "videos/S03-10.vtt.txt", "videos/S04-01.mp4", "videos/S04-01.vtt.txt", "videos/S04-02.mp4", "videos/S04-02.vtt.txt", "videos/S04-03.mp4", "videos/S04-03.vtt.txt", "videos/S04-04.mp4", "videos/S04-04.vtt.txt", "videos/S04-05.mp4", "videos/S04-05.vtt.txt", "videos/S04-06.mp4", "videos/S04-06.vtt.txt", "videos/S04-07.mp4", "videos/S04-07.vtt.txt", "videos/S04-08.mp4", "videos/S04-08.vtt.txt", "videos/S05-01.mp4", "videos/S05-01.vtt.txt", "videos/S05-02.mp4", "videos/S05-02.vtt.txt", "videos/S05-03.mp4", "videos/S05-03.vtt.txt", "videos/S05-04.mp4", "videos/S05-04.vtt.txt", "videos/S05-05.mp4", "videos/S05-05.vtt.txt", "videos/S05-06.mp4", "videos/S05-06.vtt.txt", "videos/S05-07.mp4", "videos/S05-07.vtt.txt", "videos/S05-08.mp4", "videos/S05-08.vtt.txt", "videos/S05-09.mp4", "videos/S05-09.vtt.txt", "videos/S06-01.mp4", "videos/S06-01.vtt.txt", "videos/S06-02.mp4", "videos/S06-02.vtt.txt", "videos/S06-03.mp4", "videos/S06-03.vtt.txt", "videos/S06-04.mp4", "videos/S06-04.vtt.txt", "videos/S06-05.mp4", "videos/S06-05.vtt.txt", "videos/S06-06.mp4", "videos/S06-06.vtt.txt", "videos/S06-07.mp4", "videos/S06-07.vtt.txt", "videos/S06-08.mp4", "videos/S06-08.vtt.txt", "videos/S07-01.mp4", "videos/S07-01.vtt.txt", "videos/S07-02.mp4", "videos/S07-02.vtt.txt", "videos/S07-03.mp4", "videos/S07-03.vtt.txt", "videos/S07-04.mp4", "videos/S07-04.vtt.txt", "videos/S07-05.mp4", "videos/S07-05.vtt.txt", "videos/S07-06.mp4", "videos/S07-06.vtt.txt", "videos/S07-07.mp4", "videos/S07-07.vtt.txt", "videos/S07-08.mp4", "videos/S07-08.vtt.txt", "videos/S07-09.mp4", "videos/S07-09.vtt.txt", "videos/S08-01.mp4", "videos/S08-01.vtt.txt", "videos/S08-02.mp4", "videos/S08-02.vtt.txt", "videos/S08-03.mp4", "videos/S08-03.vtt.txt", "videos/S08-04.mp4", "videos/S08-04.vtt.txt", "videos/S08-05.mp4", "videos/S08-05.vtt.txt", "videos/S08-06.mp4", "videos/S08-06.vtt.txt", "videos/S08-07.mp4", "videos/S08-07.vtt.txt", "videos/S08-08.mp4", "videos/S08-08.vtt.txt", "videos/S08-09.mp4", "videos/S08-09.vtt.txt", "videos/S08-10.mp4", "videos/S08-10.vtt.txt", "videos/S08-11.mp4", "videos/S08-11.vtt.txt", "videos/S08-12.mp4", "videos/S08-12.vtt.txt", "videos/S09-01.mp4", "videos/S09-01.vtt.txt", "videos/S09-02.mp4", "videos/S09-02.vtt.txt", "videos/S09-03.mp4", "videos/S09-03.vtt.txt", "videos/S09-04.mp4", "videos/S09-04.vtt.txt", "videos/S09-05.mp4", "videos/S09-05.vtt.txt", "videos/S09-06.mp4", "videos/S09-06.vtt.txt", "videos/S09-07.mp4", "videos/S09-07.vtt.txt", "videos/S09-08.mp4", "videos/S09-08.vtt.txt", "videos/S09-09.mp4", "videos/S09-09.vtt.txt", "videos/S09-10.mp4", "videos/S09-10.vtt.txt", "videos/S09-11.mp4", "videos/S09-11.vtt.txt", "videos/S10-01.mp4", "videos/S10-01.vtt.txt", "videos/S10-02.mp4", "videos/S10-02.vtt.txt", "videos/S10-03.mp4", "videos/S10-03.vtt.txt", "videos/S10-04.mp4", "videos/S10-04.vtt.txt", "videos/S10-05.mp4", "videos/S10-05.vtt.txt", "videos/S10-06.mp4", "videos/S10-06.vtt.txt", "videos/S10-07.mp4", "videos/S10-07.vtt.txt", "videos/S10-08.mp4", "videos/S10-08.vtt.txt", "videos/S10-09.mp4", "videos/S10-09.vtt.txt", "videos/S10-10.mp4", "videos/S10-10.vtt.txt", "videos/S11-01.mp4", "videos/S11-01.vtt.txt", "videos/S11-02.mp4", "videos/S11-02.vtt.txt", "videos/S11-03.mp4", "videos/S11-03.vtt.txt", "videos/S11-04.mp4", "videos/S11-04.vtt.txt", "videos/S11-05.mp4", "videos/S11-05.vtt.txt", "videos/S11-06.mp4", "videos/S11-06.vtt.txt", "videos/S11-07.mp4", "videos/S11-07.vtt.txt", "videos/S11-08.mp4", "videos/S11-08.vtt.txt", "videos/S11-09.mp4", "videos/S11-09.vtt.txt", "videos/S11-10.mp4", "videos/S11-10.vtt.txt", "videos/S11-11.mp4", "videos/S11-11.vtt.txt", "videos/S12-01.mp4", "videos/S12-01.vtt.txt", "videos/S12-02.mp4", "videos/S12-02.vtt.txt", "videos/S12-03.mp4", "videos/S12-03.vtt.txt", "videos/S12-04.mp4", "videos/S12-04.vtt.txt", "videos/S12-05.mp4", "videos/S12-05.vtt.txt", "videos/S12-06.mp4", "videos/S12-06.vtt.txt", "videos/S12-07.mp4", "videos/S12-07.vtt.txt", "videos/S12-08.mp4", "videos/S12-08.vtt.txt", "videos/S12-09.mp4", "videos/S12-09.vtt.txt", "videos/S13-01.mp4", "videos/S13-01.vtt.txt", "videos/S13-02.mp4", "videos/S13-02.vtt.txt", "videos/S13-03.mp4", "videos/S13-03.vtt.txt", "videos/S13-04.mp4", "videos/S13-04.vtt.txt", "videos/S13-05.mp4", "videos/S13-05.vtt.txt", "videos/S13-06.mp4", "videos/S13-06.vtt.txt", "videos/S13-07.mp4", "videos/S13-07.vtt.txt", "videos/S14-01.mp4", "videos/S14-01.vtt.txt", "videos/S14-02.mp4", "videos/S14-02.vtt.txt", "videos/S14-03.mp4", "videos/S14-03.vtt.txt", "videos/S14-04.mp4", "videos/S14-04.vtt.txt", "videos/S14-05.mp4", "videos/S14-05.vtt.txt", "videos/S14-06.mp4", "videos/S14-06.vtt.txt", "videos/S15-01.mp4", "videos/S15-01.vtt.txt", "videos/S15-02.mp4", "videos/S15-02.vtt.txt", "videos/S15-03.mp4", "videos/S15-03.vtt.txt", "videos/S15-04.mp4", "videos/S15-04.vtt.txt", "videos/S15-05.mp4", "videos/S15-05.vtt.txt", "videos/S15-06.mp4", "videos/S15-06.vtt.txt", "videos/S16-01.mp4", "videos/S16-01.vtt.txt", "videos/S16-02.mp4", "videos/S16-02.vtt.txt", "videos/S16-03.mp4", "videos/S16-03.vtt.txt", "videos/S16-04.mp4", "videos/S16-04.vtt.txt", "videos/S16-05.mp4", "videos/S16-05.vtt.txt", "videos/S16-06.mp4", "videos/S16-06.vtt.txt", "videos/S16-07.mp4", "videos/S16-07.vtt.txt", "videos/S17-01.mp4", "videos/S17-01.vtt.txt", "videos/S17-02.mp4", "videos/S17-02.vtt.txt", "videos/S17-03.mp4", "videos/S17-03.vtt.txt", "videos/S17-04.mp4", "videos/S17-04.vtt.txt", "videos/S17-05.mp4", "videos/S17-05.vtt.txt", "videos/S17-06.mp4", "videos/S17-06.vtt.txt", "videos/S18-01.mp4", "videos/S18-01.vtt.txt", "videos/S18-02.mp4", "videos/S18-02.vtt.txt", "videos/S18-03.mp4", "videos/S18-03.vtt.txt", "videos/S18-04.mp4", "videos/S18-04.vtt.txt", "videos/S18-05.mp4", "videos/S18-05.vtt.txt", "videos/S18-06.mp4", "videos/S18-06.vtt.txt", "videos/S18-07.mp4", "videos/S18-07.vtt.txt", "videos/S18-08.mp4", "videos/S18-08.vtt.txt", "videos/S18-09.mp4", "videos/S18-09.vtt.txt", "videos/S18-10.mp4", "videos/S18-10.vtt.txt", "videos/S19-01.mp4", "videos/S19-01.vtt.txt", "videos/S19-02.mp4", "videos/S19-02.vtt.txt", "videos/S19-03.mp4", "videos/S19-03.vtt.txt", "videos/S19-04.mp4", "videos/S19-04.vtt.txt", "videos/S19-05.mp4", "videos/S19-05.vtt.txt", "videos/S20-01.mp4", "videos/S20-01.vtt.txt", "videos/S20-02.mp4", "videos/S20-02.vtt.txt", "videos/S20-03.mp4", "videos/S20-03.vtt.txt", "videos/S20-04.mp4", "videos/S20-04.vtt.txt", "videos/S20-05.mp4", "videos/S20-05.vtt.txt", "videos/S20-06.mp4", "videos/S20-06.vtt.txt", "videos/S20-07.mp4", "videos/S20-07.vtt.txt", "videos/S20-08.mp4", "videos/S20-08.vtt.txt", "videos/S20-09.mp4", "videos/S20-09.vtt.txt", "videos/S20-10.mp4", "videos/S20-10.vtt.txt", "videos/S21-01.mp4", "videos/S21-01.vtt.txt", "videos/S21-02.mp4", "videos/S21-02.vtt.txt", "videos/S21-03.mp4", "videos/S21-03.vtt.txt", "videos/S21-04.mp4", "videos/S21-04.vtt.txt", "videos/S21-05.mp4", "videos/S21-05.vtt.txt", "videos/S21-06.mp4", "videos/S21-06.vtt.txt", "workbooks/S01_Excel_Basics.xlsx", "workbooks/S02_Formatting.xlsx", "workbooks/S03_Formula_Foundations.xlsx", "workbooks/S04_Logic.xlsx", "workbooks/S05_Text.xlsx", "workbooks/S06_Dates.xlsx", "workbooks/S07_Lookups.xlsx", "workbooks/S08_DataTools.xlsx", "workbooks/S09_DynamicArrays.xlsx", "workbooks/S10_Maths_Finance.xlsx", "workbooks/S11_Charts.xlsx", "workbooks/S12_PivotTables.xlsx", "workbooks/S13/Monthly_Ledger/Ledger_Apr-2026.csv", "workbooks/S13/Monthly_Ledger/Ledger_Jun-2026.csv", "workbooks/S13/Monthly_Ledger/Ledger_May-2026.csv", "workbooks/S13/Next_Month/Ledger_Jul-2026.csv", "workbooks/S13/Pune_Sales_Apr-2026.csv", "workbooks/S13_PowerQuery.xlsx", "workbooks/S14_WhatIf.xlsx", "workbooks/S15_Sharing.xlsx", "workbooks/S16_Automation.xlsx", "workbooks/S17_Dashboards.xlsx", "workbooks/S18_Copilot.xlsx", "workbooks/S19_AgentMode.xlsx", "workbooks/S20/Sahyadri_Bank_Statement_Sep2026.pdf", "workbooks/S20_Claude.xlsx", "workbooks/S21_Projects.xlsx"];
+const LEVELS = ["Beginner","Intermediate","Advanced","AI","Projects"];
+const LEVEL_NOTE = {Beginner:"The Mac screen, data entry, formatting and your first formulas.",Intermediate:"Logic, text, dates, lookups, data tools, charts, PivotTables and sharing.",Advanced:"Dynamic arrays, finance maths, Power Query, what-if analysis, automation and dashboards.",AI:"Copilot, Agent Mode and Claude in Excel, and how to check AI work.",Projects:"Longer builds on Indian business data, and interview preparation."};
+const TYPE_LABEL = {demo:"Demo",concept:"Explainer",challenge:"Challenge",project:"Project"};
+const ALL = []; COURSE.sections.forEach(s=>s.lessons.forEach(l=>ALL.push(Object.assign({sid:s.id},l))));
+const BYID = Object.fromEntries(ALL.map(l=>[l.id,l]));
+const $ = (s,r=document) => r.querySelector(s);
+const $$ = (s,r=document) => [...r.querySelectorAll(s)];
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const view = $("#view");
+const RM = () => { try{ return matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){ return false; } };
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+const store = {
+  get(k,d){ try{ const v = localStorage.getItem(k); return v==null?d:JSON.parse(v); }catch(e){ return d; } },
+  set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+const ICON = {
+  play:'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
+  left:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 6-6 6 6 6"/></svg>',
+  right:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg>',
+  dl:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>'
+};
+
+/* ---------- toasts & global errors ---------- */
+function toast(msg, ms=2600){
+  const t = document.createElement("div"); t.className="toast"; t.textContent = msg; $("#toasts").appendChild(t);
+  setTimeout(()=>{ t.classList.add("out"); setTimeout(()=>t.remove(),320); }, ms);
+}
+window.addEventListener("error", e=>{ if(e && e.message && !/ResizeObserver/.test(e.message)) console.warn(e.message); });
+window.addEventListener("unhandledrejection", e=>{ console.warn(e.reason); });
+
+/* ---------- progress ---------- */
+let done = store.get("xlmac2-done", {}) || {};
+if(typeof done!=="object") done = {};
+const saveDone = () => store.set("xlmac2-done", done);
+const nDone = () => ALL.filter(l=>done[l.id]).length;
+function paintProgress(){
+  const n = nDone(), p = Math.round(n/ALL.length*100);
+  $("#ring").style.setProperty("--p", p); $("#ringtxt").textContent = p+"%"; $("#progtxt").textContent = n+" / "+ALL.length;
+}
+function setDone(id, val){
+  if(val) done[id] = Date.now(); else delete done[id];
+  saveDone(); paintProgress();
+}
+
+/* ---------- media maps & capabilities ---------- */
+const hasFile = p => FILES.includes(p);
+let VMAP = {};
+const vmapReady = fetch("data/video_assets.json").then(r=>r.ok?r.json():{}).then(m=>{ VMAP = (m && typeof m==="object") ? m : {}; ALL.forEach(l=>{ if(VMAP[l.id]) l.video = true; }); }).catch(()=>{});
+let CAPS = new Set();
+const capsReady = fetch("data/captions.json").then(r=>r.ok?r.json():[]).then(a=>{ CAPS = new Set(Array.isArray(a)?a:[]); return CAPS; }).catch(()=>CAPS);
+let dl = null, dlReady = false;
+/* Outside claude.ai (the standalone website) files are served next to the page, so a plain link downloads them. */
+let STANDALONE = false;
+(async()=>{ try{ dl = (window.claude && window.claude.use) ? await window.claude.use("downloads") : null; }catch(e){ dl = null; } STANDALONE = !dl && !window.claude; dlReady = true; paintSave(); })();
+function paintSave(root){ const can = !!dl || STANDALONE; $$("[data-save]",root||document).forEach(b=>b.hidden=!can); $$("[data-nosave]",root||document).forEach(b=>b.hidden=can||!dlReady); }
+function directDownload(path, name){ const a = document.createElement("a"); a.href = path.replace(/\.b64\.txt$/, ".xlsx"); a.download = name; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove(); toast("Downloading "+name); }
+async function saveFile(path, name, btn){
+  if(!dl){ if(STANDALONE) directDownload(path, name); else toast("Open this page in claude.ai to save files."); return; }
+  const old = btn.innerHTML; btn.disabled = true; btn.textContent = "Preparing…";
+  try{
+    let data;
+    const r = await fetch(path); if(!r.ok) throw new Error("fetch");
+    if(path.endsWith(".b64.txt")){
+      const bin = atob((await r.text()).trim()); data = new Uint8Array(bin.length);
+      for(let k=0;k<bin.length;k++) data[k] = bin.charCodeAt(k);
+    } else data = new Uint8Array(await r.arrayBuffer());
+    await dl.save({filename:name, data});
+    btn.textContent = "Saved"; toast(name+" saved");
+  }catch(e){ btn.textContent = (e && e.code==="declined") ? "Cancelled" : "Could not save"; if(!(e && e.code==="declined")) toast("The file could not be saved. Try again in a moment."); }
+  finally{ setTimeout(()=>{btn.innerHTML=old;btn.disabled=false;},2200); }
+}
+function wireSaves(root){ $$("[data-path]",root).forEach(b=>b.onclick=()=>saveFile(b.dataset.path,b.dataset.name,b)); if(dlReady) paintSave(root); }
+
+const cache = {};
+async function getJSON(p){ if(cache[p]) return cache[p]; const r = await fetch(p); if(!r.ok) throw new Error("HTTP "+r.status); return (cache[p] = await r.json()); }
+const sec = id => COURSE.sections.find(s=>s.id===id);
+function setBar(name, formula){ $("#namebox").textContent = name; $("#formula").innerHTML = formula; }
+function setTab(t){ $$("[data-tab]").forEach(a=>{ if(a.dataset.tab===t) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); }); }
+function badges(l){
+  let h = `<span class="chip ${l.type==="demo"?"":l.type==="concept"?"blue":"sel"}">${TYPE_LABEL[l.type]||esc(l.type)}</span>`;
+  if(l.ai) h += `<span class="chip violet">AI</span>`;
+  if(l.win) h += `<span class="chip grey" title="Recorded in Excel desktop; Mac keys are shown">Desktop</span>`;
+  return h;
+}
+const nextUp = () => ALL.find(l=>!done[l.id]) || ALL[0];
+function keycaps(s){
+  if(!s) return "";
+  let parts = String(s).split(/\s*\+\s*|\s+(?=[⌘⌥⌃⇧])/).filter(Boolean);
+  parts = parts.flatMap(p=>{ const m = p.match(/^([⌘⌥⌃⇧]+)(\S.*)$/); return m ? [...m[1], m[2]] : [p]; });
+  if(parts.length>5) return `<span class="kbd">${esc(s)}</span>`;
+  return `<span class="keys">${parts.map(p=>`<span class="kbd">${esc(p)}</span>`).join('<span class="plus">+</span>')}</span>`;
+}
+function errorBox(msg){ return `<div class="errbox"><b>${esc(msg)}</b><span class="muted">Check your connection, then try again.</span><button class="btn sm" type="button" onclick="route()">Try again</button></div>`; }
+
+/* ---------- swipe on touch screens ---------- */
+function swipe(el, onNext, onPrev){
+  if(!el) return; let x0 = null, y0 = 0;
+  el.addEventListener("pointerdown", e=>{ if(e.pointerType==="mouse") return; x0 = e.clientX; y0 = e.clientY; }, {passive:true});
+  el.addEventListener("pointerup", e=>{ if(x0==null) return; const dx = e.clientX-x0, dy = e.clientY-y0; x0 = null; if(Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.4){ dx<0 ? onNext() : onPrev(); } }, {passive:true});
+  el.addEventListener("pointercancel", ()=>{ x0 = null; });
+}
+/* ---------- carousel rail ---------- */
+function rail(items, cls){ return `<div class="rail ${cls||""}" tabindex="0" role="region" aria-roledescription="carousel">${items.join("")}</div>`; }
+function railNav(){ return `<div class="railnav"><button class="iconbtn" type="button" data-rail="-1" aria-label="Previous">${ICON.left}</button><button class="iconbtn" type="button" data-rail="1" aria-label="Next">${ICON.right}</button></div>`; }
+function wireRails(root){
+  const blocks = (root.matches && root.matches(".block")) ? [root] : $$(".block",root);
+  blocks.forEach(b=>{
+    const r = $(".rail",b), nav = $$("[data-rail]",b); if(!r||!nav.length) return;
+    const upd = ()=>{ nav[0].disabled = r.scrollLeft<=4; nav[1].disabled = r.scrollLeft + r.clientWidth >= r.scrollWidth-4; };
+    nav.forEach(btn=>btn.onclick=()=>r.scrollBy({left:(+btn.dataset.rail)*r.clientWidth*.9,behavior:RM()?"auto":"smooth"}));
+    r.addEventListener("scroll",()=>requestAnimationFrame(upd),{passive:true}); upd(); setTimeout(upd,300);
+    r.addEventListener("keydown",e=>{ if(e.key==="ArrowRight"){r.scrollBy({left:r.clientWidth*.9,behavior:"smooth"});e.preventDefault();} if(e.key==="ArrowLeft"){r.scrollBy({left:-r.clientWidth*.9,behavior:"smooth"});e.preventDefault();} });
+  });
+}
+function hashN(s){ let h=7; for(const c of s) h=(h*31+c.charCodeAt(0))>>>0; return h; }
+function lessonCard(l){
+  const h = hashN(l.id);
+  return `<a class="lcard${done[l.id]?" isdone":""}" href="#${l.id}"><div class="cover"><span class="tag">${badges(l)}</span><span class="selcell" style="left:${34*(1+h%4)}px;top:${17*(3+h%2)}px"></span><b>${esc(l.id)}</b>${l.video?`<span class="play">${ICON.play}</span>`:""}</div><div class="body"><h3>${esc(l.title)}</h3><span>${esc(sec(l.sid).title)}</span></div></a>`;
+}
+function sectionCard(s){
+  const k = s.lessons.filter(l=>done[l.id]).length, n = s.lessons.length;
+  const bars = s.lessons.map((l,i)=>`<i class="${done[l.id]?"d":""}" style="height:${30+((hashN(l.id)>>3)%70)}%"></i>`).join("");
+  return `<a class="scard${k===n?" done":""}" href="#${s.id}"><div class="top"><span class="sid">${s.id}</span><span class="mini" style="--p:${Math.round(k/n*100)}" aria-label="${k} of ${n} done"></span></div><h3>${esc(s.title)}</h3><div class="spark" aria-hidden="true">${bars}</div><div class="meta"><span>${n} lessons</span><span>${k}/${n} done</span></div></a>`;
+}
+
+/* ---------- router with transitions ---------- */
+let routeSeq = 0, simStop = null, firstRoute = true;
+function route(){
+  const seq = ++routeSeq;
+  const h = decodeURIComponent((location.hash||"").replace(/^#/,"")).trim();
+  if(simStop){ simStop(); simStop = null; }
+  const run = async ()=>{
+    try{
+      await vmapReady; if(!live(seq)) return;
+      if(/^S\d\d-\d\d$/.test(h) && BYID[h]) await renderLesson(h, seq);
+      else if(/^S\d\d$/.test(h) && sec(h)) renderSection(h);
+      else if(h==="functions") await renderFunctions(seq);
+      else if(h==="tips") await renderTips(seq);
+      else if(h==="shortcuts") await renderShortcuts(seq);
+      else if(h==="help") renderHelp();
+      else renderCourse();
+    }catch(e){ console.warn(e); view.innerHTML = errorBox("This page could not load."); }
+    paintProgress();
+  };
+  window.scrollTo({top:0,behavior:"auto"});
+  if(document.startViewTransition && !RM() && !firstRoute && document.visibilityState==="visible"){
+    let ran = false; const once = ()=>{ if(!ran){ ran = true; return run(); } };
+    try{ const vt = document.startViewTransition(once); vt.ready.catch(()=>{}); vt.finished.catch(()=>{}); vt.updateCallbackDone.catch(()=>{ once(); }); setTimeout(once, 400); return; }catch(e){}
+  }
+  firstRoute = false; run();
+}
+window.addEventListener("hashchange", route);
+const live = seq => seq===routeSeq;
+
+/* ---------- home ---------- */
+function renderCourse(){
+  setTab("course"); setBar("A1", '=COURSE("Excel for Mac", <b>"Beginner to AI"</b>)');
+  const n = nDone(), last = store.get("xlmac2-last", null), nx = (last && BYID[last] && !done[last]) ? BYID[last] : nextUp();
+  const started = n>0 || !!last;
+  const lv = store.get("xlmac2-level","Beginner");
+  let h = `<section class="hero">
+    <div>
+      <span class="eyebrow">180 lessons · beginner to AI</span>
+      <h1 style="margin-top:12px">Excel on your Mac, from first cell to <span class="hl">Copilot</span>.</h1>
+      <p class="lede">A course for working professionals in India who are new to Excel on a MacBook. Learn the Mac keys, then lookups, PivotTables, Power Query and dashboards, then put Copilot and Claude to work on real files. Every lesson comes with a practice sheet of Indian business data.</p>
+      <div class="ctas"><a class="btn" href="#${nx.id}">${ICON.play} ${started?"Continue: "+esc(nx.id):"Start lesson 1"}</a><a class="btn ghost" href="#S00">See the course map</a></div>
+      <div class="stats"><div><b>180</b><small>Lessons</small></div><div><b>22</b><small>Sections</small></div><div><b>524</b><small>Functions</small></div><div><b>100</b><small>Tips</small></div></div>
+    </div>
+    <div class="sim" id="sim" aria-label="Animated example: formulas calculating in a sales sheet">${simShell()}</div>
+  </section>`;
+  if(started){
+    const p = Math.round(n/ALL.length*100);
+    h += `<a class="cont block" href="#${nx.id}"><span class="ring" style="--p:${p}"><span>${p}%</span></span><div style="min-width:0"><span class="eyebrow">Pick up where you left off</span><h3 style="margin-top:4px">${esc(nx.id)} · ${esc(nx.title)}</h3><span class="muted small">${n} of ${ALL.length} lessons done</span></div><span class="btn">${ICON.play} Continue</span></a>`;
+  }
+  const s0 = started ? ALL.filter(l=>!done[l.id]).slice(0,10) : ALL.filter(l=>l.sid==="S00"||l.sid==="S01").slice(0,10);
+  h += `<section class="block"><div class="bhead"><div><h2>${started?"Up next":"Start here"}</h2><p>${started?"The next lessons in your path.":"Find your way around Excel on a Mac in your first hour."}</p></div>${railNav()}</div>${rail(s0.map(lessonCard),"w4")}</section>`;
+  h += `<section class="block" id="map"><div class="bhead"><div><h2>Course map</h2><p id="lvnote">${esc(LEVEL_NOTE[lv]||"")}</p></div>${railNav()}</div>
+    <div class="seg" role="tablist" aria-label="Level" id="seg">${LEVELS.map(x=>`<button type="button" role="tab" aria-selected="${x===lv}" data-lv="${x}">${x}</button>`).join("")}<span class="ind"></span></div>
+    <div style="margin-top:14px" id="maprail">${rail(COURSE.sections.filter(s=>s.level===lv).map(sectionCard),"w4")}</div></section>`;
+  const ai = ALL.filter(l=>l.ai || l.sid==="S18"||l.sid==="S19"||l.sid==="S20").slice(0,14);
+  h += `<section class="block"><div class="bhead"><div><h2>AI in Excel</h2><p>Copilot, Agent Mode and Claude in Excel, shown on real workbooks, with a habit of checking every number.</p></div>${railNav()}</div>${rail(ai.map(lessonCard),"w4")}</section>`;
+  h += `<section class="block"><div class="bhead"><div><h2>How each lesson works</h2></div></div><div class="how">
+    <div><span class="cell">A1 · Watch</span><b>See it done</b><p>A short demo with the Mac keys on screen, or a whiteboard explainer for the ideas.</p></div>
+    <div><span class="cell">B1 · Do</span><b>Try it on the practice sheet</b><p>Each section has a workbook. Open the sheet named after the lesson; yellow cells are yours to fill.</p></div>
+    <div><span class="cell">C1 · Check</span><b>Compare and move on</b><p>Match your result with the Done sheet, tick the lesson, and take the section quiz.</p></div></div></section>`;
+  view.innerHTML = h;
+  wireRails(view);
+  const seg = $("#seg"), ind = $(".ind",seg);
+  const placeInd = ()=>{ const b = $('[aria-selected="true"]',seg); if(b){ ind.style.left=b.offsetLeft+"px"; ind.style.width=b.offsetWidth+"px"; } };
+  placeInd(); setTimeout(placeInd,350); document.fonts && document.fonts.ready.then(placeInd).catch(()=>{});
+  $$("button",seg).forEach(b=>b.onclick=()=>{
+    $$("button",seg).forEach(x=>x.setAttribute("aria-selected",String(x===b))); placeInd(); store.set("xlmac2-level", b.dataset.lv);
+    $("#lvnote").textContent = LEVEL_NOTE[b.dataset.lv]||"";
+    $("#maprail").innerHTML = rail(COURSE.sections.filter(s=>s.level===b.dataset.lv).map(sectionCard),"w4");
+    const r = $("#maprail .rail"); r.animate && !RM() && r.animate([{opacity:0,transform:"translateX(16px)"},{opacity:1,transform:"none"}],{duration:350,easing:"cubic-bezier(.2,.8,.2,1)"});
+    wireRails($("#map"));
+  });
+  simStop = startSim($("#sim"));
+}
+
+/* ---------- hero simulation: a sheet that calculates itself ---------- */
+const SIM_ROWS = [["Region","Branch","Sales (₹)",""],["North","Delhi",1170000],["North","Jaipur",1561000],["South","Chennai",1682000],["South","Kochi",828000],["West","Pune",907000],["West","Mumbai",1047000]];
+const inr = n => "₹"+Math.round(n).toLocaleString("en-IN");
+function simShell(){
+  let rows = "";
+  for(let r=0;r<10;r++){
+    const d = SIM_ROWS[r]||[];
+    rows += `<tr class="${r===0?"h":""}"><th>${r+1}</th>${[0,1,2,3].map(c=>{ const v = d[c]; const num = typeof v==="number"; return `<td class="${num?"n":""}" data-c="${c}" data-r="${r}">${v==null?"":num?inr(v).slice(1):esc(v)}</td>`; }).join("")}</tr>`;
+  }
+  return `<div class="chrome"><i></i><i></i><i></i><span>Branch_Sales_Sep-2026.xlsx</span></div>
+    <div class="fbar"><span class="nb" id="snb">A1</span><span class="fx">fx</span><span class="ftext" id="sft"></span></div>
+    <div class="gridwrap" id="sgw"><table class="cells"><thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead><tbody>${rows}</tbody></table>
+    <div class="hlbox r1"></div><div class="hlbox r2"></div><div class="hlbox r3"></div><div class="hlbox spill"></div><div class="hlbox cur"></div>
+    <div class="copilot" id="scp"></div></div>
+    <div class="scenes" id="scenes">${["SUMIFS","XLOOKUP","FILTER","Copilot"].map((x,i)=>`<button class="scene" type="button" data-i="${i}" aria-pressed="false">${x}</button>`).join("")}</div>`;
+}
+function startSim(root){
+  if(!root) return ()=>{};
+  let alive = true, token = 0, visible = true, hiddenTab = false;
+  const cell = (c,r)=>$(`td[data-c="${c}"][data-r="${r}"]`,root);
+  const gw = $("#sgw",root), ft = $("#sft",root), nb = $("#snb",root), cp = $("#scp",root);
+  const boxes = {r1:$(".r1",root),r2:$(".r2",root),r3:$(".r3",root),spill:$(".spill",root),cur:$(".cur",root)};
+  const place = (b, c1,r1,c2,r2)=>{ const a = cell(c1,r1), z = cell(c2,r2); if(!a||!z) return; const g = gw.getBoundingClientRect(), A = a.getBoundingClientRect(), Z = z.getBoundingClientRect();
+    Object.assign(b.style,{left:(A.left-g.left+gw.scrollLeft-1)+"px",top:(A.top-g.top-1)+"px",width:(Z.right-A.left+2)+"px",height:(Z.bottom-A.top+2)+"px"}); b.classList.add("on"); };
+  const hide = ()=>Object.values(boxes).forEach(b=>b.classList.remove("on"));
+  const clearOut = ()=>{ for(let r=7;r<10;r++) for(let c=0;c<4;c++){ const t=cell(c,r); t.textContent=""; t.className=""; } for(let r=0;r<7;r++){ const t=cell(3,r); t.textContent=""; t.className=r===0?"":"n"; } cp.classList.remove("on"); };
+  const colLetter = c=>"ABCD"[c];
+  let instant = false;
+  const wait = async ms => { const my = token; if(instant){ if(!alive||my!==token) throw "stop"; return; } let t = 0; while(t<ms){ if(!alive||my!==token) throw "stop"; await sleep(60); if(visible && !hiddenTab) t+=60; } };
+  function renderParts(parts, upto){ let out = "", n = 0; for(const [txt,cls] of parts){ const take = Math.max(0,Math.min(txt.length, upto-n)); if(take>0) out += cls?`<span class="${cls}">${esc(txt.slice(0,take))}</span>`:esc(txt.slice(0,take)); n += txt.length; } return out; }
+  async function typeParts(parts, speed){ const total = parts.reduce((a,p)=>a+p[0].length,0); for(let i=1;i<=total;i++){ ft.innerHTML = renderParts(parts,i)+'<span class="caret"></span>'; await wait(speed); } }
+  const north = SIM_ROWS.slice(1).filter(r=>r[0]==="North").reduce((a,r)=>a+r[2],0);
+  const pune = SIM_ROWS.find(r=>r[1]==="Pune")[2];
+  const big = SIM_ROWS.slice(1).filter(r=>r[2]>1500000);
+  const SCENES = [
+    {name:"SUMIFS", run: async (sp)=>{
+      cell(0,8).textContent="North total"; cell(0,8).className="lab";
+      nb.textContent="B9"; place(boxes.cur,1,8,1,8);
+      await typeParts([["=SUMIFS(",""],["C2:C7","ref1"],[", ",""],["A2:A7","ref2"],[", \"North\")",""]], sp);
+      place(boxes.r1,2,1,2,6); await wait(250); place(boxes.r2,0,1,0,6); await wait(900);
+      const t = cell(1,8); t.textContent = inr(north); t.className="n res pop"; ft.innerHTML = renderParts([["=SUMIFS(",""],["C2:C7","ref1"],[", ",""],["A2:A7","ref2"],[", \"North\")",""]],999);
+      for(let r=1;r<=6;r++) if(SIM_ROWS[r][0]==="North"){ cell(2,r).style.background="var(--sel-soft)"; }
+      await wait(2200); for(let r=1;r<=6;r++) cell(2,r).style.background="";
+    }},
+    {name:"XLOOKUP", run: async (sp)=>{
+      cell(0,8).textContent="Pune sales"; cell(0,8).className="lab"; nb.textContent="B9"; place(boxes.cur,1,8,1,8);
+      const P = [["=XLOOKUP(\"Pune\", ",""],["B2:B7","ref1"],[", ",""],["C2:C7","ref2"],[")",""]];
+      await typeParts(P, sp); place(boxes.r1,1,1,1,6); await wait(250); place(boxes.r2,2,1,2,6); await wait(700);
+      const row = SIM_ROWS.findIndex(r=>r[1]==="Pune"); place(boxes.r3,1,row,2,row); await wait(700);
+      const t = cell(1,8); t.textContent = inr(pune); t.className="n res pop"; ft.innerHTML = renderParts(P,999); await wait(2200);
+    }},
+    {name:"FILTER", run: async (sp)=>{
+      cell(0,7).textContent="Over ₹15 lakh"; cell(0,7).className="lab"; nb.textContent="B8"; place(boxes.cur,1,7,1,7);
+      const P = [["=FILTER(",""],["B2:C7","ref1"],[", ",""],["C2:C7","ref2"],[">1500000)",""]];
+      await typeParts(P, sp); place(boxes.r1,1,1,2,6); await wait(250); place(boxes.r2,2,1,2,6); await wait(800); ft.innerHTML = renderParts(P,999);
+      for(let i=0;i<big.length;i++){ const a = cell(1,7+i), b = cell(2,7+i); a.textContent=big[i][1]; b.textContent=inr(big[i][2]); a.className="res pop"; b.className="n res pop"; await wait(240); }
+      place(boxes.spill,1,7,2,7+big.length-1); await wait(2400);
+    }},
+    {name:"Copilot", run: async (sp)=>{
+      hide(); nb.textContent="D1"; ft.innerHTML="";
+      cp.innerHTML = `<div class="who">Copilot</div><div class="me">Add a column with 18% GST on each branch's sales.</div><div id="cpa"></div>`; cp.classList.add("on");
+      await wait(1100); const a = $("#cpa",cp); const msg = "Added column D, GST, as =C2*18% for each row. Check one: Delhi ₹11,70,000 × 18% = ₹2,10,600.";
+      for(let i=1;i<=msg.length;i+=2){ a.textContent = msg.slice(0,i); await wait(18); } a.textContent = msg;
+      const h = cell(3,0); h.textContent="GST (₹)"; h.className="pop";
+      ft.innerHTML = renderParts([["=",""],["C2","ref1"],["*18%",""]],999); nb.textContent="D2"; place(boxes.cur,3,1,3,1);
+      for(let r=1;r<=6;r++){ const t = cell(3,r); t.textContent = inr(SIM_ROWS[r][2]*0.18).slice(1); t.className="n res pop"; place(boxes.cur,3,1,3,r); await wait(170); }
+      place(boxes.r1,2,1,2,6); await wait(2600);
+    }}
+  ];
+  const btns = $$(".scene",root);
+  let idx = 0;
+  function mark(i, prog){ btns.forEach((b,k)=>{ b.setAttribute("aria-pressed",String(k===i)); b.style.setProperty("--prog", k===i?prog+"%":"0%"); }); }
+  async function loop(){
+    const my = ++token;
+    while(alive && my===token){
+      clearOut(); hide(); mark(idx, 0);
+      const t0 = performance.now(); const tick = setInterval(()=>{ if(visible&&!hiddenTab) mark(idx, Math.min(100,(performance.now()-t0)/90)); },120);
+      try{ await SCENES[idx].run(45); }catch(e){ clearInterval(tick); if(e!=="stop") console.warn(e); return; }
+      clearInterval(tick); mark(idx,100); idx = (idx+1)%SCENES.length;
+    }
+  }
+  async function staticScene(i){ token++; idx=i; instant=true; clearOut(); hide(); mark(i,100); try{ await SCENES[i].run(0); }catch(e){} instant=false; }
+  btns.forEach(b=>b.onclick=()=>{ idx = +b.dataset.i; if(RM()) staticScene(idx); else loop(); });
+  let io = null;
+  try{ io = new IntersectionObserver(es=>{ visible = es[0].isIntersecting; }); io.observe(root); }catch(e){}
+  const vis = ()=>{ hiddenTab = document.hidden; }; document.addEventListener("visibilitychange", vis);
+  const ro = (()=>{ try{ const o = new ResizeObserver(()=>{}); o.observe(root); return o; }catch(e){ return null; } })();
+  if(RM()){
+    // still frame: the SUMIFS result, no motion
+    cell(0,8).textContent="North total"; cell(0,8).className="lab"; nb.textContent="B9";
+    ft.innerHTML = renderParts([["=SUMIFS(",""],["C2:C7","ref1"],[", ",""],["A2:A7","ref2"],[", \"North\")",""]],999);
+    const t = cell(1,8); t.textContent = inr(north); t.className="n res"; mark(0,100);
+    requestAnimationFrame(()=>{ place(boxes.r1,2,1,2,6); place(boxes.r2,0,1,0,6); place(boxes.cur,1,8,1,8); });
+  } else {
+    // first still frame shows a finished result, then the loop starts
+    cell(0,8).textContent="North total"; cell(0,8).className="lab"; const t = cell(1,8); t.textContent = inr(north); t.className="n res";
+    ft.innerHTML = renderParts([["=SUMIFS(",""],["C2:C7","ref1"],[", ",""],["A2:A7","ref2"],[", \"North\")",""]],999);
+    setTimeout(()=>{ if(alive) loop(); }, 1400);
+  }
+  return ()=>{ alive = false; token++; io && io.disconnect(); ro && ro.disconnect(); document.removeEventListener("visibilitychange", vis); };
+}
+
+/* ---------- section ---------- */
+function renderSection(sid){
+  const s = sec(sid); setTab("course");
+  const k = s.lessons.filter(l=>done[l.id]).length, n = s.lessons.length, p = Math.round(k/n*100);
+  const first = s.lessons.find(l=>!done[l.id]) || s.lessons[0];
+  const i = COURSE.sections.indexOf(s), prev = COURSE.sections[i-1], next = COURSE.sections[i+1];
+  setBar(sid+"!A1", `=SECTION(${esc(sid)}, <b>"${esc(s.title)}"</b>)`);
+  let h = `<div class="crumbs"><a href="#course">Course</a><span>›</span><span>${esc(s.level)}</span><span>›</span><span>${esc(sid)}</span></div>
+    <div class="shero"><div class="bigring" style="--p:0" id="bigring"><span>${k}/${n}<small>done</small></span></div>
+    <div class="phead" style="min-width:0"><div style="min-width:0"><span class="eyebrow">${esc(s.level)} · section ${esc(sid.slice(1))} of ${COURSE.sections.length-1}</span><h1 style="margin-top:6px">${esc(s.title)}</h1><p>${n} lessons${s.wb?" · practice workbook":""} · quiz at the end</p></div>
+    <div class="acts"><a class="btn" href="#${first.id}">${ICON.play} ${k?"Continue":"Start"} with ${esc(first.id)}</a><button class="btn ghost" type="button" id="toquiz">Take the quiz</button></div></div></div>
+    <ol class="timeline">${s.lessons.map((l,ix)=>`<li><a class="trow${done[l.id]?" done":""}" href="#${l.id}"><span class="tick">${done[l.id]?"✓":String(ix+1).padStart(2,"0")}</span><span class="t">${esc(l.title)}<small>${esc(l.id)}${l.video?" · video":""}</small></span><span class="b">${badges(l)}</span></a></li>`).join("")}</ol>
+    <div class="tools">`;
+  if(s.wb) h += `<div class="tool"><b>Practice workbook</b><span class="note">${esc(s.wb.name)}. One sheet per lesson, plus a finished "Done" copy of each sheet to compare with.</span><button class="btn" data-save hidden type="button" data-path="${esc(s.wb.path)}" data-name="${esc(s.wb.name)}">${ICON.dl} Save workbook</button><span class="note" data-nosave hidden>Open this page in claude.ai to save the workbook.</span></div>`;
+  (s.extras||[]).forEach(x=>{ h += `<div class="tool"><b>${esc(x.name)}</b><span class="note">${esc(x.why||"Extra file used in this section.")}</span><button class="btn ghost" data-save hidden type="button" data-path="${esc(x.path)}" data-name="${esc(x.name)}">${ICON.dl} Save file</button><span class="note" data-nosave hidden>Open this page in claude.ai to save it.</span></div>`; });
+  h += `</div><section class="block" id="quizblock"><div class="bhead"><div><h2>Section quiz</h2><p>Check what you remember. Each answer explains why.</p></div></div><div id="quizbox"><button class="btn ghost" type="button" id="startquiz">Start the quiz</button></div></section>
+    <div class="lnav">${prev?`<a href="#${prev.id}"><span>‹ Previous section</span><b>${esc(prev.id)} ${esc(prev.title)}</b></a>`:"<span></span>"}${next?`<a class="next" href="#${next.id}"><span>Next section ›</span><b>${esc(next.id)} ${esc(next.title)}</b></a>`:""}</div>`;
+  view.innerHTML = h;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{ const r=$("#bigring"); if(r) r.style.setProperty("--p",p); }));
+  wireSaves(view);
+  const start = ()=>{ quiz($("#quizbox"), `data/quizzes/${sid}.json`); };
+  $("#startquiz").onclick = start;
+  $("#toquiz").onclick = ()=>{ $("#quizblock").scrollIntoView({behavior:RM()?"auto":"smooth"}); if($("#startquiz")) start(); };
+}
+
+/* ---------- lesson ---------- */
+async function renderLesson(id, seq){
+  const l = BYID[id], s = sec(l.sid); setTab("course");
+  setBar(id, `=LESSON(${esc(id)}, <b>"${esc(l.title)}"</b>)`);
+  store.set("xlmac2-last", id);
+  view.innerHTML = `<div class="crumbs"><span>Loading lesson…</span></div><div class="lgrid"><div class="player" style="aspect-ratio:16/9"></div><div class="side"><div class="sk" style="height:120px"></div><div class="sk" style="height:80px"></div></div></div>`;
+  let d; try{ [d] = await Promise.all([getJSON(`data/sections/${l.sid}.json`), vmapReady]); }catch(e){ if(live(seq)) view.innerHTML = errorBox("This lesson could not load."); return; }
+  if(!live(seq)) return;
+  const L = (d.lessons||[]).find(x=>x.id===id) || {};
+  const idx = ALL.findIndex(x=>x.id===id), prev = ALL[idx-1], next = ALL[idx+1];
+  const vsrc = VMAP[id] || (hasFile("videos/"+id+".mp4") ? `videos/${id}.mp4` : null);
+  const caps = await capsReady; if(!live(seq)) return;
+  const capPath = (caps.has(id) || L.vtt) ? `videos/${id}.vtt.txt` : "";
+  const media = vsrc
+    ? `<div class="player"><video id="vid" controls preload="metadata" playsinline src="${esc(vsrc)}" aria-label="Video: ${esc(l.title)}"></video>
+        <div class="endcard" id="endcard">${next?`<div><span class="eyebrow">Up next</span><h3>${esc(next.id)} · ${esc(next.title)}</h3><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><a class="btn" href="#${next.id}">${ICON.play} Play next</a><button class="btn ghost" type="button" id="replay" style="color:#e9f2ec;border-color:#5b6f63">Watch again</button></div></div>`:`<div><span class="eyebrow">Course complete</span><h3>You reached the last lesson.</h3></div>`}</div></div>
+       <div class="pctl"><div class="g" role="group" aria-label="Playback speed">${[1,1.25,1.5,2].map(r=>`<button type="button" data-rate="${r}" aria-pressed="false">${r}×</button>`).join("")}</div><div class="g"><button type="button" id="cc" aria-pressed="true">Captions</button><button type="button" id="back10">−10s</button></div></div>`
+    : `<div class="player"><div class="placeholder"><div><b>Video coming soon</b><br><span>Follow the walkthrough below with the practice sheet.</span></div></div></div>`;
+  const steps = L.steps||[];
+  let h = `<div class="crumbs"><a href="#course">Course</a><span>›</span><a href="#${s.id}">${s.id} ${esc(s.title)}</a><span>›</span><span>${esc(id)}</span></div>
+    <div class="phead"><div style="min-width:0"><div style="display:flex;gap:6px;flex-wrap:wrap">${badges(l)}</div><h1 style="margin-top:10px">${esc(l.title)}</h1><p>${esc(id)} · lesson ${idx+1} of ${ALL.length}${steps.length?` · ${steps.length} steps`:""}</p></div>
+    <button class="donebtn" type="button" id="donebtn" aria-pressed="${!!done[id]}"><span class="tk">${done[id]?"✓":""}</span><span class="lbl">${done[id]?"Done":"Mark as done"}</span><span class="burst"></span></button></div>
+    <div class="lgrid"><div style="min-width:0">${media}</div><div class="side">
+      <div class="box"><h3>What you'll learn</h3><ul>${(L.learn||[]).map(x=>`<li>${esc(x)}</li>`).join("")||"<li>Watch the video and follow the steps.</li>"}</ul></div>`;
+  if(L.sheet) h += `<div class="box"><h3>Practice sheet</h3><p>Open <span class="code">${esc(L.sheet)}</span> in ${esc(s.wb?s.wb.name:"the section workbook")}. Compare with <span class="code">${esc(L.sheet)} Done</span>.</p>${s.wb?`<div style="margin-top:10px"><button class="btn ghost sm" data-save hidden type="button" data-path="${esc(s.wb.path)}" data-name="${esc(s.wb.name)}">${ICON.dl} Save workbook</button><span class="muted small" data-nosave hidden>Open this page in claude.ai to save the workbook.</span></div>`:""}</div>`;
+  if(L.mac) h += `<div class="mac"><strong>On a Mac:</strong> ${esc(L.mac)}</div>`;
+  h += `</div></div>`;
+  const tabs = [];
+  if(steps.length) tabs.push(["steps","Step by step"]);
+  if(steps.length) tabs.push(["all","All steps"]);
+  if(L.checks && L.checks.length) tabs.push(["check","Check your result"]);
+  if(tabs.length){
+    h += `<div class="ptabs" role="tablist" aria-label="Lesson sections">${tabs.map((t,i)=>`<button type="button" role="tab" id="pt-${t[0]}" aria-selected="${i===0}" aria-controls="pp">${t[1]}</button>`).join("")}</div><div class="ppanel" id="pp" role="tabpanel"></div>`;
+  }
+  h += `<div class="lnav">${prev?`<a href="#${prev.id}"><span>‹ Previous</span><b>${esc(prev.id)} ${esc(prev.title)}</b></a>`:"<span></span>"}${next?`<a class="next" href="#${next.id}"><span>Next ›</span><b>${esc(next.id)} ${esc(next.title)}</b></a>`:""}</div>`;
+  view.innerHTML = h;
+  wireSaves(view);
+
+  /* done button with a small burst */
+  const btn = $("#donebtn");
+  const paintBtn = ()=>{ const v = !!done[id]; btn.setAttribute("aria-pressed",String(v)); $(".tk",btn).textContent = v?"✓":""; $(".lbl",btn).textContent = v?"Done":"Mark as done"; };
+  const mark = (val, quiet)=>{ setDone(id,val); paintBtn();
+    if(val && !RM()){ const b = $(".burst",btn); b.innerHTML = Array.from({length:10},(_,k)=>{ const a = k/10*Math.PI*2; return `<i style="--x:${Math.cos(a)*38}px;--y:${Math.sin(a)*26}px;background:${k%2?"var(--sel)":"var(--accent)"}"></i>`; }).join(""); setTimeout(()=>b.innerHTML="",800); }
+    if(val && !quiet) toast(`Lesson done · ${nDone()} of ${ALL.length}`);
+  };
+  btn.onclick = ()=>mark(!done[id]);
+
+  /* video: speed, captions, end card */
+  const v = $("#vid");
+  if(v){
+    const rate = store.get("xlmac2-rate",1);
+    const setRate = r=>{ v.playbackRate = r; $$("[data-rate]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.rate===r))); store.set("xlmac2-rate",r); };
+    $$("[data-rate]").forEach(b=>b.onclick=()=>setRate(+b.dataset.rate)); setRate([1,1.25,1.5,2].includes(rate)?rate:1);
+    v.addEventListener("loadedmetadata",()=>{ v.playbackRate = store.get("xlmac2-rate",1)||1; });
+    v.addEventListener("error",()=>{ const p = v.parentNode; if(p) p.insertAdjacentHTML("beforeend",`<div class="endcard on"><div><span class="eyebrow">Video unavailable</span><h3>The video could not load.</h3><button class="btn" type="button" onclick="route()">Try again</button></div></div>`); },{once:true});
+    $("#back10").onclick = ()=>{ try{ v.currentTime = Math.max(0, v.currentTime-10); }catch(e){} };
+    const cc = $("#cc");
+    if(capPath){
+      fetch(capPath).then(r=>r.ok?r.text():null).then(t=>{ if(!t||!live(seq)) return;
+        const tr = document.createElement("track"); tr.kind="captions"; tr.srclang="en"; tr.label="English"; tr.default = store.get("xlmac2-cc",true);
+        tr.src = URL.createObjectURL(new Blob([t],{type:"text/vtt"})); v.appendChild(tr);
+        const sync = ()=>{ const on = store.get("xlmac2-cc",true); if(v.textTracks[0]) v.textTracks[0].mode = on?"showing":"hidden"; cc.setAttribute("aria-pressed",String(on)); };
+        tr.addEventListener("load",sync); setTimeout(sync,200);
+        cc.onclick = ()=>{ store.set("xlmac2-cc", !store.get("xlmac2-cc",true)); sync(); };
+      }).catch(()=>{ cc.hidden = true; });
+    } else cc.hidden = true;
+    const ec = $("#endcard");
+    v.addEventListener("ended",()=>{ if(!done[id]) mark(true); ec && ec.classList.add("on"); });
+    v.addEventListener("play",()=>ec && ec.classList.remove("on"));
+    const rp = $("#replay"); if(rp) rp.onclick = ()=>{ ec.classList.remove("on"); v.currentTime = 0; v.play().catch(()=>{}); };
+  }
+
+  /* walkthrough panel */
+  if(!tabs.length) return;
+  let cur = 0;
+  const pp = $("#pp");
+  const actsHtml = st=>{
+    let items = [], cards = "";
+    (st.acts||[]).forEach(a=>{ if(a.k==="note") cards += `<div class="card ${esc(a.style||"")}">${esc(a.t)}</div>`; else if(a.k==="ask") cards += `<div class="card ask"><strong>${esc(a.who)}${a.mode?` (${esc(a.mode)} mode)`:""}:</strong> ${esc(a.t)}</div>`; else if(a.h) items.push(`<li><span>${a.h}</span></li>`); });
+    return (items.length?`<ul class="acts">${items.join("")}</ul>`:"") + (st.keys?`<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="eyebrow">Mac keys</span>${keycaps(st.keys)}</div>`:"") + cards;
+  };
+  const seen = new Set([0]);
+  function drawStep(dir){
+    const st = steps[cur];
+    pp.innerHTML = `<div class="stepper"><div class="stepbar"><div class="dots" role="tablist" aria-label="Steps">${steps.map((_,i)=>`<button type="button" aria-label="Step ${i+1}" class="${seen.has(i)?"seen":""}" ${i===cur?'aria-current="step"':""} data-s="${i}"></button>`).join("")}</div>
+      <div style="display:flex;gap:8px"><button class="iconbtn" type="button" id="sprev" aria-label="Previous step" ${cur===0?"disabled":""}>${ICON.left}</button><button class="iconbtn" type="button" id="snext" aria-label="Next step" ${cur===steps.length-1?"disabled":""}>${ICON.right}</button></div></div>
+      <div class="stage"><div class="scardx${dir<0?" back":""}"><span class="num">STEP ${cur+1} OF ${steps.length}</span>${st.cap?`<div class="cap">${esc(st.cap)}</div>`:""}<p class="say">${esc(st.say)}</p>${actsHtml(st)}</div></div>
+      <p class="muted small kbtip">Tip: use the ← and → keys to move between steps.</p></div>`;
+    const kc = $(".keys",pp); if(kc && !RM()) requestAnimationFrame(()=>kc.classList.add("press"));
+    $("#sprev",pp).onclick = ()=>go(cur-1); $("#snext",pp).onclick = ()=>go(cur+1);
+    $$("[data-s]",pp).forEach(b=>b.onclick=()=>go(+b.dataset.s));
+    swipe($(".stage",pp), ()=>go(cur+1), ()=>go(cur-1));
+  }
+  function go(i){ if(i<0||i>=steps.length||i===cur) return; const dir = i>cur?1:-1; cur = i; seen.add(i); drawStep(dir); if(cur===steps.length-1 && !done[id]) toast("Last step. Tick “Mark as done” when your sheet matches."); }
+  function drawAll(){ pp.innerHTML = `<ol class="allsteps">${steps.map(st=>`<li>${st.cap?`<b>${esc(st.cap)}</b>`:""}<p>${esc(st.say)}</p>${actsHtml(st)}</li>`).join("")}</ol>`; }
+  function drawCheck(){ pp.innerHTML = `<div class="box checks"><h3>Check your result</h3><ul>${L.checks.map(c=>`<li><span class="code">${esc(c.cell)}</span> should show <span class="code">${esc(c.equals)}</span></li>`).join("")}</ul><p class="muted small" style="margin-top:10px">Matches? Mark the lesson as done.</p></div>`; }
+  const show = t=>{ $$(".ptabs button").forEach(b=>b.setAttribute("aria-selected",String(b.id==="pt-"+t))); if(t==="steps") drawStep(0); else if(t==="all") drawAll(); else drawCheck(); };
+  tabs.forEach(t=>$("#pt-"+t[0]).onclick=()=>show(t[0]));
+  show(tabs[0][0]);
+  const onKey = e=>{ if(!live(seq)){ document.removeEventListener("keydown",onKey); return; } if(e.target.closest("input,textarea,select,video")||e.metaKey||e.ctrlKey||e.altKey) return; if(!$("#sprev")) return; if(e.key==="ArrowRight") go(cur+1); if(e.key==="ArrowLeft") go(cur-1); };
+  document.addEventListener("keydown", onKey);
+}
+
+/* ---------- quiz ---------- */
+async function quiz(box, p){
+  box.innerHTML = `<div class="quiz"><div class="sk"></div><div class="sk" style="width:70%"></div></div>`;
+  let data; try{ data = await getJSON(p); }catch(e){ box.innerHTML = errorBox("The quiz could not load."); return; }
+  const qs = data.questions || []; if(!qs.length){ box.innerHTML = `<p class="muted">This section has no quiz.</p>`; return; }
+  let i=0, score=0;
+  function draw(){
+    if(i>=qs.length){
+      const pct = Math.round(score/qs.length*100);
+      box.innerHTML = `<div class="quiz"><div class="score"><div class="bigring" style="--p:0" id="qring"><span>${score}/${qs.length}<small>correct</small></span></div><div style="min-width:0;flex:1"><h3 style="font-size:1.3rem">${pct>=75?"Well done.":"Good effort."}</h3><p class="muted" style="margin-top:4px">${pct>=75?"You are ready for the next section.":"Revisit the lessons behind the questions you missed, then try again."}</p></div></div><div><button class="btn" type="button" id="qagain">Try again</button></div></div>`;
+      requestAnimationFrame(()=>requestAnimationFrame(()=>$("#qring").style.setProperty("--p",pct)));
+      $("#qagain").onclick=()=>{ i=0; score=0; draw(); }; return;
+    }
+    const q = qs[i];
+    box.innerHTML = `<div class="quiz"><div class="qtop"><span>Question ${i+1} of ${qs.length}</span><span>Score ${score}</span></div><div class="qbar"><i style="width:${i/qs.length*100}%"></i></div>
+      <p class="q">${esc(q.question)}</p><div class="opts">${q.answerOptions.map((o,k)=>`<button class="opt" type="button" data-k="${k}"><span class="k">${"ABCDEF"[k]}</span><span>${esc(o.text)}</span></button>`).join("")}</div><div id="qwhy"></div></div>`;
+    $$(".opt",box).forEach(b=>b.onclick=()=>{
+      const o = q.answerOptions[+b.dataset.k];
+      $$(".opt",box).forEach((x,k)=>{ x.disabled = true; if(q.answerOptions[k].isCorrect) x.classList.add("right"); });
+      if(o.isCorrect) score++; else b.classList.add("wrong");
+      const c = q.answerOptions.find(x=>x.isCorrect);
+      $("#qwhy",box).innerHTML = `<p class="why"><strong>${o.isCorrect?"Correct.":"Not quite."}</strong> ${esc(o.rationale||"")}${!o.isCorrect&&c&&c.rationale?` <br><strong>Right answer:</strong> ${esc(c.rationale)}`:""}</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;align-items:center"><button class="btn" type="button" id="qnext">${i===qs.length-1?"See your score":"Next question"}</button>${q.lesson&&BYID[q.lesson]?`<a class="small" href="#${q.lesson}">Revise lesson ${esc(q.lesson)}</a>`:""}</div>`;
+      $(".qtop span:last-child",box).textContent = "Score "+score;
+      $("#qnext").onclick=()=>{ i++; draw(); }; $("#qnext").focus({preventScroll:true});
+    });
+  }
+  draw();
+}
+
+/* ---------- function library ---------- */
+let hfLoading = null;
+function loadHF(){
+  if(window.HyperFormula) return Promise.resolve(window.HyperFormula);
+  if(hfLoading) return hfLoading;
+  hfLoading = new Promise((res,rej)=>{ const s=document.createElement("script"); s.src="https://cdn.jsdelivr.net/npm/hyperformula@3.5.0/dist/hyperformula.full.min.js"; s.onload=()=>window.HyperFormula?res(window.HyperFormula):rej(new Error("load")); s.onerror=()=>{hfLoading=null;rej(new Error("load"));}; document.head.appendChild(s); });
+  return hfLoading;
+}
+const colName = n => { let s=""; n++; while(n>0){ const m=(n-1)%26; s=String.fromCharCode(65+m)+s; n=Math.floor((n-1)/26); } return s; };
+function serialDate(v){ const d = new Date(Math.round((v-25569)*86400000)); return String(d.getUTCDate()).padStart(2,"0")+"/"+String(d.getUTCMonth()+1).padStart(2,"0")+"/"+d.getUTCFullYear(); }
+function serialTime(v){ let s = Math.round((v-Math.floor(v))*86400); return String(Math.floor(s/3600)).padStart(2,"0")+":"+String(Math.floor(s%3600/60)).padStart(2,"0"); }
+function fmtVal(v, disp){
+  if(v && typeof v==="object" && "value" in v) return {t:String(v.value), err:true};
+  if(typeof v==="boolean") return {t:v?"TRUE":"FALSE"};
+  if(v===null||v===undefined||v==="") return {t:"(blank)"};
+  if(typeof v!=="number") return {t:String(v)};
+  const [kind, dp] = String(disp||"general").split(":"); const n = parseInt(dp||"0",10);
+  if(kind==="date") return {t:serialDate(v)};
+  if(kind==="time") return {t:serialTime(v)};
+  if(kind==="percent") return {t:(v*100).toLocaleString("en-IN",{minimumFractionDigits:n,maximumFractionDigits:n})+"%"};
+  if(kind==="number") return {t:v.toLocaleString("en-IN",{minimumFractionDigits:n,maximumFractionDigits:n})};
+  return {t:String(+v.toPrecision(12))};
+}
+function cellIn(raw, orig){
+  const s = raw.trim();
+  if(s==="") return null;
+  if(String(orig)===s) return orig;
+  if(/^=/.test(s)) return s;
+  if(/^-?\d+(\.\d+)?$/.test(s.replace(/,/g,""))) return parseFloat(s.replace(/,/g,""));
+  if(/^(TRUE|FALSE)$/i.test(s)) return s.toUpperCase()==="TRUE";
+  return s;
+}
+async function runExample(card, f){
+  const out = $(".out",card);
+  out.innerHTML = `<span class="muted">Calculating…</span>`;
+  let H; try{ H = await loadHF(); }catch(e){ out.innerHTML = `<span class="err">The calculation engine could not load. Check your connection and press Run again.</span>`; return; }
+  const data = (f.example && f.example.data) || [[]];
+  const rows = $$(".grid tbody tr",card).map((tr,r)=>$$("input",tr).map((inp,c)=>cellIn(inp.value,(data[r]||[])[c])));
+  const formula = $(".fbar2 input",card).value.trim();
+  if(!formula){ out.innerHTML = `<span class="err">Type a formula first, for example ${esc(f.example.formula)}.</span>`; return; }
+  let hf;
+  try{
+    hf = H.buildEmpty({licenseKey:"gpl-v3", useArrayArithmetic:true, dateFormats:["DD/MM/YYYY","DD/MM/YY"], timeFormats:["hh:mm","hh:mm:ss.sss"]});
+    const sn = hf.addSheet("Sheet1"), sid = hf.getSheetId(sn);
+    try{ hf.addNamedExpression("TRUE","=TRUE()"); hf.addNamedExpression("FALSE","=FALSE()"); }catch(e){}
+    hf.setSheetContent(sid, rows.length?rows:[[]]);
+    const v = hf.calculateFormula(formula.startsWith("=")?formula:"="+formula, sid);
+    if(Array.isArray(v)){
+      out.innerHTML = `Result spills ${v.length} × ${v[0]?v[0].length:0}:<div class="tblwrap" style="margin-top:6px"><table class="grid"><tbody>${v.map(r=>`<tr>${r.map(x=>{const o=fmtVal(x,f.example.display);return `<td><span class="${o.err?"err":""}">${esc(o.t)}</span></td>`;}).join("")}</tr>`).join("")}</tbody></table></div>`;
+    } else { const o = fmtVal(v, f.example.display); out.innerHTML = `Result: <span class="${o.err?"err":"val"}">${esc(o.t)}</span>`; }
+    out.insertAdjacentHTML("beforeend", ` <span class="muted small">· Excel shows ${esc(f.example.result)} for the original example.</span>`);
+  }catch(e){ out.innerHTML = `<span class="err">That formula could not be calculated. Check the brackets and commas. (${esc(e.message||e)})</span>`; }
+  finally{ try{ hf && hf.destroy(); }catch(e){} out.classList.remove("flash"); void out.offsetWidth; out.classList.add("flash"); }
+}
+function fnCard(f){
+  const ex = f.example || {}, liveEx = !!ex.live, data = ex.data || [];
+  const ncol = Math.max(1, ...data.map(r=>r.length));
+  const macChip = f.mac==="Yes" ? `<span class="chip">Mac: Yes</span>` : f.mac==="No" ? `<span class="chip sel">Not on Mac</span>` : `<span class="chip sel">Mac: ${esc(f.mac)}</span>`;
+  let grid = "";
+  if(data.length){
+    grid = `<div class="tblwrap"><table class="grid"><thead><tr><th></th>${Array.from({length:ncol},(_,c)=>`<th>${colName(c)}</th>`).join("")}</tr></thead><tbody>${data.map((r,ri)=>`<tr><th>${ri+1}</th>${Array.from({length:ncol},(_,c)=>{ const v = r[c]; const t = v==null?"":(typeof v==="boolean"?(v?"TRUE":"FALSE"):String(v)); return liveEx?`<td><input aria-label="Cell ${colName(c)}${ri+1}" value="${esc(t)}"></td>`:`<td><span>${esc(t)}</span></td>`; }).join("")}</tr>`).join("")}</tbody></table></div>`;
+  }
+  const el = document.createElement("article"); el.className="fn";
+  el.innerHTML = `<div class="top"><h3>${esc(f.name)}</h3><span style="display:flex;gap:6px;flex-wrap:wrap">${macChip}<span class="chip grey">${esc(f.category)}</span><span class="chip grey">Tier ${esc(f.tier)}</span></span></div>
+    <p>${esc(f.purpose)}</p><div class="syn">${esc(f.syntax)}</div>
+    ${(f.args&&f.args.length)?`<ul class="args">${f.args.map(a=>`<li><code>${esc(a.name)}</code>${a.optional?' <span class="muted">(optional)</span>':""}: ${esc(a.desc)}</li>`).join("")}</ul>`:""}
+    ${ex.formula?`<div><strong>Example.</strong> ${esc(ex.explain||"")}</div>${grid}
+      ${liveEx?`<div class="fbar2"><span class="fx">fx</span><input aria-label="Formula for ${esc(f.name)}" value="${esc(ex.formula)}"><button class="btn sm" type="button">Run</button></div><div class="out"><span class="muted small">Edit the cells or the formula, then press Run.</span></div>`
+              :`<div class="fbar2"><span class="fx">fx</span><span class="code">${esc(ex.formula)}</span></div><div class="out">Result: <span class="val">${esc(ex.result)}</span> <span class="muted small">· result from Excel</span></div>`}`:""}
+    ${f.tip?`<p class="small"><strong>Tip:</strong> ${esc(f.tip)}</p>`:""}
+    <p class="small muted">${(f.see_also&&f.see_also.length)?`See also: ${f.see_also.map(n=>`<a href="#functions" data-fn="${esc(n)}">${esc(n)}</a>`).join(", ")}`:""}${f.lesson&&BYID[f.lesson]?` ${f.see_also&&f.see_also.length?"· ":""}Taught in <a href="#${esc(f.lesson)}">lesson ${esc(f.lesson)}</a>`:""}</p>`;
+  if(liveEx){ const b = $(".fbar2 .btn",el); b.onclick=()=>runExample(el,f); $(".fbar2 input",el).addEventListener("keydown",e=>{ if(e.key==="Enter") runExample(el,f); }); }
+  $$("[data-fn]",el).forEach(a=>a.onclick=e=>{ e.preventDefault(); const q=$("#fq"); if(q){ q.value=a.dataset.fn; q.dispatchEvent(new Event("input")); window.scrollTo({top:0,behavior:RM()?"auto":"smooth"}); } });
+  return el;
+}
+let FN_QUERY = "";
+async function renderFunctions(seq){
+  setTab("functions"); setBar("FX", '=XLOOKUP(<b>"function"</b>, Library, Syntax)');
+  view.innerHTML = `<div class="phead"><div><span class="eyebrow">Reference</span><h1 style="margin-top:6px">Function library</h1><p>All 524 Excel functions in plain English, with Mac availability, an example on Indian data and, for most, a live example you can edit and run.</p></div></div><div class="sk" style="margin-top:20px;height:44px"></div>`;
+  let F; try{ F = await getJSON("data/functions.json"); }catch(e){ if(live(seq)) view.insertAdjacentHTML("beforeend", errorBox("The library could not load.")); return; }
+  if(!live(seq)) return;
+  loadHF().catch(()=>{});
+  $(".sk",view).remove();
+  const cats = [...new Set(F.map(f=>f.category))].sort(), macs = [...new Set(F.map(f=>f.mac))];
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `<div class="filters"><input class="find" id="fq" type="search" placeholder="Search, e.g. XLOOKUP, GST, working days" aria-label="Search functions" autocomplete="off">
+    <select id="fm" aria-label="Mac availability"><option value="">Any Mac availability</option>${macs.map(c=>`<option>${esc(c)}</option>`).join("")}</select>
+    <select id="ft" aria-label="Tier"><option value="">All tiers</option><option value="1">Tier 1: everyday</option><option value="2">Tier 2: useful</option><option value="3">Tier 3: specialist</option></select></div>
+    <div class="chips" id="fcats" role="group" aria-label="Category"><button type="button" aria-pressed="true" data-c="">All</button>${cats.map(c=>`<button type="button" aria-pressed="false" data-c="${esc(c)}">${esc(c)}</button>`).join("")}</div>
+    <div class="count" id="fcount"></div><div class="fns" id="fns"></div><div style="display:flex;justify-content:center;margin-top:18px"><button class="btn ghost" type="button" id="fmore">Show more</button></div>`;
+  view.appendChild(wrap);
+  let cat = "", shown = 0, hits = []; const PAGE = 24;
+  const list = $("#fns"), more = $("#fmore");
+  function apply(){
+    const q = $("#fq").value.trim().toLowerCase(), m = $("#fm").value, t = $("#ft").value; FN_QUERY = q;
+    hits = F.filter(f=>(!cat||f.category===cat)&&(!m||f.mac===m)&&(!t||String(f.tier)===t)&&(!q|| f.name.toLowerCase().includes(q) || (f.purpose+" "+(f.example&&f.example.explain||"")+" "+(f.tip||"")).toLowerCase().includes(q)));
+    const rank = f=>{ const n=f.name.toLowerCase(); return n===q?0:n.startsWith(q)?1:n.includes(q)?2:3; };
+    hits.sort((a,b)=> (q?rank(a)-rank(b):0) || a.tier-b.tier || a.name.localeCompare(b.name));
+    list.innerHTML=""; shown=0; page();
+  }
+  function page(){ hits.slice(shown, shown+PAGE).forEach((f,i)=>{ const c = fnCard(f); c.style.animationDelay = Math.min(i,8)*30+"ms"; list.appendChild(c); }); shown = Math.min(hits.length, shown+PAGE);
+    $("#fcount").textContent = hits.length ? `${hits.length} functions · showing ${shown}` : ""; more.hidden = shown>=hits.length;
+    if(!hits.length) list.innerHTML = `<p class="muted">No function matches. Try a shorter word, or clear the filters.</p>`; }
+  more.onclick = page;
+  let tmr; $("#fq").addEventListener("input",()=>{ clearTimeout(tmr); tmr=setTimeout(apply,120); });
+  ["fm","ft"].forEach(id=>$("#"+id).addEventListener("change",apply));
+  $$("#fcats button").forEach(b=>b.onclick=()=>{ cat=b.dataset.c; $$("#fcats button").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); apply(); });
+  try{ const io = new IntersectionObserver(es=>{ if(es[0].isIntersecting && !more.hidden && live(seq)) page(); },{rootMargin:"400px"}); io.observe(more); }catch(e){}
+  if(PENDING_FN){ $("#fq").value = PENDING_FN; PENDING_FN = ""; }
+  apply();
+}
+
+/* ---------- tips ---------- */
+async function renderTips(seq){
+  setTab("tips"); setBar("TIPS", '=FILTER(Tips, <b>"works on Mac"</b>)');
+  view.innerHTML = `<div class="phead"><div><span class="eyebrow">Save time daily</span><h1 style="margin-top:6px">Tips &amp; tricks</h1><p>One hundred habits that save time every day, each with the Mac keys and the lesson that teaches it.</p></div></div><div class="sk" style="margin-top:20px;height:120px"></div>`;
+  let T; try{ T = await getJSON("data/tips.json"); }catch(e){ if(live(seq)) view.insertAdjacentHTML("beforeend", errorBox("The tips could not load.")); return; }
+  if(!live(seq)) return;
+  $(".sk",view).remove();
+  const day = Math.floor(Date.now()/86400000); let ti = day % T.length;
+  const tags = [...new Set(T.map(t=>t.tag))].sort();
+  const w = document.createElement("div");
+  w.innerHTML = `<div class="totd" style="margin-top:20px" id="totd"></div>
+    <div class="filters"><input class="find" id="tq" type="search" placeholder="Search tips, e.g. paste, dropdown, ⌘" aria-label="Search tips" autocomplete="off"></div>
+    <div class="chips" id="ttags" role="group" aria-label="Topic"><button type="button" aria-pressed="true" data-t="">All</button>${tags.map(t=>`<button type="button" aria-pressed="false" data-t="${esc(t)}">${esc(t)}</button>`).join("")}</div>
+    <div class="count" id="tcount"></div><div class="tips" id="tlist"></div>`;
+  view.appendChild(w);
+  const drawTotd = dir=>{ const t = T[ti];
+    $("#totd").innerHTML = `<div style="min-width:0" class="scardx${dir<0?" back":""}"><span class="eyebrow">Tip ${t.n} of ${T.length} · ${esc(t.tag)}</span><b>${esc(t.title)}</b><p>${esc(t.how)}</p>${t.mac?`<div style="margin-top:10px">${keycaps(t.mac)}</div>`:""}</div>
+      <div style="display:flex;gap:8px;align-items:center"><button class="btn ghost sm" type="button" id="tprev" aria-label="Previous tip">${ICON.left}</button><button class="btn ghost sm" type="button" id="tnext" aria-label="Next tip">${ICON.right}</button>${t.lesson&&BYID[t.lesson]?`<a class="btn sm" href="#${esc(t.lesson)}">Lesson</a>`:""}</div>`;
+    $("#tprev").onclick=()=>{ ti=(ti-1+T.length)%T.length; drawTotd(-1); }; $("#tnext").onclick=()=>{ ti=(ti+1)%T.length; drawTotd(1); };
+    if(!$("#totd").dataset.sw){ $("#totd").dataset.sw="1"; swipe($("#totd"), ()=>$("#tnext").click(), ()=>$("#tprev").click()); }
+    const k = $("#totd .keys"); if(k && !RM()) requestAnimationFrame(()=>k.classList.add("press")); };
+  drawTotd(1);
+  let tag = "";
+  function apply(){
+    const q = $("#tq").value.trim().toLowerCase();
+    const hits = T.filter(t=>(!tag||t.tag===tag)&&(!q||[t.title,t.how,t.mac,t.win,t.tag].join(" ").toLowerCase().includes(q)));
+    $("#tcount").textContent = hits.length+" tips";
+    $("#tlist").innerHTML = hits.length ? hits.map((t,i)=>`<div class="tip" style="animation-delay:${Math.min(i,10)*25}ms"><span class="eyebrow">#${t.n} · ${esc(t.tag)}</span><b>${esc(t.title)}</b><p>${esc(t.how)}</p>
+      <div class="meta">${t.mac?keycaps(t.mac):""}${t.win?`<span class="muted small">Windows ${esc(t.win)}</span>`:""}${t.lesson&&BYID[t.lesson]?`<a href="#${esc(t.lesson)}">Lesson ${esc(t.lesson)}</a>`:""}</div>
+      ${t.availability?`<span class="chip sel" style="white-space:normal;line-height:1.3">${esc(t.availability)}</span>`:""}</div>`).join("") : `<p class="muted">No tip matches. Try another word.</p>`;
+  }
+  $("#tq").addEventListener("input",apply);
+  $$("#ttags button").forEach(b=>b.onclick=()=>{ tag=b.dataset.t; $$("#ttags button").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); apply(); });
+  apply();
+}
+
+/* ---------- shortcuts + trainer ---------- */
+const BLOCKED = /⌘\s*\+?\s*(W|Q|T|N|R|H|M|L|Tab|Space|,|`|Option|0|\+|−|-)\b|⌃\s*\+?\s*⌘|fn|F\d|Arrow|Home|End|Page|Click|Drag|Double|Right-click|or/i;
+function parseCombo(s){
+  const m = {meta:/⌘/.test(s), shift:/⇧/.test(s), alt:/⌥/.test(s), ctrl:/⌃/.test(s)};
+  const rest = s.replace(/[⌘⇧⌥⌃+]/g," ").trim().split(/\s+/).filter(Boolean);
+  if(rest.length!==1) return null;
+  let k = rest[0];
+  const named = {Return:"Enter",Enter:"Enter",Delete:"Backspace",Esc:"Escape",Escape:"Escape",";":";",":":":","=":"=","/":"/","\\":"\\","[":"[","]":"]","'":"'"};
+  if(named[k]) k = named[k]; else if(/^[A-Za-z0-9]$/.test(k)) k = k.toUpperCase(); else return null;
+  return Object.assign(m,{key:k});
+}
+async function renderShortcuts(seq){
+  setTab("shortcuts"); setBar("KEYS", '=SUBSTITUTE(Ctrl, <b>"⌘"</b>)');
+  view.innerHTML = `<div class="phead"><div><span class="eyebrow">Mac keys</span><h1 style="margin-top:6px">Mac shortcuts</h1><p>⌘ is Command, ⌥ is Option, ⌃ is Control, ⇧ is Shift. On a MacBook, hold fn to use F1 to F12. Practise the common ones below, then keep the table as a reference.</p></div></div><div class="sk" style="margin-top:20px;height:180px"></div>`;
+  let S; try{ S = await getJSON("data/shortcuts.json"); }catch(e){ if(live(seq)) view.insertAdjacentHTML("beforeend", errorBox("The shortcuts could not load.")); return; }
+  if(!live(seq)) return;
+  $(".sk",view).remove();
+  const pool = []; S.forEach(g=>g.items.forEach(x=>{ if(!BLOCKED.test(x.mac)){ const c = parseCombo(x.mac); if(c && (c.meta||c.ctrl||c.alt)) pool.push(Object.assign({},x,{combo:c})); } }));
+  const w = document.createElement("div");
+  w.innerHTML = `<section class="trainer" aria-label="Shortcut trainer"><div class="tt"><b style="font-family:var(--display)">Shortcut trainer</b><span class="streak" id="streak">Score 0 · streak 0</span></div>
+    <div class="arena"><span class="eyebrow" id="tmode">Press the keys on your keyboard</span><div class="what" id="twhat"></div><div class="answer" id="tans" aria-live="polite"></div><div class="fb" id="tfb"></div>
+    <div class="ctl"><button class="btn ghost sm" type="button" id="treveal">Show the keys</button><button class="btn sm" type="button" id="tnextk">Next shortcut</button></div></div></section>
+    <input class="find" id="sq" type="search" placeholder="Search, e.g. paste, filter, date" aria-label="Search shortcuts" autocomplete="off" style="margin-bottom:14px;width:100%"><div id="sc"></div>`;
+  view.appendChild(w);
+  let cur = null, score = 0, streak = 0, revealed = false, tvis = true;
+  try{ const tio = new IntersectionObserver(es=>{ tvis = es[0].isIntersecting; }); tio.observe($(".trainer",w)); }catch(e){}
+  const touch = matchMedia("(hover: none)").matches;
+  if(touch) $("#tmode").textContent = "Do you know the Mac keys? Think, then reveal";
+  function nextK(){ if(!pool.length){ $("#twhat").textContent="No practice items."; return; } let n; do{ n = pool[Math.floor(Math.random()*pool.length)]; }while(pool.length>1 && n===cur); cur = n; revealed=false;
+    $("#twhat").textContent = cur.what; $("#tans").innerHTML = `<span class="muted mono">? + ?</span>`; $("#tfb").textContent=""; $("#tfb").className="fb"; }
+  function reveal(ok){ revealed = true; $("#tans").innerHTML = keycaps(cur.mac); const k = $("#tans .keys"); if(k && !RM()) k.classList.add("press"); }
+  $("#treveal").onclick=()=>{ if(!cur) return; reveal(); streak=0; $("#streak").textContent=`Score ${score} · streak ${streak}`; };
+  $("#tnextk").onclick=nextK;
+  const onKey = e=>{
+    if(!live(seq)){ document.removeEventListener("keydown",onKey,true); return; }
+    if(!cur || revealed || !tvis || $(".pal") || e.target.closest("input,textarea,select")) return;
+    if((e.metaKey||e.ctrlKey) && (e.key==="k"||e.key==="K")) return;
+    if(["Meta","Shift","Alt","Control"].includes(e.key)) return;
+    const c = cur.combo; let key = e.key.length===1 ? e.key.toUpperCase() : e.key;
+    if(e.code && /^Key[A-Z]$/.test(e.code)) key = e.code.slice(3); else if(e.code && /^Digit\d$/.test(e.code)) key = e.code.slice(5);
+    const metaOk = c.meta ? (e.metaKey||e.ctrlKey) : !e.metaKey;
+    const ok = metaOk && (!!c.shift===e.shiftKey) && (!!c.alt===e.altKey) && (c.ctrl ? e.ctrlKey : true) && key===c.key;
+    if(e.metaKey||e.ctrlKey||e.altKey){ e.preventDefault(); }
+    if(ok){ score++; streak++; $("#tfb").textContent = streak>2?`Correct · ${streak} in a row`:"Correct"; $("#tfb").className="fb ok"; reveal(true); setTimeout(()=>{ if(live(seq)) nextK(); },1100); }
+    else if(e.metaKey||e.ctrlKey||e.altKey){ streak=0; $("#tfb").textContent="Not that one. Try again or show the keys."; $("#tfb").className="fb no"; }
+    $("#streak").textContent=`Score ${score} · streak ${streak}`;
+  };
+  document.addEventListener("keydown", onKey, true);
+  nextK();
+  function draw(){
+    const q = $("#sq").value.trim().toLowerCase();
+    $("#sc").innerHTML = S.map(g=>{ const rows = g.items.filter(x=>!q||[x.mac,x.win,x.what].join(" ").toLowerCase().includes(q)); if(!rows.length) return "";
+      return `<div class="tblwrap"><table class="sc"><caption>${esc(g.group)}</caption><thead><tr><th>Mac</th><th>Windows</th><th>What it does</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${keycaps(x.mac)}</td><td class="muted small">${esc(x.win||"")}</td><td>${esc(x.what)}</td></tr>`).join("")}</tbody></table></div>`; }).join("") || `<p class="muted">No shortcut matches.</p>`;
+  }
+  $("#sq").addEventListener("input",draw); draw();
+}
+
+/* ---------- help ---------- */
+function renderHelp(){
+  setTab("help"); setBar("HELP", '=HELP(<b>"start here"</b>)');
+  const n = nDone();
+  view.innerHTML = `<div class="about">
+  <span class="eyebrow">Guide</span><h2>How to use this course</h2>
+  <p>Work through the sections in order if you are new to Excel. If you already use Excel on Windows, start with <a href="#S00">Start here</a>, then jump to what you need. Each lesson follows the same pattern: watch, do, check.</p>
+  <ul>
+    <li><strong>Watch.</strong> Demos are screen recordings with the Mac keys shown on screen; explainers are short whiteboard videos. Where a step was hard to record, an on-screen card shows exactly what to click and type.</li>
+    <li><strong>Do.</strong> Save the section workbook and open the sheet named after the lesson, for example <span class="code">S07-04</span>. Cells you fill in are light yellow. The <span class="code">S07-04 Done</span> sheet shows the finished result.</li>
+    <li><strong>Check.</strong> Compare your result with "Check your result", mark the lesson as done, and take the section quiz.</li>
+  </ul>
+  <h3>Find anything fast</h3>
+  <p>Press <span class="kbd">⌘</span> <span class="kbd">K</span> or tap the formula bar at the top to search every lesson, section, function and tip. In a lesson, use ← and → to move between steps.</p>
+  <h3>What you need</h3>
+  <ul>
+    <li>A Mac with Excel. Microsoft 365 is needed for dynamic arrays, XLOOKUP, the newer text functions, checkboxes, Python in Excel and the AI sections. Excel 2021 or 2024 covers most Beginner and Intermediate lessons. Check yours under Excel menu &gt; About Excel.</li>
+    <li>OneDrive for your practice files, with AutoSave on. Sharing, version history and Copilot all need it.</li>
+    <li>For Copilot lessons (sections 18 and 19): a Microsoft 365 Copilot licence, or a personal plan that includes Copilot.</li>
+    <li>For Claude in Excel lessons (section 20): a paid Claude plan and the Claude add-in from the Microsoft Marketplace.</li>
+  </ul>
+  <h3>Points to know</h3>
+  <ul>
+    <li>The <span class="code">=COPILOT()</span> worksheet function was retired on 14 September 2026. Use the Copilot pane instead; section 19 explains.</li>
+    <li>Some demos were recorded in Excel on Windows because that version has the feature in question. The menus sit in the same places in Excel for Mac, and the lessons show the Mac keys.</li>
+    <li>Function examples run in your browser with HyperFormula. A few functions behave slightly differently from Excel; examples marked "result from Excel" are not run live.</li>
+  </ul>
+  <h3>Using AI tools safely</h3>
+  <ul>
+    <li>Copilot and Claude read the data in your workbook. Follow your company's policy before using them on client, salary or personal data.</li>
+    <li>Do not open workbooks from unknown senders with an AI add-in turned on. Text hidden in a sheet can try to give the assistant instructions.</li>
+    <li>AI makes mistakes. Check every number against the cells it cites before you send a file.</li>
+  </ul>
+  <h3>Your progress</h3>
+  <p>You have finished ${n} of ${ALL.length} lessons. Progress is saved in this browser only; it does not sync between devices, and clearing your browser data resets it.</p>
+  <div><button class="btn ghost sm" type="button" id="reset">Reset my progress</button></div><div id="resetc"></div>
+  </div>`;
+  $("#reset").onclick=()=>{ $("#resetc").innerHTML = `<div class="errbox" style="margin-top:8px"><b>Reset all ${n} completed lessons?</b><span class="muted">This cannot be undone.</span><div style="display:flex;gap:8px"><button class="btn sm" type="button" id="resety">Reset</button><button class="btn ghost sm" type="button" id="resetn">Keep my progress</button></div></div>`;
+    $("#resety").onclick=()=>{ done = {}; saveDone(); store.set("xlmac2-last",null); paintProgress(); toast("Progress reset"); renderHelp(); };
+    $("#resetn").onclick=()=>{ $("#resetc").innerHTML=""; }; };
+}
+
+/* ---------- command palette (⌘K or the formula bar) ---------- */
+let PENDING_FN = "", FN_INDEX = null, TIP_INDEX = null;
+function openPalette(){
+  if($(".pal")) return;
+  getJSON("data/functions.json").then(F=>FN_INDEX=F).catch(()=>{}); getJSON("data/tips.json").then(T=>TIP_INDEX=T).catch(()=>{});
+  const prevFocus = document.activeElement;
+  const p = document.createElement("div"); p.className="pal"; p.setAttribute("role","dialog"); p.setAttribute("aria-modal","true"); p.setAttribute("aria-label","Search the course");
+  p.innerHTML = `<div class="box"><div class="in"><i>fx</i><input id="palq" type="text" placeholder="Search lessons, functions, tips…" autocomplete="off" aria-controls="pall" aria-label="Search"><button class="btn ghost sm" type="button" id="palx">Esc</button></div><ul id="pall" role="listbox"></ul><div class="hint"><span>↑ ↓ to move · Return to open</span><span>Lessons · sections · functions · tips</span></div></div>`;
+  document.body.appendChild(p);
+  const q = $("#palq"), ul = $("#pall"); let items = [], sel = 0;
+  const close = ()=>{ p.remove(); document.removeEventListener("keydown", key, true); prevFocus && prevFocus.focus && prevFocus.focus({preventScroll:true}); };
+  function search(){
+    const s = q.value.trim().toLowerCase(); items = [];
+    const add = (ref, title, href, tag, fn)=>items.push({ref,title,href,tag,fn});
+    if(!s){ const nx = nextUp(); add(nx.id, "Continue: "+nx.title, "#"+nx.id, "Lesson"); COURSE.sections.slice(0,8).forEach(x=>add(x.id, x.title, "#"+x.id, "Section")); }
+    else {
+      COURSE.sections.forEach(x=>{ if((x.id+" "+x.title).toLowerCase().includes(s)) add(x.id,x.title,"#"+x.id,"Section"); });
+      ALL.forEach(l=>{ if((l.id+" "+l.title).toLowerCase().includes(s)) add(l.id,l.title,"#"+l.id,"Lesson"); });
+      (FN_INDEX||[]).forEach(f=>{ const n = f.name.toLowerCase(); if(n.includes(s)) add("fx", f.name+" · "+f.purpose, "#functions", "Function", f.name); });
+      (TIP_INDEX||[]).forEach(t=>{ if((t.title+" "+t.how).toLowerCase().includes(s)) add("#"+t.n, t.title, t.lesson&&BYID[t.lesson]?"#"+t.lesson:"#tips", "Tip"); });
+      [["functions","Function library"],["tips","Tips & tricks"],["shortcuts","Mac shortcuts"],["help","How to use"]].forEach(([h,t])=>{ if(t.toLowerCase().includes(s)) add("Page",t,"#"+h,"Page"); });
+      items.sort((a,b)=>{ const r = x=>x.title.toLowerCase().startsWith(s)||x.ref.toLowerCase()===s?0:1; return r(a)-r(b); });
+    }
+    items = items.slice(0,40); sel = 0; draw();
+  }
+  function draw(){
+    ul.innerHTML = items.length ? items.map((it,i)=>`<li><a href="${esc(it.href)}" role="option" aria-selected="${i===sel}" data-i="${i}"><span class="r">${esc(it.ref)}</span><span class="t">${esc(it.title)}</span><span class="chip grey">${esc(it.tag)}</span></a></li>`).join("") : `<li class="empty">Nothing matches “${esc(q.value)}”. Try a function name or a lesson number like S07.</li>`;
+    $$("a",ul).forEach(a=>{ a.onclick = e=>{ pick(+a.dataset.i, e); }; a.onmousemove = ()=>{ if(sel!==+a.dataset.i){ sel=+a.dataset.i; $$("a",ul).forEach((x,k)=>x.setAttribute("aria-selected",String(k===sel))); } }; });
+    const s = $(`[aria-selected="true"]`,ul); s && s.scrollIntoView({block:"nearest"});
+  }
+  function pick(i, e){
+    const it = items[i]; if(!it) return; if(e) e.preventDefault();
+    close();
+    if(it.fn){ PENDING_FN = it.fn; if(location.hash==="#functions"){ const f=$("#fq"); if(f){ f.value=it.fn; f.dispatchEvent(new Event("input")); } PENDING_FN=""; } else location.hash = "functions"; }
+    else if(location.hash===it.href) route(); else location.hash = it.href.slice(1);
+  }
+  const key = e=>{
+    if(e.key==="Escape"){ e.preventDefault(); close(); }
+    else if(e.key==="ArrowDown"){ e.preventDefault(); sel = Math.min(items.length-1, sel+1); draw(); }
+    else if(e.key==="ArrowUp"){ e.preventDefault(); sel = Math.max(0, sel-1); draw(); }
+    else if(e.key==="Enter"){ e.preventDefault(); pick(sel); }
+    else if(e.key==="Tab"){ e.preventDefault(); q.focus(); }
+  };
+  document.addEventListener("keydown", key, true);
+  p.addEventListener("click", e=>{ if(e.target===p) close(); });
+  $("#palx").onclick = close;
+  let t; q.addEventListener("input", ()=>{ clearTimeout(t); t = setTimeout(search, 60); });
+  search(); setTimeout(()=>q.focus(), 20);
+  // refresh once the indexes arrive
+  setTimeout(()=>{ if(document.body.contains(p) && q.value) search(); }, 700);
+}
+$("#fxbtn").onclick = openPalette;
+document.addEventListener("keydown", e=>{
+  if((e.metaKey||e.ctrlKey) && (e.key==="k"||e.key==="K")){ e.preventDefault(); openPalette(); }
+  else if(e.key==="/" && !e.target.closest("input,textarea,select") && !$(".pal")){ e.preventDefault(); openPalette(); }
+});
+
+route();
+</script>
+
+</body>
+</html>

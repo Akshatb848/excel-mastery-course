@@ -1,0 +1,32 @@
+Invoice No,Inv Date,Customer,City,Product Code,Qty,Rate,Amount,Status,Remarks
+PNQ/26-27/0001,01-04-2026,Apte Supplies,Baner,0733,8,3150,25200,Pending,
+PNQ/26-27/0002,02-04-2026,Gokhale Enterprises,Kothrud,0610,11,760,8360,Pending,
+PNQ/26-27/0003,03-04-2026,Gokhale Enterprises,Kothrud,0610,7,760,5320,Paid,call back
+PNQ/26-27/0004,04-04-2026,Patil Agencies,Hinjawadi,0451,23,1850,42550,Paid,chk
+PNQ/26-27/0005,05-04-2026,Gokhale Enterprises,Kothrud,0733,16,3150,50400,Cancelled,call back
+PNQ/26-27/0006,06-04-2026,Shinde & Sons,Pune,0815,6,520,3120,Pending,
+PNQ/26-27/0007,07-04-2026,Bhosale Mart,Wakad,0451,8,1850,14800,Paid,chk
+PNQ/26-27/0008,08-04-2026,Sathe Retail,Pune,0610,5,760,3800,Paid,
+PNQ/26-27/0009,09-04-2026,Patil Agencies,Hinjawadi,0610,5,760,3800,Paid,
+PNQ/26-27/0010,10-04-2026,Sathe Retail,Pune,0733,7,3150,22050,Pending,GST copy sent
+PNQ/26-27/0011,11-04-2026,Patil Agencies,Hinjawadi,0920,19,4800,91200,Paid,
+PNQ/26-27/0012,12-04-2026,Pawar Distributors,Hadapsar,0610,22,760,16720,Cancelled,chk
+PNQ/26-27/0013,13-04-2026,Deshmukh Hardware,Pimpri-Chinchwad,0451,16,1850,29600,Pending,call back
+PNQ/26-27/0014,14-04-2026,Sathe Retail,Pune,0733,9,3150,28350,Pending,
+PNQ/26-27/0015,15-04-2026,Bhosale Mart,Wakad,0815,10,520,5200,Paid,chk
+PNQ/26-27/0016,16-04-2026,Pawar Distributors,Hadapsar,0920,19,4800,91200,Paid,call back
+,,,,,,,,,
+PNQ/26-27/0017,17-04-2026,Kulkarni Electricals,Pune,0452,9,2400,21600,Pending,chk
+PNQ/26-27/0018,18-04-2026,Sathe Retail,Pune,0610,16,760,12160,Pending,
+PNQ/26-27/0019,19-04-2026,Bhosale Mart,Wakad,0452,15,2400,36000,Paid,chk
+PNQ/26-27/0020,20-04-2026,Gokhale Enterprises,Kothrud,0451,22,1850,40700,Cancelled,chk
+PNQ/26-27/0021,21-04-2026,Pawar Distributors,Hadapsar,0920,14,4800,67200,Paid,
+PNQ/26-27/0022,22-04-2026,Patil Agencies,Hinjawadi,0815,19,520,9880,Paid,chk
+PNQ/26-27/0023,23-04-2026,Joshi Traders,Pune,0610,19,760,14440,Paid,
+PNQ/26-27/0024,24-04-2026,Pawar Distributors,Hadapsar,0733,3,3150,9450,Pending,call back
+PNQ/26-27/0025,25-04-2026,Kulkarni Electricals,Pune,0452,6,2400,14400,Paid,
+PNQ/26-27/0026,26-04-2026,Bhosale Mart,Wakad,0451,22,1850,40700,Paid,
+PNQ/26-27/0027,27-04-2026,Gokhale Enterprises,Kothrud,0610,18,760,13680,Cancelled,chk
+PNQ/26-27/0028,28-04-2026,Joshi Traders,Pune,0920,6,4800,28800,Paid,
+PNQ/26-27/0029,29-04-2026,Patil Agencies,Hinjawadi,0733,7,3150,22050,Pending,
+PNQ/26-27/0030,30-04-2026,Gokhale Enterprises,Kothrud,0452,15,2400,36000,Paid,GST copy sent
