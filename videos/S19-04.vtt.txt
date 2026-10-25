@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.500
+Welcome to This Explainer.
+
+00:00:01.500 --> 00:00:04.300
+Today, we are looking at lesson S19.04,
+
+00:00:04.300 --> 00:00:07.800
+which covers exactly what happened to the copilot function in Excel.
+
+00:00:07.800 --> 00:00:12.000
+If you have been relying on artificial intelligence directly inside your spreadsheet cells,
+
+00:00:12.000 --> 00:00:15.000
+you might have experienced a sudden disruption recently.
+
+00:00:15.000 --> 00:00:20.000
+Let us look at the facts directly from Microsoft and recent course updates to understand this change.
+
+00:00:20.000 --> 00:00:24.000
+Have you recently noticed that your prompts inside spreadsheet cells are failing?
+
+00:00:24.000 --> 00:00:27.000
+If so, you are certainly not alone in facing this issue.
+
+00:00:27.000 --> 00:00:32.000
+Many users relied on typing equals copilot followed by a prompt directly into a cell.
+
+00:00:32.000 --> 00:00:37.000
+However, this specific worksheet function was actually only ever a preview feature.
+
+00:00:37.000 --> 00:00:42.000
+It was made available exclusively for users in the Microsoft 365 Insider and Frontier programs,
+
+00:00:42.000 --> 00:00:46.000
+and it never actually reached a general release for the wider public.
+
+00:00:46.000 --> 00:00:48.000
+The journey of this function is quite brief.
+
+00:00:48.000 --> 00:00:51.000
+In early 2026, the initial preview began.
+
+00:00:51.000 --> 00:00:58.000
+Then, on the 13th of August 2026, Microsoft published Message Center Notice MC1454373.
+
+00:00:58.000 --> 00:01:01.000
+This notice clearly stated that the function would be removed.
+
+00:01:01.000 --> 00:01:06.000
+Finally, on the 14th of September 2026, the complete retirement took place.
+
+00:01:06.000 --> 00:01:10.000
+Microsoft implemented this change to streamline the experience into a supported interface,
+
+00:01:10.000 --> 00:01:13.000
+instead of leaving it as a cell formula.
+
+00:01:13.000 --> 00:01:18.000
+Because of this retirement, you will need to identify any old formulas in your workbooks.
+
+00:01:18.000 --> 00:01:25.000
+From the 14th of September 2026 onwards, you simply cannot create new formulas using the equals copilot syntax.
+
+00:01:25.000 --> 00:01:28.000
+If you have existing spreadsheets that rely on this function to generate data,
+
+00:01:28.000 --> 00:01:32.000
+those specific cells will stop updating, and they may return errors.
+
+00:01:32.000 --> 00:01:37.000
+You will need to review your internal training documents and manually update those workflows.
+
+00:01:37.000 --> 00:01:41.000
+This change directly impacts several daily tasks that require a new workflow.
+
+00:01:41.000 --> 00:01:46.000
+People use the equals copilot formula heavily for four main operations.
+
+00:01:46.000 --> 00:01:49.000
+Microsoft used it for classifying customer feedback into categories,
+
+00:01:49.000 --> 00:01:53.000
+and for extracting specific details from long blocks of text.
+
+00:01:53.000 --> 00:01:58.000
+Gauging the sentiment of a review and standardizing a list of names were also very common uses.
+
+00:01:58.000 --> 00:02:01.000
+You still need to do these jobs, but you now require a new method.
+
+00:02:01.000 --> 00:02:07.000
+To manage these same jobs now, you must shift from typing prompts directly into a cell to using alternative tools.
+
+00:02:07.000 --> 00:02:14.000
+Microsoft recommends using the Copilot side pane, which can summarize text, classify data, and retrieve information.
+
+00:02:14.000 --> 00:02:16.000
+Alternatively, you can use Claude in Excel.
+
+00:02:16.000 --> 00:02:21.000
+Claude is an add-in from Anthropic that became generally available around May 2026.
+
+00:02:21.000 --> 00:02:27.000
+You can open it on a Mac with control plus option plus C, provided you sign in with a paid Claude plan.
+
+00:02:27.000 --> 00:02:30.000
+Both tools replace the old cell formula effectively.
+
+00:02:30.000 --> 00:02:35.000
+The broader lesson here is that artificial intelligence features change very fast.
+
+00:02:35.000 --> 00:02:39.000
+You must always check dates and version notes to ensure your workflows remain accurate.
+
+00:02:39.000 --> 00:02:43.000
+Newer information often explicitly overrides older course facts,
+
+00:02:43.000 --> 00:02:46.000
+so you must never assume a feature will remain unchanged.
+
+00:02:46.000 --> 00:02:49.000
+Furthermore, always verify the work these tools produce,
+
+00:02:49.000 --> 00:02:55.000
+recompute key totals yourself, and read the formulas they write before sending any numbers to a client.
+
+00:02:55.000 --> 00:03:00.000
+This brings us to an important question regarding how you manage your own data tools moving forward.
+
+00:03:00.000 --> 00:03:05.000
+Knowing that features like the equals copilot function can be retired with a single message center notice,
+
+00:03:05.000 --> 00:03:09.000
+how often do you review software update logs to protect your daily workflows?
+
+00:03:09.000 --> 00:03:13.000
+Take a moment today to check your most important spreadsheets for outdated formulas.
+
+00:03:13.000 --> 00:03:18.000
+Thank you for joining this explainer, and I hope this helps you keep your skills sharp and up to date.

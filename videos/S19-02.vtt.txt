@@ -1,0 +1,301 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.000
+Hey, everyone, and welcome to this explainer. Today, we're doing something really exciting,
+
+00:00:04.000 --> 00:00:09.040
+but super practical. If you're a working professional here in India, and you recently made the jump to
+
+00:00:09.040 --> 00:00:14.160
+using Excel on a Mac, you are in exactly the right place. We're going to totally demystify
+
+00:00:14.160 --> 00:00:20.080
+lesson s 19 dash o two, and run through a completely hype free step by step demo of Excel's agent mode.
+
+00:00:20.720 --> 00:00:24.640
+We are cutting through all the AI buzzwords today to focus on what actually matters,
+
+00:00:24.640 --> 00:00:28.240
+how to build a reliable sales dashboard from scratch using clear prompts,
+
+00:00:28.240 --> 00:00:32.880
+and most importantly, how to manually verify the AI's math. Because at the end of the day,
+
+00:00:32.880 --> 00:00:36.800
+when you present this data to your manager, you need to be absolutely confident that it's correct.
+
+00:00:37.600 --> 00:00:43.760
+Okay, let's dive into this. Here is our exact path for today. First, the goal and setup. Then
+
+00:00:43.760 --> 00:00:49.440
+prompting agent mode. Next, checking the AI formulas. After that testing with new data.
+
+00:00:49.440 --> 00:00:55.920
+And finally, some pro tips and a recap. Section one, the goal and setup, preparing your sales
+
+00:00:55.920 --> 00:01:01.520
+data table. We're kicking things off right inside practice sheet s 19 dash o two. This sheet
+
+00:01:01.520 --> 00:01:06.480
+contains exactly 100 sales rows, all sitting securely in a properly formatted Excel table
+
+00:01:06.480 --> 00:01:10.880
+called sales data. It's the perfect clean slate for us to start working with. Now,
+
+00:01:10.880 --> 00:01:14.880
+before we start firing off commands, let's get on the same page about what we're actually dealing
+
+00:01:14.880 --> 00:01:20.720
+with here. Agent mode is a multi step agent located right inside your co pilot side pane.
+
+00:01:20.720 --> 00:01:25.360
+Think of it less like magic and more like a very fast assistant. It reads your prompts,
+
+00:01:25.360 --> 00:01:29.920
+and then literally takes control of the application to execute tasks. It creates sheets,
+
+00:01:29.920 --> 00:01:34.160
+writes formulas, generates charts, and formats the workbook. And it works through these
+
+00:01:34.160 --> 00:01:38.960
+steps one by one, you can actually sit back and watch the side pane list exactly what it's doing.
+
+00:01:38.960 --> 00:01:42.880
+Maybe it builds a helper table first, then a chart, then does some formatting,
+
+00:01:42.880 --> 00:01:48.240
+it might take a minute, but it is pure mechanical execution. Before we jump into writing our props,
+
+00:01:48.240 --> 00:01:52.800
+I need to give you a really crucial technical heads up. If you've been reading online and
+
+00:01:52.800 --> 00:01:57.280
+heard about the equals co pilot function that you could type directly into a cell,
+
+00:01:57.280 --> 00:02:02.960
+forget it. That feature was officially retired on September 14 2026. It never even reached
+
+00:02:02.960 --> 00:02:07.520
+general public release. So it is officially history. For everything we are building today
+
+00:02:07.520 --> 00:02:12.000
+on the Mac, we will exclusively use the co pilot side pane. That's the real tool
+
+00:02:12.000 --> 00:02:16.400
+that actually works for us right now. Section two, prompting agent mode,
+
+00:02:16.400 --> 00:02:21.360
+briefing the AI like a junior colleague. To get a genuinely reliable dashboard out of
+
+00:02:21.360 --> 00:02:25.680
+agent mode, you have to treat it like you're handing a strict brief to a junior colleague.
+
+00:02:25.680 --> 00:02:30.320
+The biggest mistake people make is using a super vague prompt, like make a dashboard.
+
+00:02:30.320 --> 00:02:33.920
+If you do that, you're just going to get unpredictable junk. A good prompt,
+
+00:02:33.920 --> 00:02:37.760
+on the other hand is highly structured. You need to clearly state the goal,
+
+00:02:37.760 --> 00:02:42.560
+point out the source table, list every specific API, tell it where to put the charts,
+
+00:02:42.560 --> 00:02:45.600
+and lay down firm rules on how the math should be calculated.
+
+00:02:46.400 --> 00:02:50.480
+So let's open co pilot in edit mode and drop in a proper brief.
+
+00:02:50.480 --> 00:02:55.680
+Read this exact prompt with me. Build a sales dashboard on a new sheet called dashboard.
+
+00:02:55.680 --> 00:03:00.640
+Include KPI cards for total revenue, gross margin percentage, which is one minus cost
+
+00:03:00.640 --> 00:03:05.040
+divided by revenue, and number of orders. Align chart of monthly revenue,
+
+00:03:05.040 --> 00:03:10.320
+a column chart of revenue by region, and a table of the top five sales reps by revenue.
+
+00:03:10.320 --> 00:03:15.360
+Use formulas that refer to the sales data table so everything updates when data changes.
+
+00:03:15.520 --> 00:03:20.960
+Do not paste values. Listen, that very last sentence, that is the absolute golden rule.
+
+00:03:20.960 --> 00:03:25.600
+We do not under any circumstances want static, dead numbers. We want live formulas.
+
+00:03:26.560 --> 00:03:31.520
+Section three, checking the AI formulas. Trust, but manually verify on your Mac.
+
+00:03:32.400 --> 00:03:37.760
+Okay, so agent mode finishes its run, and you are staring at a beautiful shiny new dashboard.
+
+00:03:38.320 --> 00:03:43.040
+But hold on, we must verify it. We're going to flip back to our original sheet,
+
+00:03:43.040 --> 00:03:48.400
+S19-02. I want you to go to cell J2 and manually type this out.
+
+00:03:49.040 --> 00:03:55.600
+Equals sum, open bracket, type sales data, open square bracket, type revenue,
+
+00:03:55.600 --> 00:03:59.120
+close the square bracket, and close the round bracket. Then hit enter.
+
+00:03:59.840 --> 00:04:04.320
+And this brilliantly illustrates the power of manual checking. The result you see popping
+
+00:04:04.320 --> 00:04:11.520
+up in your cell should be exactly 2 crore, 11 lakh, 57,900 rupees. Now take that exact
+
+00:04:11.520 --> 00:04:15.920
+number and compare it to the total revenue KPI card on the AI's dashboard. Do they match
+
+00:04:15.920 --> 00:04:20.880
+perfectly? If they differ, or worse, if you click the KPI card and just see a static
+
+00:04:20.880 --> 00:04:25.200
+typed number in the formula bar, something went wrong during generation. A static number
+
+00:04:25.200 --> 00:04:28.560
+won't update when your sales change. And hey, if the numbers don't match,
+
+00:04:28.560 --> 00:04:32.480
+you can literally just ask Copilot which rows its formula is pulling from to track down the
+
+00:04:32.480 --> 00:04:37.440
+discrepancy. Let's do a second manual check. This time, we're going to verify the math
+
+00:04:37.440 --> 00:04:42.560
+behind the regional column chart it built. Let's check the revenue specifically for the west region.
+
+00:04:43.120 --> 00:04:47.600
+Back on your practice sheet, in cell J5, let's type a slightly different formula.
+
+00:04:48.160 --> 00:04:54.640
+Equals sum ifs, open bracket, sales data bracket revenue, comma, sales data bracket region,
+
+00:04:54.640 --> 00:05:00.640
+comma, open quote west, close bracket. Hit enter on your Mac and cell J5 gives us
+
+00:05:00.640 --> 00:05:07.440
+the concrete verifiable result of 45 lakh, 6,900 rupees. You take this number,
+
+00:05:07.440 --> 00:05:11.600
+swap back over to your dashboard, and look at the bar for the west region on that chart.
+
+00:05:11.600 --> 00:05:16.240
+It should be an absolute perfect match. This proves that the AI didn't just draw a pretty
+
+00:05:16.240 --> 00:05:19.840
+picture. The visual chart is actually built on accurate solid math.
+
+00:05:20.720 --> 00:05:26.560
+Section four, testing with new data, ensuring dynamic updates. A dashboard isn't a professional
+
+00:05:26.560 --> 00:05:31.680
+tool unless it reacts dynamically the instant new sales arrive. Let's do a live test. Go back
+
+00:05:31.680 --> 00:05:37.040
+to your source data and click on cell A102. That's the very first empty row just below our table.
+
+00:05:37.040 --> 00:05:42.400
+Let's punch in a brand new sale. Type the date, 31 March, 2026. Now this is crucial.
+
+00:05:42.400 --> 00:05:48.480
+Press the Mac tab key to slide over to the next cell. Type west, press tab, type Maharashtra,
+
+00:05:48.480 --> 00:05:53.760
+press tab, product is refrigerator, press tab, the rep is Rohan Mehta, press tab,
+
+00:05:53.840 --> 00:06:00.240
+he sold eight units, press tab, the revenue is 2,50,000 rupees, press tab, and finally type the cost
+
+00:06:00.240 --> 00:06:05.920
+of 1,85,000 rupees and then hit enter. By using that tab key on your Mac, the table naturally
+
+00:06:05.920 --> 00:06:10.400
+expands and perfectly absorbs this new row of data. Now what's really interesting about this
+
+00:06:10.400 --> 00:06:15.600
+slide is that the absolute instant you hit enter, if you look at our manual check cell J2,
+
+00:06:15.600 --> 00:06:22.880
+the total revenue automatically jumps to 2 crore, 14 lakh, 7,900 rupees. It increased by exactly
+
+00:06:22.880 --> 00:06:28.480
+two and a half lakh. Now toggle over to your AI generated dashboard. The total revenue card,
+
+00:06:28.480 --> 00:06:33.360
+the bar for the west region, and the March trend line should all visibly tick upward.
+
+00:06:33.360 --> 00:06:38.720
+If they don't, it means the AI got lazy and pasted static values. But don't panic. If that happens,
+
+00:06:38.720 --> 00:06:43.120
+just hop back into co-pilot and ask it to rebuild that specific chart using live formulas.
+
+00:06:44.000 --> 00:06:48.240
+Section five, pro tips and recap, finalizing your agent mode workflow.
+
+00:06:49.040 --> 00:06:54.000
+All right, we've successfully built and tested our dynamic dashboard. Now I want to share a
+
+00:06:54.000 --> 00:06:58.320
+fantastic workflow enhancement. Instead of clicking around every single cell hunting for
+
+00:06:58.320 --> 00:07:03.600
+what the AI actually did, you can just ask it, drop this prompt into the side pane,
+
+00:07:03.600 --> 00:07:07.600
+list every formula you created on the dashboard sheet with its cell address and what it
+
+00:07:07.600 --> 00:07:12.160
+calculates. It will literally print out a complete readable checklist right there in the pane.
+
+00:07:12.800 --> 00:07:16.160
+You can use that list to quickly double check its work without tearing your hair out.
+
+00:07:17.040 --> 00:07:21.600
+So let's wrap this up and firmly solidify what we've learned today. Here is your essential
+
+00:07:21.600 --> 00:07:27.600
+three point recap for mastering agent mode on your Mac. One, always, always give agent
+
+00:07:27.600 --> 00:07:33.520
+mode a full strict managerial brief in a single prompt to manually review the new sheets and
+
+00:07:33.520 --> 00:07:38.400
+physically check the math behind the formulas it creates. Three, always add a test row of
+
+00:07:38.400 --> 00:07:42.720
+new data to prove the dashboard actually updates dynamically. If you follow these three steps,
+
+00:07:42.800 --> 00:07:47.760
+you'll be golden. I'm going to leave you with one final provocative challenge to test your new
+
+00:07:47.760 --> 00:07:53.680
+skills. Fire up your Mac right now. Open that practice sheet S19-02 and give this a shot.
+
+00:07:53.680 --> 00:07:59.120
+Can you write a hyper precise prompt asking agent mode to add a region slicer plus a brand
+
+00:07:59.120 --> 00:08:04.960
+new KPI card specifically for average units per order? And then once it builds it, can you
+
+00:08:04.960 --> 00:08:09.440
+successfully verify its math by writing your own average formula on the side to make sure they
+
+00:08:09.440 --> 00:08:15.280
+match. Mastering this loop of tight prompting and strict verifying is exactly what turns AI from
+
+00:08:15.280 --> 00:08:18.400
+a neat little toy into a deeply serious professional tool.
+
+00:08:18.960 --> 00:08:21.680
+Thanks so much for joining me on this explainer and happy building.

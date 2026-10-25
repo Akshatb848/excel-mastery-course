@@ -1,0 +1,442 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.760
+Welcome to this explainer for lesson S19-01.
+
+00:00:03.760 --> 00:00:07.680
+Today, we're getting you completely comfortable using Copilot directly on your Mac.
+
+00:00:07.680 --> 00:00:10.320
+Look, if you're working in a busy office here in India,
+
+00:00:10.320 --> 00:00:14.240
+constantly dealing with expense reports, data dumps, and those end-of-month
+
+00:00:14.240 --> 00:00:18.240
+reconciliations, you already know AI is a massive time saver.
+
+00:00:18.240 --> 00:00:22.480
+But you probably also know that sudden panic of accidentally messing up a master
+
+00:00:22.480 --> 00:00:25.760
+spreadsheet, right? Well, that's exactly what we're fixing today.
+
+00:00:25.760 --> 00:00:29.280
+We're going to master how to talk to your data safely using the right Copilot
+
+00:00:29.360 --> 00:00:32.960
+permissions right from your Mac workspace. Let's get into it.
+
+00:00:32.960 --> 00:00:37.520
+Okay, here's our quick agenda for today. One, setting up your Mac workspace.
+
+00:00:37.520 --> 00:00:42.080
+Two, chat mode for quick answers. Three, edit mode for sheet changes.
+
+00:00:42.080 --> 00:00:46.560
+Four, plan mode for complex tasks. Five, choosing your AI model.
+
+00:00:46.560 --> 00:00:49.920
+And six, we'll wrap up with a recap and a final challenge.
+
+00:00:49.920 --> 00:00:54.000
+All right, section one, setting up your Mac workspace with expense claims and
+
+00:00:54.000 --> 00:00:57.200
+policy limits. So we're starting right inside
+
+00:00:57.200 --> 00:01:02.000
+practice sheet S19-01. We're looking at 20 expense claims submitted
+
+00:01:02.000 --> 00:01:04.800
+by different employees across various departments.
+
+00:01:04.800 --> 00:01:09.040
+Now, check out these company policy limits per claim in cells I1 to J5,
+
+00:01:09.040 --> 00:01:12.880
+set up in rupees. We've got a maximum of 1500 rupees for meals,
+
+00:01:12.880 --> 00:01:17.760
+15,000 for travel, 5000 for supplies, and 10,000 for a stay.
+
+00:01:17.760 --> 00:01:21.200
+Today, we're going to use Copilot to actually audit these claims against this
+
+00:01:21.200 --> 00:01:24.960
+exact table, all without destroying our workbook in the process.
+
+00:01:24.960 --> 00:01:29.280
+Now, before we click anything at all, the absolute crucial point to understand
+
+00:01:29.280 --> 00:01:32.560
+is that picking the right mode is what keeps your file safe.
+
+00:01:32.560 --> 00:01:35.840
+Think of these three modes, chat, plan, and edit,
+
+00:01:35.840 --> 00:01:38.960
+like handing over the keys to a junior analyst.
+
+00:01:38.960 --> 00:01:42.880
+I mean, do you want them just looking at the data and answering questions?
+
+00:01:42.880 --> 00:01:45.840
+Do you want them to draw up a proposal for you to review?
+
+00:01:45.840 --> 00:01:49.760
+Or do you want to give them the green light to actually rewrite the file?
+
+00:01:49.760 --> 00:01:52.960
+By choosing chat, plan, or edit, you are dictating
+
+00:01:52.960 --> 00:01:56.960
+exactly how much power the AI has over your Mac workspace.
+
+00:01:56.960 --> 00:02:01.600
+Chat mode for quick answers, which is all about reading without risk.
+
+00:02:01.600 --> 00:02:05.040
+First, go ahead and open the Copilot pane on the side of your Mac screen.
+
+00:02:05.040 --> 00:02:09.040
+And actually, a quick fact for you, if you remember that old formula where you
+
+00:02:09.040 --> 00:02:12.320
+typed equals copilot in a cell, yeah, you can forget it.
+
+00:02:12.320 --> 00:02:15.120
+That was officially retired back in September, 2026.
+
+00:02:15.120 --> 00:02:18.400
+All your safe queries now happen right here in the side pane.
+
+00:02:18.400 --> 00:02:21.680
+So select chat mode, type this exact prompt,
+
+00:02:21.680 --> 00:02:26.800
+asking which department has the highest travel spend, and just press the return key.
+
+00:02:26.800 --> 00:02:28.800
+Now, really notice the difference here.
+
+00:02:28.800 --> 00:02:31.920
+Copilot answered our question directly in the side pane.
+
+00:02:31.920 --> 00:02:34.800
+It told us exactly which department spent the most on travel,
+
+00:02:34.800 --> 00:02:37.600
+but your actual sheet hasn't changed at all.
+
+00:02:37.600 --> 00:02:39.840
+Literally, zero cells were modified.
+
+00:02:39.840 --> 00:02:42.160
+And honestly, that is the beauty of chat mode.
+
+00:02:42.160 --> 00:02:44.880
+It reads the data, does all the heavy math in the background,
+
+00:02:44.880 --> 00:02:46.720
+and just gives you quick answers.
+
+00:02:46.720 --> 00:02:49.760
+You should always use chat mode when you just want a quick calculation
+
+00:02:49.760 --> 00:02:53.200
+or some ideas without putting your master file at risk.
+
+00:02:53.200 --> 00:02:56.240
+All right, section three, edit mode for sheet changes,
+
+00:02:56.240 --> 00:02:59.520
+specifically adding the within policy column.
+
+00:02:59.520 --> 00:03:02.960
+Okay, now switch your pane over to edit mode.
+
+00:03:02.960 --> 00:03:06.160
+Now we're actually giving the AI permission to modify the sheet.
+
+00:03:06.160 --> 00:03:08.000
+Go ahead and type this prompt.
+
+00:03:08.000 --> 00:03:11.600
+And let's let Copilot do the heavy lifting of comparing our expense claims
+
+00:03:11.600 --> 00:03:13.600
+against our Rupee policy table.
+
+00:03:13.600 --> 00:03:15.840
+Notice we are being very specific here.
+
+00:03:15.840 --> 00:03:18.080
+We're telling it exactly what to name the column,
+
+00:03:18.080 --> 00:03:19.280
+what the logic should be,
+
+00:03:19.280 --> 00:03:23.040
+like checking if the amount is less than or equal to the category limit,
+
+00:03:23.040 --> 00:03:27.520
+and we are pointing it directly to our lookup table in cells I1 to J5.
+
+00:03:27.520 --> 00:03:29.600
+Go ahead, hit return, and just wait a second.
+
+00:03:30.480 --> 00:03:31.520
+Check that out.
+
+00:03:31.520 --> 00:03:34.240
+If you click on cell G2 and look at your formula bar,
+
+00:03:34.240 --> 00:03:37.120
+you can see that edit mode went ahead and modified our sheet
+
+00:03:37.120 --> 00:03:38.960
+with a brand new calculation.
+
+00:03:38.960 --> 00:03:41.280
+It actually inserted column G for us,
+
+00:03:41.280 --> 00:03:43.040
+titled it within policy,
+
+00:03:43.040 --> 00:03:46.240
+and populated it with a formula all the way down to row 21.
+
+00:03:46.800 --> 00:03:51.280
+It looks like it used an XLOOKUP or a VLOOKUP nested inside an IF statement.
+
+00:03:51.280 --> 00:03:55.120
+But guys, here is the golden rule of using AI in Excel.
+
+00:03:55.120 --> 00:03:56.800
+Never blindly trust the machine.
+
+00:03:57.360 --> 00:03:59.280
+Edit mode actively changes the workbook,
+
+00:03:59.280 --> 00:04:02.720
+so it is your professional responsibility to read what it actually wrote.
+
+00:04:03.520 --> 00:04:06.960
+So let's move to a crucial step and verify the AI's work
+
+00:04:06.960 --> 00:04:10.480
+by manually typing a formula to check those no answers.
+
+00:04:10.480 --> 00:04:12.480
+We're going to build a quick sum product array,
+
+00:04:12.480 --> 00:04:14.400
+just to cross-reference copilot's logic.
+
+00:04:15.040 --> 00:04:18.560
+So in cell J8, type equals sum product,
+
+00:04:18.560 --> 00:04:20.560
+open bracket, two minus signs,
+
+00:04:20.560 --> 00:04:23.360
+that converts our true and false array into ones and zeros,
+
+00:04:23.360 --> 00:04:27.440
+open bracket again, grab the amounts in F2 to F21,
+
+00:04:27.440 --> 00:04:31.760
+greater than, sum ifs of our limit amounts in J2 to J5,
+
+00:04:31.760 --> 00:04:37.200
+against the categories in I2 to I5, matching the claims in D2 to D21.
+
+00:04:37.200 --> 00:04:40.160
+Okay, close all your brackets and press the return key on your Mac.
+
+00:04:41.120 --> 00:04:45.040
+And there it is, cell J8 now shows exactly eight,
+
+00:04:45.040 --> 00:04:47.280
+proving that eight claims broke the policy.
+
+00:04:47.280 --> 00:04:48.080
+And guess what?
+
+00:04:48.080 --> 00:04:52.240
+That perfectly matches the count of no answers copilot gave us.
+
+00:04:52.240 --> 00:04:55.760
+By just taking that one extra minute to run our own sum product check,
+
+00:04:55.760 --> 00:04:58.640
+we can confidently trust the column the AI just built for us.
+
+00:04:58.640 --> 00:05:00.160
+We completely verified its logic.
+
+00:05:01.040 --> 00:05:04.320
+Okay, section four, plan mode for complex tasks,
+
+00:05:04.320 --> 00:05:06.160
+where we review before we execute.
+
+00:05:07.040 --> 00:05:09.680
+Now, if you need to restructure a massive workbook
+
+00:05:09.680 --> 00:05:11.680
+or build a really complex summary,
+
+00:05:11.680 --> 00:05:14.400
+handing over the keys entirely in edit mode is,
+
+00:05:14.400 --> 00:05:16.160
+well, it's pretty risky.
+
+00:05:16.160 --> 00:05:18.640
+That is exactly where plan mode comes in.
+
+00:05:18.640 --> 00:05:20.880
+Switch over to plan mode and type this prompt.
+
+00:05:21.520 --> 00:05:24.400
+We're asking it for a completely new summary sheet.
+
+00:05:24.400 --> 00:05:25.760
+Now, when you hit return,
+
+00:05:25.760 --> 00:05:27.840
+notice that your workbook doesn't instantly change.
+
+00:05:28.640 --> 00:05:30.080
+Instead of just executing,
+
+00:05:30.080 --> 00:05:33.600
+plan mode simply lists its intended steps and pauses.
+
+00:05:33.600 --> 00:05:36.160
+It might say, you know, create a new worksheet,
+
+00:05:36.160 --> 00:05:38.000
+then generate a pivot table.
+
+00:05:38.000 --> 00:05:40.640
+The point is it waits for your approval,
+
+00:05:40.640 --> 00:05:43.360
+keeping you in complete control of your workspace.
+
+00:05:43.360 --> 00:05:44.960
+In a real office scenario,
+
+00:05:44.960 --> 00:05:46.320
+you'd read through the steps,
+
+00:05:46.320 --> 00:05:47.520
+adjust them if you need to,
+
+00:05:47.520 --> 00:05:50.720
+and only click approve when you are 100% satisfied.
+
+00:05:51.680 --> 00:05:53.280
+Choosing your AI model.
+
+00:05:53.280 --> 00:05:54.960
+Open AI versus anthropic.
+
+00:05:55.760 --> 00:05:59.360
+Take a look at the very bottom of your pane to find the model picker.
+
+00:05:59.360 --> 00:06:01.360
+Depending on your corporate IT settings,
+
+00:06:01.360 --> 00:06:04.480
+you are no longer locked into just one AI brain.
+
+00:06:04.480 --> 00:06:08.160
+By default, Microsoft's auto setting decides what's best for you.
+
+00:06:08.160 --> 00:06:10.800
+But for those really complex multi-step builds,
+
+00:06:10.800 --> 00:06:12.480
+results can definitely differ.
+
+00:06:12.480 --> 00:06:15.600
+So if open AI gives you a messy, clunky formula,
+
+00:06:15.600 --> 00:06:18.480
+just flip the model picker over to anthropic cloud,
+
+00:06:18.480 --> 00:06:20.000
+run the exact same prompt,
+
+00:06:20.000 --> 00:06:23.280
+and compare the results to find the cleanest possible calculation.
+
+00:06:23.280 --> 00:06:24.320
+It's a real game changer.
+
+00:06:25.040 --> 00:06:26.560
+Finally, section six.
+
+00:06:26.560 --> 00:06:29.360
+Recap and final challenge with our three key takeaways.
+
+00:06:30.320 --> 00:06:33.360
+We have covered a lot of ground in our Mac workspace today,
+
+00:06:33.360 --> 00:06:35.200
+so let's make sure we lock it all in.
+
+00:06:35.200 --> 00:06:36.480
+Here is your three-point recap.
+
+00:06:37.120 --> 00:06:42.480
+First, chat mode is your absolute safe zone for quick answers with zero risk to your data.
+
+00:06:42.480 --> 00:06:45.280
+Second, edit mode actively modifies the workbook,
+
+00:06:45.280 --> 00:06:47.920
+so you must always verify the formula bar.
+
+00:06:47.920 --> 00:06:51.200
+And third, plan mode shows you the steps first for safety.
+
+00:06:51.200 --> 00:06:54.880
+And you can use that model picker to compare open AI and anthropic
+
+00:06:54.880 --> 00:06:56.880
+to get the absolute best result for your task.
+
+00:06:57.840 --> 00:07:00.480
+I'm going to leave you with this final challenge for the day.
+
+00:07:00.480 --> 00:07:02.080
+Switch back to chat mode,
+
+00:07:02.080 --> 00:07:05.040
+ask which employee has the most claims over the limit,
+
+00:07:05.040 --> 00:07:09.920
+and then prove the AI right using your own count ifs formula right there on the Mac.
+
+00:07:09.920 --> 00:07:10.720
+Think about it.
+
+00:07:10.720 --> 00:07:15.040
+If Colpilot can help you accurately audit a policy sheet in just a few keystrokes,
+
+00:07:15.040 --> 00:07:17.200
+what other end-of-month bottlenecks in your office
+
+00:07:17.200 --> 00:07:19.360
+are just waiting to be automated tomorrow?
+
+00:07:19.360 --> 00:07:20.960
+Give it a try, keep practicing,
+
+00:07:20.960 --> 00:07:22.640
+and we'll see you in the next explainer.

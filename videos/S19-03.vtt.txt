@@ -1,0 +1,352 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.480
+Alright, let's dive right into this step-by-step explainer.
+
+00:00:03.480 --> 00:00:07.360
+Today we're looking at safely building a vendor aging report using CoPilot's plan
+
+00:00:07.360 --> 00:00:09.040
+mode on your Mac.
+
+00:00:09.040 --> 00:00:12.240
+If you're a working professional in India and you've recently made the jump to the
+
+00:00:12.240 --> 00:00:19.040
+Mac ecosystem, this specific lesson, lesson S19-03, is going to be an absolute game changer
+
+00:00:19.040 --> 00:00:21.000
+for your daily finance tasks.
+
+00:00:21.000 --> 00:00:24.800
+We're going to see exactly how to command the AI, review what it wants to do, and
+
+00:00:24.800 --> 00:00:28.600
+verify its work, all while keeping your data perfectly safe.
+
+00:00:28.600 --> 00:00:33.920
+Our agenda today is highly practical, no hype, just facts and manual verification.
+
+00:00:33.920 --> 00:00:39.240
+We'll hit welcome to plan mode, look at the AI landscape today, jump into building the
+
+00:00:39.240 --> 00:00:45.880
+aging report, cover how to trust but verify, and end with a recap and your challenge.
+
+00:00:45.880 --> 00:00:47.400
+Welcome to plan mode.
+
+00:00:47.400 --> 00:00:53.120
+We are opening practice sheet S19-03, which has 25 vendor invoices, and we're looking
+
+00:00:53.120 --> 00:00:58.920
+at how to keep this critical data completely safe from any expensive AI hallucinations.
+
+00:00:58.920 --> 00:01:01.840
+So here is the absolutely crucial point.
+
+00:01:01.840 --> 00:01:04.200
+Plan mode stops the AI from acting immediately.
+
+00:01:04.200 --> 00:01:09.040
+You know, instead of just blindly executing a command and potentially scrambling your entire
+
+00:01:09.040 --> 00:01:13.320
+spreadsheet, CoPilot gives you a numbered list of its intended steps.
+
+00:01:13.320 --> 00:01:17.280
+This lets you supervise its logic in plain English before it ever touches your critical
+
+00:01:17.280 --> 00:01:18.280
+data.
+
+00:01:18.280 --> 00:01:20.920
+It's essentially a mandatory review phase.
+
+00:01:20.920 --> 00:01:24.000
+Think of CoPilot like a highly enthusiastic intern.
+
+00:01:24.000 --> 00:01:27.720
+They might be brilliant, but you definitely want to check their work before hitting send
+
+00:01:27.720 --> 00:01:29.400
+to the boss, right?
+
+00:01:29.400 --> 00:01:31.760
+The AI landscape today.
+
+00:01:31.760 --> 00:01:35.640
+Before we build anything, let's separate the marketing hype from the actual software
+
+00:01:35.640 --> 00:01:38.760
+capabilities you have on your Mac right now.
+
+00:01:38.760 --> 00:01:43.400
+The current state of AI in Excel essentially splits into two distinct tools.
+
+00:01:43.400 --> 00:01:48.000
+On one hand, you've got Microsoft's CoPilot, which is fantastic for generating specific columns,
+
+00:01:48.000 --> 00:01:53.240
+charts, or tables directly from your prompts and doing natural language sorting and filtering.
+
+00:01:53.240 --> 00:01:56.580
+On the other hand, the Claude add-in takes a totally different approach.
+
+00:01:56.580 --> 00:02:01.600
+It really excels at reading whole workbooks, debugging complex errors, and this is a big
+
+00:02:01.600 --> 00:02:05.560
+one, preserving those delicate multi-sheet calculation chains.
+
+00:02:05.560 --> 00:02:08.240
+They are different tools for completely different jobs.
+
+00:02:08.240 --> 00:02:12.240
+Actually, quick side note, and please keep this vital fact in mind.
+
+00:02:12.240 --> 00:02:15.580
+Don't go looking for the equals CoPilot function in your cells.
+
+00:02:15.580 --> 00:02:20.980
+It was an experimental feature that was officially retired on the 14th of September, 2026, meaning
+
+00:02:20.980 --> 00:02:22.980
+it never reached full public release.
+
+00:02:22.980 --> 00:02:28.040
+So for our work today, we are relying exclusively on the CoPilot side pane.
+
+00:02:28.040 --> 00:02:29.660
+Building the aging report.
+
+00:02:29.660 --> 00:02:34.020
+Let's get to work with our 25 invoices, anchoring our entire report to the specific
+
+00:02:34.020 --> 00:02:37.380
+as of date sitting right there in cell L1.
+
+00:02:37.380 --> 00:02:43.340
+We open the CoPilot pane in plan mode and type in this exact plain English prompt.
+
+00:02:43.340 --> 00:02:45.800
+Notice how incredibly specific we're being here.
+
+00:02:45.800 --> 00:02:47.980
+We are clearly defining our date math.
+
+00:02:47.980 --> 00:02:52.420
+As of date minus due date, we're dictating the four specific aging buckets we need.
+
+00:02:52.420 --> 00:02:56.940
+We're asking for a table of totals by vendor, and we're setting a clear formatting condition
+
+00:02:56.940 --> 00:03:00.020
+to highlight anything over 90 days in red.
+
+00:03:00.020 --> 00:03:04.620
+Now look at this, it's so common for the AI to make this exact assumption.
+
+00:03:04.620 --> 00:03:08.840
+CoPilot's initial proposed plan defaults to using today's date for its calculations.
+
+00:03:08.840 --> 00:03:12.320
+If we had just skipped reading the plan and clicked approve, well, it would have ruined
+
+00:03:12.320 --> 00:03:16.320
+our report because every time we opened the file on a new day, the aging buckets would
+
+00:03:16.320 --> 00:03:17.400
+shift.
+
+00:03:17.400 --> 00:03:22.840
+We absolutely need the plan to firmly use that static as of date in cell L1.
+
+00:03:22.840 --> 00:03:26.480
+But because we caught this in plan mode, fixing it is a breeze.
+
+00:03:26.480 --> 00:03:29.880
+We simply feed CoPilot this exact correction in the chat.
+
+00:03:29.880 --> 00:03:30.880
+Change the plan.
+
+00:03:30.880 --> 00:03:35.640
+Use the as of date in cell L1 of sheet S19-03, not today's date.
+
+00:03:35.640 --> 00:03:37.320
+So I can change it later.
+
+00:03:37.320 --> 00:03:41.220
+This simple conversational course correction ensures our aging buckets are going to lock
+
+00:03:41.220 --> 00:03:45.220
+onto the specific as of date that we actually control.
+
+00:03:45.220 --> 00:03:48.020
+CoPilot will then reply with an updated numbered list.
+
+00:03:48.020 --> 00:03:53.060
+Once we read those updated steps and visually verify that cell L1 is now explicitly mentioned
+
+00:03:53.060 --> 00:03:56.400
+in its logic, we give CoPilot this final approval.
+
+00:03:56.400 --> 00:03:57.400
+Looks good.
+
+00:03:57.400 --> 00:03:58.680
+Go ahead with the updated plan.
+
+00:03:58.680 --> 00:04:04.220
+And only now does CoPilot actually create the new aging sheet and build out the layout.
+
+00:04:04.220 --> 00:04:06.180
+Trust but verify.
+
+00:04:06.180 --> 00:04:09.780
+CoPilot generated our aging sheet, but as finance professionals, we know better than
+
+00:04:09.780 --> 00:04:11.940
+to blindly trust the AI's output.
+
+00:04:11.940 --> 00:04:13.620
+We have to prove the math.
+
+00:04:13.620 --> 00:04:15.860
+Okay, moment of truth.
+
+00:04:15.860 --> 00:04:17.580
+First we check the grand total.
+
+00:04:17.580 --> 00:04:21.900
+The total unpaid amount across all four buckets generated by the AI on the new sheet should
+
+00:04:21.900 --> 00:04:26.520
+add up exactly to 35 lakh, 62,800 rupees.
+
+00:04:26.520 --> 00:04:30.220
+If the AI missed even a single invoice or filtered incorrectly, this number is going
+
+00:04:30.220 --> 00:04:31.660
+to be off.
+
+00:04:31.660 --> 00:04:36.300
+We verify this back on our main source sheet, S19-03.
+
+00:04:36.300 --> 00:04:39.980
+Over in cell L3, we just type in this standard SUMIFS formula.
+
+00:04:39.980 --> 00:04:46.780
+So that's equals SUMIFS, open bracket, F2 to F26, which are our invoice amounts, comma
+
+00:04:46.780 --> 00:04:53.180
+G2 to G26, which is our status column, comma, quote, unpaid, end quote.
+
+00:04:53.180 --> 00:04:56.460
+This manually calculates the total of all unpaid invoices.
+
+00:04:56.460 --> 00:05:01.860
+And boom, it confirms our 35 lakh, 62,800 rupee total.
+
+00:05:01.860 --> 00:05:06.180
+Next up, we need to check the highest risk bucket, the over 90 days total.
+
+00:05:06.180 --> 00:05:12.660
+On the AI generated aging sheet, this specific bucket needs to match exactly 23 lakh, 37,700
+
+00:05:12.660 --> 00:05:14.260
+rupees.
+
+00:05:14.260 --> 00:05:19.620
+So for our second manual check, in cell L4 of our source sheet, we write a slightly more
+
+00:05:19.620 --> 00:05:20.960
+complex formula.
+
+00:05:20.960 --> 00:05:25.860
+We use the same SUMIFS for the unpaid amounts, but we add a condition looking at column E,
+
+00:05:25.860 --> 00:05:27.920
+which holds those invoice due dates.
+
+00:05:27.920 --> 00:05:32.260
+We set the criteria to be less than ampersand L1 minus 90.
+
+00:05:32.260 --> 00:05:36.700
+This perfectly isolates the invoices older than 90 days from our as-of date.
+
+00:05:36.700 --> 00:05:44.200
+If this outputs 23 lakh, 37,700, we know for sure, the AI executed the plan flawlessly.
+
+00:05:44.200 --> 00:05:45.580
+But what if it didn't?
+
+00:05:45.580 --> 00:05:48.820
+What if Copilot's numbers just completely fail your verification?
+
+00:05:48.820 --> 00:05:53.080
+Well, since you're on a Mac, you just roll back the AI's changes using your Mac specific
+
+00:05:53.080 --> 00:05:54.560
+keyboard shortcuts.
+
+00:05:54.560 --> 00:05:58.360
+Just press Command Z to step back through Copilot's edits and undo them.
+
+00:05:58.360 --> 00:06:00.620
+And Command Y if you need to redo an action.
+
+00:06:00.620 --> 00:06:04.140
+You have complete control to reject the AI's work instantly.
+
+00:06:04.140 --> 00:06:05.420
+Recap and your challenge.
+
+00:06:05.420 --> 00:06:07.380
+I really cannot stress this enough.
+
+00:06:07.380 --> 00:06:12.740
+30 seconds of reading an AI plan truly saves an hour of fixing mistakes later.
+
+00:06:12.740 --> 00:06:16.180
+So let's summarize this workflow, because this should literally become your standard
+
+00:06:16.180 --> 00:06:17.960
+operating procedure.
+
+00:06:17.960 --> 00:06:23.160
+Number one, plan mode shows intended steps first, so always, always read them.
+
+00:06:23.160 --> 00:06:27.160
+Number two, edit those steps in plain English before giving your approval.
+
+00:06:27.160 --> 00:06:32.160
+And number three, always check the final totals with standard Excel functions like SUMIFS,
+
+00:06:32.160 --> 00:06:36.360
+and use your Command Z shortcut to undo if the AI missed the mark.
+
+00:06:36.360 --> 00:06:40.240
+I want to leave you with a practical challenge to test your setup, and make sure you fully
+
+00:06:40.240 --> 00:06:41.880
+mastered this lesson.
+
+00:06:41.880 --> 00:06:48.360
+Go into your spreadsheet and change your source as-of date in cell L1 to 30 June, 2026.
+
+00:06:48.360 --> 00:06:51.880
+Check to see if your AI-generated aging sheet updates automatically.
+
+00:06:51.880 --> 00:06:57.800
+Then, using your manual SUMIFS formula, can you recompute the exact new over 90 days total?
+
+00:06:57.800 --> 00:06:59.560
+Give it a try.
+
+00:06:59.560 --> 00:07:02.040
+Trust the process, but always verify the math.
+
+00:07:02.040 --> 00:07:02.440
+Happy learning.

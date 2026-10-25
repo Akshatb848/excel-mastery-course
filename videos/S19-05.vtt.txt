@@ -1,0 +1,274 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.160
+Welcome to The Explainer. Today, we are going to walk through a highly practical,
+
+00:00:04.160 --> 00:00:09.120
+step-by-step demonstration on exactly how to confidently audit AI-generated Excel work,
+
+00:00:09.120 --> 00:00:12.640
+right on your Mac. If you're a working professional using Excel for Mac,
+
+00:00:12.640 --> 00:00:17.520
+you already know that AI can speed things up tremendously. But it can also make very quiet,
+
+00:00:17.520 --> 00:00:24.400
+very expensive mistakes. So today, we're diving into lesson S19-05, using a real-world GST
+
+00:00:24.400 --> 00:00:28.560
+register to help you build that essential muscle memory for catching these errors in just two
+
+00:00:28.560 --> 00:00:33.680
+minutes. All right, let's quickly look at our roadmap for today. We'll start with number one,
+
+00:00:33.680 --> 00:00:38.880
+the AI summary mistake. Then we'll walk through our three-step auditing process. Number two,
+
+00:00:38.880 --> 00:00:44.880
+step one, check totals. Number three, step two, read formulas. And number four, step three,
+
+00:00:44.880 --> 00:00:49.680
+co-pilot audit. After that, we'll move to number five, fixing the Excel sheet. And we will
+
+00:00:49.680 --> 00:00:55.920
+finally wrap up with number six, our recap and challenge. Section one, the AI summary mistake.
+
+00:00:55.920 --> 00:01:02.800
+Don't trust the intern blindly. Okay, so let's set the scene with practice sheet S19-05.
+
+00:01:03.520 --> 00:01:09.600
+Imagine this scenario. Last week, an AI assistant built five summary formulas for your GST register.
+
+00:01:09.600 --> 00:01:14.080
+And if you just glance at the numbers, you know, they look absolutely fine. The formatting is
+
+00:01:14.080 --> 00:01:18.640
+totally clean. There are no immediate error signs anywhere. But beneath the surface,
+
+00:01:19.280 --> 00:01:24.560
+it actually contained two silent errors. This is the danger of AI, right? It acts like an
+
+00:01:24.560 --> 00:01:29.680
+incredibly confident, but honestly, sometimes careless intern. To catch these mistakes before
+
+00:01:29.680 --> 00:01:33.920
+they end up in a final report, we use a simple two-minute checking routine consisting of three
+
+00:01:33.920 --> 00:01:39.520
+reliable steps. Totals first, then formulas. And finally, having the AI review its own work.
+
+00:01:40.080 --> 00:01:44.720
+This exact order matters because your own human verification must always,
+
+00:01:44.720 --> 00:01:50.320
+always act as the first line of defense. Section two, step one, check totals,
+
+00:01:50.320 --> 00:01:58.000
+recomputing the taxable value. Let's get our sheet open. Looking at S19-05,
+
+00:01:58.000 --> 00:02:04.720
+we have 20 tax invoices spanning cells A1 down to F21. The AI built summary sits neatly off
+
+00:02:04.720 --> 00:02:10.400
+to the side and H1 to I6. Now on the surface, the numbers look perfectly reasonable for the
+
+00:02:10.400 --> 00:02:16.160
+volume of data we have. But remember, we never just trust the summary. So in cell K2,
+
+00:02:16.160 --> 00:02:24.480
+you're going to type this exact formula equals sum open bracket d2 colon d21, close bracket,
+
+00:02:24.480 --> 00:02:29.840
+hit return. What we're doing here is calculating our own total of the taxable value entirely
+
+00:02:29.840 --> 00:02:36.160
+independent of what the AI just did. This is your anchor. And wow, this brilliantly illustrates
+
+00:02:36.160 --> 00:02:44.160
+the problem right out of the gate. Our manual total in K2 is 45, 1,900 rupees. But the AI's
+
+00:02:44.160 --> 00:02:50.960
+figure sitting right there in I2, it's only 40,89,400 rupees. They completely don't match,
+
+00:02:50.960 --> 00:02:55.440
+proving instantly, literally in just a few seconds, that something is fundamentally wrong with the AI's
+
+00:02:55.440 --> 00:03:01.360
+work. Selecting I2 and just glancing up at the formula bar reveals exactly what happened.
+
+00:03:01.360 --> 00:03:07.440
+The AI wrote the formula as sum of d2 to d20. It just stopped at row 20. It missed the last
+
+00:03:07.440 --> 00:03:14.080
+invoice entirely. That one silent error cost us over four lakh, 12,500 rupees in our summary.
+
+00:03:14.080 --> 00:03:18.000
+Think about that. No error flags, no warning pop ups, just a missing row.
+
+00:03:18.960 --> 00:03:25.200
+Section three, step two, read formulas, exposing the underlying math. This next step requires us
+
+00:03:25.200 --> 00:03:29.520
+to read all the formulas at once to see what other invisible mistakes the AI might have made
+
+00:03:29.520 --> 00:03:34.160
+in the background. Because let's be real, if it missed a row in the very first formula,
+
+00:03:34.160 --> 00:03:36.880
+there's a pretty high chance the rest of its logic is flawed too.
+
+00:03:37.600 --> 00:03:42.720
+Now, if you are working on a Mac, you absolutely need to know this keyboard shortcut. Hit control
+
+00:03:42.720 --> 00:03:47.440
+plus the back tick key. That's the key right above the tab key on your Mac keyboard. Or,
+
+00:03:47.440 --> 00:03:51.840
+you know, you could also just use the formulas tab on the ribbon. This instantly flips the entire
+
+00:03:51.840 --> 00:03:56.880
+sheet to expose the math inside every single cell, showing us exactly how the AI arrived at its
+
+00:03:56.880 --> 00:04:02.080
+numbers. Reading down the list, we see a bit of a mixed bag. While the formulas in the first
+
+00:04:02.080 --> 00:04:08.720
+few rows like i3 and i4 actually look fine, cell i5 has a massive flaw. It calculates the average
+
+00:04:08.720 --> 00:04:14.800
+by dividing by a hard coded 19 instead of dynamically counting the 20 invoices. So not only is the math
+
+00:04:14.800 --> 00:04:18.960
+wrong for our current data, but this average will absolutely not update if you add a new
+
+00:04:18.960 --> 00:04:25.520
+invoice next week. It is fundamentally broken. Section four, step three, co-pilot audit,
+
+00:04:25.520 --> 00:04:29.920
+getting a second opinion. What's really fascinating about how we handle AI and
+
+00:04:29.920 --> 00:04:34.640
+Excel today is the workflow shift. If you've been using AI for a while, you might actually
+
+00:04:34.640 --> 00:04:38.640
+remember that old equals co-pilot function you used to be able to type directly into a cell.
+
+00:04:39.200 --> 00:04:44.640
+Well, as you know, that function was permanently retired back in September 2026. So today,
+
+00:04:44.640 --> 00:04:49.520
+here's what we do instead. We turn show formulas off by hitting control back tick again,
+
+00:04:49.520 --> 00:04:52.320
+and we open the co-pilot chat pane on the right side of our screen.
+
+00:04:53.440 --> 00:04:59.200
+Then you type this exact prompt into the chat. Check the formulas in i2 to i6 for errors,
+
+00:04:59.280 --> 00:05:04.480
+ranges that misrose and hard coded numbers. Do not change anything, list each problem with its cell.
+
+00:05:05.040 --> 00:05:09.680
+You wait about 12 seconds and let the AI review its own work without making any permanent changes
+
+00:05:09.680 --> 00:05:14.560
+to your sheet. That strict instruction, do not change anything is absolutely critical here.
+
+00:05:14.560 --> 00:05:20.480
+We just want to report, we do not want an aggressive auto fix. AI reviewers like co-pilot
+
+00:05:20.480 --> 00:05:24.880
+and Claude are incredibly useful for spotting tedious errors in large sheets, no doubt about
+
+00:05:24.880 --> 00:05:30.080
+it, but they can still miss things. Or sometimes they even flag things that are actually perfectly
+
+00:05:30.080 --> 00:05:35.520
+fine, which is exactly why your manual check always, always comes first. You are the
+
+00:05:35.520 --> 00:05:39.520
+professional here. The AI is just giving you a second opinion to verify your own findings.
+
+00:05:40.320 --> 00:05:44.720
+Section five, fixing the Excel sheet, correcting the AI's mistakes.
+
+00:05:45.520 --> 00:05:49.200
+Now that we found the issues, both manually and with co-pilot's help,
+
+00:05:49.200 --> 00:05:53.600
+it's time to take control of our spreadsheet again. Let's repair those broken summary formulas
+
+00:05:53.600 --> 00:06:00.480
+in our GST register. Click on cell I2, type the proper sum formula to include that missing row 21,
+
+00:06:00.480 --> 00:06:04.880
+close the bracket and hit return on your Mac keyboard to lock in the correct 45 lakh,
+
+00:06:04.880 --> 00:06:10.240
+1900 rupee total. You'll instantly see it match the manual check we did earlier in K2.
+
+00:06:11.120 --> 00:06:17.040
+Next up, let's fix I5. We desperately need to replace that dangerous hard coded number 19.
+
+00:06:17.600 --> 00:06:27.680
+So type equals I4 divided by count A, open bracket, A2 colon A21, close bracket. Using count A
+
+00:06:27.680 --> 00:06:33.360
+directed at your data range ensures the count comes from the actual data, meaning your average
+
+00:06:33.360 --> 00:06:38.240
+is now going to update automatically when new invoices are added. And as a final sanity check
+
+00:06:38.240 --> 00:06:43.280
+to ensure our repair actually worked, type this standard formula into K5 to calculate the
+
+00:06:43.280 --> 00:06:51.200
+average independently. Equals average of D2 to D21, plus average of F2 to F21. If this matches
+
+00:06:51.200 --> 00:06:58.800
+your newly corrected I5 value of 2,49,392 rupees, well, you know your sheet is completely accurate
+
+00:06:58.800 --> 00:07:04.320
+and the AI's mistakes have been fully neutralized. Section 6, recap and challenge,
+
+00:07:04.320 --> 00:07:10.080
+building muscle memory. The crucial takeaway here is that AI answers will vary between runs.
+
+00:07:10.080 --> 00:07:14.640
+You could ask Copilot to build a summary five times and you might get five slightly different
+
+00:07:14.640 --> 00:07:21.440
+formulas. And more importantly, a short range or a typed number gives absolutely no Excel error.
+
+00:07:21.440 --> 00:07:25.760
+The sheet will look completely normal. Only your quick manual check will catch it.
+
+00:07:26.400 --> 00:07:30.960
+So to recap this vital lesson, commit these three points to your workflow right now.
+
+00:07:31.600 --> 00:07:37.440
+First, always recompute a key total yourself. Second, read your formulas by flipping them on
+
+00:07:37.440 --> 00:07:42.640
+with that max shortcut, control plus backtick, specifically hunting for short ranges and typed
+
+00:07:42.640 --> 00:07:48.640
+numbers. And third, use the Copilot Chat Pains review as a second opinion, never as the absolute
+
+00:07:48.640 --> 00:07:54.720
+truth. Treat AI as a helpful intern, not an infallible expert. I'll leave you with this
+
+00:07:54.720 --> 00:08:00.480
+challenge for your practice sheet. I want you to check cell I6, the Maharashtra total. Can you
+
+00:08:00.480 --> 00:08:05.760
+verify it using a simple filter? Or maybe by writing your own SUMIFS formula? Because at the
+
+00:08:05.760 --> 00:08:10.160
+end of the day, when it comes to integrating AI into your professional workflow, trusting the
+
+00:08:10.160 --> 00:08:15.040
+technology is great for speed. But rigorously verifying it is what makes you a true professional.
+
+00:08:15.600 --> 00:08:20.080
+Grab the S1905 practice file, try this out for yourself, and keep your standards high.
