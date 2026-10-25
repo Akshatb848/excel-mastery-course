@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.469
+We have sales ad spend and dealer count for
+
+00:00:03.482 --> 00:00:07.937
+twenty-four districts of Gujarat In a few clicks the
+
+00:00:07.950 --> 00:00:11.322
+Analysis ToolPak gives a full statistics summary and a
+
+00:00:11.335 --> 00:00:14.916
+regression that says how much each lakh of advertising
+
+00:00:14.929 --> 00:00:15.515
+is worth
+
+00:00:16.984 --> 00:00:19.849
+You will learn to switch on the ToolPak run
+
+00:00:19.862 --> 00:00:23.898
+Descriptive Statistics run a Regression and read the three
+
+00:00:23.911 --> 00:00:30.450
+numbers that matter Practice sheet S14-06 recorded in Excel
+
+00:00:30.463 --> 00:00:32.481
+desktop with the Mac path shown
+
+00:00:33.953 --> 00:00:39.695
+Descriptive statistics summarise one column average middle value spread
+
+00:00:39.838 --> 00:00:45.218
+smallest and largest Regression fits a line sales equals
+
+00:00:45.231 --> 00:00:47.966
+a starting amount plus so much per lakh of
+
+00:00:47.979 --> 00:00:52.015
+ads plus so much per dealer R square says
+
+00:00:52.028 --> 00:00:54.215
+how much of the ups and downs the line
+
+00:00:54.229 --> 00:00:54.984
+explains
+
+00:00:56.453 --> 00:01:00.609
+Switch it on once On a Mac open Tools
+
+00:01:00.739 --> 00:01:05.869
+Excel Add-ins tick Analysis ToolPak and click OK On
+
+00:01:05.882 --> 00:01:11.338
+Windows it is File Options Add-ins A Data Analysis
+
+00:01:11.351 --> 00:01:13.460
+button appears on the Data tab
+
+00:01:14.937 --> 00:01:18.296
+Our data district in A ad spend in lakh
+
+00:01:18.309 --> 00:01:21.460
+rupees in B number of dealers in C and
+
+00:01:21.473 --> 00:01:25.158
+sales in lakh rupees in D for twenty-four districts
+
+00:01:26.625 --> 00:01:31.562
+On the Data tab click Data Analysis Choose Descriptive
+
+00:01:31.575 --> 00:01:33.372
+Statistics and click OK
+
+00:01:34.843 --> 00:01:38.554
+Input Range is D1 to D25, including the heading
+
+00:01:39.454 --> 00:01:43.113
+Here is the usual mistake leave Labels in first
+
+00:01:43.126 --> 00:01:47.345
+row unticked and click OK Excel says the input
+
+00:01:47.358 --> 00:01:51.134
+range contains non-numeric data because it is reading the
+
+00:01:51.147 --> 00:01:52.501
+heading as a number
+
+00:01:54.000 --> 00:01:58.195
+Tick Labels in first row Choose Output Range and
+
+00:01:58.208 --> 00:02:02.947
+type F1 Tick Summary statistics and click OK
+
+00:02:04.484 --> 00:02:08.000
+Average sales are about forty-nine point seven lakh per
+
+00:02:08.013 --> 00:02:12.064
+district Compare the mean and the median when they
+
+00:02:12.077 --> 00:02:15.189
+are close there are no extreme districts pulling the
+
+00:02:15.202 --> 00:02:19.629
+average The standard deviation shows the typical gap from
+
+00:02:19.642 --> 00:02:20.345
+the average
+
+00:02:21.812 --> 00:02:27.022
+Now the regression Click Data Analysis choose Regression and
+
+00:02:27.035 --> 00:02:27.882
+click OK
+
+00:02:29.359 --> 00:02:33.213
+Input Y Range is the sales D1 to D25
+
+00:02:34.114 --> 00:02:37.291
+Input X Range is ad spend and dealers together
+
+00:02:37.499 --> 00:02:43.814
+B1 to C25 Tick Labels Choose New Worksheet Ply
+
+00:02:44.036 --> 00:02:46.470
+name it Regression and click OK
+
+00:02:47.968 --> 00:02:52.020
+Look at three numbers R Square is zero point
+
+00:02:52.033 --> 00:02:56.199
+nine four ad spend and dealers explain ninety-four percent
+
+00:02:56.212 --> 00:03:00.340
+of the differences between districts That is a strong
+
+00:03:00.353 --> 00:03:00.835
+model
+
+00:03:02.312 --> 00:03:06.780
+Then the coefficients Each extra lakh of ad spend
+
+00:03:06.793 --> 00:03:09.931
+goes with about two point eight lakh more sales
+
+00:03:10.088 --> 00:03:13.434
+and each extra dealer with about point eight seven
+
+00:03:13.447 --> 00:03:18.056
+lakh holding the other one steady Both p-values are
+
+00:03:18.069 --> 00:03:20.830
+tiny so these effects are not chance
+
+00:03:22.297 --> 00:03:26.804
+Pro tip the ToolPak pastes fixed values If the
+
+00:03:26.817 --> 00:03:30.919
+data changes run it again or use formulas like
+
+00:03:30.932 --> 00:03:34.278
+AVERAGE and LINEST as on the Done sheet which
+
+00:03:34.291 --> 00:03:40.411
+update by themselves And remember regression shows association not
+
+00:03:40.424 --> 00:03:42.312
+proof that ads cause sales
+
+00:03:43.781 --> 00:03:46.672
+On a Mac switch it on in Tools Excel
+
+00:03:46.685 --> 00:03:52.103
+Add-ins then use Data Data Analysis The dialogs match
+
+00:03:52.116 --> 00:03:56.400
+Windows Excel for the web has no ToolPak so
+
+00:03:56.413 --> 00:03:57.650
+use the Mac app
+
+00:03:59.109 --> 00:04:03.812
+To recap switch on the ToolPak once Tick Labels
+
+00:04:03.825 --> 00:04:08.642
+whenever your range includes headings In a regression read
+
+00:04:08.655 --> 00:04:11.637
+R Square the coefficients and the p-values
+
+00:04:13.109 --> 00:04:16.468
+Your challenge run the Correlation tool on B1 to
+
+00:04:16.481 --> 00:04:21.054
+D25 with labels Which is more closely linked to
+
+00:04:21.067 --> 00:04:25.377
+sales ad spend or dealers The answer is on
+
+00:04:25.390 --> 00:04:26.314
+the Done sheet

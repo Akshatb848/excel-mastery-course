@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:05.059
+Your manager asks two questions How many units must
+
+00:00:05.072 --> 00:00:07.950
+the Pune showroom sell to make five lakh rupees
+
+00:00:07.963 --> 00:00:11.374
+profit a month And how big a home loan
+
+00:00:11.388 --> 00:00:13.653
+can you take if the EMI must stay at
+
+00:00:13.666 --> 00:00:18.770
+thirty thousand Goal Seek answers both in seconds without
+
+00:00:18.783 --> 00:00:19.786
+any algebra
+
+00:00:21.265 --> 00:00:23.908
+You will learn what Goal Seek needs how to
+
+00:00:23.921 --> 00:00:26.486
+use it for a profit target and how to
+
+00:00:26.499 --> 00:00:29.624
+work backwards from an EMI to a loan amount
+
+00:00:30.525 --> 00:00:33.741
+The practice sheet is S14-01
+
+00:00:35.218 --> 00:00:39.452
+Goal Seek works backwards You tell it which formula
+
+00:00:39.465 --> 00:00:41.900
+cell to watch the value you want it to
+
+00:00:41.913 --> 00:00:45.884
+show and which single input it may change It
+
+00:00:45.897 --> 00:00:49.348
+then tries values until the formula hits your target
+
+00:00:50.812 --> 00:00:54.343
+Here is the model Price is twelve hundred and
+
+00:00:54.356 --> 00:00:58.483
+fifty rupees variable cost seven hundred and eighty fixed
+
+00:00:58.496 --> 00:01:02.481
+costs six lakh a month At two thousand units
+
+00:01:02.494 --> 00:01:05.358
+in B4, profit in B8 is three lakh forty
+
+00:01:05.371 --> 00:01:06.374
+thousand rupees
+
+00:01:07.875 --> 00:01:11.156
+With B8 selected go to the Data tab click
+
+00:01:11.169 --> 00:01:13.904
+What-If Analysis and choose Goal Seek
+
+00:01:15.359 --> 00:01:19.892
+Set cell is B8, the profit To value five
+
+00:01:19.905 --> 00:01:24.554
+lakh typed as five followed by five zeros By
+
+00:01:24.567 --> 00:01:28.825
+changing cell is B4, units sold Click OK
+
+00:01:30.281 --> 00:01:34.450
+Goal Seek found a solution B4 now shows two
+
+00:01:34.463 --> 00:01:37.549
+thousand three hundred and forty units and profit is
+
+00:01:37.562 --> 00:01:41.182
+five lakh You can't sell part of a unit
+
+00:01:41.312 --> 00:01:44.020
+so the real answer is two thousand three hundred
+
+00:01:44.033 --> 00:01:47.601
+and forty-one Click OK to keep the result
+
+00:01:49.078 --> 00:01:53.455
+Now the loan At twenty-five lakh eight point seven
+
+00:01:53.468 --> 00:01:56.762
+five percent for two hundred and forty months the
+
+00:01:56.775 --> 00:02:00.695
+EMI in B14 is twenty-two thousand and ninety-three rupees
+
+00:02:01.606 --> 00:02:04.835
+We want the loan that gives exactly thirty thousand
+
+00:02:06.328 --> 00:02:10.614
+Here is the most common mistake Open Goal Seek
+
+00:02:10.627 --> 00:02:13.518
+and put the loan amount B11, in the Set
+
+00:02:13.531 --> 00:02:17.880
+cell box Click OK and Excel complains that the
+
+00:02:17.893 --> 00:02:22.150
+cell must contain a formula Set cell is always
+
+00:02:22.163 --> 00:02:24.012
+the result never the input
+
+00:02:25.468 --> 00:02:30.106
+Fix it Set cell is B14, the EMI formula
+
+00:02:31.004 --> 00:02:36.251
+To value thirty thousand By changing cell B11, the
+
+00:02:36.264 --> 00:02:40.457
+loan amount Click OK then OK again
+
+00:02:41.937 --> 00:02:45.869
+You can borrow about thirty-three lakh ninety-four thousand rupees
+
+00:02:45.882 --> 00:02:49.843
+and keep the EMI at thirty thousand That is
+
+00:02:49.856 --> 00:02:52.642
+a number worth knowing before you visit the bank
+
+00:02:54.093 --> 00:02:58.744
+Pro tip Goal Seek overwrites the input cell If
+
+00:02:58.757 --> 00:03:02.129
+you want the original back press Command Z straight
+
+00:03:02.142 --> 00:03:06.908
+away Goal Seek also changes only one input when
+
+00:03:06.921 --> 00:03:10.449
+several inputs and limits are involved use Solver
+
+00:03:11.937 --> 00:03:14.359
+On a Mac Goal Seek is in the same
+
+00:03:14.372 --> 00:03:20.142
+place Data tab What-If Analysis Goal Seek The dialog
+
+00:03:20.155 --> 00:03:23.306
+has the same three boxes so everything you saw
+
+00:03:23.319 --> 00:03:24.960
+here works the same way
+
+00:03:26.437 --> 00:03:29.874
+To recap Set cell is the formula To value
+
+00:03:29.888 --> 00:03:32.726
+is your target By changing cell is the one
+
+00:03:32.739 --> 00:03:37.390
+input Use it for sales targets EMIs and break-even
+
+00:03:37.403 --> 00:03:38.119
+questions
+
+00:03:39.578 --> 00:03:43.107
+Your challenge put units back to two thousand then
+
+00:03:43.120 --> 00:03:46.127
+find the selling price that still gives five lakh
+
+00:03:46.141 --> 00:03:49.710
+profit The answer is on the Done sheet

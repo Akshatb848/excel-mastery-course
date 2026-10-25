@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.430
+Here are forty-two months of sales with a Diwali
+
+00:00:03.443 --> 00:00:07.076
+peak every October and November and a forecast for
+
+00:00:07.089 --> 00:00:11.036
+the next six months with a shaded range Excel
+
+00:00:11.049 --> 00:00:14.044
+built the forecast in one click and it already
+
+00:00:14.057 --> 00:00:16.401
+expects this year's festive spike
+
+00:00:17.891 --> 00:00:19.961
+You will learn to add a trendline to a
+
+00:00:19.974 --> 00:00:23.464
+chart to create a Forecast Sheet and to explain
+
+00:00:23.477 --> 00:00:26.615
+the confidence band to your manager in plain words
+
+00:00:27.516 --> 00:00:33.323
+Practice sheet S14-05 recorded in Excel desktop the Mac
+
+00:00:33.336 --> 00:00:34.443
+path is the same
+
+00:00:35.922 --> 00:00:38.774
+A trendline draws a straight line through the past
+
+00:00:38.787 --> 00:00:43.099
+and extends it Forecast Sheet uses a method called
+
+00:00:43.112 --> 00:00:47.799
+exponential smoothing that also learns the yearly pattern The
+
+00:00:47.812 --> 00:00:51.549
+confidence band says we are ninety-five percent sure the
+
+00:00:51.562 --> 00:00:54.075
+actual will land between these two lines
+
+00:00:55.547 --> 00:00:58.203
+The data is in two columns the month in
+
+00:00:58.216 --> 00:01:01.029
+A as a real date and sales in B
+
+00:01:01.042 --> 00:01:04.466
+Months must be evenly spaced with no gaps or
+
+00:01:04.479 --> 00:01:06.042
+the forecast can't run
+
+00:01:07.516 --> 00:01:12.440
+Select A1 to B43 On the Insert tab open
+
+00:01:12.453 --> 00:01:14.601
+the line chart button and pick Line
+
+00:01:16.063 --> 00:01:19.527
+With the chart selected go to Chart Design Add
+
+00:01:19.540 --> 00:01:24.971
+Chart Element Trendline Linear The dotted line shows sales
+
+00:01:24.984 --> 00:01:26.130
+rising steadily
+
+00:01:27.625 --> 00:01:30.906
+This is the common mistake using a straight line
+
+00:01:30.919 --> 00:01:34.893
+for seasonal sales It runs right through the Diwali
+
+00:01:34.906 --> 00:01:38.578
+peaks and the quiet monsoon months so it under-forecasts
+
+00:01:38.591 --> 00:01:41.000
+October and over-forecasts July
+
+00:01:42.469 --> 00:01:45.594
+Click cell A1 to leave the chart then select
+
+00:01:45.607 --> 00:01:50.075
+A1 to B43 again On the Data tab click
+
+00:01:50.088 --> 00:01:51.182
+Forecast Sheet
+
+00:01:52.672 --> 00:01:55.680
+Set Forecast End to the first of March twenty
+
+00:01:55.693 --> 00:02:00.343
+twenty-seven the last month of this financial year Click
+
+00:02:00.356 --> 00:02:04.823
+Options to see the settings confidence interval ninety-five percent
+
+00:02:04.992 --> 00:02:07.674
+and seasonality detected automatically
+
+00:02:09.172 --> 00:02:12.859
+Click Create Excel adds a new sheet with a
+
+00:02:12.872 --> 00:02:16.349
+table and a chart The orange line is the
+
+00:02:16.362 --> 00:02:19.278
+forecast and the thin lines are the lower and
+
+00:02:19.291 --> 00:02:20.880
+upper confidence bounds
+
+00:02:22.344 --> 00:02:27.112
+Scroll to the forecast rows October and November twenty
+
+00:02:27.125 --> 00:02:30.302
+twenty-six come out highest so Excel picked up the
+
+00:02:30.315 --> 00:02:35.601
+festive pattern Click C44 to see the formula FORECAST
+
+00:02:35.614 --> 00:02:38.661
+dot ETS which you can also use on its
+
+00:02:38.674 --> 00:02:39.078
+own
+
+00:02:40.547 --> 00:02:43.347
+Pro tip say it this way in a meeting
+
+00:02:44.247 --> 00:02:47.216
+We expect about this much in November and we
+
+00:02:47.229 --> 00:02:50.211
+are ninety-five percent confident it will be between the
+
+00:02:50.224 --> 00:02:54.273
+lower and upper figures Plan stock for the upper
+
+00:02:54.286 --> 00:02:56.448
+figure cash for the lower one
+
+00:02:57.922 --> 00:03:02.831
+On a Mac with Microsoft 365 it is Data Forecast
+
+00:03:02.844 --> 00:03:06.974
+Sheet with the same Options Excel for the web
+
+00:03:06.987 --> 00:03:10.437
+has no Forecast Sheet button but the FORECAST dot
+
+00:03:10.450 --> 00:03:12.351
+ETS function works there
+
+00:03:13.797 --> 00:03:19.177
+To recap trendlines suit steady growth Forecast Sheet handles
+
+00:03:19.190 --> 00:03:23.747
+seasons The confidence band shows how sure the forecast
+
+00:03:23.760 --> 00:03:24.086
+is
+
+00:03:25.563 --> 00:03:29.456
+Your challenge create the forecast again but in Options
+
+00:03:29.469 --> 00:03:33.506
+set seasonality to twelve manually and confidence to eighty
+
+00:03:33.519 --> 00:03:38.521
+percent What happens to the band The answer is
+
+00:03:38.534 --> 00:03:39.654
+on the Done sheet

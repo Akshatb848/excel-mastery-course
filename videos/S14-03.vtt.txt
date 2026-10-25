@@ -1,0 +1,190 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.221
+When a customer asks what the EMI would be
+
+00:00:03.234 --> 00:00:06.932
+at nine percent over fifteen years or ten percent
+
+00:00:06.945 --> 00:00:10.565
+over twenty-five you don't want to retype the formula
+
+00:00:10.578 --> 00:00:14.903
+each time A Data Table shows every combination of
+
+00:00:14.916 --> 00:00:16.804
+rate and tenure in one grid
+
+00:00:18.296 --> 00:00:21.200
+You will learn how a two-variable Data Table is
+
+00:00:21.213 --> 00:00:23.908
+laid out how to choose the row and column
+
+00:00:23.921 --> 00:00:28.493
+input cells and how to avoid swapping them Practice
+
+00:00:28.506 --> 00:00:34.131
+sheet S14-03 recorded in Excel desktop the Mac menu
+
+00:00:34.144 --> 00:00:34.926
+is the same
+
+00:00:36.390 --> 00:00:39.528
+A Data Table needs one formula in the top-left
+
+00:00:39.541 --> 00:00:43.382
+corner values to try across the top and values
+
+00:00:43.395 --> 00:00:47.082
+to try down the side Row input cell is
+
+00:00:47.095 --> 00:00:51.067
+the model cell that the top row replaces Column
+
+00:00:51.080 --> 00:00:54.087
+input cell is the one the side column replaces
+
+00:00:55.562 --> 00:00:59.275
+The model is at the top Thirty lakh rupees
+
+00:00:59.288 --> 00:01:01.944
+at eight and a half percent for twenty years
+
+00:01:01.957 --> 00:01:05.525
+gives an EMI of twenty-six thousand and thirty-five rupees
+
+00:01:05.538 --> 00:01:06.423
+in B5
+
+00:01:07.890 --> 00:01:10.924
+The grid is ready below tenures in B8 to
+
+00:01:10.937 --> 00:01:15.275
+F8, rates in A9 to A15 In the corner
+
+00:01:15.288 --> 00:01:19.741
+cell A8, type equals B5 and press Return The
+
+00:01:19.754 --> 00:01:21.824
+corner must point at the result
+
+00:01:23.296 --> 00:01:28.025
+Select A8 to F15 On the Data tab open
+
+00:01:28.038 --> 00:01:30.785
+What-If Analysis and choose Data Table
+
+00:01:32.250 --> 00:01:36.822
+First the common mistake Put B3, the rate in
+
+00:01:36.835 --> 00:01:39.934
+Row input cell and B4, the tenure in Column
+
+00:01:39.947 --> 00:01:44.192
+input cell and click OK The numbers make no
+
+00:01:44.205 --> 00:01:47.890
+sense because Excel is plugging years in as interest
+
+00:01:47.903 --> 00:01:48.372
+rates
+
+00:01:49.812 --> 00:01:54.163
+Press Command Z to undo Remember the top row
+
+00:01:54.176 --> 00:01:58.629
+holds tenures so Row input cell is B4 The
+
+00:01:58.642 --> 00:02:01.871
+left column holds rates so Column input cell is
+
+00:02:01.884 --> 00:02:02.509
+B3
+
+00:02:03.984 --> 00:02:08.307
+Select A8 to F15 again open Data Table type
+
+00:02:08.320 --> 00:02:11.406
+B4 for Row input cell and B3 for Column
+
+00:02:11.419 --> 00:02:13.463
+input cell and click OK
+
+00:02:14.937 --> 00:02:19.262
+Check one cell against the model D11 is eight
+
+00:02:19.275 --> 00:02:22.686
+and a half percent for twenty years twenty-six thousand
+
+00:02:22.699 --> 00:02:27.127
+and thirty-five rupees the same as B5 At ten
+
+00:02:27.140 --> 00:02:30.525
+and a half percent for ten years B15 shows
+
+00:02:30.538 --> 00:02:32.660
+forty thousand four hundred and eighty
+
+00:02:34.140 --> 00:02:37.397
+It is live Change the loan in B2 to
+
+00:02:37.410 --> 00:02:40.783
+forty lakh and every EMI in the grid updates
+
+00:02:41.668 --> 00:02:43.921
+Then set it back to thirty lakh
+
+00:02:45.390 --> 00:02:48.554
+Pro tip you can't edit one cell inside the
+
+00:02:48.567 --> 00:02:51.536
+grid Excel says you can't change part of a
+
+00:02:51.549 --> 00:02:55.926
+data table To remove it select the whole results
+
+00:02:55.939 --> 00:03:00.041
+area and press Delete Big tables can slow a
+
+00:03:00.054 --> 00:03:03.960
+workbook so you can set calculation to Automatic except
+
+00:03:03.973 --> 00:03:05.184
+for data tables
+
+00:03:06.656 --> 00:03:10.562
+On a Mac it is Data What-If Analysis Data
+
+00:03:10.575 --> 00:03:14.588
+Table with the same two boxes Excel for the
+
+00:03:14.601 --> 00:03:18.338
+web shows existing data tables but can't create one
+
+00:03:18.468 --> 00:03:20.473
+so build them in the Mac app
+
+00:03:21.906 --> 00:03:25.200
+To recap put the result formula in the corner
+
+00:03:26.140 --> 00:03:29.564
+Row input cell matches the values across the top
+
+00:03:29.786 --> 00:03:33.015
+Column input cell matches the values down the side
+
+00:03:33.900 --> 00:03:36.010
+Check one cell against the model
+
+00:03:37.500 --> 00:03:41.382
+Your challenge is below the EMI grid Build a
+
+00:03:41.395 --> 00:03:44.572
+profit table for prices across the top and units
+
+00:03:44.585 --> 00:03:49.507
+down the side starting at A25 The answer is
+
+00:03:49.520 --> 00:03:50.640
+on the Done sheet

@@ -1,0 +1,193 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.367
+Budget meetings always ask for three versions what if
+
+00:00:04.380 --> 00:00:09.526
+things go well as planned or badly Scenario Manager
+
+00:00:09.539 --> 00:00:12.468
+stores each version of your inputs under a name
+
+00:00:12.481 --> 00:00:15.216
+and builds a one-page summary comparing them
+
+00:00:16.704 --> 00:00:19.699
+You will learn to add scenarios show them on
+
+00:00:19.712 --> 00:00:23.540
+the model fix a typical entry mistake and create
+
+00:00:23.553 --> 00:00:30.078
+the summary report The practice sheet is S14-02 This
+
+00:00:30.092 --> 00:00:33.399
+lesson is recorded in Excel desktop and the Mac
+
+00:00:33.412 --> 00:00:34.493
+path is the same
+
+00:00:35.969 --> 00:00:39.042
+A scenario is just a saved set of values
+
+00:00:39.055 --> 00:00:43.367
+for a few input cells Scenario Manager can swap
+
+00:00:43.380 --> 00:00:46.179
+them into the model and its summary lists the
+
+00:00:46.192 --> 00:00:49.487
+result cells for every scenario side by side
+
+00:00:50.954 --> 00:00:54.886
+Here is the plan for financial year twenty-six twenty-seven
+
+00:00:55.813 --> 00:00:58.313
+Inputs are in B4 to B6, and they have
+
+00:00:58.326 --> 00:01:03.404
+names Growth Price Change and Cost Inflation At ten
+
+00:01:03.417 --> 00:01:07.024
+percent growth net profit in B19 is two crore
+
+00:01:07.037 --> 00:01:08.404
+eighteen lakh rupees
+
+00:01:09.875 --> 00:01:13.846
+On the Data tab click What-If Analysis then Scenario
+
+00:01:13.859 --> 00:01:19.643
+Manager Click Add Name the first scenario Base set
+
+00:01:19.656 --> 00:01:23.236
+Changing cells to B4 colon B6, and click OK
+
+00:01:24.719 --> 00:01:29.081
+The Scenario Values box shows today's numbers ten three
+
+00:01:29.094 --> 00:01:33.445
+and six percent as decimals They are the base
+
+00:01:33.458 --> 00:01:35.463
+case so just click OK
+
+00:01:36.938 --> 00:01:42.292
+Click Add again for Best Same changing cells Now
+
+00:01:42.305 --> 00:01:45.703
+watch a mistake many people make typing eighteen for
+
+00:01:45.716 --> 00:01:50.560
+eighteen percent Enter eighteen five and four and click
+
+00:01:50.573 --> 00:01:51.029
+OK
+
+00:01:52.500 --> 00:01:56.708
+Select Best and click Show Growth jumps to eighteen
+
+00:01:56.721 --> 00:02:00.927
+hundred percent and the profit is absurd The box
+
+00:02:00.940 --> 00:02:04.546
+takes plain numbers so eighteen percent must be typed
+
+00:02:04.559 --> 00:02:06.395
+as zero point one eight
+
+00:02:07.891 --> 00:02:11.276
+To fix it keep Best selected and click Edit
+
+00:02:12.190 --> 00:02:15.315
+Click OK on the cells then type zero point
+
+00:02:15.328 --> 00:02:19.065
+one eight zero point zero five and zero point
+
+00:02:19.078 --> 00:02:21.252
+zero four and click OK
+
+00:02:22.704 --> 00:02:25.855
+Add the Worst case the same way zero point
+
+00:02:25.868 --> 00:02:29.384
+zero two growth zero price change and zero point
+
+00:02:29.397 --> 00:02:31.285
+zero nine cost inflation
+
+00:02:32.766 --> 00:02:36.974
+Select Best and click Show Net profit rises to
+
+00:02:36.987 --> 00:02:41.505
+about two crore ninety-nine lakh Select Worst and click
+
+00:02:41.518 --> 00:02:45.672
+Show It falls to about one crore twenty-four lakh
+
+00:02:47.141 --> 00:02:53.042
+Now the report Click Summary Choose Scenario summary and
+
+00:02:53.055 --> 00:02:57.065
+in Result cells type B16 comma B19, for revenue
+
+00:02:57.078 --> 00:02:59.969
+and net profit Click OK
+
+00:03:01.438 --> 00:03:06.102
+Excel adds a sheet called Scenario Summary Because we
+
+00:03:06.115 --> 00:03:09.383
+named the cells rows read Growth and Net Profit
+
+00:03:09.396 --> 00:03:13.406
+instead of cell addresses It is a static report
+
+00:03:13.536 --> 00:03:16.701
+so create it again after you change a scenario
+
+00:03:18.157 --> 00:03:24.094
+Back on sheet S14-02 open Scenario Manager select Base
+
+00:03:24.238 --> 00:03:27.089
+click Show and then Close so the model is
+
+00:03:27.102 --> 00:03:28.183
+back to the plan
+
+00:03:29.657 --> 00:03:33.680
+On a Mac Scenario Manager is under Data What-If
+
+00:03:33.693 --> 00:03:38.539
+Analysis exactly as here Excel for the web can't
+
+00:03:38.552 --> 00:03:41.886
+create scenarios so build them in the Mac app
+
+00:03:42.771 --> 00:03:46.209
+Scenarios are saved inside the file and open fine
+
+00:03:46.222 --> 00:03:47.081
+on Windows
+
+00:03:48.547 --> 00:03:51.633
+To recap a scenario is a named set of
+
+00:03:51.646 --> 00:03:57.924
+input values Type percentages as decimals The summary report
+
+00:03:57.937 --> 00:04:00.750
+compares every scenario on one sheet
+
+00:04:02.219 --> 00:04:06.216
+Your challenge add a Festive scenario with twenty-five percent
+
+00:04:06.229 --> 00:04:09.719
+growth two percent price change and eight percent cost
+
+00:04:09.732 --> 00:04:14.096
+inflation then rebuild the summary The answer is on
+
+00:04:14.109 --> 00:04:15.034
+the Done sheet
