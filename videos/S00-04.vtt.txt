@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.680
+Hello and welcome! Let us take a few minutes to sit down together and configure your workspace.
+
+00:00:05.680 --> 00:00:09.200
+We will use this explainer to get your Mac properly set up for Excel,
+
+00:00:09.200 --> 00:00:11.200
+specifically tailored for your work in India.
+
+00:00:12.000 --> 00:00:16.640
+Using a Mac for work in India requires a few specific adjustments to ensure your dates,
+
+00:00:16.640 --> 00:00:20.080
+currency, and keyboards operate exactly as you expect them to.
+
+00:00:20.080 --> 00:00:23.920
+Taking a few minutes right now to adjust these foundational settings will save you
+
+00:00:23.920 --> 00:00:26.000
+a considerable amount of frustration later on.
+
+00:00:26.960 --> 00:00:29.760
+Section 1 is Mac System Settings for India.
+
+00:00:30.320 --> 00:00:34.640
+Let us dive right in and fix the most common issue new users face.
+
+00:00:34.640 --> 00:00:38.160
+And we will do this by starting outside the Excel application itself.
+
+00:00:39.200 --> 00:00:42.560
+You might be surprised to know that dates and currency formats
+
+00:00:42.560 --> 00:00:45.200
+actually come directly from your Mac's system settings.
+
+00:00:45.200 --> 00:00:47.360
+They do not come from Excel itself.
+
+00:00:47.360 --> 00:00:50.320
+So if a colleague sends a file showing the wrong date format,
+
+00:00:50.320 --> 00:00:54.480
+perhaps the American month before day format, please do not worry.
+
+00:00:54.560 --> 00:00:56.960
+Your system settings menu is the first place you should check.
+
+00:00:57.760 --> 00:01:01.440
+To set your region to India, you just need to open your Mac's system settings.
+
+00:01:01.440 --> 00:01:06.160
+Go to General, Select Language and Region, and finally set the region to India.
+
+00:01:06.160 --> 00:01:09.920
+After you do this, please remember to restart Excel so it can read dates
+
+00:01:09.920 --> 00:01:13.280
+correctly as day-month-year and offer you the standard rupee symbol.
+
+00:01:14.240 --> 00:01:17.520
+Moving to Section 2, Lack and Crore Number Format.
+
+00:01:17.520 --> 00:01:19.840
+What is truly interesting here is how we can
+
+00:01:19.840 --> 00:01:22.800
+completely customize the way numbers are grouped on your screen.
+
+00:01:23.520 --> 00:01:26.800
+The India region setting usually gives you the standard 12, lack,
+
+00:01:26.800 --> 00:01:30.560
+34,567 style grouping in many formats.
+
+00:01:30.560 --> 00:01:33.840
+However, you can copy this specific custom number format string
+
+00:01:33.840 --> 00:01:38.080
+to guarantee that your lock and grow groupings always display perfectly in your reports.
+
+00:01:38.080 --> 00:01:41.600
+You just paste this text directly into the custom format box inside Excel
+
+00:01:41.600 --> 00:01:42.720
+and it will take care of the rest.
+
+00:01:43.680 --> 00:01:46.400
+Section 3 covers OneDrive and autosave basics.
+
+00:01:47.040 --> 00:01:51.760
+Let us move to this next topic and see how it builds a safer environment for your daily work.
+
+00:01:52.560 --> 00:01:57.280
+You will need to turn on the autosave switch located in the top left corner of your Excel window.
+
+00:01:57.280 --> 00:02:01.440
+Saving your files to OneDrive or SharePoint is mandatory if you want to protect your work
+
+00:02:01.440 --> 00:02:05.680
+with version history. It is also required if you are planning to use the new Copilot features.
+
+00:02:06.640 --> 00:02:08.880
+Section 4 is checking your Excel version.
+
+00:02:09.440 --> 00:02:13.760
+The crucial point to remember here is knowing exactly which version of the software you are
+
+00:02:13.760 --> 00:02:16.400
+running before you start looking for new functions online.
+
+00:02:17.200 --> 00:02:20.560
+You can verify your version by going to the Excel menu and clicking
+
+00:02:20.560 --> 00:02:26.160
+About Microsoft Excel. You will notice that only Microsoft 365 receives monthly feature updates.
+
+00:02:26.160 --> 00:02:31.120
+If you have Excel 2021 or 2024 for Mac, you will not receive new functions.
+
+00:02:31.120 --> 00:02:35.600
+You can update your software easily by simply going to the Help menu and selecting Check for Updates.
+
+00:02:36.560 --> 00:02:39.520
+Section 5 is important Excel preferences.
+
+00:02:39.520 --> 00:02:44.080
+Next, we should adjust some basic software preferences to make your daily tasks much easier.
+
+00:02:44.880 --> 00:02:48.800
+On a Mac, you press Command and comma to open your preferences.
+
+00:02:48.800 --> 00:02:50.960
+This is completely different from Windows.
+
+00:02:50.960 --> 00:02:53.120
+Let us look at some highly useful changes you can make here.
+
+00:02:53.920 --> 00:02:57.840
+Under General, you can set your default font and keep the interface in light mode,
+
+00:02:57.840 --> 00:03:01.600
+even if your Mac uses dark mode globally, which many find easier on the eyes.
+
+00:03:02.320 --> 00:03:06.240
+Under Edit, make sure the selection moves down after pressing Return.
+
+00:03:06.240 --> 00:03:08.640
+Also, verify that calculation is set to Automatic.
+
+00:03:09.200 --> 00:03:13.520
+You can use AutoCorrect to add keyboard shortcuts for long names you type frequently.
+
+00:03:14.240 --> 00:03:18.720
+Finally, under Ribbon and Toolbar, you should definitely turn on the Developer tab.
+
+00:03:19.680 --> 00:03:22.640
+Section 6 covers Mac keyboard function keys.
+
+00:03:22.640 --> 00:03:24.240
+Finally, let us look at the keyboard,
+
+00:03:24.240 --> 00:03:27.120
+since MacBook keyboards behave a little differently out of the box.
+
+00:03:28.000 --> 00:03:32.800
+The top row of your keyboard usually controls system settings like brightness and volume.
+
+00:03:32.800 --> 00:03:37.920
+Therefore, you simply hold the FN key to use your standard F keys for common Excel shortcuts,
+
+00:03:37.920 --> 00:03:41.440
+like pressing F2 to edit a cell or F4 to lock a reference.
+
+00:03:42.240 --> 00:03:45.440
+Alternatively, you can follow these steps in your Mac's system settings
+
+00:03:45.440 --> 00:03:48.640
+to permanently lock the top row to standard function keys.
+
+00:03:48.640 --> 00:03:51.200
+You go to System Settings, click Keyboard,
+
+00:03:51.200 --> 00:03:54.000
+click Keyboard Shortcuts, and select Function Keys.
+
+00:03:54.560 --> 00:03:56.240
+While you are there in the system settings,
+
+00:03:56.240 --> 00:04:00.560
+you can also change any control shortcuts that clash with macOS input sources.
+
+00:04:00.560 --> 00:04:04.480
+For example, pressing Ctrl and Space switches the input source on a Mac,
+
+00:04:04.480 --> 00:04:06.320
+which might interrupt your workflow in Excel.
+
+00:04:07.040 --> 00:04:08.960
+Having walked through this explainer together,
+
+00:04:09.040 --> 00:04:13.360
+we have successfully configured your region, number formats, and keyboard settings.
+
+00:04:13.360 --> 00:04:17.920
+You are now fully equipped to start your daily tasks with complete confidence.
+
+00:04:17.920 --> 00:04:22.160
+Are you ready to open a fresh spreadsheet and test out your newly optimized workspace?

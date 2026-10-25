@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.600
+Welcome to This Explainer.
+
+00:00:01.600 --> 00:00:06.400
+Today, we are looking at coming from Windows and what changes on a Mac.
+
+00:00:06.400 --> 00:00:10.640
+If you have used Excel on Windows for years, moving to a MacBook means you will need to
+
+00:00:10.640 --> 00:00:12.240
+learn a few new habits.
+
+00:00:12.240 --> 00:00:16.240
+But do not worry, we will walk through the transition step-by-step so you can get back
+
+00:00:16.240 --> 00:00:18.280
+to working smoothly.
+
+00:00:18.280 --> 00:00:22.240
+Before we talk about new keyboard layouts, let us address the biggest concern for any
+
+00:00:22.240 --> 00:00:24.800
+professional moving to a new operating system.
+
+00:00:24.800 --> 00:00:28.440
+You might be wondering right now if your years of hard work, your existing files,
+
+00:00:28.440 --> 00:00:31.920
+and your complex formulas will still work safely.
+
+00:00:31.920 --> 00:00:34.600
+The good news is that they are perfectly safe.
+
+00:00:34.600 --> 00:00:39.900
+Your .xlsx files, your formulas, and your pivot tables work exactly the same on a Mac.
+
+00:00:39.900 --> 00:00:43.360
+You can open your workbooks from yesterday and just continue working without any conversion
+
+00:00:43.360 --> 00:00:44.360
+at all.
+
+00:00:44.360 --> 00:00:48.080
+Excel runs these files seamlessly across both platforms.
+
+00:00:48.080 --> 00:00:51.800
+Let us move to section 1, the Mac Keyboard Explained.
+
+00:00:51.800 --> 00:00:55.400
+The first thing you will notice is the new layout of modifier keys at the bottom of
+
+00:00:55.400 --> 00:00:56.440
+your keyboard.
+
+00:00:56.440 --> 00:01:02.240
+The Command, Option, Control, and Shift keys replace your standard Windows modifiers.
+
+00:01:02.240 --> 00:01:06.780
+The biggest mental shift for you will be learning that the Mac Command key takes over the vast
+
+00:01:06.780 --> 00:01:10.720
+majority of tasks that the Control key performed on Windows.
+
+00:01:10.720 --> 00:01:13.200
+Now let us look at the top row of the keyboard.
+
+00:01:13.200 --> 00:01:16.920
+Because a Mac keyboard defaults to volume and brightness controls on the top row, you
+
+00:01:16.920 --> 00:01:20.400
+must hold the FN key to use your standard function keys.
+
+00:01:20.400 --> 00:01:23.480
+You will definitely need to remember this when you want to use familiar shortcuts like
+
+00:01:23.480 --> 00:01:29.140
+F2, F4, or F9, unless you decide to change your system settings later.
+
+00:01:29.140 --> 00:01:31.960
+Another major difference is how you handle mouse actions.
+
+00:01:31.960 --> 00:01:36.840
+A standard Windows right-click is replaced by a simple two-finger tap on the trackpad.
+
+00:01:36.840 --> 00:01:40.520
+To open your context menus, you just tap the trackpad with two fingers instead of
+
+00:01:40.520 --> 00:01:42.600
+clicking a physical right button.
+
+00:01:42.600 --> 00:01:47.000
+It is a small adjustment, but it is very important for your daily navigation.
+
+00:01:47.000 --> 00:01:50.720
+Moving on to section 2, Interface and System Setup.
+
+00:01:50.720 --> 00:01:53.840
+There is a major interface shift that you need to note.
+
+00:01:53.840 --> 00:01:57.720
+On Windows, you are used to looking inside the Excel window for your settings, under
+
+00:01:57.720 --> 00:01:59.960
+File and then Options.
+
+00:01:59.960 --> 00:02:02.080
+On a Mac, you must look higher up.
+
+00:02:02.080 --> 00:02:06.880
+You will use the macOS menu bar located at the very top of your screen, entirely outside
+
+00:02:06.880 --> 00:02:07.980
+the Excel window.
+
+00:02:07.980 --> 00:02:11.680
+And from there, you select Excel and then Preferences.
+
+00:02:11.680 --> 00:02:15.240
+Your next crucial step is configuring your system settings.
+
+00:02:15.240 --> 00:02:19.580
+Excel takes its date and currency formats directly from the Mac operating system.
+
+00:02:19.580 --> 00:02:22.540
+Because of this, you must set your Mac region to India.
+
+00:02:22.540 --> 00:02:27.180
+You do this by opening System Settings, going to General, selecting Language and Region, and
+
+00:02:27.180 --> 00:02:29.580
+setting the region to India.
+
+00:02:29.580 --> 00:02:32.300
+Doing this regional setup matters a lot for your daily work.
+
+00:02:32.300 --> 00:02:36.460
+It ensures you see the correct rupee symbol and the proper date format in your spreadsheets.
+
+00:02:36.460 --> 00:02:40.140
+Crucially, it provides the correct lock and crore grouping for your numbers, which
+
+00:02:40.140 --> 00:02:43.940
+is absolutely essential if you handle financial data.
+
+00:02:43.940 --> 00:02:49.240
+Let us look at our third and final section, 12 Everyday Excel Shortcuts.
+
+00:02:49.240 --> 00:02:53.240
+We have mapped out 12 essential shortcuts you need for your daily routine.
+
+00:02:53.240 --> 00:02:58.120
+Many of these simply swap the Windows control key for the Mac command key, like copy, paste,
+
+00:02:58.120 --> 00:03:00.800
+undo, save, find, and format cells.
+
+00:03:00.800 --> 00:03:03.960
+However, you should pay attention to the new combinations.
+
+00:03:03.960 --> 00:03:09.840
+You will use Command-T for an absolute reference, you will use Shift-Command-T for AutoSum,
+
+00:03:09.840 --> 00:03:11.920
+and Command-D to fill down.
+
+00:03:11.920 --> 00:03:15.600
+For filters, the shortcut is Command-Shift-F.
+
+00:03:15.600 --> 00:03:19.160
+Very importantly, you must use Control-U to edit a cell.
+
+00:03:19.160 --> 00:03:22.960
+Command-Control-Option-Return to start a new line within a cell.
+
+00:03:22.960 --> 00:03:26.720
+You might feel a little overwhelmed by that list, but do not worry.
+
+00:03:26.720 --> 00:03:29.560
+Our sources recommend a very simple strategy.
+
+00:03:29.560 --> 00:03:34.360
+Instead of memorizing the entire list at once, try to learn just three shortcuts a week.
+
+00:03:34.360 --> 00:03:38.560
+Just put away your mouse and use the keyboard for three specific actions each week until
+
+00:03:38.560 --> 00:03:41.040
+they become automatic.
+
+00:03:41.040 --> 00:03:43.880
+Consistent practice will build your new muscle memory very rapidly.
+
+00:03:43.880 --> 00:03:47.360
+So, I will leave you with this question to think about.
+
+00:03:47.360 --> 00:03:52.160
+Which three shortcuts will you choose to master first to speed up your daily work?
+
+00:03:52.160 --> 00:03:55.440
+Thank you for joining this Explainer, and enjoy your new Mac experience!

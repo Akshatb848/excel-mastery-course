@@ -1,0 +1,406 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.600
+For decades, Windows has been the undisputed king of serious data work. If you worked in finance or
+
+00:00:05.600 --> 00:00:10.640
+data analytics, a Mac was simply out of the question. But the hardware landscape changed
+
+00:00:10.640 --> 00:00:15.440
+dramatically with the introduction of Apple Silicon. Microsoft responded by significantly
+
+00:00:15.440 --> 00:00:19.920
+updating their Mac software. Today, in this explainer, we are going to look objectively
+
+00:00:19.920 --> 00:00:24.880
+at the facts, based on the latest platform updates for 2026. We want to determine if
+
+00:00:24.880 --> 00:00:28.160
+Excel for Mac can finally handle your daily professional tasks.
+
+00:00:29.040 --> 00:00:33.760
+Many professionals are considering a switch to Mac. So, we need to look at what has actually
+
+00:00:33.760 --> 00:00:38.640
+changed. Before we can answer this larger question, we must address a very specific
+
+00:00:38.640 --> 00:00:43.840
+and fundamental lesson. We must determine which exact version of Excel you have installed on
+
+00:00:43.840 --> 00:00:48.800
+your Mac right now. This is a highly relevant step. Your daily software experience depends
+
+00:00:48.800 --> 00:00:53.520
+entirely on your specific installation. Let us walk through exactly how you can check
+
+00:00:53.520 --> 00:00:58.880
+this on your machine. First, you need to open your Excel application. Once the application
+
+00:00:58.880 --> 00:01:03.440
+is open, look at the very top-left corner of your screen. You will see the Excel menu
+
+00:01:03.440 --> 00:01:07.920
+in the Apple menu bar. You must click on the word Excel. A drop-down menu will appear.
+
+00:01:08.480 --> 00:01:13.600
+You should select the first option, which says About Microsoft Excel. A dialog box will
+
+00:01:13.600 --> 00:01:18.000
+pop up on your screen. This box contains all the critical information about your license type
+
+00:01:18.000 --> 00:01:22.000
+and your current version number. You should make a note of this version number. It is
+
+00:01:22.000 --> 00:01:25.280
+also very important to ensure that you are running the most current software available
+
+00:01:25.280 --> 00:01:30.480
+for your license. You can do this by closing the dialog box and looking at the top menu bar again.
+
+00:01:30.480 --> 00:01:34.320
+This time, you need to click on the Help menu. From that drop-down list,
+
+00:01:34.320 --> 00:01:38.800
+you must select the option called Check for Updates. Microsoft Auto Update will launch
+
+00:01:38.800 --> 00:01:43.200
+and tell you if you need to download a newer version. It is crucial to know your exact
+
+00:01:43.200 --> 00:01:48.400
+software version and ensure it is fully updated. Now, we will discuss why knowing this exact
+
+00:01:48.400 --> 00:01:53.920
+version dictates what features you can use. Core functions such as dynamic arrays, pivot
+
+00:01:53.920 --> 00:01:58.960
+tables, and xlookup operate correctly on both platforms. But this brings us back to understanding
+
+00:01:58.960 --> 00:02:03.920
+the exact version you found in the previous step. There are three distinct Excel environments
+
+00:02:03.920 --> 00:02:09.120
+you might be using on your Mac. The first environment is Microsoft 365. This is a
+
+00:02:09.120 --> 00:02:14.320
+subscription service. If you have Microsoft 365, you receive monthly updates automatically.
+
+00:02:14.320 --> 00:02:18.000
+You also get immediate access to the newest functions as soon as they are released.
+
+00:02:18.720 --> 00:02:22.560
+Furthermore, this subscription provides advanced productivity features like CoPilot.
+
+00:02:23.360 --> 00:02:28.320
+The second environment involves using a perpetual license. Examples of a perpetual license are
+
+00:02:28.320 --> 00:02:34.880
+Excel 2021 for Mac or Excel 2024 for Mac. You pay for these versions once. They are very capable
+
+00:02:34.880 --> 00:02:39.520
+programs, but they remain frozen in time. You will not receive any new feature updates or new
+
+00:02:39.520 --> 00:02:45.520
+calculation functions after your initial purchase. The third environment is Excel for the web. This
+
+00:02:45.520 --> 00:02:50.560
+version runs entirely inside your internet browser. It is available for free and it features the exact
+
+00:02:50.560 --> 00:02:55.200
+same ribbon layout as the desktop version. However, Excel for the web lacks the serious
+
+00:02:55.200 --> 00:03:00.000
+processing power required for heavy data analysis. It cannot handle massive spreadsheets the way the
+
+00:03:00.000 --> 00:03:04.800
+installed desktop applications can. Therefore, your choice of environment directly impacts your
+
+00:03:04.800 --> 00:03:09.360
+capabilities. Please note that for the advanced sections of this explainer, you will absolutely
+
+00:03:09.440 --> 00:03:13.920
+need a Microsoft 365 subscription to follow along. You will not be able to execute the
+
+00:03:13.920 --> 00:03:17.760
+modern features we discuss if you are using a perpetual license or the web version.
+
+00:03:18.400 --> 00:03:23.200
+Let us look at the daily user experience. The most immediate physical adjustment you will make
+
+00:03:23.200 --> 00:03:27.840
+is learning to use the command key instead of the control key for everyday tasks. Common
+
+00:03:27.840 --> 00:03:33.920
+actions like copy, paste, and find use the command key on a Mac. This transition is rarely
+
+00:03:33.920 --> 00:03:38.560
+a perfect swap. This is where your existing muscle memory will face a real test. For
+
+00:03:38.560 --> 00:03:43.280
+example, inserting the current date uses the control key on a Mac, but inserting the time
+
+00:03:43.280 --> 00:03:48.000
+uses the command key. If your fingers are used to flying across a Windows keyboard without thinking,
+
+00:03:48.000 --> 00:03:52.080
+you will inevitably experience some frustrating moments. You will likely press the wrong
+
+00:03:52.080 --> 00:03:57.040
+modifier key quite often. You will need dedicated time and patience to retrain your hands.
+
+00:03:57.040 --> 00:03:59.920
+You have to learn to navigate these subtle physical differences automatically.
+
+00:04:00.800 --> 00:04:04.000
+This brings us to a very common pain point for longtime Windows switchers.
+
+00:04:04.560 --> 00:04:08.400
+On a standard Mac laptop, the top row of keys defaults to hardware controls.
+
+00:04:08.720 --> 00:04:13.280
+These include adjusting your screen brightness or changing the volume. So, if you reach out to tap
+
+00:04:13.280 --> 00:04:18.480
+F2 to edit a cell, you might just end up turning down your music instead. The physical awkwardness
+
+00:04:18.480 --> 00:04:21.680
+of having to hold down the function key at the bottom corner of your keyboard can be
+
+00:04:21.680 --> 00:04:26.560
+highly disruptive. Fortunately, Mac provides native alternatives that are absolute lifesavers
+
+00:04:26.560 --> 00:04:30.240
+for your productivity. Instead of fighting with the function key, you can simply press
+
+00:04:30.240 --> 00:04:35.040
+control U to edit a cell. You can also use command T to toggle those absolute references.
+
+00:04:35.760 --> 00:04:39.280
+Power users in finance and banking often pride themselves on operating
+
+00:04:39.280 --> 00:04:44.240
+Excel entirely without touching the mouse. This makes keyboard navigation a critical factor.
+
+00:04:44.960 --> 00:04:49.760
+Ribbon key tips are partially supported in newer Mac versions, but they have a significant catch.
+
+00:04:50.320 --> 00:04:55.760
+If you have version 16.89 or later, you can turn on key tips in your accessibility settings.
+
+00:04:55.760 --> 00:05:00.080
+Apple keeps them turned off by default. However, this modern system simply does not
+
+00:05:00.080 --> 00:05:05.360
+support the legacy Alt key combinations. The loss of classic sequences like Alt E
+
+00:05:05.360 --> 00:05:11.600
+SV for paste special values is a massive workflow disruption. If your entire modeling speed relies
+
+00:05:11.600 --> 00:05:15.840
+on those specific rapid keystrokes, the native Mac environment is going to slow you down.
+
+00:05:15.840 --> 00:05:18.960
+You will likely need third-party software to get that classic functionality back.
+
+00:05:19.840 --> 00:05:24.160
+Keyboard limitations are one thing, but how does this impact our data processing?
+
+00:05:24.720 --> 00:05:29.280
+Power Query is quite usable on a Mac. The editor itself works remarkably well for
+
+00:05:29.280 --> 00:05:35.120
+shaping data. You can comfortably pull from CSV files, JSON files, or SQL Server.
+
+00:05:35.120 --> 00:05:39.840
+But the problem arises with specific data sources. Imagine an analyst opening a file
+
+00:05:39.840 --> 00:05:43.840
+provided by a colleague. That colleague built an automated query on Windows that scrapes
+
+00:05:43.840 --> 00:05:47.440
+live data from a web page, or perhaps it pulls from an Oracle database.
+
+00:05:48.000 --> 00:05:53.200
+On a Mac, that query is completely dead on arrival. You simply cannot refresh data directly
+
+00:05:53.200 --> 00:05:58.640
+from web pages, PDF documents, or ODBC databases without finding a complicated workaround.
+
+00:05:59.280 --> 00:06:03.520
+Sharing complex queries across a mixed platform team requires careful planning to avoid these
+
+00:06:03.520 --> 00:06:09.440
+broken workflows. Now we arrive at a total deal breaker for business intelligence professionals.
+
+00:06:10.000 --> 00:06:14.560
+You cannot add tables to the data model or write DAX measures natively on a Mac.
+
+00:06:15.120 --> 00:06:20.480
+PowerPivot simply does not exist on the Apple platform. This is not just a minor inconvenience.
+
+00:06:20.480 --> 00:06:25.280
+It is a massive roadblock. If your daily reporting relies on creating relationships
+
+00:06:25.280 --> 00:06:30.160
+between massive tables within the data model, Excel for Mac will flat out reject your workflow.
+
+00:06:30.800 --> 00:06:34.880
+To accomplish this kind of heavy database lifting, you have very limited options.
+
+00:06:34.880 --> 00:06:38.400
+You would be forced to run a virtual machine with Windows on your Mac,
+
+00:06:38.400 --> 00:06:42.160
+or you would have to completely migrate your reporting systems to Power BI on the web.
+
+00:06:42.800 --> 00:06:46.400
+Despite these roadblocks, there is a fascinating story unfolding.
+
+00:06:46.400 --> 00:06:49.120
+Microsoft is actively bridging the gap between platforms.
+
+00:06:49.840 --> 00:06:52.800
+Let us look at the highly requested Python and Excel feature.
+
+00:06:53.280 --> 00:06:57.280
+Python is rolling out in distinct phases. Windows users on the current channel
+
+00:06:57.280 --> 00:07:02.640
+receive this capability first, with version 2408. But Mac users are no longer entirely
+
+00:07:02.640 --> 00:07:07.680
+left behind. They recently gained preview access in the beta channel with version 16.95.
+
+00:07:08.320 --> 00:07:12.880
+It becomes generally available on the Mac current channel, starting with version 16.96.
+
+00:07:13.520 --> 00:07:17.520
+This phased rollout shows a clear commitment. While Mac users might have to wait a little
+
+00:07:17.520 --> 00:07:22.000
+longer in the queue, Microsoft is actively working to bring advanced analytical tools to
+
+00:07:22.080 --> 00:07:25.840
+the Apple ecosystem. So, once Python arrives on your Mac,
+
+00:07:25.840 --> 00:07:30.640
+what is the practical impact on your work? You can author Python formulas directly in
+
+00:07:30.640 --> 00:07:35.840
+the spreadsheet grid. You can utilize complex data frames and create advanced charts safely
+
+00:07:35.840 --> 00:07:39.840
+in the Microsoft cloud. But you must pay close attention to the compute limits.
+
+00:07:40.560 --> 00:07:45.520
+A qualifying Microsoft 365 subscription gives you standard calculation speeds.
+
+00:07:45.520 --> 00:07:49.280
+It also provides a monthly allowance of lightning-fast premium compute.
+
+00:07:50.080 --> 00:07:53.360
+Standard compute might be perfectly fine for basic datasets,
+
+00:07:53.360 --> 00:07:57.920
+but if you are handling massive data frames, you will burn through that monthly limit quickly.
+
+00:07:57.920 --> 00:08:01.520
+Once you hit the cap, your processing speed will automatically throttle down.
+
+00:08:02.080 --> 00:08:07.200
+You will then have to purchase a specific Python and Excel add-on license to regain unlimited
+
+00:08:07.200 --> 00:08:12.800
+premium speed. Automation and external tools present another hidden trap for switchers.
+
+00:08:12.800 --> 00:08:17.360
+The native Visual Basic Editor is present, and most basic macros you record will run
+
+00:08:17.360 --> 00:08:23.040
+properly on a Mac. However, any code that relies strictly on Windows architecture will crash.
+
+00:08:23.040 --> 00:08:28.720
+This includes legacy macros making Windows API calls or utilizing ActiveX interactive buttons.
+
+00:08:29.600 --> 00:08:31.520
+More importantly for our finance demographic,
+
+00:08:32.160 --> 00:08:37.520
+COM add-ins are entirely incompatible with a Mac. If your daily routine relies on specialized
+
+00:08:37.520 --> 00:08:42.960
+data plugins from Bloomberg, FactSet, or Capital IQ, you are out of luck natively.
+
+00:08:42.960 --> 00:08:45.600
+Those tools are built exclusively for the Windows operating system.
+
+00:08:46.160 --> 00:08:49.920
+You must absolutely verify compatibility with your vendors before changing your hardware.
+
+00:08:50.640 --> 00:08:54.560
+We have unpacked exactly where the software aligns and where it splinters.
+
+00:08:55.200 --> 00:08:57.600
+So, we return to our core practical question.
+
+00:08:58.160 --> 00:09:00.800
+Should you actually make the switch to a Mac for Excelwork?
+
+00:09:01.520 --> 00:09:06.880
+The reality is that there is no universal answer. On one hand, a modern Mac provides a sleek,
+
+00:09:06.880 --> 00:09:11.360
+incredibly fast hardware experience. It also offers excellent battery life that is hard to beat.
+
+00:09:11.920 --> 00:09:14.720
+The software is highly capable for a large percentage of users.
+
+00:09:15.440 --> 00:09:20.320
+On the other hand, the software reality requires serious compromises if you delve into advanced data
+
+00:09:20.320 --> 00:09:26.080
+connections or legacy automation. Your decision depends entirely on the specific demands of your
+
+00:09:26.080 --> 00:09:30.960
+daily professional workflow. Let us walk deliberately through this decision matrix to see where you
+
+00:09:30.960 --> 00:09:36.560
+fit. If your work revolves around standard financial modeling, regular formulas, pivot tables,
+
+00:09:36.560 --> 00:09:41.760
+and localized Power Query files, you are a great candidate for a Mac. You just need to endure the
+
+00:09:41.760 --> 00:09:46.960
+temporary frustration of retraining your keyboard muscle memory. However, contrast that with a power
+
+00:09:46.960 --> 00:09:52.160
+user. If you are someone who builds relational databases in PowerPivot or writes complex DAX
+
+00:09:52.160 --> 00:09:57.520
+measures, you must stay on Windows. The same applies if you absolutely need that Bloomberg
+
+00:09:57.520 --> 00:10:01.920
+Calm Add-In to pull real-time market data. Moving to a Mac natively will simply prevent
+
+00:10:01.920 --> 00:10:07.040
+you from doing your job. The Apple hardware might be incredibly tempting, but preparation
+
+00:10:07.040 --> 00:10:11.520
+is the absolute key to a successful transition. You have to be honest about your technical
+
+00:10:11.520 --> 00:10:17.120
+requirements. Before you buy that shiny new Mac, look at your most complex Excel file today.
+
+00:10:17.120 --> 00:10:21.200
+If you had to rebuild it from scratch without your favorite legacy keyboard shortcuts,
+
+00:10:21.200 --> 00:10:25.280
+could you do it? Could you manage without your specialized database connections and your
+
+00:10:25.280 --> 00:10:29.280
+financial add-ins? Think carefully about where your workflow truly lives.
+
+00:10:29.920 --> 00:10:33.600
+Could your daily output actually survive the transition tomorrow if you switch today?
+
+00:10:33.600 --> 00:10:37.600
+Thank you for joining me for this explainer, and keep exploring your data.
