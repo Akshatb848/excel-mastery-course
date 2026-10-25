@@ -1,0 +1,262 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.528
+This is the leave tracker we'll build Ten employees
+
+00:00:04.710 --> 00:00:08.265
+a leave log with approval checkboxes working days that
+
+00:00:08.278 --> 00:00:12.028
+skip weekends and holidays each person's balance and a
+
+00:00:12.041 --> 00:00:16.168
+red flag when someone is running low HR teams
+
+00:00:16.181 --> 00:00:20.009
+rebuild this every year You'll build it once
+
+00:00:27.060 --> 00:00:30.471
+In this project you'll use checkboxes NETWORKDAYS with a
+
+00:00:30.485 --> 00:00:34.182
+holiday list SUMIFS for balances and a monthly view
+
+00:00:34.313 --> 00:00:40.330
+and conditional formatting Practice sheet S21-01
+
+00:00:41.794 --> 00:00:46.234
+NETWORKDAYS counts working days between two dates both included
+
+00:00:47.135 --> 00:00:51.497
+It skips Saturdays and Sundays automatically and any dates
+
+00:00:51.510 --> 00:00:52.851
+you list as holidays
+
+00:00:54.294 --> 00:00:58.932
+Here's the layout Employees in A1 to G11, with
+
+00:00:58.945 --> 00:01:02.812
+yellow columns for us to fill The selected month
+
+00:01:02.825 --> 00:01:07.473
+in B13 Company holidays for this financial year in
+
+00:01:07.486 --> 00:01:11.835
+A16 to B21 And the leave log from I1
+
+00:01:11.848 --> 00:01:13.007
+to N21
+
+00:02:14.966 --> 00:02:19.656
+Start with approvals Column N holds TRUE or FALSE
+
+00:02:20.554 --> 00:02:24.109
+Select N2 to N21, then on the Insert tab
+
+00:02:24.122 --> 00:02:28.210
+click Checkbox Each TRUE becomes a ticked box and
+
+00:02:28.223 --> 00:02:29.942
+each FALSE an empty one
+
+00:03:26.341 --> 00:03:31.265
+Now working days Click M2 and type equals NETWORKDAYS
+
+00:03:31.408 --> 00:03:35.301
+open bracket K2 for the start date comma L2
+
+00:03:35.314 --> 00:03:36.955
+for the end date comma
+
+00:04:16.497 --> 00:04:20.507
+For holidays type dollar A dollar 16  colon dollar A
+
+00:04:20.520 --> 00:04:26.148
+dollar 21 close bracket and press Return The dollar signs
+
+00:04:26.161 --> 00:04:28.999
+lock the holiday list so it doesn't move when
+
+00:04:29.012 --> 00:04:30.692
+we copy the formula down
+
+00:04:32.169 --> 00:04:36.051
+M2 shows 2 Ravi took leave from first to
+
+00:04:36.064 --> 00:04:40.908
+fifth October Thursday to Monday Saturday and Sunday are
+
+00:04:40.921 --> 00:04:44.645
+skipped and so is second October Gandhi Jayanti
+
+00:05:19.935 --> 00:05:24.442
+Copy it down Select M2 to M21 and press
+
+00:05:24.455 --> 00:05:25.198
+Command D
+
+00:06:08.450 --> 00:06:12.710
+Here's the common mistake In the scratch cell P2
+
+00:06:12.840 --> 00:06:15.757
+type NETWORKDAYS with only the two dates and no
+
+00:06:15.770 --> 00:06:16.681
+holiday list
+
+00:07:19.654 --> 00:07:23.534
+P2 shows 3 one day too many because Gandhi
+
+00:07:23.547 --> 00:07:28.028
+Jayanti is counted as a working day Always pass
+
+00:07:28.042 --> 00:07:31.127
+the holiday list Delete P2
+
+00:08:07.779 --> 00:08:11.935
+Now leave taken this year Click E2 and type
+
+00:08:11.948 --> 00:08:16.479
+equals SUMIFS open bracket dollar M dollar 2  colon dollar
+
+00:08:16.492 --> 00:08:21.258
+M dollar 21 the working days comma dollar I dollar 2 
+
+00:08:21.271 --> 00:08:26.440
+colon dollar I dollar 21 the employee IDs comma A2
+
+00:08:45.075 --> 00:08:49.137
+Add the approval condition dollar N dollar 2  colon dollar
+
+00:08:49.151 --> 00:08:54.921
+N dollar 21 comma TRUE close bracket Only ticked leave
+
+00:08:54.934 --> 00:08:57.330
+counts Press Return
+
+00:08:58.794 --> 00:09:02.650
+E2 shows 12 days for Ravi Fill it down
+
+00:09:02.846 --> 00:09:05.892
+select E2 to E11 and press Command D
+
+00:09:32.685 --> 00:09:37.127
+Balance is quota minus leave taken In F2 type
+
+00:09:37.140 --> 00:09:40.825
+equals D2 minus E2, press Return then fill down
+
+00:09:40.838 --> 00:09:42.231
+F2 to F11
+
+00:10:28.622 --> 00:10:32.869
+Now the monthly view G2 counts leave that starts
+
+00:10:32.882 --> 00:10:36.918
+in the month in B13 Type equals SUMIFS with
+
+00:10:36.931 --> 00:10:39.197
+the same three conditions as before
+
+00:11:07.638 --> 00:11:10.802
+Then two date conditions on the From column greater
+
+00:11:10.815 --> 00:11:13.680
+than or equal to B13, and less than or
+
+00:11:13.693 --> 00:11:16.466
+equal to EOMONTH of B13, which is the last
+
+00:11:16.479 --> 00:11:20.179
+day of that month Close the bracket and press
+
+00:11:20.192 --> 00:11:20.726
+Return
+
+00:11:22.216 --> 00:11:26.137
+G2 shows 2 days in October for Ravi Fill
+
+00:11:26.150 --> 00:11:28.338
+it down from G2 to G11
+
+00:11:56.122 --> 00:12:01.931
+Now flag low balances Select F2 to F11 On
+
+00:12:01.944 --> 00:12:06.358
+the Home tab open Conditional Formatting Highlight Cells Rules
+
+00:12:06.489 --> 00:12:10.017
+Less Than Type 3 and click OK
+
+00:13:06.966 --> 00:13:11.369
+Mohammed Faizal turns red with two days left That's
+
+00:13:11.382 --> 00:13:14.520
+the person HR should talk to before approving more
+
+00:13:14.533 --> 00:13:14.989
+leave
+
+00:13:27.982 --> 00:13:32.437
+Now prove it's live Click N3, Priya's five-day leave
+
+00:13:32.450 --> 00:13:36.070
+in May and press Space to untick it Her
+
+00:13:36.083 --> 00:13:40.250
+leave taken in E3 drops to zero Press Space
+
+00:13:40.263 --> 00:13:41.617
+again to tick it back
+
+00:15:08.841 --> 00:15:16.330
+Change the month Click B13 and type 2026-08-01 Column
+
+00:15:16.343 --> 00:15:20.210
+G now shows August leave Then set it back
+
+00:15:20.223 --> 00:15:21.057
+to October
+
+00:16:09.919 --> 00:16:12.992
+On a Mac Command D fills down and Command
+
+00:16:13.005 --> 00:16:17.304
+R fills right Space toggles a checkbox in Excel
+
+00:16:17.317 --> 00:16:20.872
+for Mac and the web alike If your company
+
+00:16:20.885 --> 00:16:24.283
+works six days a week use NETWORKDAYS dot INTL
+
+00:16:24.296 --> 00:16:28.020
+with weekend code 11 which treats only Sunday as
+
+00:16:28.033 --> 00:16:28.437
+off
+
+00:16:29.904 --> 00:16:34.294
+To recap NETWORKDAYS with a locked holiday list gives
+
+00:16:34.307 --> 00:16:38.825
+working days SUMIFS with the approval checkbox gives leave
+
+00:16:38.838 --> 00:16:42.146
+taken and with two date conditions leave in any
+
+00:16:42.159 --> 00:16:46.443
+month Conditional formatting flags low balances
+
+00:16:47.904 --> 00:16:51.237
+Your challenge add column O with working days for
+
+00:16:51.250 --> 00:16:54.831
+a six-day week using NETWORKDAYS dot INTL and check
+
+00:16:54.844 --> 00:16:59.000
+Ravi's October leave by hand Compare with the Done
+
+00:16:59.013 --> 00:16:59.521
+sheet

@@ -1,0 +1,496 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.320
+Hello, and welcome to This Explainer.
+
+00:00:02.320 --> 00:00:05.880
+If you're a job seeker in India aiming for an MIS executive,
+
+00:00:05.880 --> 00:00:08.340
+data analyst, or accounts role, consider this
+
+00:00:08.340 --> 00:00:09.960
+your focused study guide.
+
+00:00:09.960 --> 00:00:13.320
+Today, we're tackling lesson S2106.
+
+00:00:13.320 --> 00:00:15.480
+We're going to look at the exact Excel interview questions
+
+00:00:15.480 --> 00:00:17.160
+hiring managers will test you on.
+
+00:00:17.160 --> 00:00:19.480
+And I'm going to give you the short, sharp model answers
+
+00:00:19.480 --> 00:00:21.960
+you need to prepare and succeed.
+
+00:00:21.960 --> 00:00:23.720
+Let's quickly outline our agenda.
+
+00:00:23.720 --> 00:00:25.720
+We're covering four main topics today.
+
+00:00:25.720 --> 00:00:27.980
+First, essential lookup functions.
+
+00:00:28.020 --> 00:00:30.340
+Second, counting and summing data.
+
+00:00:30.340 --> 00:00:32.540
+Third, logic and error handling.
+
+00:00:32.540 --> 00:00:35.580
+And finally, modern dynamic arrays.
+
+00:00:35.580 --> 00:00:39.140
+OK, section one, essential lookup functions.
+
+00:00:39.140 --> 00:00:41.100
+Interviewers absolutely love asking
+
+00:00:41.100 --> 00:00:43.620
+how you pull related data from a master list.
+
+00:00:43.620 --> 00:00:46.180
+A classic question is how to find an employee name based
+
+00:00:46.180 --> 00:00:47.740
+entirely on their ID number.
+
+00:00:47.740 --> 00:00:49.120
+They really just want to see if you
+
+00:00:49.120 --> 00:00:52.060
+can connect information across massive data sets
+
+00:00:52.060 --> 00:00:54.140
+without manually scrolling and searching.
+
+00:00:54.140 --> 00:00:56.340
+Because let's be honest, in a busy office,
+
+00:00:56.360 --> 00:00:59.060
+manual searching is just not an option.
+
+00:00:59.060 --> 00:01:00.900
+This is where you'll likely need to compare
+
+00:01:00.900 --> 00:01:04.740
+the modern XLOOKUP against the classic VLOOKUP function.
+
+00:01:04.740 --> 00:01:06.740
+Your model answer should definitely highlight
+
+00:01:06.740 --> 00:01:08.260
+the big differences here.
+
+00:01:08.260 --> 00:01:10.820
+VLOOKUP only searches to the right side of your lookup
+
+00:01:10.820 --> 00:01:13.380
+column, which is honestly a huge limitation.
+
+00:01:13.380 --> 00:01:14.980
+XLOOKUP, on the other hand, searches
+
+00:01:14.980 --> 00:01:18.180
+in any direction at all, left, right, up, or down.
+
+00:01:18.180 --> 00:01:20.300
+Plus, it includes built-in error handling,
+
+00:01:20.300 --> 00:01:23.700
+which makes it a super robust choice for your daily reports.
+
+00:01:23.700 --> 00:01:26.780
+XLOOKUP also totally simplifies finding exact matches
+
+00:01:26.780 --> 00:01:29.660
+because you only need to memorize three core arguments.
+
+00:01:29.660 --> 00:01:31.740
+First, you just provide the lookup value.
+
+00:01:31.740 --> 00:01:35.100
+Next, you select the lookup array where Excel needs to search.
+
+00:01:35.100 --> 00:01:36.780
+And finally, you pick the return array
+
+00:01:36.780 --> 00:01:38.780
+that contains your result. That's it.
+
+00:01:38.780 --> 00:01:41.380
+You don't need to manually count column index numbers ever
+
+00:01:41.380 --> 00:01:42.620
+again.
+
+00:01:42.620 --> 00:01:46.620
+Moving right along to section two, counting and summing data.
+
+00:01:46.620 --> 00:01:49.380
+Here, interviewers want to see if you can apply business logic
+
+00:01:49.380 --> 00:01:51.060
+to financial calculations.
+
+00:01:51.060 --> 00:01:52.820
+They might ask something like, how do you
+
+00:01:52.820 --> 00:01:56.420
+sum sales amounts in LACS, but only for shipped orders that
+
+00:01:56.420 --> 00:01:58.100
+have 10 or more units?
+
+00:01:58.100 --> 00:01:59.980
+This tests your ability to calculate totals
+
+00:01:59.980 --> 00:02:02.260
+based on very specific criteria, which
+
+00:02:02.260 --> 00:02:04.380
+is something you'll be doing literally every day
+
+00:02:04.380 --> 00:02:06.060
+in an accounts role.
+
+00:02:06.060 --> 00:02:09.100
+The key to your answer here is the SUMIFS function.
+
+00:02:09.100 --> 00:02:11.300
+SUMIFS is incredibly powerful because it
+
+00:02:11.300 --> 00:02:14.380
+evaluates multiple criteria at the exact same time
+
+00:02:14.380 --> 00:02:16.540
+before it calculates the total amount.
+
+00:02:16.540 --> 00:02:18.340
+You define your sum range first.
+
+00:02:18.340 --> 00:02:21.300
+Then you add your first criteria range and its condition,
+
+00:02:21.300 --> 00:02:24.420
+followed by your second criteria range and its condition.
+
+00:02:24.420 --> 00:02:26.620
+And a huge pro tip for your practical test,
+
+00:02:26.620 --> 00:02:28.540
+always remember to lock your cell ranges
+
+00:02:28.540 --> 00:02:29.980
+with absolute references.
+
+00:02:29.980 --> 00:02:31.940
+That makes sure your formula stays perfectly
+
+00:02:31.940 --> 00:02:34.300
+accurate when you copy it down a column.
+
+00:02:34.300 --> 00:02:36.300
+Now, similar to summing, they might just
+
+00:02:36.300 --> 00:02:39.340
+want you to count occurrences of specific data points.
+
+00:02:39.340 --> 00:02:41.380
+A very standard technical question is,
+
+00:02:41.380 --> 00:02:43.860
+how do you count exactly how many cells meet
+
+00:02:43.860 --> 00:02:46.620
+multiple conditions at the exact same time?
+
+00:02:46.620 --> 00:02:48.620
+The answer here is COUNTIFS.
+
+00:02:48.620 --> 00:02:51.340
+You use the COUNTIFS function for this exact requirement
+
+00:02:51.340 --> 00:02:53.260
+across one or more ranges.
+
+00:02:53.260 --> 00:02:54.740
+It simply counts the number of cells
+
+00:02:54.740 --> 00:02:58.140
+within your data set that fit your specific business logic.
+
+00:02:58.140 --> 00:03:00.420
+Hiring managers absolutely love this function
+
+00:03:00.420 --> 00:03:02.500
+because it's a total lifesaver for quick data
+
+00:03:02.500 --> 00:03:05.020
+summaries and daily audit checks.
+
+00:03:05.020 --> 00:03:07.220
+All right, let's move to section three, logic
+
+00:03:07.220 --> 00:03:09.020
+and error handling.
+
+00:03:09.020 --> 00:03:12.020
+This is where we get into complex business roles.
+
+00:03:12.020 --> 00:03:14.860
+Think about a scenario where a discount is only applied
+
+00:03:14.860 --> 00:03:16.940
+if a customer buys a certain quantity,
+
+00:03:16.940 --> 00:03:19.780
+and they also have a specific membership tier.
+
+00:03:19.780 --> 00:03:22.820
+Both of those things must be true to get the discount.
+
+00:03:22.820 --> 00:03:24.900
+How do you return a specific value
+
+00:03:24.900 --> 00:03:28.220
+when multiple different conditions must all pass?
+
+00:03:28.220 --> 00:03:30.740
+To solve this, you nest the AND function
+
+00:03:30.740 --> 00:03:32.620
+inside an IF function.
+
+00:03:32.620 --> 00:03:34.860
+The IF function does the main logical test,
+
+00:03:34.860 --> 00:03:36.940
+but that nested AND function is checking
+
+00:03:36.940 --> 00:03:38.820
+all your conditions at once.
+
+00:03:38.820 --> 00:03:40.540
+The formula will only return true
+
+00:03:40.540 --> 00:03:43.540
+and apply that discount if every single condition
+
+00:03:43.540 --> 00:03:45.460
+passes successfully.
+
+00:03:45.460 --> 00:03:48.340
+You can actually take those exact same logical functions
+
+00:03:48.340 --> 00:03:52.580
+and or and not and use them without the IF function entirely
+
+00:03:52.580 --> 00:03:54.460
+to drive your conditional formatting.
+
+00:03:54.460 --> 00:03:57.260
+If an interviewer asks how to highlight specific rows
+
+00:03:57.260 --> 00:03:58.780
+based on complex rules,
+
+00:03:58.780 --> 00:04:01.140
+just explain that these formulas work beautifully
+
+00:04:01.140 --> 00:04:02.860
+inside the conditional formatting menu
+
+00:04:02.860 --> 00:04:05.280
+to automatically color code your data.
+
+00:04:05.280 --> 00:04:06.980
+You also really need to know
+
+00:04:06.980 --> 00:04:08.940
+how to keep your reports looking clean.
+
+00:04:08.940 --> 00:04:11.140
+In a practical test, leaving hash and A
+
+00:04:11.140 --> 00:04:13.380
+or hash value errors all over your sheet
+
+00:04:13.700 --> 00:04:15.020
+is a bad look.
+
+00:04:15.020 --> 00:04:17.620
+By wrapping your formulas in the IFERROR function,
+
+00:04:17.620 --> 00:04:19.060
+you trap those errors.
+
+00:04:19.060 --> 00:04:21.120
+You can specify a clean fallback message
+
+00:04:21.120 --> 00:04:23.680
+or even just leave the cell blank if something goes wrong.
+
+00:04:23.680 --> 00:04:26.080
+It keeps everything super professional.
+
+00:04:26.080 --> 00:04:29.580
+Finally, section four, modern dynamic arrays.
+
+00:04:29.580 --> 00:04:32.020
+Knowing these features will absolutely set you apart
+
+00:04:32.020 --> 00:04:33.660
+from other candidates.
+
+00:04:33.660 --> 00:04:34.860
+To use dynamic arrays,
+
+00:04:34.860 --> 00:04:37.060
+you have to understand the spill range.
+
+00:04:37.060 --> 00:04:38.300
+This is the amazing behavior
+
+00:04:38.300 --> 00:04:40.860
+where dynamic array functions return multiple values
+
+00:04:40.860 --> 00:04:43.380
+that just automatically fill the neighboring cells.
+
+00:04:43.380 --> 00:04:44.700
+You literally don't need to copy
+
+00:04:44.700 --> 00:04:46.460
+and paste formulas manually anymore.
+
+00:04:46.460 --> 00:04:49.100
+The results just spill over into the adjacent cells below
+
+00:04:49.100 --> 00:04:52.100
+and to the right, which is a massive time saver.
+
+00:04:52.100 --> 00:04:54.160
+Interviewers are always looking for people
+
+00:04:54.160 --> 00:04:55.980
+who can automate repetitive tasks.
+
+00:04:55.980 --> 00:04:59.020
+So a great test is asking how you'd extract rows
+
+00:04:59.020 --> 00:05:01.980
+that match certain criteria and then remove duplicates.
+
+00:05:01.980 --> 00:05:04.500
+But the catch is you have to do this entirely
+
+00:05:04.500 --> 00:05:06.860
+with formulas without touching the manual filter
+
+00:05:06.860 --> 00:05:09.580
+or remove duplicates buttons on the ribbon.
+
+00:05:09.580 --> 00:05:11.560
+The secret is chaining the filter
+
+00:05:11.560 --> 00:05:13.560
+and unique functions together.
+
+00:05:13.560 --> 00:05:15.740
+Step one, you use the filter function
+
+00:05:15.740 --> 00:05:18.200
+to keep only the rows meeting your condition.
+
+00:05:18.200 --> 00:05:21.380
+Step two, you wrap that whole thing in the unique function
+
+00:05:21.380 --> 00:05:23.060
+to strip out the duplicates.
+
+00:05:23.060 --> 00:05:24.500
+Step three, you hit enter
+
+00:05:24.500 --> 00:05:27.300
+and watch the results spill into the adjacent cells.
+
+00:05:27.300 --> 00:05:28.940
+Your report will now update instantly
+
+00:05:28.940 --> 00:05:30.940
+whenever the source data changes.
+
+00:05:30.940 --> 00:05:32.300
+You can even take this a step further
+
+00:05:32.300 --> 00:05:34.780
+to power dynamic data validation drop-downs.
+
+00:05:34.780 --> 00:05:37.320
+If you extract a unique list of product categories
+
+00:05:37.320 --> 00:05:38.820
+using that unique formula,
+
+00:05:38.860 --> 00:05:40.940
+you can point your data validation drop-down
+
+00:05:40.940 --> 00:05:43.160
+directly to that exact spill range.
+
+00:05:43.160 --> 00:05:44.420
+As your source data grows,
+
+00:05:44.420 --> 00:05:46.540
+your drop-down list automatically expands.
+
+00:05:46.540 --> 00:05:49.740
+No manual updates required, ever again.
+
+00:05:49.740 --> 00:05:52.540
+As we wrap up, I wanna leave you with three golden rules
+
+00:05:52.540 --> 00:05:53.780
+for your practical test.
+
+00:05:53.780 --> 00:05:56.020
+First, read the whole task carefully
+
+00:05:56.020 --> 00:05:57.780
+before you type a single thing.
+
+00:05:57.780 --> 00:06:00.140
+Second, use Excel tables for your data
+
+00:06:00.140 --> 00:06:02.340
+to make your formulas much easier.
+
+00:06:02.340 --> 00:06:04.900
+And third, always check your totals at the end.
+
+00:06:04.900 --> 00:06:06.880
+Also, be sure to practice pivot tables
+
+00:06:06.880 --> 00:06:08.880
+and the show values as feature
+
+00:06:08.880 --> 00:06:11.280
+because those are equally critical for analysts.
+
+00:06:11.280 --> 00:06:12.600
+So think about it.
+
+00:06:12.600 --> 00:06:14.480
+Which of these powerful Excel functions
+
+00:06:14.480 --> 00:06:15.720
+are you going to master first
+
+00:06:15.720 --> 00:06:17.280
+to secure that next big role?

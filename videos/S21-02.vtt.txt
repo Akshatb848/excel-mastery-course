@@ -1,0 +1,292 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:02.950
+This is the payroll sheet we'll build for ten
+
+00:00:02.963 --> 00:00:08.590
+employees Gross pay PF with the fifteen-thousand-rupee wage ceiling
+
+00:00:08.824 --> 00:00:13.642
+ESI for lower salaries professional tax a monthly TDS
+
+00:00:13.655 --> 00:00:18.590
+estimate net pay and employer costs Below it a
+
+00:00:18.603 --> 00:00:21.598
+payslip that fills itself when you pick an employee
+
+00:00:21.611 --> 00:00:22.158
+ID
+
+00:00:23.653 --> 00:00:26.700
+In this project you'll write the earnings and deductions
+
+00:00:26.713 --> 00:00:30.736
+formulas a simple TDS estimate with a slab table
+
+00:00:30.867 --> 00:00:34.005
+and a payslip with nested XLOOKUP and a dropdown
+
+00:00:34.918 --> 00:00:38.291
+Practice sheet S21-02
+
+00:00:39.762 --> 00:00:43.330
+Here are the rules we'll use simplified for teaching
+
+00:00:44.256 --> 00:00:47.616
+PF is twelve percent of basic with basic capped
+
+00:00:47.629 --> 00:00:52.199
+at fifteen thousand rupees ESI is point seven five
+
+00:00:52.212 --> 00:00:54.998
+percent from the employee and three point two five
+
+00:00:55.011 --> 00:00:57.642
+from the employer only when gross is up to
+
+00:00:57.655 --> 00:00:58.957
+twenty-one thousand
+
+00:01:00.434 --> 00:01:05.723
+Open sheet S21-02 Employees are in rows 2 to
+
+00:01:05.736 --> 00:01:10.775
+11 with basic HRA and special allowance The yellow
+
+00:01:10.788 --> 00:01:14.538
+columns F to N are ours The tax slab
+
+00:01:14.551 --> 00:01:16.595
+table is in P1 to R8
+
+00:01:33.371 --> 00:01:37.969
+Gross first In F2 type equals C2 plus D2
+
+00:01:37.982 --> 00:01:40.704
+plus E2, and press Tab to move right
+
+00:02:08.668 --> 00:02:12.900
+PF in G2 equals ROUND open bracket MIN of
+
+00:02:12.913 --> 00:02:18.095
+C2 comma 15000 times twelve percent comma zero close
+
+00:02:18.108 --> 00:02:21.574
+bracket MIN applies the wage ceiling
+
+00:02:24.793 --> 00:02:29.533
+ESI in H2 equals IF open bracket F2 less
+
+00:02:29.546 --> 00:02:33.908
+than or equal to 21000 comma ROUNDUP of F2
+
+00:02:33.921 --> 00:02:38.283
+times point seven five percent comma zero comma zero
+
+00:02:38.400 --> 00:02:42.907
+close bracket ESIC rounds up to the next rupee
+
+00:02:44.356 --> 00:02:48.679
+Professional tax in I2 equals IF F2 greater than
+
+00:02:48.692 --> 00:02:54.632
+10000 comma 200 comma zero Then annual taxable income
+
+00:02:54.645 --> 00:02:59.918
+in J2 equals F2 times 12 minus 75000 the
+
+00:02:59.931 --> 00:03:01.220
+standard deduction
+
+00:03:16.043 --> 00:03:21.279
+Now TDS in K2 Start with equals IF open
+
+00:03:21.292 --> 00:03:25.589
+bracket J2 less than or equal to 1200000 comma
+
+00:03:25.772 --> 00:03:30.459
+zero comma Up to twelve lakh of taxable income
+
+00:03:30.628 --> 00:03:32.529
+the rebate makes the tax nil
+
+00:03:45.371 --> 00:03:50.202
+Then the slab tax ROUND SUMPRODUCT open bracket J2
+
+00:03:50.215 --> 00:03:53.301
+greater than the slab starts in P2 to P8
+
+00:03:53.574 --> 00:03:57.376
+times J2 minus those slab starts times the extra
+
+00:03:57.389 --> 00:04:01.675
+rate in R2 to R8 All three ranges locked
+
+00:04:01.688 --> 00:04:02.990
+with dollar signs
+
+00:04:04.450 --> 00:04:08.838
+Finish with times 1.04 for the four percent cess
+
+00:04:08.968 --> 00:04:12.419
+divided by 12 for a month comma zero and
+
+00:04:12.432 --> 00:04:15.559
+close both brackets Press Tab
+
+00:04:17.028 --> 00:04:21.130
+Net pay in L2 equals F2 minus G2 minus
+
+00:04:21.143 --> 00:04:25.975
+H2 minus I2 minus K2 Then employer PF in
+
+00:04:25.988 --> 00:04:30.077
+M2, the same as G2's formula and employer ESI
+
+00:04:30.090 --> 00:04:32.577
+in N2 at three point two five percent
+
+00:04:54.528 --> 00:04:59.947
+Row 2 is done Ravi's gross is rupees 19,300
+
+00:05:00.142 --> 00:05:07.655
+PF rupees 1,440 and ESI rupees 145 Now select
+
+00:05:07.668 --> 00:05:10.728
+F2 to N11 and press Command D to copy
+
+00:05:10.741 --> 00:05:13.215
+all nine formulas down at once
+
+00:05:28.559 --> 00:05:32.545
+Check the edge cases Vikram in row 6 earns
+
+00:05:32.558 --> 00:05:35.423
+a basic of eighty thousand but his PF is
+
+00:05:35.436 --> 00:05:41.530
+rupees 1,800 twelve percent of fifteen thousand His monthly
+
+00:05:41.543 --> 00:05:45.189
+TDS is rupees 10,487
+
+00:06:24.981 --> 00:06:28.028
+Deepa in row 11 has a gross of exactly
+
+00:06:28.041 --> 00:06:34.736
+twenty-one thousand so ESI still applies rupees 158 And
+
+00:06:34.749 --> 00:06:38.108
+Sneha in row 5 has taxable income just under
+
+00:06:38.121 --> 00:06:40.816
+twelve lakh so her TDS is zero
+
+00:07:21.496 --> 00:07:24.999
+Common mistake writing the ESI test as less than
+
+00:07:25.012 --> 00:07:28.319
+twenty-one thousand instead of less than or equal to
+
+00:07:29.232 --> 00:07:33.790
+Deepa would wrongly lose ESI cover Read the rule
+
+00:07:33.907 --> 00:07:36.160
+then the formula word by word
+
+00:07:37.653 --> 00:07:42.850
+Now the payslip In B17, type equals XLOOKUP open
+
+00:07:42.863 --> 00:07:48.124
+bracket dollar B dollar 16 the chosen ID comma dollar
+
+00:07:48.137 --> 00:07:51.561
+A dollar 2  colon dollar A dollar 11 comma
+
+00:08:29.059 --> 00:08:32.093
+For the return column use a second XLOOKUP that
+
+00:08:32.106 --> 00:08:34.944
+finds the label in A17 in the header row
+
+00:08:35.166 --> 00:08:38.200
+A1 to N1, and returns that whole column from
+
+00:08:38.213 --> 00:08:42.876
+A2 to N11 Close both brackets and press Return
+
+00:08:44.340 --> 00:08:47.361
+Because the labels in column A match the headers
+
+00:08:47.374 --> 00:08:52.780
+exactly one formula works for every line Select B17
+
+00:08:52.793 --> 00:08:55.254
+to B25 and press Command D
+
+00:09:33.090 --> 00:09:37.179
+Total deductions in B26 equals SUM of B22 to
+
+00:09:37.192 --> 00:09:44.121
+B25 Net pay in B27 equals B21 minus B26
+
+00:10:24.825 --> 00:10:31.713
+For E005, net pay shows rupees 1,27,513 the same
+
+00:10:31.726 --> 00:10:35.934
+as L6 in the payroll table Now a dropdown
+
+00:10:36.832 --> 00:10:39.996
+Click B16, then on the Data tab click Data
+
+00:10:40.009 --> 00:10:40.830
+Validation
+
+00:11:36.356 --> 00:11:39.741
+Set Allow to List and Source to equals dollar
+
+00:11:39.754 --> 00:11:44.470
+A dollar 2  colon dollar A dollar 11 Click OK
+
+00:12:09.496 --> 00:12:15.045
+Pick E008 The whole payslip updates for Kavita TDS
+
+00:12:15.058 --> 00:12:23.118
+of rupees 17,875 and net pay of rupees 1,55,125
+
+00:13:19.668 --> 00:13:22.949
+On a Mac the same shortcuts apply Command D
+
+00:13:22.962 --> 00:13:27.222
+fills down Tab moves right To check any payroll
+
+00:13:27.235 --> 00:13:30.842
+formula select the cell and press Control backtick to
+
+00:13:30.855 --> 00:13:33.108
+show all formulas at once
+
+00:13:34.606 --> 00:13:39.296
+To recap MIN applies the PF ceiling IF applies
+
+00:13:39.309 --> 00:13:42.837
+the ESI limit and SUMPRODUCT with a slab table
+
+00:13:42.850 --> 00:13:47.629
+estimates TDS A nested XLOOKUP with a dropdown turns
+
+00:13:47.642 --> 00:13:49.309
+the table into a payslip
+
+00:13:50.778 --> 00:13:54.085
+Your challenge add a row 28 to the payslip
+
+00:13:54.098 --> 00:13:57.692
+for Cost to company gross plus employer PF and
+
+00:13:57.705 --> 00:14:02.994
+employer ESI using the same nested XLOOKUP Check Ravi's
+
+00:14:03.007 --> 00:14:04.022
+figure by hand

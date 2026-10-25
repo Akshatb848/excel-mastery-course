@@ -1,0 +1,256 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:03.759
+This is a three-statement model for Kaveri Home Products
+
+00:00:03.954 --> 00:00:07.170
+profit and loss balance sheet and cash flow for
+
+00:00:07.183 --> 00:00:10.556
+one actual year and two forecast years all linked
+
+00:00:11.469 --> 00:00:14.464
+The check row shows zero so the balance sheet
+
+00:00:14.477 --> 00:00:18.696
+balances Claude audited it and its notes are on
+
+00:00:18.709 --> 00:00:19.334
+the right
+
+00:00:21.032 --> 00:00:24.209
+In this project you'll link profit to retained earnings
+
+00:00:24.352 --> 00:00:27.295
+cash flow to the balance sheet add a balance
+
+00:00:27.308 --> 00:00:30.316
+check and then audit the whole model with Claude
+
+00:00:31.203 --> 00:00:34.719
+Practice sheet S21-05
+
+00:00:36.420 --> 00:00:40.901
+Three links make the statements one model Profit adds
+
+00:00:40.914 --> 00:00:45.120
+to retained earnings The cash flow ends with closing
+
+00:00:45.133 --> 00:00:50.003
+cash which becomes the balance-sheet cash And assets must
+
+00:00:50.016 --> 00:00:52.334
+equal equity plus liabilities
+
+00:00:54.040 --> 00:01:00.357
+Open sheet S21-05 Assumptions are in A3 to B12
+
+00:01:01.256 --> 00:01:03.912
+The P and L runs from row 14 the
+
+00:01:03.925 --> 00:01:07.024
+balance sheet from row 25 and the cash flow
+
+00:01:07.037 --> 00:01:10.839
+from row 39 Columns C and D are the
+
+00:01:10.852 --> 00:01:11.907
+forecast years
+
+00:01:13.628 --> 00:01:19.164
+Most formulas are already in For example click C15
+
+00:01:19.437 --> 00:01:22.341
+revenue grows from last year by the growth rate
+
+00:01:22.354 --> 00:01:27.680
+in B3 Click C19 depreciation is ten percent of
+
+00:01:27.693 --> 00:01:29.555
+last year's fixed assets
+
+00:01:31.272 --> 00:01:37.055
+First link retained earnings Click C33 and type equals
+
+00:01:37.068 --> 00:01:41.847
+B33, last year's retained earnings plus C23, this year's
+
+00:01:41.860 --> 00:01:44.594
+net profit Press Return
+
+00:01:46.300 --> 00:01:50.480
+Select C33 to D33 and press Command R to
+
+00:01:50.493 --> 00:01:53.279
+copy it across to the second forecast year
+
+00:01:55.040 --> 00:02:00.146
+Now the check In C37 type equals ROUND open
+
+00:02:00.159 --> 00:02:06.123
+bracket C30 minus C36, comma zero close bracket Fill
+
+00:02:06.136 --> 00:02:07.789
+it right to D37
+
+00:02:09.492 --> 00:02:13.609
+The check isn't zero This is the classic mistake
+
+00:02:13.622 --> 00:02:17.059
+in a three-statement model the balance sheet has no
+
+00:02:17.072 --> 00:02:20.562
+cash yet because we haven't linked the cash flow
+
+00:02:21.460 --> 00:02:24.846
+An unbalanced check always means a missing or wrong
+
+00:02:24.859 --> 00:02:25.275
+link
+
+00:02:26.992 --> 00:02:32.359
+Second link Click C29, the balance-sheet cash and type
+
+00:02:32.372 --> 00:02:35.835
+equals C49, the closing cash from the cash flow
+
+00:02:36.734 --> 00:02:39.742
+Press Return then fill right to D29
+
+00:02:41.444 --> 00:02:46.798
+Now C37 and D37 both show zero The model
+
+00:02:46.811 --> 00:02:50.678
+balances Cash at the end of the first forecast
+
+00:02:50.691 --> 00:02:56.121
+year is rupees 22,68,630 and at the end of
+
+00:02:56.134 --> 00:03:01.055
+the second rupees 44,07,675
+
+00:03:02.760 --> 00:03:05.559
+Read the cash flow once from top to bottom
+
+00:03:06.460 --> 00:03:11.082
+Net profit plus depreciation less the increase in receivables
+
+00:03:11.213 --> 00:03:15.184
+plus the increase in payables gives cash from operations
+
+00:03:16.069 --> 00:03:18.244
+Then capex and loan repayment
+
+00:03:19.972 --> 00:03:24.180
+Now audit with Claude Open it with Control Option
+
+00:03:24.193 --> 00:03:29.193
+C and ask audit the model on sheet S21-05
+
+00:03:30.104 --> 00:03:34.427
+Check the balance sheet balances closing cash matches balance-sheet
+
+00:03:34.440 --> 00:03:37.930
+cash and list any typed numbers in the forecast
+
+00:03:37.943 --> 00:03:41.068
+columns Don't change anything
+
+00:03:42.776 --> 00:03:47.205
+Claude reports on each check with cell citations It
+
+00:03:47.218 --> 00:03:50.408
+should confirm the balances and point out that D18,
+
+00:03:50.421 --> 00:03:54.054
+the second-year operating expenses is a typed number
+
+00:03:55.764 --> 00:04:01.586
+Check that yourself Click D18 The formula bar shows
+
+00:04:01.599 --> 00:04:06.040
+a plain number while C18 is a formula Today
+
+00:04:06.053 --> 00:04:08.513
+the value happens to be right but if you
+
+00:04:08.526 --> 00:04:11.665
+change the growth rate D18 won't move
+
+00:04:13.360 --> 00:04:18.284
+Fix it by hand In D18 type equals D15
+
+00:04:18.297 --> 00:04:23.115
+times dollar B dollar 5 and press Return The value
+
+00:04:23.128 --> 00:04:25.862
+stays the same and the check stays at zero
+
+00:04:27.596 --> 00:04:32.064
+Now a stress test Ask Claude if debtor days
+
+00:04:32.077 --> 00:04:35.567
+rise from forty-five to sixty what happens to cash
+
+00:04:35.580 --> 00:04:40.241
+at the end of FY 2027-28 and does the
+
+00:04:40.254 --> 00:04:44.095
+model still balance Then test it yourself
+
+00:04:45.816 --> 00:04:50.519
+Click B8, type 60 and press Return Cash falls
+
+00:04:50.649 --> 00:04:54.217
+because customers pay more slowly but the check stays
+
+00:04:54.230 --> 00:04:59.399
+at zero That's a well-linked model Press Command Z
+
+00:04:59.412 --> 00:05:00.076
+to undo
+
+00:05:01.780 --> 00:05:05.296
+Common mistake forcing the balance sheet to balance with
+
+00:05:05.309 --> 00:05:08.629
+a plug a typed number in cash or equity
+
+00:05:09.556 --> 00:05:12.498
+The check turns zero but the model is wrong
+
+00:05:13.384 --> 00:05:15.936
+Always fix the link never the check
+
+00:05:17.648 --> 00:05:20.903
+On a Mac Command R fills right and Control
+
+00:05:20.916 --> 00:05:24.289
+backtick shows every formula so you can spot typed
+
+00:05:24.302 --> 00:05:28.783
+numbers fast Claude opens with Control Option C
+
+00:05:30.516 --> 00:05:34.776
+To recap Link net profit to retained earnings and
+
+00:05:34.789 --> 00:05:38.982
+closing cash to balance-sheet cash Add a check row
+
+00:05:38.995 --> 00:05:42.914
+that must be zero Then audit with Claude and
+
+00:05:42.927 --> 00:05:45.114
+confirm every finding yourself
+
+00:05:46.816 --> 00:05:50.175
+Your challenge add a dividend of ten lakh rupees
+
+00:05:50.188 --> 00:05:54.969
+per forecast year It reduces retained earnings and cash
+
+00:05:55.868 --> 00:05:59.852
+Keep the check at zero Compare the base model
+
+00:05:59.865 --> 00:06:01.024
+with the Done sheet

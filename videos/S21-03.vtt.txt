@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.367
+This is a budget versus actual report for a
+
+00:00:03.380 --> 00:00:08.317
+full financial year April to March Eight expense heads
+
+00:00:08.460 --> 00:00:12.119
+the variance for every month the variance percentage for
+
+00:00:12.132 --> 00:00:16.455
+the year and a status in traffic-light colours This
+
+00:00:16.468 --> 00:00:19.710
+is the report most finance teams send every month
+
+00:00:56.122 --> 00:00:59.026
+In this project you'll lay out a financial year
+
+00:00:59.039 --> 00:01:02.984
+from April to March calculate variances with one formula
+
+00:01:02.997 --> 00:01:06.617
+filled across and down and add a traffic-light status
+
+00:01:07.517 --> 00:01:10.942
+Practice sheet S21-03
+
+00:01:12.450 --> 00:01:15.692
+In India the financial year runs from first April
+
+00:01:15.705 --> 00:01:19.481
+to thirty-first March so the report starts with April
+
+00:01:19.677 --> 00:01:23.858
+not January Keep the three blocks in exactly the
+
+00:01:23.871 --> 00:01:28.207
+same layout Then one formula works everywhere
+
+00:01:29.684 --> 00:01:34.868
+Open sheet S21-03 The budget is in rows 2
+
+00:01:34.881 --> 00:01:39.634
+to 11 actuals in rows 14 to 23 The
+
+00:01:39.647 --> 00:01:44.348
+variance block rows 26 to 35 is empty and
+
+00:01:44.361 --> 00:01:44.803
+yellow
+
+00:02:02.387 --> 00:02:08.131
+Click B27, April salaries Type equals B15, the actual
+
+00:02:08.261 --> 00:02:12.897
+minus B3, the budget and press Return No dollar
+
+00:02:12.910 --> 00:02:16.139
+signs because both should move as we copy
+
+00:03:12.887 --> 00:03:19.595
+B27 shows rupees 51,400 Positive means we spent more
+
+00:03:19.608 --> 00:03:24.764
+than planned Now select B27 to N27 and press
+
+00:03:24.777 --> 00:03:27.095
+Command R to fill right all the way to
+
+00:03:27.108 --> 00:03:28.254
+the FY total
+
+00:04:02.012 --> 00:04:06.088
+Then select B27 to N34 and press Command D
+
+00:04:06.101 --> 00:04:09.905
+to fill down Every head and every month now
+
+00:04:09.918 --> 00:04:10.907
+has a variance
+
+00:04:50.778 --> 00:04:55.233
+Check one N30 is the FY variance for Travel
+
+00:04:55.429 --> 00:05:02.173
+rupees 232,700 Click it and read the formula N18
+
+00:05:02.186 --> 00:05:06.548
+minus N6 The same pattern just moved
+
+00:05:38.919 --> 00:05:44.650
+Now the variance percentage In O27 type equals N27
+
+00:05:44.663 --> 00:05:48.348
+divided by N3, the FY budget and press Return
+
+00:05:49.260 --> 00:05:51.122
+Fill down to O34
+
+00:06:49.950 --> 00:06:55.017
+Now a status In P27 type equals IF open
+
+00:06:55.030 --> 00:06:59.835
+bracket O27 greater than five percent comma quote Over
+
+00:06:59.848 --> 00:07:01.371
+budget quote comma
+
+00:07:41.184 --> 00:07:44.960
+Then a second IF O27 less than minus five
+
+00:07:44.973 --> 00:07:49.036
+percent quote Under budget quote otherwise quote On track
+
+00:07:49.049 --> 00:07:53.933
+quote Close both brackets press Return and fill down
+
+00:07:53.946 --> 00:07:55.066
+to P34
+
+00:08:07.419 --> 00:08:12.471
+Travel row 30 is 13.9% over and shows Over
+
+00:08:12.484 --> 00:08:16.718
+budget The five percent band is a common tolerance
+
+00:08:17.642 --> 00:08:20.442
+Your finance team may use a different one
+
+00:08:55.637 --> 00:09:02.189
+Now the traffic lights Select P27 to P34 Home
+
+00:09:02.319 --> 00:09:08.152
+Conditional Formatting Highlight Cells Rules Text that Contains Type
+
+00:09:08.165 --> 00:09:10.991
+Over keep light red and click OK
+
+00:10:22.278 --> 00:10:25.416
+Same again for On track and this time choose
+
+00:10:25.429 --> 00:10:27.538
+Green Fill with Dark Green Text
+
+00:11:00.903 --> 00:11:05.267
+And Under budget in yellow Under budget isn't always
+
+00:11:05.280 --> 00:11:08.509
+good It can mean a delayed project or an
+
+00:11:08.522 --> 00:11:11.205
+unpaid bill so it deserves a look too
+
+00:11:39.137 --> 00:11:43.147
+Common mistake dividing the variance by the actual instead
+
+00:11:43.160 --> 00:11:48.605
+of the budget The percentage then changes meaning Variance
+
+00:11:48.618 --> 00:11:51.587
+percentage is always measured against the plan
+
+00:11:53.044 --> 00:11:58.267
+Make it dynamic Change March travel actual M18, to
+
+00:11:58.280 --> 00:12:02.890
+200000 The variance the percentage and the colour all
+
+00:12:02.903 --> 00:12:06.054
+update Then press Command Z
+
+00:13:00.887 --> 00:13:03.830
+On a Mac Command R fills right and Command
+
+00:13:03.843 --> 00:13:09.496
+D fills down Command Z undoes Freeze panes keeps
+
+00:13:09.509 --> 00:13:12.334
+the head names visible as you scroll across the
+
+00:13:12.347 --> 00:13:14.678
+months View Freeze Panes
+
+00:13:16.137 --> 00:13:20.605
+To recap Lay out April to March with identical
+
+00:13:20.618 --> 00:13:24.928
+blocks Write one variance formula and fill it right
+
+00:13:24.941 --> 00:13:29.433
+and down Then add variance percentage an IF status
+
+00:13:29.446 --> 00:13:30.957
+and traffic-light colours
+
+00:13:32.434 --> 00:13:35.702
+Your challenge add a year-to-date view for April to
+
+00:13:35.715 --> 00:13:38.580
+September using SUM over B to G in each
+
+00:13:38.593 --> 00:13:43.608
+block and a YTD status Compare the full-year figures
+
+00:13:43.621 --> 00:13:44.754
+with the Done sheet

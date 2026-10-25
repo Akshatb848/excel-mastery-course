@@ -1,0 +1,241 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.280
+Alright, let's jump right into this explainer. Today we're building a real-world Q2 Sales MIS
+
+00:00:05.280 --> 00:00:09.440
+report in Excel for Mac, completely from scratch. We are going to blend trusty,
+
+00:00:09.440 --> 00:00:14.560
+traditional Excel formulas with some incredibly practical AI tools to really speed up our daily
+
+00:00:14.560 --> 00:00:19.280
+workflow. So if you're a working professional who's maybe just moved over to the Mac ecosystem,
+
+00:00:19.280 --> 00:00:24.320
+this step-by-step demo is exactly for you. We'll start with just a raw data table and finish up
+
+00:00:24.320 --> 00:00:30.640
+with a fully verified AI-assisted report. Let's get to it. Here is our quick game plan for today.
+
+00:00:30.640 --> 00:00:36.320
+We'll start by setting up our core KPIs, move into data breakdowns using some essential Mac shortcuts,
+
+00:00:36.320 --> 00:00:40.160
+handle our charting with Copilot, draft some commentary using Claude,
+
+00:00:40.160 --> 00:00:44.000
+meticulously check our numbers for accuracy, and then we'll wrap up with a recap and a quick
+
+00:00:44.000 --> 00:00:50.000
+challenge for you. Okay, part one, setting up those core KPIs. The whole foundation of our
+
+00:00:50.000 --> 00:00:55.760
+MIS report kicks off in cell J1, and we're drawing from a raw MIS data table containing
+
+00:00:55.760 --> 00:01:01.520
+about 150 invoices. To find our total sales, we're going to pop a formula into cell K3.
+
+00:01:01.520 --> 00:01:09.520
+We literally just type equals sum, open bracket, MIS data, open square bracket, net amount,
+
+00:01:09.520 --> 00:01:14.560
+close square bracket, close bracket. Now, notice we're using the structured table name here
+
+00:01:14.560 --> 00:01:19.840
+instead of a static range, you know, like A2 to A150. We do this so that when you drop next
+
+00:01:19.840 --> 00:01:23.680
+quarter's data in, the formula automatically captures those new rows without you having
+
+00:01:23.680 --> 00:01:31.040
+to touch a thing. It's a lifesaver. And when we hit enter, boom, we get our total Q2 sales.
+
+00:01:31.040 --> 00:01:36.640
+Formatted perfectly with Indian digit grouping, that comes out to exactly 1 crore, 54 lakhs,
+
+00:01:36.640 --> 00:01:43.680
+5,150 rupees. This master number right here is absolutely crucial. It's the primary KPI that
+
+00:01:43.680 --> 00:01:48.880
+every other metric will be measured against. Breakdowns and MAC keys. Let's take that master
+
+00:01:48.880 --> 00:01:53.680
+number and slice it into regional and categorical breakdowns, paying special attention to the native
+
+00:01:53.680 --> 00:01:59.040
+MAC keystrokes you'll be using. For our regional breakdown, starting down in cell K10,
+
+00:01:59.040 --> 00:02:03.520
+we're going to lean on the classic SUMIFS formula. Basically, we're telling Excel,
+
+00:02:03.520 --> 00:02:07.840
+hey, go pull the net amounts from our main table, but only grab them when the region
+
+00:02:07.840 --> 00:02:12.720
+matches the specific location we've listed right here in cell J10. Now, once you've
+
+00:02:12.720 --> 00:02:18.480
+got your formula in K10 and your percentage share calculated in L10, we can really speed things up.
+
+00:02:18.480 --> 00:02:22.320
+And listen, if you're coming over from a Windows machine, you can forget about dragging that
+
+00:02:22.320 --> 00:02:27.280
+little corner with your mouse. On a Mac, you just select your cells from K10 down to L13
+
+00:02:27.280 --> 00:02:30.800
+and hit command D. That's the command key right next to your spacebar,
+
+00:02:30.800 --> 00:02:34.720
+plus the letter D. It fills the formulas down instantly and perfectly.
+
+00:02:35.600 --> 00:02:39.680
+Up in cell K6, we want our MIS to do a little bit of thinking for us
+
+00:02:39.680 --> 00:02:44.720
+and automatically highlight the top performing region. We do this using a handy index and match
+
+00:02:44.720 --> 00:02:50.320
+combination. It scans for the maximum value in our regional breakdown, matches it to the exact row,
+
+00:02:50.320 --> 00:02:55.120
+and pulls the name of the region. The best part? It updates dynamically every single quarter.
+
+00:02:55.920 --> 00:03:01.680
+All right, on to part three, charting with Copilot. Since our numerical grid is fully built
+
+00:03:01.680 --> 00:03:06.400
+and backed by reliable formulas, it's time to add some visual insights. To do this,
+
+00:03:06.400 --> 00:03:09.840
+we just open up the Copilot chat pane over on the right side of our screen.
+
+00:03:10.640 --> 00:03:15.120
+Now, to get exactly what we want from the AI without a frustrating back and forth,
+
+00:03:15.120 --> 00:03:20.320
+we type out a highly specific prompt. We don't just lazily say, make a chart. No,
+
+00:03:20.320 --> 00:03:27.280
+we explicitly ask for a clustered column chart. We provide the precise data range of J9 to K13.
+
+00:03:27.280 --> 00:03:32.240
+We dictate the exact title, Q2 sales by region, and we tell it exactly where to place it,
+
+00:03:32.240 --> 00:03:38.480
+starting at column N. So Copilot does the heavy lifting, but you are still in charge. You need
+
+00:03:38.480 --> 00:03:43.680
+to take three seconds to visually verify its output against your own formulas. Look at it.
+
+00:03:43.680 --> 00:03:49.040
+Are there four distinct bars? Yes. Does the tallest bar visually match the top region we
+
+00:03:49.040 --> 00:03:56.480
+calculated in cell K6? Yes. Is the title exactly what we asked for? Yes. The golden rule here
+
+00:03:56.480 --> 00:04:03.280
+is trust, but verify. AI commentary with Claude. At this point, we need a written management summary.
+
+00:04:03.280 --> 00:04:06.640
+We're going to draft this by opening the Claude add-in directly inside Excel.
+
+00:04:07.600 --> 00:04:12.000
+Here's the exact workflow you'll use. On your Mac keyboard, press control, option,
+
+00:04:12.000 --> 00:04:16.320
+and C all at the same time to open that Claude side panel. You paste your prompt in,
+
+00:04:16.320 --> 00:04:20.560
+and Claude will generate a draft for you. It'll actually ask for permission before modifying your
+
+00:04:20.560 --> 00:04:26.320
+sheet, which is great. You just type yes, write it into J27 to J31 to approve the placement.
+
+00:04:27.040 --> 00:04:30.160
+But wait, how do we stop the AI from just making things up?
+
+00:04:30.720 --> 00:04:35.440
+The secret is this extremely strict prompt, which acts as a set of hard constraints.
+
+00:04:35.440 --> 00:04:40.640
+We literally force Claude to, quote, use only numbers that appear in our specific grid.
+
+00:04:40.640 --> 00:04:45.040
+And we mandate that it must, quote, cite the cell for each number. Putting up these
+
+00:04:45.040 --> 00:04:48.800
+strict guardrails prevents the AI from inventing random outside assumptions.
+
+00:04:49.600 --> 00:04:53.680
+Checking numbers. Honestly, this is the single most important phase of utilizing
+
+00:04:53.680 --> 00:04:56.560
+any AI in your daily reports. Human verification.
+
+00:04:57.440 --> 00:05:03.520
+You absolutely must manually click through those cells, J27 to J31, where Claude wrote the text,
+
+00:05:03.520 --> 00:05:06.560
+and compare those numbers directly against your actual data grid.
+
+00:05:07.120 --> 00:05:14.400
+For example, look at our July sales in K16. That's 51 lakhs, 73,280 rupees.
+
+00:05:14.400 --> 00:05:21.760
+And September in K18, 54 lakhs, 13,030 rupees. If the AI commentary claims that sales fell
+
+00:05:21.760 --> 00:05:26.000
+in September, well, you instantly know it's wrong because you verified the cited cells yourself.
+
+00:05:26.880 --> 00:05:32.960
+Another really common pitfall is letting the AI add reasons or context that it couldn't possibly
+
+00:05:32.960 --> 00:05:37.600
+know. We call this an AI hallucination. And the dangerous part is that it often
+
+00:05:37.600 --> 00:05:43.440
+reads exactly like a plausible business sentence. If it writes, sales grew in September due to a
+
+00:05:43.440 --> 00:05:48.880
+successful new product launch. I mean, it sounds fantastic, right? But your raw data simply
+
+00:05:48.880 --> 00:05:54.480
+doesn't say that. The rule of thumb is simple. Always, always delete any cause or reason that
+
+00:05:54.480 --> 00:06:00.240
+you cannot back up with a concrete number from your own spreadsheet. And finally, part six,
+
+00:06:00.240 --> 00:06:05.120
+recap and challenge. Let's quickly wrap up this explainer by reviewing the three main pillars of
+
+00:06:05.120 --> 00:06:10.960
+our reporting framework. Build your KPIs and breakdowns using traditional Excel formulas on
+
+00:06:10.960 --> 00:06:16.640
+structure tables. The underlying math has to be rock solid. Pillar two, use the co-pilot chat
+
+00:06:16.640 --> 00:06:22.080
+pane to instantly generate charts based entirely on those trusted numbers. And pillar three,
+
+00:06:22.080 --> 00:06:27.680
+let Claude draft the written commentary, but only by using strict constraints. So to sum it up,
+
+00:06:27.680 --> 00:06:32.960
+formulas for the math, co-pilot for the visuals, Claude for the words, and every single piece of
+
+00:06:32.960 --> 00:06:38.160
+it verified by you. Well, that brings us to your challenge for your next practice session.
+
+00:06:38.160 --> 00:06:43.840
+Can you take this exact MIS file, add a brand new sales executive breakdown using our SUMIFS
+
+00:06:43.840 --> 00:06:49.520
+trick? Prompt Claude to add just one single line about the top executive and then safely verify it
+
+00:06:49.520 --> 00:06:54.880
+line by line. Think about it. How are you going to apply this concrete framework to your own daily
+
+00:06:54.880 --> 00:07:01.040
+reports? Boot up your Mac, try it out, and master this workflow. Until next time, happy analyzing.
