@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.578
+Managers love to click and filter We'll build two
+
+00:00:04.591 --> 00:00:08.497
+PivotTables from the same sales table revenue by region
+
+00:00:08.510 --> 00:00:12.468
+and by category and control both with one financial-year
+
+00:00:12.481 --> 00:00:16.296
+slicer Then we'll hide the raw data so the
+
+00:00:16.309 --> 00:00:17.520
+page looks clean
+
+00:00:18.984 --> 00:00:22.161
+You will learn to place several PivotTables on one
+
+00:00:22.174 --> 00:00:26.380
+sheet insert a slicer connect it to every PivotTable
+
+00:00:26.510 --> 00:00:32.905
+and hide the plumbing sheets Practice sheet S17-03 data
+
+00:00:32.918 --> 00:00:35.627
+in table tblSales on SalesData
+
+00:00:37.109 --> 00:00:39.987
+A slicer is a set of buttons that filters
+
+00:00:40.000 --> 00:00:44.989
+a PivotTable By default it controls only the PivotTable
+
+00:00:45.002 --> 00:00:49.806
+it was created from Report Connections lets one slicer
+
+00:00:49.819 --> 00:00:53.010
+drive every PivotTable built on the same data
+
+00:00:54.484 --> 00:00:59.877
+Go to sheet S17-03 and click A3 On the
+
+00:00:59.890 --> 00:01:05.293
+Insert tab choose PivotTable From Table or Range Type
+
+00:01:05.306 --> 00:01:10.502
+tblSales as the range choose Existing worksheet location A3,
+
+00:01:10.515 --> 00:01:11.648
+and click OK
+
+00:01:13.125 --> 00:01:16.341
+In the field list tick Region and then Revenue
+
+00:01:17.242 --> 00:01:21.109
+Region goes to Rows and Revenue to Values automatically
+
+00:01:22.578 --> 00:01:27.370
+Click E3 and repeat Insert PivotTable From Table or
+
+00:01:27.383 --> 00:01:33.322
+Range tblSales existing worksheet at E3 This time tick
+
+00:01:33.335 --> 00:01:34.781
+Category and Revenue
+
+00:01:36.281 --> 00:01:41.192
+Now the slicer Click A4 inside the first PivotTable
+
+00:01:42.090 --> 00:01:46.348
+On the PivotTable tab click Insert Slicer tick FY
+
+00:01:46.491 --> 00:01:47.572
+and click OK
+
+00:01:49.047 --> 00:01:55.026
+Here is the common mistake Click FY 2025-26 in
+
+00:01:55.039 --> 00:01:59.921
+the slicer The region PivotTable filters but the category
+
+00:01:59.935 --> 00:02:04.687
+PivotTable still shows both years The two now disagree
+
+00:02:04.817 --> 00:02:06.640
+which is worse than no filter
+
+00:02:08.109 --> 00:02:11.338
+With the slicer selected go to the Slicer tab
+
+00:02:11.351 --> 00:02:16.457
+and click Report Connections Tick PivotTable2 as well and
+
+00:02:16.470 --> 00:02:21.718
+click OK Now both PivotTables show financial year twenty-five
+
+00:02:21.731 --> 00:02:22.603
+twenty-six
+
+00:02:24.078 --> 00:02:26.760
+Click the Clear Filter button on the slicer to
+
+00:02:26.773 --> 00:02:30.708
+show both years again The grand total is about
+
+00:02:30.721 --> 00:02:33.416
+twenty-six crore rupees across two years
+
+00:02:34.891 --> 00:02:39.568
+Finally hide the plumbing Go to SalesData and on
+
+00:02:39.581 --> 00:02:43.057
+the Home tab choose Format Hide and Unhide Hide
+
+00:02:43.070 --> 00:02:48.213
+Sheet The PivotTables still refresh from it readers just
+
+00:02:48.226 --> 00:02:49.125
+don't see it
+
+00:02:50.578 --> 00:02:54.185
+Pro tip give each PivotTable a number format through
+
+00:02:54.198 --> 00:02:57.596
+Value Field Settings so the rupee format survives a
+
+00:02:57.609 --> 00:03:00.630
+refresh and turn off the field buttons for a
+
+00:03:00.643 --> 00:03:01.476
+cleaner look
+
+00:03:02.938 --> 00:03:06.532
+On a Mac PivotTables and slicers work the same
+
+00:03:07.432 --> 00:03:10.427
+Report Connections is on the Slicer tab when the
+
+00:03:10.440 --> 00:03:15.154
+slicer is selected To hide a sheet Control-click its
+
+00:03:15.167 --> 00:03:16.534
+tab and choose Hide
+
+00:03:17.984 --> 00:03:22.659
+To recap several PivotTables from one table one slicer
+
+00:03:22.802 --> 00:03:27.127
+and Report Connections so they agree Hide the data
+
+00:03:27.140 --> 00:03:29.223
+sheet to keep the dashboard clean
+
+00:03:30.688 --> 00:03:34.425
+Your challenge add a second slicer for Region connect
+
+00:03:34.438 --> 00:03:37.889
+it to both PivotTables and find the category revenue
+
+00:03:37.902 --> 00:03:42.852
+for financial year twenty-five twenty-six The answer is on
+
+00:03:42.865 --> 00:03:43.789
+the Done sheet

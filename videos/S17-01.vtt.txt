@@ -1,0 +1,472 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.680
+Welcome to this explainer.
+
+00:00:01.680 --> 00:00:04.360
+Today, we are looking at how to transform raw data
+
+00:00:04.360 --> 00:00:06.760
+into clear reports using Excel.
+
+00:00:06.760 --> 00:00:08.860
+We are gonna focus deeply on the principles
+
+00:00:08.860 --> 00:00:12.020
+of planning a dashboard that people will actually use.
+
+00:00:12.020 --> 00:00:14.820
+Many professionals struggle with overwhelming spreadsheets.
+
+00:00:14.820 --> 00:00:17.580
+We will outline a structured approach to solve this problem
+
+00:00:17.580 --> 00:00:19.000
+by carefully planning your layout
+
+00:00:19.000 --> 00:00:20.580
+and standardizing your methodology
+
+00:00:20.580 --> 00:00:23.720
+before we look at the broader course syllabus.
+
+00:00:23.720 --> 00:00:25.600
+Here is our agenda for today.
+
+00:00:25.600 --> 00:00:28.240
+First, we will cover the dashboard blueprint.
+
+00:00:28.240 --> 00:00:30.440
+Second, structuring the foundation.
+
+00:00:30.440 --> 00:00:32.600
+Third, building insights and visuals.
+
+00:00:32.600 --> 00:00:34.980
+Fourth, adding dynamic interactivity.
+
+00:00:34.980 --> 00:00:37.540
+And finally, the master trainer.
+
+00:00:37.540 --> 00:00:41.580
+Let us begin with section one, the dashboard blueprint.
+
+00:00:41.580 --> 00:00:43.980
+What actually makes a great dashboard?
+
+00:00:43.980 --> 00:00:45.580
+This is the fundamental question
+
+00:00:45.580 --> 00:00:48.040
+trainer Norhayati poses on the first day.
+
+00:00:48.040 --> 00:00:50.960
+To answer this, let us consider a practical scenario.
+
+00:00:50.960 --> 00:00:53.400
+Imagine a sales head in an Indian company.
+
+00:00:53.400 --> 00:00:54.240
+Every Monday morning,
+
+00:00:54.240 --> 00:00:56.020
+he reviews the performance of his team.
+
+00:00:56.020 --> 00:00:59.020
+He asks specific questions about regional sales figures,
+
+00:00:59.020 --> 00:01:02.120
+top performing products, and individual team targets.
+
+00:01:02.120 --> 00:01:03.660
+A great dashboard must answer
+
+00:01:03.660 --> 00:01:06.220
+these exact questions immediately.
+
+00:01:06.220 --> 00:01:08.540
+Therefore, you do not begin by opening Excel
+
+00:01:08.540 --> 00:01:09.900
+or writing formulas.
+
+00:01:09.900 --> 00:01:13.180
+You begin by selecting four to six key performance indicators
+
+00:01:13.180 --> 00:01:15.700
+that matter most to the specific reader.
+
+00:01:15.700 --> 00:01:17.460
+You must first completely understand
+
+00:01:17.460 --> 00:01:19.020
+what decisions the reader needs to make
+
+00:01:19.020 --> 00:01:20.700
+based on your report.
+
+00:01:20.700 --> 00:01:24.180
+So how do you move from raw data to a clear story?
+
+00:01:24.180 --> 00:01:26.100
+You do this by sketching a wireframe first
+
+00:01:26.100 --> 00:01:27.380
+on a piece of paper.
+
+00:01:27.380 --> 00:01:29.980
+This layout must follow a logical structure.
+
+00:01:29.980 --> 00:01:32.600
+You should place your four to six key performance indicators
+
+00:01:32.600 --> 00:01:34.300
+at the very top of the page.
+
+00:01:34.300 --> 00:01:35.140
+Right below that,
+
+00:01:35.140 --> 00:01:37.500
+you show the historical trend to provide context.
+
+00:01:37.500 --> 00:01:40.560
+Next, you provide a breakdown by region or category.
+
+00:01:40.560 --> 00:01:42.140
+Finally, you place the detailed data
+
+00:01:42.140 --> 00:01:43.580
+at the absolute bottom.
+
+00:01:43.580 --> 00:01:44.860
+This structure is very important
+
+00:01:44.860 --> 00:01:46.140
+because people naturally read
+
+00:01:46.140 --> 00:01:48.140
+from left to right and top to bottom.
+
+00:01:48.140 --> 00:01:50.300
+Your layout must follow this natural reading order
+
+00:01:50.300 --> 00:01:52.740
+so the user can digest the information quickly.
+
+00:01:52.740 --> 00:01:55.500
+Furthermore, you must choose a small color palette.
+
+00:01:55.500 --> 00:01:57.140
+Using too many colors creates confusion
+
+00:01:57.140 --> 00:01:59.700
+instead of providing clarity for the reader.
+
+00:01:59.700 --> 00:02:03.460
+Moving on to section two, structuring the foundation.
+
+00:02:03.460 --> 00:02:06.100
+The methodology here requires strict discipline
+
+00:02:06.100 --> 00:02:08.180
+in how you structure your Excel file.
+
+00:02:08.180 --> 00:02:10.580
+A core principle is that you must separate your work
+
+00:02:10.580 --> 00:02:12.180
+into three distinct sheets.
+
+00:02:12.180 --> 00:02:15.180
+The first sheet is dedicated entirely to your raw data.
+
+00:02:15.180 --> 00:02:17.440
+You do not do any formatting here.
+
+00:02:17.440 --> 00:02:18.700
+The second sheet is strictly
+
+00:02:18.700 --> 00:02:21.020
+for your calculations and helper columns.
+
+00:02:21.060 --> 00:02:23.700
+The third sheet is your final dashboard presentation
+
+00:02:23.700 --> 00:02:25.720
+where the user interacts with the report.
+
+00:02:25.720 --> 00:02:28.700
+You must never mix these three components on a single sheet.
+
+00:02:28.700 --> 00:02:30.020
+By keeping them separate,
+
+00:02:30.020 --> 00:02:32.840
+your file remains stable and easy to audit.
+
+00:02:32.840 --> 00:02:34.100
+Once the structure is built
+
+00:02:34.100 --> 00:02:35.940
+and populated with your initial data,
+
+00:02:35.940 --> 00:02:38.300
+you must test it with the actual reader.
+
+00:02:38.300 --> 00:02:39.980
+This step is crucial.
+
+00:02:39.980 --> 00:02:41.060
+It ensures the dashboard
+
+00:02:41.060 --> 00:02:43.340
+answers their Monday morning questions perfectly
+
+00:02:43.340 --> 00:02:45.900
+before you automate the final processes.
+
+00:02:45.900 --> 00:02:48.380
+To connect your calculations to your summary blocks,
+
+00:02:48.380 --> 00:02:50.860
+you will use several advanced Excel functions.
+
+00:02:50.880 --> 00:02:53.660
+The course covers essential functions which include if,
+
+00:02:53.660 --> 00:02:58.500
+some ifs, text, index and match, filter and unique.
+
+00:02:58.500 --> 00:03:00.800
+Using these specific functions removes the need
+
+00:03:00.800 --> 00:03:03.080
+for manual updates when new data is added.
+
+00:03:03.080 --> 00:03:05.500
+You learn to write formulas that automatically expand
+
+00:03:05.500 --> 00:03:08.660
+and recalculate as your dataset grows over time.
+
+00:03:08.660 --> 00:03:10.340
+Now we reach section three,
+
+00:03:10.340 --> 00:03:12.620
+building insights and visuals.
+
+00:03:12.620 --> 00:03:13.940
+This section covers the selection
+
+00:03:13.940 --> 00:03:15.820
+of appropriate charts for your data.
+
+00:03:15.820 --> 00:03:18.220
+You will learn to use combo charts, bullet charts,
+
+00:03:18.220 --> 00:03:21.700
+spark lines and specific key performance indicator visuals.
+
+00:03:21.700 --> 00:03:23.940
+The objective is to select the correct chart type
+
+00:03:23.940 --> 00:03:25.980
+to clearly show regional performance,
+
+00:03:25.980 --> 00:03:28.320
+current trends and overall achievements.
+
+00:03:28.320 --> 00:03:29.900
+You choose visuals based on their ability
+
+00:03:29.900 --> 00:03:31.660
+to convey information accurately
+
+00:03:31.660 --> 00:03:33.940
+rather than just their visual appeal.
+
+00:03:33.940 --> 00:03:37.980
+Next is section four, adding dynamic interactivity.
+
+00:03:37.980 --> 00:03:40.660
+These tools allow users to actively filter the data
+
+00:03:40.660 --> 00:03:42.020
+within the dashboard.
+
+00:03:42.020 --> 00:03:44.060
+By using slicers and form controls,
+
+00:03:44.060 --> 00:03:46.260
+a manager can select a specific department
+
+00:03:46.260 --> 00:03:48.940
+or a particular region from a dropdown menu.
+
+00:03:48.940 --> 00:03:50.860
+The dashboard will automatically update
+
+00:03:50.860 --> 00:03:52.660
+to reflect the selected data.
+
+00:03:52.660 --> 00:03:55.840
+This allows the user to explore the information independently
+
+00:03:55.840 --> 00:03:58.420
+without needing you to create multiple separate reports
+
+00:03:58.420 --> 00:04:00.560
+for every possible scenario.
+
+00:04:00.560 --> 00:04:02.940
+The final step involves setting up a grid layout,
+
+00:04:02.940 --> 00:04:04.180
+grouping visual elements
+
+00:04:04.180 --> 00:04:06.440
+and applying consistent corporate branding.
+
+00:04:06.440 --> 00:04:08.460
+This leads directly to a capstone project
+
+00:04:08.460 --> 00:04:09.400
+on the second day.
+
+00:04:09.400 --> 00:04:10.240
+During this session,
+
+00:04:10.240 --> 00:04:12.280
+you will use a real business dataset
+
+00:04:12.280 --> 00:04:14.940
+to build a complete dashboard from start to finish.
+
+00:04:14.980 --> 00:04:17.380
+This exercise is followed by a peer review session
+
+00:04:17.380 --> 00:04:18.820
+and direct feedback from the trainer
+
+00:04:18.820 --> 00:04:19.980
+to ensure you understand
+
+00:04:19.980 --> 00:04:22.340
+the practical application of these skills.
+
+00:04:22.340 --> 00:04:25.860
+Finally, we look at section five, the master trainer.
+
+00:04:25.860 --> 00:04:28.820
+Trainer Noor Hariadi has over 25 years of experience
+
+00:04:28.820 --> 00:04:30.980
+in the information technology industry.
+
+00:04:30.980 --> 00:04:33.260
+She earned an NCC diploma in 1990
+
+00:04:33.260 --> 00:04:36.620
+and later specialized in Lotus Notes in 1998.
+
+00:04:36.620 --> 00:04:38.900
+Since then, she has spent over 15 years
+
+00:04:38.900 --> 00:04:41.260
+delivering specialized Microsoft courses.
+
+00:04:41.260 --> 00:04:43.340
+Currently, she is a Microsoft certified trainer
+
+00:04:43.340 --> 00:04:47.180
+with deep expertise in Power BI and Excel Power Tools.
+
+00:04:47.180 --> 00:04:48.300
+She has conducted training
+
+00:04:48.300 --> 00:04:50.500
+for several major organizations.
+
+00:04:50.500 --> 00:04:53.900
+Her trusted corporate client list includes Siemens, Maybank,
+
+00:04:53.900 --> 00:04:56.340
+Petronas and Honda Malaysia.
+
+00:04:56.340 --> 00:04:58.660
+These companies utilize her courses to train their staff
+
+00:04:58.660 --> 00:05:01.700
+in practical data management and reporting skills.
+
+00:05:01.700 --> 00:05:05.260
+The course itself is organized by ACE Ascend Mastery Academy.
+
+00:05:05.260 --> 00:05:07.500
+It takes place in person at the Armada Hotel,
+
+00:05:07.500 --> 00:05:09.460
+which provides a dedicated learning environment
+
+00:05:09.460 --> 00:05:11.800
+away from standard office interruptions.
+
+00:05:11.800 --> 00:05:15.600
+The fee for the course is $1,900 per participant.
+
+00:05:15.600 --> 00:05:18.720
+Very importantly, this course is HRD Corp claimable
+
+00:05:18.720 --> 00:05:21.080
+and is run by a registered training provider.
+
+00:05:21.080 --> 00:05:22.960
+If your employer is a registered company,
+
+00:05:22.960 --> 00:05:24.800
+they can claim the fees directly.
+
+00:05:24.800 --> 00:05:26.520
+This simplifies the registration process
+
+00:05:26.520 --> 00:05:27.800
+for your professional development
+
+00:05:27.800 --> 00:05:29.320
+and reduces administrative work
+
+00:05:29.320 --> 00:05:31.600
+for your human resources department.
+
+00:05:31.600 --> 00:05:33.280
+This brings us to a final question
+
+00:05:33.280 --> 00:05:35.240
+regarding your daily work routine.
+
+00:05:35.240 --> 00:05:37.480
+Are you ready to stop just reporting data
+
+00:05:37.480 --> 00:05:40.840
+and start building interactive reports like a professional?
+
+00:05:40.840 --> 00:05:43.000
+Ask yourself how much time you currently spend
+
+00:05:43.000 --> 00:05:45.360
+updating manual spreadsheets each week.
+
+00:05:45.360 --> 00:05:47.480
+You now have the framework to design automated,
+
+00:05:47.480 --> 00:05:50.120
+interactive dashboards that provide clear answers
+
+00:05:50.120 --> 00:05:51.480
+to your management team.
+
+00:05:51.480 --> 00:05:53.600
+Applying these planning and structural techniques
+
+00:05:53.600 --> 00:05:56.360
+will significantly improve how you handle corporate data.

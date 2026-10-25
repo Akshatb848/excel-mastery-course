@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.879
+This dashboard has no PivotTables Pick a region from
+
+00:00:04.892 --> 00:00:08.186
+the dropdown in B1 and every number list and
+
+00:00:08.199 --> 00:00:11.780
+chart changes all driven by a handful of formulas
+
+00:00:13.247 --> 00:00:16.359
+You will learn to add a region dropdown total
+
+00:00:16.372 --> 00:00:20.448
+with FILTER summarise with GROUPBY handle a SPILL error
+
+00:00:20.578 --> 00:00:26.778
+and chart the results Practice sheet S17-04 data in
+
+00:00:26.791 --> 00:00:27.871
+tblSales
+
+00:00:29.325 --> 00:00:32.736
+GROUPBY is a PivotTable in a formula what to
+
+00:00:32.749 --> 00:00:36.788
+group by what to add up and how The
+
+00:00:36.801 --> 00:00:40.564
+extra arguments switch off headers and totals sort the
+
+00:00:40.577 --> 00:00:43.038
+result and filter the rows first
+
+00:00:44.497 --> 00:00:50.020
+First the dropdown Select B1 On the Data tab
+
+00:00:50.033 --> 00:00:53.770
+click Data Validation allow a List and type the
+
+00:00:53.783 --> 00:00:59.733
+source North South East West separated by commas Click
+
+00:00:59.746 --> 00:01:02.155
+OK then type North in B1
+
+00:01:03.622 --> 00:01:08.259
+In B2, the headline number Type equals SUM open
+
+00:01:08.273 --> 00:01:12.934
+bracket FILTER open bracket tblSales Revenue comma
+
+00:01:19.965 --> 00:01:24.679
+Then the condition open bracket tblSales Region equals dollar
+
+00:01:24.692 --> 00:01:29.757
+B dollar one close bracket star open bracket tblSales
+
+00:01:29.770 --> 00:01:36.725
+FY equals FY 2025-26 in quotes close bracket The
+
+00:01:36.738 --> 00:01:41.204
+star means and Close both brackets and press Return
+
+00:01:42.684 --> 00:01:46.069
+North sold three crore thirty-six lakh rupees in the
+
+00:01:46.082 --> 00:01:51.436
+year Now the monthly trend In A5, type equals
+
+00:01:51.449 --> 00:01:57.308
+GROUPBY of tblSales Month tblSales Revenue SUM zero zero
+
+00:01:57.452 --> 00:02:01.788
+an empty sort and the same filter Press Return
+
+00:02:09.872 --> 00:02:14.705
+A5 shows the SPILL error That's the classic dynamic-array
+
+00:02:14.718 --> 00:02:18.494
+mistake GROUPBY needs twelve rows and an old note
+
+00:02:18.507 --> 00:02:22.088
+in A12 is in the way The dotted border
+
+00:02:22.101 --> 00:02:24.210
+shows where the answer wants to go
+
+00:02:26.090 --> 00:02:30.793
+Select A12 and press Delete The twelve months spill
+
+00:02:30.806 --> 00:02:34.530
+down at once already formatted as month and rupees
+
+00:02:41.731 --> 00:02:45.898
+In D5, revenue by category sorted largest first with
+
+00:02:45.911 --> 00:02:51.484
+minus two equals GROUPBY of tblSales Category tblSales Revenue
+
+00:02:51.601 --> 00:02:55.546
+SUM zero zero minus two and the filter
+
+00:03:07.168 --> 00:03:10.358
+In G5, the same for reps so each region
+
+00:03:10.371 --> 00:03:12.337
+manager sees their team ranked
+
+00:03:32.028 --> 00:03:36.913
+Charts next Select A5 to B16 and insert a
+
+00:03:36.926 --> 00:03:41.262
+line chart from the Insert tab Then select D5
+
+00:03:41.275 --> 00:03:45.676
+to E7 and insert a clustered bar chart Drag
+
+00:03:45.689 --> 00:03:47.356
+them to the right of the tables
+
+00:03:52.465 --> 00:03:57.467
+Now the magic Click B1 and choose South The
+
+00:03:57.480 --> 00:04:01.464
+total the monthly trend the category ranking the rep
+
+00:04:01.477 --> 00:04:05.527
+list and both charts all switch to South South
+
+00:04:05.540 --> 00:04:08.131
+sold three crore eighty-eight lakh rupees
+
+00:04:09.590 --> 00:04:13.600
+Pro tip these summaries always have twelve months three
+
+00:04:13.613 --> 00:04:17.246
+categories and three reps so the charts' ranges fit
+
+00:04:17.259 --> 00:04:21.246
+exactly If a list can grow chart a fixed
+
+00:04:21.259 --> 00:04:24.553
+maximum size or use TAKE to limit it for
+
+00:04:24.566 --> 00:04:26.168
+example the top five
+
+00:04:27.606 --> 00:04:32.450
+On a Mac GROUPBY needs a current Microsoft 365 build
+
+00:04:32.749 --> 00:04:37.230
+it works exactly as here Data Validation is on
+
+00:04:37.243 --> 00:04:41.072
+the Data tab If GROUPBY shows a NAME error
+
+00:04:41.280 --> 00:04:44.353
+update Excel from Help Check for Updates
+
+00:04:45.793 --> 00:04:51.069
+To recap one dropdown cell feeds every formula FILTER
+
+00:04:51.082 --> 00:04:56.641
+gives KPIs GROUPBY gives summary tables Clear anything blocking
+
+00:04:56.654 --> 00:04:59.167
+a spill and chart the spilled ranges
+
+00:05:00.622 --> 00:05:04.398
+Your challenge below the dashboard list the top three
+
+00:05:04.411 --> 00:05:07.849
+states for the year for all regions using TAKE
+
+00:05:07.862 --> 00:05:11.679
+and GROUPBY The answer is on the Done sheet

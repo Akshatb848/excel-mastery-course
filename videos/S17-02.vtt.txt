@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:03.303
+Before anyone reads a chart they look for three
+
+00:00:03.316 --> 00:00:06.988
+numbers how much we sold whether we grew and
+
+00:00:07.001 --> 00:00:11.352
+whether we hit target These KPI cards answer that
+
+00:00:11.365 --> 00:00:14.021
+at a glance with green and red arrows that
+
+00:00:14.034 --> 00:00:15.454
+change by themselves
+
+00:00:17.168 --> 00:00:19.759
+You will learn to build a revenue card a
+
+00:00:19.772 --> 00:00:22.585
+growth card with an arrow and a target card
+
+00:00:22.598 --> 00:00:26.467
+that turns red when you fall short Practice sheet
+
+00:00:26.480 --> 00:00:28.407
+S17-02
+
+00:00:30.108 --> 00:00:33.233
+A KPI card is a label one big number
+
+00:00:33.363 --> 00:00:37.324
+and a comparison The arrows come from a custom
+
+00:00:37.337 --> 00:00:41.217
+number format with three parts one for positive numbers
+
+00:00:41.360 --> 00:00:45.618
+one for negative one for zero Colours can live
+
+00:00:45.631 --> 00:00:46.751
+in the format too
+
+00:00:48.472 --> 00:00:51.792
+Our data has monthly revenue for last year this
+
+00:00:51.805 --> 00:00:55.427
+year and this year's target The cards sit to
+
+00:00:55.440 --> 00:00:58.735
+the right in F3, H3 and J3
+
+00:01:00.452 --> 00:01:04.853
+In F3, type equals SUM open bracket C2 colon
+
+00:01:04.866 --> 00:01:09.699
+C13, close bracket and press Return Revenue for the
+
+00:01:09.712 --> 00:01:12.837
+year is thirteen crore sixty-three lakh rupees
+
+00:01:14.568 --> 00:01:17.732
+In H3, the growth equals SUM of C2 to
+
+00:01:17.745 --> 00:01:21.508
+C13, divided by SUM of B2 to B13, minus
+
+00:01:21.521 --> 00:01:23.776
+one Press Return
+
+00:01:25.492 --> 00:01:28.825
+Here is the common mistake leaving it like this
+
+00:01:29.674 --> 00:01:32.669
+Zero point one zero three means nothing to a
+
+00:01:32.682 --> 00:01:37.994
+busy reader Select H3, press Command 1 choose Custom
+
+00:01:38.124 --> 00:01:41.705
+and type the arrow format Click OK
+
+00:01:43.424 --> 00:01:47.083
+In J3, target achieved equals SUM of C2 to
+
+00:01:47.096 --> 00:01:51.629
+C13 divided by SUM of D2 to D13 It
+
+00:01:51.642 --> 00:01:54.403
+shows one hundred and two point six percent
+
+00:01:56.124 --> 00:02:00.566
+Make it turn red below target With J3 selected
+
+00:02:00.801 --> 00:02:05.683
+choose Home Conditional Formatting Highlight Cells Rules Less Than
+
+00:02:06.582 --> 00:02:09.603
+Type one keep Light Red Fill with Dark Red
+
+00:02:09.616 --> 00:02:11.400
+Text and click OK
+
+00:02:13.120 --> 00:02:17.653
+Prove it updates Management raises the March target by
+
+00:02:17.666 --> 00:02:22.263
+forty lakh In D13, type one crore fifty-eight lakh
+
+00:02:22.276 --> 00:02:27.002
+eighty thousand Target achieved drops to ninety-nine point six
+
+00:02:27.015 --> 00:02:30.544
+percent and turns red revenue and growth stay as
+
+00:02:30.557 --> 00:02:31.065
+they are
+
+00:02:32.780 --> 00:02:36.517
+Pro tip keep each card's formula short and pointing
+
+00:02:36.530 --> 00:02:40.334
+at a single summary range If the formula is
+
+00:02:40.347 --> 00:02:43.394
+long build it in a helper cell first then
+
+00:02:43.407 --> 00:02:47.274
+link the card to it Readers trust numbers they
+
+00:02:47.287 --> 00:02:48.095
+can trace
+
+00:02:49.824 --> 00:02:52.988
+On a Mac Format Cells is Command 1 and
+
+00:02:53.001 --> 00:02:57.053
+the custom format box works the same To type
+
+00:02:57.066 --> 00:03:00.633
+the triangle press Control Command Space for the Character
+
+00:03:00.646 --> 00:03:03.823
+Viewer and search for triangle or copy it from
+
+00:03:03.837 --> 00:03:05.126
+this lesson's sheet
+
+00:03:06.844 --> 00:03:10.021
+To recap a card is a label a number
+
+00:03:10.034 --> 00:03:14.359
+and a comparison Use a three-part custom format for
+
+00:03:14.372 --> 00:03:18.422
+green and red arrows Add a conditional format so
+
+00:03:18.435 --> 00:03:19.906
+missed targets turn red
+
+00:03:21.608 --> 00:03:25.059
+Your challenge fill the fourth card in L3, March
+
+00:03:25.072 --> 00:03:29.527
+compared with February with the same arrow format The
+
+00:03:29.540 --> 00:03:31.389
+answer is on the Done sheet
