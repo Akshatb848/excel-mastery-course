@@ -1,0 +1,256 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.640
+All right, welcome to this explainer. Today, we're diving into a super practical hands-on
+
+00:00:04.640 --> 00:00:09.560
+workflow. We're going to take a basic plain text business brief and literally transform
+
+00:00:09.560 --> 00:00:14.240
+it into a fully working dynamic financial model right inside Excel for Mac. And we're
+
+00:00:14.240 --> 00:00:18.740
+doing it using the Claude AI Assistant. Let's get right into it because, honestly, mastering
+
+00:00:18.740 --> 00:00:21.640
+this is going to save you hours on your next budget.
+
+00:00:21.640 --> 00:00:29.040
+So take a look at this number. 71,96,884 rupees. That right there is our target full
+
+00:00:29.040 --> 00:00:33.040
+year EBITDA for a brand new cloud kitchen launching over in Pune. By the end of this
+
+00:00:33.040 --> 00:00:36.740
+explainer, you'll know the exact step-by-step process to make Claude build the model that
+
+00:00:36.740 --> 00:00:41.360
+hits this exact figure. We're not just crossing our fingers and hoping AI does magic here.
+
+00:00:41.360 --> 00:00:46.400
+No way. We're going to direct it, verify it, and pressure test it like true professionals.
+
+00:00:46.400 --> 00:00:52.240
+The cloud kitchen brief. Let's start with our source data on sheet S20-06. We'll
+
+00:00:52.240 --> 00:00:57.360
+kick things off by selecting our 11 line brief, which goes from cell A1 down to A11.
+
+00:00:57.360 --> 00:01:01.120
+What's kind of cool here is just how basic this starting data is. It's literally just
+
+00:01:01.120 --> 00:01:06.200
+a text list of our operational inputs. Things like orders per day, expected growth, average
+
+00:01:06.200 --> 00:01:12.160
+order value, operational days, our 32% food cost, plus platform commission rates, rent,
+
+00:01:12.160 --> 00:01:17.640
+salaries, and marketing spend. This is the raw material, the DNA of our Pune cloud kitchen.
+
+00:01:17.640 --> 00:01:22.420
+But hold on. Before we unleash our AI Assistant, we've got to talk about structure. This
+
+00:01:22.420 --> 00:01:27.660
+brings up a golden rule in finance. A solid, reliable model always, always separates its
+
+00:01:27.660 --> 00:01:32.260
+data into three distinct zones. First up, the inputs. These are the assumptions you're
+
+00:01:32.260 --> 00:01:36.660
+probably going to tweak later, like that food cost percentage. Second, the calculations.
+
+00:01:36.660 --> 00:01:41.780
+Now, these must only use inputs and other calculations. Absolutely no raw numbers typed
+
+00:01:41.780 --> 00:01:46.740
+directly into them. And third, the outputs, like our bottom line EBITDA. When we actually
+
+00:01:46.740 --> 00:01:51.720
+talk to Claude, we have to tell it exactly where each of these three zones belongs. Prompting
+
+00:01:51.720 --> 00:01:56.760
+Claude for the model. It's time to bring our AI Assistant into the mix. If you're using
+
+00:01:56.760 --> 00:02:01.600
+Microsoft 365 on a Mac, you know efficiency is all about those keyboard shortcuts. So,
+
+00:02:01.600 --> 00:02:06.960
+to pop open the Claude side panel add-in, just hit control, option, and C on your Mac keyboard.
+
+00:02:06.960 --> 00:02:10.360
+Boom. The panel slides right out on the right side of your screen, totally ready
+
+00:02:10.360 --> 00:02:15.220
+for your instructions. Now, we feed Claude a highly specific prompt.
+
+00:02:15.220 --> 00:02:19.080
+We aren't just casually saying, hey, build a budget. We're explicitly dictating the
+
+00:02:19.080 --> 00:02:24.040
+layout. We tell it to read A1 to A11 and build a monthly budget for the Indian financial
+
+00:02:24.040 --> 00:02:29.720
+year. That's April 2026 to March 2027, on a brand new sheet. We tell it to stack the
+
+00:02:29.720 --> 00:02:34.480
+inputs neatly in columns A and B, run the months across row 13, and put the calculations
+
+00:02:34.480 --> 00:02:39.640
+down below. And guys, this is absolutely crucial. Check out that last line. Every calculation
+
+00:02:39.640 --> 00:02:44.720
+must use live formulas that refer to the input cells. No typed numbers in the calculations.
+
+00:02:44.720 --> 00:02:48.520
+This is exactly how you stop the AI from taking lazy shortcuts.
+
+00:02:48.520 --> 00:02:52.600
+Once you hit enter, Claude doesn't just blindly start building. It'll actually summarize
+
+00:02:52.600 --> 00:02:57.660
+its plan for you to review first. Take a second to read through that. Check it carefully.
+
+00:02:57.660 --> 00:03:01.960
+Did it actually list all nine of our inputs? If the plan looks solid and everything is
+
+00:03:01.960 --> 00:03:06.300
+there, you give it the green light. Just type yes, go ahead and build it. Checking
+
+00:03:06.300 --> 00:03:11.120
+the three zones. Now we get to inspect the work Claude just put together. Switch over
+
+00:03:11.120 --> 00:03:17.100
+to your newly created sheet named S20-06 model. First visual check. Did it actually
+
+00:03:17.100 --> 00:03:23.100
+respect our layout zones? You should see your inputs neatly stacked in A3 down to B11. And
+
+00:03:23.100 --> 00:03:27.580
+you should see those month headers stretching across row 13 starting with April. If that
+
+00:03:27.580 --> 00:03:34.080
+layout looks right, your foundation is solid. Testing the live formulas. Layout is just
+
+00:03:34.080 --> 00:03:39.140
+the surface level, right? We never blindly trust AI. We actually need to interrogate
+
+00:03:39.140 --> 00:03:44.180
+how it built the calculations beneath that surface. We can literally ask Claude to explain
+
+00:03:44.180 --> 00:03:49.460
+its own work. Over in the side panel, prompt it with, which cell holds April revenue on sheet
+
+00:03:49.460 --> 00:03:55.100
+S20-06 model and what is its formula? This forces the assistant to cough up its exact
+
+00:03:55.100 --> 00:04:01.180
+cell references. So here's the real test. When you click on that April revenue cell,
+
+00:04:01.180 --> 00:04:05.620
+what do you see in the formula bar? You absolutely want to see live cell references. Something
+
+00:04:05.620 --> 00:04:12.820
+like equals B5 times B3. You do not want to see a typed number like 420. I mean,
+
+00:04:12.820 --> 00:04:17.100
+sure, a typed number might look correct today, but it's going to completely break your model
+
+00:04:17.100 --> 00:04:22.620
+the second a supplier raises their price tomorrow. To guarantee those formulas are actually live,
+
+00:04:22.620 --> 00:04:28.340
+we do the input test. Go up to cell B3, where our orders per day input sits at 180. Click
+
+00:04:28.340 --> 00:04:34.660
+it, type 200, and hit return. If this model was built right, every single month's revenue,
+
+00:04:34.660 --> 00:04:40.300
+all the related costs, and that final FYIbeda should instantly update. If any calculation
+
+00:04:40.300 --> 00:04:44.260
+cell just sits there and doesn't budge, it means there's a hard coded number trapped inside,
+
+00:04:44.260 --> 00:04:49.060
+and your model is broken. Once you've confirmed the model is beautifully responsive, and the
+
+00:04:49.060 --> 00:04:54.020
+numbers cascade exactly like they should, just hit Command Z on your Mac keyboard to undo. That
+
+00:04:54.020 --> 00:04:59.580
+snaps our baseline orders right back to 180. Hand checking the math. Formulas are live,
+
+00:04:59.580 --> 00:05:05.540
+which is awesome, but we still need to audit the actual numbers. Because let's face it, AI can
+
+00:05:05.540 --> 00:05:10.900
+sometimes hallucinate complex business logic, so we always do a spot check. Jump back to our
+
+00:05:10.900 --> 00:05:17.940
+original S20-06 sheet. Find an empty cell, let's say A14, and we're going to manually calculate
+
+00:05:17.940 --> 00:05:25.260
+April's revenue ourselves. Type equals 180 orders times 30 days in the month times the 420 rupee
+
+00:05:25.260 --> 00:05:31.420
+average order value, and hit return. Your hand calculated result should come out to exactly 22
+
+00:05:31.420 --> 00:05:36.900
+lakh 68000 rupees. Compare that to Claude's April revenue on the model sheet, it should be a perfect
+
+00:05:36.900 --> 00:05:42.020
+match. And hey, don't just stop there. Repeat this process for at least one cost line. Maybe
+
+00:05:42.020 --> 00:05:47.420
+calculate the 32% food cost against that revenue. Just to be absolutely certain the logic is rock
+
+00:05:47.420 --> 00:05:52.540
+solid. Finally, scroll all the way over to the far right of your model, and cross reference your
+
+00:05:52.540 --> 00:06:00.580
+full year EBITDA. If it matches our target of 71 lakh 96884 rupees, well, congratulations.
+
+00:06:00.740 --> 00:06:06.340
+Your model is mathematically sound, it's properly structured, and it's fully dynamic. If it's ever
+
+00:06:06.340 --> 00:06:10.900
+off, by the way, just ask Claude to compare its rows with the original brief line by line to find
+
+00:06:10.900 --> 00:06:16.580
+the discrepancy. Recap and your next challenge. Let's lock in the muscle memory for this
+
+00:06:16.580 --> 00:06:22.500
+workflow. Remember, using AI in Excel for Mac isn't about just letting the machine do whatever
+
+00:06:22.500 --> 00:06:28.500
+it wants. It's about structured delegation. Always follow these three non-negotiable steps.
+
+00:06:28.500 --> 00:06:33.460
+Number one, give Claude a strict exact layout in your prompt, demanding the separation of
+
+00:06:33.460 --> 00:06:38.580
+inputs and calculations. Number two, check the formula bar to verify it used live cell
+
+00:06:38.580 --> 00:06:44.580
+references, not typed numbers. And number three, run that input test by tweaking an assumption
+
+00:06:44.580 --> 00:06:49.140
+alongside a manual math check of at least one month. All right, now it's your turn to take
+
+00:06:49.140 --> 00:06:53.780
+the wheel. Your challenge is to open up that side panel and ask Claude to add a brand new
+
+00:06:53.780 --> 00:06:59.460
+cash row. Tell it to include a one time kitchen setup cost of eight lakh rupees as a new input
+
+00:06:59.460 --> 00:07:04.340
+in April. Once Claude builds it, calculate the cumulative cash in March by hand to see if it
+
+00:07:04.340 --> 00:07:09.140
+matches. It's a fantastic way to put everything you've just learned to the test. So how is a
+
+00:07:09.140 --> 00:07:13.540
+massive capital expense in month one going to affect your year end cash flow? Dive into your
+
+00:07:13.540 --> 00:07:15.860
+Mac, hit control option C and find out.

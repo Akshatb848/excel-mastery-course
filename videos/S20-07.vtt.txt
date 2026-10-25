@@ -1,0 +1,664 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.200
+Okay, let's dive into this.
+
+00:00:02.200 --> 00:00:05.280
+Welcome back working professionals to today's explainer.
+
+00:00:05.280 --> 00:00:07.720
+If you've been following along with our cloud kitchen build,
+
+00:00:07.720 --> 00:00:08.760
+you know today's session
+
+00:00:08.760 --> 00:00:10.920
+is going to be incredibly practical.
+
+00:00:10.920 --> 00:00:13.720
+We are tackling lesson S20-07.
+
+00:00:13.720 --> 00:00:16.560
+This is a step-by-step Mac first Excel lesson
+
+00:00:16.560 --> 00:00:18.300
+where we'll use the Claude side panel
+
+00:00:18.300 --> 00:00:20.680
+to completely upgrade how we handle scenarios
+
+00:00:20.680 --> 00:00:23.080
+and sensitivities in our financial models.
+
+00:00:23.080 --> 00:00:24.720
+Let's get right to it.
+
+00:00:24.720 --> 00:00:27.340
+Welcome to lesson S20-07.
+
+00:00:27.340 --> 00:00:29.620
+Two, testing a what if scenario.
+
+00:00:29.660 --> 00:00:32.060
+Three, building the scenario switch.
+
+00:00:32.060 --> 00:00:34.420
+Four, ranking sensitivity impact.
+
+00:00:34.420 --> 00:00:36.500
+Five, the manager safety rule.
+
+00:00:36.500 --> 00:00:38.860
+And six, a three-point lesson recap.
+
+00:00:38.860 --> 00:00:41.500
+We're covering the exact mechanical steps you need
+
+00:00:41.500 --> 00:00:43.740
+to build these dynamic financial scenarios
+
+00:00:43.740 --> 00:00:45.780
+for our cloud kitchen budget.
+
+00:00:45.780 --> 00:00:49.580
+Section one, welcome to lesson S20-07,
+
+00:00:49.580 --> 00:00:51.740
+grounding the financial reality.
+
+00:00:51.740 --> 00:00:55.560
+Go ahead and open up your practice sheet, S20-07.
+
+00:00:55.560 --> 00:00:57.100
+Once you've got it open on your Mac,
+
+00:00:57.100 --> 00:00:59.020
+direct your attention to the top left.
+
+00:00:59.020 --> 00:01:01.180
+You'll see all our core inputs sitting right there
+
+00:01:01.180 --> 00:01:03.900
+in cells A3 down to B11.
+
+00:01:03.900 --> 00:01:07.420
+Now take a scroll down and look at cell N23.
+
+00:01:07.420 --> 00:01:08.500
+See that number?
+
+00:01:08.500 --> 00:01:12.380
+71,96,884 rubies.
+
+00:01:12.380 --> 00:01:14.660
+That is our starting full year EBITDA.
+
+00:01:14.660 --> 00:01:16.780
+Basically, it's our baseline profit.
+
+00:01:16.780 --> 00:01:17.900
+Keep that number in mind
+
+00:01:17.900 --> 00:01:20.660
+and glance back up at cell B8.
+
+00:01:20.660 --> 00:01:22.220
+Our current platform commission,
+
+00:01:22.220 --> 00:01:24.260
+you know what we're paying to the delivery apps,
+
+00:01:24.260 --> 00:01:26.800
+is sitting at exactly 22%.
+
+00:01:26.800 --> 00:01:29.000
+Keep those two baseline numbers firmly in your head
+
+00:01:29.840 --> 00:01:30.600
+as we move forward.
+
+00:01:30.600 --> 00:01:34.520
+Testing a what-if scenario using AI and manual checks.
+
+00:01:34.520 --> 00:01:36.760
+So before we even touch the keyboard
+
+00:01:36.760 --> 00:01:38.260
+to start modeling or prompting,
+
+00:01:38.260 --> 00:01:39.480
+we really need to clarify
+
+00:01:39.480 --> 00:01:41.840
+what it is we're actually building here.
+
+00:01:41.840 --> 00:01:44.600
+And this brilliantly illustrates the core concept.
+
+00:01:44.600 --> 00:01:47.600
+Look, a scenario changes several inputs together.
+
+00:01:47.600 --> 00:01:49.760
+It's like modeling a completely bad year
+
+00:01:49.760 --> 00:01:51.560
+where orders drop, costs rise,
+
+00:01:51.560 --> 00:01:54.240
+and growth stalls out all at the exact same time.
+
+00:01:54.240 --> 00:01:56.040
+A sensitivity, on the other hand,
+
+00:01:56.040 --> 00:01:58.240
+isolates just one single input.
+
+00:01:58.280 --> 00:01:59.520
+You change it all by itself
+
+00:01:59.520 --> 00:02:02.060
+to see exactly how much it moves the bottom line.
+
+00:02:02.060 --> 00:02:03.080
+But here's the thing,
+
+00:02:03.080 --> 00:02:04.600
+to do either of these effectively,
+
+00:02:04.600 --> 00:02:06.120
+you need a solid Excel model
+
+00:02:06.120 --> 00:02:08.480
+where absolutely everything flows dynamically
+
+00:02:08.480 --> 00:02:11.040
+right from those input cells we just looked at.
+
+00:02:11.040 --> 00:02:12.280
+To do this efficiently,
+
+00:02:12.280 --> 00:02:14.360
+we are bringing AI into the mix.
+
+00:02:14.360 --> 00:02:16.380
+Now, quick sidebar for everyone.
+
+00:02:16.380 --> 00:02:17.920
+You might've read about the old
+
+00:02:17.920 --> 00:02:20.160
+equals co-pilot function in Excel.
+
+00:02:20.160 --> 00:02:23.440
+Yeah, that was officially retired back in September, 2026.
+
+00:02:23.440 --> 00:02:25.160
+So we don't use that anymore.
+
+00:02:25.160 --> 00:02:28.400
+Instead, we strictly use this native Mac shortcut
+
+00:02:28.400 --> 00:02:30.720
+to open the Claude add-in side panel.
+
+00:02:30.720 --> 00:02:32.960
+I want you to physically do this with me right now.
+
+00:02:32.960 --> 00:02:36.880
+Hold control, hold option, and press C.
+
+00:02:36.880 --> 00:02:38.260
+With that side panel open,
+
+00:02:38.260 --> 00:02:40.400
+we type in this exact prompt.
+
+00:02:40.400 --> 00:02:41.680
+Let's read it together.
+
+00:02:41.680 --> 00:02:44.200
+On sheet S20-07,
+
+00:02:44.200 --> 00:02:48.640
+if platform commission in B8 goes from 22% to 25%,
+
+00:02:48.640 --> 00:02:51.600
+what happens to FYIbeda and N23?
+
+00:02:51.600 --> 00:02:53.760
+Trace which rows change and by how much?
+
+00:02:53.760 --> 00:02:55.280
+Do not edit anything.
+
+00:02:55.280 --> 00:02:57.080
+Notice how specific we're being there?
+
+00:02:57.080 --> 00:02:58.860
+Claude reads the entire sheet
+
+00:02:58.860 --> 00:03:01.200
+and tells us the exact chain reaction.
+
+00:03:01.200 --> 00:03:03.080
+It explains that as commission rises,
+
+00:03:03.080 --> 00:03:04.680
+our contribution margin falls,
+
+00:03:04.680 --> 00:03:05.940
+and therefore our EBITDA falls
+
+00:03:05.940 --> 00:03:08.920
+by precisely 3% of our total revenue.
+
+00:03:08.920 --> 00:03:10.280
+Claude gave us the answer, sure,
+
+00:03:10.280 --> 00:03:13.360
+but in this explainer, we always verify.
+
+00:03:13.360 --> 00:03:16.200
+Let's test Claude's explanation manually on your Mac.
+
+00:03:16.200 --> 00:03:18.640
+It is so crucial to actually feel the mechanics
+
+00:03:18.640 --> 00:03:20.520
+and ground this in reality.
+
+00:03:20.520 --> 00:03:25.520
+So click into cell B8, type 25%, and press return.
+
+00:03:25.520 --> 00:03:26.760
+Boom, there we go.
+
+00:03:26.760 --> 00:03:28.400
+Look at cell N23 now.
+
+00:03:28.400 --> 00:03:30.480
+Our full year EBITDA immediately drops
+
+00:03:30.480 --> 00:03:34.320
+to 62,31,259 rupees.
+
+00:03:34.320 --> 00:03:35.600
+Doing the quick math on that,
+
+00:03:35.600 --> 00:03:40.220
+it's a massive drop of about 9,65,626 rupees,
+
+00:03:40.220 --> 00:03:43.360
+just from a tiny 3% hike in app commissions.
+
+00:03:43.360 --> 00:03:46.040
+Claude's calculation was completely accurate.
+
+00:03:46.040 --> 00:03:47.860
+All right, let's put things back to normal.
+
+00:03:47.860 --> 00:03:49.960
+Hold command and press Z.
+
+00:03:49.980 --> 00:03:53.060
+I have to explicitly call out this Mac undo shortcut
+
+00:03:53.060 --> 00:03:55.160
+because I know a lot of you are migrating over
+
+00:03:55.160 --> 00:03:56.400
+from a Windows environment.
+
+00:03:56.400 --> 00:03:59.840
+You absolutely must bypass your old control Z muscle memory.
+
+00:03:59.840 --> 00:04:02.480
+Remember, on a Mac, it's command Z.
+
+00:04:02.480 --> 00:04:04.440
+Okay, we're back to our baseline.
+
+00:04:04.440 --> 00:04:05.800
+Let's move to section three,
+
+00:04:05.800 --> 00:04:08.740
+building the scenario switch, multivariable changes,
+
+00:04:08.740 --> 00:04:10.560
+and see how this builds.
+
+00:04:10.560 --> 00:04:13.680
+We're transitioning from testing a single sensitivity
+
+00:04:13.680 --> 00:04:17.080
+to building a full-blown multivariable scenario switch.
+
+00:04:17.080 --> 00:04:18.840
+We're basically gonna ask Claude to step up
+
+00:04:18.840 --> 00:04:21.520
+and create a dynamic toggle for us.
+
+00:04:21.520 --> 00:04:24.160
+Here is our comprehensive prompt for that.
+
+00:04:24.160 --> 00:04:27.460
+On sheet S20-07, add a scenario block,
+
+00:04:27.460 --> 00:04:30.000
+a label in P2 and a switch cell in Q2
+
+00:04:30.000 --> 00:04:32.120
+where I type one, two, or three.
+
+00:04:32.120 --> 00:04:35.840
+In P4 to S8, put a table with headers input,
+
+00:04:35.840 --> 00:04:38.320
+base, best, worst.
+
+00:04:38.320 --> 00:04:42.320
+Then make B3, B4, B5, and B7 pick their value
+
+00:04:42.320 --> 00:04:44.400
+from the chosen column using the switch.
+
+00:04:44.400 --> 00:04:46.400
+Ask before you change anything.
+
+00:04:46.400 --> 00:04:48.480
+We're giving it the specific data for our base,
+
+00:04:48.480 --> 00:04:50.760
+best, and worst cases for orders,
+
+00:04:50.760 --> 00:04:53.760
+growth, order value, and food cost.
+
+00:04:53.760 --> 00:04:55.720
+Claude will propose using the choose formula
+
+00:04:55.720 --> 00:04:57.080
+to drive our yellow input cells
+
+00:04:57.080 --> 00:04:58.980
+right from that Q2 switch.
+
+00:04:58.980 --> 00:05:00.160
+We read the proposal,
+
+00:05:00.160 --> 00:05:02.920
+and then we approve it by telling Claude to go ahead.
+
+00:05:02.920 --> 00:05:04.920
+Now, what's really interesting about this slide
+
+00:05:04.920 --> 00:05:07.820
+is how Claude perfectly formats our base,
+
+00:05:07.820 --> 00:05:11.720
+best, and worst data directly into cells P4 to S8.
+
+00:05:11.720 --> 00:05:14.360
+It structures this matrix absolutely flawlessly
+
+00:05:14.360 --> 00:05:16.520
+so the choose function can easily reference
+
+00:05:16.520 --> 00:05:18.080
+column one, two, or three
+
+00:05:18.080 --> 00:05:20.680
+based entirely on our master switch.
+
+00:05:20.680 --> 00:05:23.080
+Let's physically try out the switch we just built.
+
+00:05:23.080 --> 00:05:25.940
+Go to cell Q2, type the number three
+
+00:05:25.940 --> 00:05:28.580
+for the worst case scenario, and press return.
+
+00:05:28.580 --> 00:05:30.460
+Now watch your spreadsheet carefully.
+
+00:05:30.460 --> 00:05:32.560
+Literally watch the revenue and EBITDA
+
+00:05:32.560 --> 00:05:35.640
+fall across all 12 months simultaneously.
+
+00:05:35.640 --> 00:05:38.260
+It's kind of magical to see it cascade like that.
+
+00:05:38.260 --> 00:05:40.320
+Go ahead and test typing two for the best case
+
+00:05:40.320 --> 00:05:41.840
+and then one to watch it revert
+
+00:05:41.840 --> 00:05:44.040
+perfectly back to where we started.
+
+00:05:44.040 --> 00:05:46.840
+All right, section four, ranking sensitivity impact,
+
+00:05:46.840 --> 00:05:48.640
+finding what matters.
+
+00:05:48.640 --> 00:05:50.080
+We have our scenarios built out,
+
+00:05:50.080 --> 00:05:52.360
+but as managers, we still need to find out
+
+00:05:52.360 --> 00:05:55.560
+which single input affects our budget the absolute most.
+
+00:05:55.560 --> 00:05:57.320
+Where's our biggest risk hiding?
+
+00:05:57.320 --> 00:05:58.760
+Let's find out.
+
+00:05:58.760 --> 00:06:03.600
+On sheet S20-07, for each input in B3 to B11,
+
+00:06:03.600 --> 00:06:06.720
+what would FYEBITDA in N23B
+
+00:06:06.720 --> 00:06:09.800
+if that input alone were 10% worse?
+
+00:06:09.800 --> 00:06:11.160
+Rank the inputs by impact.
+
+00:06:11.160 --> 00:06:13.200
+Do not change the sheet.
+
+00:06:13.200 --> 00:06:15.880
+Again, notice that crucial safety phrase at the end.
+
+00:06:15.880 --> 00:06:18.000
+We just want the analysis and the raw numbers.
+
+00:06:18.000 --> 00:06:21.520
+We don't want any unexpected edits to our actual model.
+
+00:06:21.520 --> 00:06:24.600
+Clod instantly processes that entire calculation chain
+
+00:06:24.600 --> 00:06:26.200
+and outputs the results.
+
+00:06:26.200 --> 00:06:28.920
+It reveals that orders per day and average order value
+
+00:06:28.920 --> 00:06:30.800
+rank first in terms of impact,
+
+00:06:30.800 --> 00:06:32.700
+simply because they are the core drivers
+
+00:06:32.700 --> 00:06:34.200
+of our top line revenue.
+
+00:06:34.200 --> 00:06:35.720
+Now, once you see this output,
+
+00:06:35.720 --> 00:06:38.020
+I highly advise you to go manually test
+
+00:06:38.020 --> 00:06:39.880
+that top-ranked input yourself.
+
+00:06:39.880 --> 00:06:41.760
+Tweak it down 10%, just like we did
+
+00:06:41.760 --> 00:06:43.280
+with the platform commission earlier,
+
+00:06:43.280 --> 00:06:45.640
+just to verify the math on your own.
+
+00:06:45.660 --> 00:06:49.000
+The manager safety rule, professional polish.
+
+00:06:49.000 --> 00:06:50.800
+We're pivoting to something I like to call
+
+00:06:50.800 --> 00:06:52.440
+the manager safety rule.
+
+00:06:52.440 --> 00:06:55.440
+This is an absolutely crucial real-world tip
+
+00:06:55.440 --> 00:06:58.100
+about professional polish when sharing these Excel files
+
+00:06:58.100 --> 00:07:00.440
+with your colleagues or your managers.
+
+00:07:00.440 --> 00:07:02.760
+So the crucial point is this,
+
+00:07:02.760 --> 00:07:04.680
+always label your switch clearly,
+
+00:07:04.680 --> 00:07:08.040
+and without fail, set it back to the base case,
+
+00:07:08.040 --> 00:07:11.360
+scenario one, before you email or share that file.
+
+00:07:11.360 --> 00:07:14.240
+I mean it, leaving a dynamic switch on worst case
+
+00:07:14.240 --> 00:07:17.400
+when you hit send is a major, major risk.
+
+00:07:17.400 --> 00:07:20.040
+A manager might open it up, completely ignore the switch,
+
+00:07:20.040 --> 00:07:22.560
+and mistakenly accept those terrible numbers
+
+00:07:22.560 --> 00:07:24.680
+as the actual financial plan.
+
+00:07:24.680 --> 00:07:26.800
+Save yourself the headache and the confusion.
+
+00:07:26.800 --> 00:07:29.240
+Always reset to base.
+
+00:07:29.240 --> 00:07:31.760
+Three-point lesson recap, key takeaways.
+
+00:07:31.760 --> 00:07:33.440
+Let's distill this down to the absolute
+
+00:07:33.440 --> 00:07:35.560
+most important actions you should take away
+
+00:07:35.560 --> 00:07:37.800
+from lesson S20-07 today.
+
+00:07:39.480 --> 00:07:41.840
+First, always ask what ifs using Claude,
+
+00:07:41.840 --> 00:07:43.360
+but rigorously verify them
+
+00:07:43.360 --> 00:07:45.120
+by manually changing the input yourself
+
+00:07:45.120 --> 00:07:46.680
+using your Mac keystrokes.
+
+00:07:46.680 --> 00:07:48.680
+Second, use a scenario switch cell
+
+00:07:48.680 --> 00:07:50.320
+combined with the choose formula
+
+00:07:50.320 --> 00:07:51.560
+so you can seamlessly toggle
+
+00:07:51.560 --> 00:07:53.520
+between best and worst cases.
+
+00:07:53.520 --> 00:07:56.200
+And third, rank your inputs by sensitivity impact
+
+00:07:56.200 --> 00:07:58.960
+so you know exactly where to focus your business strategy.
+
+00:07:58.960 --> 00:08:00.640
+Honestly, it's the perfect combination
+
+00:08:00.640 --> 00:08:03.800
+of AI prompting and manual Excel mastery.
+
+00:08:03.800 --> 00:08:05.120
+I wanna end today's explainer
+
+00:08:05.120 --> 00:08:07.200
+with a direct challenge to you.
+
+00:08:07.200 --> 00:08:09.660
+Now that you know how to command Claude on your Mac,
+
+00:08:09.660 --> 00:08:11.600
+can you go into your sheet right now
+
+00:08:11.600 --> 00:08:13.560
+and add a fourth scenario?
+
+00:08:13.560 --> 00:08:15.520
+Call it monsoon slump.
+
+00:08:15.520 --> 00:08:18.520
+Set the orders per day to just 140 for the whole year,
+
+00:08:18.520 --> 00:08:20.400
+update your switch to accept a number four,
+
+00:08:20.400 --> 00:08:24.020
+and then manually check what happens to April's revenue.
+
+00:08:24.020 --> 00:08:25.240
+Get your hands on the keyboard,
+
+00:08:25.240 --> 00:08:27.440
+test out your new Mac-based Claude skills,
+
+00:08:27.440 --> 00:08:28.800
+and give it a try.
+
+00:08:28.800 --> 00:08:30.080
+Thanks for hanging out with me today,
+
+00:08:30.080 --> 00:08:32.080
+and I'll see you in the next explainer.

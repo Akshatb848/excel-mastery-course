@@ -1,0 +1,226 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.080
+Welcome to the Explainer. Today, we're rolling up our sleeves to methodically find and fix
+
+00:00:04.080 --> 00:00:08.960
+errors in a broken spreadsheet using the Claude Add-In for Mac. We're focusing right in on lesson
+
+00:00:08.960 --> 00:00:14.560
+S20-04. It's a highly practical, step-by-step guide to cleaning up messy financial models
+
+00:00:14.560 --> 00:00:19.680
+without losing your mind or your data. Okay, let's dive into a relatable nightmare.
+
+00:00:19.680 --> 00:00:23.040
+We've all been there, right? A colleague hands over a profit and loss workbook,
+
+00:00:23.040 --> 00:00:27.920
+you open it up, and boom, it's full of hash ref errors, hidden traps, and totals that
+
+00:00:27.920 --> 00:00:32.560
+look completely out of whack. But instead of panicking, or manually clicking through
+
+00:00:32.560 --> 00:00:35.840
+hundreds of individual cells, we're going to tackle this systematically.
+
+00:00:36.560 --> 00:00:41.200
+Before we touch a single cell, we really need to understand what we're actually looking for.
+
+00:00:41.920 --> 00:00:46.960
+Basically, there are three spreadsheet villains that cause the vast majority of our headaches.
+
+00:00:46.960 --> 00:00:51.360
+In fact, studies show nearly 90% of complex spreadsheets have at least one of these.
+
+00:00:52.000 --> 00:00:55.840
+First up, visible error values. These are the loud ones everyone can see,
+
+00:00:55.840 --> 00:01:02.240
+like a giant hash tag ref. Second, we have ranges missing rows or months. These look perfectly fine
+
+00:01:02.240 --> 00:01:06.480
+at first glance, but they're quietly ruining your totals in the background. And third,
+
+00:01:06.480 --> 00:01:10.640
+the ultimate betrayal. Typed numbers sitting right where a formula should be.
+
+00:01:11.360 --> 00:01:15.280
+Now, since you're working on a Mac, let's optimize our workflow right out of the gate.
+
+00:01:15.280 --> 00:01:20.160
+Leave that mouse alone. Just hit Ctrl plus Option plus C to instantly pop open the
+
+00:01:20.160 --> 00:01:24.480
+Claude Add-In right next to your sheet. Getting comfortable with these Mac-specific shortcuts
+
+00:01:24.560 --> 00:01:28.720
+is literally going to save you hours as you jump back and forth between your data and your AI
+
+00:01:28.720 --> 00:01:33.840
+assistant. Take a look at our very first prompt here. We're treating Claude like a super diligent
+
+00:01:33.840 --> 00:01:38.880
+junior assistant. We ask it to strictly list the errors, telling it exactly what to look for,
+
+00:01:38.880 --> 00:01:42.880
+those three villains we just talked about. But notice the most important part at the end.
+
+00:01:42.880 --> 00:01:50.000
+We explicitly say, do not change anything yet. Never, ever tell it to fix everything. Why?
+
+00:01:50.640 --> 00:01:55.120
+Well, if you let an AI make five or six changes at once across a complex P&L,
+
+00:01:55.120 --> 00:01:59.520
+you simply can't properly check its work. Even worse, if you realize it made a bad assumption
+
+00:01:59.520 --> 00:02:04.160
+three steps ago, you can't just hit Command Z on your Mac to undo one single mistake.
+
+00:02:04.160 --> 00:02:09.520
+So remember, control is everything. So the secret is taking it step by step.
+
+00:02:10.160 --> 00:02:14.880
+Claude comes back to us with a numbered list of problems. We copy and paste this exact prompt
+
+00:02:14.880 --> 00:02:20.640
+to tackle the most obvious issue first, the visible hash ref error in July's other expenses.
+
+00:02:20.640 --> 00:02:24.960
+And notice how we're demanding that Claude explains its logic to us before executing the fix.
+
+00:02:25.840 --> 00:02:30.080
+Claude explains that E9 should point to the July row on the costs sheet,
+
+00:02:30.080 --> 00:02:34.960
+which is exactly what its neighbors are doing. You read that explanation, and if the logic is sound,
+
+00:02:34.960 --> 00:02:40.080
+you simply approve it. The hash ref instantly vanishes and the column totals clean right up.
+
+00:02:40.080 --> 00:02:43.040
+You remain the editor. The AI is just doing the heavy lifting.
+
+00:02:43.680 --> 00:02:48.720
+All right, next we target a silent killer. The FY EBITDA total in N11
+
+00:02:48.720 --> 00:02:52.960
+dangerously missed the month of March. This is exactly the kind of error that slips past
+
+00:02:52.960 --> 00:02:58.000
+a quick review. We send our prompt, again, making sure to ask for the change to be explained first.
+
+00:02:58.800 --> 00:03:03.520
+Once Claude applies the fix, you've got to verify it. If you click into cell N11,
+
+00:03:03.520 --> 00:03:08.560
+you'll see the formula now safely spans all 12 months, from B11 straight through the M11.
+
+00:03:09.280 --> 00:03:12.400
+It seems like a tiny change, but in financial modeling,
+
+00:03:12.400 --> 00:03:16.400
+missing one single month of data completely invalidates your entire analysis.
+
+00:03:17.280 --> 00:03:23.200
+Moving on to step 3, we're hunting down a hidden danger. We're asking Claude to replace a stubbornly
+
+00:03:23.200 --> 00:03:28.560
+typed October revenue number with the correct dynamic formula. Typed numbers hiding in formula
+
+00:03:28.560 --> 00:03:32.720
+columns are incredibly dangerous, because the moment your input assumptions change,
+
+00:03:32.720 --> 00:03:38.000
+that cell just sits there, frozen in time. Look closely at the difference here. The old
+
+00:03:38.000 --> 00:03:47.600
+typed figure was exactly 97,086,380 rupees, but our new dynamic formula pulls the accurate 98,023,880
+
+00:03:47.600 --> 00:03:52.080
+rupees. Someone clearly forgot to update the typed figure in the background after correcting
+
+00:03:52.080 --> 00:03:57.120
+the units. A classic copy-paste crime. By letting Claude reinstate the formula,
+
+00:03:57.120 --> 00:04:02.480
+we bring the whole sheet back to reality. For our final targeted fix, we have to address
+
+00:04:02.480 --> 00:04:08.640
+a drifting commission formula. Over in the costs sheet, the formula was returning a fat zero in May,
+
+00:04:08.640 --> 00:04:13.440
+because the cell reference had drifted down as someone copied it across. We command Claude to
+
+00:04:13.440 --> 00:04:18.960
+lock it down using an absolute reference to the inputs sheet. By clicking cell E3 on the
+
+00:04:18.960 --> 00:04:23.280
+costs sheet to double check, we confirm the reference now properly uses dollar signs,
+
+00:04:23.280 --> 00:04:28.480
+dollar B, dollar 7. Now sure, you could easily do this yourself by smashing command T on your
+
+00:04:28.480 --> 00:04:34.000
+Mac, but Claude handles it seamlessly. Because it's locked properly now, May's commission calculates
+
+00:04:34.000 --> 00:04:39.200
+correctly instead of showing up as a zero. Okay, even with a brilliant AI assistant,
+
+00:04:39.200 --> 00:04:45.200
+you must maintain total control. Trust, but verify. So we're going to run a manual verification.
+
+00:04:45.840 --> 00:04:51.760
+Down in cell B15, we physically type an equals sum formula to hand check our sales sheet array
+
+00:04:51.760 --> 00:04:58.640
+from H2 to H13. And we match that against our main total in N2. Boom. When you hit return,
+
+00:04:58.640 --> 00:05:05.680
+both cells show exactly 10,016,325 rupees. This proves beyond a shadow of a doubt that our
+
+00:05:05.680 --> 00:05:10.400
+revenue is flowing perfectly across the workbook, all the way from the raw sales data up to our
+
+00:05:10.400 --> 00:05:17.760
+summary P&L. And if we check our FYE beta in cell N11, it is now a rock solid 1,503,444.
+
+00:05:18.480 --> 00:05:25.120
+This perfectly matches the provided done sheet for this lesson. Every single fix is now visible in
+
+00:05:25.120 --> 00:05:30.000
+a formula that you can actually read, understand, and most importantly, defend in a meeting.
+
+00:05:30.720 --> 00:05:36.400
+So let's quickly recap our flawless workflow for today. First, always ask Claude for a numbered
+
+00:05:36.400 --> 00:05:41.600
+review without letting it change a single thing. Second, approve those fixes one by one, keeping
+
+00:05:41.600 --> 00:05:47.120
+your finger hovering near command Z just in case. And third, always, always finish your day with a
+
+00:05:47.120 --> 00:05:52.320
+manual hand total to prove the math actually works. Now, here's a challenge to take away from
+
+00:05:52.320 --> 00:05:59.040
+this explainer. Can you open the S20-03 practice sheets on your Mac right now and manually make
+
+00:05:59.040 --> 00:06:04.480
+these exact same four fixes without using the AI? See if you can spot the visual errors,
+
+00:06:04.480 --> 00:06:09.280
+find the missing months, locate those sneaky typed numbers, and fix the drifting references
+
+00:06:09.280 --> 00:06:15.120
+to match that final FYE beta. Prove to yourself that you've mastered the underlying logic.
+
+00:06:15.120 --> 00:06:19.520
+Because while AI can fix your formulas in seconds, only you can validate the business
+
+00:06:19.520 --> 00:06:24.160
+reality behind them. So what do you say? Will you let the machine have the final say?
+
+00:06:24.720 --> 00:06:25.600
+Thanks for watching.

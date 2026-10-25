@@ -1,0 +1,577 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.300
+All right, let's jump right in.
+
+00:00:02.300 --> 00:00:04.140
+Welcome to a highly requested walkthrough
+
+00:00:04.140 --> 00:00:06.060
+specifically designed for working professionals
+
+00:00:06.060 --> 00:00:07.760
+using Excel on the Mac.
+
+00:00:07.760 --> 00:00:10.880
+Today, we're tackling lesson S20-08
+
+00:00:10.880 --> 00:00:13.980
+and we're doing it as a practical step-by-step demo.
+
+00:00:13.980 --> 00:00:16.240
+We are gonna take a messy September bank statement
+
+00:00:16.240 --> 00:00:17.280
+and turn the whole thing
+
+00:00:17.280 --> 00:00:20.240
+into a clean presentation-ready PowerPoint slide,
+
+00:00:20.240 --> 00:00:23.400
+all by using the Clod add-in right inside Excel.
+
+00:00:23.400 --> 00:00:25.160
+If you have ever spent hours
+
+00:00:25.160 --> 00:00:27.320
+manually typing out bank transactions,
+
+00:00:27.320 --> 00:00:30.560
+believe me, this workflow is an absolute game changer.
+
+00:00:30.560 --> 00:00:33.840
+We're going straight from a raw, unstructured PDF statement
+
+00:00:33.840 --> 00:00:35.800
+from the fictional Sayadri Bank
+
+00:00:35.800 --> 00:00:39.240
+directly to a clean, categorized PowerPoint bar chart.
+
+00:00:39.240 --> 00:00:40.360
+Zero fluff.
+
+00:00:40.360 --> 00:00:42.160
+I'm gonna walk you through the exact keystrokes
+
+00:00:42.160 --> 00:00:43.680
+and the practical prompts you need
+
+00:00:43.680 --> 00:00:46.920
+to get this done on your Mac in just a matter of minutes.
+
+00:00:46.920 --> 00:00:50.280
+So before we even think about extracting anything with AI,
+
+00:00:50.280 --> 00:00:52.080
+we have to set up our answer key.
+
+00:00:52.080 --> 00:00:54.960
+In sheet S20-08 of our workbook,
+
+00:00:54.960 --> 00:00:57.360
+we've manually typed the PDF summary box totals
+
+00:00:57.360 --> 00:00:58.540
+right into column B.
+
+00:00:58.540 --> 00:01:00.360
+This is absolutely crucial.
+
+00:01:00.360 --> 00:01:02.700
+Column C is where our AI extracted totals
+
+00:01:02.700 --> 00:01:03.600
+will eventually sit
+
+00:01:03.600 --> 00:01:06.040
+and column D will calculate the difference.
+
+00:01:06.040 --> 00:01:08.160
+Basically, if everything works perfectly today,
+
+00:01:08.160 --> 00:01:10.220
+column D is gonna be completely empty.
+
+00:01:11.220 --> 00:01:14.440
+Okay, let's get our AI assistant ready to go.
+
+00:01:14.440 --> 00:01:17.280
+You know, since the experimental equals co-pilot function
+
+00:01:17.280 --> 00:01:19.960
+was retired back in September, 2026,
+
+00:01:19.960 --> 00:01:23.760
+relying on robust side panel assistants like Clod in Excel
+
+00:01:23.760 --> 00:01:26.160
+is really how professionals get this done today.
+
+00:01:26.160 --> 00:01:29.020
+To bring up the Clod add-in panel in your Excel window,
+
+00:01:29.020 --> 00:01:32.540
+just press Control, Option, and C on your Mac keyboard.
+
+00:01:32.540 --> 00:01:35.180
+It pops right open, ready to work.
+
+00:01:35.180 --> 00:01:37.760
+Now, here is where we establish some ground rules.
+
+00:01:37.760 --> 00:01:39.420
+Click that paperclip icon,
+
+00:01:39.420 --> 00:01:42.120
+attach your Sayadri Bank statement PDF,
+
+00:01:42.120 --> 00:01:44.440
+and give Clod this exact prompt.
+
+00:01:44.440 --> 00:01:46.720
+I am attaching a PDF Bank statement next.
+
+00:01:46.720 --> 00:01:49.580
+Please wait for my instructions before doing anything.
+
+00:01:49.580 --> 00:01:52.200
+It might seem silly, but establishing control
+
+00:01:52.220 --> 00:01:53.920
+before the AI starts analyzing
+
+00:01:53.920 --> 00:01:56.280
+and potentially making wild assumptions about our data
+
+00:01:56.280 --> 00:01:58.860
+is a super important habit to build.
+
+00:01:58.860 --> 00:02:00.360
+Once Clod acknowledges you,
+
+00:02:00.360 --> 00:02:01.960
+hit it with the main instruction.
+
+00:02:01.960 --> 00:02:03.720
+Tell it exactly what to extract,
+
+00:02:03.720 --> 00:02:05.500
+mapping out columns A to F,
+
+00:02:05.500 --> 00:02:07.580
+and tell it to skip the opening balance.
+
+00:02:07.580 --> 00:02:09.860
+But pay close attention to the formatting rules here.
+
+00:02:09.860 --> 00:02:11.480
+We are specifically requesting
+
+00:02:11.480 --> 00:02:15.340
+the Indian dd-mm-yyyy date format.
+
+00:02:15.340 --> 00:02:18.080
+So Excel actually recognizes them as real dates.
+
+00:02:18.080 --> 00:02:21.500
+Also, demand that the reference column be formatted as text.
+
+00:02:21.500 --> 00:02:24.540
+If you skip that, Excel is gonna treat your long IMPS
+
+00:02:24.540 --> 00:02:27.200
+or UPI transaction numbers as scientific notation.
+
+00:02:27.200 --> 00:02:29.240
+Round them off and totally ruin your data.
+
+00:02:30.120 --> 00:02:32.320
+Clod treats file content as data,
+
+00:02:32.320 --> 00:02:34.120
+so it's always gonna ask for your permission
+
+00:02:34.120 --> 00:02:37.020
+before creating a new sheet or changing your workbook.
+
+00:02:37.020 --> 00:02:39.520
+It'll outline its plan, and you just type your approval.
+
+00:02:39.520 --> 00:02:40.680
+Yes, go ahead.
+
+00:02:40.680 --> 00:02:42.400
+It's a nice little built-in safety check
+
+00:02:42.400 --> 00:02:45.040
+so it doesn't overwrite anything by mistake.
+
+00:02:45.040 --> 00:02:48.000
+Within seconds, boom, the new sheet populates.
+
+00:02:48.000 --> 00:02:51.320
+But hey, we never just blindly trust the AI, right?
+
+00:02:51.320 --> 00:02:53.620
+Check the newly generated sheet immediately.
+
+00:02:53.620 --> 00:02:55.260
+Make sure the dates look correct
+
+00:02:55.260 --> 00:02:57.700
+and those long reference numbers are intact.
+
+00:02:57.700 --> 00:03:00.460
+Most importantly, scroll all the way to the bottom.
+
+00:03:00.460 --> 00:03:02.380
+Your final closing balance on the sheet
+
+00:03:02.380 --> 00:03:04.820
+must perfectly match the figure from the PDF.
+
+00:03:04.820 --> 00:03:09.420
+In this case, 91,141 rupees and 10 paeci.
+
+00:03:09.420 --> 00:03:11.340
+Now for the reconciliation phase,
+
+00:03:11.340 --> 00:03:14.040
+which is where we really build confidence in our data.
+
+00:03:14.040 --> 00:03:15.580
+Back on our original prep sheet,
+
+00:03:15.580 --> 00:03:18.340
+we write some basic formulas in column C.
+
+00:03:18.340 --> 00:03:21.000
+We drop a sum formula for our extracted debits,
+
+00:03:21.000 --> 00:03:24.020
+another sum for the credits, calculate the closing balance
+
+00:03:24.020 --> 00:03:27.020
+and use a counter formula minus one for the header
+
+00:03:27.020 --> 00:03:29.460
+to get our total transaction count.
+
+00:03:29.460 --> 00:03:31.500
+All right, this is the critical moment.
+
+00:03:31.500 --> 00:03:33.660
+Your calculated total withdrawals in Excel
+
+00:03:33.660 --> 00:03:36.020
+must match this exact amount.
+
+00:03:36.020 --> 00:03:40.540
+One lakh, 5,338 rupees and 15 paeci.
+
+00:03:40.540 --> 00:03:41.780
+That is the exact figure
+
+00:03:41.780 --> 00:03:43.780
+straight from the bank's own summary box.
+
+00:03:43.780 --> 00:03:46.220
+If your number is off, even by a single paeci,
+
+00:03:46.220 --> 00:03:48.580
+something went wrong during extraction.
+
+00:03:48.580 --> 00:03:50.580
+And here is the result we wanna see.
+
+00:03:50.600 --> 00:03:51.720
+Looking at column D,
+
+00:03:51.720 --> 00:03:54.400
+which compares the bank summary against our extraction,
+
+00:03:54.400 --> 00:03:56.760
+every single difference down to the paeci
+
+00:03:56.760 --> 00:03:58.400
+should be perfectly zero.
+
+00:03:58.400 --> 00:04:00.040
+That beautiful column of zeros
+
+00:04:00.040 --> 00:04:03.840
+mathematically verifies your data extraction is spot on.
+
+00:04:03.840 --> 00:04:06.800
+Honestly, I cannot stress this next point enough.
+
+00:04:06.800 --> 00:04:10.060
+The summary box in the PDF is literal free proof.
+
+00:04:10.060 --> 00:04:11.260
+Always use it.
+
+00:04:11.260 --> 00:04:12.560
+A massive mistake people make
+
+00:04:12.560 --> 00:04:14.560
+is skipping this reconciliation step
+
+00:04:14.560 --> 00:04:16.380
+because they trust the AI too much.
+
+00:04:16.380 --> 00:04:19.480
+But PDF extraction can easily drop a page break line
+
+00:04:19.500 --> 00:04:21.700
+or misread a balance as a debit.
+
+00:04:21.700 --> 00:04:24.580
+Using the bank summary box as your absolute proof
+
+00:04:24.580 --> 00:04:26.540
+ensures your data is bulletproof
+
+00:04:26.540 --> 00:04:28.660
+before you do any analysis.
+
+00:04:28.660 --> 00:04:30.500
+Now let's categorize that raw data
+
+00:04:30.500 --> 00:04:32.220
+to actually make it meaningful.
+
+00:04:32.220 --> 00:04:34.540
+We're gonna ask Claude to add column G,
+
+00:04:34.540 --> 00:04:37.720
+but we are feeding it a very strict list of simple groups.
+
+00:04:37.720 --> 00:04:41.300
+Salary, EMI, food, groceries,
+
+00:04:41.300 --> 00:04:44.640
+utilities, travel, cash, and transfer.
+
+00:04:44.640 --> 00:04:46.220
+We tell it to base these strictly
+
+00:04:46.220 --> 00:04:48.080
+on the transaction descriptions.
+
+00:04:48.140 --> 00:04:50.220
+Setting boundaries like this is key.
+
+00:04:50.220 --> 00:04:53.380
+Otherwise, the AI will invent 50 slightly different categories
+
+00:04:53.380 --> 00:04:55.620
+that are totally impossible to chart.
+
+00:04:55.620 --> 00:04:57.300
+Once column G is populated,
+
+00:04:57.300 --> 00:04:59.100
+do a quick human spot check.
+
+00:04:59.100 --> 00:05:02.540
+Make sure it correctly tagged that ATM withdrawal as cash.
+
+00:05:02.540 --> 00:05:04.980
+Very importantly, check that your IMPS transfer
+
+00:05:04.980 --> 00:05:07.660
+to your own secondary account is tagged as a transfer
+
+00:05:07.660 --> 00:05:09.260
+rather than an expense.
+
+00:05:09.260 --> 00:05:12.460
+And verify the Amazon return shows up as a refund.
+
+00:05:12.460 --> 00:05:14.120
+AI is incredibly smart,
+
+00:05:14.120 --> 00:05:16.060
+but it doesn't know your personal context.
+
+00:05:16.060 --> 00:05:18.960
+So a quick review is absolutely essential.
+
+00:05:18.960 --> 00:05:22.100
+Okay, our data is clean and categorized.
+
+00:05:22.100 --> 00:05:24.580
+Let's move this from Excel to PowerPoint.
+
+00:05:24.580 --> 00:05:27.240
+We prompt Claude to build a summary sheet with a bar chart
+
+00:05:27.240 --> 00:05:29.160
+and draft three slides for us.
+
+00:05:29.160 --> 00:05:31.040
+The crucial instruction here is telling it
+
+00:05:31.040 --> 00:05:34.160
+to exclude the transfer category from our spending totals
+
+00:05:34.160 --> 00:05:36.120
+using SUMIFS formulas.
+
+00:05:36.120 --> 00:05:39.760
+We only wanna see our actual real world expenses.
+
+00:05:39.760 --> 00:05:43.000
+Instantly, Claude generates a clean formatted bar chart
+
+00:05:43.000 --> 00:05:45.440
+showing your top spending categories for the month.
+
+00:05:45.460 --> 00:05:46.540
+And the best part?
+
+00:05:46.540 --> 00:05:49.460
+This chart is fully backed by live SUMIFS formulas
+
+00:05:49.460 --> 00:05:51.800
+pointing directly to our extracted data.
+
+00:05:51.800 --> 00:05:53.260
+It's dynamic, it's accurate,
+
+00:05:53.260 --> 00:05:56.340
+and it is totally ready for your presentation.
+
+00:05:56.340 --> 00:05:58.060
+Check Claude's cited cell references
+
+00:05:58.060 --> 00:05:59.400
+in the text it drafted.
+
+00:05:59.400 --> 00:06:01.020
+Once you verify those numbers are correct,
+
+00:06:01.020 --> 00:06:02.780
+just use your classic Mac shortcuts,
+
+00:06:02.780 --> 00:06:03.880
+command C to copy,
+
+00:06:03.880 --> 00:06:06.100
+and command V to paste your chart and text
+
+00:06:06.100 --> 00:06:07.860
+directly into your PowerPoint deck.
+
+00:06:07.860 --> 00:06:09.820
+No re-typing, no messy screenshots,
+
+00:06:09.820 --> 00:06:12.620
+just clean native data integration.
+
+00:06:12.620 --> 00:06:14.580
+Quick security reminder before we finish up,
+
+00:06:14.600 --> 00:06:17.760
+especially for working professionals handling financial data.
+
+00:06:17.760 --> 00:06:22.400
+Claude treats file content as both instructions and data.
+
+00:06:22.400 --> 00:06:25.760
+Literally never upload statements from untrusted sources.
+
+00:06:25.760 --> 00:06:28.560
+Malicious PDFs can actually contain hidden instructions
+
+00:06:28.560 --> 00:06:30.540
+called prompt injections.
+
+00:06:30.540 --> 00:06:32.360
+Always review what the AI plans to do
+
+00:06:32.360 --> 00:06:33.880
+before hitting a proof,
+
+00:06:33.880 --> 00:06:36.320
+especially with sensitive bank talks.
+
+00:06:36.320 --> 00:06:38.240
+So let's do a quick three point recap
+
+00:06:38.240 --> 00:06:39.480
+of our workflow today.
+
+00:06:39.480 --> 00:06:41.360
+Number one, attach your statement
+
+00:06:41.360 --> 00:06:43.600
+and specify your columns perfectly.
+
+00:06:43.600 --> 00:06:45.180
+Like demanding real dates
+
+00:06:45.180 --> 00:06:47.460
+and text for those long reference numbers.
+
+00:06:47.460 --> 00:06:49.980
+Number two, reconcile your totals perfectly
+
+00:06:49.980 --> 00:06:51.020
+against the bank summary,
+
+00:06:51.020 --> 00:06:52.940
+down to the exact PISA.
+
+00:06:52.940 --> 00:06:55.420
+And number three, verify all cell references
+
+00:06:55.420 --> 00:06:57.500
+and numbers before hitting command C
+
+00:06:57.500 --> 00:06:59.980
+and pasting it into your presentation.
+
+00:06:59.980 --> 00:07:01.720
+I wanna leave you with a practical challenge
+
+00:07:01.720 --> 00:07:03.800
+to really test out your new workflow.
+
+00:07:03.800 --> 00:07:04.860
+Go back to your workbook,
+
+00:07:04.860 --> 00:07:05.860
+open that Claude panel,
+
+00:07:05.860 --> 00:07:08.380
+and ask it this exact question.
+
+00:07:08.380 --> 00:07:10.420
+What is the combined share of my spending
+
+00:07:10.420 --> 00:07:12.060
+on food and groceries?
+
+00:07:12.060 --> 00:07:14.220
+But hey, don't just take its word for it.
+
+00:07:14.220 --> 00:07:17.140
+Manually verify its answer using a SUMIFS formula
+
+00:07:17.140 --> 00:07:18.700
+on your new category column.
+
+00:07:18.700 --> 00:07:20.640
+Does the AI match your math?
+
+00:07:20.640 --> 00:07:22.840
+Try it out, master this exact workflow,
+
+00:07:22.840 --> 00:07:24.540
+and I promise you'll save yourself
+
+00:07:24.540 --> 00:07:26.580
+hours of manual data entry this week.

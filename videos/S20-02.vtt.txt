@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00:00.100 --> 00:00:03.290
+Here's where we'll end up Claude in Excel open
+
+00:00:03.303 --> 00:00:07.574
+beside a monthly profit sheet answering questions and pointing
+
+00:00:07.587 --> 00:00:11.261
+to the exact cells it used Setting it up
+
+00:00:11.274 --> 00:00:12.862
+takes about five minutes
+
+00:00:14.576 --> 00:00:17.258
+You'll learn where to get the add-in what plan
+
+00:00:17.271 --> 00:00:20.110
+you need how to open it with Control Option
+
+00:00:20.123 --> 00:00:23.183
+C and what Claude can see in your workbook
+
+00:00:24.083 --> 00:00:27.130
+Practice sheet S20-02
+
+00:00:28.836 --> 00:00:31.987
+Claude in Excel is an add-in made by Anthropic
+
+00:00:32.888 --> 00:00:36.950
+You install it from Microsoft Marketplace the same store
+
+00:00:36.963 --> 00:00:40.987
+as other Office add-ins It needs a paid Claude
+
+00:00:41.000 --> 00:00:46.260
+plan Pro Max Team or Enterprise The free plan
+
+00:00:46.273 --> 00:00:47.289
+won't sign in
+
+00:00:48.976 --> 00:00:54.551
+Open sheet S20-02 It's a simple monthly profit sheet
+
+00:00:54.733 --> 00:01:02.858
+revenue expenses profit and margin for April 2025 to March 2026 with totals
+
+00:01:02.871 --> 00:01:03.861
+in row 14
+
+00:01:05.564 --> 00:01:08.403
+To install go to the Home tab and click
+
+00:01:08.416 --> 00:01:12.116
+Add-ins On Excel for Mac you can also use
+
+00:01:12.129 --> 00:01:13.743
+Insert Get Add-ins
+
+00:01:15.456 --> 00:01:18.974
+Click More Add-ins to open the store In the
+
+00:01:18.987 --> 00:01:21.942
+search box type Claude and press Return
+
+00:01:23.644 --> 00:01:27.969
+Look for Claude by Anthropic Check the publisher name
+
+00:01:27.982 --> 00:01:32.526
+before you click Add Copycat add-ins exist and you're
+
+00:01:32.539 --> 00:01:36.446
+giving this one access to your data We already
+
+00:01:36.459 --> 00:01:39.037
+have it installed so I'll close the store
+
+00:01:40.736 --> 00:01:43.549
+The first time you open it Claude asks you
+
+00:01:43.562 --> 00:01:45.905
+to sign in with your Claude account in a
+
+00:01:45.918 --> 00:01:50.439
+small window After that it remembers you on this
+
+00:01:50.452 --> 00:01:50.881
+Mac
+
+00:01:52.596 --> 00:01:56.908
+Now open it On a Mac press Control Option
+
+00:01:56.921 --> 00:02:00.215
+C In Excel for the web you can also
+
+00:02:00.228 --> 00:02:03.965
+click the Claude button on the Home tab Let's
+
+00:02:03.978 --> 00:02:05.293
+ask what it can see
+
+00:02:07.000 --> 00:02:10.607
+Claude reads the whole workbook not only the selected
+
+00:02:10.620 --> 00:02:16.273
+cells Its answer lists the sheets and describes S20-02
+
+00:02:16.468 --> 00:02:21.247
+and it mentions cell addresses like D14 Those addresses
+
+00:02:21.260 --> 00:02:24.854
+are citations You can click them to jump to
+
+00:02:24.867 --> 00:02:25.453
+the cell
+
+00:02:27.164 --> 00:02:32.192
+Let's verify the citation Click D14, the FY total
+
+00:02:32.205 --> 00:02:39.614
+profit It shows rupees 51,47,000 Read the formula bar
+
+00:02:39.770 --> 00:02:43.690
+it's a SUM of D2 to D13 Claude's figure
+
+00:02:43.703 --> 00:02:44.536
+should match
+
+00:02:46.248 --> 00:02:50.625
+One more check Ask Claude how it calculated the
+
+00:02:50.638 --> 00:02:54.362
+April profit It should point you to D2 and
+
+00:02:54.375 --> 00:02:56.471
+say revenue minus expenses
+
+00:02:58.180 --> 00:03:04.250
+Click D2 It shows rupees 3,78,000 and the formula
+
+00:03:04.263 --> 00:03:08.807
+is B2 minus C2 Claude's explanation and the sheet
+
+00:03:08.820 --> 00:03:09.315
+agree
+
+00:03:11.096 --> 00:03:15.551
+What can Claude change It can write formulas add
+
+00:03:15.564 --> 00:03:20.213
+sheets charts and PivotTables For anything larger than a
+
+00:03:20.226 --> 00:03:23.364
+small edit it asks first and tells you what
+
+00:03:23.377 --> 00:03:26.788
+it will change You stay in control
+
+00:03:28.500 --> 00:03:31.313
+A common mistake is installing it while signed in
+
+00:03:31.326 --> 00:03:34.633
+to Excel with a personal account then wondering why
+
+00:03:34.646 --> 00:03:38.554
+the work file doesn't show it Add-ins follow the
+
+00:03:38.567 --> 00:03:41.041
+Microsoft account you're signed in with
+
+00:03:42.760 --> 00:03:46.406
+On Excel for Mac Control Option C opens and
+
+00:03:46.419 --> 00:03:50.614
+closes the pane If the shortcut does nothing open
+
+00:03:50.627 --> 00:03:54.325
+it once from the ribbon Some Mac keyboard tools
+
+00:03:54.338 --> 00:03:55.692
+use the same keys
+
+00:03:57.404 --> 00:04:02.992
+To recap Install Claude by Anthropic from Microsoft Marketplace
+
+00:04:03.005 --> 00:04:06.403
+and sign in with a paid plan Open it
+
+00:04:06.416 --> 00:04:10.180
+with Control Option C And click the cells it
+
+00:04:10.193 --> 00:04:12.028
+cites to check its answers
+
+00:04:13.728 --> 00:04:17.205
+Your challenge ask Claude which month had the lowest
+
+00:04:17.218 --> 00:04:20.147
+profit margin then click the cell it cites and
+
+00:04:20.160 --> 00:04:23.090
+confirm it with MIN on column E Compare with
+
+00:04:23.103 --> 00:04:24.027
+the Done sheet

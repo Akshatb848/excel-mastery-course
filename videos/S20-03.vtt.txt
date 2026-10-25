@@ -1,0 +1,607 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.000
+Welcome to this step-by-step explainer.
+
+00:00:02.000 --> 00:00:07.000
+Today, we're diving into lesson S20-03 of our Advanced Excel series.
+
+00:00:07.000 --> 00:00:10.000
+If you're a working professional in India who just made the jump to a Mac,
+
+00:00:10.000 --> 00:00:12.000
+you're in the exact right place.
+
+00:00:12.000 --> 00:00:15.000
+We're going to learn exactly how to map and untangle those messy,
+
+00:00:15.000 --> 00:00:18.000
+inherited Excel workbooks using Claude.
+
+00:00:18.000 --> 00:00:20.000
+Let's take a quick look at the agenda.
+
+00:00:20.000 --> 00:00:24.000
+Think of this as our syllabus for today's over-the-shoulder walkthrough.
+
+00:00:24.000 --> 00:00:26.000
+We'll start with inheriting a messy workbook,
+
+00:00:26.000 --> 00:00:29.000
+then get a guided tour, trace some numbers and errors,
+
+00:00:29.000 --> 00:00:31.000
+do a little old-fashioned manual checking,
+
+00:00:31.000 --> 00:00:34.000
+map out the sheets and finish up with a quick three-point recap.
+
+00:00:34.000 --> 00:00:36.000
+Let's get right into it.
+
+00:00:36.000 --> 00:00:38.000
+Inheriting a messy workbook.
+
+00:00:38.000 --> 00:00:41.000
+Honestly, this is an absolute corporate nightmare, right?
+
+00:00:41.000 --> 00:00:45.000
+We've all been there when taking over a brand-new portfolio.
+
+00:00:45.000 --> 00:00:47.000
+So picture this incredibly familiar scenario.
+
+00:00:47.000 --> 00:00:51.000
+A colleague leaves and suddenly you're handed this massive P&L file
+
+00:00:51.000 --> 00:00:54.000
+for a Nagpur-based wholesaler, Sri Ganesh Traders.
+
+00:00:54.000 --> 00:00:57.000
+They deal in rice, oil, dal, the whole shebang.
+
+00:00:57.000 --> 00:00:59.000
+You open the file and what do you find?
+
+00:00:59.000 --> 00:01:03.000
+Four sheets, hundreds of formulas and absolutely zero notes
+
+00:01:03.000 --> 00:01:05.000
+on how anything actually connects.
+
+00:01:05.000 --> 00:01:07.000
+You start clicking through these four sheets,
+
+00:01:07.000 --> 00:01:10.000
+inputs, sales, costs, summary,
+
+00:01:10.000 --> 00:01:13.000
+and honestly, it's just completely overwhelming.
+
+00:01:13.000 --> 00:01:14.000
+It's like a giant puzzle.
+
+00:01:14.000 --> 00:01:17.000
+Now, in the old days, you'd spend hours tracing precedents
+
+00:01:17.000 --> 00:01:19.000
+just to figure out what goes where.
+
+00:01:19.000 --> 00:01:20.000
+But not today.
+
+00:01:20.000 --> 00:01:23.000
+Today, we're going to use AI to get a guided tour
+
+00:01:23.000 --> 00:01:25.000
+instead of untangling this mess manually.
+
+00:01:26.000 --> 00:01:27.000
+Getting a guided tour.
+
+00:01:27.000 --> 00:01:30.000
+Let's see exactly how we can summon our AI assistant
+
+00:01:30.000 --> 00:01:32.000
+directly inside the Mac environment
+
+00:01:32.000 --> 00:01:34.000
+to do all that heavy lifting for us.
+
+00:01:34.000 --> 00:01:36.000
+Now, as you probably know,
+
+00:01:36.000 --> 00:01:39.000
+Mac keyboard shortcuts are a bit different from Windows.
+
+00:01:39.000 --> 00:01:41.000
+To pull up the claw to add in specifically,
+
+00:01:41.000 --> 00:01:44.000
+you're going to press control, option, and C.
+
+00:01:44.000 --> 00:01:48.000
+Just a quick heads up on how the AI landscape in Excel has evolved.
+
+00:01:48.000 --> 00:01:51.000
+You might remember the old equals co-pilot function
+
+00:01:51.000 --> 00:01:52.000
+right inside the cell?
+
+00:01:52.000 --> 00:01:55.000
+Well, that actually retired back in September, 2026.
+
+00:01:55.000 --> 00:02:00.000
+So today, we rely entirely on these powerful side panel assistants,
+
+00:02:00.000 --> 00:02:02.000
+like Claude or the co-pilot pane,
+
+00:02:02.000 --> 00:02:05.000
+to safely read the entire workbook structure for us.
+
+00:02:05.000 --> 00:02:08.000
+All right, so we've got the side panel open
+
+00:02:08.000 --> 00:02:10.000
+and we type in our prompt.
+
+00:02:10.000 --> 00:02:12.000
+Pay close attention to how specific this is.
+
+00:02:12.000 --> 00:02:15.000
+We type, walk me through the sheets
+
+00:02:15.000 --> 00:02:18.000
+whose names start with S-20-03.
+
+00:02:18.000 --> 00:02:20.000
+Explain what each sheet does
+
+00:02:20.000 --> 00:02:23.000
+and how they connect, citing the key cells.
+
+00:02:23.000 --> 00:02:25.000
+And this is absolutely crucial.
+
+00:02:25.000 --> 00:02:28.000
+We explicitly tell it, do not change anything.
+
+00:02:28.000 --> 00:02:30.000
+We're just asking for the lay of the land here.
+
+00:02:30.000 --> 00:02:32.000
+And just like that,
+
+00:02:32.000 --> 00:02:35.000
+Claude reads the entire S-20-03 workbook
+
+00:02:35.000 --> 00:02:37.000
+and maps out the flow beautifully.
+
+00:02:37.000 --> 00:02:40.000
+It tells us that the inputs feed the cost sheet,
+
+00:02:40.000 --> 00:02:43.000
+the sales feed both costs and summary,
+
+00:02:43.000 --> 00:02:45.000
+and that the summary sheet just adds it all up.
+
+00:02:45.000 --> 00:02:47.000
+But you know what's really amazing here?
+
+00:02:47.000 --> 00:02:49.000
+Every single cell reference Claude gives us
+
+00:02:49.000 --> 00:02:50.000
+is a clickable link.
+
+00:02:50.000 --> 00:02:52.000
+It makes navigating this monster of a file
+
+00:02:52.000 --> 00:02:54.000
+completely seamless.
+
+00:02:54.000 --> 00:02:57.000
+Okay, section three, tracing numbers and errors.
+
+00:02:57.000 --> 00:02:59.000
+Getting that high-level map is awesome,
+
+00:02:59.000 --> 00:03:03.000
+but real Excel work, that's about tracing the actual money.
+
+00:03:03.000 --> 00:03:05.000
+We need to know exactly where these figures
+
+00:03:05.000 --> 00:03:06.000
+are coming from, right?
+
+00:03:06.000 --> 00:03:10.000
+So we ask Claude, how is FYEBITDA
+
+00:03:10.000 --> 00:03:14.000
+in cell N11 of sheet S-20-03 calculated?
+
+00:03:14.000 --> 00:03:16.000
+Trace it back to the input cells,
+
+00:03:16.000 --> 00:03:19.000
+step by step, citing each cell.
+
+00:03:19.000 --> 00:03:21.000
+Following the breadcrumbs Claude just gave us,
+
+00:03:21.000 --> 00:03:23.000
+we click the citation for N11
+
+00:03:23.000 --> 00:03:25.000
+and glance up at the formula bar.
+
+00:03:25.000 --> 00:03:28.000
+It's summing row 11 across the months.
+
+00:03:28.000 --> 00:03:31.000
+But wait, look really closely at that range.
+
+00:03:31.000 --> 00:03:34.000
+It says B11 to L11.
+
+00:03:34.000 --> 00:03:35.000
+Now in this sheet,
+
+00:03:35.000 --> 00:03:37.000
+the financial year runs from April to March,
+
+00:03:37.000 --> 00:03:40.000
+which means it should cover columns B through M.
+
+00:03:40.000 --> 00:03:42.000
+We just instantly spotted a massive error.
+
+00:03:42.000 --> 00:03:45.000
+The formula completely skips column M.
+
+00:03:45.000 --> 00:03:47.000
+The entire month of March is missing from the annual total.
+
+00:03:47.000 --> 00:03:49.000
+Crazy, right?
+
+00:03:49.000 --> 00:03:51.000
+And the plot thickens.
+
+00:03:51.000 --> 00:03:53.000
+As we keep tracing back from the summary sheet
+
+00:03:53.000 --> 00:03:54.000
+to the cost sheet,
+
+00:03:54.000 --> 00:03:57.000
+we stumble onto another major issue.
+
+00:03:57.000 --> 00:03:59.000
+If you click on cell E3,
+
+00:03:59.000 --> 00:04:01.000
+which is supposed to be the May commission,
+
+00:04:01.000 --> 00:04:03.000
+it shows a flat zero.
+
+00:04:03.000 --> 00:04:05.000
+Why? Because the formula is pointing to
+
+00:04:05.000 --> 00:04:08.000
+a completely empty input cell over on the input sheet.
+
+00:04:08.000 --> 00:04:10.000
+Literally nothing is there.
+
+00:04:10.000 --> 00:04:13.000
+So finding a couple of errors like that
+
+00:04:13.000 --> 00:04:16.000
+tells us this workbook is probably an absolute minefield.
+
+00:04:16.000 --> 00:04:18.000
+Instead of clicking around forever,
+
+00:04:18.000 --> 00:04:20.000
+we just prompt Claude to do a full sweep.
+
+00:04:20.000 --> 00:04:23.000
+We say, list anything in the S20-03 sheets
+
+00:04:23.000 --> 00:04:25.000
+that looks wrong or risky,
+
+00:04:25.000 --> 00:04:27.000
+such as error values, ranges that miss months,
+
+00:04:27.000 --> 00:04:30.000
+inconsistent formulas, or typed numbers.
+
+00:04:30.000 --> 00:04:32.000
+Give this cell for each.
+
+00:04:32.000 --> 00:04:34.000
+And once again, our golden rule, do not fix anything.
+
+00:04:34.000 --> 00:04:36.000
+Remember, we are auditing right now.
+
+00:04:36.000 --> 00:04:37.000
+We are not editing.
+
+00:04:37.000 --> 00:04:38.000
+Boom.
+
+00:04:38.000 --> 00:04:41.000
+Claude hands us this highly accurate risk report.
+
+00:04:41.000 --> 00:04:43.000
+It flags an anomaly in the October revenue,
+
+00:04:43.000 --> 00:04:46.000
+points out those empty commission inputs we just spotted,
+
+00:04:46.000 --> 00:04:48.000
+catches a weird calculation error in July,
+
+00:04:48.000 --> 00:04:51.000
+and highlights that missing March column in the summary.
+
+00:04:51.000 --> 00:04:54.000
+Best of all, it gives us the exact cell references
+
+00:04:54.000 --> 00:04:55.000
+for every single issue,
+
+00:04:55.000 --> 00:04:58.000
+which basically builds our fix-it list for the next session.
+
+00:04:58.000 --> 00:05:00.000
+Checking the old-fashioned way.
+
+00:05:00.000 --> 00:05:03.000
+Now, here is a crucial takeaway.
+
+00:05:03.000 --> 00:05:05.000
+AI is an amazing guide,
+
+00:05:05.000 --> 00:05:06.000
+but as professionals,
+
+00:05:06.000 --> 00:05:08.000
+we still have to verify the math ourselves.
+
+00:05:08.000 --> 00:05:10.000
+You can't just blindly trust the AI summary.
+
+00:05:10.000 --> 00:05:13.000
+You have to test the plumbing manually.
+
+00:05:13.000 --> 00:05:15.000
+So, let's step back and run a manual check.
+
+00:05:15.000 --> 00:05:17.000
+Over on the summary sheet,
+
+00:05:17.000 --> 00:05:18.000
+pick a blank cell.
+
+00:05:18.000 --> 00:05:19.000
+Let's say B15.
+
+00:05:19.000 --> 00:05:21.000
+And we're going to type exactly this.
+
+00:05:21.000 --> 00:05:25.000
+Equals, sum, open bracket, single quote,
+
+00:05:25.000 --> 00:05:29.000
+S20-03 sales, single quote,
+
+00:05:29.000 --> 00:05:33.000
+exclamation mark, H2 to H13, close bracket.
+
+00:05:33.000 --> 00:05:36.000
+Basically, we are manually calculating the total sales ourselves
+
+00:05:36.000 --> 00:05:39.000
+to see if it matches the summary sheet's existing number.
+
+00:05:39.000 --> 00:05:42.000
+We hit enter, and our manual check spits out
+
+00:05:42.000 --> 00:05:47.000
+10 crore, 15 lakh, 68,825 rupees.
+
+00:05:47.000 --> 00:05:48.000
+And, by the way,
+
+00:05:48.000 --> 00:05:50.000
+notice the proper Indian digit grouping here,
+
+00:05:50.000 --> 00:05:52.000
+with the commas cleanly separating the thousands,
+
+00:05:52.000 --> 00:05:54.000
+lakhs, and crores.
+
+00:05:54.000 --> 00:05:56.000
+Now, for the moment of truth.
+
+00:05:56.000 --> 00:05:59.000
+We take a look at our manually typed cell in B15
+
+00:05:59.000 --> 00:06:01.000
+and compare it to the total revenue figure
+
+00:06:01.000 --> 00:06:04.000
+that's already sitting up in cell N2 of the summary.
+
+00:06:04.000 --> 00:06:06.000
+They match, exactly.
+
+00:06:06.000 --> 00:06:08.000
+Since our manual sum matches the summary cell,
+
+00:06:08.000 --> 00:06:11.000
+we have definitively proven that the underlying links
+
+00:06:11.000 --> 00:06:13.000
+between the sales sheet and the summary sheet
+
+00:06:13.000 --> 00:06:15.000
+are actually working.
+
+00:06:15.000 --> 00:06:18.000
+All right, on to section 5, Mapping the Sheets.
+
+00:06:18.000 --> 00:06:20.000
+Now that we finally understand this file,
+
+00:06:20.000 --> 00:06:21.000
+we've traced the errors,
+
+00:06:21.000 --> 00:06:23.000
+and we've verified that the links work,
+
+00:06:23.000 --> 00:06:25.000
+let's generate a permanent map for the next poor soul
+
+00:06:25.000 --> 00:06:27.000
+who inherits this workbook.
+
+00:06:27.000 --> 00:06:29.000
+We're going to feed Claude one final prompt
+
+00:06:29.000 --> 00:06:31.000
+to summarize everything it just learned.
+
+00:06:32.000 --> 00:06:36.000
+We ask, write a short map of how the S20-03 sheets connect.
+
+00:06:36.000 --> 00:06:38.000
+One row per sheet with what it holds,
+
+00:06:38.000 --> 00:06:40.000
+what it feeds, and key cells.
+
+00:06:40.000 --> 00:06:42.000
+Give it as a table I can paste.
+
+00:06:42.000 --> 00:06:45.000
+And, for good measure, do not change the workbook.
+
+00:06:45.000 --> 00:06:47.000
+Just look at this result.
+
+00:06:47.000 --> 00:06:50.000
+Claude gives us a perfect clean markdown table
+
+00:06:50.000 --> 00:06:52.000
+showing the entire workbook's flow.
+
+00:06:52.000 --> 00:06:54.000
+You can literally just copy this right out of the side panel
+
+00:06:54.000 --> 00:06:56.000
+and paste it directly into a new notes sheet
+
+00:06:56.000 --> 00:06:58.000
+in your Excel file.
+
+00:06:58.000 --> 00:06:59.000
+Just like that.
+
+00:06:59.000 --> 00:07:00.000
+The file is fully documented.
+
+00:07:00.000 --> 00:07:02.000
+The next person who opens this won't have to guess
+
+00:07:02.000 --> 00:07:04.000
+where the raw data lives or which cells
+
+00:07:04.000 --> 00:07:07.000
+hold that final P&L aggregation.
+
+00:07:07.000 --> 00:07:10.000
+And finally, section 6, Quick Three Point Recap.
+
+00:07:10.000 --> 00:07:13.000
+Let's wrap up this explainer by consolidating
+
+00:07:13.000 --> 00:07:15.000
+the three major skills we've just put into practice
+
+00:07:15.000 --> 00:07:17.000
+so you can start using them in your own daily work
+
+00:07:17.000 --> 00:07:19.000
+right away.
+
+00:07:19.000 --> 00:07:21.000
+First, you now know how to use the Mac shortcut,
+
+00:07:21.000 --> 00:07:25.000
+Control-Option-C, to open Claude and get a guided walkthrough
+
+00:07:25.000 --> 00:07:27.000
+with those handy clickable cell citations.
+
+00:07:27.000 --> 00:07:30.000
+Second, you know exactly how to command the AI
+
+00:07:30.000 --> 00:07:32.000
+to trace a key number, like our EBITDA,
+
+00:07:32.000 --> 00:07:34.000
+step-by-step back to its raw inputs
+
+00:07:34.000 --> 00:07:36.000
+to uncover missing data.
+
+00:07:36.000 --> 00:07:38.000
+And third, you know how to generate and save
+
+00:07:38.000 --> 00:07:40.000
+a permanent structural map of the sheets
+
+00:07:40.000 --> 00:07:42.000
+for your entire team.
+
+00:07:42.000 --> 00:07:44.000
+So, I'm going to leave you with a quick challenge
+
+00:07:44.000 --> 00:07:46.000
+for your own practice files.
+
+00:07:46.000 --> 00:07:48.000
+Using everything we've learned today,
+
+00:07:48.000 --> 00:07:50.000
+can you ask Claude where the salary increase
+
+00:07:50.000 --> 00:07:52.000
+in October comes from,
+
+00:07:52.000 --> 00:07:55.000
+and then follow those citations back to the exact origin,
+
+00:07:55.000 --> 00:07:57.000
+without clicking blindly through the sheets.
+
+00:07:57.000 --> 00:07:58.000
+Give it a try.
+
+00:07:58.000 --> 00:08:00.000
+Thanks so much for joining me on this explainer
+
+00:08:00.000 --> 00:08:02.000
+and happy untangling!

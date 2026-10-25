@@ -1,0 +1,418 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.000
+Welcome to this explainer.
+
+00:00:02.000 --> 00:00:05.680
+Today, we are going to discuss Lesson S20-09,
+
+00:00:05.680 --> 00:00:07.440
+which focuses on using the CLOD,
+
+00:00:07.440 --> 00:00:10.300
+Artificial Intelligence Add-In, safely at work.
+
+00:00:10.300 --> 00:00:13.160
+Protecting our company data is our top priority.
+
+00:00:13.160 --> 00:00:14.640
+We will go through practical steps
+
+00:00:14.640 --> 00:00:16.240
+to secure your daily tasks
+
+00:00:16.240 --> 00:00:18.180
+so that you understand exactly how to manage
+
+00:00:18.180 --> 00:00:19.440
+these new capabilities
+
+00:00:19.440 --> 00:00:22.020
+without risking sensitive information.
+
+00:00:22.020 --> 00:00:23.680
+Here is our agenda for today.
+
+00:00:23.680 --> 00:00:26.280
+We will cover using CLOD safely at work,
+
+00:00:26.280 --> 00:00:28.280
+understanding prompt injection risks,
+
+00:00:28.280 --> 00:00:30.240
+reading edit confirmation prompts,
+
+00:00:30.240 --> 00:00:32.160
+managing company data policies,
+
+00:00:32.160 --> 00:00:34.660
+and checking your final numbers.
+
+00:00:34.660 --> 00:00:36.300
+Let us start with section one,
+
+00:00:36.300 --> 00:00:38.560
+using CLOD safely at work.
+
+00:00:38.560 --> 00:00:40.300
+We will look at the basic requirements
+
+00:00:40.300 --> 00:00:43.860
+for operating this tool in your daily spreadsheet tasks.
+
+00:00:43.860 --> 00:00:46.820
+CLOD is a specific add-in developed by Anthropic.
+
+00:00:46.820 --> 00:00:48.960
+Once you install it from the Microsoft Marketplace,
+
+00:00:48.960 --> 00:00:51.740
+it has the ability to read your entire workbook.
+
+00:00:51.740 --> 00:00:54.100
+You can use it to adjust financial assumptions
+
+00:00:54.100 --> 00:00:56.340
+or to explain complex calculations
+
+00:00:56.340 --> 00:00:58.120
+with proper cell citations.
+
+00:00:58.120 --> 00:00:59.660
+It acts as a helpful assistant
+
+00:00:59.660 --> 00:01:02.200
+directly inside your trusted files.
+
+00:01:02.200 --> 00:01:04.580
+Because it reads the whole workbook to build models,
+
+00:01:04.580 --> 00:01:07.400
+it gets access to everything within that file.
+
+00:01:07.400 --> 00:01:09.400
+This high level of access is exactly
+
+00:01:09.400 --> 00:01:11.040
+why we must be very careful
+
+00:01:11.040 --> 00:01:13.320
+about the files we choose to open.
+
+00:01:13.320 --> 00:01:15.020
+We now move to section two,
+
+00:01:15.020 --> 00:01:17.420
+understanding prompt injection risks.
+
+00:01:17.420 --> 00:01:19.860
+It is essential to understand this security threat
+
+00:01:19.860 --> 00:01:22.640
+before you open unknown files.
+
+00:01:22.640 --> 00:01:24.960
+Prompt injection is a serious risk.
+
+00:01:24.960 --> 00:01:26.480
+It involves hidden instructions
+
+00:01:26.480 --> 00:01:28.840
+placed in files by unknown senders.
+
+00:01:28.840 --> 00:01:30.040
+These instructions are designed
+
+00:01:30.040 --> 00:01:31.640
+to trick the artificial intelligence
+
+00:01:31.640 --> 00:01:34.060
+into doing things you did not ask for.
+
+00:01:34.060 --> 00:01:35.760
+For instance, a hidden line of text
+
+00:01:35.760 --> 00:01:37.200
+could secretly command the tool
+
+00:01:37.200 --> 00:01:39.120
+to extract sensitive employee data
+
+00:01:39.120 --> 00:01:41.080
+and send it outside the company.
+
+00:01:41.080 --> 00:01:42.260
+The system might simply think
+
+00:01:42.260 --> 00:01:44.340
+it is following a normal command.
+
+00:01:44.340 --> 00:01:46.800
+This is the reason we must treat every downloaded file
+
+00:01:46.800 --> 00:01:49.080
+with a lot of caution.
+
+00:01:49.080 --> 00:01:50.320
+You might be wondering where
+
+00:01:50.320 --> 00:01:52.320
+these malicious instructions hide.
+
+00:01:52.320 --> 00:01:54.360
+They can be placed in spreadsheet cells,
+
+00:01:54.360 --> 00:01:57.120
+in hidden comments, downloaded templates,
+
+00:01:57.120 --> 00:02:00.920
+vendor files, or even within routine data imports.
+
+00:02:00.920 --> 00:02:02.920
+They are often completely invisible to you
+
+00:02:02.920 --> 00:02:05.720
+until the artificial intelligence processes them.
+
+00:02:05.720 --> 00:02:07.880
+Because external files can easily hide
+
+00:02:07.880 --> 00:02:09.160
+these dangerous commands,
+
+00:02:09.160 --> 00:02:11.800
+you must only use artificial intelligence add-ins
+
+00:02:11.800 --> 00:02:13.960
+on trusted company workbooks.
+
+00:02:13.960 --> 00:02:15.880
+Please never run the tool on a template
+
+00:02:15.880 --> 00:02:18.880
+that you have downloaded from an unverified source.
+
+00:02:18.880 --> 00:02:20.680
+The developers at Anthropic have provided
+
+00:02:20.680 --> 00:02:23.200
+a clear warning regarding this vulnerability.
+
+00:02:23.200 --> 00:02:25.960
+They state that the feature gives Claude internet access
+
+00:02:25.960 --> 00:02:27.640
+to create and analyze files,
+
+00:02:27.640 --> 00:02:29.760
+which may put your data at risk.
+
+00:02:29.760 --> 00:02:31.580
+When the software connects to the internet,
+
+00:02:31.580 --> 00:02:32.960
+it opens a potential loophole
+
+00:02:32.960 --> 00:02:35.680
+for sensitive client and employee data.
+
+00:02:35.680 --> 00:02:36.960
+This is a practical risk
+
+00:02:36.960 --> 00:02:39.640
+that you must actively manage every day.
+
+00:02:39.640 --> 00:02:41.520
+We must remember that internet connectivity
+
+00:02:41.520 --> 00:02:43.680
+allows data to flow in both directions.
+
+00:02:44.520 --> 00:02:48.440
+Next is section three, reading edit confirmation prompts.
+
+00:02:48.440 --> 00:02:50.820
+You must keep strict manual control
+
+00:02:50.820 --> 00:02:53.580
+over what the software is allowed to change.
+
+00:02:53.580 --> 00:02:56.180
+The Claude system is designed to ask for your confirmation
+
+00:02:56.180 --> 00:02:59.340
+before it runs larger edits or any risky operations.
+
+00:02:59.340 --> 00:03:01.140
+It is very important
+
+00:03:01.140 --> 00:03:03.260
+that you read these confirmation prompts carefully.
+
+00:03:03.260 --> 00:03:05.660
+Do not just click the accept button out of habit.
+
+00:03:05.660 --> 00:03:06.820
+You need to read them properly
+
+00:03:06.820 --> 00:03:09.300
+to understand exactly which cells or formulas
+
+00:03:09.300 --> 00:03:11.380
+the artificial intelligence plans to modify
+
+00:03:11.380 --> 00:03:13.060
+before you approve the action.
+
+00:03:13.060 --> 00:03:14.100
+If you skip this step,
+
+00:03:14.100 --> 00:03:16.260
+the tool might rewrite critical financial formulas
+
+00:03:16.260 --> 00:03:17.980
+without your knowledge.
+
+00:03:17.980 --> 00:03:19.420
+Let us look at section four,
+
+00:03:19.420 --> 00:03:21.700
+managing company data policies.
+
+00:03:21.700 --> 00:03:23.660
+We need to clarify how chat history
+
+00:03:23.660 --> 00:03:26.240
+and data retention work at the backend.
+
+00:03:26.240 --> 00:03:27.780
+We must understand the difference
+
+00:03:27.780 --> 00:03:30.700
+between local browser storage and backend server storage
+
+00:03:30.700 --> 00:03:32.940
+to maintain data privacy compliance.
+
+00:03:32.940 --> 00:03:34.580
+Your chat history is stored locally
+
+00:03:34.580 --> 00:03:36.260
+on your own computer browser.
+
+00:03:36.260 --> 00:03:38.280
+However, your specific inputs
+
+00:03:38.280 --> 00:03:40.260
+and the artificial intelligence outputs
+
+00:03:40.260 --> 00:03:43.120
+are temporarily stored on external servers.
+
+00:03:43.120 --> 00:03:44.380
+They are permanently deleted
+
+00:03:44.380 --> 00:03:46.300
+from those servers within 30 days.
+
+00:03:46.300 --> 00:03:47.860
+You must remember this specific policy
+
+00:03:47.860 --> 00:03:49.380
+whenever you handle sensitive client
+
+00:03:49.380 --> 00:03:50.860
+or employee data.
+
+00:03:50.860 --> 00:03:53.260
+You are essentially handing data to a third party
+
+00:03:53.260 --> 00:03:55.220
+for that 30 day period.
+
+00:03:55.220 --> 00:03:56.800
+Finally, we reach section five,
+
+00:03:56.800 --> 00:03:58.380
+checking your final numbers.
+
+00:03:58.380 --> 00:04:00.620
+We will conclude by reinforcing a corporate habit
+
+00:04:00.620 --> 00:04:03.360
+that protects our firm from major errors.
+
+00:04:03.360 --> 00:04:05.620
+You must follow a strict manual procedure
+
+00:04:05.620 --> 00:04:07.820
+for every file before it leaves your desk.
+
+00:04:07.820 --> 00:04:10.640
+First, you should always recompute a key total yourself
+
+00:04:10.640 --> 00:04:12.500
+to ensure baseline accuracy.
+
+00:04:12.500 --> 00:04:14.940
+Second, please read through the actual formulas
+
+00:04:14.940 --> 00:04:16.220
+the artificial intelligence wrote
+
+00:04:16.220 --> 00:04:18.220
+to confirm they make logical sense.
+
+00:04:18.220 --> 00:04:20.160
+Third, verify all the final numbers
+
+00:04:20.160 --> 00:04:23.140
+before you send the document to a client or a tax authority.
+
+00:04:23.140 --> 00:04:25.860
+You cannot rely blindly on artificial intelligence.
+
+00:04:25.860 --> 00:04:27.100
+It is a capable tool,
+
+00:04:27.100 --> 00:04:29.180
+but the final responsibility for accuracy
+
+00:04:29.180 --> 00:04:30.860
+always remains with you.
+
+00:04:30.860 --> 00:04:33.340
+We close this explainer with a simple question.
+
+00:04:33.340 --> 00:04:35.780
+Have you verified all your work today?
+
+00:04:35.780 --> 00:04:37.820
+Please keep these compliance standards in mind
+
+00:04:37.820 --> 00:04:39.440
+as you do your daily tasks.
+
+00:04:39.440 --> 00:04:41.860
+Always check your work, use only trusted files
+
+00:04:41.860 --> 00:04:44.700
+and review every proposed edit carefully.
+
+00:04:44.700 --> 00:04:46.860
+As artificial intelligence becomes more integrated
+
+00:04:46.860 --> 00:04:47.980
+into our daily work,
+
+00:04:47.980 --> 00:04:50.260
+we must ask ourselves a vital question.
+
+00:04:50.260 --> 00:04:51.820
+Are you controlling the tools
+
+00:04:51.820 --> 00:04:54.300
+or are the tools controlling your data?
+
+00:04:54.300 --> 00:04:55.700
+Thank you for your time today.
