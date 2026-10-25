@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.159
+Here's a register with six hundred transactions a whole
+
+00:00:04.172 --> 00:00:08.263
+financial year from April to March On the right
+
+00:00:08.276 --> 00:00:11.479
+are facts about it the last ID how many
+
+00:00:11.492 --> 00:00:15.723
+rows there are and the total amount You'll find
+
+00:00:15.736 --> 00:00:18.406
+each of them in seconds without scrolling
+
+00:00:19.875 --> 00:00:22.050
+In this lesson you'll jump to the edge of
+
+00:00:22.063 --> 00:00:24.823
+your data select to the end in one move
+
+00:00:25.044 --> 00:00:27.323
+and use Go To and the Name Box as
+
+00:00:27.336 --> 00:00:32.312
+bookmarks The practice sheet is S01-02
+
+00:00:33.781 --> 00:00:38.471
+Four shortcuts carry this lesson Command plus an arrow
+
+00:00:38.484 --> 00:00:41.804
+jumps to the edge of the data Add Shift
+
+00:00:41.817 --> 00:00:46.322
+to select everything on the way Function Control and
+
+00:00:46.335 --> 00:00:50.437
+left arrow takes you home to A1 And Control
+
+00:00:50.450 --> 00:00:51.674
+G opens Go To
+
+00:00:53.141 --> 00:00:57.622
+We're on the practice sheet in cell A1 Scrolling
+
+00:00:57.635 --> 00:01:00.552
+six hundred rows with a trackpad is slow and
+
+00:01:00.565 --> 00:01:02.075
+it's easy to overshoot
+
+00:01:03.547 --> 00:01:07.807
+Press Command and the down arrow Excel jumps straight
+
+00:01:07.820 --> 00:01:11.218
+to the last filled cell in column A The
+
+00:01:11.231 --> 00:01:16.205
+last transaction is TXN 0600 in row 601
+
+00:01:17.719 --> 00:01:22.981
+Write it down in J2 Type TXN dash zero
+
+00:01:22.995 --> 00:01:25.560
+six zero zero and press Return
+
+00:01:27.031 --> 00:01:30.390
+To come back to the top press Function Control
+
+00:01:30.403 --> 00:01:34.221
+and the left arrow That's the MacBook version of
+
+00:01:34.234 --> 00:01:37.593
+Control Home and it always lands on A1
+
+00:01:39.078 --> 00:01:42.086
+Command and the right arrow jumps across the header
+
+00:01:42.099 --> 00:01:45.198
+row to the last column G the amounts
+
+00:01:46.656 --> 00:01:50.942
+Now select every amount Go to G2, then press
+
+00:01:50.955 --> 00:01:55.135
+Command Shift and the down arrow All six hundred
+
+00:01:55.148 --> 00:01:59.210
+amounts are selected The status bar shows a Count
+
+00:01:59.223 --> 00:02:02.283
+of 600 and a Sum of three crore sixty-one
+
+00:02:02.296 --> 00:02:04.861
+lakh eighteen thousand six hundred rupees
+
+00:02:06.344 --> 00:02:10.760
+Type 600 in J3 Then type the total in
+
+00:02:10.773 --> 00:02:12.687
+J4, as plain digits
+
+00:02:14.156 --> 00:02:18.403
+Here's the catch Start at E1, the Product column
+
+00:02:18.533 --> 00:02:22.804
+and press Command and the down arrow Excel stops
+
+00:02:22.817 --> 00:02:27.908
+at row 249 not at the bottom Row 250
+
+00:02:27.921 --> 00:02:31.059
+has a missing product and a blank cell stops
+
+00:02:31.072 --> 00:02:31.671
+the jump
+
+00:02:33.125 --> 00:02:36.250
+So jump in a column with no gaps usually
+
+00:02:36.263 --> 00:02:39.885
+the ID column Column A has an ID in
+
+00:02:39.898 --> 00:02:43.231
+every row so Command and down arrow from A1
+
+00:02:43.244 --> 00:02:45.536
+always lands on the true last row
+
+00:02:46.984 --> 00:02:49.640
+To reach a cell you know press Control G
+
+00:02:49.653 --> 00:02:54.330
+to open Go To Type D350 in the Reference
+
+00:02:54.343 --> 00:02:58.523
+box and click OK Excel takes you straight there
+
+00:03:00.000 --> 00:03:03.947
+You can also bookmark a range Select I1 to
+
+00:03:03.960 --> 00:03:06.760
+J6, click in the Name Box type the word
+
+00:03:06.773 --> 00:03:11.447
+Summary and press Return You've just created a named
+
+00:03:11.460 --> 00:03:11.955
+range
+
+00:03:13.422 --> 00:03:18.567
+Now go anywhere say row 601 Type Summary in
+
+00:03:18.580 --> 00:03:20.963
+the Name Box or pick it from the Name
+
+00:03:20.976 --> 00:03:24.518
+Box list and Excel jumps back and selects the
+
+00:03:24.531 --> 00:03:25.507
+summary block
+
+00:03:26.969 --> 00:03:30.133
+On many Macs Control with the arrow keys is
+
+00:03:30.146 --> 00:03:33.388
+taken by Mission Control so use Command with the
+
+00:03:33.401 --> 00:03:37.596
+arrows in Excel On a MacBook Function with the
+
+00:03:37.609 --> 00:03:40.890
+arrows gives you Home End Page Up and Page
+
+00:03:40.903 --> 00:03:41.372
+Down
+
+00:03:42.859 --> 00:03:46.585
+To recap Command and an arrow jumps to the
+
+00:03:46.598 --> 00:03:50.687
+edge and adding Shift selects on the way Blank
+
+00:03:50.700 --> 00:03:53.291
+cells stop the jump so use a column with
+
+00:03:53.304 --> 00:03:57.015
+no gaps And Go To and named ranges take
+
+00:03:57.028 --> 00:03:58.734
+you anywhere in one step
+
+00:04:00.219 --> 00:04:04.010
+Your challenge Find the date of the very last
+
+00:04:04.023 --> 00:04:07.552
+transaction and the total quantity sold in column F
+
+00:04:07.578 --> 00:04:12.135
+Type them in J5 and J6 The answers are
+
+00:04:12.148 --> 00:04:14.765
+on S01-02 Done

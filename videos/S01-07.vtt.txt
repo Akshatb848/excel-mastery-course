@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.578
+Here's an employee list after a quick tidy-up A
+
+00:00:04.591 --> 00:00:08.276
+duplicate row is gone there's a new Designation column
+
+00:00:08.419 --> 00:00:11.440
+City sits next to it and the salary column
+
+00:00:11.453 --> 00:00:15.137
+is hidden before the sheet is shared We'll also
+
+00:00:15.151 --> 00:00:17.937
+rename colour group and copy sheets
+
+00:00:19.406 --> 00:00:23.755
+You'll insert delete move resize and hide rows and
+
+00:00:23.768 --> 00:00:29.030
+columns then rename colour group and copy sheets Grouping
+
+00:00:29.044 --> 00:00:32.286
+sheets isn't available in Excel for the web so
+
+00:00:32.299 --> 00:00:35.085
+this lesson is recorded in the desktop app
+
+00:00:36.546 --> 00:00:39.788
+Rows 5 and 6 are the same person Prakash
+
+00:00:39.801 --> 00:00:43.970
+Hegde entered twice Let's remove row 6
+
+00:00:45.421 --> 00:00:48.468
+Many people select the cells and press the Delete
+
+00:00:48.481 --> 00:00:53.756
+key That only clears the contents The empty row
+
+00:00:53.769 --> 00:00:56.178
+stays leaving a gap in the middle of the
+
+00:00:56.191 --> 00:00:56.686
+list
+
+00:00:58.156 --> 00:01:01.060
+Undo with Command Z Select the whole of row
+
+00:01:01.073 --> 00:01:03.833
+6 by its number then on the Home tab
+
+00:01:03.846 --> 00:01:07.114
+click the Delete arrow and choose Delete Sheet Rows
+
+00:01:08.015 --> 00:01:10.736
+The rows below move up with no gap
+
+00:01:12.203 --> 00:01:16.749
+We need a Designation column after Name Select column
+
+00:01:16.762 --> 00:01:22.075
+C then choose Home Insert Insert Sheet Columns A
+
+00:01:22.088 --> 00:01:26.867
+blank column appears and everything shifts right In C1,
+
+00:01:26.880 --> 00:01:28.064
+type Designation
+
+00:01:29.531 --> 00:01:34.260
+Now move City next to Designation Select column E
+
+00:01:34.390 --> 00:01:37.814
+City and cut it with Command X Select column
+
+00:01:37.827 --> 00:01:41.616
+D right-click which is Control-click on a Mac and
+
+00:01:41.629 --> 00:01:46.083
+choose Insert Cut Cells City moves in and Department
+
+00:01:46.096 --> 00:01:46.903
+shifts right
+
+00:01:48.375 --> 00:01:53.325
+Designation needs room Select column C and choose Home
+
+00:01:53.455 --> 00:01:59.002
+Format Column Width Type 20 and click OK You
+
+00:01:59.015 --> 00:02:02.296
+can also double-click the line between two column letters
+
+00:02:02.309 --> 00:02:03.598
+to fit the contents
+
+00:02:05.078 --> 00:02:09.885
+Salaries shouldn't travel with this sheet Select column G
+
+00:02:10.002 --> 00:02:14.676
+Monthly CTC and choose Home Format Hide and Unhide
+
+00:02:14.820 --> 00:02:18.986
+Hide Columns The column letters now jump from F
+
+00:02:18.999 --> 00:02:21.825
+to H That's how you spot a hidden column
+
+00:02:23.296 --> 00:02:27.139
+Now sheets Go to the Pune sheet and choose
+
+00:02:27.152 --> 00:02:32.230
+Home Format Rename Sheet Type Pune Apr and press
+
+00:02:32.243 --> 00:02:36.358
+Return Double-clicking the tab does the same thing
+
+00:02:37.843 --> 00:02:40.708
+In the same menu choose Tab Color and pick
+
+00:02:40.721 --> 00:02:45.098
+Green Colour-coded tabs help when a workbook has twenty
+
+00:02:45.111 --> 00:02:45.645
+sheets
+
+00:02:47.109 --> 00:02:51.252
+To change two sheets at once group them Hold
+
+00:02:51.265 --> 00:02:55.145
+Shift and click the Nagpur tab Both tabs are
+
+00:02:55.158 --> 00:02:58.960
+selected and the title bar says Group Type a
+
+00:02:58.973 --> 00:03:01.942
+title in A1, and it goes on both sheets
+
+00:03:03.406 --> 00:03:08.161
+Always ungroup straight after Click any sheet outside the
+
+00:03:08.174 --> 00:03:12.835
+group and the Group label disappears Typing into grouped
+
+00:03:12.848 --> 00:03:15.986
+sheets by accident is a classic way to overwrite
+
+00:03:15.999 --> 00:03:16.468
+data
+
+00:03:17.921 --> 00:03:21.072
+To copy a sheet for example to start May
+
+00:03:21.189 --> 00:03:25.004
+go to Pune Apr and choose Home Format Move
+
+00:03:25.017 --> 00:03:29.082
+or Copy Sheet Pick move to end tick Create
+
+00:03:29.095 --> 00:03:33.223
+a copy and click OK You get Pune Apr
+
+00:03:33.236 --> 00:03:34.772
+two ready to rename
+
+00:03:36.234 --> 00:03:39.164
+On a Mac double-click a tab to rename it
+
+00:03:39.320 --> 00:03:43.278
+and Control-click a tab for Insert Delete Tab Color
+
+00:03:43.291 --> 00:03:47.213
+and Move or Copy Shift-click tabs to group a
+
+00:03:47.226 --> 00:03:50.273
+run of sheets or Command-click to pick them one
+
+00:03:50.286 --> 00:03:50.937
+by one
+
+00:03:52.406 --> 00:03:56.757
+To recap Delete Sheet Rows removes a row while
+
+00:03:56.770 --> 00:04:00.793
+the Delete key only clears it Insert Cut Cells
+
+00:04:00.807 --> 00:04:05.859
+moves a column without overwriting anything And always ungroup
+
+00:04:05.872 --> 00:04:07.799
+sheets as soon as you're done
+
+00:04:09.281 --> 00:04:13.853
+Your challenge Unhide column G by selecting F to
+
+00:04:13.866 --> 00:04:17.747
+H and choosing Unhide Columns check the salaries then
+
+00:04:17.760 --> 00:04:21.588
+hide it again Then rename Pune Apr two to
+
+00:04:21.601 --> 00:04:22.304
+Pune May

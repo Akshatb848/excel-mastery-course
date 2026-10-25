@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.576
+Here's an invoice log with serial numbers invoice IDs
+
+00:00:04.589 --> 00:00:08.026
+and invoice dates on working days only all filled
+
+00:00:08.039 --> 00:00:12.299
+in seconds On the right monthly sales sorted in
+
+00:00:12.312 --> 00:00:17.299
+financial-year order April to March That last one needs
+
+00:00:17.312 --> 00:00:19.864
+a custom list and you'll set it up once
+
+00:00:19.877 --> 00:00:20.385
+for good
+
+00:00:21.860 --> 00:00:26.079
+You'll fill numbers invoice IDs and working-day dates see
+
+00:00:26.092 --> 00:00:29.034
+why A to Z fails for months and create
+
+00:00:29.048 --> 00:00:33.294
+an April to March custom list Custom lists can't
+
+00:00:33.307 --> 00:00:35.729
+be made in Excel for the web so this
+
+00:00:35.742 --> 00:00:38.034
+one is recorded in the desktop app
+
+00:00:39.485 --> 00:00:42.714
+Fill Series lives on the Home tab under Fill
+
+00:00:43.615 --> 00:00:47.547
+Linear adds a fixed step Date can step by
+
+00:00:47.560 --> 00:00:52.287
+day weekday month or year And AutoFill copies a
+
+00:00:52.300 --> 00:00:55.268
+pattern like an invoice ID that ends in a
+
+00:00:55.281 --> 00:00:55.828
+number
+
+00:00:57.313 --> 00:01:00.896
+The first row is filled in for you Select
+
+00:01:00.909 --> 00:01:04.802
+A2 to A21, the serial numbers for twenty invoices
+
+00:01:06.282 --> 00:01:10.763
+On the Home tab click Fill then Series Choose
+
+00:01:10.776 --> 00:01:14.071
+Linear set the Step value to 1 and click
+
+00:01:14.084 --> 00:01:17.742
+OK Excel counts from 1 to 20
+
+00:01:19.219 --> 00:01:24.273
+Now the invoice IDs B2 to B21 Open Fill
+
+00:01:24.403 --> 00:01:29.312
+Series again and choose AutoFill AutoFill sees the number
+
+00:01:29.325 --> 00:01:33.310
+at the end of INV 2601 and keeps counting
+
+00:01:33.466 --> 00:01:38.935
+2602 2603 all the way to 2620
+
+00:01:40.422 --> 00:01:43.990
+For the dates select C2 to C21 and open
+
+00:01:44.003 --> 00:01:47.924
+Series Choose Date and for the Date unit pick
+
+00:01:47.937 --> 00:01:52.833
+Weekday Excel skips Saturdays and Sundays so the twentieth
+
+00:01:52.846 --> 00:01:56.869
+invoice falls on 28 April 2026
+
+00:01:58.328 --> 00:02:02.718
+Now the monthly sales They're jumbled so let's sort
+
+00:02:02.731 --> 00:02:06.859
+them Select E2 to F13, then choose Sort and
+
+00:02:06.872 --> 00:02:08.695
+Filter Sort A to Z
+
+00:02:10.172 --> 00:02:14.549
+Here's the problem A to Z puts April August
+
+00:02:14.731 --> 00:02:20.343
+December and February first That's alphabetical and no finance
+
+00:02:20.356 --> 00:02:24.145
+team reads months that way We need April to
+
+00:02:24.158 --> 00:02:24.679
+March
+
+00:02:26.172 --> 00:02:30.471
+Excel needs to learn our order once Click File
+
+00:02:30.588 --> 00:02:32.724
+then Options then Advanced
+
+00:02:34.188 --> 00:02:37.391
+Scroll down to the General section and click Edit
+
+00:02:37.404 --> 00:02:42.341
+Custom Lists Column H already holds April to March
+
+00:02:42.484 --> 00:02:45.766
+so in Import list from cells type dollar H
+
+00:02:45.779 --> 00:02:51.794
+dollar 2 colon dollar H dollar 13 Click Import then OK
+
+00:02:51.807 --> 00:02:52.445
+twice
+
+00:02:53.891 --> 00:02:57.029
+Select E1 to F13, this time with the headings
+
+00:02:57.159 --> 00:03:00.495
+and on the Data tab click Sort Tick My
+
+00:03:00.508 --> 00:03:03.659
+data has headers sort by Month and in the
+
+00:03:03.672 --> 00:03:05.677
+Order box choose Custom List
+
+00:03:07.141 --> 00:03:10.370
+Pick the April to March list click OK and
+
+00:03:10.383 --> 00:03:15.346
+OK again The months now run April May June
+
+00:03:15.502 --> 00:03:18.758
+through to March the way your finance team reports
+
+00:03:18.771 --> 00:03:19.161
+them
+
+00:03:20.657 --> 00:03:23.652
+A custom list works in every workbook on this
+
+00:03:23.665 --> 00:03:28.680
+computer It also drives AutoFill type the first item
+
+00:03:28.693 --> 00:03:32.065
+of any custom list drag the fill handle and
+
+00:03:32.078 --> 00:03:36.284
+Excel fills the rest Use it for zones branch
+
+00:03:36.297 --> 00:03:37.534
+codes or grades
+
+00:03:39.000 --> 00:03:43.076
+On a Mac custom lists are under Excel Preferences
+
+00:03:43.206 --> 00:03:47.244
+Custom Lists Fill Series is on the Home tab
+
+00:03:47.401 --> 00:03:51.593
+exactly as here And to AutoFill with the mouse
+
+00:03:51.736 --> 00:03:54.289
+drag the small square at the corner of the
+
+00:03:54.302 --> 00:03:56.424
+selection called the fill handle
+
+00:03:57.891 --> 00:04:02.750
+To recap Fill Series gives you counting numbers patterned
+
+00:04:02.763 --> 00:04:06.930
+IDs and working-day dates A to Z sorting is
+
+00:04:06.943 --> 00:04:11.370
+alphabetical so months need a custom list And you
+
+00:04:11.383 --> 00:04:14.430
+create that list once for every workbook
+
+00:04:15.891 --> 00:04:22.885
+Your challenge In D2, type 8 April 2026 Then fill D2
+
+00:04:22.898 --> 00:04:27.013
+to D21 with follow-up dates every seven days using
+
+00:04:27.026 --> 00:04:30.151
+Fill Series with Date Day and a Step value
+
+00:04:30.164 --> 00:04:35.372
+of 7 The answer is on S01-04 Done

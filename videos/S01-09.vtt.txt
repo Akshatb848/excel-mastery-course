@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.565
+Time to put this section together HR has sent
+
+00:00:04.578 --> 00:00:08.406
+a raw staff list full names employee codes the
+
+00:00:08.419 --> 00:00:11.973
+old city name Bombay in places and salaries in
+
+00:00:11.986 --> 00:00:15.463
+thousands Your job is to turn it into a
+
+00:00:15.476 --> 00:00:16.908
+clean contact list
+
+00:00:18.375 --> 00:00:21.253
+The six tasks are on the right from column
+
+00:00:21.266 --> 00:00:25.758
+J serial numbers first and last names city codes
+
+00:00:25.953 --> 00:00:29.599
+a city clean-up salaries in rupees and a total
+
+00:00:29.612 --> 00:00:30.966
+from the status bar
+
+00:00:32.406 --> 00:00:35.375
+Pause the video now and try all six tasks
+
+00:00:35.388 --> 00:00:40.924
+on sheet S01-09 When you're done press play to
+
+00:00:40.937 --> 00:00:42.122
+watch the solution
+
+00:00:43.594 --> 00:00:49.052
+Here's the solution Task one In A2, type 1
+
+00:00:49.950 --> 00:00:54.547
+In A3, type equals A2 plus 1 Then select
+
+00:00:54.560 --> 00:00:57.554
+A3 to A16 and press Command D to fill
+
+00:00:57.567 --> 00:01:01.135
+down Each row adds one to the row above
+
+00:01:01.370 --> 00:01:03.088
+so you get 1 to 15
+
+00:01:04.562 --> 00:01:08.783
+Task two In F2, type Aarti and press Return
+
+00:01:09.694 --> 00:01:13.132
+Then select F3 and press Command E Flash Fill
+
+00:01:13.145 --> 00:01:15.463
+takes the first word of every name
+
+00:01:16.922 --> 00:01:20.360
+For last names type Deshmukh in G2, and give
+
+00:01:20.373 --> 00:01:22.938
+a second example from a name with a middle
+
+00:01:22.951 --> 00:01:27.992
+name Iyer in G3 Select G4 and press Command
+
+00:01:28.005 --> 00:01:28.291
+E
+
+00:01:29.766 --> 00:01:34.299
+Task three Type PUN in H2, select H3, and
+
+00:01:34.312 --> 00:01:36.747
+press Command E for every city code
+
+00:01:38.219 --> 00:01:43.651
+Task four Open Replace find Bombay replace with Mumbai
+
+00:01:43.898 --> 00:01:47.752
+tick Match entire cell contents and click Replace All
+
+00:01:48.651 --> 00:01:50.005
+Three cells change
+
+00:01:51.469 --> 00:01:56.484
+Task five Type 1000 in J13 and copy it
+
+00:01:57.448 --> 00:02:01.419
+Select E2 to E16, open Paste Special with Control
+
+00:02:01.562 --> 00:02:05.416
+Command and V choose Values and Multiply and click
+
+00:02:05.429 --> 00:02:09.622
+OK Sixty-eight becomes sixty-eight thousand rupees
+
+00:02:11.109 --> 00:02:15.668
+Then rename the heading In E1, type Monthly CTC
+
+00:02:15.786 --> 00:02:17.088
+rupees in brackets
+
+00:02:18.547 --> 00:02:24.213
+Task six Select E2 to E16 The status bar
+
+00:02:24.226 --> 00:02:27.494
+shows a sum of ten lakh thirty-three thousand rupees
+
+00:02:28.393 --> 00:02:29.916
+Type it in E17
+
+00:02:31.406 --> 00:02:37.919
+Compare your sheet with S01-09 Answers If everything matches
+
+00:02:38.179 --> 00:02:40.848
+you've used every skill from section one
+
+00:02:42.328 --> 00:02:46.562
+Well done You filled a series split text with
+
+00:02:46.575 --> 00:02:50.364
+Flash Fill cleaned data with Replace converted a column
+
+00:02:50.377 --> 00:02:53.163
+with Paste Special and read a total from the
+
+00:02:53.176 --> 00:02:57.656
+status bar Next we'll make sheets like this look
+
+00:02:57.669 --> 00:02:58.476
+professional

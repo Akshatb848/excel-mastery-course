@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.445
+This is a vendor register from the accounts team
+
+00:00:04.345 --> 00:00:07.548
+We'll add a new vendor fix a typo write
+
+00:00:07.561 --> 00:00:11.025
+a two-line remark and mark every vendor as pending
+
+00:00:11.038 --> 00:00:15.022
+in one go Small skills but you'll use them
+
+00:00:15.035 --> 00:00:15.791
+every day
+
+00:00:17.278 --> 00:00:20.611
+You'll learn the four kinds of data Excel understands
+
+00:00:20.755 --> 00:00:23.476
+how to edit inside a cell how to put
+
+00:00:23.489 --> 00:00:26.145
+two lines in one cell and how to fill
+
+00:00:26.158 --> 00:00:31.968
+many cells at once The practice sheet is S01-03
+
+00:00:33.497 --> 00:00:36.362
+Excel decides what you typed the moment you press
+
+00:00:36.375 --> 00:00:41.286
+Return Text sits on the left Numbers sit on
+
+00:00:41.299 --> 00:00:45.049
+the right Dates are really numbers with a date
+
+00:00:45.062 --> 00:00:48.851
+format so they sit on the right too TRUE
+
+00:00:48.864 --> 00:00:50.635
+and FALSE sit in the centre
+
+00:00:52.107 --> 00:00:55.781
+Let's add a new vendor in row 7 Select
+
+00:00:55.794 --> 00:00:59.192
+A7, type the vendor code zero zero four five
+
+00:00:59.205 --> 00:01:01.041
+seven and press Return
+
+00:01:02.528 --> 00:01:08.754
+Look what happened Excel shows 457 It read the
+
+00:01:08.767 --> 00:01:11.710
+code as a number and dropped the leading zeros
+
+00:01:12.621 --> 00:01:15.863
+That's right for amounts but wrong for vendor codes
+
+00:01:16.007 --> 00:01:17.882
+PIN codes and phone numbers
+
+00:01:19.357 --> 00:01:23.302
+Type it again with an apostrophe in front apostrophe
+
+00:01:23.419 --> 00:01:28.383
+zero zero four five seven The apostrophe tells Excel
+
+00:01:28.396 --> 00:01:31.234
+to keep it as text and it doesn't show
+
+00:01:31.247 --> 00:01:31.963
+in the cell
+
+00:01:33.435 --> 00:01:37.471
+Select B7 and type the vendor name Annapurna Caterers
+
+00:01:38.372 --> 00:01:42.851
+Press Tab to move right Type the city Kolhapur
+
+00:01:43.033 --> 00:01:44.401
+and press Tab again
+
+00:01:45.872 --> 00:01:48.684
+For the date type it as year month and
+
+00:01:48.698 --> 00:01:56.226
+day with dashes 2026 dash 04 dash 15 Excel
+
+00:01:56.239 --> 00:01:59.871
+understands this order on every Mac whatever your region
+
+00:01:59.884 --> 00:02:05.002
+setting and the cell shows it back as 15-04-2026
+
+00:02:06.466 --> 00:02:12.588
+Type the amount 35600 and press Tab This vendor
+
+00:02:12.601 --> 00:02:16.559
+isn't GST registered so type FALSE and press Return
+
+00:02:17.458 --> 00:02:21.077
+Notice the alignment text on the left numbers and
+
+00:02:21.090 --> 00:02:23.656
+dates on the right FALSE in the centre
+
+00:02:25.153 --> 00:02:30.025
+Row 4 has a typo Navi Mumbia Select C4
+
+00:02:30.038 --> 00:02:32.942
+and press Control U to edit inside the cell
+
+00:02:33.840 --> 00:02:36.184
+The cursor goes to the end of the text
+
+00:02:36.327 --> 00:02:38.905
+so you don't have to retype the whole thing
+
+00:02:40.403 --> 00:02:42.968
+Press Delete twice to remove the a and the
+
+00:02:42.981 --> 00:02:47.684
+i type a i and press Return Now it
+
+00:02:47.697 --> 00:02:49.025
+reads Navi Mumbai
+
+00:02:50.482 --> 00:02:55.133
+Now a two-line remark In H4, type Payment due
+
+00:02:56.031 --> 00:02:59.234
+Then press Control Option and Return to start a
+
+00:02:59.247 --> 00:03:02.541
+new line inside the same cell type 30 days
+
+00:03:02.554 --> 00:03:04.976
+credit and press Return to finish
+
+00:03:06.466 --> 00:03:11.494
+Last every vendor's status is Pending Select G2 to
+
+00:03:11.507 --> 00:03:15.583
+G7, type Pending once and press Command Return instead
+
+00:03:15.596 --> 00:03:19.619
+of plain Return Excel puts the word into all
+
+00:03:19.632 --> 00:03:21.077
+six selected cells
+
+00:03:22.560 --> 00:03:27.302
+Command Return works with formulas too Select a range
+
+00:03:27.445 --> 00:03:31.507
+type one formula press Command Return and every cell
+
+00:03:31.520 --> 00:03:34.919
+gets it with the references adjusted for each row
+
+00:03:36.388 --> 00:03:39.826
+On a Mac Control U edits a cell because
+
+00:03:39.839 --> 00:03:44.541
+F2 needs the Function key on most MacBooks Control
+
+00:03:44.671 --> 00:03:47.106
+Option and Return gives a new line in a
+
+00:03:47.119 --> 00:03:50.609
+cell And the delete key on a Mac deletes
+
+00:03:50.622 --> 00:03:52.588
+backwards like Backspace
+
+00:03:54.060 --> 00:03:57.994
+To recap Watch the alignment to see how Excel
+
+00:03:58.007 --> 00:04:01.250
+read your entry and use an apostrophe for codes
+
+00:04:01.263 --> 00:04:06.458
+with leading zeros Control U edits in place And
+
+00:04:06.471 --> 00:04:09.518
+Command Return fills a whole selection at once
+
+00:04:10.982 --> 00:04:14.981
+Your challenge Add one more vendor in row 8
+
+00:04:15.216 --> 00:04:23.666
+code 00462 Malabar Spices Kochi invoice date 18 April 2026 amount
+
+00:04:23.679 --> 00:04:28.640
+twenty-seven thousand four hundred rupees GST registered TRUE status
+
+00:04:28.653 --> 00:04:33.653
+Pending Check it against S01-03 Done

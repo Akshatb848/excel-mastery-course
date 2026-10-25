@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.536
+This is an April sales register for a furniture
+
+00:00:03.549 --> 00:00:07.601
+distributor On the right we've written down the total
+
+00:00:07.757 --> 00:00:10.595
+the average and the number of invoices and we
+
+00:00:10.608 --> 00:00:14.176
+didn't type a single formula By the end of
+
+00:00:14.189 --> 00:00:17.275
+this lesson you'll read numbers like these straight off
+
+00:00:17.288 --> 00:00:17.939
+the screen
+
+00:00:19.419 --> 00:00:21.646
+In this lesson you'll learn the names of the
+
+00:00:21.659 --> 00:00:24.953
+parts of the Excel window how cells and ranges
+
+00:00:24.966 --> 00:00:27.830
+are written and what the status bar tells you
+
+00:00:28.731 --> 00:00:31.517
+Open the practice workbook and go to the sheet
+
+00:00:31.530 --> 00:00:34.200
+called S01-01
+
+00:00:35.684 --> 00:00:39.189
+A workbook is the file Each tab at the
+
+00:00:39.202 --> 00:00:42.574
+bottom is a sheet The ribbon at the top
+
+00:00:42.587 --> 00:00:46.689
+holds the commands The Name Box on the left
+
+00:00:46.702 --> 00:00:50.712
+above the grid shows where you are The formula
+
+00:00:50.725 --> 00:00:53.603
+bar next to it shows what is really inside
+
+00:00:53.616 --> 00:00:57.040
+the cell And the status bar at the bottom
+
+00:00:57.053 --> 00:00:58.264
+gives quick totals
+
+00:00:59.731 --> 00:01:03.783
+Columns have letters and rows have numbers Where they
+
+00:01:03.796 --> 00:01:07.754
+meet is a cell This is cell C4 column
+
+00:01:07.767 --> 00:01:12.598
+C row 4 Look at the Name Box It
+
+00:01:12.611 --> 00:01:13.639
+says C4
+
+00:01:15.122 --> 00:01:19.629
+Now cell F4 The cell shows seventy-six thousand two
+
+00:01:19.642 --> 00:01:22.533
+hundred and fifty rupees with a rupee sign and
+
+00:01:22.546 --> 00:01:27.090
+commas The formula bar shows the plain number underneath
+
+00:01:28.015 --> 00:01:31.010
+Formatting changes the look never the value
+
+00:01:32.481 --> 00:01:35.973
+A group of cells is called a range You
+
+00:01:35.986 --> 00:01:39.020
+write it as the first cell a colon and
+
+00:01:39.033 --> 00:01:43.225
+the last cell A1 colon F11 is our whole
+
+00:01:43.238 --> 00:01:46.129
+table six columns and eleven rows
+
+00:01:47.606 --> 00:01:50.392
+You can also select a whole column by clicking
+
+00:01:50.405 --> 00:01:55.225
+its letter Here's column D And a whole row
+
+00:01:55.238 --> 00:01:58.728
+by clicking its number Here's row 4
+
+00:02:00.215 --> 00:02:03.809
+Now select the amounts F2 to F11, and look
+
+00:02:03.822 --> 00:02:07.548
+at the status bar at the bottom right Excel
+
+00:02:07.561 --> 00:02:10.230
+shows the Average the Count and the Sum of
+
+00:02:10.243 --> 00:02:14.188
+the selection The sum is eleven lakh rupees
+
+00:02:15.669 --> 00:02:20.059
+Let's write that down Select cell I2, type eleven
+
+00:02:20.072 --> 00:02:23.835
+lakh as plain digits one one and five zeros
+
+00:02:24.030 --> 00:02:28.314
+and press Return The cell is already formatted so
+
+00:02:28.327 --> 00:02:31.049
+it shows the rupee sign and Indian commas
+
+00:02:32.528 --> 00:02:35.627
+The average is one lakh ten thousand rupees so
+
+00:02:35.640 --> 00:02:39.952
+type that in I3 The count is ten invoices
+
+00:02:40.082 --> 00:02:41.775
+so type 10 in I4
+
+00:02:43.247 --> 00:02:47.207
+Here's a common slip If you start the selection
+
+00:02:47.220 --> 00:02:50.554
+on the heading F1 to F11, the Sum stays
+
+00:02:50.567 --> 00:02:54.369
+the same but the Count jumps to eleven The
+
+00:02:54.382 --> 00:02:58.666
+status bar Count counts every filled cell text included
+
+00:02:59.551 --> 00:03:01.934
+So start below the heading when you read a
+
+00:03:01.947 --> 00:03:02.520
+count
+
+00:03:03.997 --> 00:03:08.270
+One more tip Right-click the status bar which on
+
+00:03:08.283 --> 00:03:11.200
+a Mac means Control-click and you can switch on
+
+00:03:11.213 --> 00:03:17.411
+Minimum Maximum and Numerical Count Numerical Count ignores text
+
+00:03:17.567 --> 00:03:19.676
+so the heading would not have fooled it
+
+00:03:21.137 --> 00:03:26.139
+A few Mac differences Control-click or a two-finger tap
+
+00:03:26.152 --> 00:03:30.423
+on the trackpad is the right-click Excel for Mac
+
+00:03:30.436 --> 00:03:32.832
+also has a menu bar at the very top
+
+00:03:32.845 --> 00:03:36.894
+of the screen and settings live under Excel Preferences
+
+00:03:37.038 --> 00:03:38.678
+not File Options
+
+00:03:40.153 --> 00:03:43.736
+To recap A cell is a column letter plus
+
+00:03:43.749 --> 00:03:46.392
+a row number and a range is first cell
+
+00:03:46.626 --> 00:03:51.001
+colon last cell The formula bar shows the real
+
+00:03:51.014 --> 00:03:55.103
+value And the status bar gives you Sum Average
+
+00:03:55.116 --> 00:03:56.939
+and Count without a formula
+
+00:03:58.419 --> 00:04:03.551
+Your challenge Select the first five invoices only read
+
+00:04:03.564 --> 00:04:06.116
+their sum on the status bar and type it
+
+00:04:06.129 --> 00:04:11.546
+in I6 The answer is on the sheet S01-01
+
+00:04:11.559 --> 00:04:11.963
+Done

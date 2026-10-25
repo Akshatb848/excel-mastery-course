@@ -1,0 +1,160 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.632
+Here's an employee list from HR Full names and
+
+00:00:04.645 --> 00:00:07.822
+employee codes came in and we needed first names
+
+00:00:07.965 --> 00:00:11.090
+last names a city code and an email ID
+
+00:00:11.103 --> 00:00:15.061
+for every person All four columns were filled by
+
+00:00:15.074 --> 00:00:18.538
+example with Flash Fill and no formulas
+
+00:00:20.013 --> 00:00:23.190
+You'll split names by typing one example pull a
+
+00:00:23.203 --> 00:00:25.755
+code out of the middle of some text and
+
+00:00:25.768 --> 00:00:28.542
+learn what to do when Flash Fill guesses wrong
+
+00:00:29.455 --> 00:00:32.945
+The practice sheet is S01-05
+
+00:00:34.419 --> 00:00:38.653
+Flash Fill works by example You type the answer
+
+00:00:38.666 --> 00:00:42.338
+for the first row Then in the next empty
+
+00:00:42.351 --> 00:00:46.049
+cell press Command E Excel spots the pattern and
+
+00:00:46.062 --> 00:00:48.822
+fills the rest of the column with plain values
+
+00:00:50.310 --> 00:00:53.266
+In C2, type the first name from A2, Priya
+
+00:00:53.409 --> 00:00:54.568
+and press Return
+
+00:00:59.591 --> 00:01:03.237
+Now in C3, press Command E Excel sees that
+
+00:01:03.250 --> 00:01:06.193
+you took the first word and fills every first
+
+00:01:06.206 --> 00:01:08.849
+name in the column even for people with middle
+
+00:01:08.862 --> 00:01:09.383
+names
+
+00:01:10.841 --> 00:01:15.153
+Last names are trickier Rahul Kumar Verma has a
+
+00:01:15.166 --> 00:01:18.682
+middle name so a single example could teach Excel
+
+00:01:18.695 --> 00:01:22.666
+the wrong rule Type Sharma in D2 and Verma
+
+00:01:22.679 --> 00:01:27.236
+in D3 Two examples make the rule clear take
+
+00:01:27.249 --> 00:01:28.200
+the last word
+
+00:01:29.669 --> 00:01:32.755
+Select D4 and press Command E Check the rows
+
+00:01:32.768 --> 00:01:36.466
+with middle names Shaikh Rathore and Gill are all
+
+00:01:36.479 --> 00:01:37.000
+correct
+
+00:01:38.482 --> 00:01:41.112
+Now the city code the three letters in the
+
+00:01:41.125 --> 00:01:45.034
+middle of the employee code Type MUM in E2
+
+00:01:45.932 --> 00:01:48.940
+This time use the mouse select E3, go to
+
+00:01:48.953 --> 00:01:51.414
+the Data tab and click Flash Fill
+
+00:01:52.888 --> 00:01:56.820
+Every code from DEL to CHD is pulled out
+
+00:01:56.833 --> 00:02:00.911
+correctly Flash Fill found the text between the two
+
+00:02:00.924 --> 00:02:01.575
+dashes
+
+00:02:03.028 --> 00:02:07.639
+Now a common trap Priya's surname changes after her
+
+00:02:07.652 --> 00:02:12.692
+wedding In A2, type Priya Menon Look at D2
+
+00:02:13.590 --> 00:02:18.134
+It still says Sharma Flash Fill typed values once
+
+00:02:18.290 --> 00:02:21.064
+and it doesn't update when the source changes
+
+00:02:22.528 --> 00:02:26.410
+Press Command Z to undo If your source data
+
+00:02:26.423 --> 00:02:31.267
+changes every month use a formula instead You'll meet
+
+00:02:31.280 --> 00:02:34.718
+TEXTBEFORE and TEXTAFTER in the text functions section
+
+00:02:36.200 --> 00:02:40.317
+If Flash Fill fills nothing check two things The
+
+00:02:40.330 --> 00:02:43.650
+example column must touch the data with no empty
+
+00:02:43.663 --> 00:02:47.726
+column in between And give it one more example
+
+00:02:47.856 --> 00:02:49.679
+from a row that looks different
+
+00:02:51.153 --> 00:02:55.569
+To recap Type one example and press Command E
+
+00:02:55.595 --> 00:02:58.915
+Add a second example when rows differ like names
+
+00:02:58.929 --> 00:03:03.004
+with middle names And remember that Flash Fill gives
+
+00:03:03.017 --> 00:03:04.801
+values that never update
+
+00:03:06.263 --> 00:03:10.601
+Your challenge Fill the Email ID column with first
+
+00:03:10.614 --> 00:03:13.947
+name dot last name at deccanfoods dot in all
+
+00:03:13.960 --> 00:03:17.763
+in small letters like priya dot sharma at deccanfoods
+
+00:03:17.776 --> 00:03:23.309
+dot in The answers are on S01-05 Done

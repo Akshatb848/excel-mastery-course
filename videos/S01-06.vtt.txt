@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:05.085
+Prices went up ten percent from 1st April On this
+
+00:00:05.098 --> 00:00:08.549
+sheet every base price was raised in one move
+
+00:00:08.796 --> 00:00:12.677
+the GST prices updated themselves and the quote column
+
+00:00:12.690 --> 00:00:15.671
+holds fixed values we can send to a client
+
+00:00:16.583 --> 00:00:21.127
+Below the branch targets were turned sideways All of
+
+00:00:21.140 --> 00:00:22.507
+it with Paste Special
+
+00:00:23.968 --> 00:00:27.731
+You'll use Paste Special to paste values formats and
+
+00:00:27.744 --> 00:00:31.169
+transpose raise a whole column by ten percent with
+
+00:00:31.182 --> 00:00:34.294
+Multiply and see why a plain paste can give
+
+00:00:34.307 --> 00:00:39.673
+wrong numbers The practice sheet is S01-06
+
+00:00:41.125 --> 00:00:45.658
+Paste Special opens with Control Command and V The
+
+00:00:45.671 --> 00:00:49.057
+top half chooses what to paste such as values
+
+00:00:49.070 --> 00:00:54.057
+only or formats only The Operation section does maths
+
+00:00:54.070 --> 00:00:57.052
+with the copied number on every selected cell
+
+00:00:58.531 --> 00:01:04.106
+In H2 we have 1.1 Multiplying by 1.1 adds
+
+00:01:04.119 --> 00:01:08.351
+ten percent Select H2 and press Command C to
+
+00:01:08.364 --> 00:01:09.119
+copy it
+
+00:01:10.562 --> 00:01:14.247
+Select the base prices D2 to D11, and press
+
+00:01:14.260 --> 00:01:17.541
+Control Command and V to open Paste Special
+
+00:01:19.015 --> 00:01:22.635
+Under Paste choose Values so the prices keep their
+
+00:01:22.648 --> 00:01:28.249
+rupee format Under Operation choose Multiply and click OK
+
+00:01:29.160 --> 00:01:32.546
+Every price is ten percent higher and the GST
+
+00:01:32.559 --> 00:01:35.567
+prices in column E updated by themselves
+
+00:01:37.047 --> 00:01:41.281
+Now the quote column We want the GST prices
+
+00:01:41.294 --> 00:01:45.356
+as fixed numbers The obvious move is to copy
+
+00:01:45.369 --> 00:01:48.885
+E2 to E11 with Command C select F2, and
+
+00:01:48.898 --> 00:01:50.018
+press Command V
+
+00:01:51.515 --> 00:01:56.179
+Look at F2 Thirteen thousand and nineteen rupees not
+
+00:01:56.192 --> 00:02:00.436
+eleven thousand and thirty-three A plain paste copied the
+
+00:02:00.449 --> 00:02:04.121
+formula and the formula moved one column right so
+
+00:02:04.134 --> 00:02:07.012
+it's adding GST on top of GST
+
+00:02:08.484 --> 00:02:12.575
+Press Command Z to undo E2 to E11 is
+
+00:02:12.588 --> 00:02:16.624
+still copied so select F2, open Paste Special choose
+
+00:02:16.637 --> 00:02:21.181
+Values and click OK F2 now shows eleven thousand
+
+00:02:21.194 --> 00:02:24.202
+and thirty-three rupees as a plain number that won't
+
+00:02:24.215 --> 00:02:24.762
+change
+
+00:02:26.250 --> 00:02:30.705
+Next formats The branch table at the bottom has
+
+00:02:30.718 --> 00:02:35.393
+a plain heading Copy A1, select A14 to B14,
+
+00:02:35.406 --> 00:02:40.197
+open Paste Special choose Formats and click OK Only
+
+00:02:40.210 --> 00:02:43.023
+the look is copied the dark fill and white
+
+00:02:43.036 --> 00:02:43.960
+bold text
+
+00:02:45.422 --> 00:02:51.635
+Finally transpose Copy A14 to B18, select D14, open
+
+00:02:51.648 --> 00:02:56.310
+Paste Special tick Transpose and click OK The four
+
+00:02:56.323 --> 00:02:59.304
+branches now run across a row ready for a
+
+00:02:59.317 --> 00:03:00.112
+dashboard
+
+00:03:01.578 --> 00:03:04.234
+On a Mac Paste Special is also in the
+
+00:03:04.247 --> 00:03:07.934
+menu bar under Edit For a quick paste of
+
+00:03:07.947 --> 00:03:11.372
+values use the arrow under the Paste button on
+
+00:03:11.385 --> 00:03:16.346
+the Home tab And Multiply only touches numbers text
+
+00:03:16.359 --> 00:03:17.778
+cells are left alone
+
+00:03:19.234 --> 00:03:24.431
+To recap Paste Values freezes results so formulas can't
+
+00:03:24.444 --> 00:03:29.028
+drift Paste Special Multiply changes a whole column in
+
+00:03:29.041 --> 00:03:33.247
+one move And Formats and Transpose copy the look
+
+00:03:33.390 --> 00:03:35.148
+or turn a list sideways
+
+00:03:36.625 --> 00:03:40.377
+Your challenge Copy the item names in B2 to
+
+00:03:40.390 --> 00:03:44.609
+B11 and transpose them into row 21 starting at
+
+00:03:44.622 --> 00:03:50.273
+A21 The answer is on S01-06 Done
