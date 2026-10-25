@@ -1,0 +1,121 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.944
+Challenge time This is a GST tax invoice for
+
+00:00:04.957 --> 00:00:08.994
+a customer in Pune The codes and quantities are
+
+00:00:09.007 --> 00:00:12.887
+filled in Your job is to complete everything in
+
+00:00:12.900 --> 00:00:14.293
+yellow using lookups
+
+00:00:15.762 --> 00:00:19.501
+Here are your tasks They're also written on the
+
+00:00:19.514 --> 00:00:21.649
+sheet from column J onwards
+
+00:00:23.122 --> 00:00:26.705
+Pause the video now and try it When you're
+
+00:00:26.718 --> 00:00:29.908
+ready play it again and we'll solve it together
+
+00:00:31.372 --> 00:00:36.075
+Here's the solution First glance at the Product Master
+
+00:00:36.088 --> 00:00:40.424
+sheet Code is in column A and Product Rate
+
+00:00:40.437 --> 00:00:42.871
+and GST are side by side in B to
+
+00:00:42.884 --> 00:00:43.210
+D
+
+00:00:44.684 --> 00:00:51.782
+Back on S07-09 click C6 Type equals XLOOKUP open
+
+00:00:51.795 --> 00:00:56.431
+bracket A6, comma Then the codes on Product Master
+
+00:00:56.639 --> 00:00:59.738
+A2 to A11, locked with dollar signs and a
+
+00:00:59.751 --> 00:01:00.259
+comma
+
+00:01:01.747 --> 00:01:05.198
+For the return array take all three columns B2
+
+00:01:05.211 --> 00:01:09.692
+to D11, also locked Comma then Check code in
+
+00:01:09.705 --> 00:01:13.377
+quotes Close the bracket and press Return
+
+00:01:14.856 --> 00:01:18.971
+Product rate and GST percent spill across C6 to
+
+00:01:18.984 --> 00:01:23.986
+E6 from one formula Now select C6 to C11
+
+00:01:23.999 --> 00:01:26.772
+and press Command D Each row gets its own
+
+00:01:26.785 --> 00:01:27.241
+lookup
+
+00:01:28.700 --> 00:01:33.520
+Row ten shows Check code P115 isn't in the
+
+00:01:33.533 --> 00:01:37.595
+master so the rate stays empty On a real
+
+00:01:37.608 --> 00:01:40.317
+invoice you'd fix the code before sending it
+
+00:01:41.809 --> 00:01:46.512
+Now the maths In F6, type equals B6 times
+
+00:01:46.525 --> 00:01:51.564
+D6 Press Tab and in G6 type equals F6
+
+00:01:51.577 --> 00:01:56.473
+times E6 Press Tab and in H6 type equals
+
+00:01:56.486 --> 00:01:58.816
+F6 plus G6, then Return
+
+00:02:00.294 --> 00:02:03.784
+Select F6 to H11 and press Command D to
+
+00:02:03.797 --> 00:02:06.518
+fill all three formulas down at once
+
+00:02:08.028 --> 00:02:12.639
+Finally the totals In F13, type equals SUM of
+
+00:02:12.652 --> 00:02:17.132
+F6 to F11 and press Return Then copy it
+
+00:02:17.145 --> 00:02:20.699
+across to G13 and H13 with Command R
+
+00:02:22.169 --> 00:02:26.793
+Check H6 Four bags of Basmati at six forty
+
+00:02:26.806 --> 00:02:29.905
+is two thousand five hundred and sixty plus five
+
+00:02:29.918 --> 00:02:33.590
+percent GST gives two thousand six hundred and eighty-eight
+
+00:02:33.603 --> 00:02:39.320
+rupees Compare your sheet with S07-09 Answers
+
+00:02:40.809 --> 00:02:42.866
+Here's the recap of the section

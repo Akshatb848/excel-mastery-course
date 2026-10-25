@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.226
+This panel answers four everyday questions from a sales
+
+00:00:04.239 --> 00:00:08.681
+register What did Rohan sell in ceiling fans when
+
+00:00:08.694 --> 00:00:11.897
+was his last sale what's the first cooker sale
+
+00:00:12.067 --> 00:00:14.515
+and where does his last sale sit in the
+
+00:00:14.528 --> 00:00:14.970
+list
+
+00:00:16.434 --> 00:00:17.866
+Here's what you'll learn
+
+00:00:19.340 --> 00:00:23.366
+Two arguments do the heavy lifting today Match mode
+
+00:00:23.379 --> 00:00:28.196
+two turns on wildcards Search mode minus one searches
+
+00:00:28.209 --> 00:00:30.800
+from the bottom up which gives you the last
+
+00:00:30.813 --> 00:00:31.308
+match
+
+00:00:32.778 --> 00:00:36.869
+Here's the practice sheet The register is sorted by
+
+00:00:36.882 --> 00:00:39.603
+date and the questions are in column G
+
+00:00:41.090 --> 00:00:46.274
+Two conditions first In H3, type equals XLOOKUP open
+
+00:00:46.287 --> 00:00:50.493
+bracket 1 comma We look for the number one
+
+00:00:50.623 --> 00:00:52.472
+and you'll see why in a moment
+
+00:00:53.981 --> 00:00:58.046
+Now the lookup array Open a bracket B2 to
+
+00:00:58.059 --> 00:01:02.473
+B16 equals H1, close it then star then open
+
+00:01:02.486 --> 00:01:06.457
+a bracket D2 to D16 equals H2, close it
+
+00:01:06.587 --> 00:01:10.363
+and a comma Each test gives TRUE or FALSE
+
+00:01:10.493 --> 00:01:13.592
+and multiplying them gives one only where both are
+
+00:01:13.605 --> 00:01:14.035
+true
+
+00:01:15.481 --> 00:01:18.892
+Return E2 to E16, type No sale in quotes
+
+00:01:19.023 --> 00:01:23.296
+close the bracket and press Return Rohan's ceiling fan
+
+00:01:23.309 --> 00:01:26.173
+sale was twenty-eight thousand nine hundred rupees
+
+00:01:27.653 --> 00:01:32.720
+Next his last sale In H4, type equals XLOOKUP
+
+00:01:32.876 --> 00:01:37.681
+open bracket H1, comma B2 to B16, comma A2
+
+00:01:37.694 --> 00:01:41.184
+to A16 for the date comma None in quotes
+
+00:01:41.301 --> 00:01:41.770
+comma
+
+00:01:43.231 --> 00:01:47.163
+Match mode zero for exact comma then search mode
+
+00:01:47.176 --> 00:01:50.850
+minus one to search from the bottom Close the
+
+00:01:50.863 --> 00:01:54.822
+bracket and press Return His last sale was on
+
+00:01:54.835 --> 00:01:56.228
+the twenty-first of May
+
+00:01:57.700 --> 00:02:03.236
+Now wildcards H5 holds star Cooker star meaning any
+
+00:02:03.249 --> 00:02:08.431
+text containing Cooker In H6, type equals XLOOKUP open
+
+00:02:08.444 --> 00:02:13.119
+bracket H5, comma D2 to D16, comma E2 to
+
+00:02:13.132 --> 00:02:17.780
+E16, comma No match in quotes Close and press
+
+00:02:17.793 --> 00:02:18.353
+Return
+
+00:02:19.840 --> 00:02:22.861
+It says No match even though there are cooker
+
+00:02:22.874 --> 00:02:27.381
+sales Without match mode two the stars are treated
+
+00:02:27.394 --> 00:02:31.860
+as ordinary characters Retype it with comma 2 at
+
+00:02:31.873 --> 00:02:32.433
+the end
+
+00:02:33.903 --> 00:02:37.900
+Twenty-three thousand five hundred the first pressure cooker sale
+
+00:02:38.801 --> 00:02:44.908
+Finally XMATCH In H7, type equals XMATCH open bracket
+
+00:02:45.103 --> 00:02:50.233
+H1, comma B2 to B16, comma 0 comma minus
+
+00:02:50.246 --> 00:02:53.111
+1 Close and press Return
+
+00:02:54.590 --> 00:02:58.642
+Twelve Rohan's last sale is the twelfth row of
+
+00:02:58.655 --> 00:03:02.691
+the list XMATCH is the modern MATCH and it
+
+00:03:02.704 --> 00:03:04.228
+pairs well with INDEX
+
+00:03:05.700 --> 00:03:10.051
+Change the salesperson in H1 to Priya Nair Her
+
+00:03:10.064 --> 00:03:14.231
+last sale date and position update Her ceiling fan
+
+00:03:14.244 --> 00:03:15.585
+amount changes too
+
+00:03:17.059 --> 00:03:18.127
+A Mac note
+
+00:03:19.621 --> 00:03:20.832
+Here's the recap
+
+00:03:22.309 --> 00:03:26.217
+Your turn In H9, find the amount of the
+
+00:03:26.230 --> 00:03:30.228
+last sale of the product in H2 The answer
+
+00:03:30.241 --> 00:03:33.848
+is on the S07-05 Done sheet

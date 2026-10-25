@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.432
+This is a contents sheet for the whole workbook
+
+00:00:04.332 --> 00:00:07.418
+Each blue link jumps to a sheet one opens
+
+00:00:07.431 --> 00:00:10.621
+the GST portal and one lands on a single
+
+00:00:10.634 --> 00:00:15.009
+cell In a twenty-sheet MIS file a page like
+
+00:00:15.022 --> 00:00:17.353
+this saves your team a lot of scrolling
+
+00:00:18.840 --> 00:00:19.908
+Here's the plan
+
+00:00:21.403 --> 00:00:24.710
+HYPERLINK takes a destination and the text to show
+
+00:00:25.611 --> 00:00:29.387
+For a place inside this workbook start the destination
+
+00:00:29.400 --> 00:00:30.416
+with a hash sign
+
+00:00:31.887 --> 00:00:36.069
+Here's the practice sheet Sheet names are in column
+
+00:00:36.082 --> 00:00:38.439
+A and the links go in column B
+
+00:00:39.934 --> 00:00:44.858
+In B2, type equals HYPERLINK open bracket Then in
+
+00:00:44.871 --> 00:00:48.126
+double quotes a hash sign and a single quote
+
+00:00:49.025 --> 00:00:51.473
+Close the quotes and add an ampersand
+
+00:00:52.950 --> 00:00:56.648
+Now A2, the sheet name another ampersand and in
+
+00:00:56.661 --> 00:01:02.509
+double quotes single quote exclamation mark A1 Close the
+
+00:01:02.522 --> 00:01:04.124
+quotes and type a comma
+
+00:01:05.606 --> 00:01:08.432
+For the friendly name type Go to with a
+
+00:01:08.445 --> 00:01:13.342
+space in quotes then an ampersand and A2 Close
+
+00:01:13.355 --> 00:01:15.113
+the bracket and press Return
+
+00:01:16.606 --> 00:01:20.501
+Fill it down to B8 with Command D Every
+
+00:01:20.514 --> 00:01:22.272
+sheet now has its own link
+
+00:01:23.747 --> 00:01:29.569
+Click Go to S07-04 Excel jumps straight to that
+
+00:01:29.582 --> 00:01:34.153
+sheet Come back to S07-08
+
+00:01:35.637 --> 00:01:39.649
+Here's the mistake people make If you leave out
+
+00:01:39.663 --> 00:01:45.860
+the single quotes the destination becomes hash S07-04 exclamation
+
+00:01:45.873 --> 00:01:50.340
+A1 Because the name has a hyphen Excel can't
+
+00:01:50.353 --> 00:01:54.207
+read it and says the reference isn't valid Keep
+
+00:01:54.220 --> 00:01:57.189
+the quotes and the same formula works for names
+
+00:01:57.202 --> 00:01:58.386
+with spaces too
+
+00:01:59.840 --> 00:02:03.918
+A link to a website In B10, type equals
+
+00:02:03.931 --> 00:02:09.061
+HYPERLINK open bracket the address https colon slash slash
+
+00:02:09.074 --> 00:02:13.058
+www dot gst dot gov dot in in quotes
+
+00:02:13.188 --> 00:02:18.071
+comma Open GST portal in quotes Close and press
+
+00:02:18.084 --> 00:02:18.644
+Return
+
+00:02:20.106 --> 00:02:23.962
+And a link to one cell In B11, type
+
+00:02:23.975 --> 00:02:30.785
+equals HYPERLINK open bracket then hash quote S07-07 quote
+
+00:02:31.085 --> 00:02:36.632
+exclamation mark H2, all in double quotes Comma Rolling
+
+00:02:36.645 --> 00:02:40.199
+total in quotes Close and press Return
+
+00:02:41.653 --> 00:02:42.721
+A Mac note
+
+00:02:44.215 --> 00:02:45.426
+Here's the recap
+
+00:02:46.903 --> 00:02:50.733
+Your turn In B13, make a Back to top
+
+00:02:50.746 --> 00:02:53.416
+link that jumps to cell A1 of this sheet
+
+00:02:54.327 --> 00:02:58.585
+The answer is on the S07-08 Done sheet

@@ -1,0 +1,157 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.970
+This little report answers two questions What did all
+
+00:00:04.983 --> 00:00:07.848
+regions sell in a chosen month and what did
+
+00:00:07.861 --> 00:00:11.715
+one region sell in that month Change the month
+
+00:00:11.728 --> 00:00:14.814
+or region in yellow and every answer updates
+
+00:00:16.294 --> 00:00:17.362
+Here's the plan
+
+00:00:18.841 --> 00:00:25.015
+Three functions today HLOOKUP is VLOOKUP turned sideways MATCH
+
+00:00:25.028 --> 00:00:28.648
+tells you where something sits in a list INDEX
+
+00:00:28.661 --> 00:00:31.695
+returns the value at a row and column position
+
+00:00:33.169 --> 00:00:37.637
+Here's the practice sheet Months run across row one
+
+00:00:37.885 --> 00:00:41.088
+regions run down column A and the inputs are
+
+00:00:41.101 --> 00:00:42.833
+in J2 and J3
+
+00:00:44.310 --> 00:00:49.117
+First the month total with HLOOKUP In J5, type
+
+00:00:49.130 --> 00:00:52.958
+equals HLOOKUP open bracket J2 for the month and
+
+00:00:52.971 --> 00:00:53.531
+a comma
+
+00:00:55.013 --> 00:00:58.229
+The table is A1 to G7, including the Total
+
+00:00:58.242 --> 00:01:01.499
+row Totals are in the seventh row of that
+
+00:01:01.512 --> 00:01:06.161
+table so type 7 Then FALSE for exact match
+
+00:01:06.304 --> 00:01:08.387
+close the bracket and press Return
+
+00:01:09.841 --> 00:01:14.179
+That's the July total for all five regions Now
+
+00:01:14.192 --> 00:01:19.973
+MATCH In J6, type equals MATCH open bracket J3
+
+00:01:19.986 --> 00:01:23.814
+for the region comma A2 to A6, comma zero
+
+00:01:23.827 --> 00:01:29.075
+for exact match Close and press Return West is
+
+00:01:29.088 --> 00:01:30.064
+the fourth region
+
+00:01:31.575 --> 00:01:35.379
+Do the same for the month In J7, type
+
+00:01:35.392 --> 00:01:40.080
+equals MATCH open bracket J2, comma B1 to G1,
+
+00:01:40.093 --> 00:01:44.129
+comma zero July is the fourth month in the
+
+00:01:44.142 --> 00:01:44.611
+list
+
+00:01:46.075 --> 00:01:51.507
+Now INDEX In J8, type equals INDEX open bracket
+
+00:01:51.637 --> 00:01:54.528
+then B2 to G6, the numbers only and a
+
+00:01:54.541 --> 00:01:55.035
+comma
+
+00:01:56.497 --> 00:01:59.101
+The row number is in J6 and the column
+
+00:01:59.114 --> 00:02:04.520
+number is in J7 Type J6, comma J7, close
+
+00:02:04.533 --> 00:02:08.752
+the bracket and press Return That's West in July
+
+00:02:10.263 --> 00:02:13.818
+Most people put the two MATCH formulas straight inside
+
+00:02:13.831 --> 00:02:18.442
+INDEX Click J8 and type the one-cell version with
+
+00:02:18.455 --> 00:02:20.760
+MATCH for the row and MATCH for the column
+
+00:02:21.671 --> 00:02:24.080
+Same answer no helper cells
+
+00:02:25.544 --> 00:02:29.151
+A common mistake is text that doesn't match exactly
+
+00:02:30.077 --> 00:02:34.596
+Type July in J2 instead of Jul. Every lookup
+
+00:02:34.609 --> 00:02:38.111
+returns hash N A because the heading says Jul.
+
+00:02:39.606 --> 00:02:43.475
+Fix it by typing Jul. To stop this for
+
+00:02:43.488 --> 00:02:46.717
+good a dropdown list on J2 is the answer
+
+00:02:46.978 --> 00:02:49.556
+which you'll build in section S08
+
+00:02:51.013 --> 00:02:55.182
+Now change the month to Sep. The month total
+
+00:02:55.195 --> 00:02:56.979
+and West's figure both update
+
+00:02:58.450 --> 00:02:59.518
+A Mac note
+
+00:03:00.997 --> 00:03:02.208
+Here's the recap
+
+00:03:03.685 --> 00:03:08.140
+Your turn In J10, return the region's total from
+
+00:03:08.153 --> 00:03:12.632
+April to September Hint use zero as the column
+
+00:03:12.645 --> 00:03:15.692
+number inside INDEX to get the whole row then
+
+00:03:15.705 --> 00:03:18.908
+wrap it in SUM The answer is on the
+
+00:03:18.921 --> 00:03:19.742
+Done sheet

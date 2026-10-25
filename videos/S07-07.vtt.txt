@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.562
+Type a branch name in B1 and B2 totals
+
+00:00:03.575 --> 00:00:07.783
+that branch's own sheet On the right a rolling
+
+00:00:07.796 --> 00:00:11.442
+total always covers the latest three months so next
+
+00:00:11.455 --> 00:00:13.538
+month you just type the new figure
+
+00:00:14.997 --> 00:00:16.429
+Here's what you'll learn
+
+00:00:17.887 --> 00:00:22.707
+INDIRECT turns text into a live reference OFFSET starts
+
+00:00:22.720 --> 00:00:26.131
+at a cell moves down and across and returns
+
+00:00:26.144 --> 00:00:28.189
+a range of the size you ask for
+
+00:00:29.684 --> 00:00:33.749
+First look at the Mumbai sheet Months are in
+
+00:00:33.762 --> 00:00:37.147
+A2 to A13 and sales in B2 to B13
+
+00:00:38.045 --> 00:00:40.871
+Delhi and Bengaluru have the same layout
+
+00:00:42.356 --> 00:00:49.220
+Back on S07-07 click B2 Type equals SUM open
+
+00:00:49.233 --> 00:00:53.895
+bracket INDIRECT open bracket B1, then an ampersand to
+
+00:00:53.908 --> 00:00:57.749
+join on the text exclamation mark B2 colon B13
+
+00:00:57.762 --> 00:00:58.556
+in quotes
+
+00:01:00.028 --> 00:01:04.392
+Close both brackets and press Return That's the Mumbai
+
+00:01:04.405 --> 00:01:06.905
+total read from the Mumbai sheet
+
+00:01:08.387 --> 00:01:12.426
+Now type Delhi in B1 The total jumps to
+
+00:01:12.439 --> 00:01:16.540
+the Delhi sheet One formula any branch
+
+00:01:18.012 --> 00:01:22.649
+Here's the common mistake Type Chennai a branch with
+
+00:01:22.663 --> 00:01:26.699
+no sheet INDIRECT can't find it so you get
+
+00:01:26.712 --> 00:01:30.475
+hash REF The text must match a real sheet
+
+00:01:30.488 --> 00:01:33.014
+name Type Delhi again
+
+00:01:34.481 --> 00:01:37.176
+If a sheet name has spaces wrap it in
+
+00:01:37.189 --> 00:01:41.864
+single quotes inside the text like quote apostrophe Navi
+
+00:01:41.877 --> 00:01:48.663
+Mumbai apostrophe exclamation mark Now the rolling total In
+
+00:01:48.676 --> 00:01:53.337
+H1, type equals COUNT open bracket E2 to E13
+
+00:01:54.236 --> 00:01:56.449
+Six months have data so far
+
+00:01:57.919 --> 00:02:02.515
+In H2, type equals SUM open bracket OFFSET open
+
+00:02:02.528 --> 00:02:07.101
+bracket E1, comma E1 is our starting point the
+
+00:02:07.114 --> 00:02:07.635
+heading
+
+00:02:09.091 --> 00:02:12.568
+Move down H1 minus 2 rows which lands on
+
+00:02:12.581 --> 00:02:17.843
+July Comma zero columns across comma a height of
+
+00:02:17.856 --> 00:02:22.687
+3 rows comma width 1 Close both brackets and
+
+00:02:22.700 --> 00:02:23.559
+press Return
+
+00:02:25.028 --> 00:02:30.225
+That's July August and September Now type October's figure
+
+00:02:30.238 --> 00:02:35.225
+in E8, fourteen lakh seventy-five thousand The count becomes
+
+00:02:35.238 --> 00:02:38.207
+seven and the total rolls forward to August to
+
+00:02:38.220 --> 00:02:38.884
+October
+
+00:02:40.356 --> 00:02:45.137
+Last ADDRESS with ROW and COLUMN In H3, type
+
+00:02:45.150 --> 00:02:49.486
+equals ADDRESS open bracket H1 plus ROW of E1,
+
+00:02:49.499 --> 00:02:54.876
+comma COLUMN of E1 Close and press Return It
+
+00:02:54.889 --> 00:02:57.728
+tells us the latest figure sits in E8
+
+00:02:59.216 --> 00:03:00.440
+A note on speed
+
+00:03:01.903 --> 00:03:03.114
+Here's the recap
+
+00:03:04.591 --> 00:03:08.942
+Your turn In H5, total the last three months
+
+00:03:08.955 --> 00:03:13.617
+again but with INDEX instead of OFFSET The answer
+
+00:03:13.630 --> 00:03:17.145
+is on the S07-07 Done sheet

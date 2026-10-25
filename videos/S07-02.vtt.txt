@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.330
+This sheet works out every salesperson's commission rate from
+
+00:00:04.343 --> 00:00:08.356
+a slab table Sales of five lakh or more
+
+00:00:08.369 --> 00:00:11.637
+earn four percent ten lakh or more earn five
+
+00:00:11.650 --> 00:00:16.468
+percent and so on One formula handles every band
+
+00:00:17.950 --> 00:00:19.382
+Here's what you'll learn
+
+00:00:20.857 --> 00:00:25.102
+With approximate match Excel finds the largest value that
+
+00:00:25.115 --> 00:00:27.875
+is less than or equal to the sales figure
+
+00:00:28.789 --> 00:00:31.875
+For that to work the slab table must start
+
+00:00:31.888 --> 00:00:35.143
+at zero and be sorted from smallest to largest
+
+00:00:36.607 --> 00:00:40.619
+Here's the practice sheet Sales are in column B
+
+00:00:40.633 --> 00:00:43.640
+and the slab table is in H1 to J6
+
+00:00:44.539 --> 00:00:47.130
+Each Sales From value is the lower edge of
+
+00:00:47.143 --> 00:00:47.703
+a band
+
+00:00:49.169 --> 00:00:53.284
+Click C2 and type equals VLOOKUP open bracket B2,
+
+00:00:53.297 --> 00:00:53.804
+comma
+
+00:00:55.294 --> 00:00:59.932
+Now the slab table Type H2 colon I6, press
+
+00:00:59.945 --> 00:01:02.640
+Command T to lock it and type a comma
+
+00:01:04.138 --> 00:01:06.833
+We want the rate the second column of the
+
+00:01:06.846 --> 00:01:11.315
+slab table Type 2 a comma then TRUE for
+
+00:01:11.328 --> 00:01:15.742
+approximate match Close the bracket and press Return
+
+00:01:17.232 --> 00:01:21.935
+Aarav sold one lakh eighty-five thousand That's below two
+
+00:01:21.948 --> 00:01:24.630
+lakh so he lands in the first band at
+
+00:01:24.643 --> 00:01:28.875
+two percent Fill the formula down with Command D
+
+00:01:30.357 --> 00:01:34.513
+Check Vikram in row six His sales are exactly
+
+00:01:34.526 --> 00:01:39.174
+two lakh so he gets three percent Approximate match
+
+00:01:39.187 --> 00:01:41.544
+includes the lower edge of each band
+
+00:01:43.013 --> 00:01:46.398
+Now the XLOOKUP version in column E Type equals
+
+00:01:46.411 --> 00:01:50.331
+XLOOKUP open bracket B2, comma then the Sales From
+
+00:01:50.344 --> 00:01:54.042
+column H2 to H6, locked with Command T and
+
+00:01:54.055 --> 00:01:54.615
+a comma
+
+00:01:56.091 --> 00:02:00.364
+The return column is I2 to I6, locked Then
+
+00:02:00.377 --> 00:02:05.143
+two commas because we skip the not-found argument Then
+
+00:02:05.156 --> 00:02:08.697
+minus one which means exact match or the next
+
+00:02:08.710 --> 00:02:12.877
+smaller item Close the bracket and press Return
+
+00:02:14.357 --> 00:02:18.174
+Fill it down with Command D The two columns
+
+00:02:18.187 --> 00:02:22.458
+agree XLOOKUP doesn't need a column number so it
+
+00:02:22.471 --> 00:02:25.817
+keeps working if someone rearranges the slab table
+
+00:02:27.294 --> 00:02:32.036
+Here's a typical mistake Suppose the first slab starts
+
+00:02:32.049 --> 00:02:36.306
+at fifty thousand instead of zero Click H2, type
+
+00:02:36.320 --> 00:02:38.247
+50000 and press Return
+
+00:02:39.747 --> 00:02:42.885
+Neha's sales of forty-five thousand are now below the
+
+00:02:42.898 --> 00:02:46.349
+first band so both lookups return hash N A
+
+00:02:47.249 --> 00:02:51.468
+The slab table must always start at zero Press
+
+00:02:51.481 --> 00:02:53.590
+Command Z to put the zero back
+
+00:02:55.060 --> 00:02:59.724
+The other trap is an unsorted slab table Approximate
+
+00:02:59.737 --> 00:03:03.395
+match assumes ascending order so a shuffled table gives
+
+00:03:03.408 --> 00:03:07.731
+wrong rates with no error at all Always sort
+
+00:03:07.744 --> 00:03:09.867
+the slabs smallest to largest
+
+00:03:11.341 --> 00:03:15.145
+Prove it's live Change Aarav's sales in B2 to
+
+00:03:15.158 --> 00:03:19.833
+2,10,000 He moves up to the three percent band
+
+00:03:19.846 --> 00:03:20.653
+straight away
+
+00:03:22.138 --> 00:03:23.349
+Here's the recap
+
+00:03:24.825 --> 00:03:29.137
+Your turn In column F return the slab name
+
+00:03:29.280 --> 00:03:32.861
+such as Gold or Platinum using XLOOKUP and column
+
+00:03:32.874 --> 00:03:36.520
+J of the slab table The answer is on
+
+00:03:36.533 --> 00:03:39.593
+the S07-02 Done sheet

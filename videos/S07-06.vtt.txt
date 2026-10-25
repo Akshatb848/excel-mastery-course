@@ -1,0 +1,145 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.770
+Pick scenario one two or three in B1, and
+
+00:00:03.783 --> 00:00:07.952
+the growth rate and next year's revenue follow Below
+
+00:00:07.965 --> 00:00:11.533
+it the branch table is reshaped by formula with
+
+00:00:11.546 --> 00:00:15.817
+columns reordered and rows picked out without copying anything
+
+00:00:17.278 --> 00:00:18.346
+Here's the plan
+
+00:00:19.825 --> 00:00:22.781
+CHOOSE takes a number and a list and returns
+
+00:00:22.794 --> 00:00:27.210
+the item at that position CHOOSECOLS and CHOOSEROWS do
+
+00:00:27.223 --> 00:00:29.332
+the same with the columns or rows of a
+
+00:00:29.345 --> 00:00:33.199
+range A negative number counts from the end
+
+00:00:34.669 --> 00:00:38.851
+Here's the practice sheet The scenario number is in
+
+00:00:38.864 --> 00:00:41.559
+B1, and the branch table is in A8 to
+
+00:00:41.572 --> 00:00:42.301
+E14
+
+00:00:43.763 --> 00:00:48.138
+In B2, type equals CHOOSE open bracket B1, comma
+
+00:00:49.039 --> 00:00:52.632
+Then the three names in quotes separated by commas
+
+00:00:52.841 --> 00:00:58.518
+Conservative Base Optimistic Close the bracket and press Return
+
+00:00:59.981 --> 00:01:04.046
+B1 is two so we get Base In B3,
+
+00:01:04.059 --> 00:01:08.941
+type equals CHOOSE open bracket B1, comma 8 percent
+
+00:01:09.111 --> 00:01:14.736
+comma 12 percent comma 15 percent Close and press
+
+00:01:14.749 --> 00:01:15.309
+Return
+
+00:01:16.778 --> 00:01:20.749
+Twelve percent growth and B5 already shows next year's
+
+00:01:20.762 --> 00:01:24.486
+revenue of one crore thirty-four lakh forty thousand rupees
+
+00:01:25.400 --> 00:01:28.629
+Change B1 to 3 and watch both cells switch
+
+00:01:28.642 --> 00:01:30.165
+to the optimistic case
+
+00:01:31.638 --> 00:01:37.018
+Here's the common mistake Type 4 in B1 There's
+
+00:01:37.031 --> 00:01:40.729
+no fourth item so CHOOSE returns hash VALUE and
+
+00:01:40.742 --> 00:01:43.281
+every cell that depends on it does too
+
+00:01:44.747 --> 00:01:48.002
+Keep B1 between one and the number of items
+
+00:01:48.929 --> 00:01:54.124
+A dropdown list from section S08 stops this Type
+
+00:01:54.137 --> 00:01:55.674
+2 to go back to Base
+
+00:01:57.122 --> 00:02:02.983
+Now CHOOSECOLS In G8, type equals CHOOSECOLS open bracket
+
+00:02:03.114 --> 00:02:06.317
+A8 to E14, the whole table with headings and
+
+00:02:06.330 --> 00:02:06.890
+a comma
+
+00:02:08.356 --> 00:02:12.379
+We want City first then Branch then Q2 Sales
+
+00:02:13.280 --> 00:02:18.007
+That's columns 3 1 and 5 Type them close
+
+00:02:18.020 --> 00:02:22.160
+the bracket and press Return The new table spills
+
+00:02:22.303 --> 00:02:23.176
+in our order
+
+00:02:24.653 --> 00:02:30.684
+Now CHOOSEROWS In A17, type equals CHOOSEROWS open bracket
+
+00:02:30.840 --> 00:02:34.108
+A8 to E14, comma 1 for the heading row
+
+00:02:34.225 --> 00:02:38.314
+comma minus 1 for the last row Close and
+
+00:02:38.327 --> 00:02:39.238
+press Return
+
+00:02:40.716 --> 00:02:45.028
+The heading and the last branch Hinjewadi If you
+
+00:02:45.041 --> 00:02:47.385
+add a branch to the table and extend the
+
+00:02:47.398 --> 00:02:50.614
+range minus one always picks the newest row
+
+00:02:52.075 --> 00:02:53.143
+A Mac note
+
+00:02:54.622 --> 00:02:55.833
+Here's the recap
+
+00:02:57.325 --> 00:03:02.067
+Your turn In G17, use CHOOSECOLS to show Q2
+
+00:03:02.080 --> 00:03:06.038
+Sales first and City second The answer is on
+
+00:03:06.051 --> 00:03:09.241
+the S07-06 Done sheet

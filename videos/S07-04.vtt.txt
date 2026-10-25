@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.171
+Type an employee ID in the yellow cell and
+
+00:00:03.184 --> 00:00:07.416
+this panel returns the name salary and name department
+
+00:00:07.429 --> 00:00:11.689
+and location together All of it uses XLOOKUP and
+
+00:00:11.702 --> 00:00:13.798
+the ID column sits to the right of the
+
+00:00:13.811 --> 00:00:16.025
+name which VLOOKUP can't handle
+
+00:00:17.466 --> 00:00:18.742
+Here's what's coming
+
+00:00:20.216 --> 00:00:25.062
+XLOOKUP needs only three arguments What to find where
+
+00:00:25.075 --> 00:00:29.072
+to find it and what to bring back Exact
+
+00:00:29.085 --> 00:00:31.859
+match is the default so there's no FALSE to
+
+00:00:31.872 --> 00:00:32.510
+remember
+
+00:00:33.997 --> 00:00:39.260
+Here's the practice sheet Fifteen employees with Emp ID
+
+00:00:39.273 --> 00:00:42.658
+in column D The ID to find is in
+
+00:00:42.671 --> 00:00:43.348
+H1
+
+00:00:44.809 --> 00:00:49.184
+In H2, type equals XLOOKUP open bracket then H1,
+
+00:00:49.197 --> 00:00:51.697
+the ID we're looking for and a comma
+
+00:00:53.153 --> 00:00:56.473
+The lookup array is the Emp ID column D2
+
+00:00:56.486 --> 00:00:58.296
+to D16, and a comma
+
+00:00:59.778 --> 00:01:02.786
+The return array is the name column A2 to
+
+00:01:02.799 --> 00:01:06.629
+A16 It's to the left of the IDs and
+
+00:01:06.642 --> 00:01:09.936
+XLOOKUP doesn't mind Add a comma
+
+00:01:11.388 --> 00:01:14.370
+For if not found type Not found in double
+
+00:01:14.383 --> 00:01:20.843
+quotes Close the bracket and press Return Employee 1007
+
+00:01:20.856 --> 00:01:21.911
+is Nikhil Rao
+
+00:01:23.388 --> 00:01:28.390
+Now the salary In H3, type equals XLOOKUP open
+
+00:01:28.403 --> 00:01:32.934
+bracket H1, comma D2 to D16, comma E2 to
+
+00:01:32.947 --> 00:01:35.773
+E15, close the bracket and press Return
+
+00:01:37.231 --> 00:01:41.309
+Hash VALUE The lookup array has fifteen rows but
+
+00:01:41.322 --> 00:01:45.658
+the return array has only fourteen Both ranges must
+
+00:01:45.671 --> 00:01:49.251
+be the same size Retype it with E2 to
+
+00:01:49.264 --> 00:01:50.059
+E16
+
+00:01:51.528 --> 00:01:56.205
+One lakh eighteen thousand rupees Now several columns at
+
+00:01:56.218 --> 00:02:01.387
+once In H5, type the same start H1, comma
+
+00:02:01.582 --> 00:02:05.632
+D2 to D16, comma but return A2 to C16,
+
+00:02:05.645 --> 00:02:06.582
+three columns
+
+00:02:08.075 --> 00:02:13.780
+Press Return Name department and location spill across H5
+
+00:02:13.793 --> 00:02:15.772
+to J5 from one formula
+
+00:02:17.216 --> 00:02:23.364
+Now test it Change H1 to EMP1099 an ID
+
+00:02:23.377 --> 00:02:27.908
+that doesn't exist H2 says Not found as we
+
+00:02:27.921 --> 00:02:32.153
+asked H3 shows hash N A because we didn't
+
+00:02:32.166 --> 00:02:33.182
+give it a message
+
+00:02:34.653 --> 00:02:39.080
+Put EMP1007 back in H1 and everything returns
+
+00:02:40.575 --> 00:02:41.643
+A Mac note
+
+00:02:43.106 --> 00:02:44.317
+Here's the recap
+
+00:02:45.809 --> 00:02:51.267
+Your turn G8 holds the name Kavya Iyer In
+
+00:02:51.280 --> 00:02:55.876
+H8, return her Emp ID with XLOOKUP This time
+
+00:02:55.889 --> 00:02:58.637
+you search the name column and return the ID
+
+00:02:58.650 --> 00:03:02.178
+column The answer is on the Done sheet
