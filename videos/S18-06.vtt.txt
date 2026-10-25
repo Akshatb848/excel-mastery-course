@@ -1,0 +1,253 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+All right, let's dive right into this explainer for lesson S18-06. If you're a working professional
+
+00:00:06.000 --> 00:00:10.960
+in India, you already know that wrangling daily sales reports can literally eat up hours of your
+
+00:00:10.960 --> 00:00:16.400
+time. Today, we're taking a practical over-the-shoulder look at automating your Excel workflows.
+
+00:00:16.400 --> 00:00:20.480
+We're focusing specifically on Excel from Mac, and we're going to see exactly how
+
+00:00:20.480 --> 00:00:25.200
+Copilot can do the heavy lifting for you, turning tedious formatting into a simple conversation.
+
+00:00:26.240 --> 00:00:29.360
+Here's our roadmap for today. We'll be setting up the data,
+
+00:00:29.440 --> 00:00:35.280
+highlighting rows and verifying them, sorting by achievement percent, finding our top and bottom
+
+00:00:35.280 --> 00:00:40.720
+reps, filtering and clearing data, and finally wrapping up with a recap and a final challenge.
+
+00:00:41.680 --> 00:00:46.720
+All right, part one, setting up the data. So go ahead and open up your practice sheet.
+
+00:00:46.720 --> 00:00:53.920
+As you'll see, we've got 18 sales reps listed from cell A1 down to E19. We have their names,
+
+00:00:53.920 --> 00:00:59.120
+regions, target amounts, and achieved amounts, all properly formatted in Indian rupees,
+
+00:00:59.120 --> 00:01:03.200
+along with their achievement percentage. Now, before we start typing any prompts,
+
+00:01:03.200 --> 00:01:07.360
+here's a quick, absolutely crucial tip if you're new to using Excel on a Mac.
+
+00:01:07.360 --> 00:01:10.960
+You're going to use the command key instead of the control key for most of your familiar
+
+00:01:10.960 --> 00:01:15.600
+shortcuts, but there is one big exception. When you want to step into a cell to edit it,
+
+00:01:15.600 --> 00:01:19.520
+you still press control U, just like you might remember from Windows. So definitely
+
+00:01:19.520 --> 00:01:25.120
+keep that muscle memory in check. Highlight rows and verify. To get started, open up the
+
+00:01:25.120 --> 00:01:30.480
+copilot pane and select edit mode. Then you're going to type this exact prompt. Highlight the
+
+00:01:30.480 --> 00:01:36.080
+entire rows where achieved is less than target in light red. Now, it's super important to note
+
+00:01:36.080 --> 00:01:40.240
+that we're using the copilot side pane here. If you've read older tutorials, you might have
+
+00:01:40.240 --> 00:01:45.120
+seen people using the equals copilot function directly inside a cell. Just a heads up that
+
+00:01:45.120 --> 00:01:49.920
+old prompt in a cell function was actually retired back in September 2026. So for today's
+
+00:01:49.920 --> 00:01:55.360
+workflows, the side pane is exactly where you need to be. Once you hit enter, look at that.
+
+00:01:55.360 --> 00:01:59.200
+This beautifully illustrates what copilot is actually doing behind the scenes.
+
+00:01:59.200 --> 00:02:04.080
+There's no hidden magic here. Copilot is simply translating your plain English into Excel's
+
+00:02:04.080 --> 00:02:08.320
+standard conditional formatting. It applies the rule and colors the rows right there on your
+
+00:02:08.320 --> 00:02:12.720
+sheet, which means you can always pop over to the home tab later and tweak the rule yourself
+
+00:02:12.720 --> 00:02:18.400
+if you ever need to. But listen, here is the golden rule for working with AI. Before we blindly
+
+00:02:18.400 --> 00:02:23.040
+trust it, we verify it. We really need to know that copilot highlighted the correct number
+
+00:02:23.040 --> 00:02:29.760
+of people. So jump over to cell H1 and manually type this exact formula. Equals count if
+
+00:02:29.760 --> 00:02:37.440
+open bracket E2 colon E19 comma quote less than one quote close bracket. Remember, an
+
+00:02:37.440 --> 00:02:42.560
+achievement below 100% simply means they were below target, which translates to less than one
+
+00:02:42.560 --> 00:02:48.320
+in formula terms. When you press enter, the formula returns the number seven. Now go ahead
+
+00:02:48.320 --> 00:02:53.840
+and physically count those red rows on your screen. One, two, three, all the way up to
+
+00:02:53.840 --> 00:02:59.120
+seven. This right here is a foolproof safety net for your workflow. If you manually count
+
+00:02:59.120 --> 00:03:03.840
+exactly seven red rows and your formula says seven, you know the AI's formatting rule is
+
+00:03:03.840 --> 00:03:08.240
+perfectly accurate. If they didn't match, you'd know to go into conditional formatting and
+
+00:03:08.240 --> 00:03:14.960
+manage rules to see where it got confused. But here, we are totally good to go. Sort by achievement
+
+00:03:14.960 --> 00:03:20.560
+percent. While you're still in that copilot pain, punch in this simple prompt, sort the table by
+
+00:03:20.560 --> 00:03:25.760
+achievement percent from highest to lowest. In about eight seconds, boom, the best performer
+
+00:03:25.760 --> 00:03:29.840
+moves right up to row two just below the header, and the weakest drops all the way down to the
+
+00:03:29.840 --> 00:03:34.400
+bottom. And do you see those red highlights? They moved perfectly with their respective rows
+
+00:03:34.400 --> 00:03:38.240
+because standard conditional formatting rules naturally follow the data when you sort it.
+
+00:03:38.960 --> 00:03:44.720
+All right, step four, find top and bottom reps. Now, switch your copilot pain from
+
+00:03:44.720 --> 00:03:50.000
+edit over to chat. We're going to ask a highly specific multi-part question. Type this in,
+
+00:03:50.640 --> 00:03:55.440
+who are the top three and bottom three reps by achievement percentage? For the bottom three,
+
+00:03:55.440 --> 00:04:00.720
+how much did each miss target by in rupees? We phrase it exactly this way to quickly
+
+00:04:00.720 --> 00:04:05.440
+extract the leadership board and crucially to get the AI to do the math on the exact rupee
+
+00:04:05.440 --> 00:04:10.480
+shortfalls without us having to add a whole new formula column ourselves. Copilot will read the
+
+00:04:10.480 --> 00:04:16.400
+sheet and spit out an answer right in the chat window. But again, trust but verify, right?
+
+00:04:16.400 --> 00:04:21.120
+Let's cross-check the AI's answer with your newly sorted sheet. Look at row two. It should
+
+00:04:21.120 --> 00:04:26.880
+be Aditya Joshi, our top performer who completely smashed his target. Then scan all the way down
+
+00:04:26.880 --> 00:04:32.480
+to row 19. There's Rahul Verma at the bottom. You can manually subtract his achieved 90,000
+
+00:04:32.480 --> 00:04:38.720
+rupees from his target of 1,50,000 to confirm that, yep, he missed by exactly 60,000 rupees,
+
+00:04:38.720 --> 00:04:43.360
+just like the AI stated. Next up, step five, filter and clear data.
+
+00:04:44.160 --> 00:04:49.520
+Filter the table to show only the west region. Instantly, Excel applies an auto filter for you.
+
+00:04:49.520 --> 00:04:53.840
+The reps from the east, north, and south are hidden from view and only the west reps are left
+
+00:04:53.840 --> 00:04:58.560
+visible. You'll also notice a little filter icon has popped up on the region header right there
+
+00:04:58.560 --> 00:05:05.200
+in cell B1. Now, this is incredibly fast, but we've got to be extremely careful here. There's
+
+00:05:05.200 --> 00:05:09.760
+a very common mistake that happens to the best of us. You ask the AI to filter something,
+
+00:05:09.760 --> 00:05:14.320
+you review the results, and then you completely forget that the filter is actually turned on.
+
+00:05:14.320 --> 00:05:18.240
+If you then highlight the whole table and copy the data to paste it into a new sheet or an
+
+00:05:18.240 --> 00:05:23.120
+email, those hidden rows get left behind. You've just accidentally excluded three quarters of
+
+00:05:23.120 --> 00:05:29.200
+your Salesforce from the report. Not good. So to avoid this disaster and safely clear the view,
+
+00:05:29.200 --> 00:05:34.240
+you have two simple options. You can just ask Copilot using this prompt, clear all filters on
+
+00:05:34.240 --> 00:05:38.640
+this table. Or if you prefer the manual route, just click that little filter button on the
+
+00:05:38.640 --> 00:05:44.240
+region header and hit clear filter yourself. Bottom line, always, always bring your data back
+
+00:05:44.240 --> 00:05:50.160
+to its full state before you share it. And finally, step six, recap and final challenge.
+
+00:05:50.960 --> 00:05:55.200
+Let's lock in what we've learned today with an essential three-part recap. Number one,
+
+00:05:55.200 --> 00:06:00.080
+Copilot isn't doing magic. It uses Excel's standard formatting, sorting, and filtering tools,
+
+00:06:00.080 --> 00:06:05.440
+which means you always remain in full control. Number two, you absolutely must verify the AI's
+
+00:06:05.440 --> 00:06:09.280
+work. Count those highlights manually using a count if formula just to make sure it didn't
+
+00:06:09.280 --> 00:06:14.640
+miss anyone. And number three, always clear your filters before copying or sharing your data so
+
+00:06:14.640 --> 00:06:19.600
+you never lose those hidden rows. All right, now it's your turn. You've got the tools,
+
+00:06:19.600 --> 00:06:25.600
+so let's put them to work. Your practical challenge is to open sheet S18-06 on your Mac.
+
+00:06:25.600 --> 00:06:31.200
+Ask Copilot to highlight achievements above 120% in green. Once it does that,
+
+00:06:31.200 --> 00:06:34.720
+I want you to check it with your very own count if formula, just like we did for the
+
+00:06:34.720 --> 00:06:38.640
+underperformers. Compare your result with the done sheet to see if you nailed it.
+
+00:06:38.640 --> 00:06:42.560
+You can definitely do this. As you head back to your own spreadsheets today,
+
+00:06:42.560 --> 00:06:47.680
+I want you to think about this. If you can sort color code and interrogate a complex
+
+00:06:47.680 --> 00:06:52.400
+sales sheet in just a few conversational prompts, what other tedious tasks in your
+
+00:06:52.400 --> 00:06:56.880
+daily rupee calculations are eating up your time? What else sitting on your desk right now
+
+00:06:56.880 --> 00:07:00.480
+is just waiting to be solved in seconds with a simple prompt and a quick manual check?
+
+00:07:01.040 --> 00:07:03.920
+Give it a try and see just how much time you can win back.

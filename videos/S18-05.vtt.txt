@@ -1,0 +1,352 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.960
+Hey everyone, welcome to this step-by-step explainer of lesson S18-05.
+
+00:00:04.960 --> 00:00:10.040
+Today, we're diving into exactly how working professionals can master AI formulas in Excel
+
+00:00:10.040 --> 00:00:11.040
+for Mac.
+
+00:00:11.040 --> 00:00:15.400
+Look, if you're handling daily data sets, dealing with GST calculations, and you just
+
+00:00:15.400 --> 00:00:19.240
+want to speed up your workflow without losing control of your data, you are absolutely in
+
+00:00:19.240 --> 00:00:20.240
+the right place.
+
+00:00:20.240 --> 00:00:23.280
+We're going to build your confidence using Copilot right on your Mac, while keeping
+
+00:00:23.280 --> 00:00:25.800
+you firmly in the driver's seat.
+
+00:00:25.800 --> 00:00:27.280
+Here's our agenda for today.
+
+00:00:27.280 --> 00:00:29.560
+First, setup and first formula.
+
+00:00:29.600 --> 00:00:32.200
+Second, adding GST with a lookup.
+
+00:00:32.200 --> 00:00:34.520
+Third, checking the math by hand.
+
+00:00:34.520 --> 00:00:37.600
+Fourth, explaining old inherited formulas.
+
+00:00:37.600 --> 00:00:40.240
+And finally, pro tips and a final recap.
+
+00:00:40.240 --> 00:00:41.560
+Let's get started.
+
+00:00:41.560 --> 00:00:44.800
+All right, section one, setup and first formula.
+
+00:00:44.800 --> 00:00:49.760
+Let's get worksheet S18-05 prepared and ready to go.
+
+00:00:49.760 --> 00:00:53.360
+Go ahead and open up practice sheet S18-05.
+
+00:00:53.360 --> 00:00:56.360
+Over on the left side, you've got your standard orders data set.
+
+00:00:56.360 --> 00:01:00.000
+Order ID, state, category, quantity, and unit price.
+
+00:01:00.000 --> 00:01:03.160
+We have some transactions here from Maharashtra and Delhi.
+
+00:01:03.160 --> 00:01:08.760
+And over on the right side, sitting in cells L1 to M6 is our crucial GST rate table.
+
+00:01:08.760 --> 00:01:13.040
+This is exactly how real world data looks when you sit down at your desk every morning.
+
+00:01:13.040 --> 00:01:16.560
+Now a super important heads up before we generate our first formula.
+
+00:01:16.560 --> 00:01:19.600
+There's been a pretty big update for Microsoft 365.
+
+00:01:19.600 --> 00:01:25.060
+The equals Copilot cell function was actually officially retired back in September 2026.
+
+00:01:25.060 --> 00:01:28.460
+So we won't be typing AI commands directly into the cells anymore.
+
+00:01:28.460 --> 00:01:32.140
+Instead, we use the Copilot chat pane over on the side.
+
+00:01:32.140 --> 00:01:35.660
+Let's go ahead and open that Copilot pane in edit mode right now.
+
+00:01:35.660 --> 00:01:39.980
+Once you're in edit mode, I want you to type this exact concrete sentence.
+
+00:01:39.980 --> 00:01:40.980
+Ready?
+
+00:01:40.980 --> 00:01:47.580
+Add a column called amount that multiplies QTY by unit price for every row.
+
+00:01:47.580 --> 00:01:49.900
+Notice how insanely specific we're being here.
+
+00:01:49.900 --> 00:01:54.700
+We give it a name and we tell it exactly which two existing columns to multiply.
+
+00:01:54.700 --> 00:01:55.700
+Hit send.
+
+00:01:55.700 --> 00:01:56.700
+Wait a few seconds.
+
+00:01:56.700 --> 00:01:57.700
+And boom.
+
+00:01:57.700 --> 00:02:00.980
+Copilot will add this new column right to the edge of your table.
+
+00:02:00.980 --> 00:02:01.980
+But hold on.
+
+00:02:01.980 --> 00:02:03.860
+Here is the absolute crucial step.
+
+00:02:03.860 --> 00:02:07.740
+You have to click on the first cell of that new column and check your formula bar.
+
+00:02:07.740 --> 00:02:10.460
+AI is brilliant, but it is not perfect.
+
+00:02:10.460 --> 00:02:13.940
+If you notice the formula is grabbing the wrong data, like maybe it grabbed the order
+
+00:02:13.940 --> 00:02:16.700
+ID instead of the quantity, don't panic.
+
+00:02:16.700 --> 00:02:19.380
+Since you're on a Mac, just press command Z to undo it.
+
+00:02:19.380 --> 00:02:21.700
+Tweak your prompt and try again.
+
+00:02:21.700 --> 00:02:23.620
+Adding GST with a lookup.
+
+00:02:23.620 --> 00:02:25.380
+Let's connect some data with AI.
+
+00:02:25.380 --> 00:02:30.700
+Alright, now we need to calculate the correct tax for our Indian context.
+
+00:02:30.700 --> 00:02:32.980
+Type this exact prompt into the pane.
+
+00:02:32.980 --> 00:02:37.820
+Add a column called GST that looks up the GST rate for each row's category from the
+
+00:02:37.820 --> 00:02:41.980
+table in L1 to M6 and multiplies it by amount.
+
+00:02:41.980 --> 00:02:44.800
+This perfectly illustrates a massive best practice.
+
+00:02:44.800 --> 00:02:49.900
+We are explicitly giving Copilot the exact cell references, L1 to M6.
+
+00:02:49.900 --> 00:02:54.120
+That means there is zero confusion about where to find those GST rates.
+
+00:02:54.120 --> 00:02:57.980
+So click on that first GST cell and take a look at the formula.
+
+00:02:57.980 --> 00:03:02.580
+Copilot is usually going to write a standard X lookup or maybe an index and match formula
+
+00:03:02.580 --> 00:03:03.580
+here.
+
+00:03:03.580 --> 00:03:05.940
+And this is a really important point to understand.
+
+00:03:05.940 --> 00:03:10.340
+Once Copilot writes that formula into the cell, it is entirely yours.
+
+00:03:10.340 --> 00:03:12.500
+It's just an ordinary Excel formula now.
+
+00:03:12.500 --> 00:03:16.540
+It recalculates on its own without Copilot, and anyone you send the file to can read
+
+00:03:16.540 --> 00:03:18.540
+it perfectly fine.
+
+00:03:18.540 --> 00:03:20.180
+Accepting the math by hand.
+
+00:03:20.180 --> 00:03:23.180
+This is all about building trust through verification.
+
+00:03:23.180 --> 00:03:29.540
+Listen, we always, always manually verify the AI's math for the first row.
+
+00:03:29.540 --> 00:03:32.020
+Accepting formulas blindly is a really dangerous habit.
+
+00:03:32.020 --> 00:03:33.580
+So go to an empty cell.
+
+00:03:33.580 --> 00:03:35.340
+Let's just use M13.
+
+00:03:35.340 --> 00:03:38.260
+Type equals F2 star G2.
+
+00:03:38.260 --> 00:03:41.420
+And because you're on a Mac, remember to hit that return key.
+
+00:03:41.420 --> 00:03:48.500
+If you did it correctly, cell M13 is going to show exactly 10,892 rupees.
+
+00:03:48.500 --> 00:03:51.780
+Now, does it match the first amount Copilot calculated for us?
+
+00:03:51.780 --> 00:03:53.340
+Yep, it sure does.
+
+00:03:53.340 --> 00:03:58.500
+Now, checking one row doesn't mathematically guarantee that every single row is flawless.
+
+00:03:58.500 --> 00:04:03.140
+But if there's a mismatch here, that tells you to immediately stop and investigate.
+
+00:04:03.140 --> 00:04:07.380
+But since ours matches, we know our AI's math is correct.
+
+00:04:07.380 --> 00:04:09.940
+Explaining old inherited formulas.
+
+00:04:09.940 --> 00:04:13.160
+Time to decode some complex legacy sheets.
+
+00:04:13.160 --> 00:04:16.420
+You inherit this massive file from a former colleague.
+
+00:04:16.420 --> 00:04:22.100
+When in cell L10, there is a giant, extremely complicated, some product formula left over
+
+00:04:22.100 --> 00:04:23.300
+from last year.
+
+00:04:23.300 --> 00:04:27.260
+You definitely don't want to break it, but you really need to know what it actually does.
+
+00:04:27.260 --> 00:04:28.500
+Here's the trick.
+
+00:04:28.500 --> 00:04:33.180
+Select cell L10, make sure Copilot is in chat mode, and simply type, explain the
+
+00:04:33.180 --> 00:04:36.900
+formula in cell L10 step by step in simple words.
+
+00:04:36.900 --> 00:04:38.500
+What does it add up?
+
+00:04:38.500 --> 00:04:43.140
+And just like that, Copilot is going to break that terrifying formula down into plain English.
+
+00:04:43.140 --> 00:04:45.860
+It tells you, one, it checks the data for electronics.
+
+00:04:46.100 --> 00:04:48.940
+Two, it checks for the state of Maharashtra.
+
+00:04:48.940 --> 00:04:53.580
+And three, it multiplies quantity by price and adds up only the rows where both those
+
+00:04:53.580 --> 00:04:55.540
+first two conditions are true.
+
+00:04:55.540 --> 00:04:59.300
+You can look right at the formula bar yourself to verify it, but suddenly the logic makes
+
+00:04:59.300 --> 00:05:01.800
+complete total sense.
+
+00:05:01.800 --> 00:05:05.140
+And finally, section five, pro tips and final recap.
+
+00:05:05.140 --> 00:05:08.100
+Let's really master your AI workflow.
+
+00:05:08.100 --> 00:05:09.820
+Let's look at a critical comparison here.
+
+00:05:09.820 --> 00:05:14.100
+The really bad habit we want to break today is accepting a formula column blindly
+
+00:05:14.100 --> 00:05:15.400
+without looking at it.
+
+00:05:15.480 --> 00:05:16.440
+Don't do it.
+
+00:05:16.440 --> 00:05:21.720
+The pro tip, instruct Copilot or even modern third party tools like Claude to write formulas
+
+00:05:21.720 --> 00:05:23.120
+exactly your way.
+
+00:05:23.120 --> 00:05:26.680
+You can prompt it with something like use X lookup, not V lookup.
+
+00:05:26.680 --> 00:05:30.240
+It follows those specific stylistic rules surprisingly well.
+
+00:05:30.240 --> 00:05:36.080
+So to wrap up in recap lesson S18-05, here are your three big takeaways.
+
+00:05:36.080 --> 00:05:41.040
+One, describe a column really clearly and Copilot will write the formula for you.
+
+00:05:41.040 --> 00:05:45.800
+Two, use the chat mode to explain those complex inherited formulas in plain,
+
+00:05:45.800 --> 00:05:46.960
+simple words.
+
+00:05:46.960 --> 00:05:51.040
+And three, the golden rule, read every single formula it generates and
+
+00:05:51.040 --> 00:05:53.560
+always check one row by hand.
+
+00:05:53.560 --> 00:05:56.440
+I want to leave you with a quick hands-on challenge.
+
+00:05:56.440 --> 00:06:00.040
+Open your practice sheet S18-05 right now.
+
+00:06:00.040 --> 00:06:05.120
+Can you ask Copilot to add a brand new column called total with GST that adds your
+
+00:06:05.120 --> 00:06:07.320
+amount and GST columns together?
+
+00:06:07.320 --> 00:06:11.880
+And more importantly, can you manually check that first row by hand to verify it?
+
+00:06:11.880 --> 00:06:14.120
+I challenge you to go try it on your Mac today.
+
+00:06:14.120 --> 00:06:16.720
+Thanks for joining me on this explainer and happy spread sheeting.

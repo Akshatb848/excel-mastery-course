@@ -1,0 +1,283 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.660
+Alright, welcome to this Explainer. Today, we're diving straight into Lesson S18-08,
+
+00:00:05.660 --> 00:00:09.540
+and we are focusing on a task that literally every working professional in India knows all
+
+00:00:09.540 --> 00:00:14.880
+too well, using co-pilot on a Mac to clean up messy data. So think of me as your senior
+
+00:00:14.880 --> 00:00:18.620
+colleague, just pulling up a chair right next to you to show you the ropes. We're going
+
+00:00:18.620 --> 00:00:22.820
+to take a super practical, step-by-step approach to master this workflow, completely skipping
+
+00:00:22.820 --> 00:00:26.700
+all the usual data entry headaches. Let's get into it.
+
+00:00:26.700 --> 00:00:32.260
+So here is exactly what we're going to cover today. First, before and after. Second, a quick
+
+00:00:32.260 --> 00:00:39.900
+history note. Third, classifying and extracting text. Fourth, fixing states and dates. Fifth,
+
+00:00:39.900 --> 00:00:44.780
+a pro tip for long lists. And finally, number six, a three-point recap.
+
+00:00:44.780 --> 00:00:50.860
+Okay, section one, before and after. Now, take a look at the start contrast here. We've
+
+00:00:50.860 --> 00:00:55.840
+all been there, right? On the left, we have 20 customer feedback tickets that look exactly
+
+00:00:55.840 --> 00:01:01.040
+like the raw data dumps we get every single week. It's a mess. We've got dates in half
+
+00:01:01.040 --> 00:01:06.160
+a dozen different formats, customer names in random capital and small letters, and Indian
+
+00:01:06.160 --> 00:01:12.560
+state names typed in literally every way imaginable. MH, lowercase Maharashtra, spelled completely
+
+00:01:12.560 --> 00:01:18.400
+wrong, you name it. Our goal today is to transform this absolute chaos into the clean, standardized
+
+00:01:18.400 --> 00:01:23.200
+data you see on the right side. We're talking properly extracted order numbers, standard
+
+00:01:23.200 --> 00:01:29.440
+DD dash mm dash y, y, y, y, y dates, and full proper state names. Work that honestly used
+
+00:01:29.440 --> 00:01:34.200
+to take a whole afternoon. Yeah, it's now going to take us just a few minutes. A quick
+
+00:01:34.200 --> 00:01:39.320
+history note. So the crucial point before we actually start typing anything is this
+
+00:01:39.320 --> 00:01:44.800
+timeline right here. If you've been reading older tutorials online, or maybe talking to
+
+00:01:44.800 --> 00:01:48.800
+colleagues, you might go looking for the old in cell formula, you know, where you
+
+00:01:48.800 --> 00:01:54.500
+typed equals C O P I L O T right into the spreadsheet grid. Well, save yourself the trouble
+
+00:01:54.500 --> 00:02:00.620
+because you won't find it. That function was in preview in early 2026. But Microsoft permanently
+
+00:02:00.620 --> 00:02:06.440
+retired it on the 14th of September 2026. It never even reached full public release.
+
+00:02:06.440 --> 00:02:11.360
+So going forward, we are going to do all of our data cleaning jobs securely and efficiently
+
+00:02:11.360 --> 00:02:18.240
+over in the side copilot pane, classifying and extracting text. Okay, grab your Mac, select
+
+00:02:18.240 --> 00:02:23.160
+cells b two through e 21, open up your copilot pane on the right side, make sure it's in
+
+00:02:23.160 --> 00:02:27.560
+edit mode. And let's figure out how the customer actually feels. You're going to type this
+
+00:02:27.560 --> 00:02:32.600
+exact prompt into the side pane, add a column called sentiment that classifies each feedback
+
+00:02:32.600 --> 00:02:37.840
+as positive, negative or neutral. Just hit return and wait about 15 seconds, copilot
+
+00:02:37.840 --> 00:02:42.040
+is going to magically add the column for you. But, and this is important, always
+
+00:02:42.040 --> 00:02:46.360
+do a manual spot check. Just read a few rows against the actual feedback text. Because
+
+00:02:46.360 --> 00:02:49.720
+you know, mixed comments, like a customer saying they loved the product, but the color
+
+00:02:49.720 --> 00:02:55.400
+was slightly off. Those are exactly the gray areas where AI and human judgment can disagree.
+
+00:02:55.400 --> 00:02:59.960
+Next up figuring out the main problem in the ticket. Now we don't just ask the AI to blindly
+
+00:02:59.960 --> 00:03:04.400
+guess to prevent it from generating 50 different random issue types, we have to give it
+
+00:03:04.400 --> 00:03:10.400
+a strict fixed list to choose from. So by typing from this list only delivery product
+
+00:03:10.400 --> 00:03:15.720
+quality billing customer service app or website other, you essentially force co pilot to
+
+00:03:15.720 --> 00:03:20.720
+categorize the data neatly. This is absolutely essential. For example, when a customer complains
+
+00:03:20.720 --> 00:03:25.120
+about a delayed refund of 500 rupees, you need that cleanly tagged as billing for your
+
+00:03:25.120 --> 00:03:30.240
+pivot table later, instead of some vague, unhelpful category. Finally, for this section,
+
+00:03:30.240 --> 00:03:35.180
+we need to extract some specific data hidden in those messy text blocks customers often
+
+00:03:35.180 --> 00:03:39.640
+mentioned their order number, but they also might throw in phone numbers or pin codes,
+
+00:03:39.640 --> 00:03:44.220
+which we don't want. So we use this specific prompt to tell co pilot exactly what to
+
+00:03:44.220 --> 00:03:49.220
+look for. We say pull out the order number starting with OD and explicitly tell it to
+
+00:03:49.220 --> 00:03:53.660
+leave the cell blank if there is none. That simple instruction completely ignores all
+
+00:03:53.660 --> 00:03:58.900
+the irrelevant numbers in the text and gives us a beautifully clean sortable column. Fixing
+
+00:03:58.900 --> 00:04:05.380
+states and dates. Alright, state codes. This is a classic Indian data entry problem. You'll
+
+00:04:05.380 --> 00:04:10.620
+want to type standardize the state column to full official Indian state or Union territory
+
+00:04:10.620 --> 00:04:16.460
+names. For example, MH becomes Maharashtra, and Orissa becomes Odisha. Feeding co pilot
+
+00:04:16.460 --> 00:04:20.820
+clear examples is basically the secret sauce here. It ensures that older names update to
+
+00:04:20.820 --> 00:04:25.360
+their modern equivalents like Orissa switching to Odisha. It also prevents those frustrating
+
+00:04:25.360 --> 00:04:30.460
+geographic mix ups. For example, making sure that a state code like HR for Gurgon correctly
+
+00:04:30.460 --> 00:04:36.100
+becomes Haryana instead of the AI wildly guessing Himachal Pradesh. Okay, listen closely
+
+00:04:36.100 --> 00:04:41.420
+because this is literally the most critical step in the entire sheet dates. You must and
+
+00:04:41.420 --> 00:04:47.660
+I mean must explicitly tell co pilot to expect the day first type convert the date column
+
+00:04:47.660 --> 00:04:54.140
+to real Excel dates shown as DD dash mm dash y y y y. The text dates were written day first
+
+00:04:54.140 --> 00:04:58.500
+the Indian way. If you don't spell this out for the AI, these systems will almost
+
+00:04:58.500 --> 00:05:02.580
+always default to the American month first formatting. And let me tell you that will
+
+00:05:02.580 --> 00:05:07.580
+completely ruin your financial year reporting or EMI calculations down the line. Since you're
+
+00:05:07.580 --> 00:05:12.340
+working on a Mac, double checking this is incredibly simple, and you absolutely have to
+
+00:05:12.340 --> 00:05:17.980
+do it. After co pilot runs its magic, click on cell B two to inspect the very first ticket,
+
+00:05:17.980 --> 00:05:24.420
+which was written as 03 slash 04 slash 2025. That should obviously be the third of April.
+
+00:05:24.420 --> 00:05:29.740
+But if you look at it and it reads fourth March, yeah, the AI got it wrong and use the
+
+00:05:29.740 --> 00:05:34.900
+American format. Don't panic, just press CMD Z on your Mac keyboard to instantly undo
+
+00:05:34.900 --> 00:05:39.300
+the action. And then simply repeat your prompt, maybe emphasizing one more time that the dates
+
+00:05:39.300 --> 00:05:44.700
+are day first. Before we completely finalize our data, we have to implement the golden
+
+00:05:44.700 --> 00:05:50.780
+rule. Trust, but verify. Don't just assume the AI got all 20 rows perfectly right. Pick
+
+00:05:50.780 --> 00:05:55.340
+a row and literally read it end to end across your screen. For example, let's look at ticket
+
+00:05:55.340 --> 00:06:01.860
+1003. Does the sentiment actually say negative? Is the issue correctly tagged as billing? Did
+
+00:06:01.860 --> 00:06:08.220
+it pull the correct exact order number od 45907? If you check three rows just like this,
+
+00:06:08.220 --> 00:06:12.940
+and two out of three look perfectly right, your data is solid. But always, always do
+
+00:06:12.940 --> 00:06:19.100
+this visual check before you report any counts to your boss. A pro tip for long lists. So
+
+00:06:19.100 --> 00:06:23.780
+our practice sheet only has 20 rows, which, you know, is easy enough to spot check. But
+
+00:06:23.780 --> 00:06:27.980
+what happens when you're dealing with hundreds of rows of feedback? Here's a fantastic pro
+
+00:06:27.980 --> 00:06:33.580
+tip. Ask co pilot to do the heavy lifting for you type on a new sheet, summarize the
+
+00:06:33.580 --> 00:06:38.300
+feedback, count of tickets by issue and sentiment, and two example comments for the most common
+
+00:06:38.300 --> 00:06:43.620
+negative issue. This awesome prompt generates a fast, highly readable dashboard summary on
+
+00:06:43.620 --> 00:06:48.820
+a brand new worksheet. I guarantee you it is vastly quicker to review a high level summary
+
+00:06:48.820 --> 00:06:52.580
+to gauge the mood of your customers than to sit there and read through 300 individual
+
+00:06:52.580 --> 00:06:59.820
+rows. And finally, section six, our three point recap. Let's lock this all in. Number one, stick
+
+00:06:59.820 --> 00:07:04.700
+to the side co pilot pane for all your text and cleaning jobs. Those old in cell functions are
+
+00:07:04.700 --> 00:07:10.460
+retired history. Number two, lock in your lists. Whenever you ask the AI to categorize something
+
+00:07:10.460 --> 00:07:15.980
+provide a strict fixed list. So your data stays perfectly consistent and pivot ready. And number
+
+00:07:15.980 --> 00:07:22.340
+three, always, always double check your day first Indian dates and read a few rows by eye. Using
+
+00:07:22.340 --> 00:07:26.540
+AI doesn't mean switching off your own brain, right? This verification is the true professional
+
+00:07:26.540 --> 00:07:31.220
+standard. All right, before we wrap up, I want to leave you with a bit of homework to test
+
+00:07:31.220 --> 00:07:37.060
+out your new skills on step 16 of the practice sheet. Take a look at the customer names column.
+
+00:07:37.060 --> 00:07:41.340
+It's completely full of random capitals and weird double spacing. So how would you
+
+00:07:41.340 --> 00:07:46.740
+draft a prompt to tell co pilot to proper case those names and remove the double spaces?
+
+00:07:46.740 --> 00:07:50.740
+Try drafting it right there in the co pilot pane, run it, and then check rows two and
+
+00:07:50.740 --> 00:07:55.460
+eight against the s 18 dash oh eight done sheet to see if you nailed it. Mastering these
+
+00:07:55.460 --> 00:07:59.940
+kinds of prompts is how you truly take control of your data. Thanks so much for joining me
+
+00:07:59.940 --> 00:08:02.380
+for this explainer. And hey, happy cleaning.

@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.080
+Welcome, everyone. Let us jump right into this explainer and learn exactly how to communicate
+
+00:00:05.080 --> 00:00:10.400
+with artificial intelligence inside your workbooks. If you want reliable results from tools like
+
+00:00:10.400 --> 00:00:16.440
+Copilot and Claude instead of endless frustration, well, you are definitely in the right place.
+
+00:00:16.440 --> 00:00:20.660
+We have all been there, right? You give an AI assistant a supposedly simple task only
+
+00:00:20.660 --> 00:00:26.400
+to get a completely broken file in return. When you just type out a quick, vague instruction,
+
+00:00:26.400 --> 00:00:30.740
+the system literally has to guess what you mean. And those guesses often overwrite your
+
+00:00:30.740 --> 00:00:35.520
+important data or create unexpected errors right before a major deadline. It is a total
+
+00:00:35.520 --> 00:00:37.240
+nightmare.
+
+00:00:37.240 --> 00:00:41.600
+Part 1. The four-part prompt pattern. Let us see how this works.
+
+00:00:41.600 --> 00:00:46.760
+So to fix this problem of broken spreadsheets, we are going to use a highly practical framework.
+
+00:00:46.760 --> 00:00:51.640
+This simple step-by-step pattern ensures that tools like Copilot or Claude have exactly
+
+00:00:51.640 --> 00:00:53.800
+the context they need to succeed.
+
+00:00:53.800 --> 00:00:58.720
+Step 1 is stating your goal clearly. Step 2 is specifying your data, like the exact
+
+00:00:58.720 --> 00:01:04.040
+sheet or table name. Step 3 is defining the specific output you want, like a new column
+
+00:01:04.040 --> 00:01:09.080
+or a summary. And step 4 is listing any constraints the system must follow.
+
+00:01:09.080 --> 00:01:14.720
+Now looking at common constraints, this step is absolutely vital. You must specify local
+
+00:01:14.720 --> 00:01:20.080
+business rules to stop the AI from making wild guesses. For example, asking the system
+
+00:01:20.080 --> 00:01:25.400
+to report in rupees, to use Indian financial year formatting, or to keep all calculations
+
+00:01:25.400 --> 00:01:30.120
+as live formulas. Doing this upfront saves you from having to redo all that work later
+
+00:01:30.120 --> 00:01:31.560
+on.
+
+00:01:31.560 --> 00:01:36.960
+Moving on to Part 2. Weak versus strong prompts. Let us look at some examples.
+
+00:01:36.960 --> 00:01:41.080
+Let us see how this actually plays out across common Indian office tasks. On the left
+
+00:01:41.080 --> 00:01:45.480
+side, we have a weak prompt, just asking to fix an attendance sheet. It leaves way
+
+00:01:45.480 --> 00:01:49.480
+too much to interpretation. But look at the strong prompt on the right. It clearly
+
+00:01:49.480 --> 00:01:54.200
+defines the goal and the exact columns to use. It specifically tells the tool to calculate
+
+00:01:54.200 --> 00:02:00.360
+total present days and to use live formulas. That clarity is a real game changer.
+
+00:02:00.360 --> 00:02:05.680
+The same applies here. When you are working with something like a GST register, explicitly
+
+00:02:05.680 --> 00:02:09.720
+naming your sheets and columns prevents the AI from modifying the wrong data. And we
+
+00:02:09.720 --> 00:02:12.480
+all know that is crucial for compliance.
+
+00:02:12.480 --> 00:02:17.360
+The weak prompt just asks to find missing GST numbers. The strong prompt, however,
+
+00:02:17.360 --> 00:02:21.400
+offers specific tabs and columns, and it even asks for the mismatched numbers to be
+
+00:02:21.400 --> 00:02:24.840
+placed in a new, bold table for easy reading.
+
+00:02:24.840 --> 00:02:30.960
+Here is another great example. Defining your exact output format saves you so much time.
+
+00:02:30.960 --> 00:02:36.400
+Instead of a weak request for sales data, the strong prompt explicitly asks to summarize
+
+00:02:36.400 --> 00:02:41.420
+total sales by branch in Rupees. It also asks for a chart. This gives you a finished
+
+00:02:41.420 --> 00:02:46.880
+product in one single step, rather than forcing you to spend time building the visuals yourself.
+
+00:02:46.880 --> 00:02:51.240
+Number three, iterating with follow-ups. This is where it gets really interesting.
+
+00:02:51.240 --> 00:02:55.580
+You know, even with a perfect initial prompt, you will often need to refine your results
+
+00:02:55.580 --> 00:02:59.760
+through a conversation. Instead of just starting over when you get a confusing result, simply
+
+00:02:59.760 --> 00:03:04.920
+ask the AI to explain its logic. Just ask, can you explain how this formula is calculated
+
+00:03:04.920 --> 00:03:08.880
+step by step and cite the cells? This helps you figure out if it used the right
+
+00:03:08.880 --> 00:03:11.300
+inputs for your specific model.
+
+00:03:11.300 --> 00:03:15.920
+And if a formula breaks on a specific tab, do not panic, you can actually command the
+
+00:03:15.920 --> 00:03:20.720
+AI to find the root cause before you allow it to apply any fixes. This is a very safe
+
+00:03:20.720 --> 00:03:25.400
+way to troubleshoot. You learn exactly why the error happened, and most importantly,
+
+00:03:25.400 --> 00:03:28.240
+you stay in complete control of the final solution.
+
+00:03:28.240 --> 00:03:34.280
+Finally, part four, always check the work. We have now arrived at the most critical
+
+00:03:34.280 --> 00:03:39.360
+phase of using artificial intelligence for any financial or operational data. As you can
+
+00:03:39.360 --> 00:03:45.080
+see from these verification steps, these safety habits remain entirely your responsibility.
+
+00:03:45.080 --> 00:03:50.240
+The AI tool can process data quickly, for sure, but it absolutely cannot take responsibility
+
+00:03:50.240 --> 00:03:55.800
+for a mistake. You must always recompute key totals manually, read the generated formulas
+
+00:03:55.800 --> 00:03:59.600
+yourself and review all changes before saving.
+
+00:03:59.600 --> 00:04:03.640
+Let me highlight this exact quote, because it is literally the golden rule of spreadsheet
+
+00:04:03.640 --> 00:04:09.360
+automation. Never send AI-generated numbers to a client or a tax authority without checking
+
+00:04:09.360 --> 00:04:14.080
+them manually. I cannot stress this enough. If you work with sensitive documents, a thorough
+
+00:04:14.080 --> 00:04:19.960
+human review is always mandatory. Structuring your prompts with a clear goal, specific data
+
+00:04:19.960 --> 00:04:25.320
+and expected output and firm constraints makes these tools incredibly effective. So as you
+
+00:04:25.320 --> 00:04:29.480
+open your next workbook, I want you to ask yourself this one question. Are you driving
+
+00:04:29.480 --> 00:04:34.400
+your AI assistant or are you letting it drive you toward a costly mistake? Master this
+
+00:04:34.400 --> 00:04:37.920
+four-part prompt pattern today and you will always be in the driver's seat.

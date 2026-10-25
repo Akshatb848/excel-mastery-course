@@ -1,0 +1,454 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.760
+Welcome to This Explainer.
+
+00:00:01.760 --> 00:00:04.240
+Today we're diving into something absolutely crucial
+
+00:00:04.240 --> 00:00:05.320
+for your daily workflow,
+
+00:00:05.320 --> 00:00:08.640
+which is using the Copilot side pane in Excel for Mac.
+
+00:00:08.640 --> 00:00:10.800
+Now, if you're a working professional here in India
+
+00:00:10.800 --> 00:00:13.120
+and you've recently made the jump from a Windows PC
+
+00:00:13.120 --> 00:00:15.960
+to a Mac, you already know the muscle memory struggle
+
+00:00:15.960 --> 00:00:17.800
+is entirely real.
+
+00:00:17.800 --> 00:00:21.220
+So we're gonna break down lesson S18-07 today,
+
+00:00:21.220 --> 00:00:24.720
+step by step, to see exactly how Microsoft 365 Copilot
+
+00:00:24.720 --> 00:00:27.920
+can do the heavy lifting of building pivot tables for us.
+
+00:00:27.920 --> 00:00:29.800
+And just a quick heads up right out of the gate,
+
+00:00:29.840 --> 00:00:32.480
+we are focusing entirely on the side pane today
+
+00:00:32.480 --> 00:00:35.560
+because that experimental in-cell Copilot formula,
+
+00:00:35.560 --> 00:00:39.680
+yeah, Microsoft actually retired that back in September, 2026.
+
+00:00:39.680 --> 00:00:41.800
+Here is our quick roadmap for today.
+
+00:00:41.800 --> 00:00:43.840
+One, setting up your practice sheet.
+
+00:00:43.840 --> 00:00:46.560
+Two, creating a first draft with Copilot.
+
+00:00:46.560 --> 00:00:48.600
+Three, refining with follow-ups.
+
+00:00:48.600 --> 00:00:50.780
+Four, verifying your AI results.
+
+00:00:50.780 --> 00:00:52.680
+Five, some pro tips for charts.
+
+00:00:52.680 --> 00:00:55.400
+And six, a quick three-point recap.
+
+00:00:55.400 --> 00:00:56.640
+All right, section one,
+
+00:00:56.640 --> 00:00:58.880
+let's get that practice sheet set up.
+
+00:00:58.880 --> 00:01:01.600
+If you open up sheet S18-07,
+
+00:01:01.600 --> 00:01:04.360
+you're gonna see 80 rows of raw sales data.
+
+00:01:04.360 --> 00:01:07.960
+It spans date, region, category, channel, and revenue.
+
+00:01:07.960 --> 00:01:10.440
+Now, here is a massive secret for you.
+
+00:01:10.440 --> 00:01:12.640
+Understanding your exact column headers
+
+00:01:12.640 --> 00:01:15.680
+is literally the key to writing great AI prompts.
+
+00:01:15.680 --> 00:01:17.560
+We have to speak Copilot's language,
+
+00:01:17.560 --> 00:01:18.840
+which means referring to the data
+
+00:01:18.840 --> 00:01:21.320
+exactly as it is labeled right here.
+
+00:01:21.320 --> 00:01:23.280
+Moving right along to section two,
+
+00:01:23.280 --> 00:01:25.520
+let's build that first draft.
+
+00:01:25.520 --> 00:01:28.240
+So we pop open that Copilot pane on the right side
+
+00:01:28.240 --> 00:01:30.120
+and type in this exact prompt.
+
+00:01:30.120 --> 00:01:32.680
+What's really fascinating here is the sentence structure.
+
+00:01:32.680 --> 00:01:34.140
+You know, we aren't writing a novel.
+
+00:01:34.140 --> 00:01:36.000
+We are just giving a very direct,
+
+00:01:36.000 --> 00:01:37.720
+plain English instruction.
+
+00:01:37.720 --> 00:01:40.440
+We say, create a pivot table on a new sheet
+
+00:01:40.440 --> 00:01:42.440
+and then tell it exactly what to show.
+
+00:01:42.440 --> 00:01:46.200
+Total revenue with region in rows and category in columns.
+
+00:01:46.200 --> 00:01:49.620
+Keeping it that simple is absolutely the best way to start.
+
+00:01:49.620 --> 00:01:51.920
+You hit return and then you just wait.
+
+00:01:51.920 --> 00:01:53.840
+It takes about 12 seconds for Copilot
+
+00:01:53.840 --> 00:01:55.280
+to process the request.
+
+00:01:55.280 --> 00:01:57.820
+Then boom, a brand new sheet just appears
+
+00:01:57.820 --> 00:01:59.140
+in your Mac workbook.
+
+00:01:59.140 --> 00:02:01.580
+Of course, it is always a smart move to check
+
+00:02:01.580 --> 00:02:03.860
+if the AI actually listened to us.
+
+00:02:03.860 --> 00:02:05.380
+And sure enough, looking at it,
+
+00:02:05.380 --> 00:02:08.040
+we've got our four regions running down the rows
+
+00:02:08.040 --> 00:02:10.600
+and our three categories across the columns.
+
+00:02:10.600 --> 00:02:12.460
+Exactly as we asked.
+
+00:02:12.460 --> 00:02:14.380
+Now we want a visual, right?
+
+00:02:14.380 --> 00:02:16.120
+So we follow up with this prompt.
+
+00:02:16.120 --> 00:02:19.260
+Again, notice how incredibly specific we are being.
+
+00:02:19.260 --> 00:02:21.240
+We ask for a clustered column chart
+
+00:02:21.240 --> 00:02:22.860
+of total revenue by region
+
+00:02:22.860 --> 00:02:25.300
+and we tell Copilot exactly where to park in,
+
+00:02:25.300 --> 00:02:27.460
+which is right next to our pivot table.
+
+00:02:27.460 --> 00:02:28.840
+Okay, section three,
+
+00:02:28.840 --> 00:02:31.760
+let's refine this output with some follow-ups.
+
+00:02:31.760 --> 00:02:34.060
+This is where the conversational aspect of Copilot
+
+00:02:34.060 --> 00:02:35.820
+really truly shines.
+
+00:02:35.820 --> 00:02:36.980
+If the chart isn't perfect,
+
+00:02:36.980 --> 00:02:39.180
+we do not have to start over from scratch.
+
+00:02:39.180 --> 00:02:40.580
+We just type a follow-up prompt
+
+00:02:40.580 --> 00:02:42.320
+asking it to sort the regions
+
+00:02:42.320 --> 00:02:44.220
+from highest to lowest revenue.
+
+00:02:44.220 --> 00:02:46.780
+And to make this dashboard instantly recognizable
+
+00:02:46.780 --> 00:02:48.220
+for our local stakeholders,
+
+00:02:48.220 --> 00:02:52.340
+we ask it to set the title to FY 2025-26,
+
+00:02:52.340 --> 00:02:54.140
+which perfectly follows our standard
+
+00:02:54.140 --> 00:02:56.620
+April to March Indian financial year.
+
+00:02:56.620 --> 00:02:58.780
+And just like that, the chart updates.
+
+00:02:58.780 --> 00:03:01.300
+The tallest bar is now sitting first on the left,
+
+00:03:01.300 --> 00:03:04.660
+making our top reformer totally obvious at a single glance.
+
+00:03:04.660 --> 00:03:06.960
+Plus the title is perfectly localized.
+
+00:03:06.960 --> 00:03:09.060
+Honestly, it feels like having a highly eager
+
+00:03:09.060 --> 00:03:11.940
+junior analyst sitting right there at your desk.
+
+00:03:11.940 --> 00:03:14.460
+But hey, what if Copilot gets a little too eager
+
+00:03:14.460 --> 00:03:17.000
+and changes some formatting that you actually liked?
+
+00:03:17.000 --> 00:03:19.820
+Well, just press Command Z to undo it.
+
+00:03:19.820 --> 00:03:22.220
+If you have spent years hitting Control Z
+
+00:03:22.220 --> 00:03:23.440
+on a Windows machine,
+
+00:03:23.440 --> 00:03:24.760
+retraining your pinky finger
+
+00:03:24.760 --> 00:03:26.880
+to reach for the Command key on the Mac
+
+00:03:26.880 --> 00:03:28.020
+definitely takes a minute.
+
+00:03:28.020 --> 00:03:30.600
+But trust me, Command Z is your absolute best friend
+
+00:03:30.600 --> 00:03:32.720
+for keeping the AI in check.
+
+00:03:32.720 --> 00:03:36.200
+Section four, verifying your AI results.
+
+00:03:36.200 --> 00:03:38.520
+Because AI is just so incredibly fast,
+
+00:03:38.520 --> 00:03:41.020
+it is super easy to get a bit complacent.
+
+00:03:41.020 --> 00:03:42.680
+But the accountability for this data
+
+00:03:42.680 --> 00:03:44.960
+still rests entirely with us.
+
+00:03:44.960 --> 00:03:47.000
+So we flip back to the raw data sheet,
+
+00:03:47.000 --> 00:03:50.440
+click into cell H1 and type out a classic SUMIFS formula
+
+00:03:50.440 --> 00:03:52.680
+to calculate the South region's revenue.
+
+00:03:52.680 --> 00:03:54.600
+And remember your Mac keyboard muscle memory,
+
+00:03:54.620 --> 00:03:57.240
+you are hitting the Return key here, not Enter.
+
+00:03:57.240 --> 00:03:58.880
+It's foundational Excel, sure,
+
+00:03:58.880 --> 00:04:01.360
+but it is the ultimate audit tool.
+
+00:04:01.360 --> 00:04:02.340
+Once you hit Return,
+
+00:04:02.340 --> 00:04:06.780
+you should see exactly 19 lakh, 71,100 rupees.
+
+00:04:06.780 --> 00:04:10.400
+Notice that very familiar local comma placement for the lakhs.
+
+00:04:10.400 --> 00:04:12.940
+Now, if this manual calculation perfectly matches
+
+00:04:12.940 --> 00:04:15.860
+the South grand total inside Copilot's pivot table,
+
+00:04:15.860 --> 00:04:17.240
+and in this case it does,
+
+00:04:17.240 --> 00:04:19.360
+you can breathe a huge sigh of relief.
+
+00:04:19.360 --> 00:04:20.200
+You know for a fact
+
+00:04:20.200 --> 00:04:23.320
+the AI analyzed the whole data set correctly.
+
+00:04:23.320 --> 00:04:27.200
+Section five, let's look at a pro tip for your charts.
+
+00:04:27.200 --> 00:04:30.800
+This is a brilliant workaround for a very common headache.
+
+00:04:30.800 --> 00:04:31.800
+As you probably know,
+
+00:04:31.800 --> 00:04:33.920
+pivot tables do not update themselves
+
+00:04:33.920 --> 00:04:35.600
+when new data rows are added.
+
+00:04:35.600 --> 00:04:37.240
+So if you need a live dashboard
+
+00:04:37.240 --> 00:04:39.960
+that updates without anyone needing to click refresh,
+
+00:04:39.960 --> 00:04:41.920
+just tell Copilot to build your summary
+
+00:04:41.920 --> 00:04:45.280
+using SUMIFS formulas instead of a pivot table.
+
+00:04:45.280 --> 00:04:47.720
+A formula-based chart is gonna update instantly.
+
+00:04:47.720 --> 00:04:50.560
+The exact millisecond those new rows drop in.
+
+00:04:50.560 --> 00:04:53.960
+Finally, section six, our three-point recap.
+
+00:04:53.960 --> 00:04:56.880
+To make Copilot a truly smooth, reliable part
+
+00:04:56.880 --> 00:04:58.200
+of your daily Mac workflow,
+
+00:04:58.200 --> 00:05:00.200
+just lock in these three main takeaways.
+
+00:05:00.200 --> 00:05:02.000
+Number one, keep your first prompt
+
+00:05:02.000 --> 00:05:04.500
+to one clear, simple sentence.
+
+00:05:04.500 --> 00:05:06.200
+Number two, refine the output
+
+00:05:06.200 --> 00:05:07.880
+by talking to it like a conversation
+
+00:05:07.880 --> 00:05:10.280
+instead of deleting everything and starting over.
+
+00:05:10.280 --> 00:05:13.580
+And number three, always, always match one total
+
+00:05:13.580 --> 00:05:17.240
+against your own manual SUMIFS calculation, just to verify.
+
+00:05:17.240 --> 00:05:20.360
+So I'm gonna leave you with a quick practical challenge.
+
+00:05:20.400 --> 00:05:22.560
+Go ahead and ask Copilot for a pivot table
+
+00:05:22.560 --> 00:05:25.360
+and a line chart of revenue by channel and month.
+
+00:05:25.360 --> 00:05:28.320
+Then see how quickly you can verify the online total
+
+00:05:28.320 --> 00:05:30.640
+all by yourself using SUMIFS.
+
+00:05:30.640 --> 00:05:33.480
+Mastering this specific balance is the whole game.
+
+00:05:33.480 --> 00:05:34.760
+The AI might be able to generate
+
+00:05:34.760 --> 00:05:36.680
+a stunning chart in 12 seconds,
+
+00:05:36.680 --> 00:05:37.600
+but at the end of the day,
+
+00:05:37.600 --> 00:05:40.240
+it's your human intuition and your verification
+
+00:05:40.240 --> 00:05:42.800
+that makes the data actually trustworthy.
+
+00:05:42.800 --> 00:05:43.960
+So what are you waiting for?
+
+00:05:43.960 --> 00:05:45.360
+Go test it out.
+
+00:05:45.360 --> 00:05:46.880
+Thanks for joining me for this explainer
+
+00:05:46.880 --> 00:05:47.920
+and happy charting.
