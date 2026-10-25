@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.404
+Every morning the system gives you a plain sales
+
+00:00:03.417 --> 00:00:07.494
+export This is the same report after one click
+
+00:00:07.507 --> 00:00:11.505
+on a macro a coloured header rupee formatting neat
+
+00:00:11.518 --> 00:00:15.255
+columns and a frozen top row You record the
+
+00:00:15.268 --> 00:00:18.757
+steps once and Excel repeats them every day
+
+00:00:20.234 --> 00:00:23.177
+You will learn to show the Developer tab record
+
+00:00:23.190 --> 00:00:25.885
+a macro run it on a new day's data
+
+00:00:26.054 --> 00:00:29.036
+and save the file so the macro isn't lost
+
+00:00:29.937 --> 00:00:37.528
+Practice sheets S16-01 and S16-01 Day2 This is recorded
+
+00:00:37.541 --> 00:00:40.614
+in Excel desktop and I'll give the Mac menus
+
+00:00:40.627 --> 00:00:41.382
+as we go
+
+00:00:42.844 --> 00:00:45.461
+A macro is a recording of your clicks and
+
+00:00:45.474 --> 00:00:50.750
+keystrokes saved as VBA code By default it remembers
+
+00:00:50.763 --> 00:00:55.646
+exact cells With Use Relative References switched on it
+
+00:00:55.659 --> 00:00:58.992
+remembers moves relative to where you started instead
+
+00:01:00.469 --> 00:01:04.989
+First show the Developer tab On a Mac open
+
+00:01:05.002 --> 00:01:09.182
+the Excel menu choose Preferences then Ribbon and Toolbar
+
+00:01:09.377 --> 00:01:13.362
+tick Developer and click Save On Windows it is
+
+00:01:13.375 --> 00:01:15.888
+File Options Customize Ribbon
+
+00:01:17.359 --> 00:01:22.556
+Go to sheet S16-01 and click A1 On the
+
+00:01:22.569 --> 00:01:27.569
+Developer tab you'll see Use Relative References Our report
+
+00:01:27.582 --> 00:01:30.330
+always starts at A1, so we leave it off
+
+00:01:30.343 --> 00:01:32.153
+and record exact cells
+
+00:01:33.640 --> 00:01:39.228
+Click Record Macro Name it FormatDailyReport with no spaces
+
+00:01:40.126 --> 00:01:44.306
+Store it in This Workbook and click OK From
+
+00:01:44.319 --> 00:01:48.121
+now on every click is recorded so work calmly
+
+00:01:49.609 --> 00:01:52.747
+Select A1 to F1 and press Command B for
+
+00:01:52.760 --> 00:01:56.486
+bold Set the fill colour to dark blue and
+
+00:01:56.499 --> 00:01:57.931
+the font colour to white
+
+00:02:01.172 --> 00:02:04.453
+Select the whole of column F press Command 1
+
+00:02:04.596 --> 00:02:09.026
+choose Custom and type the rupee lakh format Click
+
+00:02:09.039 --> 00:02:09.586
+OK
+
+00:02:11.672 --> 00:02:14.485
+Select columns A to F and on the Home
+
+00:02:14.498 --> 00:02:18.875
+tab choose Format AutoFit Column Width Then on the
+
+00:02:18.888 --> 00:02:23.198
+View tab choose Freeze Panes Freeze Top Row Click
+
+00:02:23.211 --> 00:02:24.786
+A1 to finish neatly
+
+00:02:26.265 --> 00:02:30.889
+On the Developer tab click Stop Recording The macro
+
+00:02:30.902 --> 00:02:32.999
+is saved inside this workbook
+
+00:02:34.469 --> 00:02:40.669
+Now the payoff Go to sheet S16-01 Day2 tomorrow's
+
+00:02:40.682 --> 00:02:45.682
+raw export On the Developer tab click Macros choose
+
+00:02:45.695 --> 00:02:50.539
+FormatDailyReport and click Run The whole report is formatted
+
+00:02:50.552 --> 00:02:51.346
+in a second
+
+00:02:52.828 --> 00:02:57.114
+Here's the mistake that loses people their work Press
+
+00:02:57.127 --> 00:03:00.773
+Command S Excel warns that macros can't be saved
+
+00:03:00.786 --> 00:03:04.940
+in a macro-free workbook If you click Yes the
+
+00:03:04.953 --> 00:03:08.520
+file saves as xlsx and the macro is gone
+
+00:03:09.432 --> 00:03:10.643
+Click No instead
+
+00:03:12.094 --> 00:03:15.011
+In the Save As box set the file type
+
+00:03:15.024 --> 00:03:19.737
+to Excel Macro-Enabled Workbook which ends in xlsm and
+
+00:03:19.750 --> 00:03:23.463
+click Save The macro is now kept with the
+
+00:03:23.476 --> 00:03:23.984
+file
+
+00:03:25.453 --> 00:03:29.620
+To give colleagues a one-click button choose Developer Button
+
+00:03:29.854 --> 00:03:33.213
+draw it on the sheet and pick FormatDailyReport in
+
+00:03:33.226 --> 00:03:37.643
+the Assign Macro box Right-click the button to rename
+
+00:03:37.656 --> 00:03:38.854
+it Format report
+
+00:03:40.297 --> 00:03:42.849
+On a Mac you can also record from the
+
+00:03:42.862 --> 00:03:48.138
+menu bar with Tools Macro Record New Macro Macro
+
+00:03:48.151 --> 00:03:53.671
+shortcut keys use Option and Command Check Excel Preferences
+
+00:03:53.789 --> 00:03:57.109
+Security so macros are allowed to run with a
+
+00:03:57.122 --> 00:04:01.367
+warning Excel for the web can't run VBA at
+
+00:04:01.380 --> 00:04:01.796
+all
+
+00:04:03.281 --> 00:04:07.695
+To recap show the Developer tab record carefully stop
+
+00:04:07.708 --> 00:04:11.629
+recording Run the macro on new data from the
+
+00:04:11.642 --> 00:04:16.655
+Macros box or a button Always save as xlsm
+
+00:04:18.109 --> 00:04:21.833
+Your challenge record a second macro with Use Relative
+
+00:04:21.846 --> 00:04:25.310
+References switched on that bolds the cell you're in
+
+00:04:25.323 --> 00:04:28.645
+and the two cells to its right Run it
+
+00:04:28.658 --> 00:04:32.838
+from different starting cells The explanation is on the
+
+00:04:32.851 --> 00:04:33.684
+Done sheet

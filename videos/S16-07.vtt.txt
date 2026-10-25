@@ -1,0 +1,160 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.588
+With three short Python cells we'll total July to
+
+00:00:03.601 --> 00:00:07.078
+September revenue by region build a region by product
+
+00:00:07.091 --> 00:00:10.190
+pivot and draw a bar chart all from the
+
+00:00:10.203 --> 00:00:14.161
+SalesQ2 table and all refreshing when the data changes
+
+00:00:15.622 --> 00:00:18.955
+You will learn groupby pivot table and plot in
+
+00:00:18.968 --> 00:00:22.276
+pandas how to fix a result that stays stuck
+
+00:00:22.289 --> 00:00:25.179
+as a Python object and when Python is the
+
+00:00:25.192 --> 00:00:30.950
+better tool than formulas Practice sheet S16-07
+
+00:00:32.435 --> 00:00:37.450
+These three pandas commands do most reporting work groupby
+
+00:00:37.463 --> 00:00:41.955
+is like SUMIFS for every category at once pivot
+
+00:00:41.968 --> 00:00:45.875
+table is a PivotTable in one line plot draws
+
+00:00:45.888 --> 00:00:47.450
+a chart with matplotlib
+
+00:00:48.919 --> 00:00:51.679
+In J2, start a Python cell and load the
+
+00:00:51.692 --> 00:00:57.330
+table df equals xl SalesQ2 hash All headers equals
+
+00:00:57.343 --> 00:01:00.054
+True Press Control Enter
+
+00:01:01.544 --> 00:01:05.372
+In J4, type the groupby revenue by region with
+
+00:01:05.385 --> 00:01:08.784
+as index equals False so Region stays a normal
+
+00:01:08.797 --> 00:01:11.546
+column Press Control Enter
+
+00:01:13.216 --> 00:01:17.956
+Common mistake J4 shows only a DataFrame card because
+
+00:01:17.969 --> 00:01:20.859
+the output is still a Python object so you
+
+00:01:20.872 --> 00:01:25.549
+can't chart or reference the numbers Select J4, press
+
+00:01:25.562 --> 00:01:28.986
+Control U to edit press Control Option Shift M
+
+00:01:28.999 --> 00:01:32.189
+to switch to Excel value and Control Enter
+
+00:01:33.653 --> 00:01:37.796
+Now the totals spill onto the sheet South leads
+
+00:01:37.809 --> 00:01:40.686
+with about thirty-two lakh rupees for the quarter
+
+00:01:42.185 --> 00:01:45.974
+In J11, build a pivot table region down the
+
+00:01:45.987 --> 00:01:50.167
+side product across the top revenue summed blanks as
+
+00:01:50.180 --> 00:01:54.114
+zero Switch it to Excel value before you run
+
+00:01:54.127 --> 00:01:54.427
+it
+
+00:02:03.075 --> 00:02:06.499
+For a chart in J20 type the groupby again
+
+00:02:06.512 --> 00:02:10.564
+and add dot plot with kind equals bar Run
+
+00:02:10.577 --> 00:02:12.778
+it and the cell holds an image of the
+
+00:02:12.791 --> 00:02:13.572
+bar chart
+
+00:02:23.231 --> 00:02:27.309
+The image fits inside one cell Click the card
+
+00:02:27.322 --> 00:02:30.642
+icon and choose Display Plot over Cells to see
+
+00:02:30.655 --> 00:02:33.480
+it full size or Command Shift click the cell
+
+00:02:33.493 --> 00:02:35.368
+to open it in a larger view
+
+00:02:36.810 --> 00:02:40.757
+When is Python worth it When the analysis has
+
+00:02:40.770 --> 00:02:45.393
+many steps needs statistics or forecasting models or needs
+
+00:02:45.406 --> 00:02:50.406
+a chart Excel doesn't have For simple totals SUMIFS
+
+00:02:50.419 --> 00:02:53.479
+or a PivotTable is quicker for colleagues to check
+
+00:02:54.950 --> 00:02:58.049
+On a Mac everything here works the same in
+
+00:02:58.062 --> 00:03:03.936
+Excel for Microsoft 365 with Python enabled The code runs
+
+00:03:03.949 --> 00:03:07.179
+in the cloud so charts appear as images and
+
+00:03:07.192 --> 00:03:10.434
+Python cells recalculate when you edit them or press
+
+00:03:10.447 --> 00:03:13.181
+the Recalculate button on the Formulas tab
+
+00:03:14.638 --> 00:03:18.948
+To recap groupby gives totals by category pivot table
+
+00:03:18.961 --> 00:03:22.112
+gives a two-way summary and plot draws a chart
+
+00:03:23.012 --> 00:03:25.864
+Switch results to Excel values when you want to
+
+00:03:25.877 --> 00:03:27.687
+use the numbers on the sheet
+
+00:03:29.185 --> 00:03:32.349
+Your challenge find the sales rep with the highest
+
+00:03:32.362 --> 00:03:36.294
+revenue in the quarter using groupby sum and sort
+
+00:03:36.307 --> 00:03:39.968
+values The answer is on the Done sheet

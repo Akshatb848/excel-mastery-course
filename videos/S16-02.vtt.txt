@@ -1,0 +1,214 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.651
+This payroll report was formatted by a macro we
+
+00:00:03.664 --> 00:00:08.002
+opened read and improved by hand The header colour
+
+00:00:08.015 --> 00:00:10.854
+was changed in the code and the cleaner version
+
+00:00:10.867 --> 00:00:14.604
+works on a report of any size You don't
+
+00:00:14.617 --> 00:00:16.648
+need to be a programmer to do this
+
+00:00:18.110 --> 00:00:20.949
+You will learn to open the Visual Basic Editor
+
+00:00:21.079 --> 00:00:24.217
+read what a recorded macro does line by line
+
+00:00:24.477 --> 00:00:27.576
+fix an error and change it safely with Find
+
+00:00:27.589 --> 00:00:34.401
+and Replace Practice sheet S16-02 recorded in Excel desktop
+
+00:00:35.875 --> 00:00:40.265
+Every macro sits between Sub and End Sub Most
+
+00:00:40.278 --> 00:00:44.145
+lines follow one pattern an object a dot a
+
+00:00:44.158 --> 00:00:49.510
+property equals a value Lines starting with an apostrophe
+
+00:00:49.523 --> 00:00:53.182
+are comments shown in green and Excel ignores them
+
+00:00:54.641 --> 00:00:59.315
+Go to sheet S16-02 and press Option F11 on
+
+00:00:59.329 --> 00:01:02.909
+a Mac or Alt F11 on Windows to open
+
+00:01:02.922 --> 00:01:07.469
+the Visual Basic Editor On the Insert menu choose
+
+00:01:07.482 --> 00:01:10.958
+Module A blank code window opens
+
+00:01:12.438 --> 00:01:15.094
+Here is the macro the recorder wrote for this
+
+00:01:15.107 --> 00:01:20.005
+report I'll type it in Notice that End Sub
+
+00:01:20.018 --> 00:01:22.896
+appears by itself as soon as you finish the
+
+00:01:22.909 --> 00:01:23.729
+first line
+
+00:01:25.266 --> 00:01:28.875
+Read it from the top It selects A1 to
+
+00:01:28.888 --> 00:01:31.974
+F1, makes it bold fills it dark blue and
+
+00:01:31.987 --> 00:01:35.997
+turns the text white Then it selects column F
+
+00:01:36.010 --> 00:01:40.581
+and sets the lakh number format Finally it autofits
+
+00:01:40.594 --> 00:01:42.794
+every column and clicks A2
+
+00:01:44.281 --> 00:01:47.549
+Press F5 to run it then Option F11 to
+
+00:01:47.562 --> 00:01:51.158
+look at the sheet The header is formatted and
+
+00:01:51.171 --> 00:01:52.968
+Net Pay shows lakh commas
+
+00:01:54.438 --> 00:01:59.232
+The recorder hard-codes A1 to F1 If next month's
+
+00:01:59.245 --> 00:02:02.526
+report has a seventh column its header stays plain
+
+00:02:03.424 --> 00:02:06.615
+Let's write a cleaner version that finds the report's
+
+00:02:06.628 --> 00:02:11.081
+size by itself Back in the editor press Command
+
+00:02:11.094 --> 00:02:12.513
+Down to jump to the end
+
+00:02:13.985 --> 00:02:17.998
+I'll type the clean version Current Region means the
+
+00:02:18.011 --> 00:02:21.109
+block of data around A1, however big it is
+
+00:02:22.008 --> 00:02:24.938
+There's a deliberate mistake in the fourth line a
+
+00:02:24.951 --> 00:02:25.810
+missing word
+
+00:02:27.313 --> 00:02:33.200
+Press F5 Excel stops with run-time error ninety-one object
+
+00:02:33.214 --> 00:02:36.885
+variable not set When you store a range in
+
+00:02:36.898 --> 00:02:39.633
+a variable the line must begin with the word
+
+00:02:39.646 --> 00:02:41.859
+Set Click End
+
+00:02:43.344 --> 00:02:47.968
+Fix it with Replace Press Command H Find what
+
+00:02:48.229 --> 00:02:54.401
+hdr equals Range Replace with Set hdr equals Range
+
+00:02:55.286 --> 00:02:58.489
+Search the current module and click Replace All
+
+00:02:59.953 --> 00:03:02.557
+Replace is also the safe way to change a
+
+00:03:02.570 --> 00:03:09.044
+value everywhere Find RGB thirty-one seventy-eight one twenty-one the
+
+00:03:09.057 --> 00:03:13.822
+dark blue Replace it with RGB zero one twelve
+
+00:03:14.018 --> 00:03:19.161
+one ninety-two a brighter blue Replace All then close
+
+00:03:19.174 --> 00:03:19.864
+the box
+
+00:03:21.344 --> 00:03:25.721
+Switch back to Excel On the Developer tab click
+
+00:03:25.734 --> 00:03:31.151
+Macros choose FormatReportClean and click Run The header turns
+
+00:03:31.164 --> 00:03:33.898
+the new blue and the macro would handle any
+
+00:03:33.911 --> 00:03:35.721
+number of columns and rows
+
+00:03:37.203 --> 00:03:40.732
+Pro tip before editing a macro copy the whole
+
+00:03:40.745 --> 00:03:43.232
+Sub and paste it below with a new name
+
+00:03:43.362 --> 00:03:47.062
+so the original still works And add a comment
+
+00:03:47.075 --> 00:03:49.913
+line saying what the macro does for the next
+
+00:03:49.926 --> 00:03:50.473
+person
+
+00:03:51.953 --> 00:03:55.482
+On a Mac open the editor with Option F11
+
+00:03:55.495 --> 00:04:00.679
+or Tools Macro Visual Basic Editor Replace is on
+
+00:04:00.692 --> 00:04:05.249
+the Edit menu Control H The Mac editor has
+
+00:04:05.262 --> 00:04:09.012
+no Immediate window docking options but reading and editing
+
+00:04:09.025 --> 00:04:10.341
+code works the same
+
+00:04:11.813 --> 00:04:15.576
+To recap macros live between Sub and End Sub
+
+00:04:15.875 --> 00:04:20.617
+written as object dot property equals value Use Set
+
+00:04:20.630 --> 00:04:25.148
+when storing a range Change macros with Replace and
+
+00:04:25.161 --> 00:04:27.010
+keep a copy of the original
+
+00:04:28.500 --> 00:04:32.771
+Your challenge add one line to FormatReportClean that centres
+
+00:04:32.784 --> 00:04:35.544
+the header text run it again and check the
+
+00:04:35.557 --> 00:04:39.153
+result The answer is on the Done sheet

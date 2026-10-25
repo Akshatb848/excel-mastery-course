@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:02.859
+Python in Excel lets you write a line of
+
+00:00:02.872 --> 00:00:05.437
+Python in a cell and get the answer back
+
+00:00:05.450 --> 00:00:08.785
+on the sheet By the end of this lesson
+
+00:00:08.955 --> 00:00:12.054
+three Python cells will load our sales table and
+
+00:00:12.067 --> 00:00:14.762
+give a full statistics summary in one go
+
+00:00:16.247 --> 00:00:19.177
+You will learn to start a Python cell read
+
+00:00:19.190 --> 00:00:23.135
+a table with the xl function understand Python objects
+
+00:00:23.148 --> 00:00:27.994
+and Excel values and avoid the cell-order mistake Practice
+
+00:00:28.007 --> 00:00:31.627
+sheet S16-06 table Sales
+
+00:00:33.106 --> 00:00:36.791
+Python runs in Microsoft's cloud not on your Mac
+
+00:00:37.012 --> 00:00:41.650
+with libraries like pandas ready to use xl reads
+
+00:00:41.663 --> 00:00:45.387
+a range or table A table read with headers
+
+00:00:45.400 --> 00:00:49.241
+equals True becomes a DataFrame which is Python's version
+
+00:00:49.254 --> 00:00:50.022
+of a table
+
+00:00:51.497 --> 00:00:56.252
+Click J2 and type equals PY open bracket The
+
+00:00:56.265 --> 00:00:59.168
+cell switches to Python mode and shows a green
+
+00:00:59.181 --> 00:01:02.645
+PY tag On a Mac you can also use
+
+00:01:02.658 --> 00:01:04.728
+Formulas Insert Python
+
+00:01:06.200 --> 00:01:11.591
+Type df equals xl open bracket quote Sales square
+
+00:01:11.604 --> 00:01:16.983
+bracket hash All quote comma headers equals True Then
+
+00:01:16.996 --> 00:01:19.054
+press Control Enter to run it
+
+00:01:20.528 --> 00:01:24.801
+J2 now shows PY DataFrame That card is a
+
+00:01:24.814 --> 00:01:27.952
+Python object the data is stored in the cell
+
+00:01:27.965 --> 00:01:31.376
+but not spread on the grid Click the card
+
+00:01:31.389 --> 00:01:32.757
+icon to preview it
+
+00:01:34.216 --> 00:01:37.955
+Here is the common mistake In I2, the cell
+
+00:01:37.968 --> 00:01:41.835
+to the left type equals PY df dot shape
+
+00:01:41.992 --> 00:01:45.520
+and run it You get a PYTHON error saying
+
+00:01:45.533 --> 00:01:49.557
+df is not defined Python cells run left to
+
+00:01:49.570 --> 00:01:52.695
+right and top to bottom so I2 runs before
+
+00:01:52.708 --> 00:01:54.609
+J2 has created df
+
+00:01:56.059 --> 00:01:59.301
+Fix it by deleting I2 and always using cells
+
+00:01:59.314 --> 00:02:01.502
+below or to the right of the one that
+
+00:02:01.515 --> 00:02:02.700
+defines df
+
+00:02:04.184 --> 00:02:07.921
+Click J4, start a Python cell and type df
+
+00:02:08.077 --> 00:02:11.476
+the Units and Revenue columns in double square brackets
+
+00:02:11.684 --> 00:02:17.558
+dot describe brackets Before running press Control Option Shift
+
+00:02:17.571 --> 00:02:21.530
+M to switch the output to Excel values Then
+
+00:02:21.543 --> 00:02:22.962
+press Control Enter
+
+00:02:24.450 --> 00:02:27.861
+The summary spills onto the grid forty sales an
+
+00:02:27.874 --> 00:02:31.299
+average of about 7 point 6 units and average
+
+00:02:31.312 --> 00:02:34.658
+revenue of about one lakh thirty-eight thousand rupees per
+
+00:02:34.671 --> 00:02:38.200
+sale with a maximum of seven lakh twenty-eight thousand
+
+00:02:39.669 --> 00:02:44.059
+One more In J14, start a Python cell and
+
+00:02:44.072 --> 00:02:49.424
+type df square bracket Revenue dot sum brackets A
+
+00:02:49.437 --> 00:02:53.004
+single number comes back straight onto the sheet total
+
+00:02:53.017 --> 00:02:57.249
+revenue of fifty-five lakh thirty-five thousand four hundred rupees
+
+00:02:58.731 --> 00:03:03.379
+On a Mac Python in Excel needs Microsoft 365 on
+
+00:03:03.392 --> 00:03:07.129
+the Current Channel version sixteen point nine six or
+
+00:03:07.142 --> 00:03:10.489
+later for business plans home plans may need the
+
+00:03:10.502 --> 00:03:15.335
+Insider channel Insert Python is on the Formulas tab
+
+00:03:16.233 --> 00:03:19.410
+It doesn't work offline because the code runs in
+
+00:03:19.423 --> 00:03:20.022
+the cloud
+
+00:03:21.497 --> 00:03:25.638
+To recap equals PY starts a Python cell and
+
+00:03:25.651 --> 00:03:29.963
+xl reads your table into a DataFrame Switch to
+
+00:03:29.976 --> 00:03:34.077
+Excel values to see results on the grid Python
+
+00:03:34.090 --> 00:03:37.684
+cells run in reading order so define things first
+
+00:03:39.169 --> 00:03:43.362
+Your challenge in J16, use groupby to total Units
+
+00:03:43.375 --> 00:03:47.543
+by Product as an Excel value Which product sold
+
+00:03:47.557 --> 00:03:51.124
+the most units The answer is on the Done
+
+00:03:51.137 --> 00:03:51.632
+sheet

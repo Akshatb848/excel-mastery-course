@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.430
+This is a daily export formatted by an Office
+
+00:00:03.443 --> 00:00:07.937
+Script Office Scripts are the browser's answer to macros
+
+00:00:08.171 --> 00:00:10.997
+you record in Excel for the web the script
+
+00:00:11.010 --> 00:00:13.705
+is saved to your OneDrive and it runs on
+
+00:00:13.718 --> 00:00:16.114
+Windows Mac and the web alike
+
+00:00:17.594 --> 00:00:20.433
+You will learn to record actions on the Automate
+
+00:00:20.446 --> 00:00:23.675
+tab read the script it writes run it on
+
+00:00:23.688 --> 00:00:27.935
+another sheet and connect it to a schedule Practice
+
+00:00:27.948 --> 00:00:35.174
+sheets S16-05 and S16-05 Day2 You need a work
+
+00:00:35.187 --> 00:00:38.299
+or school Microsoft 365 account
+
+00:00:39.766 --> 00:00:44.089
+Compared with VBA Office Scripts use TypeScript live in
+
+00:00:44.102 --> 00:00:46.901
+OneDrive rather than in the file work in the
+
+00:00:46.914 --> 00:00:51.396
+browser and can be triggered by Power Automate They
+
+00:00:51.409 --> 00:00:55.237
+can't show message boxes or touch your computer's files
+
+00:00:56.703 --> 00:01:02.369
+Go to sheet S16-05 On the Automate tab click
+
+00:01:02.382 --> 00:01:06.718
+Record Actions A pane opens and every step from
+
+00:01:06.731 --> 00:01:08.007
+now on is recorded
+
+00:01:09.500 --> 00:01:12.951
+Select A1 to F1, press Command B set the
+
+00:01:12.964 --> 00:01:15.385
+fill to dark blue and the font to white
+
+00:01:21.578 --> 00:01:25.575
+Select column F press Command 1 choose Custom and
+
+00:01:25.588 --> 00:01:28.336
+type the rupee lakh format then OK
+
+00:01:31.297 --> 00:01:34.956
+Select columns A to F and choose Format AutoFit
+
+00:01:34.969 --> 00:01:38.955
+Column Width on the Home tab Then View Freeze
+
+00:01:38.968 --> 00:01:40.661
+Panes Freeze Top Row
+
+00:01:42.172 --> 00:01:46.002
+Click Stop in the pane Excel shows the script
+
+00:01:46.015 --> 00:01:49.765
+in the Code Editor Each line is one step
+
+00:01:50.039 --> 00:01:53.567
+for example get range F colon F set number
+
+00:01:53.580 --> 00:01:57.760
+format You can read it without knowing TypeScript
+
+00:01:59.234 --> 00:02:03.299
+Here is the common mistake The recording says get
+
+00:02:03.312 --> 00:02:07.530
+range A1 to F1 If tomorrow's report has a
+
+00:02:07.543 --> 00:02:12.023
+seventh column its header stays plain For reports that
+
+00:02:12.036 --> 00:02:15.187
+change shape edit that line to use the used
+
+00:02:15.200 --> 00:02:16.293
+range of the sheet
+
+00:02:17.781 --> 00:02:22.835
+Run it on new data Go to sheet S16-05
+
+00:02:22.848 --> 00:02:25.622
+Day2 and click Run in the Code Editor pane
+
+00:02:26.520 --> 00:02:29.515
+The script works on whichever sheet is active
+
+00:02:30.984 --> 00:02:34.070
+To run it on every new file use Power
+
+00:02:34.083 --> 00:02:37.718
+Automate A flow can start when a file lands
+
+00:02:37.731 --> 00:02:40.882
+in a OneDrive folder then call Run script with
+
+00:02:40.895 --> 00:02:45.036
+this script Every export your system drops there is
+
+00:02:45.049 --> 00:02:46.937
+formatted before you open it
+
+00:02:48.406 --> 00:02:51.557
+On a Mac the Automate tab appears in Excel
+
+00:02:51.570 --> 00:02:53.914
+for Mac for work and school accounts with the
+
+00:02:53.927 --> 00:02:57.182
+file on OneDrive where you can run and edit
+
+00:02:57.195 --> 00:03:02.210
+scripts If recording isn't available on your build record
+
+00:03:02.223 --> 00:03:05.101
+in Excel for the web the script then shows
+
+00:03:05.114 --> 00:03:06.403
+up on your Mac too
+
+00:03:07.875 --> 00:03:13.359
+To recap Automate Record Actions then Stop Read the
+
+00:03:13.372 --> 00:03:17.408
+steps in the Code Editor Run on any sheet
+
+00:03:17.630 --> 00:03:20.611
+or let Power Automate run it on every new
+
+00:03:20.625 --> 00:03:21.158
+file
+
+00:03:22.625 --> 00:03:25.581
+Your challenge add a button on the sheet that
+
+00:03:25.594 --> 00:03:29.541
+runs this script with one click The menu path
+
+00:03:29.554 --> 00:03:30.843
+is on the Done sheet

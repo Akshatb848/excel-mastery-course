@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.000
+Welcome to this explainer.
+
+00:00:02.000 --> 00:00:05.000
+Today we are exploring lesson S16.04.
+
+00:00:05.000 --> 00:00:14.000
+We are looking exactly at what works and what breaks in Visual Basic for applications when you migrate your macros from Microsoft Excel on Windows to Excel on a Mac.
+
+00:00:14.000 --> 00:00:17.000
+Let us dive right into it.
+
+00:00:17.000 --> 00:00:20.000
+Think about this very common workplace scenario.
+
+00:00:20.000 --> 00:00:23.000
+You write a perfectly functional Excel macro on your Windows machine.
+
+00:00:23.000 --> 00:00:25.000
+You share it with a colleague who uses a Mac.
+
+00:00:25.000 --> 00:00:28.000
+Suddenly, the macro just refuses to run.
+
+00:00:28.000 --> 00:00:30.000
+You might be wondering why this happens.
+
+00:00:30.000 --> 00:00:34.000
+It comes down to the underlying architecture of the two operating systems.
+
+00:00:34.000 --> 00:00:39.000
+Windows and macOS manage file directories and system commands in completely distinct ways.
+
+00:00:39.000 --> 00:00:44.000
+These structural differences directly affect how your Visual Basic code executes on their computer.
+
+00:00:44.000 --> 00:00:48.000
+For example, Mac computers use a Unix-based file system.
+
+00:00:48.000 --> 00:00:53.000
+This means they navigate folders and store data quite differently than Windows computers do.
+
+00:00:53.000 --> 00:00:57.000
+These foundational differences are the root cause of most compatibility issues you will face.
+
+00:00:57.000 --> 00:00:59.000
+But do not worry too much.
+
+00:00:59.000 --> 00:01:03.000
+A very large portion of your code will still function exactly as you expect it to.
+
+00:01:03.000 --> 00:01:07.000
+The essential core features of Excel work beautifully in a Mac environment.
+
+00:01:07.000 --> 00:01:10.000
+The macro recorder behaves just like it does on Windows.
+
+00:01:10.000 --> 00:01:13.000
+The Visual Basic editor is fully functional as well.
+
+00:01:13.000 --> 00:01:17.000
+Most of your daily macros and user-defined functions will run without any trouble.
+
+00:01:17.000 --> 00:01:22.000
+Furthermore, standard form controls are completely supported across both platforms.
+
+00:01:22.000 --> 00:01:26.000
+This brings us to a key technical limitation that you really must keep in mind.
+
+00:01:26.000 --> 00:01:30.000
+We need to compare form controls against ActiveX controls.
+
+00:01:30.000 --> 00:01:34.000
+Form controls are universally safe to use on both Windows and Mac.
+
+00:01:34.000 --> 00:01:38.000
+They are absolutely your best choice for building cross-platform tools.
+
+00:01:38.000 --> 00:01:43.000
+On the flip side, ActiveX controls rely on a proprietary Windows framework.
+
+00:01:43.000 --> 00:01:46.000
+If you build a button or a combo box using ActiveX,
+
+00:01:46.000 --> 00:01:49.000
+it will simply fail to load or function on a Mac.
+
+00:01:49.000 --> 00:01:53.000
+This is because Apple computers do not support this Microsoft-specific infrastructure.
+
+00:01:53.000 --> 00:02:00.000
+Therefore, sticking to form controls is the only way to guarantee your interactive elements will appear correctly for every single user.
+
+00:02:00.000 --> 00:02:05.000
+It is absolutely crucial to know exactly what elements will cause your code to break.
+
+00:02:05.000 --> 00:02:08.000
+Let us look at these specific items you must avoid.
+
+00:02:08.000 --> 00:02:11.000
+As we just mentioned, ActiveX controls will not work.
+
+00:02:11.000 --> 00:02:15.000
+You will also encounter errors if your code uses Windows API declare calls,
+
+00:02:15.000 --> 00:02:19.000
+because Mac systems simply do not have those specific system files.
+
+00:02:20.000 --> 00:02:26.000
+Component object model elements, like file system object and scripting dictionary, will also fail completely.
+
+00:02:26.000 --> 00:02:30.000
+Furthermore, you must avoid hardcoded paths like the C drive.
+
+00:02:30.000 --> 00:02:34.000
+A Mac uses a completely different file structure and does not even have a C drive.
+
+00:02:34.000 --> 00:02:38.000
+It relies on Macintosh-specific and Unix pathways instead.
+
+00:02:38.000 --> 00:02:42.000
+Finally, any automation that relies on Microsoft Outlook will break.
+
+00:02:42.000 --> 00:02:45.000
+Mac users typically have a different integration setup for their emails,
+
+00:02:45.000 --> 00:02:48.000
+which renders any Windows Outlook code completely useless.
+
+00:02:49.000 --> 00:02:54.000
+To write macros that execute seamlessly on both operating systems, you should follow four simple rules.
+
+00:02:54.000 --> 00:02:58.000
+First, you must always rely on form controls instead of ActiveX.
+
+00:02:58.000 --> 00:03:05.000
+Second, use application.path separator or this workbook.path when you need to reference file locations.
+
+00:03:05.000 --> 00:03:12.000
+This step allows Excel to automatically choose the correct forward or backward slash for the specific operating system it is running on.
+
+00:03:12.000 --> 00:03:15.000
+Third, avoid Windows-only objects and system calls entirely.
+
+00:03:15.000 --> 00:03:20.000
+Fourth, always take the time to test your macros on both platforms before you share them with your colleagues.
+
+00:03:20.000 --> 00:03:25.000
+Doing this early catches small errors before they escalate into larger operational problems.
+
+00:03:25.000 --> 00:03:29.000
+Before you share your thoroughly tested code, you need to save it correctly.
+
+00:03:29.000 --> 00:03:34.000
+An XLSM file is the standard macro-enabled Excel workbook format.
+
+00:03:34.000 --> 00:03:38.000
+Both the Windows and Mac versions of Excel can open XLSM files normally.
+
+00:03:38.000 --> 00:03:43.000
+You must use this specific format to ensure your automated tasks are saved properly.
+
+00:03:43.000 --> 00:03:47.000
+If you save it as a standard Excel file, your macros will be removed permanently.
+
+00:03:47.000 --> 00:03:54.000
+By using the XLSM format, your data, your formulas, and your code will remain fully intact across both platforms.
+
+00:03:54.000 --> 00:04:00.000
+While we are discussing the sharing of macros, we must also talk about macro security.
+
+00:04:00.000 --> 00:04:03.000
+Macros can actually pose a serious security risk.
+
+00:04:03.000 --> 00:04:08.000
+Malicious attackers frequently use them to deliver harmful software into corporate systems.
+
+00:04:08.000 --> 00:04:13.000
+The National Cybersecurity Center provides clear official guidance on this exact matter.
+
+00:04:13.000 --> 00:04:20.000
+They advise system administrators to disable office macros, except in the specific applications where they are strictly required.
+
+00:04:20.000 --> 00:04:24.000
+You should only enable macros for files you trust completely.
+
+00:04:24.000 --> 00:04:29.000
+This is essential to protect your computer from unauthorized access and potential data breaches.
+
+00:04:29.000 --> 00:04:35.000
+We have now covered the essential differences between the two platforms, as well as the best practices for macro security.
+
+00:04:35.000 --> 00:04:39.000
+I want to conclude by leaving you with an important question to consider.
+
+00:04:39.000 --> 00:04:44.000
+How do you plan to update your existing macros for better compatibility and security?
+
+00:04:44.000 --> 00:04:50.000
+I encourage you to take some time this week to review your older Excel files and apply the four rules we discussed today.
+
+00:04:50.000 --> 00:04:56.000
+Doing so will ensure your automated tasks are safe, secure, and completely reliable for everyone on your team.
+
+00:04:56.000 --> 00:04:58.000
+Thank you for joining this Explainer.
