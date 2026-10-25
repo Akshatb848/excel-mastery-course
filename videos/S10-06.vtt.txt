@@ -1,0 +1,217 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.289
+Here is what we will build a home loan
+
+00:00:03.302 --> 00:00:08.160
+calculator Enter the loan rate and tenure and Excel
+
+00:00:08.173 --> 00:00:11.351
+works out the EMI the total interest and a
+
+00:00:11.364 --> 00:00:14.879
+month-by-month schedule showing how much of each EMI is
+
+00:00:14.892 --> 00:00:17.301
+interest and how much repays the loan
+
+00:00:18.762 --> 00:00:22.317
+You will learn PMT for the EMI IPMT and
+
+00:00:22.330 --> 00:00:25.910
+PPMT for the interest and principal parts and how
+
+00:00:25.923 --> 00:00:29.988
+to build a full amortisation table Go to sheet
+
+00:00:30.001 --> 00:00:31.824
+S10-06
+
+00:00:33.293 --> 00:00:36.757
+PMT needs three things the rate per period the
+
+00:00:36.770 --> 00:00:40.743
+number of periods and the loan amount A home
+
+00:00:40.756 --> 00:00:43.542
+loan rate is quoted per year so divide it
+
+00:00:43.555 --> 00:00:46.772
+by twelve and multiply the years by twelve
+
+00:00:48.215 --> 00:00:51.106
+A fifty lakh rupee loan at eight point five
+
+00:00:51.119 --> 00:00:55.587
+percent for twenty years Click B6 and type equals
+
+00:00:55.600 --> 00:01:01.251
+PMT open bracket B4 divided by 12 comma That
+
+00:01:01.264 --> 00:01:02.449
+is the monthly rate
+
+00:01:03.950 --> 00:01:07.322
+Next B5 times 12 for two hundred and forty
+
+00:01:07.335 --> 00:01:09.015
+EMIs then a comma
+
+00:01:10.497 --> 00:01:14.340
+Here is the common mistake Type B3 for the
+
+00:01:14.353 --> 00:01:18.155
+loan and press Return The EMI shows with a
+
+00:01:18.168 --> 00:01:21.931
+minus sign because Excel treats money you pay out
+
+00:01:21.944 --> 00:01:22.765
+as negative
+
+00:01:24.231 --> 00:01:26.432
+The money comes in to you as a loan
+
+00:01:26.588 --> 00:01:30.835
+so put a minus before B3 In B6 type
+
+00:01:30.848 --> 00:01:36.212
+equals PMT open bracket B4 slash 12 comma B5
+
+00:01:36.225 --> 00:01:41.460
+star 12 comma minus B3 The EMI is forty-three
+
+00:01:41.473 --> 00:01:44.546
+thousand three hundred and ninety-one rupees a month
+
+00:01:46.028 --> 00:01:49.897
+Look at B8 Over twenty years you pay about
+
+00:01:49.910 --> 00:01:54.402
+fifty-four lakh thirteen thousand eight hundred and seventy-nine rupees
+
+00:01:54.416 --> 00:01:58.387
+in interest more than the loan itself That is
+
+00:01:58.400 --> 00:02:01.212
+the number to show anyone comparing tenures
+
+00:02:02.684 --> 00:02:06.775
+Now the schedule In E4, the opening balance for
+
+00:02:06.788 --> 00:02:09.978
+month one is the loan type equals dollar B
+
+00:02:09.991 --> 00:02:15.629
+dollar 3 In F4, the EMI equals dollar B dollar 6
+
+00:02:17.122 --> 00:02:22.267
+In G4, the interest part Type equals IPMT open
+
+00:02:22.280 --> 00:02:26.174
+bracket the locked rate divided by 12 then D4
+
+00:02:26.187 --> 00:02:29.403
+for the month number the locked tenure times 12
+
+00:02:29.546 --> 00:02:31.200
+and minus the locked loan
+
+00:02:32.684 --> 00:02:36.786
+In H4, PPMT with exactly the same arguments gives
+
+00:02:36.799 --> 00:02:41.605
+the principal part Interest plus principal always adds up
+
+00:02:41.618 --> 00:02:42.543
+to the EMI
+
+00:02:44.012 --> 00:02:47.176
+In I4, the closing balance is the opening balance
+
+00:02:47.189 --> 00:02:52.725
+minus the principal equals E4 minus H4 Press Return
+
+00:02:54.200 --> 00:02:57.598
+For month two the opening balance is last month's
+
+00:02:57.611 --> 00:03:02.223
+closing balance Click E5 and type equals I4
+
+00:03:03.715 --> 00:03:06.410
+Now fill everything down to month two hundred and
+
+00:03:06.423 --> 00:03:11.998
+forty Select E5 to E243 and press Command D
+
+00:03:12.155 --> 00:03:16.582
+then F4 to I243 and press Command D again
+
+00:03:18.059 --> 00:03:22.082
+In month one thirty-five thousand four hundred and seventeen
+
+00:03:22.095 --> 00:03:24.999
+rupees of the EMI is interest and only seven
+
+00:03:25.012 --> 00:03:28.749
+thousand nine hundred and seventy-four rupees repays the loan
+
+00:03:29.663 --> 00:03:33.426
+Jump to the bottom with Command down arrow By
+
+00:03:33.439 --> 00:03:36.173
+month two hundred and forty the closing balance is
+
+00:03:36.186 --> 00:03:36.616
+zero
+
+00:03:38.090 --> 00:03:40.916
+Go back up with Command up arrow and change
+
+00:03:40.929 --> 00:03:44.824
+the rate in B4 to nine percent The EMI
+
+00:03:44.837 --> 00:03:48.860
+rises to forty-four thousand nine hundred and eighty-six rupees
+
+00:03:48.873 --> 00:03:51.347
+and every row of the schedule updates
+
+00:03:52.809 --> 00:03:55.713
+On a Mac Command arrow jumps to the edge
+
+00:03:55.726 --> 00:03:59.374
+of the data and Command D fills down In
+
+00:03:59.387 --> 00:04:02.902
+formulas Command T cycles the dollar signs on a
+
+00:04:02.915 --> 00:04:03.631
+reference
+
+00:04:05.106 --> 00:04:09.197
+To recap PMT gives the EMI from a monthly
+
+00:04:09.210 --> 00:04:11.814
+rate the number of months and the loan with
+
+00:04:11.827 --> 00:04:16.671
+a minus sign IPMT and PPMT split each EMI
+
+00:04:16.684 --> 00:04:21.124
+into interest and principal Lock the inputs with dollars
+
+00:04:21.137 --> 00:04:22.855
+so the schedule fills down
+
+00:04:24.325 --> 00:04:28.754
+Your challenge For the income tax deduction on home
+
+00:04:28.767 --> 00:04:31.684
+loan interest you need the interest paid in the
+
+00:04:31.697 --> 00:04:35.616
+first year In B10, use CUMIPMT for months 1
+
+00:04:35.629 --> 00:04:40.642
+to 12 The answer is on S10-06 Done

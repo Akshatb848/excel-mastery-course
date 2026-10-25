@@ -1,0 +1,187 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.744
+Here is the finished sheet twelve months of ad
+
+00:00:03.757 --> 00:00:07.624
+spend sales and leads with a small statistics panel
+
+00:00:08.525 --> 00:00:11.507
+It tells you the typical month how much months
+
+00:00:11.520 --> 00:00:15.231
+swing and whether spending more on ads actually goes
+
+00:00:15.244 --> 00:00:16.468
+with higher sales
+
+00:00:17.934 --> 00:00:21.033
+You will learn the difference between average and median
+
+00:00:21.163 --> 00:00:24.562
+find the most common value with MODE measure spread
+
+00:00:24.575 --> 00:00:28.286
+with standard deviation and variance and check a relationship
+
+00:00:28.299 --> 00:00:32.493
+with CORREL Go to sheet S10-03
+
+00:00:33.981 --> 00:00:37.342
+All of these take a range The dot S
+
+00:00:37.355 --> 00:00:40.520
+versions treat your data as a sample which is
+
+00:00:40.533 --> 00:00:44.400
+the right choice for business data CORREL takes two
+
+00:00:44.413 --> 00:00:47.342
+ranges of the same size and returns a value
+
+00:00:47.355 --> 00:00:49.048
+from minus one to one
+
+00:00:50.512 --> 00:00:54.770
+Click G2 and type equals AVERAGE open bracket C2
+
+00:00:54.783 --> 00:00:59.355
+colon C13, close bracket The average month is about
+
+00:00:59.368 --> 00:01:02.103
+twenty-two lakh sixty thousand rupees
+
+00:01:03.590 --> 00:01:06.936
+In G3 type equals MEDIAN of the same range
+
+00:01:07.837 --> 00:01:10.194
+The median is the middle month when you sort
+
+00:01:10.207 --> 00:01:15.519
+them about twenty-one lakh ninety-five thousand rupees It is
+
+00:01:15.532 --> 00:01:18.735
+a little lower because the Diwali month of October
+
+00:01:18.748 --> 00:01:20.024
+pulls the average up
+
+00:01:21.496 --> 00:01:25.743
+Now the most common value A frequent mistake is
+
+00:01:25.756 --> 00:01:29.883
+to run MODE on sales In G4 type equals
+
+00:01:29.897 --> 00:01:34.688
+MODE dot SNGL of C2 to C13 Excel shows
+
+00:01:34.701 --> 00:01:38.620
+N/A because no two months have exactly the same
+
+00:01:38.633 --> 00:01:39.232
+sales
+
+00:01:40.700 --> 00:01:44.778
+MODE makes sense for counts that repeat Change it
+
+00:01:44.791 --> 00:01:48.983
+to D2 colon D13, the leads column Four hundred
+
+00:01:48.996 --> 00:01:51.509
+and fifty-two leads came up three times
+
+00:01:53.028 --> 00:01:57.327
+Spread tells you how much months swing In G5
+
+00:01:57.340 --> 00:02:01.311
+type equals STDEV dot S of C2 to C13
+
+00:02:02.210 --> 00:02:05.817
+A typical month is about six lakh six thousand
+
+00:02:05.986 --> 00:02:09.267
+eight hundred and twenty-five rupees away from the average
+
+00:02:10.746 --> 00:02:13.741
+In G6 type equals VAR dot S of the
+
+00:02:13.754 --> 00:02:18.626
+same range Variance is the standard deviation squared so
+
+00:02:18.639 --> 00:02:21.230
+it is in squared rupees and hard to read
+
+00:02:22.180 --> 00:02:25.305
+We use it mainly inside other statistics
+
+00:02:26.778 --> 00:02:31.923
+Now the question marketing always asks In G7 type
+
+00:02:31.936 --> 00:02:37.040
+equals CORREL open bracket B2 colon B13, comma C2
+
+00:02:37.054 --> 00:02:43.512
+colon C13, close bracket The answer 0.91 is close
+
+00:02:43.525 --> 00:02:44.085
+to one
+
+00:02:45.543 --> 00:02:48.915
+A correlation this strong means ad spend and sales
+
+00:02:48.928 --> 00:02:52.811
+rise and fall together It does not prove the
+
+00:02:52.824 --> 00:02:57.407
+ads caused the sales Festive months raise both so
+
+00:02:57.420 --> 00:02:59.673
+treat it as a clue not proof
+
+00:03:01.137 --> 00:03:05.566
+Here is why the median matters Change October's sales
+
+00:03:05.579 --> 00:03:08.587
+in C8 to ninety lakh as if one bulk
+
+00:03:08.600 --> 00:03:12.532
+order landed The average jumps by more than four
+
+00:03:12.545 --> 00:03:15.488
+lakh but the median does not move at all
+
+00:03:16.950 --> 00:03:21.015
+Press Command Z to undo When one big order
+
+00:03:21.028 --> 00:03:24.478
+or one large salary can distort the picture report
+
+00:03:24.491 --> 00:03:26.718
+the median alongside the average
+
+00:03:28.200 --> 00:03:32.147
+To recap Report the median next to the average
+
+00:03:32.160 --> 00:03:36.392
+when outliers are possible Use MODE for values that
+
+00:03:36.405 --> 00:03:40.181
+repeat and standard deviation for how much things swing
+
+00:03:41.106 --> 00:03:45.038
+CORREL shows whether two measures move together not why
+
+00:03:46.528 --> 00:03:50.853
+Your challenge In G9, work out the coefficient of
+
+00:03:50.866 --> 00:03:55.163
+variation the standard deviation divided by the average shown
+
+00:03:55.176 --> 00:03:59.356
+as a percentage It lets you compare swing across
+
+00:03:59.369 --> 00:04:05.085
+branches of different sizes The answer is on S10-03
+
+00:04:05.098 --> 00:04:05.540
+Done

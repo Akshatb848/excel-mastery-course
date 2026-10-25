@@ -1,0 +1,382 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.304
+Here is the finished project a GST tax invoice
+
+00:00:04.317 --> 00:00:07.729
+that reads the buyer's GSTIN decides on its own
+
+00:00:07.742 --> 00:00:12.624
+whether to charge CGST and SGST or IGST numbers
+
+00:00:12.637 --> 00:00:16.075
+itself by financial year and writes the amount in
+
+00:00:16.088 --> 00:00:20.335
+words Below it a sales register for the month
+
+00:00:20.348 --> 00:00:21.806
+built on the same rule
+
+00:00:23.263 --> 00:00:27.964
+This project brings together LEFT IF XLOOKUP TEXT ROUND
+
+00:00:27.977 --> 00:00:32.757
+and INDEX Every yellow cell on sheet S10-10 is
+
+00:00:32.770 --> 00:00:36.338
+yours to fill The seller is in Maharashtra and
+
+00:00:36.351 --> 00:00:37.979
+the buyer is in Karnataka
+
+00:00:39.450 --> 00:00:43.072
+The rule is simple The first two digits of
+
+00:00:43.085 --> 00:00:46.718
+a GSTIN are the state code If the buyer
+
+00:00:46.731 --> 00:00:49.374
+is in the same state as the seller charge
+
+00:00:49.387 --> 00:00:53.059
+half the rate as CGST and half as SGST
+
+00:00:53.970 --> 00:00:57.408
+If not charge the full rate as IGST
+
+00:00:58.888 --> 00:01:03.120
+Click B4 and type equals LEFT open bracket B3
+
+00:01:03.133 --> 00:01:07.406
+comma 2 close bracket The seller's state code is
+
+00:01:07.419 --> 00:01:08.330
+27
+
+00:01:09.841 --> 00:01:13.580
+Do the same for the buyer In E5 type
+
+00:01:13.593 --> 00:01:17.786
+equals LEFT of E4 comma 2 The buyer's code
+
+00:01:17.799 --> 00:01:19.570
+is 29 Karnataka
+
+00:01:21.060 --> 00:01:25.450
+In E6, decide the supply type Type equals IF
+
+00:01:25.580 --> 00:01:30.711
+open bracket E5 equals B4, comma Intra-state in quotes
+
+00:01:30.828 --> 00:01:33.992
+comma Inter-state in quotes close bracket
+
+00:01:35.435 --> 00:01:38.013
+For the place of supply look the code up
+
+00:01:38.026 --> 00:01:40.748
+in the state table on the right columns P
+
+00:01:40.761 --> 00:01:45.789
+and Q In E7 type equals XLOOKUP open bracket
+
+00:01:45.958 --> 00:01:50.411
+E5, comma the codes P2 to P37 comma the
+
+00:01:50.424 --> 00:01:52.716
+states Q2 to Q37
+
+00:01:54.185 --> 00:01:57.466
+Add a message for a wrong GSTIN Check GSTIN
+
+00:01:57.479 --> 00:02:02.429
+in quotes Close the bracket and press Return It
+
+00:02:02.442 --> 00:02:06.674
+shows Karnataka The codes are stored as text the
+
+00:02:06.687 --> 00:02:09.304
+same as LEFT returns so they match
+
+00:02:10.763 --> 00:02:15.544
+Now the invoice number GST needs a unique serial
+
+00:02:15.557 --> 00:02:19.177
+for each financial year which runs April to March
+
+00:02:20.088 --> 00:02:24.723
+In B5 type equals SGT slash in quotes ampersand
+
+00:02:24.736 --> 00:02:27.822
+RIGHT of YEAR of B6, minus MONTH of B6
+
+00:02:27.835 --> 00:02:29.671
+less than 4 comma 2
+
+00:02:31.122 --> 00:02:34.481
+A January date belongs to the previous financial year
+
+00:02:34.612 --> 00:02:37.398
+so we subtract one when the month is before
+
+00:02:37.411 --> 00:02:42.752
+April Next ampersand a hyphen ampersand the same expression
+
+00:02:42.765 --> 00:02:46.085
+plus 1 for the year the financial year ends
+
+00:02:47.575 --> 00:02:51.637
+Finish with ampersand a slash ampersand TEXT of B7
+
+00:02:51.651 --> 00:02:56.351
+with four zeros so serial 42 shows as 0042
+
+00:02:57.252 --> 00:03:02.486
+Press Return The invoice number reads SGT slash 25
+
+00:03:02.499 --> 00:03:05.546
+hyphen 26 slash 0042
+
+00:03:07.013 --> 00:03:11.624
+Now the line items In F11, the taxable value
+
+00:03:11.638 --> 00:03:16.039
+is quantity times rate equals D11 times E11
+
+00:03:17.513 --> 00:03:22.906
+In H11, the CGST Type equals IF open bracket
+
+00:03:23.153 --> 00:03:28.570
+E6 equals Intra-state in quotes comma F11 times G11
+
+00:03:28.583 --> 00:03:33.244
+divided by 2 comma 0 close bracket We will
+
+00:03:33.257 --> 00:03:35.289
+check this reference in a moment
+
+00:03:36.763 --> 00:03:41.190
+SGST is always equal to CGST so in I11
+
+00:03:41.203 --> 00:03:47.338
+type equals H11 In J11, the IGST equals IF
+
+00:03:47.481 --> 00:03:52.820
+E6 equals Inter-state in quotes comma F11 times G11,
+
+00:03:52.833 --> 00:03:53.692
+comma 0
+
+00:03:55.169 --> 00:03:59.935
+In K11 the line total equals F11 plus H11
+
+00:03:59.948 --> 00:04:06.616
+plus I11 plus J11 Press Return Then select F11
+
+00:04:06.629 --> 00:04:09.676
+to K15 and press Command D to fill down
+
+00:04:11.154 --> 00:04:15.752
+Something is wrong IGST shows only on the first
+
+00:04:15.765 --> 00:04:20.674
+line and zero below it Click J12 the formula
+
+00:04:20.687 --> 00:04:25.088
+now points to E7, not E6 The supply type
+
+00:04:25.101 --> 00:04:26.794
+cell moved down with the fill
+
+00:04:28.279 --> 00:04:32.838
+Lock it In H11 retype the formula with dollar
+
+00:04:32.851 --> 00:04:37.096
+E dollar 6 and do the same in J11 On
+
+00:04:37.109 --> 00:04:40.169
+a Mac Command T toggles the dollar signs
+
+00:04:43.622 --> 00:04:48.403
+Fill H11 to K15 down again Every line now
+
+00:04:48.416 --> 00:04:52.296
+has IGST at eighteen percent and five percent for
+
+00:04:52.309 --> 00:04:53.806
+the solar water heater
+
+00:04:55.294 --> 00:05:00.283
+Totals In F16 type equals SUM of F11 to
+
+00:05:00.296 --> 00:05:04.280
+F15, copy it across to K16 with Command R
+
+00:05:04.437 --> 00:05:08.447
+and clear G16, because adding up rates means nothing
+
+00:05:09.359 --> 00:05:12.353
+In K18, round the grand total to the nearest
+
+00:05:12.366 --> 00:05:15.882
+rupee equals ROUND of K16 comma 0
+
+00:05:17.341 --> 00:05:21.130
+The invoice total is two lakh eighty-three thousand four
+
+00:05:21.143 --> 00:05:25.103
+hundred and five rupees Now the amount in words
+
+00:05:26.002 --> 00:05:29.387
+Excel has no built-in function for Indian words so
+
+00:05:29.400 --> 00:05:31.992
+the helper in columns M and N splits the
+
+00:05:32.005 --> 00:05:35.807
+total into crore lakh thousand hundred and the rest
+
+00:05:37.279 --> 00:05:40.235
+Column T has the words for zero to ninety-nine
+
+00:05:41.135 --> 00:05:43.844
+INDEX of that list with the number plus one
+
+00:05:43.857 --> 00:05:48.648
+gives its words In B19 type equals Rupees in
+
+00:05:48.661 --> 00:05:52.945
+quotes ampersand TRIM open bracket then the crore part
+
+00:05:54.419 --> 00:05:57.258
+Add the lakh thousand and hundred parts the same
+
+00:05:57.271 --> 00:06:00.905
+way Each IF adds its part only when that
+
+00:06:00.919 --> 00:06:02.247
+number is not zero
+
+00:06:03.716 --> 00:06:06.502
+Finish with the last two digits close the TRIM
+
+00:06:06.515 --> 00:06:11.817
+bracket and add Only in quotes Press Return The
+
+00:06:11.830 --> 00:06:15.163
+invoice now says Rupees Two Lakh Eighty Three Thousand
+
+00:06:15.176 --> 00:06:16.791
+Four Hundred Five Only
+
+00:06:18.279 --> 00:06:22.617
+Now prove the rule works Change the buyer GSTIN
+
+00:06:22.630 --> 00:06:26.211
+in E4 to a Maharashtra number starting with 27
+
+00:06:27.109 --> 00:06:31.693
+The supply becomes intra-state IGST drops to zero and
+
+00:06:31.706 --> 00:06:35.729
+CGST and SGST appear at half the rate each
+
+00:06:36.640 --> 00:06:38.294
+The total stays the same
+
+00:06:39.763 --> 00:06:46.039
+Put the Karnataka buyer back type 29AAFCK7712M1Z8 in E4
+
+00:06:46.940 --> 00:06:51.705
+Now the sales register below In E24 type equals
+
+00:06:51.718 --> 00:06:54.687
+LEFT of D24 comma 2 for the state code
+
+00:06:56.154 --> 00:07:00.529
+In G24, CGST at nine percent only for Maharashtra
+
+00:07:00.542 --> 00:07:05.633
+buyers equals IF E24 equals dollar B dollar 4 comma
+
+00:07:05.868 --> 00:07:11.976
+F24 times 9 percent comma 0 Press Tab In
+
+00:07:11.989 --> 00:07:15.297
+H24, SGST equals G24
+
+00:07:16.779 --> 00:07:20.594
+In I24, IGST at eighteen percent when the state
+
+00:07:20.607 --> 00:07:24.644
+is different equals IF E24 not equal to dollar
+
+00:07:24.657 --> 00:07:30.021
+B dollar 4 comma F24 times 18 percent comma 0
+
+00:07:30.922 --> 00:07:36.416
+In J24, the total F24 plus G24 plus H24
+
+00:07:36.430 --> 00:07:37.849
+plus I24
+
+00:07:39.310 --> 00:07:43.906
+Fill E24 down to E31, then G24 to J31,
+
+00:07:43.919 --> 00:07:47.932
+with Command D Do not include column F or
+
+00:07:47.945 --> 00:07:52.216
+the taxable values would be overwritten The totals in
+
+00:07:52.229 --> 00:07:55.549
+row 32 show the month's IGST of one lakh
+
+00:07:55.692 --> 00:07:59.690
+four thousand two hundred and thirty-eight rupees and CGST
+
+00:07:59.703 --> 00:08:03.817
+of thirty-one thousand five hundred and forty-five rupees ready
+
+00:08:03.830 --> 00:08:05.888
+for your GSTR-1 summary
+
+00:08:07.388 --> 00:08:11.283
+A Mac note To print or share the invoice
+
+00:08:11.479 --> 00:08:14.994
+select A1 to K19, then go to File Print
+
+00:08:15.190 --> 00:08:18.497
+and choose selection or save as PDF from the
+
+00:08:18.510 --> 00:08:22.104
+print dialog Command P opens Print
+
+00:08:23.575 --> 00:08:27.614
+To recap The first two digits of a GSTIN
+
+00:08:27.627 --> 00:08:33.642
+decide CGST plus SGST or IGST Lock the supply-type
+
+00:08:33.655 --> 00:08:37.991
+cell before filling down A helper split plus INDEX
+
+00:08:38.004 --> 00:08:40.361
+writes any amount in Indian words
+
+00:08:41.841 --> 00:08:46.947
+Your challenge Below the register in F34, count how
+
+00:08:46.960 --> 00:08:50.997
+many October invoices were inter-state using COUNTIF on the
+
+00:08:51.010 --> 00:08:55.502
+IGST column Then try a Delhi GSTIN on the
+
+00:08:55.515 --> 00:08:59.525
+invoice and check the place of supply The answer
+
+00:08:59.538 --> 00:09:01.518
+is on S10-10 Done

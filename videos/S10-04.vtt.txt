@@ -1,0 +1,160 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.489
+Here is the finished sheet Some rows are hidden
+
+00:00:04.632 --> 00:00:07.614
+and the totals at the bottom react one total
+
+00:00:07.627 --> 00:00:11.351
+still counts everything another counts only what you can
+
+00:00:11.364 --> 00:00:14.463
+see and the incentive total works even though two
+
+00:00:14.476 --> 00:00:15.752
+cells show errors
+
+00:00:17.231 --> 00:00:20.083
+In this lesson you will build totals that ignore
+
+00:00:20.096 --> 00:00:23.872
+hidden rows with SUBTOTAL and totals that skip errors
+
+00:00:23.885 --> 00:00:28.327
+with AGGREGATE Go to sheet S10-04
+
+00:00:29.809 --> 00:00:34.108
+SUBTOTAL takes a function number and a range Nine
+
+00:00:34.121 --> 00:00:37.558
+means sum and counts manually hidden rows one hundred
+
+00:00:37.571 --> 00:00:41.855
+and nine means sum and skips them Filtered-out rows
+
+00:00:41.868 --> 00:00:43.040
+are always skipped
+
+00:00:44.513 --> 00:00:49.294
+Start with a plain total Click E23, type equals
+
+00:00:49.307 --> 00:00:54.177
+SUM open bracket E2 colon E21, close bracket and
+
+00:00:54.190 --> 00:00:55.062
+press Return
+
+00:00:56.544 --> 00:01:01.362
+In E24, type equals SUBTOTAL open bracket 9 comma
+
+00:01:01.557 --> 00:01:06.572
+E2 colon E21, close bracket Right now it matches
+
+00:01:06.585 --> 00:01:07.119
+the SUM
+
+00:01:08.606 --> 00:01:13.476
+In E25, the same with 109 equals SUBTOTAL open
+
+00:01:13.489 --> 00:01:19.767
+bracket 109 comma E2 colon E21 All three totals
+
+00:01:19.780 --> 00:01:20.288
+agree
+
+00:01:21.778 --> 00:01:26.572
+Now hide the first four April invoices Select A5
+
+00:01:26.585 --> 00:01:30.725
+to A8 and press Control 9 Rows 5 to
+
+00:01:30.738 --> 00:01:31.702
+8 disappear
+
+00:01:33.169 --> 00:01:37.351
+Look at the totals SUM and SUBTOTAL 9 still
+
+00:01:37.364 --> 00:01:42.663
+include the hidden rows SUBTOTAL 109 drops to thirty-one
+
+00:01:42.676 --> 00:01:46.179
+lakh fifty-four thousand rupees the total of what you
+
+00:01:46.192 --> 00:01:46.752
+can see
+
+00:01:48.247 --> 00:01:51.765
+Here is a mistake you will meet often The
+
+00:01:51.778 --> 00:01:55.593
+incentive column has two N/A errors from a lookup
+
+00:01:55.606 --> 00:02:00.072
+that failed In F26 type equals SUM of F2
+
+00:02:00.085 --> 00:02:03.197
+to F21, and the total is an error too
+
+00:02:04.684 --> 00:02:09.335
+AGGREGATE fixes this It takes a function number an
+
+00:02:09.348 --> 00:02:12.121
+option for what to ignore and the range
+
+00:02:13.591 --> 00:02:18.526
+In F27 type equals AGGREGATE open bracket 9 comma
+
+00:02:18.539 --> 00:02:24.387
+6 comma F2 colon F21, close bracket Nine means
+
+00:02:24.400 --> 00:02:28.398
+sum and six means ignore errors The total is
+
+00:02:28.411 --> 00:02:31.653
+seventy-six thousand four hundred and thirty rupees
+
+00:02:33.138 --> 00:02:37.098
+A tip for filtered lists When you filter data
+
+00:02:37.111 --> 00:02:40.874
+and click AutoSum below it Excel writes SUBTOTAL for
+
+00:02:40.888 --> 00:02:43.947
+you so the total always matches the rows on
+
+00:02:43.960 --> 00:02:44.481
+screen
+
+00:02:45.966 --> 00:02:49.065
+On a Mac hide rows with Control 9 and
+
+00:02:49.078 --> 00:02:52.646
+unhide with Control Shift 9 the same as Windows
+
+00:02:53.546 --> 00:02:56.489
+If the Mac uses those keys for something else
+
+00:02:56.684 --> 00:03:00.096
+right-click the row headers and choose Hide or Unhide
+
+00:03:01.544 --> 00:03:06.520
+To recap SUBTOTAL 109 skips rows you hide by
+
+00:03:06.533 --> 00:03:10.804
+hand and both 9 and 109 skip filtered rows
+
+00:03:11.702 --> 00:03:16.403
+AGGREGATE can also ignore errors Use these for totals
+
+00:03:16.416 --> 00:03:18.916
+under lists that people filter and hide
+
+00:03:20.341 --> 00:03:25.291
+Your challenge In F28, total the incentive for visible
+
+00:03:25.304 --> 00:03:29.367
+rows only while also ignoring the errors Pick the
+
+00:03:29.380 --> 00:03:35.109
+right AGGREGATE option The answer is on S10-04 Done

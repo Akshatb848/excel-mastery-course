@@ -1,0 +1,217 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.749
+Here is the finished sheet Every salesperson has a
+
+00:00:04.762 --> 00:00:07.679
+rank the top ten are flagged and the panel
+
+00:00:07.692 --> 00:00:10.361
+on the right shows the best and worst figures
+
+00:00:10.517 --> 00:00:14.970
+the ninetieth percentile and the quartiles This is the
+
+00:00:14.983 --> 00:00:18.382
+table every sales head asks for at year end
+
+00:00:19.840 --> 00:00:22.405
+In this lesson you will rank people with RANK
+
+00:00:22.418 --> 00:00:25.400
+dot EQ pull the top and bottom values with
+
+00:00:25.413 --> 00:00:30.415
+LARGE and SMALL and find percentiles and quartiles Go
+
+00:00:30.428 --> 00:00:32.576
+to sheet S10-02
+
+00:00:34.059 --> 00:00:38.215
+Here is the syntax RANK dot EQ needs the
+
+00:00:38.228 --> 00:00:42.824
+number the full list and an optional order LARGE
+
+00:00:42.837 --> 00:00:45.480
+and SMALL take a list and a position k
+
+00:00:46.965 --> 00:00:50.756
+Twenty salespeople with their sales for the year Click
+
+00:00:50.769 --> 00:00:54.701
+D2 and type equals RANK dot EQ open bracket
+
+00:00:56.793 --> 00:01:00.178
+The first argument is the number to rank C2
+
+00:01:01.079 --> 00:01:02.147
+Then a comma
+
+00:01:03.637 --> 00:01:06.502
+The second argument is the whole list C2 to
+
+00:01:06.515 --> 00:01:12.389
+C21 Close the bracket and press Return Aarav gets
+
+00:01:12.402 --> 00:01:13.079
+his rank
+
+00:01:14.528 --> 00:01:17.106
+Now fill it down with Command D and look
+
+00:01:17.119 --> 00:01:21.249
+at the bottom Farhan in row 21 shows rank
+
+00:01:21.262 --> 00:01:25.259
+1 which is wrong The list moved down with
+
+00:01:25.272 --> 00:01:28.540
+every row so his formula compares him only with
+
+00:01:28.554 --> 00:01:29.231
+himself
+
+00:01:30.684 --> 00:01:32.989
+The fix is to lock the list with dollar
+
+00:01:33.002 --> 00:01:37.418
+signs In Excel for Mac select the reference and
+
+00:01:37.431 --> 00:01:41.975
+press Command T Here we type it equals RANK
+
+00:01:41.988 --> 00:01:46.676
+dot EQ open bracket C2 comma dollar C dollar 2 
+
+00:01:46.689 --> 00:01:50.022
+colon dollar C dollar 21 close bracket
+
+00:01:51.496 --> 00:01:55.795
+Fill down again Now every rank is right and
+
+00:01:55.808 --> 00:01:59.493
+Arjun with thirty-one lakh five thousand rupees is number
+
+00:01:59.506 --> 00:01:59.884
+one
+
+00:02:01.356 --> 00:02:05.108
+Now the panel on the right In H2 type
+
+00:02:05.121 --> 00:02:09.236
+equals LARGE open bracket the locked list comma 1
+
+00:02:10.134 --> 00:02:12.204
+That is the highest sales figure
+
+00:02:13.700 --> 00:02:16.552
+Change only the last number for the next two
+
+00:02:17.452 --> 00:02:20.720
+In H3, LARGE with 2 gives the second highest
+
+00:02:20.903 --> 00:02:23.754
+and in H4, LARGE with 3 gives the third
+
+00:02:25.215 --> 00:02:29.879
+SMALL works the other way In H5 type equals
+
+00:02:29.892 --> 00:02:32.821
+SMALL of the list comma 1 for the lowest
+
+00:02:32.834 --> 00:02:33.290
+figure
+
+00:02:34.778 --> 00:02:37.942
+For the top ten find the cut-off the tenth
+
+00:02:37.955 --> 00:02:42.306
+highest In H6, type LARGE of the list comma
+
+00:02:42.319 --> 00:02:42.749
+10
+
+00:02:44.215 --> 00:02:48.280
+Now flag the top ten In E2 type equals
+
+00:02:48.293 --> 00:02:51.600
+IF C2 greater than or equal to dollar H
+
+00:02:51.613 --> 00:02:55.832
+dollar 6 then Top 10 in quotes else empty quotes
+
+00:02:56.730 --> 00:02:57.707
+Fill it down
+
+00:02:59.168 --> 00:03:04.339
+Percentiles answer a different question In H7 type equals
+
+00:03:04.352 --> 00:03:09.509
+PERCENTILE dot INC open bracket C2 colon C21, comma
+
+00:03:09.522 --> 00:03:14.196
+0.9 Ninety percent of the team sold less than
+
+00:03:14.209 --> 00:03:14.886
+this figure
+
+00:03:16.387 --> 00:03:21.884
+Quartiles are the twenty-fifth and seventy-fifth percentiles In H8
+
+00:03:21.897 --> 00:03:25.191
+type QUARTILE dot INC of the list comma 1
+
+00:03:25.334 --> 00:03:29.019
+and in H9 the same with 3 The middle
+
+00:03:29.032 --> 00:03:32.001
+half of the team sits between these two numbers
+
+00:03:33.481 --> 00:03:38.027
+Finally the name of the top performer In H10
+
+00:03:38.040 --> 00:03:41.204
+type equals INDEX of the names then MATCH of
+
+00:03:41.217 --> 00:03:44.095
+H2 in the sales column with zero for an
+
+00:03:44.108 --> 00:03:45.163
+exact match
+
+00:03:46.637 --> 00:03:50.871
+Now prove it is dynamic Change Vikram's sales in
+
+00:03:50.884 --> 00:03:55.259
+C6 to thirty-two lakh He jumps to rank 1
+
+00:03:55.558 --> 00:03:58.631
+joins the top ten and his name appears as
+
+00:03:58.644 --> 00:03:59.764
+the top performer
+
+00:04:01.246 --> 00:04:05.662
+To recap Rank with RANK dot EQ and always
+
+00:04:05.675 --> 00:04:09.308
+lock the list Use LARGE and SMALL for top
+
+00:04:09.321 --> 00:04:12.199
+and bottom values and a cut-off cell to flag
+
+00:04:12.212 --> 00:04:16.626
+the top ten Percentiles and quartiles show where someone
+
+00:04:16.639 --> 00:04:17.811
+stands in the group
+
+00:04:19.278 --> 00:04:23.108
+Your challenge In H11, show the name of the
+
+00:04:23.121 --> 00:04:28.473
+second-best salesperson using INDEX and MATCH with H3 The
+
+00:04:28.486 --> 00:04:31.376
+answer is on S10-02 Done

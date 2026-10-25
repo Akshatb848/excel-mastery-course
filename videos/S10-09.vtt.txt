@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.801
+Here is the finished sheet A delivery van costing
+
+00:00:04.814 --> 00:00:08.421
+eight lakh rupees is depreciated three ways over eight
+
+00:00:08.434 --> 00:00:11.572
+years with the book value after each year and
+
+00:00:11.585 --> 00:00:15.413
+below it a small asset register with yearly depreciation
+
+00:00:15.426 --> 00:00:16.715
+for every asset
+
+00:00:18.200 --> 00:00:22.471
+You will learn straight-line depreciation with SLN the written-down
+
+00:00:22.484 --> 00:00:26.598
+value method with DB and the faster double-declining method
+
+00:00:26.611 --> 00:00:30.858
+with DDB plus how to track book value Go
+
+00:00:30.871 --> 00:00:33.111
+to sheet S10-09
+
+00:00:34.575 --> 00:00:37.687
+All three need the cost the salvage value at
+
+00:00:37.700 --> 00:00:42.155
+the end and the useful life DB and DDB
+
+00:00:42.168 --> 00:00:45.671
+also need the year because the charge changes every
+
+00:00:45.684 --> 00:00:45.983
+year
+
+00:00:47.450 --> 00:00:51.096
+The inputs are in B2 to B4 cost salvage
+
+00:00:51.109 --> 00:00:56.072
+value and life Click B7 and type equals SLN
+
+00:00:56.202 --> 00:01:00.460
+open bracket B2 comma B3 comma B4, close bracket
+
+00:01:01.919 --> 00:01:04.601
+Fill it down to row 14 with Command D
+
+00:01:05.502 --> 00:01:08.301
+From year two onwards we get a DIV by
+
+00:01:08.314 --> 00:01:13.080
+zero error This is the usual mistake the references
+
+00:01:13.093 --> 00:01:16.491
+moved down with each row away from the inputs
+
+00:01:17.950 --> 00:01:23.017
+Lock the inputs In B7 type equals SLN open
+
+00:01:23.030 --> 00:01:28.069
+bracket dollar B dollar 2 comma dollar B dollar 3 comma
+
+00:01:28.278 --> 00:01:32.692
+dollar B dollar 4 On a Mac Command T adds
+
+00:01:32.705 --> 00:01:34.228
+the dollar signs for you
+
+00:01:35.700 --> 00:01:40.572
+Fill down again Every year now shows eighty-seven thousand
+
+00:01:40.702 --> 00:01:44.947
+five hundred rupees the cost minus salvage spread evenly
+
+00:01:44.960 --> 00:01:46.171
+over eight years
+
+00:01:47.637 --> 00:01:52.535
+Now the written-down value method In C7 type equals
+
+00:01:52.548 --> 00:01:57.014
+DB open bracket the three locked inputs then A7
+
+00:01:57.027 --> 00:02:00.334
+for the year Do not lock A7, so the
+
+00:02:00.347 --> 00:02:02.275
+year moves down with each row
+
+00:02:03.747 --> 00:02:08.161
+DB charges 22.9 percent of the remaining value each
+
+00:02:08.174 --> 00:02:10.700
+year so year one is the biggest at one
+
+00:02:10.713 --> 00:02:14.385
+lakh eighty-three thousand two hundred rupees and the charge
+
+00:02:14.398 --> 00:02:15.583
+falls every year
+
+00:02:17.044 --> 00:02:21.564
+DDB goes faster in the early years In D7
+
+00:02:21.577 --> 00:02:25.158
+type equals DDB with the same four arguments and
+
+00:02:25.171 --> 00:02:25.978
+fill it down
+
+00:02:27.434 --> 00:02:31.798
+Now the book value In E7 type equals dollar
+
+00:02:31.811 --> 00:02:35.340
+B dollar 2  minus SUM of dollar B dollar 7  colon
+
+00:02:35.353 --> 00:02:39.598
+B7 Only the first B7 is locked so the
+
+00:02:39.611 --> 00:02:41.707
+range grows as it fills down
+
+00:02:43.200 --> 00:02:46.742
+In F7, the same for DDB equals dollar B
+
+00:02:46.755 --> 00:02:50.817
+dollar 2  minus SUM of dollar D dollar 7  colon D7
+
+00:02:51.731 --> 00:02:56.054
+Then fill E7 to F14 down Both end at
+
+00:02:56.067 --> 00:03:00.741
+the salvage value of one lakh rupees DDB stops
+
+00:03:00.754 --> 00:03:03.606
+charging once the book value reaches salvage
+
+00:03:05.075 --> 00:03:10.103
+Now the asset register In F18 type equals SLN
+
+00:03:10.116 --> 00:03:14.166
+of C18, D18, E18, with no dollar signs this
+
+00:03:14.179 --> 00:03:17.499
+time because each asset has its own inputs on
+
+00:03:17.512 --> 00:03:21.132
+its own row Fill it down to F22
+
+00:03:22.591 --> 00:03:26.525
+The register is live If the server rack's life
+
+00:03:26.538 --> 00:03:30.145
+is revised from six to five years change E21
+
+00:03:30.158 --> 00:03:32.945
+to 5 and its yearly charge goes up straight
+
+00:03:32.958 --> 00:03:33.374
+away
+
+00:03:34.856 --> 00:03:39.272
+One note for Indian accounts Companies Act books can
+
+00:03:39.285 --> 00:03:42.645
+use straight line or written-down value over the useful
+
+00:03:42.658 --> 00:03:47.137
+life The Income Tax Act uses fixed block rates
+
+00:03:47.150 --> 00:03:50.483
+on the written-down value such as fifteen percent for
+
+00:03:50.496 --> 00:03:54.155
+most plant and machinery which is a simple percentage
+
+00:03:54.311 --> 00:03:55.171
+not DB
+
+00:03:56.669 --> 00:04:01.567
+To recap SLN spreads the cost evenly DB and
+
+00:04:01.580 --> 00:04:05.525
+DDB charge more in the early years Lock the
+
+00:04:05.538 --> 00:04:08.650
+inputs with dollars and use a growing SUM range
+
+00:04:08.663 --> 00:04:09.627
+for book value
+
+00:04:11.091 --> 00:04:14.726
+Your challenge Add a book value column for the
+
+00:04:14.739 --> 00:04:18.098
+DB method in G7 to G14, the same way
+
+00:04:18.111 --> 00:04:20.781
+as columns E and F Check that it also
+
+00:04:20.794 --> 00:04:24.713
+ends close to one lakh rupees The answer is
+
+00:04:24.726 --> 00:04:27.018
+on S10-09 Done
