@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.601
+In this finished sheet branch codes come out of
+
+00:00:03.614 --> 00:00:07.846
+invoice references of different lengths urgent remarks are flagged
+
+00:00:07.859 --> 00:00:11.296
+in any capitals phone numbers are cleaned and the
+
+00:00:11.309 --> 00:00:13.575
+middle digits are masked for sharing
+
+00:00:15.043 --> 00:00:17.048
+Here's the plan for this lesson
+
+00:00:18.528 --> 00:00:22.710
+FIND and SEARCH both return a position FIND is
+
+00:00:22.723 --> 00:00:28.100
+case-sensitive and SEARCH is not SUBSTITUTE replaces by matching
+
+00:00:28.113 --> 00:00:31.147
+text and REPLACE replaces by position
+
+00:00:32.653 --> 00:00:38.540
+Open sheet S05-02 The invoice references start with a
+
+00:00:38.554 --> 00:00:42.030
+branch code but the codes have different lengths MUM
+
+00:00:42.043 --> 00:00:46.197
+has three letters and PUNE has four So first
+
+00:00:46.210 --> 00:00:49.387
+we find the slash Click D2
+
+00:00:50.840 --> 00:00:54.916
+Type equals FIND open bracket a slash in quotes
+
+00:00:55.033 --> 00:00:59.787
+comma A2, close bracket Press Return and fill down
+
+00:01:00.699 --> 00:01:03.407
+The slash is at position 4 for MUM and
+
+00:01:03.420 --> 00:01:04.996
+position 5 for PUNE
+
+00:01:06.528 --> 00:01:10.684
+Now combine it with LEFT In E2, type equals
+
+00:01:10.697 --> 00:01:13.496
+LEFT of A2, and for the number of characters
+
+00:01:13.509 --> 00:01:16.387
+use FIND of the slash in A2, minus 1
+
+00:01:17.285 --> 00:01:22.233
+Fill down Every branch code comes out cleanly whatever
+
+00:01:22.246 --> 00:01:22.910
+its length
+
+00:01:24.387 --> 00:01:29.350
+Next flag urgent remarks FIND gives a position when
+
+00:01:29.363 --> 00:01:31.551
+it finds the text and an error when it
+
+00:01:31.564 --> 00:01:35.314
+doesn't so ISNUMBER turns that into TRUE or FALSE
+
+00:01:36.212 --> 00:01:39.571
+In F2, type equals ISNUMBER of FIND urgent in
+
+00:01:39.584 --> 00:01:41.043
+C2, and fill down
+
+00:01:42.543 --> 00:01:46.464
+Look at row 3 The remark says URGENT in
+
+00:01:46.477 --> 00:01:51.048
+capitals but the flag is FALSE Row 8 with
+
+00:01:51.061 --> 00:01:55.761
+a capital U is FALSE too FIND is case-sensitive
+
+00:01:55.904 --> 00:01:57.923
+so it only matched row 5
+
+00:01:59.403 --> 00:02:04.132
+Switch to SEARCH which ignores case Retype F2 with
+
+00:02:04.145 --> 00:02:07.999
+SEARCH in place of FIND and fill down Rows
+
+00:02:08.012 --> 00:02:10.577
+3 5 and 8 are now all TRUE
+
+00:02:12.043 --> 00:02:16.680
+Now the phone numbers SUBSTITUTE swaps one piece of
+
+00:02:16.694 --> 00:02:21.850
+text for another In G2, type equals SUBSTITUTE open
+
+00:02:21.863 --> 00:02:25.105
+bracket B2, a dash in quotes and two quotes
+
+00:02:25.118 --> 00:02:29.415
+with nothing between them That removes every dash
+
+00:02:30.887 --> 00:02:35.394
+Some numbers have spaces instead of dashes Wrap the
+
+00:02:35.407 --> 00:02:38.702
+formula in a second SUBSTITUTE that swaps a space
+
+00:02:38.715 --> 00:02:44.183
+for nothing Retype G2 and fill down Every number
+
+00:02:44.196 --> 00:02:45.980
+is now ten plain digits
+
+00:02:47.450 --> 00:02:51.161
+Before sharing this list outside the company mask the
+
+00:02:51.174 --> 00:02:57.061
+middle digits REPLACE works by position In H2, type
+
+00:02:57.074 --> 00:03:02.439
+equals REPLACE open bracket G2, comma 3 comma 5
+
+00:03:02.569 --> 00:03:07.478
+comma and five capital X's in quotes Fill down
+
+00:03:08.934 --> 00:03:12.348
+Change an input to see it flow through The
+
+00:03:12.361 --> 00:03:16.657
+Mumbai invoice has a new contact number In B2,
+
+00:03:16.670 --> 00:03:23.038
+type 98200 99887 with a space and press Return The
+
+00:03:23.051 --> 00:03:25.746
+clean and masked versions update together
+
+00:03:27.215 --> 00:03:28.699
+Here's a quick recap
+
+00:03:30.168 --> 00:03:34.311
+Your turn In column I pull out the financial
+
+00:03:34.324 --> 00:03:40.170
+year part of the reference such as 2026-27 It
+
+00:03:40.183 --> 00:03:43.334
+starts one character after the slash and is seven
+
+00:03:43.347 --> 00:03:44.467
+characters long

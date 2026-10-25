@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.599
+This was a bank statement export with everything in
+
+00:00:03.612 --> 00:00:08.158
+one column and two transactions repeated Now it's four
+
+00:00:08.171 --> 00:00:10.919
+proper columns the dates are real dates in the
+
+00:00:10.932 --> 00:00:15.489
+right order and the duplicates are gone This lesson
+
+00:00:15.502 --> 00:00:18.992
+is recorded in the Excel desktop app because it
+
+00:00:19.005 --> 00:00:21.492
+uses the full Text to Columns wizard
+
+00:00:22.968 --> 00:00:24.973
+Here's the plan for this lesson
+
+00:00:26.453 --> 00:00:29.825
+Text to Columns is a three-step wizard choose how
+
+00:00:29.838 --> 00:00:33.549
+the text is separated choose the separator then set
+
+00:00:33.562 --> 00:00:38.031
+the type of each column Remove Duplicates deletes rows
+
+00:00:38.044 --> 00:00:39.984
+that match in the columns you tick
+
+00:00:41.453 --> 00:00:47.666
+Open sheet S05-08 Each line has a date narration
+
+00:00:47.796 --> 00:00:51.676
+amount and type separated by commas and the dates
+
+00:00:51.689 --> 00:00:55.465
+are day first Select A1 to A13
+
+00:00:56.921 --> 00:01:00.816
+On the Data tab click Text to Columns The
+
+00:01:00.829 --> 00:01:01.858
+wizard opens
+
+00:01:03.328 --> 00:01:07.456
+In step 1 choose Delimited because commas separate the
+
+00:01:07.469 --> 00:01:09.788
+fields Click Next
+
+00:01:11.265 --> 00:01:15.212
+In step 2 untick Tab and tick Comma The
+
+00:01:15.225 --> 00:01:18.949
+preview now shows four columns Click Next
+
+00:01:20.406 --> 00:01:24.575
+Step 3 is the important one The first column
+
+00:01:24.588 --> 00:01:28.221
+is selected Choose Date and set the order to
+
+00:01:28.234 --> 00:01:32.726
+D M Y day month year This stops the
+
+00:01:32.739 --> 00:01:35.525
+second of April from turning into the fourth of
+
+00:01:35.538 --> 00:01:36.241
+February
+
+00:01:37.734 --> 00:01:42.775
+Click Finish The lines split into Date Narration Amount
+
+00:01:42.788 --> 00:01:45.536
+and Type and every date is a real date
+
+00:01:45.549 --> 00:01:46.603
+in the right order
+
+00:01:48.078 --> 00:01:52.260
+Here's the mistake this avoids On a computer set
+
+00:01:52.273 --> 00:01:57.390
+to US dates skipping step 3 makes 02/04/2026 the
+
+00:01:57.403 --> 00:02:00.801
+fourth of February and dates after the twelfth like
+
+00:02:00.814 --> 00:02:04.877
+15/04/2026 stay as text
+
+00:02:06.375 --> 00:02:11.221
+Now the duplicates The RTGS payment to Indus Auto
+
+00:02:11.234 --> 00:02:15.869
+Parts and the interest credit each appear twice Select
+
+00:02:15.882 --> 00:02:18.838
+A1 to D13, then on the Data tab click
+
+00:02:18.851 --> 00:02:20.075
+Remove Duplicates
+
+00:02:21.546 --> 00:02:24.319
+Make sure My data has headers is ticked and
+
+00:02:24.332 --> 00:02:27.340
+all four columns are ticked so only rows that
+
+00:02:27.353 --> 00:02:32.108
+match in every column count as duplicates Click OK
+
+00:02:33.562 --> 00:02:37.169
+Excel reports that two duplicate values were removed and
+
+00:02:37.182 --> 00:02:42.848
+ten unique values remain Click OK The statement now
+
+00:02:42.861 --> 00:02:44.423
+has ten transactions
+
+00:02:45.906 --> 00:02:49.044
+If a statement has already arrived with dates as
+
+00:02:49.057 --> 00:02:52.508
+text you can rebuild them with a formula instead
+
+00:02:53.968 --> 00:02:56.859
+On a Mac things are in the same places
+
+00:02:58.343 --> 00:02:59.827
+Here's a quick recap
+
+00:03:01.296 --> 00:03:05.335
+Your turn Cell F4 has a date stored as
+
+00:03:05.348 --> 00:03:08.980
+text In G4, turn it into a real date
+
+00:03:08.993 --> 00:03:11.545
+using DATE RIGHT MID and LEFT

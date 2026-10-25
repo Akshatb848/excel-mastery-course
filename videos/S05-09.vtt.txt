@@ -1,0 +1,139 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.254
+This is a challenge lesson You get a customer
+
+00:00:04.267 --> 00:00:08.512
+export with fifteen rows typed in a hurry Your
+
+00:00:08.525 --> 00:00:12.067
+job is to clean names mobile numbers and emails
+
+00:00:12.210 --> 00:00:15.296
+flag duplicates and count the unique customers
+
+00:00:16.778 --> 00:00:23.056
+Open sheet S05-09 Names have random capitals and extra
+
+00:00:23.069 --> 00:00:27.978
+spaces phones mix plus 91 dashes and brackets and
+
+00:00:27.991 --> 00:00:32.522
+some emails have capitals and stray spaces The tasks
+
+00:00:32.535 --> 00:00:34.671
+are listed on the right from K1
+
+00:00:36.153 --> 00:00:39.395
+Pause the video now and try all five tasks
+
+00:00:40.309 --> 00:00:42.835
+Everything you need is from this section and the
+
+00:00:42.848 --> 00:00:46.650
+COUNTIF lesson Come back when you're done or if
+
+00:00:46.663 --> 00:00:47.548
+you get stuck
+
+00:00:49.012 --> 00:00:53.806
+Here's my solution Task 1 in F2, type PROPER
+
+00:00:53.819 --> 00:00:56.397
+of TRIM of A2, press Return and fill down
+
+00:00:56.410 --> 00:00:57.478
+to F16
+
+00:00:58.950 --> 00:01:03.169
+Task 2 in G2, REGEXREPLACE with the not-a-digit pattern
+
+00:01:03.182 --> 00:01:07.976
+removes everything that isn't a digit Don't press Return
+
+00:01:07.989 --> 00:01:08.431
+yet
+
+00:01:09.919 --> 00:01:14.049
+RIGHT with 10 keeps the last ten digits Close
+
+00:01:14.062 --> 00:01:18.879
+the bracket press Return and fill down Plus 91
+
+00:01:18.892 --> 00:01:20.611
+and leading zeros are gone
+
+00:01:22.091 --> 00:01:25.099
+Task 3 in H2, type LOWER of TRIM of
+
+00:01:25.112 --> 00:01:27.469
+C2, press Return and fill down
+
+00:01:30.997 --> 00:01:34.957
+Task 4 is the clever one In I2, COUNTIF
+
+00:01:34.970 --> 00:01:38.187
+counts how many times this email has appeared from
+
+00:01:38.200 --> 00:01:41.572
+the top down to the current row The dollar
+
+00:01:41.585 --> 00:01:44.489
+signs lock the start at H2, while the end
+
+00:01:44.502 --> 00:01:46.806
+of the range moves as we fill down
+
+00:01:48.278 --> 00:01:52.499
+Fill down Row 6 is Amit Joshi again and
+
+00:01:52.512 --> 00:01:55.507
+row 10 is Neha Verma again so both show
+
+00:01:55.520 --> 00:02:00.272
+Duplicate Their first appearances stay blank which is what
+
+00:02:00.285 --> 00:02:00.910
+you want
+
+00:02:02.387 --> 00:02:05.903
+This only works because the emails were cleaned first
+
+00:02:06.803 --> 00:02:09.329
+Amit's first email in the raw column has a
+
+00:02:09.342 --> 00:02:12.090
+space in front so it would never match his
+
+00:02:12.103 --> 00:02:12.936
+second one
+
+00:02:14.419 --> 00:02:18.729
+Task 5 in G18, ROWS of H2 to H16
+
+00:02:18.742 --> 00:02:23.666
+counts the fifteen customers Subtract the number of Duplicate
+
+00:02:23.679 --> 00:02:28.431
+flags with COUNTIF That leaves thirteen unique customers
+
+00:02:29.903 --> 00:02:33.275
+To actually delete the repeats filter column I for
+
+00:02:33.288 --> 00:02:36.739
+Duplicate and delete those rows or paste the clean
+
+00:02:36.752 --> 00:02:40.202
+columns as values and use Remove Duplicates on the
+
+00:02:40.215 --> 00:02:41.127
+email column
+
+00:02:42.622 --> 00:02:44.106
+Here's a quick recap
+
+00:02:45.575 --> 00:02:51.658
+Compare your sheet with S05-09 Answers If your numbers
+
+00:02:51.671 --> 00:02:54.314
+match you're ready for the dates section

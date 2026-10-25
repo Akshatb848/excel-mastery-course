@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.005
+This customer list was typed by different people with
+
+00:00:04.018 --> 00:00:09.319
+random capitals extra spaces and hidden characters The clean
+
+00:00:09.332 --> 00:00:11.663
+columns on the right fix all of it with
+
+00:00:11.676 --> 00:00:13.226
+five small functions
+
+00:00:14.684 --> 00:00:16.689
+Here's the plan for this lesson
+
+00:00:18.169 --> 00:00:22.911
+UPPER LOWER and PROPER change case TRIM removes extra
+
+00:00:22.924 --> 00:00:28.015
+spaces but keeps single spaces between words CLEAN removes
+
+00:00:28.028 --> 00:00:30.918
+non-printing characters such as line breaks
+
+00:00:32.387 --> 00:00:38.105
+Open sheet S05-03 The raw data is in columns
+
+00:00:38.118 --> 00:00:40.501
+A to D and the clean versions go in
+
+00:00:40.514 --> 00:00:42.142
+E to H Click E2
+
+00:00:43.622 --> 00:00:48.051
+Type equals PROPER of A2 and press Return PROPER
+
+00:00:48.064 --> 00:00:51.398
+capitalises the first letter of each word so the
+
+00:00:51.411 --> 00:00:55.121
+name now reads Rajesh Kumar but the extra spaces
+
+00:00:55.134 --> 00:00:55.981
+are still there
+
+00:00:57.465 --> 00:01:00.551
+TRIM removes spaces at the start and end and
+
+00:01:00.564 --> 00:01:04.668
+turns a run of spaces into one Retype E2
+
+00:01:04.681 --> 00:01:07.246
+as PROPER of TRIM of A2, press Return and
+
+00:01:07.259 --> 00:01:08.600
+fill down to E9
+
+00:01:10.075 --> 00:01:13.749
+Look at Anjali in row 5 There's still a
+
+00:01:13.762 --> 00:01:17.551
+gap before her name and between the words These
+
+00:01:17.564 --> 00:01:22.512
+are non-breaking spaces character 160 which often come from
+
+00:01:22.525 --> 00:01:26.470
+websites and PDFs TRIM only removes normal spaces
+
+00:01:27.934 --> 00:01:32.166
+Turn them into normal spaces first with SUBSTITUTE replace
+
+00:01:32.179 --> 00:01:36.556
+CHAR of 160 with a space in quotes Then
+
+00:01:36.569 --> 00:01:40.410
+TRIM and PROPER do the rest Retype E2 like
+
+00:01:40.423 --> 00:01:44.473
+this and fill down Anjali Mehra is clean now
+
+00:01:45.934 --> 00:01:50.012
+Cities next Row 6 has a hidden line break
+
+00:01:50.025 --> 00:01:53.762
+after Hyderabad left over from a copy and paste
+
+00:01:54.660 --> 00:01:58.657
+CLEAN removes it In F2, type PROPER of TRIM
+
+00:01:58.670 --> 00:02:00.819
+of CLEAN of B2, and fill down
+
+00:02:02.309 --> 00:02:06.413
+Emails should be lower case with no spaces In
+
+00:02:06.426 --> 00:02:09.186
+G2, type LOWER of TRIM of C2 and fill
+
+00:02:09.199 --> 00:02:09.629
+down
+
+00:02:11.137 --> 00:02:14.340
+For PAN numbers a common slip is reaching for
+
+00:02:14.353 --> 00:02:18.522
+PROPER again In H2, type PROPER of D2 and
+
+00:02:18.535 --> 00:02:22.011
+press Return You get a capital A and a
+
+00:02:22.024 --> 00:02:25.228
+capital D with small letters in between which is
+
+00:02:25.241 --> 00:02:26.400
+not a valid PAN
+
+00:02:27.856 --> 00:02:31.463
+PAN numbers are always in capitals so use UPPER
+
+00:02:32.363 --> 00:02:35.384
+Retype H2 as UPPER of TRIM of D2 and
+
+00:02:35.397 --> 00:02:36.087
+fill down
+
+00:02:37.575 --> 00:02:41.548
+Here's a pro tip These are still formulas that
+
+00:02:41.561 --> 00:02:45.116
+depend on the raw columns To keep only the
+
+00:02:45.129 --> 00:02:49.048
+clean text select E2 to H9, copy with Command
+
+00:02:49.061 --> 00:02:51.952
+C then on the Home tab open Paste and
+
+00:02:51.965 --> 00:02:53.423
+choose Paste Values
+
+00:02:54.903 --> 00:02:57.768
+Click any clean cell and the formula bar now
+
+00:02:57.781 --> 00:03:01.793
+shows plain text You can delete or replace the
+
+00:03:01.806 --> 00:03:03.173
+raw columns safely
+
+00:03:08.137 --> 00:03:09.621
+Here's a quick recap
+
+00:03:11.090 --> 00:03:15.467
+Your turn In column I make a three-letter city
+
+00:03:15.480 --> 00:03:18.436
+code in capitals from the clean city in column
+
+00:03:18.449 --> 00:03:18.839
+F

@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.135
+Here address parts in five columns become one clean
+
+00:00:04.148 --> 00:00:06.908
+line for a courier form and all the delivery
+
+00:00:06.921 --> 00:00:11.702
+cities become a single comma-separated list Empty parts are
+
+00:00:11.715 --> 00:00:13.108
+skipped automatically
+
+00:00:14.591 --> 00:00:16.596
+Here's the plan for this lesson
+
+00:00:18.091 --> 00:00:22.103
+The ampersand joins two things at a time CONCAT
+
+00:00:22.117 --> 00:00:26.713
+joins a list of items TEXTJOIN adds a separator
+
+00:00:26.726 --> 00:00:29.747
+between items and can ignore empty cells
+
+00:00:31.216 --> 00:00:37.416
+Open sheet S05-04 Each address is split across House
+
+00:00:37.585 --> 00:00:42.169
+Street Area City and PIN Click G2
+
+00:00:43.638 --> 00:00:46.880
+Type equals B2, ampersand then a comma and a
+
+00:00:46.893 --> 00:00:52.219
+space inside quotes ampersand C2, ampersand and another comma
+
+00:00:52.232 --> 00:00:55.031
+and space in quotes then an ampersand
+
+00:00:56.513 --> 00:00:59.898
+Continue with D2, the comma and space again E2,
+
+00:00:59.911 --> 00:01:03.115
+then a space dash and space in quotes and
+
+00:01:03.128 --> 00:01:06.906
+the PIN in F2 Press Return and fill down
+
+00:01:08.403 --> 00:01:12.038
+Look at Nisha in row 3 She has no
+
+00:01:12.051 --> 00:01:15.332
+Area so her address shows two commas with nothing
+
+00:01:15.345 --> 00:01:19.330
+between them The ampersand joins blanks too
+
+00:01:20.778 --> 00:01:23.851
+CONCAT does the same job with commas between the
+
+00:01:23.864 --> 00:01:28.801
+pieces instead of ampersands In H2, type CONCAT of
+
+00:01:28.814 --> 00:01:32.277
+E2, a space dash space in quotes and F2
+
+00:01:33.176 --> 00:01:35.728
+Fill down to get each city with its PIN
+
+00:01:37.185 --> 00:01:42.031
+TEXTJOIN fixes the blank problem In I2, type equals
+
+00:01:42.044 --> 00:01:47.109
+TEXTJOIN open bracket The first argument is the separator
+
+00:01:47.239 --> 00:01:51.237
+comma and space in quotes The second is TRUE
+
+00:01:51.393 --> 00:01:53.359
+which means skip empty cells
+
+00:01:54.825 --> 00:01:57.286
+Then give it the whole range B2 to E2
+
+00:01:57.299 --> 00:02:00.281
+at once close the bracket and add the PIN
+
+00:02:00.294 --> 00:02:05.530
+with an ampersand Press Return and fill down Nisha's
+
+00:02:05.543 --> 00:02:07.184
+address reads cleanly now
+
+00:02:08.653 --> 00:02:11.752
+To see what TRUE is doing retype I3 with
+
+00:02:11.765 --> 00:02:15.751
+FALSE in its place and press Return The empty
+
+00:02:15.764 --> 00:02:18.212
+Area comes back as a double comma
+
+00:02:19.669 --> 00:02:22.299
+Change it back to TRUE and press Return
+
+00:02:28.778 --> 00:02:33.051
+TEXTJOIN also turns a column into one line In
+
+00:02:33.064 --> 00:02:36.996
+B12, type TEXTJOIN with comma and space TRUE and
+
+00:02:37.009 --> 00:02:40.798
+the City column E2 to E9 You get every
+
+00:02:40.811 --> 00:02:44.132
+delivery city in one cell ready to paste into
+
+00:02:44.145 --> 00:02:44.809
+an email
+
+00:02:46.278 --> 00:02:50.356
+Now add the missing area for Nisha Type Mullick
+
+00:02:50.369 --> 00:02:55.121
+Bazar in D3 and press Return Both address columns
+
+00:02:55.134 --> 00:02:56.554
+pick it up straight away
+
+00:02:58.028 --> 00:02:59.512
+Here's a quick recap
+
+00:03:00.982 --> 00:03:05.229
+Your turn In column J build a courier label
+
+00:03:05.242 --> 00:03:08.588
+of name city and PIN separated by a space
+
+00:03:08.797 --> 00:03:12.273
+a vertical bar and a space using TEXTJOIN

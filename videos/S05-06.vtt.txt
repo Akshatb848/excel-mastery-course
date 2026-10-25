@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.757
+In this finished sheet one formula each gives the
+
+00:00:03.770 --> 00:00:08.132
+first name surname email username and domain even for
+
+00:00:08.145 --> 00:00:12.483
+three-part names At the bottom one cell of skills
+
+00:00:12.496 --> 00:00:15.140
+is split across columns and down rows
+
+00:00:16.606 --> 00:00:18.611
+Here's the plan for this lesson
+
+00:00:20.091 --> 00:00:24.544
+TEXTBEFORE returns text before a delimiter and TEXTAFTER returns
+
+00:00:24.557 --> 00:00:29.103
+text after it The instance number picks which delimiter
+
+00:00:29.247 --> 00:00:33.387
+and a negative number counts from the end TEXTSPLIT
+
+00:00:33.400 --> 00:00:35.640
+splits a cell into many cells
+
+00:00:37.122 --> 00:00:42.840
+Open sheet S05-06 We have full names and work
+
+00:00:42.853 --> 00:00:46.265
+emails Click C2 for the first name
+
+00:00:47.747 --> 00:00:52.591
+Type equals TEXTBEFORE open bracket A2, comma a space
+
+00:00:52.604 --> 00:00:57.358
+in quotes close bracket That returns everything before the
+
+00:00:57.371 --> 00:01:00.965
+first space Press Return and fill down
+
+00:01:02.434 --> 00:01:05.546
+For the surname try TEXTAFTER with a space in
+
+00:01:05.559 --> 00:01:10.092
+D2, and fill down Ananya's row shows Rao but
+
+00:01:10.105 --> 00:01:14.441
+Mohammed Irfan Shaikh gives Irfan Shaikh because it splits
+
+00:01:14.454 --> 00:01:15.756
+at the first space
+
+00:01:17.200 --> 00:01:21.785
+Add a third argument minus 1 A negative instance
+
+00:01:21.798 --> 00:01:24.624
+counts from the end so this means after the
+
+00:01:24.637 --> 00:01:30.002
+last space Retype D2 and fill down Every row
+
+00:01:30.015 --> 00:01:31.838
+now shows just the surname
+
+00:01:33.325 --> 00:01:37.390
+Emails work the same way In E2, TEXTBEFORE of
+
+00:01:37.403 --> 00:01:41.361
+B2 and the at sign gives the username Fill
+
+00:01:41.374 --> 00:01:41.830
+down
+
+00:01:43.294 --> 00:01:46.224
+In F2, TEXTAFTER of B2 and the at sign
+
+00:01:46.237 --> 00:01:49.507
+gives the company domain Fill down
+
+00:01:52.262 --> 00:01:56.873
+Now split one cell into many B12 holds four
+
+00:01:56.886 --> 00:02:02.225
+skills separated by commas In B13, type equals TEXTSPLIT
+
+00:02:02.238 --> 00:02:05.064
+of B12, with comma and space as the column
+
+00:02:05.077 --> 00:02:09.985
+separator and press Return The result spills across four
+
+00:02:09.998 --> 00:02:10.558
+cells
+
+00:02:12.044 --> 00:02:15.495
+To split down into rows skip the column separator
+
+00:02:16.408 --> 00:02:20.887
+In B15, type TEXTSPLIT B12, two commas then comma
+
+00:02:20.900 --> 00:02:24.820
+and space in quotes The skills spill down from
+
+00:02:24.833 --> 00:02:26.499
+B15 to B18
+
+00:02:27.966 --> 00:02:31.052
+If anything blocks the spill area you get an
+
+00:02:31.065 --> 00:02:35.247
+error Type the word note in B17 and press
+
+00:02:35.260 --> 00:02:40.090
+Return B15 shows the SPILL error because there's no
+
+00:02:40.103 --> 00:02:41.393
+room for the results
+
+00:02:42.841 --> 00:02:45.745
+Clear B17 with the Delete key and the list
+
+00:02:45.758 --> 00:02:46.591
+spills again
+
+00:02:48.075 --> 00:02:51.606
+Now edit the source Add SAP to the end
+
+00:02:51.619 --> 00:02:55.512
+of the list in B12 Both results grow by
+
+00:02:55.525 --> 00:02:56.996
+one cell on their own
+
+00:02:58.528 --> 00:03:00.260
+One thing to know on a Mac
+
+00:03:01.762 --> 00:03:03.246
+Here's a quick recap
+
+00:03:04.731 --> 00:03:08.978
+Your turn In column G get the company name
+
+00:03:08.991 --> 00:03:11.660
+from the domain which is the part before the
+
+00:03:11.673 --> 00:03:12.884
+first full stop

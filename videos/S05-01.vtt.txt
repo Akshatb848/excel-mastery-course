@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.471
+This supplier list now shows the state code and
+
+00:00:03.484 --> 00:00:07.468
+the PAN hidden inside every GSTIN plus length checks
+
+00:00:07.481 --> 00:00:10.411
+that catch a GSTIN with a missing character and
+
+00:00:10.424 --> 00:00:13.197
+mobile numbers with the wrong number of digits
+
+00:00:14.668 --> 00:00:16.673
+Here's the plan for this lesson
+
+00:00:18.153 --> 00:00:21.408
+LEFT takes characters from the start RIGHT from the
+
+00:00:21.421 --> 00:00:24.416
+end and MID from the middle starting at a
+
+00:00:24.429 --> 00:00:28.350
+position you choose LEN counts the characters
+
+00:00:29.825 --> 00:00:36.429
+Open sheet S05-01 Column C has each supplier's GSTIN
+
+00:00:37.340 --> 00:00:40.127
+The first two characters of a GSTIN are the
+
+00:00:40.140 --> 00:00:42.809
+state code Click E2
+
+00:00:44.262 --> 00:00:48.897
+Type equals LEFT open bracket C2, comma 2 close
+
+00:00:48.910 --> 00:00:53.782
+bracket and press Return You get 24 the code
+
+00:00:53.795 --> 00:00:56.191
+for Gujarat which matches Surat
+
+00:00:57.668 --> 00:01:00.702
+Fill down with Command D Look at Ganga Paper
+
+00:01:00.715 --> 00:01:04.855
+Mills 09 for Uttar Pradesh keeps its leading zero
+
+00:01:05.025 --> 00:01:07.486
+because LEFT always returns text
+
+00:01:08.950 --> 00:01:12.687
+The PAN sits inside the GSTIN starting at character
+
+00:01:12.700 --> 00:01:16.947
+3 and running for 10 characters In F2, type
+
+00:01:16.960 --> 00:01:22.051
+equals MID open bracket C2, comma 3 comma 10
+
+00:01:22.194 --> 00:01:24.421
+close bracket and press Return
+
+00:01:25.903 --> 00:01:31.478
+Fill down Every supplier's PAN appears Now look at
+
+00:01:31.491 --> 00:01:36.478
+row 8 Charminar Pharma That PAN looks odd it
+
+00:01:36.491 --> 00:01:39.160
+ends in the digit 1 and a PAN always
+
+00:01:39.173 --> 00:01:40.241
+ends in a letter
+
+00:01:41.715 --> 00:01:45.257
+LEN counts characters so it makes a quick quality
+
+00:01:45.270 --> 00:01:49.451
+check In G2, type equals LEN of C2 and
+
+00:01:49.464 --> 00:01:54.074
+fill down A GSTIN must have 15 characters and
+
+00:01:54.087 --> 00:01:58.631
+row 8 shows 14 One character is missing which
+
+00:01:58.644 --> 00:02:00.610
+is why its PAN came out wrong
+
+00:02:02.090 --> 00:02:06.194
+Do the same for mobile numbers In H2, type
+
+00:02:06.207 --> 00:02:09.983
+LEN of D2 and fill down A mobile number
+
+00:02:09.996 --> 00:02:14.097
+has 10 digits Row 6 shows 11 because of
+
+00:02:14.110 --> 00:02:17.326
+a leading zero and row 9 shows 9 so
+
+00:02:17.339 --> 00:02:18.576
+a digit is missing
+
+00:02:20.059 --> 00:02:24.228
+RIGHT works from the end In I2, type equals
+
+00:02:24.241 --> 00:02:28.577
+RIGHT of D2, comma 4 and fill down These
+
+00:02:28.590 --> 00:02:31.793
+last four digits are handy for confirming a supplier
+
+00:02:31.806 --> 00:02:32.496
+on the phone
+
+00:02:33.950 --> 00:02:36.828
+A classic slip is starting MID one place too
+
+00:02:36.841 --> 00:02:41.088
+early Retype F2 as MID of C2, 2 10
+
+00:02:41.101 --> 00:02:47.103
+and press Return You get 4AAKFS4821 which includes part
+
+00:02:47.116 --> 00:02:50.931
+of the state code In Excel the first character
+
+00:02:50.944 --> 00:02:52.077
+is position 1
+
+00:02:53.559 --> 00:02:57.194
+Put the 3 back and press Return The PAN
+
+00:02:57.207 --> 00:02:58.340
+is correct again
+
+00:03:00.247 --> 00:03:05.926
+Now fix the source Charminar's correct GSTIN has 3390
+
+00:03:05.939 --> 00:03:09.871
+in the middle Click C8, type the full GSTIN
+
+00:03:09.884 --> 00:03:13.856
+and press Return The length becomes 15 and the
+
+00:03:13.869 --> 00:03:15.392
+PAN corrects itself
+
+00:03:16.872 --> 00:03:18.356
+Here's a quick recap
+
+00:03:19.825 --> 00:03:23.746
+Your turn The fourth character of a PAN tells
+
+00:03:23.759 --> 00:03:26.364
+you the holder type for example C for a
+
+00:03:26.377 --> 00:03:30.413
+company and F for a firm In column J
+
+00:03:30.556 --> 00:03:32.327
+pull it out of the PAN with MID

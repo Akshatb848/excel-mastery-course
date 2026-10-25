@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.462
+This is a vendor master with built-in checks Every
+
+00:00:04.476 --> 00:00:08.330
+PAN and GSTIN is tested against its official format
+
+00:00:08.538 --> 00:00:11.077
+the PAN is pulled out of the GSTIN and
+
+00:00:11.090 --> 00:00:13.942
+messy phone numbers are reduced to ten digits and
+
+00:00:13.955 --> 00:00:14.410
+checked
+
+00:00:15.872 --> 00:00:17.877
+Here's the plan for this lesson
+
+00:00:19.356 --> 00:00:23.512
+A regular expression is a pattern for text You
+
+00:00:23.525 --> 00:00:26.546
+only need a handful of symbols a caret for
+
+00:00:26.559 --> 00:00:29.879
+the start a dollar for the end square brackets
+
+00:00:29.892 --> 00:00:33.147
+for one character from a set and curly brackets
+
+00:00:33.160 --> 00:00:34.566
+for how many times
+
+00:00:36.044 --> 00:00:41.958
+Here are the three functions They need Microsoft 365 on
+
+00:00:41.971 --> 00:00:44.510
+the Mac app the web or Windows
+
+00:00:45.981 --> 00:00:52.064
+Open sheet S05-07 A PAN is five capital letters
+
+00:00:52.194 --> 00:00:56.322
+four digits and one capital letter The patterns we'll
+
+00:00:56.335 --> 00:01:00.970
+use are listed from A13 for reference Click E2
+
+00:01:02.450 --> 00:01:07.828
+Type equals REGEXTEST open bracket B2, comma and the
+
+00:01:07.841 --> 00:01:11.161
+PAN pattern in quotes caret A to Z in
+
+00:01:11.174 --> 00:01:15.132
+square brackets 5 in curly brackets 0 to 9
+
+00:01:15.145 --> 00:01:17.945
+with 4 one more A to Z and a
+
+00:01:17.958 --> 00:01:22.569
+dollar sign Press Return You get TRUE
+
+00:01:24.044 --> 00:01:28.877
+Fill down Kaveri Spices is FALSE because the digits
+
+00:01:28.890 --> 00:01:32.835
+are in the wrong place Coromandel is FALSE too
+
+00:01:33.109 --> 00:01:37.796
+it's in small letters and REGEXTEST matches case by
+
+00:01:37.809 --> 00:01:38.486
+default
+
+00:01:39.950 --> 00:01:43.179
+A GSTIN is a two-digit state code the PAN
+
+00:01:43.309 --> 00:01:45.770
+an entity number from 1 to 9 or a
+
+00:01:45.783 --> 00:01:49.887
+letter the letter Z and a check character In
+
+00:01:49.900 --> 00:01:53.689
+F2, test C2 against the GSTIN pattern from B14,
+
+00:01:53.702 --> 00:01:55.447
+press Return and fill down
+
+00:01:56.950 --> 00:02:01.470
+Three GSTINs fail Ganga Paper Mills has an X
+
+00:02:01.483 --> 00:02:04.413
+where the Z should be Hooghly Jute has only
+
+00:02:04.426 --> 00:02:09.179
+14 characters and Charminar Pharma isn't registered at all
+
+00:02:10.669 --> 00:02:15.788
+REGEXEXTRACT pulls out the matching part In G2, extract
+
+00:02:15.801 --> 00:02:18.796
+the PAN pattern from C2, this time without the
+
+00:02:18.809 --> 00:02:21.765
+caret and dollar because the PAN sits in the
+
+00:02:21.778 --> 00:02:26.960
+middle of the GSTIN Fill down Row 8 shows
+
+00:02:26.973 --> 00:02:30.606
+the N A error because Not registered contains no
+
+00:02:30.619 --> 00:02:31.075
+PAN
+
+00:02:32.544 --> 00:02:35.409
+Wrap it in IFERROR with Not found in quotes
+
+00:02:36.309 --> 00:02:38.705
+Retype G2 and fill down again
+
+00:02:46.966 --> 00:02:51.421
+Now the phones REGEXREPLACE with the pattern not 0
+
+00:02:51.434 --> 00:02:55.184
+to 9 and an empty replacement removes every character
+
+00:02:55.197 --> 00:02:59.130
+that isn't a digit spaces dashes brackets and the
+
+00:02:59.143 --> 00:02:59.976
+plus sign
+
+00:03:01.450 --> 00:03:04.093
+Wrapping it in RIGHT with 10 keeps the last
+
+00:03:04.106 --> 00:03:07.583
+ten digits which drops a 91 country code or
+
+00:03:07.596 --> 00:03:11.856
+a leading zero Close the bracket press Return and
+
+00:03:11.869 --> 00:03:12.559
+fill down
+
+00:03:14.060 --> 00:03:17.237
+In I2, test the result a first digit from
+
+00:03:17.250 --> 00:03:21.510
+6 to 9 then nine more digits Fill down
+
+00:03:22.395 --> 00:03:26.171
+Hooghly's landline and Malabar's nine-digit number fail
+
+00:03:27.638 --> 00:03:30.711
+Fix a source value to see the checks respond
+
+00:03:31.624 --> 00:03:37.210
+Kaveri's correct PAN is AAGCK1259P Type it in B4
+
+00:03:37.223 --> 00:03:40.843
+and press Return The PAN check turns TRUE
+
+00:03:42.341 --> 00:03:43.825
+Here's a quick recap
+
+00:03:45.294 --> 00:03:49.424
+Your turn In column J test the PAN again
+
+00:03:49.437 --> 00:03:52.952
+but ignore case so the small-letter PAN for Coromandel
+
+00:03:52.965 --> 00:03:56.155
+passes Use the third argument
