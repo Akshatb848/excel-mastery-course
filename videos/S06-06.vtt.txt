@@ -1,0 +1,175 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.057
+This HR sheet shows each employee's exact age in
+
+00:00:04.070 --> 00:00:07.664
+years months and days their service in years an
+
+00:00:07.677 --> 00:00:13.369
+estimated gratuity and their retirement date Everything is calculated
+
+00:00:13.382 --> 00:00:15.322
+as on one date in K1
+
+00:00:16.778 --> 00:00:18.783
+Here's the plan for this lesson
+
+00:00:20.263 --> 00:00:25.161
+DATEDIF counts complete units between two dates The unit
+
+00:00:25.174 --> 00:00:29.132
+is a code in quotes YEARFRAC returns the fraction
+
+00:00:29.145 --> 00:00:32.505
+of years between two dates and basis 1 uses
+
+00:00:32.518 --> 00:00:33.533
+actual days
+
+00:00:35.013 --> 00:00:41.252
+Open sheet S06-06 K1 holds the as-on date the
+
+00:00:41.265 --> 00:00:48.309
+thirty-first of March 2026 the last day of FY 2025-26
+
+00:00:49.208 --> 00:00:53.114
+A fixed date rather than TODAY keeps HR reports
+
+00:00:53.127 --> 00:00:55.770
+repeatable Click E2
+
+00:00:57.247 --> 00:01:01.882
+Type equals DATEDIF open bracket B2, comma dollar K
+
+00:01:01.895 --> 00:01:07.379
+dollar 1 comma Y in quotes and press Return Excel
+
+00:01:07.392 --> 00:01:10.791
+doesn't suggest DATEDIF as you type because it's an
+
+00:01:10.804 --> 00:01:15.895
+old function kept for compatibility but it works Suresh
+
+00:01:15.908 --> 00:01:18.213
+is 57 complete years old
+
+00:01:19.685 --> 00:01:23.984
+A common mistake is swapping the dates Retype E2
+
+00:01:23.997 --> 00:01:27.552
+with K1 first and B2 second and press Return
+
+00:01:28.463 --> 00:01:31.562
+You get the NUM error because the start date
+
+00:01:31.575 --> 00:01:33.411
+must come before the end date
+
+00:01:34.903 --> 00:01:38.811
+Now build the full age Start again in E2
+
+00:01:38.824 --> 00:01:41.741
+with DATEDIF of B2 and K1 in years then
+
+00:01:41.754 --> 00:01:45.035
+an ampersand and space y space in quotes and
+
+00:01:45.048 --> 00:01:46.298
+another ampersand
+
+00:01:47.778 --> 00:01:51.020
+Add DATEDIF with YM which gives the months left
+
+00:01:51.033 --> 00:01:54.458
+over after whole years then space m space in
+
+00:01:54.471 --> 00:01:56.098
+quotes and an ampersand
+
+00:01:57.575 --> 00:02:00.934
+Finish with MD the days left over after whole
+
+00:02:00.947 --> 00:02:05.246
+months and space d in quotes Press Return and
+
+00:02:05.259 --> 00:02:09.882
+fill down Suresh is 57 years 8 months and
+
+00:02:09.895 --> 00:02:14.400
+19 days old Microsoft notes MD can be off
+
+00:02:14.413 --> 00:02:17.356
+around month ends so check those cases
+
+00:02:18.825 --> 00:02:23.241
+Service for gratuity needs a decimal In F2, type
+
+00:02:23.254 --> 00:02:26.158
+ROUND of YEARFRAC of the joining date C2 and
+
+00:02:26.171 --> 00:02:29.374
+K1, with basis 1 for actual days to 2
+
+00:02:29.387 --> 00:02:36.379
+decimals Fill down Suresh has 21.83 years of service
+
+00:02:37.841 --> 00:02:41.578
+Here's the gratuity rule we'll use simplified from the
+
+00:02:41.591 --> 00:02:43.479
+Payment of Gratuity Act
+
+00:02:44.950 --> 00:02:49.013
+In G2, type equals IF open bracket F2 greater
+
+00:02:49.026 --> 00:02:53.233
+than or equal to 5 comma Only people with
+
+00:02:53.246 --> 00:02:55.434
+five years or more get an amount
+
+00:02:56.903 --> 00:03:00.575
+Then ROUND of D2 times 15 divided by 26
+
+00:03:00.809 --> 00:03:03.895
+times ROUND of F2 to whole years rounded to
+
+00:03:03.908 --> 00:03:08.793
+whole rupees and zero for everyone else Press Return
+
+00:03:08.806 --> 00:03:09.665
+and fill down
+
+00:03:11.138 --> 00:03:15.253
+Yasmin in row 9 has 4.96 years of service
+
+00:03:15.487 --> 00:03:18.742
+just under five so her gratuity is zero for
+
+00:03:18.755 --> 00:03:19.120
+now
+
+00:03:20.575 --> 00:03:26.762
+Move the as-on date forward a month Type 2026-04-30
+
+00:03:26.775 --> 00:03:31.254
+in K1 and press Return Ages and service update
+
+00:03:31.267 --> 00:03:34.900
+for everyone and Yasmin crosses five years so a
+
+00:03:34.913 --> 00:03:36.788
+gratuity amount appears
+
+00:03:38.263 --> 00:03:39.747
+Here's a quick recap
+
+00:03:41.216 --> 00:03:46.374
+Your turn In column H find each employee's retirement
+
+00:03:46.387 --> 00:03:48.809
+date at sixty on the last day of the
+
+00:03:48.822 --> 00:03:50.359
+month they turn sixty

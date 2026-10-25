@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.343
+This purchase order tracker counts working days between order
+
+00:00:04.356 --> 00:00:07.533
+and promise for a five-day and a six-day week
+
+00:00:07.664 --> 00:00:10.984
+and works out delivery dates that skip weekends and
+
+00:00:10.997 --> 00:00:11.752
+holidays
+
+00:00:13.232 --> 00:00:15.237
+Here's the plan for this lesson
+
+00:00:16.700 --> 00:00:21.036
+NETWORKDAYS counts working days between two dates including both
+
+00:00:21.049 --> 00:00:25.348
+ends WORKDAY starts from a date and counts forward
+
+00:00:26.324 --> 00:00:28.955
+The dot INTL versions add a weekend code
+
+00:00:30.435 --> 00:00:36.414
+First the holiday list Open the sheet Holidays 2026
+
+00:00:37.312 --> 00:00:40.411
+It has the three national holidays which have fixed
+
+00:00:40.424 --> 00:00:44.604
+dates plus Christmas and four festivals with sample dates
+
+00:00:45.489 --> 00:00:50.046
+Replace the samples with your company's official list The
+
+00:00:50.060 --> 00:00:51.752
+dates are named Holidays
+
+00:00:53.200 --> 00:00:58.486
+Back on sheet S06-05 each purchase order has an
+
+00:00:58.499 --> 00:01:02.330
+order date and a promised date Click D2
+
+00:01:03.779 --> 00:01:07.998
+Type equals NETWORKDAYS of B2, comma C2, and press
+
+00:01:08.011 --> 00:01:12.062
+Return That counts Monday to Friday between the two
+
+00:01:12.075 --> 00:01:15.292
+dates including both ends 9 days
+
+00:01:16.779 --> 00:01:21.377
+That count ignores holidays Retype D2 with a third
+
+00:01:21.390 --> 00:01:25.857
+argument the name Holidays and fill down Row 2
+
+00:01:25.870 --> 00:01:29.867
+drops to 8 because Republic Day the twenty-sixth of
+
+00:01:29.880 --> 00:01:33.292
+January falls on a Monday inside that window
+
+00:01:34.779 --> 00:01:38.047
+Many Indian offices and factories work six days a
+
+00:01:38.060 --> 00:01:42.529
+week NETWORKDAYS dot INTL takes a weekend code and
+
+00:01:42.542 --> 00:01:46.669
+11 means only Sunday is off In E2, type
+
+00:01:46.682 --> 00:01:49.898
+it with B2, C2, 11 and Holidays then fill
+
+00:01:49.911 --> 00:01:50.354
+down
+
+00:01:51.825 --> 00:01:54.520
+Here are the weekend codes you'll use most
+
+00:01:55.997 --> 00:02:00.283
+WORKDAY goes the other way In G2, type equals
+
+00:02:00.296 --> 00:02:03.707
+WORKDAY of B2, the SLA in F2, and Holidays
+
+00:02:04.606 --> 00:02:07.405
+Press Return and fill down to get each delivery
+
+00:02:07.418 --> 00:02:11.364
+date The order date itself is not counted
+
+00:02:12.825 --> 00:02:18.322
+Look at PO-2605 in row 6 Seven working days
+
+00:02:18.335 --> 00:02:21.759
+from the twenty-eighth of September skips Gandhi Jayanti on
+
+00:02:21.772 --> 00:02:25.028
+Friday the second of October so delivery is on
+
+00:02:25.041 --> 00:02:26.929
+Thursday the eighth of October
+
+00:02:28.404 --> 00:02:34.656
+Now change an input PO-2601's SLA is renegotiated to
+
+00:02:34.669 --> 00:02:38.667
+ten working days Type 10 in F2 and press
+
+00:02:38.680 --> 00:02:42.417
+Return The delivery date moves to the fourth of
+
+00:02:42.430 --> 00:02:43.107
+February
+
+00:02:44.654 --> 00:02:46.138
+Here's a quick recap
+
+00:02:47.591 --> 00:02:51.890
+Your turn In column H work out the delivery
+
+00:02:51.903 --> 00:02:55.288
+date for a six-day week using WORKDAY dot INTL
+
+00:02:55.301 --> 00:02:58.140
+with weekend code 11 and the holiday list

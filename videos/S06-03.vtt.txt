@@ -1,0 +1,136 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.252
+This contract tracker shows each renewal date the last
+
+00:00:04.265 --> 00:00:06.713
+day of the start month and the invoice due
+
+00:00:06.726 --> 00:00:10.088
+date at the end of the next month All
+
+00:00:10.101 --> 00:00:13.330
+of it handles short months and leap years correctly
+
+00:00:14.825 --> 00:00:16.830
+Here's the plan for this lesson
+
+00:00:18.309 --> 00:00:22.491
+EDATE moves a date by whole months EOMONTH jumps
+
+00:00:22.504 --> 00:00:24.808
+to the last day of a month where zero
+
+00:00:24.821 --> 00:00:27.920
+means the same month 1 the next month and
+
+00:00:27.933 --> 00:00:29.665
+minus 1 the month before
+
+00:00:31.122 --> 00:00:37.140
+Open sheet S06-03 Each contract has a start date
+
+00:00:37.153 --> 00:00:40.317
+and a term in months Click D2 for the
+
+00:00:40.330 --> 00:00:41.215
+renewal date
+
+00:00:42.700 --> 00:00:46.908
+A tempting shortcut is thirty days per month Type
+
+00:00:46.921 --> 00:00:50.580
+equals B2 plus C2 times 30 and press Return
+
+00:00:51.478 --> 00:00:56.569
+Twelve months from the thirty-first of January 2026 comes out
+
+00:00:56.582 --> 00:01:02.767
+as the twenty-sixth of January 2027 Months aren't all thirty
+
+00:01:02.780 --> 00:01:03.210
+days
+
+00:01:04.684 --> 00:01:09.543
+EDATE adds whole months Retype D2 as equals EDATE
+
+00:01:09.556 --> 00:01:14.074
+of B2, comma C2, and press Return Now it's
+
+00:01:14.087 --> 00:01:19.569
+the thirty-first of January 2027 exactly twelve months on
+
+00:01:21.059 --> 00:01:25.723
+Fill down Look at Security services in row 6
+
+00:01:26.621 --> 00:01:29.733
+One month after the thirty-first of January is the
+
+00:01:29.746 --> 00:01:34.355
+twenty-eighth of February EDATE stops at the last valid
+
+00:01:34.368 --> 00:01:36.543
+day instead of spilling into March
+
+00:01:38.028 --> 00:01:41.283
+If a result ever shows as a five-digit number
+
+00:01:41.505 --> 00:01:45.673
+the cell is in General format Choose Short Date
+
+00:01:45.686 --> 00:01:48.642
+or a date format from the Number Format box
+
+00:01:48.655 --> 00:01:49.684
+on the Home tab
+
+00:01:51.137 --> 00:01:54.694
+EOMONTH gives the last day of a month In
+
+00:01:54.707 --> 00:01:59.551
+E2, type equals EOMONTH of B2, comma 0 Zero
+
+00:01:59.564 --> 00:02:02.689
+means the same month Fill down
+
+00:02:04.153 --> 00:02:06.458
+Many vendors are paid at the end of the
+
+00:02:06.471 --> 00:02:10.639
+following month In F2, type EOMONTH of B2, comma
+
+00:02:10.770 --> 00:02:13.465
+1 which gives the last day of the next
+
+00:02:13.478 --> 00:02:15.639
+month Fill down
+
+00:02:17.090 --> 00:02:19.356
+Here's a pro tip for the first day of
+
+00:02:19.369 --> 00:02:19.889
+a month
+
+00:02:21.387 --> 00:02:25.920
+Now change an input The generator rental was extended
+
+00:02:25.933 --> 00:02:30.035
+to three months Type 3 in C9 and press
+
+00:02:30.048 --> 00:02:33.954
+Return The renewal date moves to the thirty-first of
+
+00:02:33.967 --> 00:02:36.051
+March 2026
+
+00:02:37.512 --> 00:02:38.996
+Here's a quick recap
+
+00:02:40.465 --> 00:02:44.842
+Your turn In column G set a reminder one
+
+00:02:44.855 --> 00:02:48.918
+month before each renewal date Use EDATE with a
+
+00:02:48.931 --> 00:02:49.972
+negative number

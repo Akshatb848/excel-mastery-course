@@ -1,0 +1,157 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.278
+Here every joining date is broken into year month
+
+00:00:04.291 --> 00:00:07.208
+and day today's date and time update on their
+
+00:00:07.221 --> 00:00:10.815
+own and dates exported as three separate columns are
+
+00:00:10.828 --> 00:00:12.507
+rebuilt into real dates
+
+00:00:13.966 --> 00:00:15.971
+Here's the plan for this lesson
+
+00:00:17.434 --> 00:00:21.837
+TODAY and NOW take no arguments YEAR MONTH and
+
+00:00:21.850 --> 00:00:24.207
+DAY pull parts out of a date and HOUR
+
+00:00:24.220 --> 00:00:27.384
+and MINUTE do the same for a time DATE
+
+00:00:27.397 --> 00:00:30.183
+goes the other way and always takes the year
+
+00:00:30.196 --> 00:00:30.730
+first
+
+00:00:32.200 --> 00:00:38.192
+Open sheet S06-02 Column B has joining dates and
+
+00:00:38.205 --> 00:00:41.330
+HR wants the year month and day in separate
+
+00:00:41.343 --> 00:00:43.830
+columns Click C2
+
+00:00:45.309 --> 00:00:48.304
+Type equals YEAR of B2, press Return and fill
+
+00:00:48.317 --> 00:00:50.361
+down to C9 with Command D
+
+00:00:51.856 --> 00:00:54.838
+In D2, type equals MONTH of B2 and fill
+
+00:00:54.851 --> 00:00:58.707
+down Months come back as numbers from 1 to
+
+00:00:58.720 --> 00:00:59.293
+12
+
+00:01:00.763 --> 00:01:03.510
+In E2, type equals DAY of B2 and fill
+
+00:01:03.523 --> 00:01:06.755
+down Aditi joined on the fifteenth
+
+00:01:08.591 --> 00:01:13.072
+Now the live functions In I1, type equals TODAY
+
+00:01:13.215 --> 00:01:17.604
+open and close brackets and press Return It shows
+
+00:01:17.617 --> 00:01:21.197
+today's date and updates whenever the file recalculates
+
+00:01:22.653 --> 00:01:27.108
+In I2, type equals NOW with empty brackets NOW
+
+00:01:27.121 --> 00:01:29.100
+gives the date and the current time
+
+00:01:30.528 --> 00:01:34.189
+HOUR and MINUTE pull the time apart In I3,
+
+00:01:34.202 --> 00:01:36.936
+type HOUR of I2, and in I4, type MINUTE
+
+00:01:36.949 --> 00:01:37.692
+of I2
+
+00:01:40.278 --> 00:01:44.590
+Now the opposite job Many HR and bank systems
+
+00:01:44.603 --> 00:01:48.041
+export the year month and day in separate columns
+
+00:01:48.952 --> 00:01:53.119
+In D13, type equals DATE of A13, B13, C13,
+
+00:01:53.132 --> 00:01:55.697
+press Return and fill down to D16
+
+00:01:57.184 --> 00:02:02.262
+Row 16 asks for the thirtieth of February 2026 which
+
+00:02:02.275 --> 00:02:06.939
+doesn't exist DATE rolls the extra days into March
+
+00:02:06.952 --> 00:02:11.170
+and returns the second of March Useful for maths
+
+00:02:11.327 --> 00:02:13.579
+but worth checking in imported data
+
+00:02:15.028 --> 00:02:17.450
+In India we write the day first so a
+
+00:02:17.463 --> 00:02:20.249
+common slip is giving DATE the day first too
+
+00:02:21.150 --> 00:02:25.564
+Retype D13 as DATE of C13, B13, A13 and
+
+00:02:25.577 --> 00:02:30.746
+press Return You get a date in 1906 because DATE
+
+00:02:30.759 --> 00:02:32.595
+always reads the year first
+
+00:02:34.059 --> 00:02:36.989
+Put it back in year month day order and
+
+00:02:37.002 --> 00:02:37.848
+press Return
+
+00:02:41.559 --> 00:02:45.611
+The parts follow the source Aditi's joining date was
+
+00:02:45.624 --> 00:02:50.728
+corrected to the twentieth of May 2024 In B2, type
+
+00:02:50.741 --> 00:02:57.108
+2024-05-20 and press Return Year month and day update
+
+00:02:57.121 --> 00:02:57.746
+together
+
+00:02:59.231 --> 00:03:01.301
+One shortcut to know on a Mac
+
+00:03:02.763 --> 00:03:04.247
+Here's a quick recap
+
+00:03:05.731 --> 00:03:09.704
+Your turn In column F show the full month
+
+00:03:09.717 --> 00:03:13.389
+name of each joining date such as April using
+
+00:03:13.402 --> 00:03:15.251
+TEXT with the code mmmm
