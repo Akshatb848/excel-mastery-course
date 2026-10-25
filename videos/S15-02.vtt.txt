@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:02.635
+This is what you will see in your own
+
+00:00:02.648 --> 00:00:07.182
+Sheet View only the South region six rows At
+
+00:00:07.195 --> 00:00:10.645
+the same moment your colleagues still see all twenty-four
+
+00:00:10.658 --> 00:00:15.059
+rows And if someone breaks the file version history
+
+00:00:15.072 --> 00:00:17.169
+brings back last week's copy
+
+00:00:18.641 --> 00:00:21.753
+You will learn to open version history and restore
+
+00:00:21.766 --> 00:00:24.435
+an older copy and to filter or sort a
+
+00:00:24.448 --> 00:00:28.068
+shared file in a Sheet View without disturbing anyone
+
+00:00:28.969 --> 00:00:33.526
+Practice sheet S15-02 saved on OneDrive
+
+00:00:34.985 --> 00:00:38.214
+OneDrive keeps a copy of your file every time
+
+00:00:38.227 --> 00:00:42.708
+it saves Version history lists those copies by date
+
+00:00:42.721 --> 00:00:47.331
+and person Sheet View solves another problem in a
+
+00:00:47.344 --> 00:00:51.237
+shared file a normal filter hides rows for everyone
+
+00:00:52.703 --> 00:00:55.502
+Go to the File tab and click Info then
+
+00:00:55.516 --> 00:01:00.374
+Version History A list of saved versions opens newest
+
+00:01:00.387 --> 00:01:03.408
+first each with a date time and the person
+
+00:01:03.421 --> 00:01:04.346
+who saved it
+
+00:01:05.828 --> 00:01:10.049
+Click any older version to open it read-only If
+
+00:01:10.062 --> 00:01:12.692
+it is the one you want click Restore and
+
+00:01:12.705 --> 00:01:16.794
+it becomes the current version The version you replaced
+
+00:01:16.807 --> 00:01:19.333
+is kept in the list too so restoring is
+
+00:01:19.346 --> 00:01:20.205
+never final
+
+00:01:21.672 --> 00:01:24.732
+Close version history and go back to the sheet
+
+00:01:26.219 --> 00:01:30.323
+Now the common mistake Turn on the normal filter
+
+00:01:30.336 --> 00:01:34.021
+with Command Shift F If you filter Region to
+
+00:01:34.034 --> 00:01:37.614
+South now the other regions disappear for every colleague
+
+00:01:37.627 --> 00:01:39.125
+who has the file open
+
+00:01:40.594 --> 00:01:43.875
+Switch the filter off again with the same shortcut
+
+00:01:44.789 --> 00:01:47.810
+Instead on the View tab click New in the
+
+00:01:47.823 --> 00:01:51.742
+Sheet View group The row and column headings turn
+
+00:01:51.755 --> 00:01:54.229
+dark which tells you that you are in your
+
+00:01:54.242 --> 00:01:54.906
+own view
+
+00:01:56.360 --> 00:02:00.607
+Now filter freely Turn on the filter open the
+
+00:02:00.620 --> 00:02:04.188
+arrow on Region untick Select All tick South and
+
+00:02:04.201 --> 00:02:08.406
+click OK Only the six South rows remain but
+
+00:02:08.419 --> 00:02:09.292
+only for you
+
+00:02:10.750 --> 00:02:15.466
+Sort as well Select D1 and choose Sort Descending
+
+00:02:15.479 --> 00:02:18.838
+on the Data tab The South reps are now
+
+00:02:18.851 --> 00:02:22.432
+ranked by sales and still nobody else is affected
+
+00:02:23.875 --> 00:02:26.323
+To save this view click Keep on the View
+
+00:02:26.336 --> 00:02:29.448
+tab it is named Temporary View and you can
+
+00:02:29.461 --> 00:02:32.979
+rename it in Options To go back to what
+
+00:02:32.992 --> 00:02:35.036
+everyone sees click Exit
+
+00:02:36.516 --> 00:02:39.732
+Back in the Default view all twenty-four rows are
+
+00:02:39.745 --> 00:02:43.445
+there in their original order Your South view is
+
+00:02:43.458 --> 00:02:45.867
+one click away in the Sheet View list
+
+00:02:47.360 --> 00:02:50.928
+On a Mac Version History is under File Browse
+
+00:02:50.941 --> 00:02:53.831
+Version History or the file name at the top
+
+00:02:53.844 --> 00:02:57.076
+of the window Sheet View is on the View
+
+00:02:57.089 --> 00:03:02.011
+tab of Excel for Mac with Microsoft 365 for files
+
+00:03:02.024 --> 00:03:04.029
+on OneDrive or SharePoint
+
+00:03:05.500 --> 00:03:09.328
+To recap version history keeps every save and lets
+
+00:03:09.341 --> 00:03:13.341
+you restore one In a shared file filter and
+
+00:03:13.354 --> 00:03:17.247
+sort inside a Sheet View Exit returns you to
+
+00:03:17.260 --> 00:03:18.601
+what everyone sees
+
+00:03:20.078 --> 00:03:23.502
+Your challenge create a Sheet View that shows only
+
+00:03:23.516 --> 00:03:27.396
+May twenty-six sorted by sales from highest to lowest
+
+00:03:27.591 --> 00:03:31.695
+keep it and rename it May Ranking Compare your
+
+00:03:31.708 --> 00:03:33.544
+South view with the Done sheet

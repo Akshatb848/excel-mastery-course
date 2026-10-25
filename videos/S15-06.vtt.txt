@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.146
+This GST tax invoice is saved as a template
+
+00:00:05.046 --> 00:00:08.341
+Every new invoice starts from a clean copy so
+
+00:00:08.354 --> 00:00:12.572
+the master is never overwritten It also passes the
+
+00:00:12.585 --> 00:00:16.999
+Accessibility Checker so people using screen readers can follow
+
+00:00:17.013 --> 00:00:17.299
+it
+
+00:00:18.766 --> 00:00:21.813
+You will learn to run the Accessibility Checker and
+
+00:00:21.826 --> 00:00:26.045
+fix three common issues missing alt text merged cells
+
+00:00:26.058 --> 00:00:29.706
+and faint text Then you will save the file
+
+00:00:29.719 --> 00:00:35.982
+as your own template Practice sheet S15-06 recorded in
+
+00:00:35.995 --> 00:00:37.114
+Excel desktop
+
+00:00:38.594 --> 00:00:42.318
+The checker sorts problems into errors which make content
+
+00:00:42.331 --> 00:00:45.768
+impossible to read with a screen reader and warnings
+
+00:00:45.925 --> 00:00:49.794
+which make it harder Each item has a recommended
+
+00:00:49.807 --> 00:00:50.302
+fix
+
+00:00:51.766 --> 00:00:57.211
+Go to sheet S15-06 On the Review tab click
+
+00:00:57.224 --> 00:01:02.133
+Check Accessibility The pane lists missing alternative text for
+
+00:01:02.146 --> 00:01:05.896
+Picture 1 merged cells in A1 to F1, and
+
+00:01:05.909 --> 00:01:07.940
+hard-to-read text in A30
+
+00:01:09.406 --> 00:01:11.997
+Click Picture 1 in the pane to select the
+
+00:01:12.010 --> 00:01:16.530
+logo On the Picture Format tab click Alt Text
+
+00:01:16.726 --> 00:01:21.609
+and type Shree Ganesh Traders logo A screen reader
+
+00:01:21.622 --> 00:01:22.989
+will now read that out
+
+00:01:24.453 --> 00:01:29.520
+Next the title Merged cells confuse screen readers and
+
+00:01:29.533 --> 00:01:34.169
+break sorting and copying Select A1 to F1 and
+
+00:01:34.182 --> 00:01:36.656
+click Merge and Center on the Home tab to
+
+00:01:36.669 --> 00:01:37.463
+unmerge it
+
+00:01:38.953 --> 00:01:42.575
+The title jumps to the left To centre it
+
+00:01:42.588 --> 00:01:46.260
+without merging press Command 1 go to the Alignment
+
+00:01:46.273 --> 00:01:50.557
+tab set Horizontal to Center Across Selection and click
+
+00:01:50.570 --> 00:01:54.489
+OK It looks the same without the merge
+
+00:01:55.953 --> 00:01:59.443
+Last the thank-you line in A30 is pale grey
+
+00:01:59.456 --> 00:02:04.067
+on white which many people can't read Select A30,
+
+00:02:04.080 --> 00:02:06.841
+open Font Color on the Home tab and choose
+
+00:02:06.854 --> 00:02:07.674
+Automatic
+
+00:02:09.156 --> 00:02:12.999
+Now the template The common mistake is to keep
+
+00:02:13.012 --> 00:02:16.853
+one invoice file overwrite it every time and lose
+
+00:02:16.866 --> 00:02:21.710
+last month's invoice Press F12 for Save As set
+
+00:02:21.723 --> 00:02:25.421
+the type to Excel Template name it GST Invoice
+
+00:02:25.434 --> 00:02:27.348
+Template and click Save
+
+00:02:28.813 --> 00:02:32.420
+From now on choose File New and open the
+
+00:02:32.433 --> 00:02:37.747
+Personal tab Click GST Invoice Template and Excel opens
+
+00:02:37.760 --> 00:02:41.276
+an untitled copy You fill it in and save
+
+00:02:41.289 --> 00:02:44.271
+it as a normal workbook and the template stays
+
+00:02:44.284 --> 00:02:44.779
+clean
+
+00:02:46.234 --> 00:02:50.075
+On a Mac the checker is Review Check Accessibility
+
+00:02:50.989 --> 00:02:54.921
+For alt text Control-click the picture and choose Edit
+
+00:02:54.934 --> 00:02:59.192
+Alt Text Save a template with File Save as
+
+00:02:59.205 --> 00:03:03.111
+Template and find it under File New from Template
+
+00:03:04.578 --> 00:03:08.601
+To recap run the Accessibility Checker before you share
+
+00:03:09.580 --> 00:03:13.760
+Give pictures alt text centre across selection instead of
+
+00:03:13.773 --> 00:03:18.721
+merging and keep text dark Save reusable forms as
+
+00:03:18.734 --> 00:03:19.450
+templates
+
+00:03:20.922 --> 00:03:24.294
+Your challenge the checker may still suggest renaming the
+
+00:03:24.307 --> 00:03:27.315
+sheet and turning the item rows into a table
+
+00:03:28.216 --> 00:03:32.669
+Do both until it reports no issues The answer
+
+00:03:32.682 --> 00:03:33.971
+is on the Done sheet

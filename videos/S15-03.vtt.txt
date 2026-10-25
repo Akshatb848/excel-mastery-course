@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:05.372
+This budget request form goes to every department People
+
+00:00:05.385 --> 00:00:08.236
+can type in the yellow cells but the GST
+
+00:00:08.250 --> 00:00:11.453
+and total formulas are locked and hidden and nobody
+
+00:00:11.466 --> 00:00:15.854
+can delete or rename the sheet That stops accidental
+
+00:00:15.867 --> 00:00:16.479
+damage
+
+00:00:17.953 --> 00:00:20.857
+You will learn to unlock input cells lock and
+
+00:00:20.870 --> 00:00:24.828
+hide formulas protect the sheet and protect the workbook
+
+00:00:24.841 --> 00:00:32.187
+structure Practice sheet S15-03 This is recorded in Excel
+
+00:00:32.200 --> 00:00:34.518
+desktop the Mac menus match
+
+00:00:36.000 --> 00:00:39.607
+Every cell starts out Locked but Locked does nothing
+
+00:00:39.620 --> 00:00:43.424
+until you protect the sheet So the order is
+
+00:00:43.658 --> 00:00:46.979
+first unlock the cells people should type in then
+
+00:00:46.992 --> 00:00:48.072
+protect the sheet
+
+00:00:49.563 --> 00:00:54.161
+First the common mistake On the Review tab click
+
+00:00:54.174 --> 00:00:58.445
+Protect Sheet and click OK straight away Now try
+
+00:00:58.458 --> 00:01:03.562
+to correct a quantity in B8 Excel refuses because
+
+00:01:03.576 --> 00:01:07.221
+every cell including the inputs is still locked
+
+00:01:08.688 --> 00:01:12.753
+Click Unprotect Sheet on the Review tab Now select
+
+00:01:12.766 --> 00:01:16.086
+the input cells B3 to B4, and A7 to
+
+00:01:16.099 --> 00:01:17.492
+C11, together
+
+00:01:18.953 --> 00:01:23.057
+Press Command 1 to open Format Cells Go to
+
+00:01:23.070 --> 00:01:26.637
+the Protection tab untick Locked and click OK
+
+00:01:28.094 --> 00:01:33.656
+Next the formulas Select D7 to F12, open Format
+
+00:01:33.669 --> 00:01:36.807
+Cells again and on the Protection tab tick Hidden
+
+00:01:37.719 --> 00:01:40.896
+Hidden formulas won't show in the formula bar once
+
+00:01:40.909 --> 00:01:42.211
+the sheet is protected
+
+00:01:43.688 --> 00:01:47.714
+Now click Protect Sheet You can type a password
+
+00:01:47.727 --> 00:01:50.943
+here but if you forget it nobody can recover
+
+00:01:50.956 --> 00:01:54.836
+it so store it safely We'll leave it blank
+
+00:01:54.849 --> 00:01:56.646
+for practice and click OK
+
+00:01:58.141 --> 00:02:01.763
+Test it The brochure quote has come down to
+
+00:02:01.776 --> 00:02:05.187
+eight thousand rupees so type eight thousand in C9
+
+00:02:06.086 --> 00:02:09.055
+It works and the total in F12 drops to
+
+00:02:09.068 --> 00:02:12.896
+three lakh twenty-five thousand four hundred and forty-four rupees
+
+00:02:14.391 --> 00:02:19.015
+Click F12 The formula bar is empty because the
+
+00:02:19.029 --> 00:02:23.612
+formula is hidden Try typing over it and Excel
+
+00:02:23.625 --> 00:02:27.427
+shows the protected sheet message Click OK
+
+00:02:28.891 --> 00:02:32.680
+Sheet protection doesn't stop someone deleting or renaming the
+
+00:02:32.693 --> 00:02:36.927
+sheet For that click Protect Workbook on the Review
+
+00:02:36.940 --> 00:02:41.797
+tab keep Structure ticked and click OK Sheets can
+
+00:02:41.810 --> 00:02:45.390
+no longer be added deleted moved or renamed
+
+00:02:46.844 --> 00:02:51.167
+Pro tip sheet protection is about preventing mistakes not
+
+00:02:51.180 --> 00:02:56.690
+security Anyone determined can get around it To keep
+
+00:02:56.703 --> 00:03:00.075
+a file confidential set a password to open it
+
+00:03:00.284 --> 00:03:02.745
+or share it only with the right people on
+
+00:03:02.758 --> 00:03:03.565
+OneDrive
+
+00:03:05.032 --> 00:03:08.417
+On a Mac Format Cells is Command 1 with
+
+00:03:08.430 --> 00:03:12.886
+the same Protection tab Protect Sheet and Protect Workbook
+
+00:03:12.899 --> 00:03:16.505
+are on the Review tab A password to open
+
+00:03:16.518 --> 00:03:18.862
+the file is under File Passwords
+
+00:03:20.328 --> 00:03:24.377
+To recap unlock inputs first hide formulas if you
+
+00:03:24.391 --> 00:03:28.598
+like then protect the sheet Protect the workbook to
+
+00:03:28.611 --> 00:03:33.716
+lock the sheet structure Protection prevents accidents it isn't
+
+00:03:33.729 --> 00:03:34.510
+encryption
+
+00:03:36.016 --> 00:03:39.675
+Your challenge unprotect the sheet and protect it again
+
+00:03:39.688 --> 00:03:43.282
+so that users can still widen columns but nothing
+
+00:03:43.295 --> 00:03:47.268
+else changes The answer is on the Done sheet

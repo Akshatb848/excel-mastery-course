@@ -1,0 +1,190 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.925
+This is the team's expense claims sheet after review
+
+00:00:04.825 --> 00:00:07.794
+One claim had a question about a hotel bill
+
+00:00:07.989 --> 00:00:11.687
+it was asked answered and resolved inside the file
+
+00:00:11.817 --> 00:00:15.867
+and the claim is now approved Nobody emailed a
+
+00:00:15.880 --> 00:00:17.299
+copy back and forth
+
+00:00:18.781 --> 00:00:20.995
+You will learn to share a link with view
+
+00:00:21.008 --> 00:00:23.833
+or edit rights to work on the same file
+
+00:00:23.846 --> 00:00:26.620
+at the same time as colleagues and to use
+
+00:00:26.633 --> 00:00:32.780
+comments and notes properly Practice sheet S15-01 in a
+
+00:00:32.794 --> 00:00:34.590
+file saved on OneDrive
+
+00:00:36.047 --> 00:00:39.695
+Two ideas to keep straight A comment is a
+
+00:00:39.708 --> 00:00:44.148
+conversation people reply mention each other and resolve it
+
+00:00:44.161 --> 00:00:47.859
+when done A note is a simple sticky label
+
+00:00:47.872 --> 00:00:49.942
+on a cell with no replies
+
+00:00:51.406 --> 00:00:55.236
+Start with sharing Click the Share button at the
+
+00:00:55.249 --> 00:00:59.142
+top right Excel offers to send a link or
+
+00:00:59.156 --> 00:01:03.257
+copy one The setting under the link decides whether
+
+00:01:03.270 --> 00:01:05.379
+people can edit or only view
+
+00:01:06.859 --> 00:01:09.606
+For a finance report going to the whole team
+
+00:01:09.750 --> 00:01:13.215
+choose Can view For colleagues who fill in their
+
+00:01:13.228 --> 00:01:17.213
+own rows choose Can edit Close the box for
+
+00:01:17.226 --> 00:01:18.293
+now with Escape
+
+00:01:19.750 --> 00:01:22.953
+When colleagues open the same link you see their
+
+00:01:22.966 --> 00:01:25.557
+initials at the top and a coloured box on
+
+00:01:25.570 --> 00:01:30.091
+the cell they are in Everyone's changes save automatically
+
+00:01:30.221 --> 00:01:32.473
+so there is only ever one version
+
+00:01:33.953 --> 00:01:38.304
+Now a comment Karan's hotel claim in F5 is
+
+00:01:38.317 --> 00:01:42.913
+eighteen thousand six hundred rupees Select F5, and on
+
+00:01:42.926 --> 00:01:44.945
+the Review tab click New Comment
+
+00:01:46.437 --> 00:01:49.835
+Type hotel bill for this claim is missing please
+
+00:01:49.848 --> 00:01:54.395
+attach it before approval Press Command Return to post
+
+00:01:55.293 --> 00:01:57.806
+In real use type an at sign and a
+
+00:01:57.819 --> 00:02:00.384
+colleague's name to tag them and they get an
+
+00:02:00.397 --> 00:02:00.866
+email
+
+00:02:02.328 --> 00:02:06.783
+Karan replies in the same thread Click Reply type
+
+00:02:07.044 --> 00:02:10.403
+uploaded to the claims folder today and post it
+
+00:02:11.301 --> 00:02:14.270
+The whole conversation stays attached to the cell
+
+00:02:15.750 --> 00:02:18.563
+A common mistake is to delete comments once they
+
+00:02:18.576 --> 00:02:24.072
+are sorted That throws away the record Instead open
+
+00:02:24.085 --> 00:02:28.135
+More thread actions and choose Resolve thread It is
+
+00:02:28.148 --> 00:02:29.736
+hidden but can be reopened
+
+00:02:31.203 --> 00:02:35.775
+Now approve the claim Click G5, type Approved and
+
+00:02:35.788 --> 00:02:36.635
+press Return
+
+00:02:38.109 --> 00:02:42.994
+For a permanent explanation use a note Select F9,
+
+00:02:43.007 --> 00:02:46.770
+the eight hundred and seventy rupee client gift On
+
+00:02:46.783 --> 00:02:49.908
+the Review tab click Notes then New Note type
+
+00:02:49.921 --> 00:02:51.848
+the reason and press Escape
+
+00:02:53.328 --> 00:02:56.297
+Pro tip click Show Comments on the Review tab
+
+00:02:56.310 --> 00:02:59.917
+to see every thread in one pane including resolved
+
+00:02:59.930 --> 00:03:03.265
+ones It is the quickest way to check what
+
+00:03:03.278 --> 00:03:05.166
+is still open before month-end
+
+00:03:06.609 --> 00:03:08.953
+On a Mac the Share button is at the
+
+00:03:08.966 --> 00:03:11.804
+top right of the Excel window and the file
+
+00:03:11.817 --> 00:03:16.155
+must be on OneDrive or SharePoint New Comment is
+
+00:03:16.168 --> 00:03:19.983
+Command Shift M Notes are under Review Notes just
+
+00:03:19.997 --> 00:03:20.648
+like here
+
+00:03:22.156 --> 00:03:25.164
+To recap share a link and choose view or
+
+00:03:25.177 --> 00:03:29.840
+edit Use comments for conversations and resolve them when
+
+00:03:29.853 --> 00:03:33.760
+done Use notes for permanent explanations
+
+00:03:35.234 --> 00:03:38.932
+Your challenge add a comment on F12 asking whether
+
+00:03:38.945 --> 00:03:42.630
+the travel claim needs a manager's approval reply to
+
+00:03:42.643 --> 00:03:47.046
+it yourself and resolve it Compare with the Done
+
+00:03:47.059 --> 00:03:47.567
+sheet

@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.508
+Here is a sixty-row sales register set up for
+
+00:00:03.521 --> 00:00:08.013
+printing landscape on A4, one page wide headings repeated
+
+00:00:08.026 --> 00:00:10.982
+on every page a page number in the footer
+
+00:00:11.125 --> 00:00:14.851
+and a page break where we chose It prints
+
+00:00:15.007 --> 00:00:18.406
+or saves as a PDF exactly like this
+
+00:00:19.859 --> 00:00:22.659
+You will learn to set a print area repeat
+
+00:00:22.672 --> 00:00:25.549
+the heading row fit all columns on one page
+
+00:00:25.562 --> 00:00:29.169
+wide add headers and footers insert a page break
+
+00:00:29.182 --> 00:00:35.655
+and create a PDF Practice sheet S15-04 recorded in
+
+00:00:35.668 --> 00:00:36.775
+Excel desktop
+
+00:00:38.250 --> 00:00:42.927
+Most print problems come from three settings Print Area
+
+00:00:42.940 --> 00:00:47.367
+decides what prints Print Titles repeat the header row
+
+00:00:47.380 --> 00:00:51.520
+on every page Fit to one page wide stops
+
+00:00:51.533 --> 00:00:54.867
+the last columns from spilling onto extra pages
+
+00:00:56.328 --> 00:01:01.185
+Go to sheet S15-04 and select A1 to I62,
+
+00:01:01.198 --> 00:01:04.768
+the register and its total row On the Page
+
+00:01:04.781 --> 00:01:08.413
+Layout tab click Print Area Set Print Area
+
+00:01:09.891 --> 00:01:13.917
+Click Print Titles In Rows to repeat at top
+
+00:01:14.177 --> 00:01:18.552
+type dollar one colon dollar one Every printed page
+
+00:01:18.565 --> 00:01:20.687
+will now start with the column headings
+
+00:01:22.172 --> 00:01:26.744
+Switch to the Page tab Choose Landscape paper size
+
+00:01:26.757 --> 00:01:31.276
+A4 Under Scaling choose Fit to one page wide
+
+00:01:31.458 --> 00:01:34.440
+and clear the tall box so Excel uses as
+
+00:01:34.453 --> 00:01:36.276
+many pages as it needs
+
+00:01:37.719 --> 00:01:40.532
+A common mistake is Fit sheet on one page
+
+00:01:41.432 --> 00:01:44.804
+Sixty rows squeezed onto one sheet of paper become
+
+00:01:44.817 --> 00:01:48.698
+too small to read One page wide with the
+
+00:01:48.711 --> 00:01:52.330
+length left blank is almost always what you want
+
+00:01:53.797 --> 00:01:56.323
+On the Header and Footer tab pick the sheet
+
+00:01:56.336 --> 00:01:58.927
+name for the header and Page 1 of question
+
+00:01:58.940 --> 00:02:01.833
+mark for the footer Click OK
+
+00:02:03.312 --> 00:02:06.971
+The register should break after the first thirty invoices
+
+00:02:07.871 --> 00:02:11.322
+Select A31, then on the Page Layout tab choose
+
+00:02:11.335 --> 00:02:13.379
+Breaks Insert Page Break
+
+00:02:14.844 --> 00:02:18.948
+On the View tab click Page Break Preview Blue
+
+00:02:18.961 --> 00:02:22.203
+lines show each page with Page 1 and Page
+
+00:02:22.216 --> 00:02:25.705
+2 written across them You can drag a blue
+
+00:02:25.719 --> 00:02:27.060
+line to move a break
+
+00:02:28.531 --> 00:02:33.859
+Switch back to Normal view Now the PDF Go
+
+00:02:33.872 --> 00:02:39.536
+to File Export Create PDF slash XPS Name it
+
+00:02:39.549 --> 00:02:43.598
+S15-04 Sales Register and click Publish
+
+00:02:45.062 --> 00:02:48.877
+Pro tip before printing anything long check the page
+
+00:02:48.890 --> 00:02:52.499
+count in the print preview If it says twelve
+
+00:02:52.512 --> 00:02:55.767
+pages when you expected two a stray cell far
+
+00:02:55.780 --> 00:02:58.762
+to the right has probably stretched the printed range
+
+00:03:00.250 --> 00:03:03.805
+On a Mac Print Area Print Titles and Breaks
+
+00:03:03.818 --> 00:03:07.557
+are on the Page Layout tab The full dialog
+
+00:03:07.570 --> 00:03:12.101
+is File Page Setup For a PDF choose File
+
+00:03:12.231 --> 00:03:15.955
+Save As and set File Format to PDF or
+
+00:03:15.968 --> 00:03:19.210
+press Command P and choose Save as PDF
+
+00:03:20.672 --> 00:03:24.214
+To recap set the print area repeat the heading
+
+00:03:24.227 --> 00:03:27.809
+row and fit to one page wide Add a
+
+00:03:27.823 --> 00:03:32.158
+page number footer and check page breaks Save as
+
+00:03:32.172 --> 00:03:33.343
+PDF to share
+
+00:03:34.844 --> 00:03:37.839
+Your challenge add your company name to the right
+
+00:03:37.852 --> 00:03:42.164
+side of the footer and print gridlines Compare your
+
+00:03:42.177 --> 00:03:44.117
+page setup with the Done sheet
