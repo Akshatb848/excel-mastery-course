@@ -1,0 +1,193 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.432
+Every formula error in Excel starts with a hash
+
+00:00:03.445 --> 00:00:07.692
+sign and each one tells you something different On
+
+00:00:07.705 --> 00:00:10.921
+this sheet eight broken formulas sit next to their
+
+00:00:10.934 --> 00:00:15.439
+fixes Once you can read them errors become clues
+
+00:00:15.452 --> 00:00:16.754
+instead of problems
+
+00:00:18.200 --> 00:00:22.705
+You'll meet DIV zero N A NAME REF VALUE
+
+00:00:22.822 --> 00:00:26.429
+NUM CALC and SPILL learn what causes each one
+
+00:00:26.572 --> 00:00:32.004
+and fix them The practice sheet is S03-07
+
+00:00:33.496 --> 00:00:37.430
+Here's the cheat sheet Read the error and it
+
+00:00:37.443 --> 00:00:38.719
+tells you where to look
+
+00:00:40.200 --> 00:00:45.033
+Hash DIV zero means division by zero B2 divides
+
+00:00:45.046 --> 00:00:48.640
+Shrikhand's revenue by its units and none have sold
+
+00:00:48.653 --> 00:00:53.822
+yet In C2, check first equals IF F2 equals
+
+00:00:53.835 --> 00:00:57.989
+0 then 0 otherwise G2 divided by F2
+
+00:00:59.450 --> 00:01:03.111
+Hash N A means a lookup found nothing Ghee
+
+00:01:03.124 --> 00:01:06.913
+isn't in our product list XLOOKUP has a fourth
+
+00:01:06.926 --> 00:01:10.754
+argument for exactly this so in C3 add Not
+
+00:01:10.767 --> 00:01:14.140
+listed in quotes as the if-not-found value
+
+00:01:15.606 --> 00:01:18.926
+Hash NAME means Excel doesn't recognise a word in
+
+00:01:18.939 --> 00:01:24.658
+the formula B4 says SUMM with two M's Fix
+
+00:01:24.671 --> 00:01:27.913
+the spelling in C4 equals SUM of G2 to
+
+00:01:27.926 --> 00:01:28.681
+G6
+
+00:01:30.137 --> 00:01:34.788
+Hash REF means a reference that doesn't exist B5
+
+00:01:34.801 --> 00:01:37.860
+asks INDEX for item 7 of a five-row list
+
+00:01:38.759 --> 00:01:41.480
+You'll also see it after deleting a row or
+
+00:01:41.493 --> 00:01:45.816
+column that a formula used In C5, ask for
+
+00:01:45.829 --> 00:01:46.728
+item 5
+
+00:01:48.184 --> 00:01:52.483
+Hash VALUE means the wrong type of data B6
+
+00:01:52.496 --> 00:01:56.467
+divides by F4, and F4 says 12 pcs which
+
+00:01:56.480 --> 00:01:59.996
+is text The fix is in the data not
+
+00:02:00.009 --> 00:02:00.842
+in the formula
+
+00:02:02.340 --> 00:02:06.808
+Type just 12 in F4 B6 recovers on its
+
+00:02:06.821 --> 00:02:10.871
+own and the same formula in C6 gives 120
+
+00:02:10.884 --> 00:02:12.160
+rupees per unit
+
+00:02:13.668 --> 00:02:16.741
+Hash NUM means the maths has no valid answer
+
+00:02:16.871 --> 00:02:19.462
+like the square root of a negative number in
+
+00:02:19.475 --> 00:02:23.579
+B7 In real sheets you'll see it from IRR
+
+00:02:23.592 --> 00:02:27.576
+or RATE when they can't find a solution C7
+
+00:02:27.589 --> 00:02:30.207
+takes the square root of 25 instead
+
+00:02:31.668 --> 00:02:36.071
+Hash CALC comes from the newer functions In B8,
+
+00:02:36.084 --> 00:02:39.287
+type equals FILTER of the products where revenue is
+
+00:02:39.300 --> 00:02:44.001
+over one lakh No product qualifies so FILTER has
+
+00:02:44.014 --> 00:02:45.147
+nothing to return
+
+00:02:46.621 --> 00:02:49.889
+FILTER's third argument says what to show when nothing
+
+00:02:49.902 --> 00:02:54.318
+matches In C8, type the same formula with None
+
+00:02:54.540 --> 00:02:56.897
+in quotes as the third argument
+
+00:02:58.418 --> 00:03:03.056
+Last hash SPILL In I2, type equals SORT of
+
+00:03:03.069 --> 00:03:07.222
+E2 to E6 The answer needs five cells going
+
+00:03:07.235 --> 00:03:10.451
+down but I4 already has a note in it
+
+00:03:10.582 --> 00:03:12.417
+so the result has no room
+
+00:03:13.887 --> 00:03:18.303
+Select I4 and press Delete The sorted list spills
+
+00:03:18.316 --> 00:03:20.413
+into I2 to I6 straight away
+
+00:03:21.903 --> 00:03:24.559
+When you meet an error select the cell and
+
+00:03:24.572 --> 00:03:28.259
+click the warning icon beside it It names the
+
+00:03:28.272 --> 00:03:32.087
+problem and offers Show Calculation Steps which walks through
+
+00:03:32.100 --> 00:03:34.119
+the formula one part at a time
+
+00:03:35.590 --> 00:03:39.681
+To recap Each error names its cause so read
+
+00:03:39.694 --> 00:03:43.808
+it before you change anything Fix the data when
+
+00:03:43.821 --> 00:03:47.858
+the data is wrong And use the built-in fallbacks
+
+00:03:48.001 --> 00:03:51.386
+like XLOOKUP's if-not-found and FILTER's if-empty
+
+00:03:52.887 --> 00:03:58.045
+Your challenge In C11, show Shrikhand's revenue per unit
+
+00:03:58.254 --> 00:04:01.600
+G2 divided by F2, but show 0 instead of
+
+00:04:01.613 --> 00:04:07.915
+an error using IFERROR The answer is on S03-07
+
+00:04:07.928 --> 00:04:08.332
+Done

@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.640
+This is a monthly sales summary for a twelve-person
+
+00:00:03.653 --> 00:00:07.833
+team totals the average the lowest and highest sales
+
+00:00:07.963 --> 00:00:12.314
+and four different counts Six functions and you'll see
+
+00:00:12.327 --> 00:00:14.749
+why three of them count different things
+
+00:00:16.232 --> 00:00:20.203
+You'll total columns with AutoSum use AVERAGE MIN and
+
+00:00:20.216 --> 00:00:24.409
+MAX and see how COUNT COUNTA and COUNTBLANK differ
+
+00:00:25.323 --> 00:00:28.760
+The practice sheet is S03-03
+
+00:00:30.279 --> 00:00:34.344
+All of these take a range SUM adds AVERAGE
+
+00:00:34.357 --> 00:00:37.208
+finds the mean and MIN and MAX find the
+
+00:00:37.221 --> 00:00:42.755
+smallest and largest COUNT counts numbers only COUNTA counts
+
+00:00:42.768 --> 00:00:47.312
+anything that isn't empty and COUNTBLANK counts empty cells
+
+00:00:48.779 --> 00:00:52.490
+Select C14, under the sales column and press Command
+
+00:00:52.503 --> 00:00:57.049
+Shift T That's AutoSum Excel writes SUM and guesses
+
+00:00:57.062 --> 00:00:59.914
+the range above C2 to C13
+
+00:01:01.388 --> 00:01:06.442
+Press Return The team sold fifty-five lakh fifty-five thousand
+
+00:01:06.455 --> 00:01:08.291
+four hundred rupees this month
+
+00:01:09.763 --> 00:01:14.361
+Now D14, for customer visits Press Command Shift T
+
+00:01:14.374 --> 00:01:17.695
+again and look at the range AutoSum guessed only
+
+00:01:17.708 --> 00:01:22.018
+D11 to D13 It stopped at the blank cell
+
+00:01:22.031 --> 00:01:22.864
+in D10
+
+00:01:24.341 --> 00:01:27.779
+The range is still selected inside the formula so
+
+00:01:27.792 --> 00:01:32.755
+just type D2 colon D13 and press Return Always
+
+00:01:32.768 --> 00:01:35.710
+check what AutoSum picked before you press Return
+
+00:01:37.185 --> 00:01:41.953
+Now the summary In G2, type equals AVERAGE open
+
+00:01:41.966 --> 00:01:47.187
+bracket C2 colon C13, close bracket In G3, the
+
+00:01:47.200 --> 00:01:48.164
+same with MIN
+
+00:01:49.654 --> 00:01:53.601
+And in G4, MAX The average sale is about
+
+00:01:53.614 --> 00:01:57.052
+four lakh sixty-three thousand rupees the lowest is two
+
+00:01:57.065 --> 00:02:00.724
+lakh seventy-four thousand and the highest is seven lakh
+
+00:02:00.737 --> 00:02:01.609
+two thousand
+
+00:02:03.107 --> 00:02:07.758
+Now counting In G5, type equals COUNT of D2
+
+00:02:07.771 --> 00:02:13.135
+to D13 The answer is 10 COUNT only counts
+
+00:02:13.148 --> 00:02:16.091
+numbers so it skips On leave and the blank
+
+00:02:16.104 --> 00:02:16.521
+cell
+
+00:02:17.997 --> 00:02:22.151
+COUNTA counts anything that isn't empty so G6 gives
+
+00:02:22.164 --> 00:02:26.944
+11 ten numbers plus the words On leave COUNTBLANK
+
+00:02:26.957 --> 00:02:30.382
+in G7 counts the empty cells just 1
+
+00:02:31.841 --> 00:02:34.875
+For the team size many people type COUNT of
+
+00:02:34.888 --> 00:02:39.213
+the names A2 to A13 The answer is zero
+
+00:02:39.369 --> 00:02:42.989
+because names are text and COUNT only counts numbers
+
+00:02:44.466 --> 00:02:49.012
+Use COUNTA for text Type equals COUNTA of A2
+
+00:02:49.025 --> 00:02:51.760
+to A13, and the team size is 12
+
+00:02:53.216 --> 00:02:56.823
+AutoSum's arrow on the Home tab also offers Average
+
+00:02:56.966 --> 00:03:00.247
+Count Numbers Max and Min. And if you select
+
+00:03:00.260 --> 00:03:03.672
+several columns plus the empty row below them one
+
+00:03:03.685 --> 00:03:06.536
+AutoSum totals every column at once
+
+00:03:07.997 --> 00:03:12.140
+On a Mac AutoSum is Command Shift T When
+
+00:03:12.153 --> 00:03:15.733
+you type a function name Formula AutoComplete shows a
+
+00:03:15.746 --> 00:03:20.030
+list Press Tab to accept the highlighted function and
+
+00:03:20.043 --> 00:03:21.241
+its open bracket
+
+00:03:22.716 --> 00:03:27.080
+To recap AutoSum is quick but check its range
+
+00:03:27.965 --> 00:03:32.523
+AVERAGE MIN and MAX ignore text and blanks And
+
+00:03:32.536 --> 00:03:36.702
+use COUNT for numbers COUNTA for anything and COUNTBLANK
+
+00:03:36.715 --> 00:03:37.445
+for gaps
+
+00:03:38.919 --> 00:03:43.231
+Your challenge In G9, find the average number of
+
+00:03:43.244 --> 00:03:48.088
+customer visits Think about which cells AVERAGE will include
+
+00:03:48.986 --> 00:03:52.671
+The answer is on S03-03 Done

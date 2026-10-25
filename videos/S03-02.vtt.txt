@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.601
+Here's GST worked out for six invoices from a
+
+00:00:03.614 --> 00:00:06.947
+single rate cell and a discount price list where
+
+00:00:06.960 --> 00:00:10.999
+one formula fills the whole grid Both depend on
+
+00:00:11.012 --> 00:00:14.371
+one idea telling Excel which parts of a reference
+
+00:00:14.384 --> 00:00:17.171
+should move when you copy a formula and which
+
+00:00:17.184 --> 00:00:18.095
+should stay put
+
+00:00:19.575 --> 00:00:22.283
+You'll see why a formula breaks when you copy
+
+00:00:22.296 --> 00:00:25.512
+it lock a cell with dollar signs using Command
+
+00:00:25.526 --> 00:00:29.642
+T and use mixed references for a grid The
+
+00:00:29.655 --> 00:00:32.832
+practice sheet is S03-02
+
+00:00:34.278 --> 00:00:37.755
+A normal reference is relative copy it down and
+
+00:00:37.768 --> 00:00:40.593
+the row changes copy it right and the column
+
+00:00:40.606 --> 00:00:45.087
+changes A dollar sign freezes the part that follows
+
+00:00:45.100 --> 00:00:49.020
+it Command T cycles through the four versions
+
+00:00:50.481 --> 00:00:54.075
+In C2, multiply the taxable value by the GST
+
+00:00:54.088 --> 00:00:59.480
+rate in F1 equals B2 star F1 Press Return
+
+00:01:00.379 --> 00:01:03.309
+Twenty-two thousand five hundred rupees correct
+
+00:01:04.810 --> 00:01:07.688
+Now fill it down to C7 with Command D
+
+00:01:08.601 --> 00:01:10.502
+Every other row shows zero
+
+00:01:11.966 --> 00:01:15.729
+Select C3 and look at the formula bar B3
+
+00:01:15.742 --> 00:01:20.484
+times F2 Excel moved both references down a row
+
+00:01:21.382 --> 00:01:24.598
+B3 is right but F2 is empty so the
+
+00:01:24.611 --> 00:01:25.939
+GST is zero
+
+00:01:27.419 --> 00:01:30.557
+Go back to C2 and type the formula again
+
+00:01:30.856 --> 00:01:36.223
+equals B2 star F1 Before pressing Return press Command
+
+00:01:36.236 --> 00:01:40.546
+T Excel adds dollar signs dollar F dollar 1 which
+
+00:01:40.559 --> 00:01:42.161
+lock the column and the row
+
+00:01:43.653 --> 00:01:48.004
+Fill down again Every row now uses F1, and
+
+00:01:48.017 --> 00:01:51.715
+C3 shows fifteen thousand two hundred and twenty-eight rupees
+
+00:01:53.200 --> 00:01:56.299
+Change the rate in F1 to 12 percent and
+
+00:01:56.312 --> 00:02:00.181
+all six rows update Then press Command Z to
+
+00:02:00.194 --> 00:02:01.587
+go back to 18
+
+00:02:03.075 --> 00:02:06.684
+Now the price list Each price is the list
+
+00:02:06.697 --> 00:02:09.861
+price in column B times 1 minus the discount
+
+00:02:09.874 --> 00:02:14.327
+in row 11 Select the whole grid C12 to
+
+00:02:14.340 --> 00:02:18.598
+E16 We'll type one formula and send it to
+
+00:02:18.611 --> 00:02:19.470
+every cell
+
+00:02:20.935 --> 00:02:24.568
+Type equals B12, and press Command T three times
+
+00:02:25.494 --> 00:02:28.802
+The first press locks both the second only the
+
+00:02:28.815 --> 00:02:32.317
+row the third only the column dollar B 12
+
+00:02:33.203 --> 00:02:36.458
+Column B must stay fixed whichever column the formula
+
+00:02:36.471 --> 00:02:37.239
+lands in
+
+00:02:38.716 --> 00:02:42.909
+Type star open bracket 1 minus C11, and press
+
+00:02:42.922 --> 00:02:46.281
+Command T twice to get C dollar 11 so row
+
+00:02:46.294 --> 00:02:50.906
+11 stays fixed Close the bracket and press Command
+
+00:02:50.919 --> 00:02:53.106
+Return to fill all fifteen cells
+
+00:02:54.575 --> 00:02:58.572
+Check E16 dollar B 16 times 1 minus E
+
+00:02:58.585 --> 00:03:04.121
+dollar 11 Column B stayed row 11 stayed and everything
+
+00:03:04.134 --> 00:03:08.392
+else moved The conference table at fifteen percent off
+
+00:03:08.405 --> 00:03:11.843
+is thirty-nine thousand five hundred and twenty-five rupees
+
+00:03:13.341 --> 00:03:16.557
+On a Mac Command T toggles the dollar signs
+
+00:03:16.570 --> 00:03:20.674
+while you're typing a formula F4 does the same
+
+00:03:20.843 --> 00:03:23.682
+but most MacBooks need the Function key for it
+
+00:03:25.153 --> 00:03:29.973
+To recap Relative references move when copied which is
+
+00:03:29.986 --> 00:03:34.100
+usually what you want Lock a single input cell
+
+00:03:34.113 --> 00:03:38.176
+with dollar signs And for grids lock just the
+
+00:03:38.189 --> 00:03:39.699
+column or just the row
+
+00:03:41.185 --> 00:03:45.796
+Your challenge Add a 20 percent discount column type
+
+00:03:45.809 --> 00:03:49.794
+20 percent in F11, then fill F12 to F16
+
+00:03:49.807 --> 00:03:53.427
+with the same mixed formula The answer is on
+
+00:03:53.440 --> 00:03:55.875
+S03-02 Done

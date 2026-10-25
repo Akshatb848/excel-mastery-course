@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.625
+The company pays a ten percent bonus on profit
+
+00:00:03.638 --> 00:00:08.458
+after the bonus itself That's circular and Excel says
+
+00:00:08.471 --> 00:00:12.338
+so This sheet solves it with a little algebra
+
+00:00:12.533 --> 00:00:15.750
+and you'll also see how manual calculation can leave
+
+00:00:15.763 --> 00:00:17.468
+old numbers on screen
+
+00:00:18.937 --> 00:00:23.169
+You'll compare automatic and manual calculation then find and
+
+00:00:23.182 --> 00:00:27.715
+fix a circular reference Error Checking and the calculation
+
+00:00:27.728 --> 00:00:30.723
+messages are shown in the Excel desktop app
+
+00:00:32.187 --> 00:00:37.593
+Normally Excel recalculates after every change In Manual mode
+
+00:00:37.606 --> 00:00:41.694
+it waits until you ask A circular reference is
+
+00:00:41.707 --> 00:00:45.340
+a formula that depends on its own result directly
+
+00:00:45.353 --> 00:00:46.916
+or through other cells
+
+00:00:48.375 --> 00:00:52.568
+Profit before bonus is twenty-five lakh rupees in B1
+
+00:00:53.468 --> 00:00:56.580
+The bonus is ten percent of profit after bonus
+
+00:00:56.723 --> 00:01:00.304
+and B4 already subtracts the bonus in B3 from
+
+00:01:00.317 --> 00:01:00.916
+B1
+
+00:01:02.390 --> 00:01:05.919
+In B3, type the bonus the obvious way equals
+
+00:01:05.932 --> 00:01:10.777
+B4 star B2 Press Return and Excel warns about
+
+00:01:10.791 --> 00:01:15.556
+a circular reference B3 needs B4, and B4 needs
+
+00:01:15.569 --> 00:01:16.207
+B3
+
+00:01:17.672 --> 00:01:22.375
+Click OK B3 shows zero and the status bar
+
+00:01:22.388 --> 00:01:25.851
+at the bottom names the circular cell On a
+
+00:01:25.864 --> 00:01:30.864
+big sheet Formulas Error Checking Circular References lists where
+
+00:01:30.877 --> 00:01:31.385
+they are
+
+00:01:32.844 --> 00:01:36.622
+Break the loop with algebra If the bonus is
+
+00:01:36.635 --> 00:01:40.008
+ten percent of profit minus bonus then the bonus
+
+00:01:40.021 --> 00:01:45.229
+is profit times ten percent divided by 1.1 In
+
+00:01:45.242 --> 00:01:49.317
+B3, type equals B1 star B2, divided by open
+
+00:01:49.330 --> 00:01:52.169
+bracket 1 plus B2, close bracket
+
+00:01:53.640 --> 00:01:56.726
+The bonus is two lakh twenty-seven thousand two hundred
+
+00:01:56.739 --> 00:02:01.376
+and seventy-three rupees D2 checks it ten percent of
+
+00:02:01.389 --> 00:02:04.137
+profit after bonus gives the same figure
+
+00:02:05.609 --> 00:02:10.442
+Now the calculation setting On the Formulas tab open
+
+00:02:10.455 --> 00:02:15.325
+Calculation Options and choose Manual People switch to Manual
+
+00:02:15.338 --> 00:02:17.629
+on very large slow workbooks
+
+00:02:19.109 --> 00:02:25.687
+Profit is revised to thirty lakh Type 3000000 in
+
+00:02:25.700 --> 00:02:30.348
+B1 and press Return The bonus hasn't changed and
+
+00:02:30.361 --> 00:02:34.671
+the status bar says Calculate The numbers on screen
+
+00:02:34.684 --> 00:02:35.960
+are now out of date
+
+00:02:37.437 --> 00:02:41.619
+Press F9 to calculate now On a MacBook that's
+
+00:02:41.632 --> 00:02:46.423
+Function F9, or Command equals The bonus updates to
+
+00:02:46.436 --> 00:02:50.265
+two lakh seventy-two thousand seven hundred and twenty-seven rupees
+
+00:02:51.750 --> 00:02:56.335
+Switch back to Automatic straight away A workbook saved
+
+00:02:56.348 --> 00:02:59.434
+in Manual mode can quietly show wrong numbers to
+
+00:02:59.447 --> 00:03:01.401
+the next person who opens it
+
+00:03:02.875 --> 00:03:06.182
+If a loop is truly intended Excel can repeat
+
+00:03:06.195 --> 00:03:10.703
+the calculation until it settles On Windows that's in
+
+00:03:10.716 --> 00:03:16.901
+File Options Formulas On a Mac it's Excel Preferences
+
+00:03:17.031 --> 00:03:22.734
+Calculation Limit iteration Use it rarely a rewritten formula
+
+00:03:22.747 --> 00:03:23.528
+is clearer
+
+00:03:25.031 --> 00:03:28.547
+On a Mac Calculation Options is on the Formulas
+
+00:03:28.560 --> 00:03:32.583
+tab too and Calculate Now is Command equals or
+
+00:03:32.596 --> 00:03:33.859
+Function F9
+
+00:03:35.328 --> 00:03:40.408
+To recap Keep calculation on Automatic unless a workbook
+
+00:03:40.421 --> 00:03:44.145
+is too slow and recalculate before you trust numbers
+
+00:03:44.158 --> 00:03:48.377
+in Manual A circular reference means a formula needs
+
+00:03:48.390 --> 00:03:52.075
+its own result and algebra usually breaks the loop
+
+00:03:53.547 --> 00:03:57.494
+Your challenge In B6, work out the bonus if
+
+00:03:57.507 --> 00:04:00.724
+the rate were 12 percent instead of 10 without
+
+00:04:00.737 --> 00:04:06.401
+changing B2 The answer is on S03-09 Done

@@ -1,0 +1,109 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.822
+Here's the commission sheet for a twelve-person sales team
+
+00:00:03.835 --> 00:00:07.796
+in Maharashtra and beyond Sales are in and the
+
+00:00:07.809 --> 00:00:11.168
+commission rate two and a half percent sits in
+
+00:00:11.181 --> 00:00:14.879
+H1 Your job is to finish the sheet
+
+00:00:16.371 --> 00:00:19.301
+The five tasks are on the right from column
+
+00:00:19.314 --> 00:00:23.728
+J commission with an absolute rate cell rounding totals
+
+00:00:23.897 --> 00:00:26.202
+a summary and a test of the rate
+
+00:00:27.684 --> 00:00:30.848
+Pause the video now and try all five tasks
+
+00:00:30.861 --> 00:00:36.098
+on sheet S03-10 When you're done press play to
+
+00:00:36.111 --> 00:00:37.295
+watch the solution
+
+00:00:38.762 --> 00:00:44.389
+Here's the solution Task one In D2, type equals
+
+00:00:44.402 --> 00:00:48.061
+C2 star H1, press Command T to lock H1,
+
+00:00:48.074 --> 00:00:52.123
+and press Return Then fill down to D13 with
+
+00:00:52.136 --> 00:00:52.931
+Command D
+
+00:00:54.387 --> 00:00:58.478
+Task two In E2, type equals MROUND of D2,
+
+00:00:58.491 --> 00:01:02.814
+comma 10 and fill down Amit's commission of twelve
+
+00:01:02.827 --> 00:01:06.655
+thousand one hundred and eighty-three rupees seventy-five paise becomes
+
+00:01:06.668 --> 00:01:08.751
+twelve thousand one hundred and eighty
+
+00:01:10.215 --> 00:01:13.600
+Notice D2 shows twelve thousand one hundred and eighty-four
+
+00:01:14.527 --> 00:01:18.681
+That's only the format hiding the paise E2 is
+
+00:01:18.694 --> 00:01:20.282
+the truly rounded figure
+
+00:01:21.793 --> 00:01:26.769
+Task three Select C14 to E14 and press Command
+
+00:01:26.782 --> 00:01:30.376
+Shift T AutoSum totals all three columns at once
+
+00:01:31.840 --> 00:01:36.907
+Task four In H4 to H7, type AVERAGE MAX
+
+00:01:36.920 --> 00:01:39.563
+and MIN of C2 to C13, and COUNTA of
+
+00:01:39.576 --> 00:01:41.569
+the names in A2 to A13
+
+00:01:45.481 --> 00:01:51.408
+Task five Change H1 to 3 percent Every commission
+
+00:01:51.642 --> 00:01:55.548
+every rounded figure and every total updates because they
+
+00:01:55.561 --> 00:01:57.371
+all point at H1
+
+00:01:58.871 --> 00:02:01.384
+Set it back to 2.5 percent
+
+00:02:04.340 --> 00:02:09.824
+Compare your sheet with S03-10 Answers If the totals
+
+00:02:09.837 --> 00:02:13.261
+match you've used every core formula skill from this
+
+00:02:13.274 --> 00:02:13.860
+section
+
+00:02:15.340 --> 00:02:19.912
+Well done You used an absolute rate cell MROUND
+
+00:02:20.069 --> 00:02:25.342
+AutoSum and the summary functions together Next we'll organise
+
+00:02:25.355 --> 00:02:28.311
+data into tables sort it and filter it

@@ -1,0 +1,163 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.211
+On this sheet GST uses a cell named GST
+
+00:00:04.224 --> 00:00:07.049
+Rate instead of a cell address and the zone
+
+00:00:07.063 --> 00:00:11.153
+totals read SUM of North SUM of South These
+
+00:00:11.166 --> 00:00:14.018
+are formulas you can read out loud with one
+
+00:00:14.031 --> 00:00:16.244
+rate cell that drives the whole sheet
+
+00:00:17.703 --> 00:00:20.555
+You'll name a single cell use the name in
+
+00:00:20.568 --> 00:00:24.643
+formulas create several names at once from headings and
+
+00:00:24.656 --> 00:00:28.577
+manage them in the Name Manager This lesson is
+
+00:00:28.591 --> 00:00:31.872
+recorded in the Excel desktop app which has the
+
+00:00:31.885 --> 00:00:34.762
+same Formulas tab as Excel for Mac
+
+00:00:36.203 --> 00:00:38.377
+A name is a label for a cell or
+
+00:00:38.391 --> 00:00:42.520
+range Names start with a letter or an underscore
+
+00:00:42.703 --> 00:00:45.880
+can't contain spaces and can't look like a cell
+
+00:00:45.893 --> 00:00:50.294
+address Names always point to the same place so
+
+00:00:50.307 --> 00:00:52.077
+they never need dollar signs
+
+00:00:53.563 --> 00:00:58.318
+Select G1, the GST rate On the Formulas tab
+
+00:00:58.448 --> 00:00:59.594
+click Define Name
+
+00:01:01.375 --> 00:01:05.125
+Type GST Rate with a space and click OK
+
+00:01:06.026 --> 00:01:11.208
+Excel refuses because the name isn't valid Names can't
+
+00:01:11.221 --> 00:01:12.419
+contain spaces
+
+00:01:13.875 --> 00:01:16.688
+Click OK on the message change the name to
+
+00:01:16.701 --> 00:01:21.976
+GST underscore Rate and click OK Refers to already
+
+00:01:21.989 --> 00:01:23.916
+points at G1 on this sheet
+
+00:01:25.406 --> 00:01:29.390
+In C2, type equals B2 star GST underscore Rate
+
+00:01:30.304 --> 00:01:33.533
+As you type the name appears in the AutoComplete
+
+00:01:33.546 --> 00:01:35.877
+list Press Return
+
+00:01:37.360 --> 00:01:41.750
+Fill it down to C7 No dollar signs needed
+
+00:01:41.985 --> 00:01:44.875
+because a name always points to the same cell
+
+00:01:45.774 --> 00:01:48.625
+Then in D2, add B2 and C2, and fill
+
+00:01:48.638 --> 00:01:49.576
+that down too
+
+00:01:51.031 --> 00:01:55.825
+Suppose the rate changes Type 12 percent in G1,
+
+00:01:55.838 --> 00:01:59.900
+and every GST figure updates Then put it back
+
+00:01:59.913 --> 00:02:01.202
+to 18 percent
+
+00:02:02.672 --> 00:02:06.698
+Now four names in one go Select F3 to
+
+00:02:06.711 --> 00:02:10.708
+I9, the zone table with its headings Click Create
+
+00:02:10.721 --> 00:02:14.471
+from Selection tick Top row only and click OK
+
+00:02:15.382 --> 00:02:18.182
+Each column is now named after its heading
+
+00:02:19.641 --> 00:02:24.070
+In B11, type equals SUM of North Then SUM
+
+00:02:24.083 --> 00:02:26.961
+of South East and West in the cells below
+
+00:02:27.872 --> 00:02:31.896
+Anyone reading these formulas knows exactly what they add
+
+00:02:33.360 --> 00:02:36.485
+Open Name Manager on the Formulas tab to see
+
+00:02:36.498 --> 00:02:39.519
+every name what it refers to and its scope
+
+00:02:40.419 --> 00:02:44.417
+You can edit or delete names here Click Close
+
+00:02:45.891 --> 00:02:49.263
+On a Mac the Formulas tab has Define Name
+
+00:02:49.498 --> 00:02:53.862
+Create from Selection and Name Manager The quickest way
+
+00:02:53.875 --> 00:02:56.453
+to name one cell is to select it type
+
+00:02:56.466 --> 00:02:59.305
+the name in the Name Box and press Return
+
+00:03:00.781 --> 00:03:05.340
+To recap Name your inputs like a GST rate
+
+00:03:05.484 --> 00:03:10.405
+and formulas become readable Create from Selection names whole
+
+00:03:10.418 --> 00:03:14.559
+columns from their headings And Name Manager is where
+
+00:03:14.572 --> 00:03:16.109
+you check and tidy names
+
+00:03:17.610 --> 00:03:22.182
+Your challenge Name B2 to B7 Taxable and in
+
+00:03:22.195 --> 00:03:26.258
+B8 total it with SUM of Taxable The answer
+
+00:03:26.271 --> 00:03:29.227
+is on S03-06 Done
