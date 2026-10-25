@@ -1,0 +1,187 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:05.517
+This branch revenue sheet speaks Indian Revenue shows lakh
+
+00:00:05.530 --> 00:00:09.215
+and crore commas marketing spend shows in thousands with
+
+00:00:09.228 --> 00:00:12.991
+a K revenue also shows in crores falling growth
+
+00:00:13.004 --> 00:00:17.327
+turns red and units carry a label Every cell
+
+00:00:17.340 --> 00:00:19.033
+still holds a real number
+
+00:00:20.512 --> 00:00:24.106
+You'll write custom number formats for Indian digit grouping
+
+00:00:24.262 --> 00:00:27.426
+K and crore labels red negatives with a dash
+
+00:00:27.439 --> 00:00:33.314
+for zero and units The practice sheet is S02-03
+
+00:00:34.825 --> 00:00:37.781
+A custom format can have up to four sections
+
+00:00:37.924 --> 00:00:44.502
+separated by semicolons positive negative zero and text Zero
+
+00:00:44.515 --> 00:00:48.499
+means a digit that always shows Hash means a
+
+00:00:48.512 --> 00:00:52.327
+digit if needed Text goes in quotes and a
+
+00:00:52.340 --> 00:00:55.244
+colour or a condition goes in square brackets
+
+00:00:56.716 --> 00:01:01.393
+Start with revenue Select B2 to B12, press Command
+
+00:01:01.406 --> 00:01:03.163
+1 and choose Custom
+
+00:01:07.997 --> 00:01:11.905
+In the Type box enter this format It has
+
+00:01:11.918 --> 00:01:16.202
+three parts Numbers of one crore or more use
+
+00:01:16.215 --> 00:01:20.317
+the crore pattern Numbers of one lakh or more
+
+00:01:20.330 --> 00:01:25.460
+use the lakh pattern Everything smaller uses normal thousands
+
+00:01:26.934 --> 00:01:32.157
+Click OK Pune now reads eighteen crore forty-five lakh
+
+00:01:32.314 --> 00:01:36.337
+sixty-two thousand three hundred rupees with the commas exactly
+
+00:01:36.350 --> 00:01:38.564
+where an Indian reader expects them
+
+00:01:40.028 --> 00:01:44.496
+Marketing spend is easier to scan in thousands Select
+
+00:01:44.509 --> 00:01:48.572
+C2 to C12 and use this format The comma
+
+00:01:48.585 --> 00:01:51.410
+after the digits divides by a thousand and the
+
+00:01:51.423 --> 00:01:55.330
+K in quotes is a label Eight lakh forty-five
+
+00:01:55.343 --> 00:01:58.637
+thousand shows as 845 . 0K
+
+00:02:00.153 --> 00:02:03.161
+A comma can only divide by a thousand and
+
+00:02:03.174 --> 00:02:06.051
+a crore is ten million so column D already
+
+00:02:06.064 --> 00:02:10.220
+divides revenue by one crore with a formula Give
+
+00:02:10.233 --> 00:02:15.533
+it the format rupee 0.00 space Cr Pune shows
+
+00:02:15.546 --> 00:02:17.473
+18.46 Cr
+
+00:02:18.919 --> 00:02:23.685
+For growth use three sections positive negative and zero
+
+00:02:24.585 --> 00:02:28.088
+Negatives turn red and zero shows as a dash
+
+00:02:28.986 --> 00:02:33.049
+Mumbai Aurangabad and Ratnagiri now stand out in red
+
+00:02:33.205 --> 00:02:35.653
+and Nagpur's zero is a quiet dash
+
+00:02:37.106 --> 00:02:41.874
+Now the units Nagpur's figure was typed as 1250
+
+00:02:41.887 --> 00:02:45.480
+units with the word It sits on the left
+
+00:02:45.676 --> 00:02:48.957
+so it's text and the total in F12 quietly
+
+00:02:48.970 --> 00:02:49.947
+leaves it out
+
+00:02:51.434 --> 00:02:55.759
+Type just 1250 and press Return The total in
+
+00:02:55.772 --> 00:02:58.558
+F12 goes up by one thousand two hundred and
+
+00:02:58.571 --> 00:02:59.105
+fifty
+
+00:03:00.606 --> 00:03:04.540
+Now add the word with a format instead Select
+
+00:03:04.553 --> 00:03:08.121
+F2 to F12 and enter hash comma hash hash
+
+00:03:08.134 --> 00:03:12.783
+zero then space units in quotes The label shows
+
+00:03:12.913 --> 00:03:14.749
+and the numbers still add up
+
+00:03:16.200 --> 00:03:19.416
+Your custom formats are saved in the workbook at
+
+00:03:19.429 --> 00:03:23.155
+the bottom of the Custom list To reuse one
+
+00:03:23.168 --> 00:03:26.567
+on another sheet copy it with Format Painter
+
+00:03:28.044 --> 00:03:31.234
+On a Mac the dialog is the same Command
+
+00:03:31.247 --> 00:03:36.119
+1 Number Custom To type the rupee sign use
+
+00:03:36.132 --> 00:03:40.364
+the Indian English keyboard layout or press Control Command
+
+00:03:40.377 --> 00:03:43.189
+and Space to open Emoji and Symbols
+
+00:03:44.653 --> 00:03:49.095
+To recap Conditions in square brackets give lakh and
+
+00:03:49.108 --> 00:03:53.561
+crore commas A trailing comma divides by a thousand
+
+00:03:53.718 --> 00:03:57.702
+and crores need a formula And labels belong in
+
+00:03:57.715 --> 00:04:00.215
+the format never typed into the cell
+
+00:04:01.700 --> 00:04:06.377
+Your challenge In H2 to H11, show the marketing
+
+00:04:06.390 --> 00:04:11.338
+spend in lakh like 8.45 L Divide by one lakh
+
+00:04:11.351 --> 00:04:14.476
+with a formula then add a custom format with
+
+00:04:14.489 --> 00:04:19.749
+an L label The answer is on S02-03 Done

@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.951
+This is the quarterly sales report for Sahyadri Agro
+
+00:00:03.964 --> 00:00:08.028
+Foods It has a centred title a dark heading
+
+00:00:08.041 --> 00:00:10.684
+row clean borders and a double line under the
+
+00:00:10.697 --> 00:00:15.190
+totals Nothing fancy but it looks like something you
+
+00:00:15.203 --> 00:00:16.674
+can send to your manager
+
+00:00:18.172 --> 00:00:22.104
+You'll format fonts fills and borders wrap long headings
+
+00:00:22.235 --> 00:00:25.633
+centre a title without merging cells and copy a
+
+00:00:25.646 --> 00:00:31.533
+look with Format Painter The practice sheet is S02-01
+
+00:00:33.016 --> 00:00:36.651
+Most of this lives on the Home tab For
+
+00:00:36.664 --> 00:00:39.893
+anything the ribbon doesn't show press Command 1 to
+
+00:00:39.906 --> 00:00:44.021
+open Format Cells which has tabs for numbers alignment
+
+00:00:44.164 --> 00:00:45.987
+font border and fill
+
+00:00:47.438 --> 00:00:51.581
+Start with the title in A1 Press Command B
+
+00:00:51.594 --> 00:00:55.005
+for bold then click Increase Font Size three times
+
+00:00:55.018 --> 00:00:58.130
+on the Home tab from 11 up to 16
+
+00:01:02.313 --> 00:01:05.620
+Most people centre a title by selecting A1 to
+
+00:01:05.633 --> 00:01:09.880
+E1 and clicking Merge and Center It looks fine
+
+00:01:11.344 --> 00:01:14.742
+But now try to select only column C Excel
+
+00:01:14.755 --> 00:01:17.959
+grabs A to E because the merged cell spans
+
+00:01:17.972 --> 00:01:21.463
+them Merged cells also get in the way of
+
+00:01:21.476 --> 00:01:25.343
+sorting filtering and pasting which is why many finance
+
+00:01:25.357 --> 00:01:26.580
+teams avoid them
+
+00:01:28.063 --> 00:01:31.357
+Undo with Command Z Select A1 to E1 again
+
+00:01:31.370 --> 00:01:35.344
+and press Command 1 to open Format Cells On
+
+00:01:35.357 --> 00:01:39.628
+the Alignment tab set Horizontal to Center Across Selection
+
+00:01:39.758 --> 00:01:44.068
+and click OK Same look but every cell stays
+
+00:01:44.081 --> 00:01:44.745
+separate
+
+00:01:46.219 --> 00:01:48.732
+Do the same for the subtitle in row 2
+
+00:01:48.979 --> 00:01:53.042
+select A2 to E2, Command 1 Center Across Selection
+
+00:01:54.531 --> 00:01:58.622
+Now the heading row Select A4 to E4 and
+
+00:01:58.635 --> 00:02:01.525
+press Command B Open the Fill Color menu and
+
+00:02:01.538 --> 00:02:05.653
+pick Dark Blue from the standard colours Then open
+
+00:02:05.666 --> 00:02:07.411
+Font Color and pick White
+
+00:02:08.891 --> 00:02:12.617
+E4 has a long heading Select it and click
+
+00:02:12.630 --> 00:02:15.651
+Wrap Text so the words wrap inside the cell
+
+00:02:15.664 --> 00:02:20.143
+instead of spilling over Then select B4 to E4
+
+00:02:20.156 --> 00:02:21.224
+and click Center
+
+00:02:22.719 --> 00:02:27.200
+Select the whole table A4 to E11 Open the
+
+00:02:27.213 --> 00:02:29.778
+Borders menu and choose All Borders
+
+00:02:31.250 --> 00:02:34.883
+For the total row select A11 to E11, press
+
+00:02:34.896 --> 00:02:38.255
+Command B and choose Top and Double Bottom Border
+
+00:02:39.156 --> 00:02:42.606
+Accountants read a double line as the final total
+
+00:02:44.063 --> 00:02:47.214
+The targets table below needs the same heading look
+
+00:02:48.115 --> 00:02:51.370
+Select A4 to C4, click Format Painter on the
+
+00:02:51.383 --> 00:02:56.383
+Home tab then select A14 to C14 Only the
+
+00:02:56.396 --> 00:02:58.596
+look is copied not the text
+
+00:03:00.078 --> 00:03:04.362
+Double-click Format Painter instead of single-clicking and it stays
+
+00:03:04.375 --> 00:03:07.148
+on so you can paint several places in a
+
+00:03:07.161 --> 00:03:10.328
+row Press Escape to switch it off
+
+00:03:11.813 --> 00:03:15.290
+On a Mac Command 1 opens Format Cells and
+
+00:03:15.303 --> 00:03:18.493
+Command B I and U give bold italic and
+
+00:03:18.506 --> 00:03:22.805
+underline Format Painter is the paintbrush on the Home
+
+00:03:22.818 --> 00:03:26.542
+tab and Format Cells in the menu bar opens
+
+00:03:26.555 --> 00:03:27.714
+the same dialog
+
+00:03:29.188 --> 00:03:34.411
+To recap Use Center Across Selection not Merge for
+
+00:03:34.424 --> 00:03:38.435
+titles Use Wrap Text for long headings and a
+
+00:03:38.448 --> 00:03:43.161
+double bottom border for totals And Format Painter copies
+
+00:03:43.174 --> 00:03:44.333
+a look in two clicks
+
+00:03:45.797 --> 00:03:51.476
+Your challenge Finish the targets table Give A14 to
+
+00:03:51.489 --> 00:03:55.682
+C20 All Borders make A13 bold and centre it
+
+00:03:55.695 --> 00:04:02.088
+across A13 to C13 Compare with S02-01 Done

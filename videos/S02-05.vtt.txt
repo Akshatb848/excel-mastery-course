@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:05.318
+This GST sales register has 150 invoices and eleven
+
+00:00:05.331 --> 00:00:09.421
+columns In the finished version the heading row and
+
+00:00:09.434 --> 00:00:12.729
+the first three columns stay on screen however far
+
+00:00:12.742 --> 00:00:16.934
+you scroll A small setting that makes long sheets
+
+00:00:16.947 --> 00:00:17.559
+readable
+
+00:00:19.032 --> 00:00:22.678
+You'll freeze rows and columns split the window and
+
+00:00:22.691 --> 00:00:26.441
+switch between Normal Page Layout and Page Break Preview
+
+00:00:27.341 --> 00:00:30.219
+Split and the page views aren't in Excel for
+
+00:00:30.232 --> 00:00:32.914
+the web so this lesson is recorded in the
+
+00:00:32.927 --> 00:00:33.891
+desktop app
+
+00:00:35.360 --> 00:00:38.550
+Freeze Panes keeps everything above and to the left
+
+00:00:38.563 --> 00:00:42.315
+of the selected cell in place Split gives you
+
+00:00:42.328 --> 00:00:44.633
+two or four panes of the same sheet that
+
+00:00:44.646 --> 00:00:45.844
+scroll separately
+
+00:00:47.328 --> 00:00:50.049
+On the practice sheet jump to the bottom with
+
+00:00:50.062 --> 00:00:54.010
+Command and the down arrow The headings have gone
+
+00:00:54.140 --> 00:00:56.874
+so you can't tell column G from column K
+
+00:00:56.887 --> 00:00:58.606
+without scrolling back up
+
+00:01:00.063 --> 00:01:05.326
+First Split Go back to the top select A75,
+
+00:01:05.339 --> 00:01:08.542
+and on the View tab click Split You get
+
+00:01:08.555 --> 00:01:11.224
+two panes of the same sheet each with its
+
+00:01:11.237 --> 00:01:14.141
+own scroll bar so you can compare the first
+
+00:01:14.154 --> 00:01:16.185
+invoices with the last ones
+
+00:01:17.657 --> 00:01:19.727
+Click Split again to remove it
+
+00:01:21.219 --> 00:01:25.375
+The View tab also has page views Page Layout
+
+00:01:25.388 --> 00:01:28.942
+shows the sheet as printed pages with margins and
+
+00:01:28.955 --> 00:01:31.234
+headers and footers you can click into
+
+00:01:32.688 --> 00:01:36.034
+Page Break Preview shows where each page ends with
+
+00:01:36.047 --> 00:01:38.430
+blue lines you can drag to fit more on
+
+00:01:38.443 --> 00:01:39.055
+a page
+
+00:01:40.500 --> 00:01:42.193
+Click Normal to come back
+
+00:01:43.844 --> 00:01:47.557
+Now freezing A common slip is to select a
+
+00:01:47.570 --> 00:01:50.422
+cell in the middle like A10, and click Freeze
+
+00:01:50.435 --> 00:01:55.630
+Panes Excel freezes everything above row 10 nine rows
+
+00:01:55.643 --> 00:01:57.192
+that eat half the screen
+
+00:01:58.657 --> 00:02:01.443
+Go back to the top and choose Freeze Panes
+
+00:02:01.587 --> 00:02:02.824
+Unfreeze Panes
+
+00:02:04.282 --> 00:02:07.420
+The rule select the cell just below the rows
+
+00:02:07.628 --> 00:02:10.311
+and just right of the columns that you want
+
+00:02:10.324 --> 00:02:13.763
+to keep We want row 1 and column A
+
+00:02:13.907 --> 00:02:16.667
+so select B2, and choose Freeze Panes
+
+00:02:18.125 --> 00:02:20.794
+Jump to the bottom then to the far right
+
+00:02:21.682 --> 00:02:24.390
+The headings stay at the top and the invoice
+
+00:02:24.403 --> 00:02:26.018
+numbers stay on the left
+
+00:02:27.500 --> 00:02:30.664
+Freeze Panes is saved with the file so everyone
+
+00:02:30.677 --> 00:02:34.611
+who opens it sees the same frozen headings Go
+
+00:02:34.625 --> 00:02:37.437
+back home to A1 before you save so the
+
+00:02:37.450 --> 00:02:39.013
+sheet opens at the top
+
+00:02:40.453 --> 00:02:44.112
+On a Mac Freeze Panes Freeze Top Row Freeze
+
+00:02:44.125 --> 00:02:46.703
+First Column and Split are all on the View
+
+00:02:46.716 --> 00:02:50.104
+tab The page views are also in the View
+
+00:02:50.117 --> 00:02:51.640
+menu in the menu bar
+
+00:02:53.110 --> 00:02:56.706
+To recap Select the cell below and to the
+
+00:02:56.719 --> 00:02:59.297
+right of what you want to keep then Freeze
+
+00:02:59.310 --> 00:03:04.688
+Panes Split compares two parts of one sheet And
+
+00:03:04.701 --> 00:03:07.474
+Page Break Preview shows where the pages end
+
+00:03:08.969 --> 00:03:12.968
+Your challenge Change the freeze so that row 1
+
+00:03:12.982 --> 00:03:16.679
+and the first three columns invoice number date and
+
+00:03:16.692 --> 00:03:23.112
+customer stay visible S02-05 Done is frozen that way

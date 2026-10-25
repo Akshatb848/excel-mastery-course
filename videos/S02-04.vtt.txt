@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.547
+Here's an expense claims list styled in a few
+
+00:00:03.560 --> 00:00:07.128
+clicks a Title style on top a banded table
+
+00:00:07.141 --> 00:00:09.602
+with a total row and a colour theme that
+
+00:00:09.615 --> 00:00:13.197
+sets the look of the whole workbook Change the
+
+00:00:13.210 --> 00:00:16.557
+theme and everything built on it changes together
+
+00:00:18.031 --> 00:00:21.091
+You'll apply cell styles turn a range into a
+
+00:00:21.104 --> 00:00:23.982
+styled table with a total row and change the
+
+00:00:23.995 --> 00:00:28.450
+workbook theme Themes aren't available in Excel for the
+
+00:00:28.463 --> 00:00:31.679
+web so this lesson is recorded in the desktop
+
+00:00:31.692 --> 00:00:32.030
+app
+
+00:00:33.500 --> 00:00:37.237
+Cell styles are named looks like Title Heading 1
+
+00:00:37.250 --> 00:00:41.367
+and Total Table styles format a whole table at
+
+00:00:41.380 --> 00:00:45.143
+once Both take their colours and fonts from the
+
+00:00:45.156 --> 00:00:48.033
+theme while colours you pick by hand don't
+
+00:00:49.531 --> 00:00:53.661
+Select the title in A1 On the Home tab
+
+00:00:53.843 --> 00:00:58.179
+open Cell Styles and choose Title One click sets
+
+00:00:58.192 --> 00:01:00.666
+the size the weight and a theme colour
+
+00:01:02.156 --> 00:01:07.171
+Now select the data A3 to F15 Click Format
+
+00:01:07.184 --> 00:01:11.234
+as Table and pick Table Style Medium 2 Check
+
+00:01:11.247 --> 00:01:14.320
+that My table has headers is ticked and click
+
+00:01:14.333 --> 00:01:18.265
+OK Banded rows and filter buttons appear
+
+00:01:19.734 --> 00:01:24.098
+On the Table Design tab tick Total Row Excel
+
+00:01:24.111 --> 00:01:27.692
+adds a total under the Amount column sixty-three thousand
+
+00:01:27.705 --> 00:01:32.392
+two hundred and thirty-five rupees It uses SUBTOTAL so
+
+00:01:32.405 --> 00:01:34.293
+it also works when you filter
+
+00:01:35.765 --> 00:01:39.856
+Now the theme On the Page Layout tab open
+
+00:01:39.869 --> 00:01:44.530
+Themes and choose Retrospect The title the table and
+
+00:01:44.543 --> 00:01:47.968
+the colours all change together because they use theme
+
+00:01:47.981 --> 00:01:48.580
+colours
+
+00:01:50.047 --> 00:01:53.916
+Except one thing The line in A2 kept its
+
+00:01:53.929 --> 00:01:57.471
+dark blue Someone coloured it by hand with a
+
+00:01:57.484 --> 00:02:01.533
+fixed colour so the theme can't touch it That's
+
+00:02:01.547 --> 00:02:03.968
+how reports end up with clashing colours
+
+00:02:05.437 --> 00:02:09.684
+Fix it with a style With A2 selected choose
+
+00:02:09.697 --> 00:02:14.007
+Cell Styles Heading 4 Now it follows the theme
+
+00:02:14.020 --> 00:02:15.374
+like everything else
+
+00:02:16.828 --> 00:02:20.828
+Switch back to see it work both ways Choose
+
+00:02:20.841 --> 00:02:25.854
+Page Layout Themes Office The title the table and
+
+00:02:25.867 --> 00:02:27.716
+A2 all move back together
+
+00:02:29.187 --> 00:02:32.429
+If your company has brand colours set them once
+
+00:02:32.442 --> 00:02:36.648
+under Page Layout Colors Customize Colors and save the
+
+00:02:36.661 --> 00:02:41.064
+theme Every style and table then uses your brand
+
+00:02:42.531 --> 00:02:45.773
+On a Mac Cell Styles and Format as Table
+
+00:02:45.786 --> 00:02:48.156
+are on the Home tab and Themes are on
+
+00:02:48.169 --> 00:02:52.494
+the Page Layout tab just like here The table
+
+00:02:52.507 --> 00:02:56.426
+tab is called Table Design Excel for the web
+
+00:02:56.439 --> 00:02:59.044
+has table styles but not themes
+
+00:03:00.515 --> 00:03:05.035
+To recap Cell styles give consistent headings in one
+
+00:03:05.048 --> 00:03:09.059
+click Table styles add banding and a total row
+
+00:03:09.970 --> 00:03:13.981
+And themes restyle everything that uses them so avoid
+
+00:03:13.994 --> 00:03:15.192
+hand-picked colours
+
+00:03:16.672 --> 00:03:20.815
+Your challenge Use the filter button on Approved to
+
+00:03:20.828 --> 00:03:25.151
+show only Yes Read the total row and type
+
+00:03:25.164 --> 00:03:30.151
+that figure in I3 Then clear the filter The
+
+00:03:30.164 --> 00:03:33.497
+answer is on S02-04 Done

@@ -1,0 +1,190 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:05.346
+Here's a GST invoice register Dates read as day
+
+00:00:05.515 --> 00:00:08.341
+month and year the GST rate shows as a
+
+00:00:08.354 --> 00:00:12.937
+percentage and the rupee amounts line up neatly These
+
+00:00:12.950 --> 00:00:16.869
+are the same numbers as before We only changed
+
+00:00:16.882 --> 00:00:18.080
+how they're displayed
+
+00:00:19.563 --> 00:00:24.511
+You'll show dates as DD-MM-YYYY and DD-MMM-YY turn rates
+
+00:00:24.524 --> 00:00:28.222
+into percentages and see the difference between the Currency
+
+00:00:28.235 --> 00:00:33.888
+and Accounting formats The practice sheet is S02-02
+
+00:00:35.344 --> 00:00:39.799
+A number format changes only the display The value
+
+00:00:39.812 --> 00:00:43.549
+underneath stays the same and that's what formulas use
+
+00:00:44.461 --> 00:00:47.794
+You'll find every format in Format Cells on the
+
+00:00:47.807 --> 00:00:48.588
+Number tab
+
+00:00:50.047 --> 00:00:53.224
+On the practice sheet the invoice dates show as
+
+00:00:53.237 --> 00:00:58.799
+numbers like 46114 That's how Excel stores a date
+
+00:00:59.033 --> 00:01:04.346
+a count of days since 1 January 1900 It just needs
+
+00:01:04.359 --> 00:01:05.349
+a date format
+
+00:01:06.828 --> 00:01:11.531
+Press Command 1 to open Format Cells Choose Custom
+
+00:01:11.648 --> 00:01:14.447
+and in the Type box enter d d dash
+
+00:01:14.643 --> 00:01:18.419
+m m dash y y y y Click OK
+
+00:01:19.304 --> 00:01:23.588
+The first invoice now reads 02-04-2026
+
+00:01:25.078 --> 00:01:29.208
+For the due dates a shorter style Select C2
+
+00:01:29.221 --> 00:01:33.166
+to C11, press Command 1 choose Custom and type
+
+00:01:33.179 --> 00:01:37.007
+d d dash m m m dash y y
+
+00:01:37.085 --> 00:01:39.924
+Three m's give the month's short name so it
+
+00:01:39.937 --> 00:01:42.723
+reads 02-May-26
+
+00:01:44.172 --> 00:01:48.914
+Now the GST rates Select F2 to F11, open
+
+00:01:48.927 --> 00:01:53.315
+Format Cells choose Percentage with zero decimal places and
+
+00:01:53.328 --> 00:01:54.109
+click OK
+
+00:01:55.594 --> 00:02:00.258
+Look at F7 It says 1800 percent and the
+
+00:02:00.271 --> 00:02:04.541
+GST in that row is huge Someone typed 18
+
+00:02:04.554 --> 00:02:09.073
+instead of 18 percent The percentage format shows the
+
+00:02:09.086 --> 00:02:12.250
+stored value times a hundred and 18 times a
+
+00:02:12.263 --> 00:02:13.786
+hundred is 1800
+
+00:02:15.297 --> 00:02:18.461
+Type 18 with a percent sign and press Return
+
+00:02:19.375 --> 00:02:24.479
+Excel stores 0.18 shows 18 percent and the GST
+
+00:02:24.492 --> 00:02:26.432
+amount drops to the right figure
+
+00:02:27.922 --> 00:02:33.198
+Next the taxable values Select E2 to E11, open
+
+00:02:33.211 --> 00:02:36.869
+Format Cells choose Currency pick the rupee symbol for
+
+00:02:36.882 --> 00:02:41.153
+English India keep two decimal places and click OK
+
+00:02:42.625 --> 00:02:46.167
+For the GST amount and invoice total G2 to
+
+00:02:46.180 --> 00:02:50.268
+H11, choose Accounting instead with the same rupee symbol
+
+00:02:51.750 --> 00:02:55.893
+Compare the two Currency puts the rupee sign right
+
+00:02:55.906 --> 00:02:59.994
+next to the number Accounting lines up every rupee
+
+00:03:00.007 --> 00:03:02.781
+sign on the left and every decimal point on
+
+00:03:02.794 --> 00:03:05.971
+the right and shows zero as a dash like
+
+00:03:05.984 --> 00:03:10.007
+the exempt invoice in row 6 Accounting is the
+
+00:03:10.020 --> 00:03:12.690
+usual choice for financial statements
+
+00:03:14.172 --> 00:03:18.067
+Look at the commas too Depending on your region
+
+00:03:18.080 --> 00:03:22.039
+setting Excel may group digits the international way in
+
+00:03:22.052 --> 00:03:26.388
+thousands and millions The next lesson builds a format
+
+00:03:26.401 --> 00:03:28.666
+that always shows lakh and crore
+
+00:03:30.109 --> 00:03:33.312
+On a Mac Control Shift and the dollar sign
+
+00:03:33.325 --> 00:03:37.583
+applies a currency format and Control Shift and percent
+
+00:03:37.596 --> 00:03:41.817
+applies a percentage The Number Format box on the
+
+00:03:41.830 --> 00:03:44.330
+Home tab has the common formats too
+
+00:03:45.797 --> 00:03:50.317
+To recap Formats change the look not the value
+
+00:03:51.216 --> 00:03:54.119
+Use custom codes like d d dash m m
+
+00:03:54.132 --> 00:03:58.247
+dash y y y y for Indian dates Type
+
+00:03:58.260 --> 00:04:01.867
+percentages with the percent sign and choose Accounting for
+
+00:04:01.880 --> 00:04:02.765
+statements
+
+00:04:04.219 --> 00:04:08.297
+Your challenge Show the GST rates in F2 to
+
+00:04:08.310 --> 00:04:12.333
+F11 with one decimal place so 18 percent reads
+
+00:04:12.346 --> 00:04:18.114
+18.0 percent Compare with S02-02 Done

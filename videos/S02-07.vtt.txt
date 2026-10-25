@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.820
+Here's a plain monthly expense report from the Mumbai
+
+00:00:03.833 --> 00:00:07.390
+sales office Your job is to turn it into
+
+00:00:07.403 --> 00:00:09.552
+a report you'd be happy to email to your
+
+00:00:09.565 --> 00:00:10.151
+manager
+
+00:00:11.656 --> 00:00:14.768
+The seven tasks are listed from column J the
+
+00:00:14.781 --> 00:00:19.364
+title the heading row dates rupee formats a percentage
+
+00:00:19.521 --> 00:00:21.721
+borders and frozen headings
+
+00:00:23.187 --> 00:00:26.325
+Pause the video now and try all seven tasks
+
+00:00:26.338 --> 00:00:31.822
+on sheet S02-07 When you're done press play to
+
+00:00:31.835 --> 00:00:33.020
+watch the solution
+
+00:00:34.500 --> 00:00:40.362
+Here's the solution Task one Select A1, press Command
+
+00:00:40.375 --> 00:00:44.124
+B and click Increase Font Size twice to 14
+
+00:00:45.023 --> 00:00:48.604
+Then select A1 to F1, press Command 1 and
+
+00:00:48.617 --> 00:00:51.755
+on the Alignment tab choose Center Across Selection
+
+00:00:53.250 --> 00:00:57.940
+Task two Select A4 to F4, press Command B
+
+00:00:58.096 --> 00:01:00.817
+pick Dark Blue from Fill Color and White from
+
+00:01:00.830 --> 00:01:05.348
+Font Color then click Wrap Text Centre B4 to
+
+00:01:05.361 --> 00:01:06.598
+F4 as well
+
+00:01:08.922 --> 00:01:13.911
+Task three Select the dates A5 to A16, open
+
+00:01:13.924 --> 00:01:18.039
+Format Cells choose Custom and type d d dash
+
+00:01:18.234 --> 00:01:21.307
+m m dash y y y y
+
+00:01:22.781 --> 00:01:27.184
+Task four In the Name Box type D5 colon
+
+00:01:27.197 --> 00:01:31.507
+F17, a comma then F19 colon F20, to select
+
+00:01:31.520 --> 00:01:36.559
+both ranges at once Open Format Cells choose Custom
+
+00:01:36.689 --> 00:01:39.489
+and enter the lakh and crore format from lesson
+
+00:01:39.502 --> 00:01:39.958
+three
+
+00:01:41.468 --> 00:01:46.861
+Task five Select F21, open Format Cells and choose
+
+00:01:46.874 --> 00:01:52.616
+Percentage with one decimal place Budget used reads 78.7
+
+00:01:52.629 --> 00:01:53.241
+percent
+
+00:01:54.718 --> 00:01:59.785
+Task six Select A4 to F17 and choose Borders
+
+00:01:59.928 --> 00:02:04.629
+All Borders Then select the total row A17 to
+
+00:02:04.642 --> 00:02:08.184
+F17, press Command B and choose Top and Double
+
+00:02:08.197 --> 00:02:09.095
+Bottom Border
+
+00:02:10.578 --> 00:02:15.580
+Task seven Select A5, and choose View Freeze Panes
+
+00:02:15.710 --> 00:02:19.643
+Freeze Panes Rows 1 to 4 now stay on
+
+00:02:19.656 --> 00:02:21.114
+screen as you scroll
+
+00:02:22.578 --> 00:02:28.583
+Compare your sheet with S02-07 Answers The total spend
+
+00:02:28.596 --> 00:02:31.669
+is three lakh fourteen thousand nine hundred and twenty-four
+
+00:02:31.682 --> 00:02:33.973
+rupees within the four lakh budget
+
+00:02:35.484 --> 00:02:40.864
+Well done You used fonts fills borders Center Across
+
+00:02:40.877 --> 00:02:44.588
+Selection custom number formats and Freeze Panes on one
+
+00:02:44.601 --> 00:02:49.314
+real report Next we start writing formulas
