@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.187
+From thirty raw sales rows we'll build a region-by-month
+
+00:00:04.200 --> 00:00:07.716
+summary with one formula plus a small panel where
+
+00:00:07.729 --> 00:00:10.815
+you type a region and get its total average
+
+00:00:10.984 --> 00:00:12.937
+largest and smallest sale
+
+00:00:14.403 --> 00:00:16.408
+Here's the plan for this lesson
+
+00:00:17.888 --> 00:00:20.909
+SUMIFS starts with the range to add then pairs
+
+00:00:20.922 --> 00:00:25.937
+of range and condition AVERAGEIFS MAXIFS and MINIFS use
+
+00:00:25.950 --> 00:00:30.299
+the same order The older SUMIF is different its
+
+00:00:30.312 --> 00:00:32.148
+range to add comes last
+
+00:00:33.606 --> 00:00:39.207
+Open sheet S04-06 These are sales from April to
+
+00:00:39.220 --> 00:00:47.410
+June 2026 the first quarter of FY 2026-27 Regions run
+
+00:00:47.423 --> 00:00:51.824
+down column G and months across row 1 Select
+
+00:00:51.837 --> 00:00:54.897
+H2 to J5, all twelve cells of the grid
+
+00:00:56.388 --> 00:01:01.286
+Type equals SUMIFS open bracket The first argument is
+
+00:01:01.299 --> 00:01:05.218
+what to add the Amount column D2 to D31,
+
+00:01:05.231 --> 00:01:07.627
+with dollar signs so it never moves
+
+00:01:09.091 --> 00:01:13.414
+Next the Region column locked and the condition G2,
+
+00:01:13.427 --> 00:01:16.814
+the region name in the grid Put the dollar
+
+00:01:16.827 --> 00:01:19.770
+only before G so every column of the grid
+
+00:01:19.783 --> 00:01:21.424
+keeps reading column G
+
+00:01:22.888 --> 00:01:27.421
+Then the Month column and its condition H1 This
+
+00:01:27.434 --> 00:01:30.364
+time the dollar goes before the 1 so every
+
+00:01:30.377 --> 00:01:33.307
+row keeps reading the month headings in row 1
+
+00:01:34.205 --> 00:01:35.377
+Close the bracket
+
+00:01:36.841 --> 00:01:41.426
+Now press Control Return instead of Return The formula
+
+00:01:41.439 --> 00:01:44.942
+goes into all twelve selected cells and each one
+
+00:01:44.955 --> 00:01:47.377
+adjusts to its own region and month
+
+00:01:48.841 --> 00:01:52.645
+Check a couple of answers South in May is
+
+00:01:52.658 --> 00:01:58.088
+sixty-six thousand rupees East shows zero for April because
+
+00:01:58.101 --> 00:02:02.111
+East made no sales that month That's a correct
+
+00:02:02.124 --> 00:02:03.739
+answer not an error
+
+00:02:05.247 --> 00:02:09.155
+Now a total per region in K2 A common
+
+00:02:09.168 --> 00:02:12.736
+slip is using the SUMIFS order with SUMIF amounts
+
+00:02:12.749 --> 00:02:18.075
+first then regions Type it and press Return The
+
+00:02:18.088 --> 00:02:21.655
+answer is zero because SUMIF expects the range to
+
+00:02:21.668 --> 00:02:22.541
+add last
+
+00:02:24.013 --> 00:02:27.320
+Retype it in the right order the Region column
+
+00:02:27.464 --> 00:02:31.437
+then G2, then the Amount column Press Return and
+
+00:02:31.450 --> 00:02:32.882
+fill down to K5
+
+00:02:34.841 --> 00:02:38.906
+Now the panel below H8 holds the region we
+
+00:02:38.919 --> 00:02:43.606
+want South In H9, type equals SUMIF of B2
+
+00:02:43.619 --> 00:02:48.684
+to B31, H8, and D2 to D31 The criteria
+
+00:02:48.697 --> 00:02:51.327
+comes from a cell so you never edit the
+
+00:02:51.340 --> 00:02:51.979
+formula
+
+00:02:53.450 --> 00:02:57.421
+In H10, AVERAGEIFS uses the SUMIFS order the Amount
+
+00:02:57.434 --> 00:03:02.254
+column first then the Region column and H8 The
+
+00:03:02.267 --> 00:03:06.043
+average South sale is thirty-seven thousand five hundred rupees
+
+00:03:07.513 --> 00:03:12.255
+MAXIFS and MINIFS follow the same pattern Type MAXIFS
+
+00:03:12.268 --> 00:03:15.536
+in H11 and MINIFS in H12 with the same
+
+00:03:15.549 --> 00:03:20.171
+three arguments The largest South sale is sixty thousand
+
+00:03:20.184 --> 00:03:23.387
+five hundred and the smallest is nineteen thousand five
+
+00:03:23.400 --> 00:03:23.921
+hundred
+
+00:03:25.435 --> 00:03:29.578
+Now type North in H8 and press Return All
+
+00:03:29.591 --> 00:03:34.070
+four answers switch to North at once North's total
+
+00:03:34.083 --> 00:03:38.341
+is five lakh sixty-three thousand rupees This is why
+
+00:03:38.354 --> 00:03:40.281
+criteria belong in cells
+
+00:03:41.747 --> 00:03:43.231
+Here's a quick recap
+
+00:03:44.716 --> 00:03:49.210
+Your turn In H13, find the average West sale
+
+00:03:49.223 --> 00:03:51.775
+in June with AVERAGEIFS and two conditions

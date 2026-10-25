@@ -1,0 +1,175 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.562
+This vendor sheet had error codes all over it
+
+00:00:04.462 --> 00:00:07.509
+In the finished version every problem row shows a
+
+00:00:07.522 --> 00:00:10.491
+clear message and a set of TRUE and FALSE
+
+00:00:10.504 --> 00:00:13.720
+checks tells you exactly what's wrong with each row
+
+00:00:15.184 --> 00:00:17.189
+Here's the plan for this lesson
+
+00:00:18.669 --> 00:00:24.049
+IFERROR catches any error IFNA catches only the not-found
+
+00:00:24.062 --> 00:00:28.814
+error from lookups The IS functions don't fix anything
+
+00:00:29.088 --> 00:00:31.692
+they answer TRUE or FALSE about a value
+
+00:00:33.138 --> 00:00:39.078
+Open sheet S04-04 This is a typical import one
+
+00:00:39.091 --> 00:00:42.645
+quantity is zero one is missing one amount came
+
+00:00:42.658 --> 00:00:45.705
+in as text and one GST code isn't in
+
+00:00:45.718 --> 00:00:49.078
+our rate table on the right Click D2 for
+
+00:00:49.091 --> 00:00:50.302
+the rate per unit
+
+00:00:51.763 --> 00:00:55.617
+Type equals B2 divided by C2, press Return then
+
+00:00:55.630 --> 00:00:58.755
+fill down to D9 with Command D Rows 3
+
+00:00:58.768 --> 00:01:02.872
+and 6 show the DIV by zero error Patel
+
+00:01:02.885 --> 00:01:06.570
+Packaging has zero quantity and Deccan Steel has none
+
+00:01:08.044 --> 00:01:10.987
+A quick fix many people use is IFERROR with
+
+00:01:11.000 --> 00:01:16.562
+zero Retype D2 as equals IFERROR open bracket B2
+
+00:01:16.575 --> 00:01:20.833
+divided by C2, comma 0 close bracket and fill
+
+00:01:20.846 --> 00:01:24.439
+down The errors are gone but a rate of
+
+00:01:24.452 --> 00:01:26.588
+zero now looks like real data
+
+00:01:28.075 --> 00:01:30.653
+A better habit is to return a message that
+
+00:01:30.666 --> 00:01:34.614
+says what to fix Change the second argument to
+
+00:01:34.627 --> 00:01:38.637
+Check qty in quotes and fill down again The
+
+00:01:38.650 --> 00:01:41.397
+sheet is clean and the problem rows still stand
+
+00:01:41.410 --> 00:01:41.814
+out
+
+00:01:43.278 --> 00:01:47.968
+Now the GST rate In F2, type equals IFNA
+
+00:01:48.202 --> 00:01:52.863
+open bracket Inside it XLOOKUP finds the code from
+
+00:01:52.876 --> 00:01:55.507
+E2 in the code column L and returns the
+
+00:01:55.520 --> 00:01:59.348
+rate from column M The dollar signs lock the
+
+00:01:59.361 --> 00:02:01.835
+table Then a comma
+
+00:02:03.325 --> 00:02:06.567
+Finish with Code missing in quotes close the bracket
+
+00:02:06.580 --> 00:02:11.569
+and press Return then fill down Annapurna Caterers uses
+
+00:02:11.582 --> 00:02:15.619
+GST12 which isn't in our table so it shows
+
+00:02:15.632 --> 00:02:19.564
+Code missing Any other kind of error would still
+
+00:02:19.577 --> 00:02:21.569
+show which is what you want
+
+00:02:23.059 --> 00:02:27.488
+The IS functions answer questions about a cell In
+
+00:02:27.501 --> 00:02:31.420
+G2, type equals ISBLANK of C2, press Return and
+
+00:02:31.433 --> 00:02:36.082
+fill down Only Deccan Steel's quantity is empty so
+
+00:02:36.095 --> 00:02:37.644
+only row 6 is TRUE
+
+00:02:39.106 --> 00:02:43.379
+In H2, ISNUMBER of B2 checks the amount Fill
+
+00:02:43.392 --> 00:02:48.444
+down Lotus Office Supplies shows FALSE its amount came
+
+00:02:48.457 --> 00:02:52.559
+in as text The division still worked but SUM
+
+00:02:52.572 --> 00:02:54.173
+would quietly skip that row
+
+00:02:55.638 --> 00:02:59.611
+ISERROR is TRUE for any error at all In
+
+00:02:59.624 --> 00:03:03.453
+I2, type equals ISERROR of B2 divided by C2
+
+00:03:03.466 --> 00:03:07.385
+and fill down It flags exactly the two rows
+
+00:03:07.398 --> 00:03:09.846
+that IFERROR is covering in column D
+
+00:03:11.356 --> 00:03:14.247
+Fix the data and the messages clear on their
+
+00:03:14.260 --> 00:03:21.293
+own Patel Packaging actually bought 140 units Type 140
+
+00:03:21.306 --> 00:03:25.629
+in C3 and press Return The rate becomes ninety
+
+00:03:25.642 --> 00:03:28.194
+rupees and the error check for row 3 turns
+
+00:03:28.207 --> 00:03:28.780
+FALSE
+
+00:03:30.231 --> 00:03:31.715
+Here's a quick recap
+
+00:03:33.200 --> 00:03:37.694
+Your turn In column J use ISTEXT to flag
+
+00:03:37.707 --> 00:03:41.744
+amounts that are stored as text Only one row
+
+00:03:41.757 --> 00:03:42.590
+should be TRUE

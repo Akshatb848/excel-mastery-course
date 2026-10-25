@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.005
+Here are appraisal grades worked out three different ways
+
+00:00:04.174 --> 00:00:08.199
+plus region names from short codes By the end
+
+00:00:08.212 --> 00:00:10.478
+you'll know which method to pick and when a
+
+00:00:10.491 --> 00:00:12.952
+small lookup table beats all of them
+
+00:00:14.450 --> 00:00:16.455
+Here's the plan for this lesson
+
+00:00:17.935 --> 00:00:21.934
+A nested IF puts one IF inside another IFS
+
+00:00:21.947 --> 00:00:26.479
+lists test and result pairs in order SWITCH compares
+
+00:00:26.492 --> 00:00:29.356
+one value with a list of exact matches
+
+00:00:30.825 --> 00:00:36.999
+Open sheet S04-03 The bands are 90 and above
+
+00:00:37.012 --> 00:00:40.528
+is A plus 75 is A 60 is B
+
+00:00:40.671 --> 00:00:44.590
+40 is C and anything lower is D The
+
+00:00:44.603 --> 00:00:47.663
+same cut-offs are in the small table in J1
+
+00:00:47.676 --> 00:00:48.535
+to K6
+
+00:00:49.997 --> 00:00:54.023
+In D2, start with the highest band Type equals
+
+00:00:54.036 --> 00:00:57.538
+IF open bracket B2 greater than or equal to
+
+00:00:57.551 --> 00:01:00.898
+90 comma A plus in quotes comma
+
+00:01:02.372 --> 00:01:05.666
+For the false part start a second IF B2
+
+00:01:05.679 --> 00:01:10.134
+greater than or equal to 75 gives A The
+
+00:01:10.148 --> 00:01:13.520
+first test has already failed so this only catches
+
+00:01:13.533 --> 00:01:16.111
+scores from 75 to 89
+
+00:01:17.607 --> 00:01:20.172
+Add two more IFs for B and C with
+
+00:01:20.185 --> 00:01:24.940
+D as the last fallback Then close four brackets one
+
+00:01:24.953 --> 00:01:27.140
+for each IF and press Return
+
+00:01:28.591 --> 00:01:31.690
+Fill down with Command D Anil with 92 gets
+
+00:01:31.703 --> 00:01:35.676
+A plus and Deepa with 35 gets D It
+
+00:01:35.689 --> 00:01:38.919
+works but four closing brackets are easy to get
+
+00:01:38.932 --> 00:01:39.348
+wrong
+
+00:01:40.857 --> 00:01:44.883
+IFS removes the nesting In E2, list each test
+
+00:01:44.896 --> 00:01:47.929
+and its result in pairs 90 and A plus
+
+00:01:48.112 --> 00:01:52.122
+75 and A 60 and B 40 and C
+
+00:01:52.135 --> 00:01:53.047
+Press Return
+
+00:01:54.513 --> 00:01:57.365
+Fill down and look at Deepa in row 5
+
+00:01:58.265 --> 00:02:01.377
+She shows the N A error because her score
+
+00:02:01.390 --> 00:02:05.309
+of 35 matched none of the tests IFS has
+
+00:02:05.322 --> 00:02:06.989
+no automatic otherwise
+
+00:02:08.466 --> 00:02:11.630
+Fix it with one last pair TRUE then D
+
+00:02:11.643 --> 00:02:16.281
+in quotes TRUE always passes so it catches every
+
+00:02:16.294 --> 00:02:20.929
+score that's left over Retype E2 and press Return
+
+00:02:22.403 --> 00:02:26.897
+Fill down again Deepa now shows D and column
+
+00:02:26.910 --> 00:02:29.007
+E matches column D exactly
+
+00:02:30.497 --> 00:02:35.135
+SWITCH is for exact matches not ranges In F2,
+
+00:02:35.148 --> 00:02:38.181
+switch on the code in C2 N gives North
+
+00:02:38.377 --> 00:02:42.166
+S gives South E gives East W gives West
+
+00:02:42.400 --> 00:02:44.549
+and anything else gives Unknown
+
+00:02:46.013 --> 00:02:49.791
+Fill down Every code now has a full region
+
+00:02:49.804 --> 00:02:52.812
+name and the formula is much shorter than four
+
+00:02:52.825 --> 00:02:53.645
+nested IFs
+
+00:02:55.122 --> 00:02:58.299
+When cut-offs change often keep them in a table
+
+00:02:59.200 --> 00:03:01.621
+In G2, XLOOKUP looks for the score in the
+
+00:03:01.634 --> 00:03:05.827
+Min score column and returns the grade The minus
+
+00:03:05.840 --> 00:03:08.718
+one at the end means if there's no exact
+
+00:03:08.731 --> 00:03:13.418
+match take the next smaller value The dollar signs
+
+00:03:13.431 --> 00:03:14.356
+lock the table
+
+00:03:15.841 --> 00:03:21.390
+Fill down Same grades as before We cover XLOOKUP
+
+00:03:21.403 --> 00:03:23.070
+fully in the lookup section
+
+00:03:24.560 --> 00:03:28.546
+Here's why the table wins HR lowers the B
+
+00:03:28.559 --> 00:03:33.768
+cut-off from 60 to 55 Type 55 in J4
+
+00:03:33.781 --> 00:03:37.934
+and press Return Gauri's grade in column G moves
+
+00:03:37.947 --> 00:03:40.799
+from C to B at once while columns D
+
+00:03:40.812 --> 00:03:43.677
+and E still say C because their cut-offs are
+
+00:03:43.690 --> 00:03:45.630
+typed inside the formulas
+
+00:03:47.091 --> 00:03:48.575
+Here's a quick recap
+
+00:03:50.044 --> 00:03:54.043
+Your turn In column H use SWITCH on the
+
+00:03:54.056 --> 00:03:57.168
+grade in column D to return a bonus percentage
+
+00:03:57.364 --> 00:04:00.710
+twenty percent for A plus fifteen for A ten
+
+00:04:00.723 --> 00:04:03.054
+for B and zero for anything else

@@ -1,0 +1,190 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.106
+This is the sales team sheet we'll finish in
+
+00:00:03.119 --> 00:00:07.548
+this lesson Every person gets a status a bonus
+
+00:00:07.561 --> 00:00:10.322
+if they hit target and a follow-up note only
+
+00:00:10.335 --> 00:00:13.968
+when one is needed You'll use checks like this
+
+00:00:13.981 --> 00:00:16.194
+every month for incentive payouts
+
+00:00:17.653 --> 00:00:22.952
+Here's what you'll learn using the practice sheet S04-01
+
+00:00:24.435 --> 00:00:28.604
+IF asks one question If the answer is yes
+
+00:00:28.773 --> 00:00:33.187
+it returns the first value otherwise the second The
+
+00:00:33.200 --> 00:00:36.612
+question is called the logical test and it usually
+
+00:00:36.625 --> 00:00:40.010
+compares two things such as sales and target
+
+00:00:41.481 --> 00:00:47.004
+Go to the practice sheet S04-01 Column D has
+
+00:00:47.017 --> 00:00:50.637
+each person's target and column E has actual sales
+
+00:00:51.522 --> 00:00:54.530
+Click cell F2, where we'll write Aarav's status
+
+00:00:55.997 --> 00:01:00.335
+Type equals IF open bracket The test is E2
+
+00:01:00.348 --> 00:01:03.512
+greater than or equal to D2, which reads did
+
+00:01:03.525 --> 00:01:07.275
+sales reach the target Then type a comma
+
+00:01:08.763 --> 00:01:13.114
+Next is the value if true Type Achieved inside
+
+00:01:13.127 --> 00:01:17.684
+double quotes then a comma Text always needs quotes
+
+00:01:17.697 --> 00:01:18.973
+inside a formula
+
+00:01:20.450 --> 00:01:24.734
+Last the value if false Missed also in quotes
+
+00:01:25.634 --> 00:01:29.944
+Close the bracket and press Return Aarav sold five
+
+00:01:29.957 --> 00:01:33.408
+lakh sixty-two thousand rupees against a target of five
+
+00:01:33.421 --> 00:01:35.348
+lakh so he shows Achieved
+
+00:01:36.825 --> 00:01:40.223
+To copy it down select F2 to F11 and
+
+00:01:40.236 --> 00:01:43.963
+press Command D to fill down Look at Sneha
+
+00:01:43.976 --> 00:01:48.468
+in row 5 Her sales exactly equal her target
+
+00:01:48.611 --> 00:01:51.814
+and because we used greater than or equal to
+
+00:01:52.035 --> 00:01:53.611
+she counts as Achieved
+
+00:01:55.075 --> 00:01:59.022
+IF can return numbers too In G2, the bonus
+
+00:01:59.035 --> 00:02:01.301
+is two percent of sales when the target is
+
+00:02:01.314 --> 00:02:06.457
+met and zero otherwise Type equals IF E2 greater
+
+00:02:06.470 --> 00:02:09.556
+than or equal to D2, comma E2 times 2
+
+00:02:09.569 --> 00:02:14.009
+percent comma 0 close bracket and press Return
+
+00:02:15.481 --> 00:02:18.072
+Fill it down with Command D Aarav earns a
+
+00:02:18.085 --> 00:02:21.249
+bonus of eleven thousand two hundred and forty rupees
+
+00:02:21.405 --> 00:02:23.971
+and everyone who missed target shows zero
+
+00:02:25.450 --> 00:02:29.684
+Sometimes the right answer is nothing at all In
+
+00:02:29.697 --> 00:02:33.239
+H2, if sales are below target show Call manager
+
+00:02:34.124 --> 00:02:37.679
+Otherwise type two double quotes with nothing between them
+
+00:02:38.603 --> 00:02:42.132
+That returns an empty-looking cell so the sheet stays
+
+00:02:42.145 --> 00:02:42.640
+clean
+
+00:02:44.106 --> 00:02:49.238
+Fill down Only Priya Imran Arjun and Sourav get
+
+00:02:49.251 --> 00:02:53.431
+a follow-up note Sourav missed by just one thousand
+
+00:02:53.444 --> 00:02:56.582
+rupees and IF treats that exactly like a big
+
+00:02:56.595 --> 00:02:57.051
+miss
+
+00:02:58.528 --> 00:03:03.087
+Here's the most common mistake Retype F2 without the
+
+00:03:03.100 --> 00:03:07.879
+quotes around Achieved and Missed and press Return Excel
+
+00:03:07.892 --> 00:03:11.095
+shows the NAME error because it thinks Achieved is
+
+00:03:11.108 --> 00:03:13.426
+the name of something it should already know
+
+00:03:14.888 --> 00:03:17.635
+Type the formula again with the quotes in place
+
+00:03:17.648 --> 00:03:22.716
+and press Return The status is back Whenever you
+
+00:03:22.729 --> 00:03:25.854
+see NAME after writing text in a formula check
+
+00:03:25.867 --> 00:03:26.960
+your quotes first
+
+00:03:28.419 --> 00:03:32.458
+Now prove the sheet is live Priya's sales figure
+
+00:03:32.471 --> 00:03:36.820
+was updated to four lakh sixty thousand Click E3,
+
+00:03:36.833 --> 00:03:42.887
+type 460000 and press Return Her status flips to
+
+00:03:42.900 --> 00:03:46.403
+Achieved a bonus of nine thousand two hundred appears
+
+00:03:46.559 --> 00:03:48.434
+and the follow-up note disappears
+
+00:03:49.919 --> 00:03:51.403
+Here's a quick recap
+
+00:03:52.872 --> 00:03:56.924
+Your turn In column I show the word Star
+
+00:03:56.937 --> 00:03:59.319
+when sales are at least one hundred and twenty
+
+00:03:59.332 --> 00:04:02.718
+percent of target and leave the cell blank otherwise
+
+00:04:03.616 --> 00:04:07.848
+The answer is on the S04-01 Done sheet

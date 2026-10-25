@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:04.994
+These results come from one function SUMPRODUCT total revenue
+
+00:00:05.007 --> 00:00:08.549
+without a helper column a weighted average price and
+
+00:00:08.562 --> 00:00:12.744
+North's revenue only You'll also see the TRUE and
+
+00:00:12.757 --> 00:00:15.517
+FALSE trick that makes conditional maths work
+
+00:00:16.997 --> 00:00:19.002
+Here's the plan for this lesson
+
+00:00:20.482 --> 00:00:24.701
+SUMPRODUCT multiplies matching items in two or more ranges
+
+00:00:24.714 --> 00:00:28.518
+and adds the results All ranges must be the
+
+00:00:28.531 --> 00:00:29.481
+same size
+
+00:00:30.919 --> 00:00:37.041
+Open sheet S04-07 Each row has a product region
+
+00:00:37.171 --> 00:00:41.364
+quantity sold and price per unit Click G2 for
+
+00:00:41.377 --> 00:00:42.353
+total revenue
+
+00:00:43.841 --> 00:00:48.672
+Type equals SUMPRODUCT open bracket C2 to C13, comma
+
+00:00:48.906 --> 00:00:53.921
+D2 to D13, close bracket and press Return Excel
+
+00:00:53.934 --> 00:00:57.450
+multiplies each quantity by its price and adds the
+
+00:00:57.463 --> 00:01:02.346
+twelve results Total revenue is two lakh eighty-six thousand
+
+00:01:02.359 --> 00:01:04.299
+four hundred and fifty-one rupees
+
+00:01:05.778 --> 00:01:08.617
+In G3, a plain AVERAGE of the prices gives
+
+00:01:08.630 --> 00:01:13.098
+about one thousand two hundred and sixteen rupees That's
+
+00:01:13.111 --> 00:01:16.275
+misleading because we sold eight chairs but a hundred
+
+00:01:16.288 --> 00:01:17.955
+and twenty reams of paper
+
+00:01:19.435 --> 00:01:22.729
+A weighted average gives each price a weight equal
+
+00:01:22.742 --> 00:01:27.106
+to its quantity In G4, type the same SUMPRODUCT
+
+00:01:27.119 --> 00:01:29.216
+and divide it by the SUM of C2 to
+
+00:01:29.229 --> 00:01:33.565
+C13 The real average price per unit sold is
+
+00:01:33.578 --> 00:01:36.117
+about four hundred and seventy-six rupees
+
+00:01:37.607 --> 00:01:42.401
+Now the trick behind conditional maths In G6, type
+
+00:01:42.414 --> 00:01:46.294
+equals B2 equals North in quotes and press Return
+
+00:01:47.192 --> 00:01:50.513
+Excel answers TRUE because row 2 is North
+
+00:01:51.997 --> 00:01:55.239
+In G7, put that test in brackets and multiply
+
+00:01:55.252 --> 00:01:59.200
+it by 1 TRUE becomes 1 and FALSE would
+
+00:01:59.213 --> 00:02:03.262
+become 0 So multiplying by a test keeps the
+
+00:02:03.275 --> 00:02:06.218
+rows that pass and turns the rest into zero
+
+00:02:07.700 --> 00:02:12.116
+Use this in G5 for North revenue Type equals
+
+00:02:12.129 --> 00:02:16.726
+SUMPRODUCT open bracket and in brackets B2 to B13
+
+00:02:16.739 --> 00:02:21.465
+equals North That gives twelve TRUE or FALSE answers
+
+00:02:21.595 --> 00:02:22.442
+one per row
+
+00:02:23.919 --> 00:02:27.330
+Multiply by the quantities and the prices close the
+
+00:02:27.343 --> 00:02:31.812
+bracket and press Return Rows from other regions become
+
+00:02:31.825 --> 00:02:35.145
+zero so the answer is North only one lakh
+
+00:02:35.158 --> 00:02:38.413
+forty-three thousand one hundred and sixty-five rupees
+
+00:02:39.888 --> 00:02:44.578
+A common mistake is ranges of different sizes Retype
+
+00:02:44.591 --> 00:02:47.624
+G2 with D2 to D12, one row short and
+
+00:02:47.638 --> 00:02:52.286
+press Return You get the VALUE error because SUMPRODUCT
+
+00:02:52.299 --> 00:02:54.981
+needs every range to have the same number of
+
+00:02:54.994 --> 00:02:55.489
+rows
+
+00:02:56.966 --> 00:03:00.247
+Fix the range back to D13 and press Return
+
+00:03:01.148 --> 00:03:02.463
+The total is back
+
+00:03:05.169 --> 00:03:09.260
+Now change an input The stapler order in row
+
+00:03:09.273 --> 00:03:13.478
+3 was actually for North Type North in B3
+
+00:03:13.491 --> 00:03:18.062
+and press Return North revenue rises by seven thousand
+
+00:03:18.075 --> 00:03:20.913
+two hundred rupees the value of that order
+
+00:03:22.388 --> 00:03:23.872
+Here's a quick recap
+
+00:03:25.341 --> 00:03:30.057
+Your turn In G8, find North revenue only from
+
+00:03:30.070 --> 00:03:34.406
+rows where the quantity is 50 or more Multiply
+
+00:03:34.419 --> 00:03:35.499
+by two tests

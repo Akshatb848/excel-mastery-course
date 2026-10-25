@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.718
+Every answer in column I counts orders that meet
+
+00:00:03.731 --> 00:00:07.885
+a condition by region by status above an amount
+
+00:00:08.158 --> 00:00:11.335
+inside a date range or by a name pattern
+
+00:00:12.236 --> 00:00:15.048
+These are the questions your manager asks on a
+
+00:00:15.061 --> 00:00:16.051
+Monday morning
+
+00:00:17.513 --> 00:00:19.518
+Here's the plan for this lesson
+
+00:00:20.981 --> 00:00:25.345
+COUNTIF takes a range and a condition COUNTIFS takes
+
+00:00:25.358 --> 00:00:28.730
+pairs of range and condition and counts rows where
+
+00:00:28.743 --> 00:00:30.189
+every pair is true
+
+00:00:31.669 --> 00:00:37.491
+Open sheet S04-05 There are twenty orders from April
+
+00:00:37.504 --> 00:00:42.791
+to June 2026 The questions are in column H and
+
+00:00:42.804 --> 00:00:45.590
+the answers go in column I Click I2
+
+00:00:47.075 --> 00:00:51.543
+Type equals COUNTIF open bracket The range is the
+
+00:00:51.556 --> 00:00:56.739
+Region column C2 to C21 After a comma the
+
+00:00:56.752 --> 00:01:01.022
+criteria is North in quotes Close the bracket and
+
+00:01:01.035 --> 00:01:04.798
+press Return Seven orders came from North
+
+00:01:06.278 --> 00:01:09.859
+Same idea in I3 for status COUNTIF of E2
+
+00:01:09.872 --> 00:01:14.093
+to E21, with Pending in quotes Eight orders are
+
+00:01:14.106 --> 00:01:15.030
+still pending
+
+00:01:16.497 --> 00:01:21.525
+For two conditions use COUNTIFS In I4, type equals
+
+00:01:21.538 --> 00:01:25.483
+COUNTIFS open bracket then the first pair the Region
+
+00:01:25.496 --> 00:01:28.491
+range C2 to C21, and North
+
+00:01:29.966 --> 00:01:33.299
+Then the second pair the Status range E2 to
+
+00:01:33.312 --> 00:01:38.249
+E21, and Delivered Close the bracket and press Return
+
+00:01:39.161 --> 00:01:42.611
+Both must be true so only four orders count
+
+00:01:44.106 --> 00:01:47.661
+Next orders above the threshold in I10, which is
+
+00:01:47.674 --> 00:01:51.608
+fifty thousand rupees A natural guess is to put
+
+00:01:51.621 --> 00:01:55.684
+greater than I10 inside the quotes Type it in
+
+00:01:55.697 --> 00:02:00.059
+I5 and press Return The answer is zero which
+
+00:02:00.072 --> 00:02:01.178
+is clearly wrong
+
+00:02:02.622 --> 00:02:07.233
+Inside quotes I10 is just text Keep only the
+
+00:02:07.246 --> 00:02:10.801
+greater-than sign in quotes then type an ampersand and
+
+00:02:10.814 --> 00:02:14.981
+I10 outside the quotes Excel joins the sign with
+
+00:02:14.994 --> 00:02:17.819
+the value and the answer becomes thirteen
+
+00:02:19.294 --> 00:02:23.515
+Dates work the same way In I6, type equals
+
+00:02:23.528 --> 00:02:27.408
+COUNTIFS open bracket the Date column and greater than
+
+00:02:27.421 --> 00:02:31.978
+or equal to joined with DATE of 2026 5
+
+00:02:32.148 --> 00:02:36.080
+1 DATE builds a date from a year month
+
+00:02:36.093 --> 00:02:36.627
+and day
+
+00:02:38.106 --> 00:02:41.335
+The second pair uses the same Date column again
+
+00:02:41.609 --> 00:02:44.538
+with less than or equal to the thirty-first of
+
+00:02:44.551 --> 00:02:49.605
+May Close the bracket and press Return Eight orders
+
+00:02:49.618 --> 00:02:50.400
+fall in May
+
+00:02:51.888 --> 00:02:57.085
+Wildcards help with text The star means any characters
+
+00:02:57.984 --> 00:03:01.187
+In I7, COUNTIF of the Salesperson column with A
+
+00:03:01.200 --> 00:03:04.572
+star counts every name that starts with A so
+
+00:03:04.585 --> 00:03:06.786
+Amit and Anjali together give nine
+
+00:03:08.263 --> 00:03:11.492
+Now change the threshold in I10 to one lakh
+
+00:03:12.393 --> 00:03:18.734
+Type 100000 and press Return The count in I5
+
+00:03:18.747 --> 00:03:21.963
+drops to four because the formula reads the cell
+
+00:03:21.976 --> 00:03:24.229
+instead of a number typed into it
+
+00:03:25.685 --> 00:03:27.169
+Here's a quick recap
+
+00:03:28.638 --> 00:03:32.742
+Your turn In I8, count South orders that were
+
+00:03:32.755 --> 00:03:37.012
+not cancelled Use the not-equal sign which is a
+
+00:03:37.025 --> 00:03:40.033
+less-than sign followed by a greater-than sign

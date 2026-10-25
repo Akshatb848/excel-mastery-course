@@ -1,0 +1,244 @@
+WEBVTT
+
+00:00:00.450 --> 00:00:03.627
+This is a new regime income tax calculator for
+
+00:00:03.640 --> 00:00:09.356
+financial year 2025-26 the year that ended on thirty-first
+
+00:00:09.369 --> 00:00:14.827
+March 2026 Type a gross salary and it works out
+
+00:00:14.840 --> 00:00:19.931
+taxable income slab tax the section 87A rebate cess
+
+00:00:19.944 --> 00:00:21.546
+and the monthly TDS
+
+00:00:23.012 --> 00:00:25.108
+Here's what this project covers
+
+00:00:26.606 --> 00:00:29.653
+Here are the new regime slabs for financial year
+
+00:00:29.666 --> 00:00:38.470
+2025-26 assessment year 2026-27 Salaried people also get a
+
+00:00:38.483 --> 00:00:42.897
+standard deduction of seventy-five thousand rupees and the 87A
+
+00:00:42.910 --> 00:00:46.191
+rebate makes the tax zero when taxable income is
+
+00:00:46.204 --> 00:00:47.923
+up to twelve lakh rupees
+
+00:00:49.403 --> 00:00:54.796
+Open sheet S04-08 The inputs are on the left
+
+00:00:55.030 --> 00:00:59.001
+Neha's gross salary of sixteen lakh fifty thousand rupees
+
+00:00:59.014 --> 00:01:03.012
+and the standard deduction The slab table is on
+
+00:01:03.025 --> 00:01:05.642
+the right Click B6
+
+00:01:07.122 --> 00:01:11.263
+Taxable income is gross salary minus the standard deduction
+
+00:01:12.163 --> 00:01:16.942
+Type equals MAX open bracket B4 minus B5, comma
+
+00:01:17.137 --> 00:01:21.616
+zero and press Return MAX with zero means a
+
+00:01:21.629 --> 00:01:26.460
+tiny salary never gives a negative number Taxable income
+
+00:01:26.473 --> 00:01:29.351
+is fifteen lakh seventy-five thousand rupees
+
+00:01:30.809 --> 00:01:34.652
+Now the slab table For each slab we need
+
+00:01:34.665 --> 00:01:37.269
+the part of the income that falls inside it
+
+00:01:37.491 --> 00:01:40.837
+the smaller of taxable income and the slab's upper
+
+00:01:40.850 --> 00:01:45.512
+limit minus the slab's lower limit Click G3
+
+00:01:47.012 --> 00:01:51.153
+Type equals open bracket MIN of dollar B dollar 6 
+
+00:01:51.166 --> 00:01:55.528
+and E3, close bracket minus D3, close bracket times
+
+00:01:55.541 --> 00:02:00.178
+F3, and press Return The dollar signs keep every
+
+00:02:00.191 --> 00:02:03.407
+row pointing at the taxable income in B6
+
+00:02:04.872 --> 00:02:08.754
+Fill down to G9 with Command D The first
+
+00:02:08.767 --> 00:02:12.309
+four rows look right but the twenty twenty-five and
+
+00:02:12.322 --> 00:02:16.983
+thirty percent rows are negative Neha's income never reaches
+
+00:02:16.996 --> 00:02:20.421
+those slabs so the subtraction drops below zero
+
+00:02:21.872 --> 00:02:26.093
+Wrap the income part in MAX with zero Retype
+
+00:02:26.106 --> 00:02:30.937
+G3 as equals MAX open bracket zero comma MIN
+
+00:02:30.950 --> 00:02:34.960
+of B6 and E3 minus D3, close bracket times
+
+00:02:34.973 --> 00:02:40.845
+F3 Fill down again Unused slabs now show zero
+
+00:02:42.325 --> 00:02:45.515
+Read the column twenty thousand from the five percent
+
+00:02:45.528 --> 00:02:49.070
+slab forty thousand from the ten percent slab and
+
+00:02:49.083 --> 00:02:52.247
+fifty-six thousand two hundred and fifty from the fifteen
+
+00:02:52.260 --> 00:02:56.936
+percent slab In B7, type equals SUM of G3
+
+00:02:56.949 --> 00:03:01.077
+to G9 Tax on slabs is one lakh sixteen
+
+00:03:01.090 --> 00:03:03.252
+thousand two hundred and fifty rupees
+
+00:03:04.762 --> 00:03:08.566
+The rebate has two parts Up to twelve lakh
+
+00:03:08.579 --> 00:03:13.202
+of taxable income the whole tax is rebated Just
+
+00:03:13.215 --> 00:03:17.603
+above twelve lakh marginal relief applies the tax can't
+
+00:03:17.616 --> 00:03:20.584
+be more than the income that crosses twelve lakh
+
+00:03:22.044 --> 00:03:26.211
+In B8, type equals IF open bracket B6 less
+
+00:03:26.224 --> 00:03:31.590
+than or equal to 1200000 comma B7, comma So
+
+00:03:31.603 --> 00:03:34.286
+at or below twelve lakh the rebate is the
+
+00:03:34.299 --> 00:03:35.184
+whole tax
+
+00:03:36.669 --> 00:03:39.820
+Otherwise the rebate is the tax minus the income
+
+00:03:39.833 --> 00:03:44.379
+above twelve lakh never below zero Type MAX of
+
+00:03:44.392 --> 00:03:51.931
+B7 minus in brackets B6 minus 1200000 comma zero
+
+00:03:52.843 --> 00:03:57.153
+Close both brackets and press Return Neha is well
+
+00:03:57.166 --> 00:03:59.679
+above the limit so her rebate is zero
+
+00:04:01.137 --> 00:04:05.004
+In B9, tax after rebate is B7 minus B8
+
+00:04:05.918 --> 00:04:08.613
+In B10, the cess is four percent of that
+
+00:04:08.821 --> 00:04:12.311
+rounded to whole rupees with ROUND comma zero
+
+00:04:13.762 --> 00:04:17.265
+In B11, total tax is tax plus cess one
+
+00:04:17.278 --> 00:04:21.772
+lakh twenty thousand nine hundred rupees In B12, divide
+
+00:04:21.785 --> 00:04:24.702
+by 12 and round for a monthly TDS of
+
+00:04:24.715 --> 00:04:26.993
+ten thousand and seventy-five rupees
+
+00:04:28.481 --> 00:04:32.572
+Now test the rebate Change the gross salary in
+
+00:04:32.585 --> 00:04:37.624
+B4 to twelve lakh seventy-five thousand Taxable income is
+
+00:04:37.637 --> 00:04:41.738
+exactly twelve lakh slab tax is sixty thousand the
+
+00:04:41.751 --> 00:04:45.124
+rebate cancels all of it and total tax is
+
+00:04:45.137 --> 00:04:45.592
+zero
+
+00:04:47.059 --> 00:04:51.723
+Now try thirteen lakh Taxable income is twelve lakh
+
+00:04:51.736 --> 00:04:55.538
+twenty-five thousand and slab tax is sixty-three thousand seven
+
+00:04:55.551 --> 00:04:59.665
+hundred and fifty Marginal relief limits the tax to
+
+00:04:59.678 --> 00:05:03.129
+the twenty-five thousand rupees above twelve lakh so the
+
+00:05:03.142 --> 00:05:07.439
+rebate is thirty-eight thousand seven hundred and fifty With
+
+00:05:07.452 --> 00:05:10.538
+cess the total is twenty-six thousand rupees
+
+00:05:11.997 --> 00:05:15.749
+Keep the assumptions in mind This sheet is for
+
+00:05:15.762 --> 00:05:18.900
+a resident individual with salary income under the new
+
+00:05:18.913 --> 00:05:24.108
+regime below fifty lakh so there's no surcharge Special-rate
+
+00:05:24.121 --> 00:05:27.715
+income such as capital gains follows its own rules
+
+00:05:29.200 --> 00:05:30.684
+Here's a quick recap
+
+00:05:32.153 --> 00:05:36.712
+Your turn Change the gross salary to twenty-five lakh
+
+00:05:36.725 --> 00:05:40.580
+rupees and note the total tax Then check your
+
+00:05:40.593 --> 00:05:42.181
+answer on the Done sheet
