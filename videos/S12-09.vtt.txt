@@ -1,0 +1,238 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.237
+This is the monthly MIS report most branch offices
+
+00:00:04.250 --> 00:00:08.601
+send on the first working day Sales collections and
+
+00:00:08.614 --> 00:00:12.429
+target achievement for every branch filtered to one month
+
+00:00:12.442 --> 00:00:15.424
+with a slicer and saved as a PDF to
+
+00:00:15.437 --> 00:00:15.971
+email
+
+00:00:17.453 --> 00:00:21.856
+Meet Ritika from the MD's office Every month she
+
+00:00:21.869 --> 00:00:25.749
+builds this report by hand We'll build it once
+
+00:00:25.762 --> 00:00:29.161
+so next month is just paste refresh and click
+
+00:00:30.059 --> 00:00:35.736
+Practice sheets S12-09 and S12-09 Targets
+
+00:00:37.203 --> 00:00:41.083
+The data on S12-09 is the full year of
+
+00:00:41.096 --> 00:00:45.432
+invoices with one extra column M showing how much
+
+00:00:45.445 --> 00:00:47.672
+of each invoice has been collected
+
+00:00:49.125 --> 00:00:53.669
+The sheet S12-09 Targets has a monthly sales target
+
+00:00:53.682 --> 00:00:55.596
+for each of the eight branches
+
+00:00:57.046 --> 00:01:02.947
+Back on S12-09 click A1 On the Insert tab
+
+00:01:03.090 --> 00:01:06.306
+click PivotTable and choose From Table or Range
+
+00:01:07.781 --> 00:01:15.190
+Choose Existing Worksheet location S12-09 exclamation mark P6 and
+
+00:01:15.203 --> 00:01:19.215
+click OK The headings for our extra columns are
+
+00:01:19.228 --> 00:01:21.794
+already waiting in S6 to U6
+
+00:01:23.281 --> 00:01:28.192
+Tick Branch Sales and Collections Eight branches with sales
+
+00:01:28.205 --> 00:01:30.197
+and collections side by side
+
+00:01:31.656 --> 00:01:34.989
+On the Design tab click Report Layout and choose
+
+00:01:35.002 --> 00:01:38.192
+Show in Tabular Form so the first heading reads
+
+00:01:38.206 --> 00:01:38.831
+Branch
+
+00:01:40.296 --> 00:01:44.608
+Now the target for each branch Click S7 and
+
+00:01:44.621 --> 00:01:50.051
+type equals XLOOKUP open bracket P7 comma P7 is
+
+00:01:50.064 --> 00:01:54.100
+the branch name Type it don't click it so
+
+00:01:54.113 --> 00:01:56.431
+Excel doesn't write GETPIVOTDATA
+
+00:01:57.890 --> 00:02:00.872
+Next where to look the branch list on the
+
+00:02:00.885 --> 00:02:04.322
+Targets sheet A2 to A9, with dollar signs so
+
+00:02:04.335 --> 00:02:05.416
+it stays fixed
+
+00:02:06.890 --> 00:02:09.742
+Then what to return the targets in B2 to
+
+00:02:09.755 --> 00:02:13.429
+B9 Close the bracket and press Return
+
+00:02:14.906 --> 00:02:18.252
+Fill it down for all eight branches select S7
+
+00:02:18.265 --> 00:02:20.661
+to S14 and press Command D
+
+00:02:22.140 --> 00:02:27.051
+Achievement is sales divided by target In T7 type
+
+00:02:27.064 --> 00:02:31.100
+equals Q7 divided by S7, press Return and fill
+
+00:02:31.113 --> 00:02:32.455
+down to T14
+
+00:02:33.921 --> 00:02:39.210
+Collection percentage is collections divided by sales In U7
+
+00:02:39.223 --> 00:02:43.233
+type equals R7 divided by Q7, press Return and
+
+00:02:43.246 --> 00:02:44.743
+fill down to U14
+
+00:02:46.218 --> 00:02:50.465
+The total row In S15 type equals SUM of
+
+00:02:50.478 --> 00:02:55.973
+S7 to S14 Then T15 is Q15 divided by
+
+00:02:55.986 --> 00:02:56.806
+S15
+
+00:02:58.265 --> 00:03:02.327
+And U15 is R15 divided by Q15, the company's
+
+00:03:02.341 --> 00:03:03.669
+collection percentage
+
+00:03:05.125 --> 00:03:10.283
+Look at achievement around a thousand percent everywhere That's
+
+00:03:10.296 --> 00:03:14.385
+the classic MIS mistake The pivot has the whole
+
+00:03:14.398 --> 00:03:18.565
+year's sales but the targets are monthly We need
+
+00:03:18.578 --> 00:03:20.544
+to filter the pivot to one month
+
+00:03:22.015 --> 00:03:26.978
+Click inside the pivot P7 On the PivotTable tab
+
+00:03:27.121 --> 00:03:30.533
+click Insert Slicer tick Month and click OK
+
+00:03:32.015 --> 00:03:37.863
+Click 2026-03 on the slicer The pivot now shows
+
+00:03:37.876 --> 00:03:43.371
+March only and achievement drops to realistic numbers Branches
+
+00:03:43.384 --> 00:03:46.132
+below one hundred percent missed their target
+
+00:03:47.609 --> 00:03:51.700
+Check one number by hand March total sales in
+
+00:03:51.713 --> 00:03:55.593
+Q15 divided by the total target in S15 gives
+
+00:03:55.606 --> 00:04:00.567
+the company achievement in T15 The formulas next to
+
+00:04:00.580 --> 00:04:03.366
+the pivot update with every slicer click
+
+00:04:04.843 --> 00:04:10.197
+Pro tip Next month paste the new invoices refresh
+
+00:04:10.340 --> 00:04:13.712
+and click the new month on the slicer The
+
+00:04:13.725 --> 00:04:17.475
+side formulas stay valid because the branch list doesn't
+
+00:04:17.488 --> 00:04:22.788
+change If branches can change use GETPIVOTDATA instead of
+
+00:04:22.801 --> 00:04:23.491
+P7
+
+00:04:24.968 --> 00:04:29.957
+Now the PDF Go to File Export and choose
+
+00:04:29.970 --> 00:04:34.827
+Download as PDF Excel prepares the file and gives
+
+00:04:34.840 --> 00:04:36.142
+you a download button
+
+00:04:37.625 --> 00:04:41.440
+On Excel for Mac use File Save As and
+
+00:04:41.453 --> 00:04:45.177
+pick PDF as the file format or File Print
+
+00:04:45.359 --> 00:04:49.945
+then Save as PDF Set landscape and the print
+
+00:04:49.958 --> 00:04:50.830
+area first
+
+00:04:52.296 --> 00:04:56.191
+To recap Use the pivot for the numbers and
+
+00:04:56.204 --> 00:05:01.465
+simple formulas beside it for targets and percentages Compare
+
+00:05:01.478 --> 00:05:04.486
+like with like so monthly targets need a month
+
+00:05:04.499 --> 00:05:09.121
+filter And with a slicer and refresh next month's
+
+00:05:09.134 --> 00:05:10.801
+MIS takes two minutes
+
+00:05:12.265 --> 00:05:17.944
+Your turn Switch the slicer to February 2026 and list
+
+00:05:17.957 --> 00:05:21.916
+the branches that missed their target The answer is
+
+00:05:21.929 --> 00:05:24.376
+on S12-09 Done

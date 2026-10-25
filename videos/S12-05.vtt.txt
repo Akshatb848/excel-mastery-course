@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.625
+Here's the result a pivot of sales and cost
+
+00:00:03.638 --> 00:00:07.440
+by category with a margin percentage worked out inside
+
+00:00:07.453 --> 00:00:11.309
+the pivot The grand total margin is the true
+
+00:00:11.322 --> 00:00:14.395
+company margin not an average of averages
+
+00:00:15.860 --> 00:00:18.633
+You'll learn to add a calculated field why a
+
+00:00:18.646 --> 00:00:22.058
+percentage column in the source gives wrong totals and
+
+00:00:22.071 --> 00:00:25.222
+how calculated items work and where they go wrong
+
+00:00:26.136 --> 00:00:30.914
+Practice sheet S12-05 in Excel desktop
+
+00:00:32.375 --> 00:00:35.474
+A calculated field is a new value field built
+
+00:00:35.487 --> 00:00:39.591
+from the totals of other fields Because it works
+
+00:00:39.604 --> 00:00:42.937
+on totals the margin is right at every level
+
+00:00:43.822 --> 00:00:47.195
+A calculated item is a new item inside one
+
+00:00:47.208 --> 00:00:49.903
+field like Laptops plus Printers
+
+00:00:51.360 --> 00:00:56.712
+Sheet S12-05 has one extra column M Line Margin
+
+00:00:56.725 --> 00:01:00.906
+percent worked out for each invoice Keep it in
+
+00:01:00.919 --> 00:01:06.362
+mind Click A1 and choose Insert PivotTable From Table
+
+00:01:06.375 --> 00:01:07.091
+or Range
+
+00:01:08.563 --> 00:01:15.777
+Choose Existing Worksheet location S12-05 exclamation mark O6, and
+
+00:01:15.790 --> 00:01:16.610
+click OK
+
+00:01:18.078 --> 00:01:23.380
+Tick Category Sales and Cost Four categories with sales
+
+00:01:23.393 --> 00:01:24.695
+and cost for each
+
+00:01:26.172 --> 00:01:31.148
+Click inside the pivot here O7 On the PivotTable
+
+00:01:31.161 --> 00:01:35.862
+Analyze tab click Fields Items and Sets then Calculated
+
+00:01:35.875 --> 00:01:36.408
+Field
+
+00:01:37.891 --> 00:01:43.088
+Name it Margin percent In Formula type equals open
+
+00:01:43.101 --> 00:01:47.971
+bracket Sales minus Cost close bracket divided by Sales
+
+00:01:48.857 --> 00:01:50.654
+Click Add then OK
+
+00:01:52.141 --> 00:01:57.182
+A new column Sum of Margin percent appears Excel
+
+00:01:57.195 --> 00:01:59.682
+works it out on the totals of each row
+
+00:01:59.812 --> 00:02:03.536
+so the Laptops margin is total laptop profit divided
+
+00:02:03.549 --> 00:02:05.372
+by total laptop sales
+
+00:02:06.828 --> 00:02:11.320
+Right-click a margin value R7, choose Number Format pick
+
+00:02:11.333 --> 00:02:14.836
+Percentage with one decimal place and click OK
+
+00:02:16.313 --> 00:02:20.560
+Now the trap Tick Line Margin percent the column
+
+00:02:20.573 --> 00:02:24.401
+worked out in the source Excel adds up every
+
+00:02:24.414 --> 00:02:28.268
+invoice's percentage so the numbers run into thousands of
+
+00:02:28.281 --> 00:02:30.768
+percent Meaningless
+
+00:02:32.250 --> 00:02:36.393
+Switch it to Average Better but it's a simple
+
+00:02:36.406 --> 00:02:40.325
+average of invoices so a small accessories order counts
+
+00:02:40.338 --> 00:02:44.010
+as much as a big laptop deal Compare the
+
+00:02:44.023 --> 00:02:46.393
+grand totals they don't match
+
+00:02:47.860 --> 00:02:51.951
+So the rule is simple For ratios like margin
+
+00:02:52.081 --> 00:02:56.521
+average price or achievement percent use a calculated field
+
+00:02:57.419 --> 00:02:59.268
+Untick Line Margin percent
+
+00:03:00.750 --> 00:03:05.713
+Now a calculated item Click a category name Laptops
+
+00:03:05.726 --> 00:03:09.489
+in O8, then Fields Items and Sets and choose
+
+00:03:09.502 --> 00:03:10.778
+Calculated Item
+
+00:03:12.250 --> 00:03:15.896
+Name it IT Hardware and in Formula type equals
+
+00:03:15.909 --> 00:03:20.338
+Laptops plus Printers Click Add then OK
+
+00:03:21.813 --> 00:03:26.281
+IT Hardware appears as a fifth category But look
+
+00:03:26.294 --> 00:03:30.240
+at the grand total Laptops and Printers are now
+
+00:03:30.253 --> 00:03:34.575
+counted twice so the total is inflated That's the
+
+00:03:34.589 --> 00:03:36.672
+risk with calculated items
+
+00:03:38.141 --> 00:03:43.351
+Let's remove it Click O8, open Calculated Item again
+
+00:03:43.495 --> 00:03:46.880
+choose IT Hardware in the Name box click Delete
+
+00:03:47.062 --> 00:03:50.930
+then OK The grand total is correct again
+
+00:03:52.391 --> 00:03:56.117
+When should you calculate in the source instead When
+
+00:03:56.130 --> 00:03:59.515
+the result belongs to each row like GST on
+
+00:03:59.529 --> 00:04:02.172
+an invoice line when you need IF or lookup
+
+00:04:02.185 --> 00:04:05.049
+logic or when several pivots need it
+
+00:04:06.516 --> 00:04:09.849
+On a Mac the path is the same PivotTable
+
+00:04:09.862 --> 00:04:14.107
+Analyze Fields Items and Sets Calculated Field
+
+00:04:15.594 --> 00:04:20.557
+To recap Calculated fields work on totals so ratios
+
+00:04:20.570 --> 00:04:24.815
+come out right Don't sum or average a percentage
+
+00:04:24.828 --> 00:04:28.929
+column from the source And calculated items add to
+
+00:04:28.942 --> 00:04:31.560
+the grand total so use them carefully
+
+00:04:33.031 --> 00:04:37.955
+Your turn Add a calculated field called Profit equal
+
+00:04:37.968 --> 00:04:40.780
+to Sales minus Cost and give it the rupee
+
+00:04:40.793 --> 00:04:45.416
+format Find the category that earns the most profit
+
+00:04:46.327 --> 00:04:49.856
+The answer is on S12-05 Done

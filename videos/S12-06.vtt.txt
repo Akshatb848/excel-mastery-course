@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.172
+Here's the finished sheet two pivots one with sales
+
+00:00:04.185 --> 00:00:07.674
+by branch and one with quantity by category both
+
+00:00:07.688 --> 00:00:11.034
+controlled by a single region slicer and a single
+
+00:00:11.047 --> 00:00:15.111
+date timeline One click updates the whole report
+
+00:00:16.593 --> 00:00:19.432
+You'll learn to insert a slicer connect it to
+
+00:00:19.445 --> 00:00:22.570
+more than one pivot and filter by month with
+
+00:00:22.583 --> 00:00:29.603
+a timeline Practice sheet S12-06 recorded in Excel desktop
+
+00:00:31.062 --> 00:00:33.888
+A slicer is a set of buttons that filters
+
+00:00:33.901 --> 00:00:37.575
+a pivot by one field A timeline is a
+
+00:00:37.588 --> 00:00:42.509
+slider for dates Report Connections links one slicer or
+
+00:00:42.522 --> 00:00:46.012
+timeline to every pivot built from the same data
+
+00:00:47.484 --> 00:00:53.213
+On sheet S12-06 click A1, then Insert PivotTable From
+
+00:00:53.226 --> 00:00:54.476
+Table or Range
+
+00:00:55.937 --> 00:01:03.085
+Choose Existing Worksheet location S12-06 exclamation mark N6, and
+
+00:01:03.098 --> 00:01:03.932
+click OK
+
+00:01:05.390 --> 00:01:09.832
+Tick Branch and Sales Eight branches with their sales
+
+00:01:11.312 --> 00:01:14.138
+Click back in the data at A1 and insert
+
+00:01:14.151 --> 00:01:17.354
+a second PivotTable this time at N20 on the
+
+00:01:17.367 --> 00:01:18.239
+same sheet
+
+00:01:19.703 --> 00:01:24.497
+Tick Category and Qty The second pivot shows units
+
+00:01:24.510 --> 00:01:25.825
+sold by category
+
+00:01:27.312 --> 00:01:32.965
+Click inside the first pivot N7 On PivotTable Analyze
+
+00:01:33.095 --> 00:01:36.572
+click Insert Slicer tick Region and click OK
+
+00:01:38.046 --> 00:01:42.085
+Click South on the slicer The first pivot now
+
+00:01:42.098 --> 00:01:46.746
+shows only Bengaluru and Chennai But the second pivot
+
+00:01:46.759 --> 00:01:51.303
+hasn't changed It still shows units for every region
+
+00:01:52.781 --> 00:01:56.505
+That's the common mistake a slicer only filters the
+
+00:01:56.518 --> 00:02:00.726
+pivot it was made from With the slicer selected
+
+00:02:00.843 --> 00:02:04.424
+go to the Slicer tab click Report Connections tick
+
+00:02:04.437 --> 00:02:06.846
+PivotTable2 and click OK
+
+00:02:08.328 --> 00:02:12.900
+Now both pivots follow the slicer Click North then
+
+00:02:12.913 --> 00:02:16.507
+South again and watch both tables change together
+
+00:02:17.984 --> 00:02:22.244
+A quick check Click N2 and type equals SUMIFS
+
+00:02:22.387 --> 00:02:27.934
+open bracket J2 colon J241 for sales C2 colon
+
+00:02:27.947 --> 00:02:33.676
+C241 for region and South in quotes Press Return
+
+00:02:34.575 --> 00:02:36.905
+It matches the pivot's grand total
+
+00:02:38.375 --> 00:02:42.765
+Timelines filter by dates Click in the first pivot
+
+00:02:42.960 --> 00:02:47.309
+then on PivotTable Analyze click Insert Timeline tick Date
+
+00:02:47.322 --> 00:02:48.416
+and click OK
+
+00:02:49.875 --> 00:02:53.744
+Connect it the same way On the Timeline tab
+
+00:02:53.901 --> 00:02:57.898
+click Report Connections tick PivotTable2 and click OK
+
+00:02:59.359 --> 00:03:03.424
+Click JUN on the timeline Both pivots now show
+
+00:03:03.437 --> 00:03:09.726
+South region figures for June 2025 only Drag across several
+
+00:03:09.739 --> 00:03:12.773
+months to select a range or switch the timeline
+
+00:03:12.786 --> 00:03:13.671
+to quarters
+
+00:03:15.156 --> 00:03:19.898
+Pro tip Right-click a slicer and open Slicer Settings
+
+00:03:19.911 --> 00:03:24.103
+to hide items with no data Use the multi-select
+
+00:03:24.116 --> 00:03:27.150
+button to pick several regions and the clear filter
+
+00:03:27.163 --> 00:03:29.182
+button to show everything again
+
+00:03:30.656 --> 00:03:34.419
+On a Mac Insert Slicer and Insert Timeline are
+
+00:03:34.432 --> 00:03:38.364
+on the PivotTable Analyze tab and Report Connections is
+
+00:03:38.377 --> 00:03:42.494
+on the Slicer tab To pick several buttons hold
+
+00:03:42.507 --> 00:03:43.588
+Command and click
+
+00:03:45.046 --> 00:03:49.970
+To recap Slicers and timelines make filtering one click
+
+00:03:50.881 --> 00:03:54.436
+A new slicer only controls its own pivot until
+
+00:03:54.449 --> 00:03:58.772
+you set report connections And a quick SUMIFS confirms
+
+00:03:58.785 --> 00:04:00.113
+the filtered numbers
+
+00:04:01.593 --> 00:04:05.775
+Your turn Add a Category slicer connect it to
+
+00:04:05.788 --> 00:04:09.095
+both pivots and find Laptops sales for the South
+
+00:04:09.108 --> 00:04:16.178
+region in June 2025 The answer is on S12-06 Done

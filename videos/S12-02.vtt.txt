@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.617
+Here's the finished report Region and branch in their
+
+00:00:04.630 --> 00:00:08.614
+own columns every row labelled no clutter of subtotals
+
+00:00:08.744 --> 00:00:11.335
+and sales shown in lakhs and crores with the
+
+00:00:11.348 --> 00:00:14.656
+rupee sign It looks like a report you can
+
+00:00:14.669 --> 00:00:17.559
+paste into an email not a raw pivot
+
+00:00:19.031 --> 00:00:22.403
+You'll learn the three report layouts how to repeat
+
+00:00:22.416 --> 00:00:25.828
+labels and remove subtotals and how to apply a
+
+00:00:25.841 --> 00:00:30.687
+number format that survives every refresh We're on sheet
+
+00:00:30.700 --> 00:00:34.632
+S12-02 recorded in Excel desktop
+
+00:00:36.109 --> 00:00:40.668
+Excel has three layouts Compact puts all row fields
+
+00:00:40.681 --> 00:00:45.017
+in one column Outline and Tabular give each field
+
+00:00:45.030 --> 00:00:48.221
+its own column and Tabular looks most like a
+
+00:00:48.234 --> 00:00:52.569
+normal table These settings live on the Design tab
+
+00:00:54.047 --> 00:00:59.843
+On sheet S12-02 click A1 inside the data Go
+
+00:00:59.856 --> 00:01:03.346
+to Insert PivotTable From Table or Range
+
+00:01:04.828 --> 00:01:11.143
+Choose Existing Worksheet set the location to S12-02 exclamation
+
+00:01:11.156 --> 00:01:13.435
+mark N6, and click OK
+
+00:01:14.906 --> 00:01:19.973
+Tick Region Branch Sales and Cost Both text fields
+
+00:01:19.986 --> 00:01:22.916
+go to Rows so each branch sits under its
+
+00:01:22.929 --> 00:01:27.760
+region squeezed into one column That's Compact form
+
+00:01:29.234 --> 00:01:32.619
+On the Design tab click Report Layout and choose
+
+00:01:32.632 --> 00:01:36.788
+Show in Tabular Form Region and Branch now get
+
+00:01:36.801 --> 00:01:38.924
+their own columns with proper headings
+
+00:01:40.390 --> 00:01:44.858
+Region names appear only once per group That looks
+
+00:01:44.871 --> 00:01:47.814
+tidy but it breaks when you copy the report
+
+00:01:47.827 --> 00:01:52.137
+or filter it Click Report Layout again and choose
+
+00:01:52.150 --> 00:01:54.064
+Repeat All Item Labels
+
+00:01:55.531 --> 00:01:58.773
+We don't need a subtotal for every region here
+
+00:01:59.687 --> 00:02:04.036
+Click Subtotals and choose Do Not Show Subtotals The
+
+00:02:04.049 --> 00:02:07.278
+grand total stays at the bottom in row fifteen
+
+00:02:08.750 --> 00:02:12.747
+Now the numbers and a common mistake formatting pivot
+
+00:02:12.760 --> 00:02:17.932
+cells like ordinary cells Select the cost figures Q7
+
+00:02:17.945 --> 00:02:20.992
+to Q14, and press Control Shift 1 for a
+
+00:02:21.005 --> 00:02:22.046
+comma format
+
+00:02:23.500 --> 00:02:27.838
+It looks fine until the pivot changes Untick Cost
+
+00:02:27.851 --> 00:02:30.546
+and tick it again which is what happens when
+
+00:02:30.559 --> 00:02:34.739
+someone rearranges the report The formatting is gone
+
+00:02:36.203 --> 00:02:38.924
+The right way is to format the field not
+
+00:02:38.937 --> 00:02:44.070
+the cells Right-click any sales figure here P7 and
+
+00:02:44.083 --> 00:02:45.424
+choose Number Format
+
+00:02:46.875 --> 00:02:50.260
+In the Format Cells box choose Custom and enter
+
+00:02:50.273 --> 00:02:53.620
+our Indian rupee format which shows lakhs and crores
+
+00:02:53.633 --> 00:02:58.791
+with the rupee sign Click OK This format stays
+
+00:02:58.804 --> 00:03:01.109
+through refreshes and layout changes
+
+00:03:02.578 --> 00:03:07.229
+Headings like Sum of Sales look machine-made Click P6
+
+00:03:07.463 --> 00:03:11.551
+type Total Sales and press Return You can't use
+
+00:03:11.564 --> 00:03:14.572
+the exact name of a source column so plain
+
+00:03:14.585 --> 00:03:16.018
+Sales would be rejected
+
+00:03:17.484 --> 00:03:22.226
+A pro tip On every refresh Excel resizes the
+
+00:03:22.239 --> 00:03:27.460
+pivot columns and undoes your widths On PivotTable Analyze
+
+00:03:27.577 --> 00:03:31.835
+click Options untick Autofit column widths on update and
+
+00:03:31.848 --> 00:03:32.668
+click OK
+
+00:03:34.140 --> 00:03:37.734
+Finally on the Design tab tick Banded Rows so
+
+00:03:37.747 --> 00:03:40.507
+a long report is easier to read across the
+
+00:03:40.520 --> 00:03:40.937
+line
+
+00:03:42.390 --> 00:03:46.062
+On a Mac the Design and PivotTable Analyze tabs
+
+00:03:46.075 --> 00:03:50.231
+have the same buttons The number shortcut is Control
+
+00:03:50.244 --> 00:03:53.186
+Shift 1 there too and Number Format is on
+
+00:03:53.199 --> 00:03:54.554
+the Control-click menu
+
+00:03:56.031 --> 00:04:00.356
+To recap Tabular form with repeated labels makes a
+
+00:04:00.369 --> 00:04:04.965
+pivot read like a normal table Subtotals and grand
+
+00:04:04.978 --> 00:04:09.158
+totals are controlled from the Design tab And always
+
+00:04:09.171 --> 00:04:12.517
+format the field through Number Format so it sticks
+
+00:04:13.984 --> 00:04:18.387
+Your turn Switch the layout to Outline form show
+
+00:04:18.400 --> 00:04:21.616
+subtotals at the top of each group insert a
+
+00:04:21.629 --> 00:04:24.780
+blank line after each region and give Sum of
+
+00:04:24.793 --> 00:04:30.457
+Cost the same rupee format Compare with S12-02 Done

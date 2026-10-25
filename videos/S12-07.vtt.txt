@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.925
+Here's the result a line chart of monthly sales
+
+00:00:03.938 --> 00:00:07.310
+by region built from a pivot with a category
+
+00:00:07.323 --> 00:00:11.505
+slicer Click Laptops and both the chart and the
+
+00:00:11.518 --> 00:00:15.515
+table switch to laptop sales That's a chart your
+
+00:00:15.528 --> 00:00:17.507
+management review can play with
+
+00:00:18.968 --> 00:00:22.314
+You'll learn to create a PivotChart tidy it up
+
+00:00:22.445 --> 00:00:26.678
+and make it interactive with a slicer Practice sheet
+
+00:00:26.978 --> 00:00:31.092
+S12-07 recorded in Excel desktop
+
+00:00:32.562 --> 00:00:35.492
+A PivotChart is a chart tied to a pivot
+
+00:00:36.405 --> 00:00:40.806
+Rows become the horizontal axis columns become the series
+
+00:00:41.718 --> 00:00:46.106
+Change one and the other follows Some chart types
+
+00:00:46.249 --> 00:00:49.061
+like scatter and treemap aren't allowed
+
+00:00:50.547 --> 00:00:56.445
+On sheet S12-07 click A1 and choose Insert PivotTable
+
+00:00:56.589 --> 00:00:58.112
+From Table or Range
+
+00:00:59.578 --> 00:01:06.779
+Choose Existing Worksheet location S12-07 exclamation mark N6, and
+
+00:01:06.792 --> 00:01:07.599
+click OK
+
+00:01:09.078 --> 00:01:13.299
+Tick Month Sales and Region Then click Region in
+
+00:01:13.312 --> 00:01:16.294
+the Rows box and choose Move to Column Labels
+
+00:01:17.192 --> 00:01:19.887
+Months run down regions across
+
+00:01:21.343 --> 00:01:27.048
+Click inside the pivot On PivotTable Analyze click PivotChart
+
+00:01:27.947 --> 00:01:31.736
+Choose Line on the left and click OK Trends
+
+00:01:31.749 --> 00:01:33.897
+over months read best as lines
+
+00:01:35.359 --> 00:01:38.198
+Each region is a line with months along the
+
+00:01:38.211 --> 00:01:42.366
+bottom The chart and the pivot are linked filter
+
+00:01:42.379 --> 00:01:45.088
+or rearrange one and the other changes too
+
+00:01:46.578 --> 00:01:50.382
+Give it a clear title On the Design tab
+
+00:01:50.564 --> 00:01:55.617
+click Add Chart Element Chart Title Above Chart Type
+
+00:01:55.630 --> 00:02:01.697
+Monthly Sales by Region FY 2025-26 and press Return
+
+00:02:03.187 --> 00:02:05.856
+The grey buttons on the chart take space and
+
+00:02:05.869 --> 00:02:11.483
+confuse readers On PivotChart Analyze click Field Buttons and
+
+00:02:11.496 --> 00:02:12.616
+choose Hide All
+
+00:02:14.093 --> 00:02:16.945
+A common mistake is choosing a chart type that
+
+00:02:16.958 --> 00:02:22.754
+PivotCharts don't support like scatter or treemap Excel refuses
+
+00:02:22.767 --> 00:02:27.949
+with a message Use line column bar area pie
+
+00:02:27.962 --> 00:02:30.996
+or combo or copy the values to a normal
+
+00:02:31.009 --> 00:02:31.921
+range first
+
+00:02:33.390 --> 00:02:37.780
+Now make it interactive With the chart still selected
+
+00:02:37.910 --> 00:02:42.637
+click Insert Slicer on PivotChart Analyze tick Category and
+
+00:02:42.650 --> 00:02:43.444
+click OK
+
+00:02:44.922 --> 00:02:49.052
+Click Laptops The chart and the pivot both switch
+
+00:02:49.065 --> 00:02:53.401
+to laptop sales Click another category to compare
+
+00:02:54.906 --> 00:02:58.278
+Look at the pivot the same filter applies and
+
+00:02:58.291 --> 00:03:01.586
+the grand total in S20 is now laptop sales
+
+00:03:01.599 --> 00:03:02.198
+for the year
+
+00:03:03.687 --> 00:03:07.465
+Pro tip For a review deck move the chart
+
+00:03:07.478 --> 00:03:10.421
+to its own sheet with Move Chart or copy
+
+00:03:10.434 --> 00:03:14.119
+it into PowerPoint Paste it as a picture if
+
+00:03:14.132 --> 00:03:16.202
+the numbers shouldn't change later
+
+00:03:17.672 --> 00:03:21.761
+On a Mac use PivotChart on the PivotTable Analyze
+
+00:03:21.774 --> 00:03:25.250
+tab or select the pivot and pick any chart
+
+00:03:25.263 --> 00:03:28.690
+from the Insert tab A chart made from a
+
+00:03:28.703 --> 00:03:31.398
+pivot is a PivotChart automatically
+
+00:03:32.875 --> 00:03:37.617
+To recap Create a PivotChart from inside the pivot
+
+00:03:38.541 --> 00:03:41.458
+Add a clear title and hide the field buttons
+
+00:03:42.356 --> 00:03:45.260
+And one slicer filters both the chart and the
+
+00:03:45.273 --> 00:03:45.794
+table
+
+00:03:47.265 --> 00:03:51.512
+Your turn Change the chart to clustered columns and
+
+00:03:51.525 --> 00:03:55.548
+set the slicer to Printers Find the region that
+
+00:03:55.561 --> 00:04:01.186
+sold the most printers in October 2025 The answer is
+
+00:04:01.199 --> 00:04:03.699
+on S12-07 Done

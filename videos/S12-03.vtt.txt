@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.130
+By the end of this lesson our pivot will
+
+00:00:03.143 --> 00:00:06.516
+show how sales moved month by month how much
+
+00:00:06.529 --> 00:00:09.302
+more or less we sold than the previous month
+
+00:00:10.203 --> 00:00:13.471
+On the way we'll get counts averages shares of
+
+00:00:13.484 --> 00:00:17.013
+total and running totals from the same field without
+
+00:00:17.026 --> 00:00:17.963
+one formula
+
+00:00:19.407 --> 00:00:22.662
+You'll learn the difference between Summarise Values By and
+
+00:00:22.675 --> 00:00:26.621
+Show Values As and use percentage of total running
+
+00:00:26.634 --> 00:00:33.003
+total and difference from last month Practice sheet S12-03
+
+00:00:34.500 --> 00:00:37.417
+Two settings both on the right-click menu of a
+
+00:00:37.430 --> 00:00:42.263
+value Summarise Values By decides how the numbers are
+
+00:00:42.276 --> 00:00:46.572
+combined Show Values As decides how the result is
+
+00:00:46.585 --> 00:00:49.815
+presented for example as a share of the total
+
+00:00:49.828 --> 00:00:51.664
+or a change from last month
+
+00:00:53.125 --> 00:00:58.880
+On sheet S12-03 click A1, then Insert PivotTable From
+
+00:00:58.893 --> 00:01:00.143
+Table or Range
+
+00:01:01.625 --> 00:01:08.734
+Choose Existing Worksheet location S12-03 exclamation mark N6, and
+
+00:01:08.747 --> 00:01:09.568
+click OK
+
+00:01:11.063 --> 00:01:15.609
+Tick Salesperson and Sales We get total sales for
+
+00:01:15.622 --> 00:01:19.021
+each of our sixteen salespeople with the grand total
+
+00:01:19.034 --> 00:01:19.893
+at the bottom
+
+00:01:21.360 --> 00:01:27.352
+Right-click any sales value here O7 Choose Summarize Values
+
+00:01:27.365 --> 00:01:32.039
+By then Count Now it shows how many invoices
+
+00:01:32.052 --> 00:01:35.373
+each person raised and the heading changes to Count
+
+00:01:35.386 --> 00:01:36.076
+of Sales
+
+00:01:37.532 --> 00:01:42.065
+Same menu choose Average This is the average invoice
+
+00:01:42.078 --> 00:01:45.998
+value useful when one person has many small orders
+
+00:01:46.011 --> 00:01:48.328
+and another has a few large ones
+
+00:01:49.797 --> 00:01:53.469
+Choose Max to see each person's single biggest invoice
+
+00:01:53.482 --> 00:01:54.055
+of the year
+
+00:01:55.547 --> 00:01:58.737
+Switch back to Sum before the next step because
+
+00:01:58.750 --> 00:02:02.070
+Show Values As works on top of whatever summary
+
+00:02:02.083 --> 00:02:02.643
+you pick
+
+00:02:04.125 --> 00:02:08.448
+Now right-click Show Values As percentage of Grand Total
+
+00:02:09.348 --> 00:02:12.630
+Each person's share of company sales adding up to
+
+00:02:12.643 --> 00:02:13.945
+one hundred percent
+
+00:02:15.454 --> 00:02:19.896
+For trends we need months Untick Salesperson and tick
+
+00:02:19.909 --> 00:02:24.115
+Month Our Month column is written as year dash
+
+00:02:24.271 --> 00:02:27.149
+month so it sorts in order from April to
+
+00:02:27.162 --> 00:02:27.657
+March
+
+00:02:29.141 --> 00:02:32.982
+Right-click a value Show Values As Running Total In.
+
+00:02:32.995 --> 00:02:36.120
+Choose Month as the base field and click OK
+
+00:02:37.021 --> 00:02:40.289
+Each month now shows sales so far this financial
+
+00:02:40.302 --> 00:02:43.062
+year and March equals the yearly total
+
+00:02:44.516 --> 00:02:50.586
+Last one Show Values As Difference From Base field
+
+00:02:50.599 --> 00:02:54.557
+Month base item previous Click OK
+
+00:02:56.016 --> 00:02:58.972
+April is blank because there's no earlier month to
+
+00:02:58.985 --> 00:03:04.794
+compare Negative numbers are months where sales fell That's
+
+00:03:04.807 --> 00:03:07.867
+your month-on-month change ready for the review meeting
+
+00:03:09.344 --> 00:03:12.612
+A common mistake picking a base field that isn't
+
+00:03:12.625 --> 00:03:16.599
+in the pivot Running Total and Difference From need
+
+00:03:16.612 --> 00:03:20.804
+the field that's actually in Rows or Columns Choose
+
+00:03:20.817 --> 00:03:23.812
+Region here and every cell shows N A Pick
+
+00:03:23.825 --> 00:03:25.205
+Month and it works
+
+00:03:26.672 --> 00:03:30.424
+Pro tip You can drag Sales into the Values
+
+00:03:30.437 --> 00:03:33.823
+box a second time so one column shows rupees
+
+00:03:33.836 --> 00:03:37.924
+and the next shows the percentage share Then rename
+
+00:03:37.937 --> 00:03:39.721
+the headings to Sales and Share
+
+00:03:41.141 --> 00:03:46.989
+To recap Summarise Values By changes the maths Show
+
+00:03:47.002 --> 00:03:51.156
+Values As changes how the result is shown And
+
+00:03:51.169 --> 00:03:54.294
+running totals or differences need a base field that's
+
+00:03:54.307 --> 00:03:55.193
+in the pivot
+
+00:03:56.672 --> 00:04:00.997
+Your turn Put Salesperson back in Rows and show
+
+00:04:01.010 --> 00:04:05.359
+Sum of Sales as Rank Largest to Smallest Find
+
+00:04:05.372 --> 00:04:09.083
+who is ranked number one The answer is on
+
+00:04:09.096 --> 00:04:11.336
+S12-03 Done

@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.330
+Here's what we'll build Two hundred and forty sales
+
+00:00:04.343 --> 00:00:07.911
+invoices for the year summarised by region and product
+
+00:00:07.924 --> 00:00:11.361
+category in one small table with a branch filter
+
+00:00:11.375 --> 00:00:15.580
+on top Your manager asks for this every Monday
+
+00:00:15.802 --> 00:00:18.497
+and a PivotTable builds it in under a minute
+
+00:00:19.969 --> 00:00:22.742
+In this lesson you'll create a PivotTable from a
+
+00:00:22.755 --> 00:00:27.013
+range place fields in rows columns values and filters
+
+00:00:27.170 --> 00:00:31.508
+and cross-check the total Open the practice workbook and
+
+00:00:31.521 --> 00:00:34.034
+go to sheet S12-01
+
+00:00:35.500 --> 00:00:38.313
+A PivotTable is a summary you build by ticking
+
+00:00:38.326 --> 00:00:43.015
+fields Rows list items down the side columns list
+
+00:00:43.028 --> 00:00:46.583
+items across the top values are the numbers Excel
+
+00:00:46.596 --> 00:00:48.953
+adds up and a filter lets you look at
+
+00:00:48.966 --> 00:00:52.872
+one slice at a time It needs clean data
+
+00:00:53.106 --> 00:00:55.489
+one header row and no blank rows
+
+00:00:56.953 --> 00:01:03.021
+Here's our data date invoice number region branch salesperson
+
+00:01:03.203 --> 00:01:09.077
+category product quantity rate sales and cost Click any
+
+00:01:09.091 --> 00:01:13.322
+cell in it here A1 On the Insert tab
+
+00:01:13.466 --> 00:01:16.682
+click PivotTable and choose From Table or Range
+
+00:01:18.141 --> 00:01:22.542
+Excel picks up the whole block A1 to L241
+
+00:01:23.456 --> 00:01:29.836
+Choose Existing Worksheet and for Location type S12-01 exclamation
+
+00:01:29.849 --> 00:01:33.000
+mark N6, so the pivot sits right next to
+
+00:01:33.013 --> 00:01:35.422
+the data Click OK
+
+00:01:36.906 --> 00:01:40.109
+The PivotTable Fields pane opens on the right with
+
+00:01:40.122 --> 00:01:45.150
+every column heading as a field Tick Region Text
+
+00:01:45.163 --> 00:01:48.366
+fields go to Rows so the four regions appear
+
+00:01:48.379 --> 00:01:49.291
+down the side
+
+00:01:50.766 --> 00:01:55.221
+Now tick Sales Number fields go to Values and
+
+00:01:55.234 --> 00:01:59.101
+Excel adds them up for each region The heading
+
+00:01:59.114 --> 00:02:00.456
+says Sum of Sales
+
+00:02:01.922 --> 00:02:06.299
+Tick Category It lands in Rows under Region which
+
+00:02:06.312 --> 00:02:10.101
+makes a long list In the Rows box click
+
+00:02:10.114 --> 00:02:12.523
+Category and choose Move to Columns
+
+00:02:14.000 --> 00:02:16.878
+Now each region is a row and each category
+
+00:02:16.891 --> 00:02:20.239
+is a column Every cell is the sales for
+
+00:02:20.252 --> 00:02:23.716
+that pair and the bottom right cell S12, is
+
+00:02:23.729 --> 00:02:25.773
+the grand total of all sales
+
+00:02:27.219 --> 00:02:29.862
+Tick Branch click it in the Rows box and
+
+00:02:29.875 --> 00:02:34.552
+choose Move to Filters A Branch dropdown appears above
+
+00:02:34.565 --> 00:02:38.224
+the pivot at N4 Use it when you want
+
+00:02:38.237 --> 00:02:40.320
+the same report for one branch
+
+00:02:41.797 --> 00:02:46.513
+Always cross-check a new pivot Click N2, type equals
+
+00:02:46.526 --> 00:02:51.734
+SUM open bracket J2 colon J241, close bracket and
+
+00:02:51.747 --> 00:02:56.070
+press Return It matches the grand total in S12,
+
+00:02:56.083 --> 00:02:57.867
+so no invoice was missed
+
+00:02:59.344 --> 00:03:03.174
+Here's the most common mistake If the source has
+
+00:03:03.187 --> 00:03:06.000
+a blank row Excel stops the range at the
+
+00:03:06.013 --> 00:03:09.724
+blank and the pivot quietly misses everything below it
+
+00:03:10.609 --> 00:03:15.531
+Your cross-check won't match Delete blank rows or turn
+
+00:03:15.544 --> 00:03:17.549
+the data into a Table first
+
+00:03:19.016 --> 00:03:21.907
+When you're not sure where to start select the
+
+00:03:21.920 --> 00:03:27.625
+data and go to Insert Recommended PivotTables Excel suggests
+
+00:03:27.638 --> 00:03:31.596
+a few ready layouts from your columns Pick one
+
+00:03:31.609 --> 00:03:33.523
+and adjust the fields from there
+
+00:03:35.031 --> 00:03:38.234
+On a Mac the steps are the same Insert
+
+00:03:38.416 --> 00:03:43.887
+PivotTable To right-click use Control-click or a two-finger tap
+
+00:03:44.773 --> 00:03:48.301
+If the fields pane disappears click inside the pivot
+
+00:03:48.314 --> 00:03:51.804
+and choose Field List on the PivotTable Analyze tab
+
+00:03:53.281 --> 00:03:57.333
+To recap Start from clean data and insert the
+
+00:03:57.346 --> 00:04:01.291
+pivot where you can see it Tick fields then
+
+00:04:01.304 --> 00:04:05.939
+move them between rows columns and filters And always
+
+00:04:05.952 --> 00:04:08.635
+cross-check the grand total with a simple SUM
+
+00:04:10.110 --> 00:04:14.852
+Your turn On the same pivot show Salesperson in
+
+00:04:14.865 --> 00:04:18.159
+Rows and Sum of Qty in Values then sort
+
+00:04:18.172 --> 00:04:22.547
+it largest first Find the salesperson who sold the
+
+00:04:22.560 --> 00:04:27.807
+most units The answer is on S12-01 Done
