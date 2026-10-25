@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.393
+Budgets usually arrive like this one column per month
+
+00:00:05.294 --> 00:00:08.888
+That looks fine on paper but makes PivotTables and
+
+00:00:08.901 --> 00:00:12.677
+charts painful We will reshape it into a tall
+
+00:00:12.690 --> 00:00:16.088
+table with one row per region category and month
+
+00:00:16.309 --> 00:00:18.432
+a hundred and forty-four rows in all
+
+00:00:19.891 --> 00:00:22.977
+You will learn to unpivot month columns into rows
+
+00:00:23.172 --> 00:00:26.493
+why tall data is easier to analyse and how
+
+00:00:26.506 --> 00:00:29.162
+to pivot it back when a report needs it
+
+00:00:30.049 --> 00:00:35.049
+The practice table is tblBudget on sheet S13-04
+
+00:00:36.531 --> 00:00:40.231
+Here is the idea A wide table puts a
+
+00:00:40.244 --> 00:00:44.333
+value in every month column A tall table has
+
+00:00:44.346 --> 00:00:47.458
+a single Month column and a single Sales column
+
+00:00:48.356 --> 00:00:52.848
+Unpivot moves from wide to tall Pivot goes back
+
+00:00:54.328 --> 00:00:57.663
+Click cell A2 in the budget table On the
+
+00:00:57.676 --> 00:01:00.658
+Data tab click From Table slash Range
+
+00:01:02.110 --> 00:01:04.936
+A common mistake is to select all twelve month
+
+00:01:04.949 --> 00:01:09.742
+columns and choose Unpivot Columns It works today but
+
+00:01:09.755 --> 00:01:12.503
+if next year's file adds a column the new
+
+00:01:12.516 --> 00:01:16.357
+column is left out So select the columns you
+
+00:01:16.370 --> 00:01:17.646
+want to keep instead
+
+00:01:19.125 --> 00:01:22.172
+Click the Region header then hold Shift and press
+
+00:01:22.185 --> 00:01:25.453
+the right arrow so Region and Category are both
+
+00:01:25.466 --> 00:01:30.299
+selected On the Transform tab open Unpivot Columns and
+
+00:01:30.312 --> 00:01:32.356
+choose Unpivot Other Columns
+
+00:01:33.828 --> 00:01:38.023
+Twelve rows became a hundred and forty-four Power Query
+
+00:01:38.036 --> 00:01:42.515
+named the new columns Attribute and Value Click Attribute
+
+00:01:42.528 --> 00:01:45.393
+and rename it to Month then rename Value to
+
+00:01:45.406 --> 00:01:45.992
+Sales
+
+00:01:49.641 --> 00:01:53.654
+Why is this better With one Sales column a
+
+00:01:53.667 --> 00:01:57.078
+PivotTable can total by month by region or by
+
+00:01:57.091 --> 00:02:00.724
+category with a single drag and SUMIFS needs only
+
+00:02:00.737 --> 00:02:04.786
+one sum range Adding a new month adds rows
+
+00:02:04.982 --> 00:02:05.906
+not columns
+
+00:02:07.375 --> 00:02:12.195
+Now the reverse Click the Category header On the
+
+00:02:12.208 --> 00:02:16.700
+Transform tab click Pivot Column Choose Sales as the
+
+00:02:16.713 --> 00:02:21.843
+values column keep Sum and click OK Each category
+
+00:02:21.856 --> 00:02:23.770
+becomes its own column again
+
+00:02:25.235 --> 00:02:28.204
+That view is handy for a printed report but
+
+00:02:28.217 --> 00:02:31.995
+we want the tall table for analysis Click the
+
+00:02:32.008 --> 00:02:35.250
+Pivoted Column step and press Delete to remove it
+
+00:02:36.188 --> 00:02:38.479
+Steps are easy to undo this way
+
+00:02:39.953 --> 00:02:43.640
+On the Home tab click Close and Load The
+
+00:02:43.653 --> 00:02:46.648
+tall table lands on a new sheet named after
+
+00:02:46.661 --> 00:02:47.312
+the query
+
+00:02:48.797 --> 00:02:52.221
+Pro tip the Month column is text so Apr
+
+00:02:52.234 --> 00:02:54.800
+to Mar won't sort in order on its own
+
+00:02:55.700 --> 00:02:58.682
+Add a Month Number column with a Conditional Column
+
+00:02:58.695 --> 00:03:01.442
+or a small lookup table and sort by it
+
+00:03:01.455 --> 00:03:02.549
+in your PivotTable
+
+00:03:04.047 --> 00:03:07.602
+On a Mac Unpivot Columns and Pivot Column are
+
+00:03:07.615 --> 00:03:10.414
+on the Transform tab of the Mac editor too
+
+00:03:11.315 --> 00:03:14.948
+To select several columns hold Command and click each
+
+00:03:14.961 --> 00:03:15.429
+header
+
+00:03:16.906 --> 00:03:20.656
+To recap keep the identifier columns and unpivot the
+
+00:03:20.669 --> 00:03:25.762
+others Tall data feeds PivotTables charts and SUMIFS with
+
+00:03:25.775 --> 00:03:29.903
+less effort Pivot Column brings back the wide view
+
+00:03:29.916 --> 00:03:31.374
+when a report needs it
+
+00:03:32.844 --> 00:03:36.216
+Your challenge open the query again and use Group
+
+00:03:36.229 --> 00:03:38.729
+By on Region to total Sales for the whole
+
+00:03:38.742 --> 00:03:43.862
+year Which region has the highest budget The answer
+
+00:03:43.875 --> 00:03:45.164
+is on the Done sheet

@@ -1,0 +1,115 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.120
+Hello and welcome to this explainer. Today we're looking at Power Query and exactly how it
+
+00:00:05.120 --> 00:00:09.840
+functions on a Mac computer. If you're using Excel for Mac on a daily basis, it's really important
+
+00:00:09.840 --> 00:00:14.160
+to know which tools are actually available for your data preparation tasks. Let's get right into it.
+
+00:00:14.960 --> 00:00:19.120
+We're going to start with a very common problem. This is something accountants and data analysts
+
+00:00:19.120 --> 00:00:24.000
+face at the end of every single month. You know exactly what I'm talking about. It's that one
+
+00:00:24.000 --> 00:00:28.240
+downloaded tally export or bank statement that just eats up way too much of your time.
+
+00:00:29.200 --> 00:00:34.000
+This brings us to the monthly cleaning problem and how we can finally escape these repetitive
+
+00:00:34.000 --> 00:00:39.520
+manual tasks. You probably know the frustration of opening a fresh export. You have to delete
+
+00:00:39.520 --> 00:00:44.960
+the exact same columns, fix the date formatting, and trim the data all over again. Doing these
+
+00:00:44.960 --> 00:00:49.840
+identical steps month after month is just wasting your valuable professional hours. When
+
+00:00:49.840 --> 00:00:53.360
+you're forced to clean data manually like this, you're losing time that you really should be
+
+00:00:53.360 --> 00:00:59.200
+spending on actual data analysis. So let's talk about how Power Query works as your personal data
+
+00:00:59.200 --> 00:01:04.960
+recording device. You can think of Power Query as a data preparation tool that acts as a recorder for
+
+00:01:04.960 --> 00:01:09.520
+your cleaning steps. You simply perform your data cleaning actions just one time. The system
+
+00:01:09.520 --> 00:01:14.080
+remembers those exact steps, which allows you to automatically refresh the new data next month
+
+00:01:14.080 --> 00:01:18.480
+without repeating any of the work by hand. You put in the effort on day one and then the tool
+
+00:01:18.480 --> 00:01:23.760
+handles the rest for every month that follows. The process itself is very straightforward. First,
+
+00:01:23.760 --> 00:01:27.840
+you just open the Power Query Editor. This opens up a separate window where you can prepare your
+
+00:01:27.840 --> 00:01:32.480
+data safely without altering your original file at all. Then you go ahead and perform your
+
+00:01:32.480 --> 00:01:37.360
+formatting actions. As you do this, every single action is recorded sequentially as what we call
+
+00:01:37.360 --> 00:01:42.880
+an applied step. Once you're done, you select Close and Load. This takes your final cleaned data
+
+00:01:42.880 --> 00:01:47.760
+and places it right back into your Excel spreadsheet. Moving on to supported Mac data
+
+00:01:47.760 --> 00:01:53.520
+sources. Let's see what you can connect to today. As a Mac user, you actually have access to a very
+
+00:01:53.520 --> 00:01:58.560
+robust set of data connectors. You can natively import data from standard Excel workbooks or pull
+
+00:01:58.560 --> 00:02:03.920
+in CSV and text files straight from your bank. You're also able to connect to entire folders,
+
+00:02:03.920 --> 00:02:10.480
+JSON and XML files, SharePoint Online, OData, and even SQL Server databases. All of this means
+
+00:02:10.480 --> 00:02:14.640
+that the majority of your standard corporate data sources are perfectly available on your Mac
+
+00:02:14.720 --> 00:02:20.640
+right now. Now, we must also cover what Mac cannot do by understanding the current limitations.
+
+00:02:21.600 --> 00:02:25.280
+It's crucial that you're aware of what is missing so you don't run into workflow issues.
+
+00:02:25.840 --> 00:02:31.200
+Right now, Excel for Mac doesn't support importing data directly from the web or from PDF files.
+
+00:02:31.200 --> 00:02:36.480
+Also, ODBC connectors are entirely missing. That means you cannot connect to external databases
+
+00:02:36.480 --> 00:02:40.960
+like Oracle. On top of that, there's no power pivot on Mac, so you can't load your
+
+00:02:40.960 --> 00:02:45.280
+data directly to the data model to build advanced relationships. Keep in mind that if you build a
+
+00:02:45.280 --> 00:02:49.360
+query on a Windows machine that pulls from a web page, it simply won't refresh when you open
+
+00:02:49.360 --> 00:02:55.120
+it on your Mac. So, I want to leave you with this question. How many hours will you save next month
+
+00:02:55.120 --> 00:02:59.840
+by recording your cleaning steps today? Once you start using Power Query to automate those
+
+00:02:59.840 --> 00:03:04.480
+repetitive monthly exports, your entire workflow is going to change for the better.
+
+00:03:04.480 --> 00:03:06.480
+Thank you so much for joining me for this explainer.

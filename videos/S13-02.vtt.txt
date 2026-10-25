@@ -1,0 +1,250 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.456
+Every month the Pune branch sends a raw sales
+
+00:00:03.469 --> 00:00:07.533
+export as a CSV file By the end of
+
+00:00:07.546 --> 00:00:10.515
+this lesson one Power Query will turn it into
+
+00:00:10.528 --> 00:00:14.213
+a clean table of twenty-six invoices with real dates
+
+00:00:14.226 --> 00:00:18.497
+and product codes that keep their leading zeros Next
+
+00:00:18.510 --> 00:00:20.893
+month you only press Refresh
+
+00:00:22.359 --> 00:00:25.237
+You will learn three things how to bring a
+
+00:00:25.250 --> 00:00:29.143
+CSV into Power Query how to remove columns set
+
+00:00:29.156 --> 00:00:32.268
+data types and filter rows and how to load
+
+00:00:32.281 --> 00:00:36.176
+the result exactly where you want it We are
+
+00:00:36.189 --> 00:00:39.887
+on sheet S13-02 and the file is in the
+
+00:00:39.900 --> 00:00:42.036
+data folder next to the workbook
+
+00:00:43.500 --> 00:00:46.378
+Think of Power Query as a recorder for cleaning
+
+00:00:47.291 --> 00:00:50.156
+It reads the source you click through the fixes
+
+00:00:50.325 --> 00:00:53.151
+and each fix is saved as an applied step
+
+00:00:54.036 --> 00:00:58.294
+Your original CSV is never changed and refreshing runs
+
+00:00:58.307 --> 00:01:00.533
+every step again on the new data
+
+00:01:02.000 --> 00:01:07.223
+Go to sheet S13-02 and click cell A1 On
+
+00:01:07.236 --> 00:01:10.648
+the Data tab click Get Data then From File
+
+00:01:10.778 --> 00:01:15.023
+then From Text slash CSV On a Mac the
+
+00:01:15.036 --> 00:01:18.604
+same button is called Get Data Power Query and
+
+00:01:18.617 --> 00:01:20.622
+you pick Text slash CSV
+
+00:01:22.093 --> 00:01:26.481
+Choose the file Pune Sales April 2026 from the data
+
+00:01:26.494 --> 00:01:28.135
+folder and click Import
+
+00:01:40.937 --> 00:01:46.043
+Excel shows a preview Don't click Load yet Click
+
+00:01:46.056 --> 00:01:49.624
+Transform Data to open the Power Query editor where
+
+00:01:49.637 --> 00:01:50.913
+the cleaning happens
+
+00:01:52.390 --> 00:01:56.285
+Look at the Product Code column The code zero
+
+00:01:56.298 --> 00:01:59.111
+seven three three now shows as seven hundred and
+
+00:01:59.124 --> 00:02:03.447
+thirty-three Power Query guessed the column was a number
+
+00:02:03.460 --> 00:02:07.014
+and dropped the leading zero That guess is the
+
+00:02:07.028 --> 00:02:09.983
+Changed Type step in the Applied Steps list
+
+00:02:11.437 --> 00:02:14.875
+Click Changed Type in Applied Steps and press Delete
+
+00:02:15.840 --> 00:02:18.731
+Every column goes back to text and we will
+
+00:02:18.744 --> 00:02:23.366
+set the types ourselves Never trust automatic types for
+
+00:02:23.379 --> 00:02:25.931
+codes PIN codes or phone numbers
+
+00:02:27.406 --> 00:02:31.353
+Click the Remarks header It only has notes like
+
+00:02:31.366 --> 00:02:34.166
+call back so on the Home tab click Remove
+
+00:02:34.179 --> 00:02:38.619
+Columns A new step called Removed Columns appears on
+
+00:02:38.632 --> 00:02:39.244
+the right
+
+00:02:40.734 --> 00:02:45.267
+Now the number columns Click the Qty header open
+
+00:02:45.280 --> 00:02:49.200
+Data Type and choose Whole Number Do the same
+
+00:02:49.213 --> 00:02:53.366
+for Rate and Amount Leave Product Code as text
+
+00:02:53.523 --> 00:02:56.947
+so zero seven three three stays exactly as it
+
+00:02:56.960 --> 00:02:57.325
+is
+
+00:03:10.328 --> 00:03:14.861
+The dates are written day month year Right-click the
+
+00:03:14.874 --> 00:03:19.119
+Inv Date header choose Change Type then Using Locale
+
+00:03:20.018 --> 00:03:22.843
+Set Data Type to Date and Locale to English
+
+00:03:22.856 --> 00:03:27.466
+India and click OK This works whatever region your
+
+00:03:27.479 --> 00:03:28.546
+Mac is set to
+
+00:03:30.015 --> 00:03:35.004
+Next the cancelled invoices Open the filter arrow on
+
+00:03:35.017 --> 00:03:39.770
+the Status header untick Cancelled and click OK Four
+
+00:03:39.783 --> 00:03:41.853
+invoices drop out of the preview
+
+00:03:43.312 --> 00:03:46.177
+The export also has one empty line in the
+
+00:03:46.190 --> 00:03:50.410
+middle On the Home tab click Remove Rows then
+
+00:03:50.423 --> 00:03:54.942
+Remove Blank Rows Notice the list of applied steps
+
+00:03:54.955 --> 00:03:57.324
+reads like a checklist of what we did
+
+00:03:58.812 --> 00:04:01.768
+Click the arrow under Close and Load and choose
+
+00:04:01.781 --> 00:04:06.588
+Close and Load To Pick Table then Existing worksheet
+
+00:04:06.783 --> 00:04:11.327
+cell A1 on sheet S13-02 and click OK
+
+00:04:12.797 --> 00:04:16.757
+The clean table lands at A1 The counter in
+
+00:04:16.770 --> 00:04:20.377
+L2 shows twenty-six rows and the total in L5
+
+00:04:20.390 --> 00:04:23.489
+is six lakh eighty-seven thousand two hundred and thirty
+
+00:04:23.502 --> 00:04:27.474
+rupees Product codes still start with zero
+
+00:04:28.968 --> 00:04:32.458
+Next month save May's export with the same file
+
+00:04:32.471 --> 00:04:35.231
+name and click Refresh All on the Data tab
+
+00:04:36.132 --> 00:04:40.129
+Every step runs again in seconds If the file
+
+00:04:40.142 --> 00:04:43.553
+name changes use Data Source Settings to point the
+
+00:04:43.566 --> 00:04:45.181
+query at the new file
+
+00:04:46.656 --> 00:04:50.877
+A few Mac differences The button is Get Data
+
+00:04:51.059 --> 00:04:55.577
+Power Query The first time macOS asks you to
+
+00:04:55.590 --> 00:04:59.497
+grant access to the folder so allow it The
+
+00:04:59.510 --> 00:05:02.387
+Mac editor looks like the web version but the
+
+00:05:02.400 --> 00:05:06.697
+step names and ribbon commands are the same Right-click
+
+00:05:06.710 --> 00:05:07.843
+is Control-click
+
+00:05:09.312 --> 00:05:12.945
+To recap import through Get Data and always choose
+
+00:05:12.958 --> 00:05:17.595
+Transform Data Set your own data types using a
+
+00:05:17.608 --> 00:05:21.306
+locale for Indian dates And load to a fixed
+
+00:05:21.319 --> 00:05:24.015
+cell so your formulas can find the table
+
+00:05:25.484 --> 00:05:29.000
+Your challenge edit the query so that only Pending
+
+00:05:29.013 --> 00:05:33.090
+invoices load How many rows do you get and
+
+00:05:33.103 --> 00:05:36.228
+what is the total The answer is at the
+
+00:05:36.241 --> 00:05:37.791
+bottom of the Done sheet

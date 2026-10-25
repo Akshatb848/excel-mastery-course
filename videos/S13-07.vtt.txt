@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.680
+Hello, and welcome to This Explainer. Today, we are looking at lesson S1307, which covers
+
+00:00:05.680 --> 00:00:10.320
+PowerPivot and DAX. Specifically, we will focus on what Mac users need to know about
+
+00:00:10.320 --> 00:00:15.160
+these tools. If you use Excel on an Apple computer for your daily work, this session is tailored
+
+00:00:15.160 --> 00:00:21.000
+to help you navigate some very important structural differences. Let us dive right in.
+
+00:00:21.000 --> 00:00:24.940
+Have you ever received a complex Excel file from a colleague that simply does not work
+
+00:00:24.940 --> 00:00:29.560
+properly on your Mac? It is a very common frustration for many professionals. You open
+
+00:00:29.560 --> 00:00:33.800
+the file, and suddenly you find that certain advanced features are completely locked or
+
+00:00:33.800 --> 00:00:38.280
+broken. This usually happens when you need to update a report urgently, which adds unnecessary
+
+00:00:38.280 --> 00:00:42.680
+stress to your workday. In this explainer, we will explore exactly why this happens and
+
+00:00:42.680 --> 00:00:44.840
+how you can manage it effectively.
+
+00:00:44.840 --> 00:00:49.660
+To understand the core issue here, we first need to define a concept called the data model.
+
+00:00:49.660 --> 00:00:53.280
+Put simply, a data model is a collection of several organized tables that are linked
+
+00:00:53.280 --> 00:00:57.600
+together by relationships. Instead of dumping all of your business data into one massive
+
+00:00:57.600 --> 00:01:02.240
+sheet, companies use a data model to keep their data in separate, manageable tables.
+
+00:01:02.240 --> 00:01:06.080
+Excel then connects these tables behind the scenes. This setup is highly efficient for
+
+00:01:06.080 --> 00:01:10.480
+handling large sets of corporate data, because it keeps your file sizes small and performance
+
+00:01:10.480 --> 00:01:15.980
+high. You can think of it as having a relational database built right inside your Excel workbook.
+
+00:01:15.980 --> 00:01:20.200
+Once we have that connected data, we need a way to extract value from it. That is exactly
+
+00:01:20.200 --> 00:01:25.240
+where DAX comes into the picture. DAX measures are formulas used to calculate information
+
+00:01:25.240 --> 00:01:30.240
+across those multiple linked tables. When a business has massive amounts of data, standard
+
+00:01:30.240 --> 00:01:35.600
+Excel formulas often struggle to keep up. DAX allows analysts to write powerful calculations
+
+00:01:35.600 --> 00:01:40.220
+that instantly summarize millions of rows of data. So instead of waiting minutes for
+
+00:01:40.220 --> 00:01:44.400
+a standard spreadsheet to calculate everything, DAX processes these massive queries almost
+
+00:01:44.400 --> 00:01:48.840
+instantly. This combination of the data model and DAX is exactly why companies rely
+
+00:01:48.840 --> 00:01:51.060
+heavily on PowerPivot.
+
+00:01:51.060 --> 00:01:55.660
+Now we arrive at the main issue for Apple users. There is a fundamental structural difference
+
+00:01:55.660 --> 00:02:00.140
+between the two operating systems. Excel for Windows can easily create and edit data
+
+00:02:00.140 --> 00:02:05.220
+models. However, Excel for Mac simply cannot create or edit data models. The Mac version
+
+00:02:05.220 --> 00:02:10.120
+lacks the PowerPivot add-in entirely. Because the underlying architecture of the Mac software
+
+00:02:10.120 --> 00:02:14.600
+is different, Microsoft has not included this specific database engine. Therefore, if your
+
+00:02:14.600 --> 00:02:18.980
+daily reporting relies heavily on building a data model from scratch, this is the most
+
+00:02:18.980 --> 00:02:21.700
+significant limitation you will face on a Mac.
+
+00:02:21.700 --> 00:02:25.820
+So what exactly happens when a colleague sends you one of these data model files created
+
+00:02:25.820 --> 00:02:30.460
+on a Windows machine? The good news is that the file will open normally on your Mac. You
+
+00:02:30.460 --> 00:02:34.160
+will be able to see the data, and all the standard formulas will still be perfectly visible
+
+00:02:34.160 --> 00:02:40.220
+and functioning. However, any data model pivot tables cannot be edited at all. Furthermore,
+
+00:02:40.220 --> 00:02:44.300
+you cannot modify the DAX measures. The data is available for you to view, but the
+
+00:02:44.300 --> 00:02:49.020
+advanced structure remains completely locked. It is essentially like receiving a printed
+
+00:02:49.020 --> 00:02:53.100
+report. You can read all the numbers perfectly, but you simply cannot change the underlying
+
+00:02:53.100 --> 00:02:54.540
+mathematical assumptions.
+
+00:02:54.540 --> 00:02:59.700
+Fortunately, you do have some practical alternatives. There are two reliable external solutions
+
+00:02:59.700 --> 00:03:04.500
+if you absolutely must work with these advanced models. Your first option is to run Windows
+
+00:03:04.500 --> 00:03:08.980
+Excel using Parallels Desktop. This software allows you to run the full Windows operating
+
+00:03:08.980 --> 00:03:13.740
+system directly on your Mac hardware. Your second option is to move the entire data
+
+00:03:13.740 --> 00:03:18.620
+model to Power BI. Power BI operates very effectively in a web browser on a Mac, which
+
+00:03:18.620 --> 00:03:23.340
+allows you to interact with complex data without needing Windows Excel. This is often the preferred
+
+00:03:23.340 --> 00:03:27.700
+route for modern organizations, as it centralizes the data beautifully.
+
+00:03:27.700 --> 00:03:31.900
+If you prefer not to use external software, there are excellent native Mac alternatives
+
+00:03:31.900 --> 00:03:36.420
+for simpler models. You can easily use Power Query on your Mac to import and clean your
+
+00:03:36.420 --> 00:03:41.020
+data first. Once the data is imported, instead of relying on a data model, you can rebuild
+
+00:03:41.020 --> 00:03:45.580
+the connections using standard lookup functions, like XLOOKUP. From there, you can summarize
+
+00:03:45.580 --> 00:03:49.820
+your data using standard pivot tables. You can also apply modern dynamic array functions
+
+00:03:49.820 --> 00:03:54.340
+like GROUP BY and FILTER. These native tools are robust, and they can handle the vast
+
+00:03:54.340 --> 00:03:58.020
+majority of everyday spreadsheet tasks directly on your Mac.
+
+00:03:58.020 --> 00:04:01.900
+We have covered a lot of important ground today regarding cross-platform challenges in
+
+00:04:01.900 --> 00:04:06.220
+Excel. Now, you might be wondering which of these workarounds will fit best into your
+
+00:04:06.220 --> 00:04:10.540
+own daily routine. Whether you choose to run Parallels, transition your reporting to
+
+00:04:10.540 --> 00:04:15.820
+Power BI in the browser, or master native tools like XLOOKUP and GROUP BY, you now have
+
+00:04:15.820 --> 00:04:21.300
+the knowledge required to adapt. Understanding these structural differences is a huge advantage.
+
+00:04:21.300 --> 00:04:24.220
+Thank you for joining this explainer, and I hope this helps make your spreadsheet work
+
+00:04:24.220 --> 00:04:25.620
+much more efficient going forward.

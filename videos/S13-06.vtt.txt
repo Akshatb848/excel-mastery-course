@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:03.833
+Our accountant exports the Day Book from Tally every
+
+00:00:03.846 --> 00:00:07.820
+month and drops it in one folder Each file
+
+00:00:07.833 --> 00:00:10.489
+has title rows on top and a Grand Total
+
+00:00:10.502 --> 00:00:14.447
+row at the bottom We will combine April May
+
+00:00:14.460 --> 00:00:17.520
+and June into one clean ledger and July will
+
+00:00:17.533 --> 00:00:19.018
+just need a refresh
+
+00:00:20.484 --> 00:00:23.088
+You will learn to combine every file in a
+
+00:00:23.101 --> 00:00:26.200
+folder to clean the sample file so the fix
+
+00:00:26.213 --> 00:00:29.273
+applies to all files and to repair the error
+
+00:00:29.286 --> 00:00:36.398
+this usually causes Practice sheet S13-06 folder data Monthly
+
+00:00:36.411 --> 00:00:36.905
+Ledger
+
+00:00:38.375 --> 00:00:42.882
+Here is how folder combining works Power Query builds
+
+00:00:42.895 --> 00:00:46.242
+a helper called Transform Sample File from the first
+
+00:00:46.255 --> 00:00:50.148
+file Whatever you do to that sample runs on
+
+00:00:50.161 --> 00:00:53.013
+every file and the results are stacked with the
+
+00:00:53.026 --> 00:00:54.419
+file name in front
+
+00:00:55.906 --> 00:01:01.077
+Go to sheet S13-06 and click A1 On the
+
+00:01:01.090 --> 00:01:05.309
+Data tab choose Get Data From File From Folder
+
+00:01:06.781 --> 00:01:09.567
+Paste the path of the Monthly Ledger folder and
+
+00:01:09.580 --> 00:01:14.999
+click OK Power Query lists the three files Open
+
+00:01:15.012 --> 00:01:18.645
+the Combine button and choose Combine and Transform Data
+
+00:01:20.109 --> 00:01:24.512
+The Combine Files window previews the first file You
+
+00:01:24.525 --> 00:01:27.129
+can see the company name the words Day Book
+
+00:01:27.142 --> 00:01:30.892
+and the date range above the real headings Click
+
+00:01:30.905 --> 00:01:33.731
+OK we will clean them in the sample
+
+00:01:35.265 --> 00:01:39.824
+In the Queries list click Transform Sample File On
+
+00:01:39.837 --> 00:01:43.652
+the Home tab choose Remove Rows Remove Top Rows
+
+00:01:43.796 --> 00:01:47.806
+type four and click OK Then click Use First
+
+00:01:47.819 --> 00:01:48.978
+Row as Headers
+
+00:01:54.109 --> 00:01:57.195
+Every Tally file ends with a Grand Total line
+
+00:01:57.351 --> 00:02:01.976
+which would double our totals Choose Remove Rows Remove
+
+00:02:01.989 --> 00:02:04.749
+Bottom Rows type one and click OK
+
+00:02:06.219 --> 00:02:10.453
+Now click the main query Monthly Ledger You will
+
+00:02:10.466 --> 00:02:13.955
+see an error the column Column1 was not found
+
+00:02:14.867 --> 00:02:18.916
+This is the most common folder mistake The main
+
+00:02:18.929 --> 00:02:22.250
+query's Changed Type step still uses the old column
+
+00:02:22.263 --> 00:02:22.758
+names
+
+00:02:24.250 --> 00:02:28.341
+The fix is simple Click the last step Changed
+
+00:02:28.354 --> 00:02:32.390
+Type and press Delete The data appears with the
+
+00:02:32.403 --> 00:02:35.059
+proper headings from all three files
+
+00:02:36.547 --> 00:02:40.115
+The first column Source dot Name holds file names
+
+00:02:40.128 --> 00:02:46.250
+like Ledger underscore Apr dash 2026 dot csv Click
+
+00:02:46.263 --> 00:02:50.533
+it and use Replace Values twice replace Ledger underscore
+
+00:02:50.546 --> 00:02:53.515
+with nothing then dot csv with nothing
+
+00:03:02.515 --> 00:03:06.788
+Rename Source dot Name to Month Then set Debit
+
+00:03:06.801 --> 00:03:09.978
+and Credit to Decimal Number so the blanks become
+
+00:03:09.991 --> 00:03:11.723
+nulls and the totals add up
+
+00:03:26.000 --> 00:03:31.026
+Choose Close and Load To Table Existing worksheet cell A1
+
+00:03:31.039 --> 00:03:34.971
+on sheet S13-06 and click OK
+
+00:03:40.500 --> 00:03:45.541
+Forty-two vouchers from three months Total debit is thirty-six
+
+00:03:45.554 --> 00:03:49.226
+lakh fifteen thousand five hundred rupees and total credit
+
+00:03:49.239 --> 00:03:53.601
+is twelve lakh twenty thousand No Grand Total rows
+
+00:03:53.614 --> 00:03:54.330
+sneaked in
+
+00:03:55.812 --> 00:03:58.976
+Next month copy the July file from the Next
+
+00:03:58.989 --> 00:04:02.609
+Month folder into Monthly Ledger and click Refresh All
+
+00:04:03.509 --> 00:04:06.739
+The row count goes from forty-two to fifty-four with
+
+00:04:06.752 --> 00:04:07.819
+no other work
+
+00:04:09.297 --> 00:04:12.227
+On a Mac From Folder is under Get Data
+
+00:04:12.422 --> 00:04:16.356
+Power Query if your build supports it If you
+
+00:04:16.369 --> 00:04:19.507
+don't see it keep the files on OneDrive and
+
+00:04:19.520 --> 00:04:22.007
+build the query in Excel for the web or
+
+00:04:22.020 --> 00:04:24.937
+on Windows it still refreshes on the Mac
+
+00:04:26.422 --> 00:04:30.185
+To recap From Folder combines every file in one
+
+00:04:30.198 --> 00:04:35.070
+go Clean the Transform Sample File not each file
+
+00:04:35.968 --> 00:04:38.664
+If the main query shows a column not found
+
+00:04:38.677 --> 00:04:41.281
+error delete its Changed Type step
+
+00:04:42.734 --> 00:04:46.406
+Your challenge use Group By on Vch Type to
+
+00:04:46.419 --> 00:04:50.353
+total the Debit column How much was billed as
+
+00:04:50.366 --> 00:04:54.260
+Sales across the three months The answer is on
+
+00:04:54.273 --> 00:04:55.197
+the Done sheet

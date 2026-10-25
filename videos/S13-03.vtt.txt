@@ -1,0 +1,214 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:04.929
+This customer master came from an old system Name
+
+00:00:04.942 --> 00:00:07.898
+and city share one column the region is typed
+
+00:00:07.911 --> 00:00:11.296
+only once per group and active status is just
+
+00:00:11.309 --> 00:00:14.434
+Y or N We will turn it into a
+
+00:00:14.447 --> 00:00:16.960
+clean list with a PAN column and a credit
+
+00:00:16.973 --> 00:00:18.874
+band all in Power Query
+
+00:00:20.421 --> 00:00:23.689
+You will learn to split a column replace values
+
+00:00:23.845 --> 00:00:26.997
+fill down blanks and add new columns two ways
+
+00:00:27.205 --> 00:00:31.517
+by example and by a condition The practice table
+
+00:00:31.530 --> 00:00:35.670
+is tblCustomers on sheet S13-03
+
+00:00:37.171 --> 00:00:40.988
+Here is a quick map of the commands Split
+
+00:00:41.001 --> 00:00:44.621
+and Replace are on the Home tab Fill Down
+
+00:00:44.634 --> 00:00:48.592
+and Trim are on the Transform tab New columns
+
+00:00:48.605 --> 00:00:51.782
+live on the Add Column tab which never changes
+
+00:00:51.795 --> 00:00:52.980
+the original column
+
+00:00:54.453 --> 00:00:58.570
+Click any cell in the table say A2 On
+
+00:00:58.583 --> 00:01:02.841
+the Data tab click From Table slash Range The
+
+00:01:02.854 --> 00:01:05.614
+editor opens with the table already loaded
+
+00:01:07.109 --> 00:01:11.252
+Click the header Customer City On the Home tab
+
+00:01:11.434 --> 00:01:16.629
+choose Split Column By Delimiter Choose Comma split at
+
+00:01:16.642 --> 00:01:19.507
+the left-most delimiter and click OK
+
+00:01:21.031 --> 00:01:24.534
+Two columns appear but look closely at the city
+
+00:01:25.460 --> 00:01:28.572
+It starts with a space left over from after
+
+00:01:28.585 --> 00:01:33.051
+the comma Spaces like this make lookups fail later
+
+00:01:33.208 --> 00:01:35.525
+so it is a mistake worth catching now
+
+00:01:37.000 --> 00:01:40.190
+Click the second column go to the Transform tab
+
+00:01:40.385 --> 00:01:44.437
+open Format and choose Trim Then use Rename on
+
+00:01:44.450 --> 00:01:47.210
+the same tab to call the columns Customer and
+
+00:01:47.223 --> 00:01:47.679
+City
+
+00:01:56.453 --> 00:02:00.687
+Now the Region column It says West once then
+
+00:02:00.700 --> 00:02:04.880
+nulls until North Click the Region header and on
+
+00:02:04.893 --> 00:02:09.229
+the Transform tab choose Fill then Down Every row
+
+00:02:09.242 --> 00:02:10.765
+now carries its region
+
+00:02:12.218 --> 00:02:15.970
+Click the Active header On the Home tab click
+
+00:02:15.983 --> 00:02:21.231
+Replace Values Value to find capital Y Replace with
+
+00:02:21.361 --> 00:02:26.035
+Active Click OK then repeat with capital N and
+
+00:02:26.048 --> 00:02:26.764
+Inactive
+
+00:02:28.234 --> 00:02:31.164
+A GSTIN has the PAN inside it from the
+
+00:02:31.177 --> 00:02:35.398
+third to the twelfth character Click the GSTIN header
+
+00:02:35.554 --> 00:02:38.301
+then on the Add Column tab choose Column From
+
+00:02:38.314 --> 00:02:40.254
+Examples From Selection
+
+00:02:41.734 --> 00:02:44.468
+In the first empty cell type the PAN for
+
+00:02:44.481 --> 00:02:47.346
+Sharma Traders A A A C S one two
+
+00:02:47.359 --> 00:02:51.762
+three four F and press Enter Power Query works
+
+00:02:51.775 --> 00:02:55.395
+out the rule and fills every row Rename the
+
+00:02:55.408 --> 00:02:57.439
+column to PAN and click OK
+
+00:02:58.937 --> 00:03:03.249
+Last a credit band On the Add Column tab
+
+00:03:03.262 --> 00:03:08.718
+click Conditional Column Name it Credit Band If Credit
+
+00:03:08.731 --> 00:03:11.713
+Limit is greater than or equal to five lakh
+
+00:03:11.921 --> 00:03:17.351
+the output is High Else Standard Click OK
+
+00:03:18.828 --> 00:03:23.516
+Choose Close and Load To Existing worksheet cell H1 on
+
+00:03:23.529 --> 00:03:27.671
+this sheet and click OK The clean list sits
+
+00:03:27.684 --> 00:03:31.239
+beside the original and both stay in step whenever
+
+00:03:31.252 --> 00:03:32.111
+you refresh
+
+00:03:41.953 --> 00:03:46.434
+Prove it is repeatable In cell D4, change Desai
+
+00:03:46.447 --> 00:03:49.859
+Pharma from N to Y then click Refresh All
+
+00:03:50.744 --> 00:03:55.653
+In the output Desai Pharma flips to Active Change
+
+00:03:55.666 --> 00:03:57.880
+it back to N and refresh again
+
+00:04:05.296 --> 00:04:08.304
+On a Mac From Table slash Range is on
+
+00:04:08.317 --> 00:04:12.564
+the Data tab as well Column From Examples needs
+
+00:04:12.577 --> 00:04:17.069
+a recent Microsoft 365 build if you don't see it
+
+00:04:17.277 --> 00:04:20.506
+use Extract Range on the Transform tab with a
+
+00:04:20.519 --> 00:04:22.733
+start of two and a length of ten
+
+00:04:24.203 --> 00:04:27.250
+To recap split on a delimiter and trim the
+
+00:04:27.263 --> 00:04:31.796
+spaces Fill down blanks and replace codes with words
+
+00:04:32.695 --> 00:04:35.716
+Add new columns by example or by a rule
+
+00:04:35.937 --> 00:04:37.382
+on the Add Column tab
+
+00:04:38.843 --> 00:04:41.942
+Your challenge add a State Code column with the
+
+00:04:41.955 --> 00:04:46.501
+first two characters of the GSTIN Sharma Traders should
+
+00:04:46.514 --> 00:04:51.228
+show twenty-seven the code for Maharashtra The answer is
+
+00:04:51.241 --> 00:04:52.361
+on the Done sheet
